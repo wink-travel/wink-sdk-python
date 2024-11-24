@@ -1,0 +1,35 @@
+# SyndicationCategoryAffiliate
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
+**user_identifier** | **str** | Creator of entry | 
+**owner_identifier** | **str** | The user&#39;s owner company this entry associates with | 
+**name** | **str** | The name of this category | 
+
+## Example
+
+```python
+from wink_sdk_affiliate_winklinks.models.syndication_category_affiliate import SyndicationCategoryAffiliate
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of SyndicationCategoryAffiliate from a JSON string
+syndication_category_affiliate_instance = SyndicationCategoryAffiliate.from_json(json)
+# print the JSON string representation of the object
+print(SyndicationCategoryAffiliate.to_json())
+
+# convert the object into a dict
+syndication_category_affiliate_dict = syndication_category_affiliate_instance.to_dict()
+# create an instance of SyndicationCategoryAffiliate from a dict
+syndication_category_affiliate_from_dict = SyndicationCategoryAffiliate.from_dict(syndication_category_affiliate_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
