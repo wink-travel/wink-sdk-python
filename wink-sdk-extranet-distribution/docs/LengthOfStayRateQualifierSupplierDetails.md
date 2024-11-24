@@ -1,0 +1,31 @@
+# LengthOfStayRateQualifierSupplierDetails
+
+Restrict promotion to users who want to stay a certain number of days.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**min_los** | **int** | Minimum length of stay qualifier | [optional] 
+**max_los** | **int** | Maximum length of stay qualifier | [optional] 
+
+## Example
+
+```python
+from wink_sdk_extranet_distribution.models.length_of_stay_rate_qualifier_supplier_details import LengthOfStayRateQualifierSupplierDetails
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of LengthOfStayRateQualifierSupplierDetails from a JSON string
+length_of_stay_rate_qualifier_supplier_details_instance = LengthOfStayRateQualifierSupplierDetails.from_json(json)
+# print the JSON string representation of the object
+print(LengthOfStayRateQualifierSupplierDetails.to_json())
+
+# convert the object into a dict
+length_of_stay_rate_qualifier_supplier_details_dict = length_of_stay_rate_qualifier_supplier_details_instance.to_dict()
+# create an instance of LengthOfStayRateQualifierSupplierDetails from a dict
+length_of_stay_rate_qualifier_supplier_details_from_dict = LengthOfStayRateQualifierSupplierDetails.from_dict(length_of_stay_rate_qualifier_supplier_details_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

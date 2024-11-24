@@ -1,0 +1,31 @@
+# ImageAttribution
+
+Whether image has attribution properties
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**url** | **str** | URL to contributor | [optional] 
+**name** | **str** | Name of contributor | 
+
+## Example
+
+```python
+from wink_sdk_extranet_facilities.models.image_attribution import ImageAttribution
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of ImageAttribution from a JSON string
+image_attribution_instance = ImageAttribution.from_json(json)
+# print the JSON string representation of the object
+print(ImageAttribution.to_json())
+
+# convert the object into a dict
+image_attribution_dict = image_attribution_instance.to_dict()
+# create an instance of ImageAttribution from a dict
+image_attribution_from_dict = ImageAttribution.from_dict(image_attribution_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

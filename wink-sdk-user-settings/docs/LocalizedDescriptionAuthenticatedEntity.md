@@ -1,0 +1,30 @@
+# LocalizedDescriptionAuthenticatedEntity
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**description** | **str** | Longer text description | 
+**language** | **str** | Indicate which language this description is written in. | [default to 'en']
+
+## Example
+
+```python
+from wink_sdk_user_settings.models.localized_description_authenticated_entity import LocalizedDescriptionAuthenticatedEntity
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of LocalizedDescriptionAuthenticatedEntity from a JSON string
+localized_description_authenticated_entity_instance = LocalizedDescriptionAuthenticatedEntity.from_json(json)
+# print the JSON string representation of the object
+print(LocalizedDescriptionAuthenticatedEntity.to_json())
+
+# convert the object into a dict
+localized_description_authenticated_entity_dict = localized_description_authenticated_entity_instance.to_dict()
+# create an instance of LocalizedDescriptionAuthenticatedEntity from a dict
+localized_description_authenticated_entity_from_dict = LocalizedDescriptionAuthenticatedEntity.from_dict(localized_description_authenticated_entity_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
