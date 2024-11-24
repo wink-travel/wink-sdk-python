@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 # import apis into sdk package
 from wink_sdk_lookup.api.lookup_api import LookupApi

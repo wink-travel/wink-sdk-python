@@ -42,17 +42,21 @@ build_and_upload_sdk() {
   # Check for setup.py
   if [ -f "setup.py" ]; then
     build_command="python setup.py sdist bdist_wheel"
-    upload_command="twine upload --repository-url $PYPI_REPO_URL dist/*"
+    upload_command="twine upload --repository-url $PYPI_REPO_URL dist/* --username __token__ --password $PYPI_API_TOKEN"
   else
     echo "No setup.py found in $sdk_dir. Skipping PyPI upload."
     cd -
     return
   fi
 
-  echo "Building the package in $sdk_dir..."
-  # Install build tools if not already installed
-  pip install --upgrade pip setuptools wheel twine build
+  echo "Cleaning the dist directory in $sdk_dir..."
+  # Clean the dist folder if it exists
+  if [ -d "dist" ]; then
+    rm -rf dist
+    echo "Existing dist directory removed."
+  fi
 
+  echo "Building the package in $sdk_dir..."
   # Build the distribution packages
   $build_command
 
@@ -84,6 +88,10 @@ find_all_sdks() {
 ###############################################################################
 
 echo "=== PyPI Release Process Initiated ==="
+
+# Upgrade pip and install necessary build tools once
+echo "Installing/updating build tools..."
+pip install --upgrade pip setuptools wheel twine build
 
 # Find all SDK subfolders
 find_all_sdks

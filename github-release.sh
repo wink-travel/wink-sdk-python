@@ -122,11 +122,13 @@ commit_changelog() {
   echo "Committed changelog changes."
 }
 
-# Function to finish a Gitflow release
+# Function to finish a Gitflow release with automated merge messages
 finish_gitflow_release() {
   echo "Finishing Gitflow release..."
-  # The -m flag provides the merge commit message to avoid prompts
-  git flow release finish -m "chore: release $TAG_PREFIX$VERSION" "$VERSION" || error "Failed to finish Gitflow release."
+  
+  # Finish the Gitflow release with a predefined commit message
+  GIT_MERGE_AUTOEDIT=no git flow release finish -m "chore: release $TAG_PREFIX$VERSION" "$VERSION" || error "Failed to finish Gitflow release."
+  
   echo "Gitflow release '$VERSION' finished."
 }
 
@@ -176,7 +178,7 @@ start_gitflow_release
 generate_changelog
 commit_changelog
 
-# Finish Gitflow release (merges into master and develop, tags the release)
+# Finish Gitflow release with automated merge messages
 finish_gitflow_release
 
 # Push commits and tags to remote repository
