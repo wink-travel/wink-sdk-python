@@ -18,7 +18,7 @@ stages:
         - PyPI release
 
 
-Generate SDKs:      
+Generate SDKs:
   tasks:
     - checkout
     - script:
