@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 # import apis into sdk package
 from wink_sdk_extranet_property_register.api.manage_leads_api import ManageLeadsApi

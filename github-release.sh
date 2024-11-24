@@ -118,14 +118,15 @@ generate_changelog() {
 commit_changelog() {
   echo "Committing changelog changes..."
   git add "$GH_RELEASE_NOTES_FILE"
-  git commit -m "chore: update CHANGELOG for release $VERSION"
+  git commit -m "chore: update CHANGELOG for release $VERSION" || echo "No changes to commit."
   echo "Committed changelog changes."
 }
 
 # Function to finish a Gitflow release
 finish_gitflow_release() {
   echo "Finishing Gitflow release..."
-  git flow release finish "$VERSION" -m "chore: release $TAG_PREFIX$VERSION" || error "Failed to finish Gitflow release."
+  # The -m flag provides the merge commit message to avoid prompts
+  git flow release finish -m "chore: release $TAG_PREFIX$VERSION" "$VERSION" || error "Failed to finish Gitflow release."
   echo "Gitflow release '$VERSION' finished."
 }
 
