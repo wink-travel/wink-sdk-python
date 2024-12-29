@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **commission** | **float** | Amount of sales commission earned through this channel and all its children [unless configured at the child level]. | [optional] 
 **rate_modifiers** | [**List[RateModifierSupplierDetails]**](RateModifierSupplierDetails.md) | Promotions for this channel | [optional] 
 **rate_modifier_bundles** | [**List[RateModifierBundleSupplierDetails]**](RateModifierBundleSupplierDetails.md) | Promotion bundles for this channel | [optional] 
+**self_acquires** | **bool** | Whether the sales channel is a self-acquiring entity. | [optional] 
 
 ## Example
 

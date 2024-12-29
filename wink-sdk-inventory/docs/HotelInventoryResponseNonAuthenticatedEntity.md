@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
 **sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) |  | [optional] 
 **cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
-**best_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
 **available** | **bool** |  | [optional] 
+**best_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

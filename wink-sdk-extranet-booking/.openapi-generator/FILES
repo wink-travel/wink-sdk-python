@@ -75,8 +75,8 @@ docs/DowPatternGroupSupplier.md
 docs/DowPatternGroupSupplierDetails.md
 docs/EngineConfigurationBookingReportSupplier.md
 docs/EngineConfigurationBookingReportSupplierDetails.md
-docs/EngineConfigurationThemeSupplier.md
-docs/EngineConfigurationThemeSupplierDetails.md
+docs/EngineConfigurationThemeColorsSupplier.md
+docs/EngineConfigurationThemeColorsSupplierDetails.md
 docs/ExtraChargeSupplier.md
 docs/ExtraChargeSupplierDetails.md
 docs/ExtraChargesSupplier.md
@@ -189,6 +189,8 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_engine_configuration_theme_colors_supplier.py
+test/test_engine_configuration_theme_colors_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
@@ -270,8 +272,8 @@ wink_sdk_extranet_booking/models/dow_pattern_group_supplier.py
 wink_sdk_extranet_booking/models/dow_pattern_group_supplier_details.py
 wink_sdk_extranet_booking/models/engine_configuration_booking_report_supplier.py
 wink_sdk_extranet_booking/models/engine_configuration_booking_report_supplier_details.py
-wink_sdk_extranet_booking/models/engine_configuration_theme_supplier.py
-wink_sdk_extranet_booking/models/engine_configuration_theme_supplier_details.py
+wink_sdk_extranet_booking/models/engine_configuration_theme_colors_supplier.py
+wink_sdk_extranet_booking/models/engine_configuration_theme_colors_supplier_details.py
 wink_sdk_extranet_booking/models/extra_charge_supplier.py
 wink_sdk_extranet_booking/models/extra_charge_supplier_details.py
 wink_sdk_extranet_booking/models/extra_charges_supplier.py

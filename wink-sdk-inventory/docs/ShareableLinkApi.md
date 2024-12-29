@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **oauth2_show_consumable_url**
-> ConsumableSellerUrlNonAuthenticatedEntity oauth2_show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, wink_version=wink_version)
+> ConsumableSellerUrlNonAuthenticatedEntity oauth2_show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
 
 Show Shareable Link (OAuth2)
 
@@ -46,11 +46,12 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     code = 'code_example' # str | Unique link code
     user_session_non_authenticated_entity = wink_sdk_inventory.UserSessionNonAuthenticatedEntity() # UserSessionNonAuthenticatedEntity | 
     cid = 'cid_example' # str | Optional campaign id (optional)
+    gl = 'gl_example' # str | Optional GA4 cross-site link id (optional)
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Show Shareable Link (OAuth2)
-        api_response = api_instance.oauth2_show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, wink_version=wink_version)
+        api_response = api_instance.oauth2_show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
         print("The response of ShareableLinkApi->oauth2_show_consumable_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,6 +68,7 @@ Name | Type | Description  | Notes
  **code** | **str**| Unique link code | 
  **user_session_non_authenticated_entity** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md)|  | 
  **cid** | **str**| Optional campaign id | [optional] 
+ **gl** | **str**| Optional GA4 cross-site link id | [optional] 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
@@ -95,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_consumable_url**
-> ConsumableSellerUrlNonAuthenticatedEntity show_consumable_url(company_identifier, code, user_session_non_authenticated_entity, cid=cid, wink_version=wink_version)
+> ConsumableSellerUrlNonAuthenticatedEntity show_consumable_url(company_identifier, code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
 
 Show Shareable Link
 
@@ -130,14 +132,15 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.ShareableLinkApi(api_client)
     company_identifier = 'company_identifier_example' # str | Affiliate account identifier
-    code = 'code_example' # str | 
+    code = 'code_example' # str | Unique link code
     user_session_non_authenticated_entity = wink_sdk_inventory.UserSessionNonAuthenticatedEntity() # UserSessionNonAuthenticatedEntity | 
-    cid = 'cid_example' # str |  (optional)
+    cid = 'cid_example' # str | Optional campaign id (optional)
+    gl = 'gl_example' # str | Optional GA4 cross-site link id (optional)
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Show Shareable Link
-        api_response = api_instance.show_consumable_url(company_identifier, code, user_session_non_authenticated_entity, cid=cid, wink_version=wink_version)
+        api_response = api_instance.show_consumable_url(company_identifier, code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
         print("The response of ShareableLinkApi->show_consumable_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -152,9 +155,10 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Affiliate account identifier | 
- **code** | **str**|  | 
+ **code** | **str**| Unique link code | 
  **user_session_non_authenticated_entity** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md)|  | 
- **cid** | **str**|  | [optional] 
+ **cid** | **str**| Optional campaign id | [optional] 
+ **gl** | **str**| Optional GA4 cross-site link id | [optional] 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**configuration** | [**AdvancedMapConfigurationNonAuthenticatedEntity**](AdvancedMapConfigurationNonAuthenticatedEntity.md) |  | [optional] 
-**markers** | [**List[InventoryMapMarkerNonAuthenticatedEntity]**](InventoryMapMarkerNonAuthenticatedEntity.md) |  | [optional] 
+**configuration** | [**AdvancedMapConfigurationNonAuthenticatedEntity**](AdvancedMapConfigurationNonAuthenticatedEntity.md) |  | 
+**markers** | [**List[InventoryMapMarkerNonAuthenticatedEntity]**](InventoryMapMarkerNonAuthenticatedEntity.md) |  | 
 
 ## Example
 

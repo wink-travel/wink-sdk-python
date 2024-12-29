@@ -1,6 +1,6 @@
 # QuoteSupplier
 
-The quote used to create totalCapturePrice.
+FX quote for this transfer.
 
 ## Properties
 
