@@ -424,5 +424,5 @@ Create the access token environment variable in your preferred way:
 
 
 ## You might also be interested in...
-
+- TripPay Python SDK Repo: [https://github.com/wink-travel/trip-pay-sdk-python](https://github.com/wink-travel/trip-pay-sdk-python)
 - WordPress: [https://wordpress.org/plugins/wink2travel/](https://wordpress.org/plugins/wink2travel/) 
