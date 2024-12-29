@@ -18,8 +18,6 @@ Name | Type | Description | Notes
 **extra_pax_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **extra_child_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **single_occupancy_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
-**min_occupancy** | **int** |  | [optional] 
-**max_occupancy** | **int** |  | [optional] 
 
 ## Example
 

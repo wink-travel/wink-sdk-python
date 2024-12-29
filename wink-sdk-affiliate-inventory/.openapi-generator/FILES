@@ -23,7 +23,7 @@ docs/CustomMonetaryAmount.md
 docs/CustomizationApi.md
 docs/EmbeddableInventoriesApi.md
 docs/EngineConfigurationAffiliate.md
-docs/EngineConfigurationThemeAffiliate.md
+docs/EngineConfigurationThemeColorsAffiliate.md
 docs/EngineConfigurationViewAffiliate.md
 docs/GenericErrorMessage.md
 docs/GeoJsonLineStringAffiliate.md
@@ -76,6 +76,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_engine_configuration_theme_colors_affiliate.py
 tox.ini
 wink_sdk_affiliate_inventory/__init__.py
 wink_sdk_affiliate_inventory/api/__init__.py
@@ -110,7 +111,7 @@ wink_sdk_affiliate_inventory/models/create_static_seller_list_syndication_entry_
 wink_sdk_affiliate_inventory/models/create_supplier_url_syndication_entry_request_affiliate.py
 wink_sdk_affiliate_inventory/models/custom_monetary_amount.py
 wink_sdk_affiliate_inventory/models/engine_configuration_affiliate.py
-wink_sdk_affiliate_inventory/models/engine_configuration_theme_affiliate.py
+wink_sdk_affiliate_inventory/models/engine_configuration_theme_colors_affiliate.py
 wink_sdk_affiliate_inventory/models/engine_configuration_view_affiliate.py
 wink_sdk_affiliate_inventory/models/generic_error_message.py
 wink_sdk_affiliate_inventory/models/geo_json_line_string_affiliate.py

@@ -21,13 +21,13 @@ Name | Type | Description | Notes
 **perk_types** | **List[str]** | List of perks that came with the master rate | [optional] 
 **extra_charges** | [**ExtraChargesSupplierDetails**](ExtraChargesSupplierDetails.md) |  | 
 **active_cancellation_policy** | [**CancellationPolicySupplierDetails**](CancellationPolicySupplierDetails.md) |  | 
-**cancellable** | **bool** |  | [optional] 
 **cancellable_by_hotel** | **bool** |  | [optional] 
 **cancellable_with_potential_charge** | **bool** |  | [optional] 
+**cancellable** | **bool** |  | [optional] 
+**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **rate_source** | **str** |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **guests** | **int** |  | [optional] 
 

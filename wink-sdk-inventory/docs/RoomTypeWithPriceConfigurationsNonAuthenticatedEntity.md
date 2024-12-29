@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **room** | [**GuestRoomNonAuthenticatedEntity**](GuestRoomNonAuthenticatedEntity.md) |  | 
 **price_configurations** | [**List[RoomConfigurationPriceNonAuthenticatedEntity]**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | 
-**best_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
 **available** | **bool** |  | [optional] 
+**best_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

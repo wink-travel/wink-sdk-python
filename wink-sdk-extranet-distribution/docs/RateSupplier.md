@@ -20,8 +20,6 @@ Name | Type | Description | Notes
 **month** | **int** | Month | [optional] 
 **year** | **int** | Year | [optional] 
 **quantity** | **int** | Amount of rooms available for this date. | [optional] [default to 0]
-**min_occupancy** | **int** | Minimum number of guests allowed in a room type. | [default to 1]
-**max_occupancy** | **int** | Maximum number of guest allowed in a room type. | [default to 2]
 **min_length_of_stay** | **int** | Control the minimum length of stay at the day-level. This means that a guest arriving within this date range is required to stay at least these number of days in order to get this rate. Leave empty if you don&#39;t want to update this property. | [optional] [default to -1]
 **max_length_of_stay** | **int** | Control the maximum length of stay at the day-level. This means that a guest arriving within this date range is required to stay no longer than these number of days in order to get this rate. Leave empty if you don&#39;t want to update this property. | [optional] [default to -1]
 **single_occupancy_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 

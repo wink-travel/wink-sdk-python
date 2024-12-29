@@ -6,7 +6,7 @@ README.md
 docs/ChildNonAuthenticatedEntity.md
 docs/ConfigurationApi.md
 docs/EngineClientNonAuthenticatedEntity.md
-docs/EngineConfigurationThemeNonAuthenticatedEntity.md
+docs/EngineConfigurationThemeColorsNonAuthenticatedEntity.md
 docs/GenericErrorMessage.md
 docs/RoomConfigurationNonAuthenticatedEntity.md
 docs/ShowEngineConfiguration400Response.md
@@ -17,6 +17,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_engine_configuration_theme_colors_non_authenticated_entity.py
 tox.ini
 wink_sdk_engine_client/__init__.py
 wink_sdk_engine_client/api/__init__.py
@@ -28,7 +29,7 @@ wink_sdk_engine_client/exceptions.py
 wink_sdk_engine_client/models/__init__.py
 wink_sdk_engine_client/models/child_non_authenticated_entity.py
 wink_sdk_engine_client/models/engine_client_non_authenticated_entity.py
-wink_sdk_engine_client/models/engine_configuration_theme_non_authenticated_entity.py
+wink_sdk_engine_client/models/engine_configuration_theme_colors_non_authenticated_entity.py
 wink_sdk_engine_client/models/generic_error_message.py
 wink_sdk_engine_client/models/room_configuration_non_authenticated_entity.py
 wink_sdk_engine_client/models/show_engine_configuration400_response.py

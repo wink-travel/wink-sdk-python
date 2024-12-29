@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **net_supplier_amount** | **float** | Supplier amount minus supplier modifier. | 
 **net_internal_amount** | **float** | Internal amount minus internal modifier. | 
 **net_capture_amount** | **float** | Capture amount minus capture modifier. | 
+**reconciled** | **bool** | Whether a funds transfer has occurred for this booking. | [optional] 
 **metadata** | **Dict[str, str]** | Place to add more data related to the beneficiary. | [optional] 
 
 ## Example

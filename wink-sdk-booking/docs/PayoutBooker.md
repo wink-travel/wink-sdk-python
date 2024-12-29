@@ -9,16 +9,16 @@ Name | Type | Description | Notes
 **vendor** | **str** | Name of integration vendor | 
 **vendor_identifier** | **str** | Which acquirer account we return fund from. | 
 **vendor_name** | **str** | Name of regional acquirer account. | 
-**vendor_token_key** | **str** | Key to help load Stripe for the correct region. Could be helpful for other vendors as well. | 
-**identifier** | **str** | Unique system ID. | 
+**ledger_identifier** | **str** | Unique system ID. | 
 **beneficiary_identifier** | **str** | Beneficiary ID. | 
-**external_payee_identifier** | **str** | This would be the cardholder ID for VCCs. | 
+**external_payee_identifier** | **str** | This would be the Wise recipient ID. | 
 **type** | **str** | Type of withdrawal. | 
 **entry** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
 **fees** | [**List[PayoutFeeBooker]**](PayoutFeeBooker.md) | Fees incurred when making the withdrawal. | [optional] 
+**quote** | [**QuoteBooker**](QuoteBooker.md) |  | [optional] 
 **created** | **datetime** | When the payout record was created. | 
 **description** | **str** | Textual response from provider | [optional] 
-**payout_id** | **str** | The identifier that was generated when scheduling the payout. This will come from the payout provider such as Stripe. | [optional] 
+**payout_id** | **str** | The ledgerIdentifier that was generated when scheduling the payout. This will come from the payout provider such as Stripe. | [optional] 
 **reference_code** | **str** | The transaction code that was generated when the funds move out of TripPay&#39;s account. This will come from the payout provider such as Stripe. E.g. For VCCs, it will occur when an authorization takes place. | [optional] 
 **reference_code_date** | **datetime** | The time the funds were withdrawn | [optional] 
 **status** | **str** | Status of withdrawal. | 

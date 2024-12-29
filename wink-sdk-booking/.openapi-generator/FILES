@@ -56,7 +56,7 @@ docs/DailyRateBooker.md
 docs/DowPatternGroupAuthenticatedEntity.md
 docs/DowPatternGroupBooker.md
 docs/EngineConfigurationBookingReportBooker.md
-docs/EngineConfigurationThemeBooker.md
+docs/EngineConfigurationThemeColorsBooker.md
 docs/ExtraChargeAuthenticatedEntity.md
 docs/ExtraChargeBooker.md
 docs/ExtraChargesAuthenticatedEntity.md
@@ -153,6 +153,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_engine_configuration_theme_colors_booker.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py
@@ -216,7 +217,7 @@ wink_sdk_booking/models/daily_rate_booker.py
 wink_sdk_booking/models/dow_pattern_group_authenticated_entity.py
 wink_sdk_booking/models/dow_pattern_group_booker.py
 wink_sdk_booking/models/engine_configuration_booking_report_booker.py
-wink_sdk_booking/models/engine_configuration_theme_booker.py
+wink_sdk_booking/models/engine_configuration_theme_colors_booker.py
 wink_sdk_booking/models/extra_charge_authenticated_entity.py
 wink_sdk_booking/models/extra_charge_booker.py
 wink_sdk_booking/models/extra_charges_authenticated_entity.py

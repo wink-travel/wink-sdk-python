@@ -1,12 +1,14 @@
 # SellerUrlPriceNonAuthenticatedEntity
 
+The price of the link being exposed
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**percent_discount** | **float** |  | [optional] 
+**percent_discount** | **float** | Price discount in percent | [optional] 
 
 ## Example
 
