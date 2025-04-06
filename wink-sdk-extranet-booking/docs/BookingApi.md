@@ -107,8 +107,6 @@ Name | Type | Description  | Notes
 # **generate_booking_report**
 > generate_booking_report(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
 
-
-
 ### Example
 
 * OAuth Authentication (oauth2ClientCredentials):
