@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 **end_date** | **date** | SimpleDateTimeItinerary endDate | 
 **room_rate_identifier** | **str** | Specified master rate identifier | 
 **room_rate_internal_name** | **str** | Specified master rate internal name | 
-**rate_plan** | [**RatePlanSupplierDetails**](RatePlanSupplierDetails.md) |  | 
-**perk_types** | **List[str]** |  | [optional] 
+**rate_plan** | [**RoomConfigurationPriceRatePlanSupplierDetails**](RoomConfigurationPriceRatePlanSupplierDetails.md) |  | 
+**perk_types** | [**List[PerkLightweightSupplierDetails]**](PerkLightweightSupplierDetails.md) |  | [optional] 
 **price** | [**StayRateSupplierDetails**](StayRateSupplierDetails.md) |  | 
 **extra_charges** | [**ExtraChargesSupplierDetails**](ExtraChargesSupplierDetails.md) |  | [optional] 
 **configuration** | [**RoomConfigurationSupplierDetails**](RoomConfigurationSupplierDetails.md) |  | 
 **add_on_offers** | [**List[AddOnLocalizedInventorySupplierDetails]**](AddOnLocalizedInventorySupplierDetails.md) |  | [optional] 
-**perk_value** | **int** | The combined value of these perks | [optional] 
+**perk_value** | **int** | The combined value of these perkTypes | [optional] 
 **active_cancellation_policy** | [**CancellationPolicySupplierDetails**](CancellationPolicySupplierDetails.md) |  | 
 **room_nights** | **int** | Number of nights the guests will be staying | 
 **list** | [**List[LocalizedTransactionalTravelInventorySupplierDetails]**](LocalizedTransactionalTravelInventorySupplierDetails.md) |  | [optional] 
@@ -26,10 +26,10 @@ Name | Type | Description | Notes
 **commission** | **float** | The commission percentage. | 
 **direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]
 **price_list** | [**List[LocalizedTransactionalTravelInventorySupplierDetails]**](LocalizedTransactionalTravelInventorySupplierDetails.md) |  | [optional] 
-**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **available** | **bool** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example

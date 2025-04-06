@@ -1,6 +1,6 @@
 # SimpleDescriptionSupplierDetails
 
-Localized media captions to give user some context about where this media was taken.
+Localized description for this perk
 
 ## Properties
 

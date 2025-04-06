@@ -6,9 +6,9 @@ List of property attractions on and off the premises.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attraction** | [**AttractionNonAuthenticatedEntity**](AttractionNonAuthenticatedEntity.md) |  | [optional] 
+**attraction** | [**AttractionLightweightNonAuthenticatedEntity**](AttractionLightweightNonAuthenticatedEntity.md) |  | [optional] 
 **list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
-**channel_inventory_identifier** | **str** | Channel blocking identifier referencing this record. | [optional] 
+**channel_inventory_identifier** | **str** | Channel inventory identifier referencing this record. | [optional] 
 **commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | [optional] 
 **commission** | **float** | The commission percentage. | [optional] 
 **direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]

@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **localized_name** | **str** | Name of travel blocking in traveler language (if available). Defaults to English. | 
 **localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
 **contact** | [**ContactBooker**](ContactBooker.md) |  | 
-**address** | [**AddressBooker**](AddressBooker.md) |  | 
+**address** | [**SimpleAddressBooker**](SimpleAddressBooker.md) |  | 
 **commissionable** | **bool** |  | 
 **mandatory** | **bool** |  | 
 **commission** | **float** |  | 

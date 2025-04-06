@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Create Scheduler Item
 
-Create a calendar item for any travel blocking such as meeting room, restaurant, spa, activity, attraction or place.
+Create a calendar item for any travel inventorysuch as meeting room, restaurant, spa, activity, attraction or place.
 
 ### Example
 
@@ -45,8 +45,8 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SchedulerApi(api_client)
-    property_identifier = 'hotel-1' # str | Create a calendar item for travel blocking owned by this property identifier
-    inventory_identifier = 'travel-blocking-1' # str | Create a calendar item for travel blocking with this identifier
+    property_identifier = 'hotel-1' # str | Create a calendar item for travel inventoryowned by this property identifier
+    inventory_identifier = 'travel-blocking-1' # str | Create a calendar item for travel inventorywith this identifier
     create_schedule_item_request_supplier = wink_sdk_extranet_distribution.CreateScheduleItemRequestSupplier() # CreateScheduleItemRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
@@ -66,8 +66,8 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Create a calendar item for travel blocking owned by this property identifier | 
- **inventory_identifier** | **str**| Create a calendar item for travel blocking with this identifier | 
+ **property_identifier** | **str**| Create a calendar item for travel inventoryowned by this property identifier | 
+ **inventory_identifier** | **str**| Create a calendar item for travel inventorywith this identifier | 
  **create_schedule_item_request_supplier** | [**CreateScheduleItemRequestSupplier**](CreateScheduleItemRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 Delete Scheduler Item
 
-Delete a calendar item for any travel blocking such as meeting room, restaurant, spa, activity, attraction or place.
+Delete a calendar item for any travel inventorysuch as meeting room, restaurant, spa, activity, attraction or place.
 
 ### Example
 
@@ -130,8 +130,8 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SchedulerApi(api_client)
-    property_identifier = 'hotel-1' # str | Remove a calendar item for travel blocking owned by this property identifier
-    inventory_identifier = 'travel-blocking-1' # str | Remove a calendar item for travel blocking with this identifier
+    property_identifier = 'hotel-1' # str | Remove a calendar item for travel inventoryowned by this property identifier
+    inventory_identifier = 'travel-blocking-1' # str | Remove a calendar item for travel inventorywith this identifier
     identifier = 'schedule-item-1' # str | Remove a calendar item with this identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -152,8 +152,8 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Remove a calendar item for travel blocking owned by this property identifier | 
- **inventory_identifier** | **str**| Remove a calendar item for travel blocking with this identifier | 
+ **property_identifier** | **str**| Remove a calendar item for travel inventoryowned by this property identifier | 
+ **inventory_identifier** | **str**| Remove a calendar item for travel inventorywith this identifier | 
  **identifier** | **str**| Remove a calendar item with this identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -217,8 +217,8 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SchedulerApi(api_client)
-    property_identifier = 'hotel-1' # str | Show calendar items for travel blocking owned by this property identifier
-    inventory_identifier = 'travel-blocking-1' # str | Show calendar items for travel blocking with this identifier
+    property_identifier = 'hotel-1' # str | Show calendar items for travel inventoryowned by this property identifier
+    inventory_identifier = 'travel-blocking-1' # str | Show calendar items for travel inventorywith this identifier
     start = '2017-12-22T03:07:58.742+0000' # datetime | Specify start date range
     end = '2017-12-23T03:07:58.742+0000' # datetime | Specify end date range
     wink_version = 'wink_version_example' # str |  (optional)
@@ -240,8 +240,8 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Show calendar items for travel blocking owned by this property identifier | 
- **inventory_identifier** | **str**| Show calendar items for travel blocking with this identifier | 
+ **property_identifier** | **str**| Show calendar items for travel inventoryowned by this property identifier | 
+ **inventory_identifier** | **str**| Show calendar items for travel inventorywith this identifier | 
  **start** | **datetime**| Specify start date range | 
  **end** | **datetime**| Specify end date range | 
  **wink_version** | **str**|  | [optional] 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 Update Scheduler Item
 
-Update an existing calendar item for any travel blocking such as meeting room, restaurant, spa, activity, attraction or place.
+Update an existing calendar item for any travel inventorysuch as meeting room, restaurant, spa, activity, attraction or place.
 
 ### Example
 
@@ -307,8 +307,8 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SchedulerApi(api_client)
-    property_identifier = 'hotel-1' # str | Update a calendar item for travel blocking owned by this property identifier
-    inventory_identifier = 'travel-blocking-1' # str | Update a calendar item for travel blocking with this identifier
+    property_identifier = 'hotel-1' # str | Update a calendar item for travel inventoryowned by this property identifier
+    inventory_identifier = 'travel-blocking-1' # str | Update a calendar item for travel inventorywith this identifier
     identifier = 'schedule-item-1' # str | Update a calendar item with this identifier
     update_schedule_item_request_supplier = wink_sdk_extranet_distribution.UpdateScheduleItemRequestSupplier() # UpdateScheduleItemRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
@@ -329,8 +329,8 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Update a calendar item for travel blocking owned by this property identifier | 
- **inventory_identifier** | **str**| Update a calendar item for travel blocking with this identifier | 
+ **property_identifier** | **str**| Update a calendar item for travel inventoryowned by this property identifier | 
+ **inventory_identifier** | **str**| Update a calendar item for travel inventorywith this identifier | 
  **identifier** | **str**| Update a calendar item with this identifier | 
  **update_schedule_item_request_supplier** | [**UpdateScheduleItemRequestSupplier**](UpdateScheduleItemRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 

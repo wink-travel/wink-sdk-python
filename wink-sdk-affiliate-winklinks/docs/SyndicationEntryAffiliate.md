@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **og_type** | **str** | The open graph content type | [optional] 
 **tags** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Optional user categories | [optional] 
 **media** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) |  | [optional] 
+**intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
 
 ## Example
 

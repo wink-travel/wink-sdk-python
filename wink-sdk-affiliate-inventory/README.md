@@ -1,13 +1,13 @@
 # wink-sdk-affiliate-inventory
  # Introduction
- Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel blocking on the Wink platform. The API gives you all the tools you need to ready your properties and blocking for sale across 1000s of our native sales channels.
- Integrators, affiliates, travel agents and content creators have the ability search for your travel blocking and promote / sell it in a wide variety of ways.
+ Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.
+ Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.
 
  # Integrations
  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.
 
  # Intended Audience
- Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel blocking and get that same blocking out to as many eyeballs as possible at the lowest price possible.
+ Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.
  - Hotel chains
  - Hotel brands
  - Travel tech companies
@@ -31,16 +31,16 @@
 - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.
 
 ### Consume APIs
-Consume endpoints are for developers who want to find existing travel blocking and either book it or use it to advertise through one of their Wink affiliate accounts.
+Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.
 
  - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.
- - [Lookup](/lookup): All APIs related to locating blocking by region, locale and property flags.
- - [Inventory](/blocking): All APIs related to retrieve known travel blocking as it was found using the Lookup API..
+ - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.
+ - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..
  - [Booking](/booking): All APIs related to creating bookings on the platform.
  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.
 
  ### Produce APIs
- Produce endpoints are for developers who want to create and manage travel blocking.
+ Produce endpoints are for developers who want to create and manage travel inventory.
 
  #### Property
  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
@@ -48,13 +48,13 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
- - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and blocking calendars and more on Wink.
+ - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
 
  #### Affiliate
  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
- - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and blocking to sell.
- - [Inventory](/affiliate/blocking): The Inventory API exposes endpoints for affiliates to manage the blocking they want to sell and how they want to sell it.
+ - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
+ - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
 
@@ -62,7 +62,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
 
  ### Taxonomy APIs
- Taxonomy endpoints are for developers who want to consume and produce travel blocking and need taxonomies of standard and non-standard codes for blocking types, classes, statuses etc.
+ Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.
 
  - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.
 
@@ -72,7 +72,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
 
  ### Payment APIs
- Payment endpoints are for developers who want to purchase travel blocking. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
+ Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
 
  - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.
 
@@ -93,11 +93,11 @@ Consume endpoints are for developers who want to find existing travel blocking a
 
 
 # Inventory API
-The Inventory API exposes endpoints for affiliates to manage the blocking they want to sell and how they want to sell it. This API lets you:
+The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it. This API lets you:
 
 1. Manage customizations.
-2. Shareable Links: Manage shareable supplier / blocking links.
-3. Inventory: Manage individual blocking items.
+2. Shareable Links: Manage shareable supplier / inventory links.
+3. Inventory: Manage individual inventory items.
 4. Lists: Manage curated / ranked grids.
 5. Maps: Manage maps.
 
@@ -107,14 +107,14 @@ Browse the endpoints in the left navigation bar to get started.
 
 This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 30.9.11
-- Package version: 0.0.4
-- Generator version: 7.9.0
+- API version: 30.15.2
+- Package version: 0.0.5
+- Generator version: 7.11.0
 - Build package: org.openapitools.codegen.languages.PythonClientCodegen
 
 ## Requirements.
 
-Python 3.7+
+Python 3.8+
 
 ## Installation & Usage
 ### pip install
@@ -126,9 +126,9 @@ pip install wink_sdk_affiliate_inventory
 
 Or you can install it directly from the repository using:
 ```sh
-pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_affiliate_inventory&subdirectory=wink-sdk-affiliate-inventory
+pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_affiliate_inventory&subdirectory=wink-sdk-affiliate-inventory
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_affiliate_inventory&subdirectory=wink_sdk_affiliate_inventory`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_affiliate_inventory&subdirectory=wink_sdk_affiliate_inventory`)
 
 Then import the package:
 ```python
@@ -181,13 +181,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.CustomizationApi(api_client)
-    company_identifier = 'company-1' # str | Create customization for this company
     upsert_engine_configuration_request_affiliate = wink_sdk_affiliate_inventory.UpsertEngineConfigurationRequestAffiliate() # UpsertEngineConfigurationRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Customization
-        api_response = api_instance.create_customization(company_identifier, upsert_engine_configuration_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_customization(upsert_engine_configuration_request_affiliate, wink_version=wink_version)
         print("The response of CustomizationApi->create_customization:\n")
         pprint(api_response)
     except ApiException as e:
@@ -201,55 +200,55 @@ All URIs are relative to *https://api.wink.travel*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CustomizationApi* | [**create_customization**](docs/CustomizationApi.md#create_customization) | **POST** /api/affiliate/{companyIdentifier}/configuration | Create Customization
-*CustomizationApi* | [**remove_customization**](docs/CustomizationApi.md#remove_customization) | **DELETE** /api/affiliate/{companyIdentifier}/configuration/{engineConfigurationIdentifier} | Remove Customization
-*CustomizationApi* | [**show_application_configuration**](docs/CustomizationApi.md#show_application_configuration) | **GET** /api/affiliate/{companyIdentifier}/configuration/{engineConfigurationIdentifier} | Show Customization
-*CustomizationApi* | [**show_application_configurations_by_owner**](docs/CustomizationApi.md#show_application_configurations_by_owner) | **GET** /api/affiliate/{companyIdentifier}/configuration/list | Show Customizations
-*CustomizationApi* | [**show_primary_application_configuration**](docs/CustomizationApi.md#show_primary_application_configuration) | **GET** /api/affiliate/{companyIdentifier}/configuration | Show Primary Customization
-*CustomizationApi* | [**update_customization**](docs/CustomizationApi.md#update_customization) | **PUT** /api/affiliate/{companyIdentifier}/configuration/{engineConfigurationIdentifier} | Update Customization
-*EmbeddableInventoriesApi* | [**show_embeddable_inventory**](docs/EmbeddableInventoriesApi.md#show_embeddable_inventory) | **GET** /api/affiliate/{companyIdentifier}/embeddable-inventory/list | Show Embeddable Inventories
-*GridsApi* | [**create_seller_inventory_list**](docs/GridsApi.md#create_seller_inventory_list) | **POST** /api/affiliate/{companyIdentifier}/grids | Create Grid
-*GridsApi* | [**create_seller_inventory_list_syndication_entry**](docs/GridsApi.md#create_seller_inventory_list_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/grids/syndication/entry | Add List to WinkLinks
-*GridsApi* | [**remove_seller_inventory_list**](docs/GridsApi.md#remove_seller_inventory_list) | **DELETE** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Delete Grid
-*GridsApi* | [**show_seller_inventory_list**](docs/GridsApi.md#show_seller_inventory_list) | **GET** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Show Grid
-*GridsApi* | [**show_seller_inventory_lists**](docs/GridsApi.md#show_seller_inventory_lists) | **GET** /api/affiliate/{companyIdentifier}/grids/list | Show Grids
-*GridsApi* | [**update_seller_inventory_list**](docs/GridsApi.md#update_seller_inventory_list) | **PUT** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Update Grid
-*InventoryLinksApi* | [**create_seller_url**](docs/InventoryLinksApi.md#create_seller_url) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/inventory | Create Link
-*InventoryLinksApi* | [**create_supplier_url_syndication_entry1**](docs/InventoryLinksApi.md#create_supplier_url_syndication_entry1) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/inventory/syndication/entry | Add to WinkLinks
-*InventoryLinksApi* | [**remove_seller_url**](docs/InventoryLinksApi.md#remove_seller_url) | **DELETE** /api/affiliate/{companyIdentifier}/shareable-link/inventory/{sellerUrlIdentifier} | Delete Link
-*InventoryLinksApi* | [**show_inventory_media**](docs/InventoryLinksApi.md#show_inventory_media) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/inventory/{channelInventoryIdentifier}/media/list | Show Inventory Media
-*InventoryLinksApi* | [**show_seller_url**](docs/InventoryLinksApi.md#show_seller_url) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/inventory/{sellerUrlIdentifier} | Show Link
-*InventoryLinksApi* | [**show_seller_urls**](docs/InventoryLinksApi.md#show_seller_urls) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/inventory/list | Show Links
-*InventoryLinksApi* | [**update_seller_url**](docs/InventoryLinksApi.md#update_seller_url) | **PUT** /api/affiliate/{companyIdentifier}/shareable-link/inventory/{sellerUrlIdentifier} | Update link
-*ItemsApi* | [**create_seller_inventory_item**](docs/ItemsApi.md#create_seller_inventory_item) | **POST** /api/affiliate/{companyIdentifier}/items | Create Item
-*ItemsApi* | [**create_seller_inventory_item_syndication_entry**](docs/ItemsApi.md#create_seller_inventory_item_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/items/syndication/entry | Add to WinkLinks
-*ItemsApi* | [**create_supplier_seller_inventory_item**](docs/ItemsApi.md#create_supplier_seller_inventory_item) | **POST** /api/affiliate/{companyIdentifier}/items/supplier | Create Supplier Item
-*ItemsApi* | [**remove_seller_inventory_item**](docs/ItemsApi.md#remove_seller_inventory_item) | **DELETE** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Delete Item
-*ItemsApi* | [**show_inventory_media1**](docs/ItemsApi.md#show_inventory_media1) | **GET** /api/affiliate/{companyIdentifier}/items/inventory/{channelInventoryIdentifier}/media/list | Show Item Media
-*ItemsApi* | [**show_seller_inventory_item**](docs/ItemsApi.md#show_seller_inventory_item) | **GET** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Show Item
-*ItemsApi* | [**show_seller_inventory_items_for_company**](docs/ItemsApi.md#show_seller_inventory_items_for_company) | **GET** /api/affiliate/{companyIdentifier}/items/list | Show Items
-*ItemsApi* | [**update_seller_inventory_item**](docs/ItemsApi.md#update_seller_inventory_item) | **PUT** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Update Item
-*MapsApi* | [**create_advanced_map_configuration**](docs/MapsApi.md#create_advanced_map_configuration) | **POST** /api/affiliate/{companyIdentifier}/map | Create Inventory Map
-*MapsApi* | [**create_advanced_map_configuration_for_supplier**](docs/MapsApi.md#create_advanced_map_configuration_for_supplier) | **POST** /api/affiliate/{companyIdentifier}/map/supplier | Create Supplier Map
-*MapsApi* | [**create_advanced_map_syndication_entry**](docs/MapsApi.md#create_advanced_map_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/map/syndication/entry | Add to WinkLinks
-*MapsApi* | [**remove_advanced_map_configuration**](docs/MapsApi.md#remove_advanced_map_configuration) | **DELETE** /api/affiliate/{companyIdentifier}/map/{mapIdentifier} | Delete Map
-*MapsApi* | [**show_advanced_map_configuration**](docs/MapsApi.md#show_advanced_map_configuration) | **GET** /api/affiliate/{companyIdentifier}/map/{mapIdentifier} | Show Map
-*MapsApi* | [**show_advanced_map_configuration_map_marker**](docs/MapsApi.md#show_advanced_map_configuration_map_marker) | **GET** /api/affiliate/{companyIdentifier}/map/marker/{channelInventoryIdentifier} | Show Map Marker
-*MapsApi* | [**show_advanced_map_configuration_map_markers**](docs/MapsApi.md#show_advanced_map_configuration_map_markers) | **GET** /api/affiliate/{companyIdentifier}/map/markers/{listType}/{listIdentifier} | Show Map Markers
-*MapsApi* | [**show_advanced_map_configurations**](docs/MapsApi.md#show_advanced_map_configurations) | **GET** /api/affiliate/{companyIdentifier}/map | Show Maps
-*MapsApi* | [**update_advanced_map_configuration**](docs/MapsApi.md#update_advanced_map_configuration) | **PUT** /api/affiliate/{companyIdentifier}/map/{mapIdentifier} | Update Map
-*RankedGridsApi* | [**create_seller_inventory_ranked_list**](docs/RankedGridsApi.md#create_seller_inventory_ranked_list) | **POST** /api/affiliate/{companyIdentifier}/ranked-grids | Create Ranked Grid
-*RankedGridsApi* | [**create_seller_inventory_ranked_list_syndication_entry**](docs/RankedGridsApi.md#create_seller_inventory_ranked_list_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/ranked-grids/syndication/entry | Add to WinkLinks
-*RankedGridsApi* | [**remove_seller_inventory_ranked_list**](docs/RankedGridsApi.md#remove_seller_inventory_ranked_list) | **DELETE** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Delete Ranked Grid
-*RankedGridsApi* | [**show_seller_inventory_ranked_list**](docs/RankedGridsApi.md#show_seller_inventory_ranked_list) | **GET** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Show Ranked Grid
-*RankedGridsApi* | [**show_seller_inventory_ranked_lists**](docs/RankedGridsApi.md#show_seller_inventory_ranked_lists) | **GET** /api/affiliate/{companyIdentifier}/ranked-grids/list | Show Ranked Grids
-*RankedGridsApi* | [**update_seller_inventory_ranked_list**](docs/RankedGridsApi.md#update_seller_inventory_ranked_list) | **PUT** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Update Ranked Grid
-*SupplierLinksApi* | [**create_supplier_url**](docs/SupplierLinksApi.md#create_supplier_url) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/supplier | Create Link
-*SupplierLinksApi* | [**create_supplier_url_syndication_entry**](docs/SupplierLinksApi.md#create_supplier_url_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/supplier/syndication/entry | Add to WinkLinks
-*SupplierLinksApi* | [**remove_supplier_url**](docs/SupplierLinksApi.md#remove_supplier_url) | **DELETE** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Delete Link
-*SupplierLinksApi* | [**show_supplier_url**](docs/SupplierLinksApi.md#show_supplier_url) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Show Link
-*SupplierLinksApi* | [**show_supplier_urls**](docs/SupplierLinksApi.md#show_supplier_urls) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/supplier/list | Show Links
-*SupplierLinksApi* | [**update_supplier_url**](docs/SupplierLinksApi.md#update_supplier_url) | **PUT** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Update link
+*CustomizationApi* | [**create_customization**](docs/CustomizationApi.md#create_customization) | **POST** /api/configuration | Create Customization
+*CustomizationApi* | [**remove_customization**](docs/CustomizationApi.md#remove_customization) | **DELETE** /api/configuration/{engineConfigurationIdentifier} | Remove Customization
+*CustomizationApi* | [**show_application_configuration**](docs/CustomizationApi.md#show_application_configuration) | **GET** /api/configuration/{engineConfigurationIdentifier} | Show Customization
+*CustomizationApi* | [**show_application_configurations_by_owner**](docs/CustomizationApi.md#show_application_configurations_by_owner) | **GET** /api/configuration/list | Show Customizations
+*CustomizationApi* | [**show_primary_application_configuration**](docs/CustomizationApi.md#show_primary_application_configuration) | **GET** /api/configuration | Show Primary Customization
+*CustomizationApi* | [**update_customization**](docs/CustomizationApi.md#update_customization) | **PUT** /api/configuration/{engineConfigurationIdentifier} | Update Customization
+*EmbeddableInventoriesApi* | [**show_embeddable_inventory**](docs/EmbeddableInventoriesApi.md#show_embeddable_inventory) | **GET** /api/embeddable-inventory/list | Show Embeddable Inventories
+*GridsApi* | [**create_seller_inventory_list**](docs/GridsApi.md#create_seller_inventory_list) | **POST** /api/grids | Create Grid
+*GridsApi* | [**create_seller_inventory_list_syndication_entry**](docs/GridsApi.md#create_seller_inventory_list_syndication_entry) | **POST** /api/grids/syndication/entry | Add List to WinkLinks
+*GridsApi* | [**remove_seller_inventory_list**](docs/GridsApi.md#remove_seller_inventory_list) | **DELETE** /api/grids/{listIdentifier} | Delete Grid
+*GridsApi* | [**show_seller_inventory_list**](docs/GridsApi.md#show_seller_inventory_list) | **GET** /api/grids/{listIdentifier} | Show Grid
+*GridsApi* | [**show_seller_inventory_lists**](docs/GridsApi.md#show_seller_inventory_lists) | **GET** /api/grids/list | Show Grids
+*GridsApi* | [**update_seller_inventory_list**](docs/GridsApi.md#update_seller_inventory_list) | **PUT** /api/grids/{listIdentifier} | Update Grid
+*InventoryLinksApi* | [**create_seller_url**](docs/InventoryLinksApi.md#create_seller_url) | **POST** /api/shareable-link/inventory | Create Link
+*InventoryLinksApi* | [**create_supplier_url_syndication_entry1**](docs/InventoryLinksApi.md#create_supplier_url_syndication_entry1) | **POST** /api/shareable-link/inventory/syndication/entry | Add to WinkLinks
+*InventoryLinksApi* | [**remove_seller_url**](docs/InventoryLinksApi.md#remove_seller_url) | **DELETE** /api/shareable-link/inventory/{sellerUrlIdentifier} | Delete Link
+*InventoryLinksApi* | [**show_inventory_media**](docs/InventoryLinksApi.md#show_inventory_media) | **GET** /api/shareable-link/inventory/{channelInventoryIdentifier}/media/list | Show Inventory Media
+*InventoryLinksApi* | [**show_seller_url**](docs/InventoryLinksApi.md#show_seller_url) | **GET** /api/shareable-link/inventory/{sellerUrlIdentifier} | Show Link
+*InventoryLinksApi* | [**show_seller_urls**](docs/InventoryLinksApi.md#show_seller_urls) | **GET** /api/shareable-link/inventory/list | Show Links
+*InventoryLinksApi* | [**update_seller_url**](docs/InventoryLinksApi.md#update_seller_url) | **PUT** /api/shareable-link/inventory/{sellerUrlIdentifier} | Update link
+*ItemsApi* | [**create_seller_inventory_item**](docs/ItemsApi.md#create_seller_inventory_item) | **POST** /api/items | Create Item
+*ItemsApi* | [**create_seller_inventory_item_syndication_entry**](docs/ItemsApi.md#create_seller_inventory_item_syndication_entry) | **POST** /api/items/syndication/entry | Add to WinkLinks
+*ItemsApi* | [**create_supplier_seller_inventory_item**](docs/ItemsApi.md#create_supplier_seller_inventory_item) | **POST** /api/items/supplier | Create Supplier Item
+*ItemsApi* | [**remove_seller_inventory_item**](docs/ItemsApi.md#remove_seller_inventory_item) | **DELETE** /api/items/{inventoryIdentifier} | Delete Item
+*ItemsApi* | [**show_inventory_media1**](docs/ItemsApi.md#show_inventory_media1) | **GET** /api/items/inventory/{channelInventoryIdentifier}/media/list | Show Item Media
+*ItemsApi* | [**show_seller_inventory_item**](docs/ItemsApi.md#show_seller_inventory_item) | **GET** /api/items/{inventoryIdentifier} | Show Item
+*ItemsApi* | [**show_seller_inventory_items_for_company**](docs/ItemsApi.md#show_seller_inventory_items_for_company) | **GET** /api/items/list | Show Items
+*ItemsApi* | [**update_seller_inventory_item**](docs/ItemsApi.md#update_seller_inventory_item) | **PUT** /api/items/{inventoryIdentifier} | Update Item
+*MapsApi* | [**create_advanced_map_configuration**](docs/MapsApi.md#create_advanced_map_configuration) | **POST** /api/map | Create Inventory Map
+*MapsApi* | [**create_advanced_map_configuration_for_supplier**](docs/MapsApi.md#create_advanced_map_configuration_for_supplier) | **POST** /api/map/supplier | Create Supplier Map
+*MapsApi* | [**create_advanced_map_syndication_entry**](docs/MapsApi.md#create_advanced_map_syndication_entry) | **POST** /api/map/syndication/entry | Add to WinkLinks
+*MapsApi* | [**remove_advanced_map_configuration**](docs/MapsApi.md#remove_advanced_map_configuration) | **DELETE** /api/map/{mapIdentifier} | Delete Map
+*MapsApi* | [**show_advanced_map_configuration**](docs/MapsApi.md#show_advanced_map_configuration) | **GET** /api/map/{mapIdentifier} | Show Map
+*MapsApi* | [**show_advanced_map_configuration_map_marker**](docs/MapsApi.md#show_advanced_map_configuration_map_marker) | **GET** /api/map/marker/{channelInventoryIdentifier} | Show Map Marker
+*MapsApi* | [**show_advanced_map_configuration_map_markers**](docs/MapsApi.md#show_advanced_map_configuration_map_markers) | **GET** /api/map/markers/{listType}/{listIdentifier} | Show Map Markers
+*MapsApi* | [**show_advanced_map_configurations**](docs/MapsApi.md#show_advanced_map_configurations) | **GET** /api/map/list | Show Maps
+*MapsApi* | [**update_advanced_map_configuration**](docs/MapsApi.md#update_advanced_map_configuration) | **PUT** /api/map/{mapIdentifier} | Update Map
+*RankedGridsApi* | [**create_seller_inventory_ranked_list**](docs/RankedGridsApi.md#create_seller_inventory_ranked_list) | **POST** /api/ranked-grids | Create Ranked Grid
+*RankedGridsApi* | [**create_seller_inventory_ranked_list_syndication_entry**](docs/RankedGridsApi.md#create_seller_inventory_ranked_list_syndication_entry) | **POST** /api/ranked-grids/syndication/entry | Add to WinkLinks
+*RankedGridsApi* | [**remove_seller_inventory_ranked_list**](docs/RankedGridsApi.md#remove_seller_inventory_ranked_list) | **DELETE** /api/ranked-grids/{listIdentifier} | Delete Ranked Grid
+*RankedGridsApi* | [**show_seller_inventory_ranked_list**](docs/RankedGridsApi.md#show_seller_inventory_ranked_list) | **GET** /api/ranked-grids/{listIdentifier} | Show Ranked Grid
+*RankedGridsApi* | [**show_seller_inventory_ranked_lists**](docs/RankedGridsApi.md#show_seller_inventory_ranked_lists) | **GET** /api/ranked-grids/list | Show Ranked Grids
+*RankedGridsApi* | [**update_seller_inventory_ranked_list**](docs/RankedGridsApi.md#update_seller_inventory_ranked_list) | **PUT** /api/ranked-grids/{listIdentifier} | Update Ranked Grid
+*SupplierLinksApi* | [**create_supplier_url**](docs/SupplierLinksApi.md#create_supplier_url) | **POST** /api/shareable-link/supplier | Create Link
+*SupplierLinksApi* | [**create_supplier_url_syndication_entry**](docs/SupplierLinksApi.md#create_supplier_url_syndication_entry) | **POST** /api/shareable-link/supplier/syndication/entry | Add to WinkLinks
+*SupplierLinksApi* | [**remove_supplier_url**](docs/SupplierLinksApi.md#remove_supplier_url) | **DELETE** /api/shareable-link/supplier/{supplierUrlIdentifier} | Delete Link
+*SupplierLinksApi* | [**show_supplier_url**](docs/SupplierLinksApi.md#show_supplier_url) | **GET** /api/shareable-link/supplier/{supplierUrlIdentifier} | Show Link
+*SupplierLinksApi* | [**show_supplier_urls**](docs/SupplierLinksApi.md#show_supplier_urls) | **GET** /api/shareable-link/supplier/list | Show Links
+*SupplierLinksApi* | [**update_supplier_url**](docs/SupplierLinksApi.md#update_supplier_url) | **PUT** /api/shareable-link/supplier/{supplierUrlIdentifier} | Update link
 
 
 ## Documentation For Models

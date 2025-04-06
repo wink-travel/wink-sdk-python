@@ -4,21 +4,21 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**show_cities_for_inventory**](BrowseApi.md#show_cities_for_inventory) | **GET** /api/affiliate/{companyIdentifier}/browse/supplier/city/list | Show Supplier Cities
-[**show_cities_for_inventory1**](BrowseApi.md#show_cities_for_inventory1) | **GET** /api/affiliate/{companyIdentifier}/browse/inventory/city/list | Show Inventory Cities
-[**show_countries_for_inventory**](BrowseApi.md#show_countries_for_inventory) | **GET** /api/affiliate/{companyIdentifier}/browse/inventory/country/list | Show Inventory Countries
-[**show_countries_for_inventory_supplier**](BrowseApi.md#show_countries_for_inventory_supplier) | **GET** /api/affiliate/{companyIdentifier}/browse/supplier/country/list | Show Supplier Countries
-[**show_dynamic_seller_inventory**](BrowseApi.md#show_dynamic_seller_inventory) | **POST** /api/affiliate/{companyIdentifier}/browse/inventory/grid | Inventory Search
-[**show_dynamic_seller_inventory_by_id**](BrowseApi.md#show_dynamic_seller_inventory_by_id) | **GET** /api/affiliate/{companyIdentifier}/browse/supplier/grid/{dynamicListIdentifier} | Supplier Search by Saved Search
-[**show_dynamic_seller_inventory_by_id1**](BrowseApi.md#show_dynamic_seller_inventory_by_id1) | **GET** /api/affiliate/{companyIdentifier}/browse/inventory/grid/{dynamicListIdentifier} | Inventory Search by Saved Search
-[**show_inventory_supplier**](BrowseApi.md#show_inventory_supplier) | **GET** /api/affiliate/{companyIdentifier}/browse/supplier/{supplierIdentifier}/sales-channel/{salesChannelIdentifier} | Show Supplier
-[**show_latest_inventory**](BrowseApi.md#show_latest_inventory) | **GET** /api/affiliate/{companyIdentifier}/browse/inventory/list | Latest Inventory
-[**show_latest_inventory_supplier_list**](BrowseApi.md#show_latest_inventory_supplier_list) | **GET** /api/affiliate/{companyIdentifier}/browse/supplier/list | Latest Suppliers
-[**show_suppliers_for_dynamic_seller_inventory**](BrowseApi.md#show_suppliers_for_dynamic_seller_inventory) | **POST** /api/affiliate/{companyIdentifier}/browse/supplier/grid | Supplier Search
+[**show_cities_for_inventory**](BrowseApi.md#show_cities_for_inventory) | **GET** /api/browse/supplier/city/list | Show Supplier Cities
+[**show_cities_for_inventory_0**](BrowseApi.md#show_cities_for_inventory_0) | **GET** /api/browse/inventory/city/list | Show Inventory Cities
+[**show_countries_for_inventory**](BrowseApi.md#show_countries_for_inventory) | **GET** /api/browse/inventory/country/list | Show Inventory Countries
+[**show_countries_for_inventory_supplier**](BrowseApi.md#show_countries_for_inventory_supplier) | **GET** /api/browse/supplier/country/list | Show Supplier Countries
+[**show_dynamic_seller_inventory**](BrowseApi.md#show_dynamic_seller_inventory) | **POST** /api/browse/inventory/grid | Inventory Search
+[**show_dynamic_seller_inventory_by_id**](BrowseApi.md#show_dynamic_seller_inventory_by_id) | **GET** /api/browse/supplier/grid/{dynamicListIdentifier} | Supplier Search by Saved Search
+[**show_dynamic_seller_inventory_by_id_0**](BrowseApi.md#show_dynamic_seller_inventory_by_id_0) | **GET** /api/browse/inventory/grid/{dynamicListIdentifier} | Inventory Search by Saved Search
+[**show_inventory_supplier**](BrowseApi.md#show_inventory_supplier) | **GET** /api/browse/supplier/{supplierIdentifier}/sales-channel/{salesChannelIdentifier} | Show Supplier
+[**show_latest_inventory**](BrowseApi.md#show_latest_inventory) | **GET** /api/browse/inventory/list | Latest Inventory
+[**show_latest_inventory_supplier_list**](BrowseApi.md#show_latest_inventory_supplier_list) | **GET** /api/browse/supplier/list | Latest Suppliers
+[**show_suppliers_for_dynamic_seller_inventory**](BrowseApi.md#show_suppliers_for_dynamic_seller_inventory) | **POST** /api/browse/supplier/grid | Supplier Search
 
 
 # **show_cities_for_inventory**
-> List[GeoNameAffiliate] show_cities_for_inventory(company_identifier, wink_version=wink_version, accept=accept)
+> List[GeoNameAffiliate] show_cities_for_inventory(wink_version=wink_version, accept=accept)
 
 Show Supplier Cities
 
@@ -51,13 +51,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | List cities for blocking on behalf of this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Supplier Cities
-        api_response = api_instance.show_cities_for_inventory(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_cities_for_inventory(wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_cities_for_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -71,7 +70,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List cities for blocking on behalf of this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -100,8 +98,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_cities_for_inventory1**
-> List[GeoNameAffiliate] show_cities_for_inventory1(company_identifier, wink_version=wink_version, accept=accept)
+# **show_cities_for_inventory_0**
+> List[GeoNameAffiliate] show_cities_for_inventory_0(wink_version=wink_version, accept=accept)
 
 Show Inventory Cities
 
@@ -134,17 +132,16 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | List cities for blocking on behalf of this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Inventory Cities
-        api_response = api_instance.show_cities_for_inventory1(company_identifier, wink_version=wink_version, accept=accept)
-        print("The response of BrowseApi->show_cities_for_inventory1:\n")
+        api_response = api_instance.show_cities_for_inventory_0(wink_version=wink_version, accept=accept)
+        print("The response of BrowseApi->show_cities_for_inventory_0:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BrowseApi->show_cities_for_inventory1: %s\n" % e)
+        print("Exception when calling BrowseApi->show_cities_for_inventory_0: %s\n" % e)
 ```
 
 
@@ -154,7 +151,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List cities for blocking on behalf of this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -184,7 +180,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_countries_for_inventory**
-> List[CountryAffiliate] show_countries_for_inventory(company_identifier, wink_version=wink_version, accept=accept)
+> List[CountryAffiliate] show_countries_for_inventory(wink_version=wink_version, accept=accept)
 
 Show Inventory Countries
 
@@ -217,13 +213,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | List countries for blocking on behalf of this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Inventory Countries
-        api_response = api_instance.show_countries_for_inventory(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_countries_for_inventory(wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_countries_for_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -237,7 +232,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List countries for blocking on behalf of this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -267,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_countries_for_inventory_supplier**
-> List[CountryAffiliate] show_countries_for_inventory_supplier(company_identifier, wink_version=wink_version, accept=accept)
+> List[CountryAffiliate] show_countries_for_inventory_supplier(wink_version=wink_version, accept=accept)
 
 Show Supplier Countries
 
@@ -300,13 +294,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | List countries for blocking on behalf of this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Supplier Countries
-        api_response = api_instance.show_countries_for_inventory_supplier(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_countries_for_inventory_supplier(wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_countries_for_inventory_supplier:\n")
         pprint(api_response)
     except Exception as e:
@@ -320,7 +313,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List countries for blocking on behalf of this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -350,11 +342,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_dynamic_seller_inventory**
-> PageInventoryViewAffiliate show_dynamic_seller_inventory(company_identifier, dynamic_seller_list_request_affiliate, wink_version=wink_version)
+> PageInventoryViewAffiliate show_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
 
 Inventory Search
 
-Retrieves a paginated result set of blocking based on the search criteria of the caller.
+Retrieves a paginated result set of inventorybased on the search criteria of the caller.
 
 ### Example
 
@@ -384,13 +376,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking on behalf of this owner identifier.
     dynamic_seller_list_request_affiliate = wink_sdk_affiliate_browse.DynamicSellerListRequestAffiliate() # DynamicSellerListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Inventory Search
-        api_response = api_instance.show_dynamic_seller_inventory(company_identifier, dynamic_seller_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.show_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
         print("The response of BrowseApi->show_dynamic_seller_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -404,7 +395,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking on behalf of this owner identifier. | 
  **dynamic_seller_list_request_affiliate** | [**DynamicSellerListRequestAffiliate**](DynamicSellerListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -434,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_dynamic_seller_inventory_by_id**
-> PageInventorySupplierAffiliate show_dynamic_seller_inventory_by_id(company_identifier, dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> PageInventorySupplierAffiliate show_dynamic_seller_inventory_by_id(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Supplier Search by Saved Search
 
@@ -467,8 +457,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking supplier on behalf of this owner identifier.
-    dynamic_list_identifier = 'dynamic-list-1' # str | Browse blocking supplier on behalf of this dynamic list identifier.
+    dynamic_list_identifier = 'dynamic-list-1' # str | Browse inventory supplier on behalf of this dynamic list identifier.
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
@@ -477,7 +466,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Supplier Search by Saved Search
-        api_response = api_instance.show_dynamic_seller_inventory_by_id(company_identifier, dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_dynamic_seller_inventory_by_id(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_dynamic_seller_inventory_by_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -491,8 +480,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking supplier on behalf of this owner identifier. | 
- **dynamic_list_identifier** | **str**| Browse blocking supplier on behalf of this dynamic list identifier. | 
+ **dynamic_list_identifier** | **str**| Browse inventory supplier on behalf of this dynamic list identifier. | 
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
@@ -524,8 +512,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_dynamic_seller_inventory_by_id1**
-> PageInventoryViewAffiliate show_dynamic_seller_inventory_by_id1(company_identifier, dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+# **show_dynamic_seller_inventory_by_id_0**
+> PageInventoryViewAffiliate show_dynamic_seller_inventory_by_id_0(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Inventory Search by Saved Search
 
@@ -558,8 +546,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking on behalf of this owner identifier.
-    dynamic_list_identifier = 'dynamic-list-1' # str | Browse blocking on behalf of this dynamic list identifier.
+    dynamic_list_identifier = 'dynamic-list-1' # str | Browse inventory on behalf of this dynamic list identifier.
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Limit the size of results. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
@@ -568,11 +555,11 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Inventory Search by Saved Search
-        api_response = api_instance.show_dynamic_seller_inventory_by_id1(company_identifier, dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
-        print("The response of BrowseApi->show_dynamic_seller_inventory_by_id1:\n")
+        api_response = api_instance.show_dynamic_seller_inventory_by_id_0(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+        print("The response of BrowseApi->show_dynamic_seller_inventory_by_id_0:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BrowseApi->show_dynamic_seller_inventory_by_id1: %s\n" % e)
+        print("Exception when calling BrowseApi->show_dynamic_seller_inventory_by_id_0: %s\n" % e)
 ```
 
 
@@ -582,8 +569,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking on behalf of this owner identifier. | 
- **dynamic_list_identifier** | **str**| Browse blocking on behalf of this dynamic list identifier. | 
+ **dynamic_list_identifier** | **str**| Browse inventory on behalf of this dynamic list identifier. | 
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Limit the size of results. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
@@ -616,7 +602,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_inventory_supplier**
-> InventorySupplierAffiliate show_inventory_supplier(company_identifier, supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> InventorySupplierAffiliate show_inventory_supplier(supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Show Supplier
 
@@ -649,16 +635,15 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking supplier on behalf of this owner identifier.
-    supplier_identifier = 'supplier-1' # str | Browse blocking supplier on behalf of this supplier identifier.
-    sales_channel_identifier = 'sales-channel-1' # str | Browse blocking supplier on behalf of this sales channel identifier.
+    supplier_identifier = 'supplier-1' # str | Browse inventory supplier on behalf of this supplier identifier.
+    sales_channel_identifier = 'sales-channel-1' # str | Browse inventory supplier on behalf of this sales channel identifier.
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Supplier
-        api_response = api_instance.show_inventory_supplier(company_identifier, supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_inventory_supplier(supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_inventory_supplier:\n")
         pprint(api_response)
     except Exception as e:
@@ -672,9 +657,8 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking supplier on behalf of this owner identifier. | 
- **supplier_identifier** | **str**| Browse blocking supplier on behalf of this supplier identifier. | 
- **sales_channel_identifier** | **str**| Browse blocking supplier on behalf of this sales channel identifier. | 
+ **supplier_identifier** | **str**| Browse inventory supplier on behalf of this supplier identifier. | 
+ **sales_channel_identifier** | **str**| Browse inventory supplier on behalf of this sales channel identifier. | 
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -705,11 +689,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_latest_inventory**
-> List[InventoryViewAffiliate] show_latest_inventory(company_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> List[InventoryViewAffiliate] show_latest_inventory(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Latest Inventory
 
-Retrieves a list of latest available blocking.
+Retrieves a list of latest available inventory.
 
 ### Example
 
@@ -738,7 +722,6 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking on behalf of this owner identifier.
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
@@ -747,7 +730,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Latest Inventory
-        api_response = api_instance.show_latest_inventory(company_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_latest_inventory(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_latest_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -761,7 +744,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking on behalf of this owner identifier. | 
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
@@ -794,11 +776,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_latest_inventory_supplier_list**
-> List[InventorySupplierAffiliate] show_latest_inventory_supplier_list(company_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> List[InventorySupplierAffiliate] show_latest_inventory_supplier_list(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Latest Suppliers
 
-Retrieves a list of latest available blocking suppliers.
+Retrieves a list of latest available inventorysuppliers.
 
 ### Example
 
@@ -827,7 +809,6 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking supplier on behalf of this owner identifier.
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
@@ -836,7 +817,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Latest Suppliers
-        api_response = api_instance.show_latest_inventory_supplier_list(company_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_latest_inventory_supplier_list(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
         print("The response of BrowseApi->show_latest_inventory_supplier_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -850,7 +831,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking supplier on behalf of this owner identifier. | 
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
@@ -883,11 +863,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_suppliers_for_dynamic_seller_inventory**
-> PageInventorySupplierAffiliate show_suppliers_for_dynamic_seller_inventory(company_identifier, dynamic_seller_list_request_affiliate, wink_version=wink_version)
+> PageInventorySupplierAffiliate show_suppliers_for_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
 
 Supplier Search
 
-Retrieves a paginated result set of suppliers of blocking based on the search criteria of the caller.
+Retrieves a paginated result set of suppliers of inventorybased on the search criteria of the caller.
 
 ### Example
 
@@ -917,13 +897,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    company_identifier = 'owner-1' # str | Browse blocking supplier suppliers on behalf of this owner identifier.
     dynamic_seller_list_request_affiliate = wink_sdk_affiliate_browse.DynamicSellerListRequestAffiliate() # DynamicSellerListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Supplier Search
-        api_response = api_instance.show_suppliers_for_dynamic_seller_inventory(company_identifier, dynamic_seller_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.show_suppliers_for_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
         print("The response of BrowseApi->show_suppliers_for_dynamic_seller_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -937,7 +916,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Browse blocking supplier suppliers on behalf of this owner identifier. | 
  **dynamic_seller_list_request_affiliate** | [**DynamicSellerListRequestAffiliate**](DynamicSellerListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 

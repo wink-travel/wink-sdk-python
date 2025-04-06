@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **hotel_identifier** | **str** | Unique property identifier to retrieve inventory for. | [optional] 
 **url_name** | **str** | Unique url-friendly record identifier of property. | [optional] 
-**hotel** | [**HotelOnMapNonAuthenticatedEntity**](HotelOnMapNonAuthenticatedEntity.md) |  | [optional] 
+**hotel** | [**HotelOnMapLightweightNonAuthenticatedEntity**](HotelOnMapLightweightNonAuthenticatedEntity.md) |  | [optional] 
 **green_index_scores** | [**AggregateGreendexAnswersNonAuthenticatedEntity**](AggregateGreendexAnswersNonAuthenticatedEntity.md) |  | [optional] 
 **room_types** | [**List[RoomTypeWithPriceConfigurationsNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationsNonAuthenticatedEntity.md) | List of room types with price configurations based on the itinerary that was passed on the user session. | [optional] 
 **meeting_rooms** | [**List[MeetingRoomLocalizedInventoryNonAuthenticatedEntity]**](MeetingRoomLocalizedInventoryNonAuthenticatedEntity.md) | List of property meeting rooms on and off the premises. | [optional] 
@@ -23,9 +23,9 @@ Name | Type | Description | Notes
 **announcements** | [**List[AnnouncementNonAuthenticatedEntity]**](AnnouncementNonAuthenticatedEntity.md) | List of property announcements | [optional] 
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
 **sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) |  | [optional] 
-**cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
+**cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
 **available** | **bool** |  | [optional] 
-**best_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
+**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

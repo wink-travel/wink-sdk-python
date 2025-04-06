@@ -4,15 +4,15 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**show_search_category_list**](SearchCategoriesApi.md#show_search_category_list) | **GET** /api/affiliate/{companyIdentifier}/browse/category/list | Show Categories
+[**show_search_category_list**](SearchCategoriesApi.md#show_search_category_list) | **GET** /api/browse/category/list | Show Categories
 
 
 # **show_search_category_list**
-> List[SearchCategoryAffiliate] show_search_category_list(company_identifier, wink_version=wink_version, accept=accept)
+> List[SearchCategoryAffiliate] show_search_category_list(wink_version=wink_version, accept=accept)
 
 Show Categories
 
-Retrieve a list of all active supplier and blocking categories.
+Retrieve a list of all active supplier and inventorycategories.
 
 ### Example
 
@@ -41,13 +41,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.SearchCategoriesApi(api_client)
-    company_identifier = 'owner-1' # str | List search categories on behalf of this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Categories
-        api_response = api_instance.show_search_category_list(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_search_category_list(wink_version=wink_version, accept=accept)
         print("The response of SearchCategoriesApi->show_search_category_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -61,7 +60,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List search categories on behalf of this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 

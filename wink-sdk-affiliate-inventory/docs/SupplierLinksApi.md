@@ -4,16 +4,16 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_supplier_url**](SupplierLinksApi.md#create_supplier_url) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/supplier | Create Link
-[**create_supplier_url_syndication_entry**](SupplierLinksApi.md#create_supplier_url_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/shareable-link/supplier/syndication/entry | Add to WinkLinks
-[**remove_supplier_url**](SupplierLinksApi.md#remove_supplier_url) | **DELETE** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Delete Link
-[**show_supplier_url**](SupplierLinksApi.md#show_supplier_url) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Show Link
-[**show_supplier_urls**](SupplierLinksApi.md#show_supplier_urls) | **GET** /api/affiliate/{companyIdentifier}/shareable-link/supplier/list | Show Links
-[**update_supplier_url**](SupplierLinksApi.md#update_supplier_url) | **PUT** /api/affiliate/{companyIdentifier}/shareable-link/supplier/{supplierUrlIdentifier} | Update link
+[**create_supplier_url**](SupplierLinksApi.md#create_supplier_url) | **POST** /api/shareable-link/supplier | Create Link
+[**create_supplier_url_syndication_entry**](SupplierLinksApi.md#create_supplier_url_syndication_entry) | **POST** /api/shareable-link/supplier/syndication/entry | Add to WinkLinks
+[**remove_supplier_url**](SupplierLinksApi.md#remove_supplier_url) | **DELETE** /api/shareable-link/supplier/{supplierUrlIdentifier} | Delete Link
+[**show_supplier_url**](SupplierLinksApi.md#show_supplier_url) | **GET** /api/shareable-link/supplier/{supplierUrlIdentifier} | Show Link
+[**show_supplier_urls**](SupplierLinksApi.md#show_supplier_urls) | **GET** /api/shareable-link/supplier/list | Show Links
+[**update_supplier_url**](SupplierLinksApi.md#update_supplier_url) | **PUT** /api/shareable-link/supplier/{supplierUrlIdentifier} | Update link
 
 
 # **create_supplier_url**
-> SupplierUrlViewAffiliate create_supplier_url(company_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+> SupplierUrlViewAffiliate create_supplier_url(upsert_supplier_url_request_affiliate, wink_version=wink_version)
 
 Create Link
 
@@ -47,13 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'owner-1' # str | Create link owned by this owner identifier.
     upsert_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierUrlRequestAffiliate() # UpsertSupplierUrlRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Link
-        api_response = api_instance.create_supplier_url(company_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_supplier_url(upsert_supplier_url_request_affiliate, wink_version=wink_version)
         print("The response of SupplierLinksApi->create_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,7 +66,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create link owned by this owner identifier. | 
  **upsert_supplier_url_request_affiliate** | [**UpsertSupplierUrlRequestAffiliate**](UpsertSupplierUrlRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -97,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_supplier_url_syndication_entry**
-> SyndicationEntryAffiliate create_supplier_url_syndication_entry(company_identifier, create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
+> SyndicationEntryAffiliate create_supplier_url_syndication_entry(create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add to WinkLinks
 
@@ -131,13 +129,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     create_supplier_url_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateSupplierUrlSyndicationEntryRequestAffiliate() # CreateSupplierUrlSyndicationEntryRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add to WinkLinks
-        api_response = api_instance.create_supplier_url_syndication_entry(company_identifier, create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_supplier_url_syndication_entry(create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
         print("The response of SupplierLinksApi->create_supplier_url_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -151,7 +148,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **create_supplier_url_syndication_entry_request_affiliate** | [**CreateSupplierUrlSyndicationEntryRequestAffiliate**](CreateSupplierUrlSyndicationEntryRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -181,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_supplier_url**
-> SupplierUrlViewAffiliate remove_supplier_url(company_identifier, supplier_url_identifier, wink_version=wink_version, accept=accept)
+> SupplierUrlViewAffiliate remove_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
 
 Delete Link
 
@@ -214,14 +210,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'owner-1' # str | Remove link owned by this owner identifier.
     supplier_url_identifier = 'seller-url-1' # str | Remove url with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Delete Link
-        api_response = api_instance.remove_supplier_url(company_identifier, supplier_url_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
         print("The response of SupplierLinksApi->remove_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -235,7 +230,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove link owned by this owner identifier. | 
  **supplier_url_identifier** | **str**| Remove url with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -266,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_url**
-> SupplierUrlViewAffiliate show_supplier_url(company_identifier, supplier_url_identifier, wink_version=wink_version, accept=accept)
+> SupplierUrlViewAffiliate show_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
 
 Show Link
 
@@ -299,14 +293,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'owner-1' # str | Show link owned by this owner identifier.
     supplier_url_identifier = 'owner-1' # str | Show link with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Link
-        api_response = api_instance.show_supplier_url(company_identifier, supplier_url_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
         print("The response of SupplierLinksApi->show_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -320,7 +313,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show link owned by this owner identifier. | 
  **supplier_url_identifier** | **str**| Show link with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -351,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_urls**
-> List[SupplierUrlViewAffiliate] show_supplier_urls(company_identifier, wink_version=wink_version, accept=accept)
+> List[SupplierUrlViewAffiliate] show_supplier_urls(wink_version=wink_version, accept=accept)
 
 Show Links
 
@@ -384,13 +376,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'owner-1' # str | Show links list owned by this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Links
-        api_response = api_instance.show_supplier_urls(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_supplier_urls(wink_version=wink_version, accept=accept)
         print("The response of SupplierLinksApi->show_supplier_urls:\n")
         pprint(api_response)
     except Exception as e:
@@ -404,7 +395,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show links list owned by this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -434,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_supplier_url**
-> SupplierUrlViewAffiliate update_supplier_url(company_identifier, supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+> SupplierUrlViewAffiliate update_supplier_url(supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
 
 Update link
 
@@ -468,14 +458,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    company_identifier = 'owner-1' # str | Update link owned by this owner identifier.
     supplier_url_identifier = 'seller-url-1' # str | Update url with this identifier.
     upsert_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierUrlRequestAffiliate() # UpsertSupplierUrlRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update link
-        api_response = api_instance.update_supplier_url(company_identifier, supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_supplier_url(supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
         print("The response of SupplierLinksApi->update_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -489,7 +478,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update link owned by this owner identifier. | 
  **supplier_url_identifier** | **str**| Update url with this identifier. | 
  **upsert_supplier_url_request_affiliate** | [**UpsertSupplierUrlRequestAffiliate**](UpsertSupplierUrlRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 

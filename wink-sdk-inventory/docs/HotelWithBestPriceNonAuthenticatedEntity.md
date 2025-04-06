@@ -6,9 +6,9 @@ Populated only when the type of grid item is `GUEST_ROOM`
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel** | [**HotelOnMapNonAuthenticatedEntity**](HotelOnMapNonAuthenticatedEntity.md) |  | 
-**price** | [**RoomTypeWithBestPriceNonAuthenticatedEntity**](RoomTypeWithBestPriceNonAuthenticatedEntity.md) |  | 
-**room_type_list** | [**List[GuestRoomNonAuthenticatedEntity]**](GuestRoomNonAuthenticatedEntity.md) | Unique property room types | 
+**hotel** | [**HotelOnMapLightweightNonAuthenticatedEntity**](HotelOnMapLightweightNonAuthenticatedEntity.md) |  | 
+**lowest_price** | [**RoomTypeBestPriceNonAuthenticatedEntity**](RoomTypeBestPriceNonAuthenticatedEntity.md) |  | 
+**room_type_list** | [**List[GuestRoomLightweightNonAuthenticatedEntity]**](GuestRoomLightweightNonAuthenticatedEntity.md) | Unique property room types | 
 **price_list** | [**List[RoomTypeBestPriceNonAuthenticatedEntity]**](RoomTypeBestPriceNonAuthenticatedEntity.md) | Best-priced room types | 
 **potential_channel_discount_percent** | **float** | The potential discount the user is entitled to if user is a member / authenticated. | 
 **source_to_user_currency_quote** | [**QuoteNonAuthenticatedEntity**](QuoteNonAuthenticatedEntity.md) |  | 

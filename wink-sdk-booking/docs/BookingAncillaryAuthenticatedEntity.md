@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **localized_name** | **str** | Name of travel blocking in traveler language (if available). Defaults to English. | 
 **localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
 **contact** | [**ContactAuthenticatedEntity**](ContactAuthenticatedEntity.md) |  | 
-**address** | [**AddressAuthenticatedEntity**](AddressAuthenticatedEntity.md) |  | 
+**address** | [**SimpleAddressAuthenticatedEntity**](SimpleAddressAuthenticatedEntity.md) |  | 
 **commissionable** | **bool** |  | 
 **mandatory** | **bool** |  | 
 **commission** | **float** |  | 

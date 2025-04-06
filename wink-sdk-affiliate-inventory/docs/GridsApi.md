@@ -4,16 +4,16 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_seller_inventory_list**](GridsApi.md#create_seller_inventory_list) | **POST** /api/affiliate/{companyIdentifier}/grids | Create Grid
-[**create_seller_inventory_list_syndication_entry**](GridsApi.md#create_seller_inventory_list_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/grids/syndication/entry | Add List to WinkLinks
-[**remove_seller_inventory_list**](GridsApi.md#remove_seller_inventory_list) | **DELETE** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Delete Grid
-[**show_seller_inventory_list**](GridsApi.md#show_seller_inventory_list) | **GET** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Show Grid
-[**show_seller_inventory_lists**](GridsApi.md#show_seller_inventory_lists) | **GET** /api/affiliate/{companyIdentifier}/grids/list | Show Grids
-[**update_seller_inventory_list**](GridsApi.md#update_seller_inventory_list) | **PUT** /api/affiliate/{companyIdentifier}/grids/{listIdentifier} | Update Grid
+[**create_seller_inventory_list**](GridsApi.md#create_seller_inventory_list) | **POST** /api/grids | Create Grid
+[**create_seller_inventory_list_syndication_entry**](GridsApi.md#create_seller_inventory_list_syndication_entry) | **POST** /api/grids/syndication/entry | Add List to WinkLinks
+[**remove_seller_inventory_list**](GridsApi.md#remove_seller_inventory_list) | **DELETE** /api/grids/{listIdentifier} | Delete Grid
+[**show_seller_inventory_list**](GridsApi.md#show_seller_inventory_list) | **GET** /api/grids/{listIdentifier} | Show Grid
+[**show_seller_inventory_lists**](GridsApi.md#show_seller_inventory_lists) | **GET** /api/grids/list | Show Grids
+[**update_seller_inventory_list**](GridsApi.md#update_seller_inventory_list) | **PUT** /api/grids/{listIdentifier} | Update Grid
 
 
 # **create_seller_inventory_list**
-> SellerInventoryListViewAffiliate create_seller_inventory_list(company_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+> SellerInventoryListViewAffiliate create_seller_inventory_list(upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
 
 Create Grid
 
@@ -47,13 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'owner-1' # str | Create list owned by this owner identifier.
     upsert_seller_inventory_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryListRequestAffiliate() # UpsertSellerInventoryListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Grid
-        api_response = api_instance.create_seller_inventory_list(company_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_list(upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->create_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,7 +66,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create list owned by this owner identifier. | 
  **upsert_seller_inventory_list_request_affiliate** | [**UpsertSellerInventoryListRequestAffiliate**](UpsertSellerInventoryListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -97,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_seller_inventory_list_syndication_entry**
-> SyndicationEntryAffiliate create_seller_inventory_list_syndication_entry(company_identifier, create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
+> SyndicationEntryAffiliate create_seller_inventory_list_syndication_entry(create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add List to WinkLinks
 
@@ -131,13 +129,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     create_static_seller_list_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateStaticSellerListSyndicationEntryRequestAffiliate() # CreateStaticSellerListSyndicationEntryRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add List to WinkLinks
-        api_response = api_instance.create_seller_inventory_list_syndication_entry(company_identifier, create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_list_syndication_entry(create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->create_seller_inventory_list_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -151,7 +148,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **create_static_seller_list_syndication_entry_request_affiliate** | [**CreateStaticSellerListSyndicationEntryRequestAffiliate**](CreateStaticSellerListSyndicationEntryRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -181,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_seller_inventory_list**
-> SellerInventoryListViewAffiliate remove_seller_inventory_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryListViewAffiliate remove_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Delete Grid
 
@@ -214,14 +210,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'owner-1' # str | Update list owned by this owner identifier.
     list_identifier = 'list-1' # str | Delete curated list with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Delete Grid
-        api_response = api_instance.remove_seller_inventory_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of GridsApi->remove_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -235,7 +230,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update list owned by this owner identifier. | 
  **list_identifier** | **str**| Delete curated list with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -266,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_list**
-> SellerInventoryListViewAffiliate show_seller_inventory_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryListViewAffiliate show_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Show Grid
 
@@ -299,14 +293,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'owner-1' # str | Show seller blocking lists owned by this owner identifier.
     list_identifier = 'list-1' # str | Retrieve list with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Grid
-        api_response = api_instance.show_seller_inventory_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of GridsApi->show_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -320,7 +313,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show seller blocking lists owned by this owner identifier. | 
  **list_identifier** | **str**| Retrieve list with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -351,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_lists**
-> List[SellerInventoryListViewAffiliate] show_seller_inventory_lists(company_identifier, wink_version=wink_version, accept=accept)
+> List[SellerInventoryListViewAffiliate] show_seller_inventory_lists(wink_version=wink_version, accept=accept)
 
 Show Grids
 
@@ -384,13 +376,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'owner-1' # str | Show seller blocking lists owned by this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Grids
-        api_response = api_instance.show_seller_inventory_lists(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_lists(wink_version=wink_version, accept=accept)
         print("The response of GridsApi->show_seller_inventory_lists:\n")
         pprint(api_response)
     except Exception as e:
@@ -404,7 +395,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show seller blocking lists owned by this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -434,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_seller_inventory_list**
-> SellerInventoryListViewAffiliate update_seller_inventory_list(company_identifier, list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+> SellerInventoryListViewAffiliate update_seller_inventory_list(list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
 
 Update Grid
 
@@ -468,14 +458,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    company_identifier = 'owner-1' # str | Update list owned by this owner identifier.
     list_identifier = 'list-1' # str | Update list with this identifier.
     upsert_seller_inventory_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryListRequestAffiliate() # UpsertSellerInventoryListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Grid
-        api_response = api_instance.update_seller_inventory_list(company_identifier, list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_seller_inventory_list(list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->update_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -489,7 +478,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update list owned by this owner identifier. | 
  **list_identifier** | **str**| Update list with this identifier. | 
  **upsert_seller_inventory_list_request_affiliate** | [**UpsertSellerInventoryListRequestAffiliate**](UpsertSellerInventoryListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 

@@ -3,8 +3,8 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
+docs/AddOnLightweightSupplierDetails.md
 docs/AddOnLocalizedInventorySupplierDetails.md
-docs/AddOnSupplierDetails.md
 docs/AddressSupplier.md
 docs/AddressSupplierDetails.md
 docs/AdvanceBookingRateQualifierSupplier.md
@@ -36,6 +36,7 @@ docs/BookingTestRequestSupplierDetails.md
 docs/BookingUserSessionSupplierDetails.md
 docs/BookingUserSupplierDetails.md
 docs/BookingViewSupplierDetails.md
+docs/BooleanResponseSupplier.md
 docs/CancellationPolicyExceptionSupplierDetails.md
 docs/CancellationPolicyExceptionsSupplierDetails.md
 docs/CancellationPolicySupplierDetails.md
@@ -89,6 +90,7 @@ docs/GeoNameSupplier.md
 docs/GeoNameSupplierDetails.md
 docs/GroupDescriptorSupplier.md
 docs/GroupedBookingSalesMetricsSupplier.md
+docs/GuestRoomLightweightSupplierDetails.md
 docs/GuestRoomSupplierDetails.md
 docs/GuestUserSupplierDetails.md
 docs/HotelOnMapSupplier.md
@@ -105,6 +107,7 @@ docs/InventoryUsageApi.md
 docs/InventoryUsageItemSupplier.md
 docs/InventoryUsageSupplier.md
 docs/InventoryViewSupplier.md
+docs/InviteAffiliateRequestSupplier.md
 docs/KeyValuePairSupplier.md
 docs/LengthOfStayRateQualifierSupplier.md
 docs/LengthOfStayRateQualifierSupplierDetails.md
@@ -115,6 +118,7 @@ docs/LocalizedTransactionalTravelInventorySupplierDetails.md
 docs/MasterRateSupplierDetails.md
 docs/MinutesBeforeBookingStartDateRateQualifierSupplier.md
 docs/MinutesBeforeBookingStartDateRateQualifierSupplierDetails.md
+docs/OnlinePresenceSupplier.md
 docs/PageDisplayCompanyWithSalesMetricsSupplier.md
 docs/PageInventoryViewSupplier.md
 docs/PageRateSupplier.md
@@ -122,6 +126,7 @@ docs/PageableObjectSupplier.md
 docs/PayoutFeeSupplierDetails.md
 docs/PayoutSupplierDetails.md
 docs/PendingRefundSupplierDetails.md
+docs/PerkLightweightSupplierDetails.md
 docs/PersonalSupplierDetails.md
 docs/PetInfoDtoSupplierDetails.md
 docs/PreferencesSupplierDetails.md
@@ -153,6 +158,7 @@ docs/RequiredDaysOfWeekRateQualifierSupplierDetails.md
 docs/ReviewAnswerSupplierDetails.md
 docs/ReviewSupplierDetails.md
 docs/ReviewUserSupplierDetails.md
+docs/RoomConfigurationPriceRatePlanSupplierDetails.md
 docs/RoomConfigurationPriceSupplierDetails.md
 docs/RoomConfigurationSupplierDetails.md
 docs/RoomRangeRateQualifierSupplier.md
@@ -174,6 +180,8 @@ docs/SelectableKeyValuePairSupplier.md
 docs/SellDateRateQualifierSupplier.md
 docs/SellDateRateQualifierSupplierDetails.md
 docs/ShowInventory400Response.md
+docs/SimpleAddressSupplier.md
+docs/SimpleAddressSupplierDetails.md
 docs/SimpleDateTimeItinerarySupplierDetails.md
 docs/SimpleDescriptionSupplier.md
 docs/SimpleDescriptionSupplierDetails.md
@@ -213,7 +221,15 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_engine_configuration_theme_colors_supplier_details.py
+test/test_add_on_lightweight_supplier_details.py
+test/test_boolean_response_supplier.py
+test/test_guest_room_lightweight_supplier_details.py
+test/test_invite_affiliate_request_supplier.py
+test/test_online_presence_supplier.py
+test/test_perk_lightweight_supplier_details.py
+test/test_room_configuration_price_rate_plan_supplier_details.py
+test/test_simple_address_supplier.py
+test/test_simple_address_supplier_details.py
 tox.ini
 wink_sdk_extranet_distribution/__init__.py
 wink_sdk_extranet_distribution/api/__init__.py
@@ -229,8 +245,8 @@ wink_sdk_extranet_distribution/api_response.py
 wink_sdk_extranet_distribution/configuration.py
 wink_sdk_extranet_distribution/exceptions.py
 wink_sdk_extranet_distribution/models/__init__.py
+wink_sdk_extranet_distribution/models/add_on_lightweight_supplier_details.py
 wink_sdk_extranet_distribution/models/add_on_localized_inventory_supplier_details.py
-wink_sdk_extranet_distribution/models/add_on_supplier_details.py
 wink_sdk_extranet_distribution/models/address_supplier.py
 wink_sdk_extranet_distribution/models/address_supplier_details.py
 wink_sdk_extranet_distribution/models/advance_booking_rate_qualifier_supplier.py
@@ -261,6 +277,7 @@ wink_sdk_extranet_distribution/models/booking_test_request_supplier_details.py
 wink_sdk_extranet_distribution/models/booking_user_session_supplier_details.py
 wink_sdk_extranet_distribution/models/booking_user_supplier_details.py
 wink_sdk_extranet_distribution/models/booking_view_supplier_details.py
+wink_sdk_extranet_distribution/models/boolean_response_supplier.py
 wink_sdk_extranet_distribution/models/cancellation_policy_exception_supplier_details.py
 wink_sdk_extranet_distribution/models/cancellation_policy_exceptions_supplier_details.py
 wink_sdk_extranet_distribution/models/cancellation_policy_supplier_details.py
@@ -313,6 +330,7 @@ wink_sdk_extranet_distribution/models/geo_name_supplier.py
 wink_sdk_extranet_distribution/models/geo_name_supplier_details.py
 wink_sdk_extranet_distribution/models/group_descriptor_supplier.py
 wink_sdk_extranet_distribution/models/grouped_booking_sales_metrics_supplier.py
+wink_sdk_extranet_distribution/models/guest_room_lightweight_supplier_details.py
 wink_sdk_extranet_distribution/models/guest_room_supplier_details.py
 wink_sdk_extranet_distribution/models/guest_user_supplier_details.py
 wink_sdk_extranet_distribution/models/hotel_on_map_supplier.py
@@ -325,6 +343,7 @@ wink_sdk_extranet_distribution/models/inventory_update_request_supplier.py
 wink_sdk_extranet_distribution/models/inventory_usage_item_supplier.py
 wink_sdk_extranet_distribution/models/inventory_usage_supplier.py
 wink_sdk_extranet_distribution/models/inventory_view_supplier.py
+wink_sdk_extranet_distribution/models/invite_affiliate_request_supplier.py
 wink_sdk_extranet_distribution/models/ip_range_rate_qualifier_supplier.py
 wink_sdk_extranet_distribution/models/ip_range_rate_qualifier_supplier_details.py
 wink_sdk_extranet_distribution/models/key_value_pair_supplier.py
@@ -337,6 +356,7 @@ wink_sdk_extranet_distribution/models/localized_transactional_travel_inventory_s
 wink_sdk_extranet_distribution/models/master_rate_supplier_details.py
 wink_sdk_extranet_distribution/models/minutes_before_booking_start_date_rate_qualifier_supplier.py
 wink_sdk_extranet_distribution/models/minutes_before_booking_start_date_rate_qualifier_supplier_details.py
+wink_sdk_extranet_distribution/models/online_presence_supplier.py
 wink_sdk_extranet_distribution/models/page_display_company_with_sales_metrics_supplier.py
 wink_sdk_extranet_distribution/models/page_inventory_view_supplier.py
 wink_sdk_extranet_distribution/models/page_rate_supplier.py
@@ -344,6 +364,7 @@ wink_sdk_extranet_distribution/models/pageable_object_supplier.py
 wink_sdk_extranet_distribution/models/payout_fee_supplier_details.py
 wink_sdk_extranet_distribution/models/payout_supplier_details.py
 wink_sdk_extranet_distribution/models/pending_refund_supplier_details.py
+wink_sdk_extranet_distribution/models/perk_lightweight_supplier_details.py
 wink_sdk_extranet_distribution/models/personal_supplier_details.py
 wink_sdk_extranet_distribution/models/pet_info_dto_supplier_details.py
 wink_sdk_extranet_distribution/models/preferences_supplier_details.py
@@ -375,6 +396,7 @@ wink_sdk_extranet_distribution/models/required_days_of_week_rate_qualifier_suppl
 wink_sdk_extranet_distribution/models/review_answer_supplier_details.py
 wink_sdk_extranet_distribution/models/review_supplier_details.py
 wink_sdk_extranet_distribution/models/review_user_supplier_details.py
+wink_sdk_extranet_distribution/models/room_configuration_price_rate_plan_supplier_details.py
 wink_sdk_extranet_distribution/models/room_configuration_price_supplier_details.py
 wink_sdk_extranet_distribution/models/room_configuration_supplier_details.py
 wink_sdk_extranet_distribution/models/room_range_rate_qualifier_supplier.py
@@ -393,6 +415,8 @@ wink_sdk_extranet_distribution/models/selectable_key_value_pair_supplier.py
 wink_sdk_extranet_distribution/models/sell_date_rate_qualifier_supplier.py
 wink_sdk_extranet_distribution/models/sell_date_rate_qualifier_supplier_details.py
 wink_sdk_extranet_distribution/models/show_inventory400_response.py
+wink_sdk_extranet_distribution/models/simple_address_supplier.py
+wink_sdk_extranet_distribution/models/simple_address_supplier_details.py
 wink_sdk_extranet_distribution/models/simple_date_time_itinerary_supplier_details.py
 wink_sdk_extranet_distribution/models/simple_description_supplier.py
 wink_sdk_extranet_distribution/models/simple_description_supplier_details.py

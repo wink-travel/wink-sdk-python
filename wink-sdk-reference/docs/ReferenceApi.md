@@ -909,7 +909,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_perks**
-> List[KeyValuePairNonAuthenticatedEntity] show_perks(wink_version=wink_version, accept=accept)
+> List[PerkLightweightNonAuthenticatedEntity] show_perks(wink_version=wink_version, accept=accept)
 
 Show Perks
 
@@ -921,7 +921,7 @@ Retrieve list of perks
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.key_value_pair_non_authenticated_entity import KeyValuePairNonAuthenticatedEntity
+from wink_sdk_reference.models.perk_lightweight_non_authenticated_entity import PerkLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -966,7 +966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[KeyValuePairNonAuthenticatedEntity]**](KeyValuePairNonAuthenticatedEntity.md)
+[**List[PerkLightweightNonAuthenticatedEntity]**](PerkLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 

@@ -1,5 +1,6 @@
 # SimpleDescriptionNonAuthenticatedEntity
 
+Localized description for this perk
 
 ## Properties
 

@@ -4,15 +4,15 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**show_embeddable_inventory**](EmbeddableInventoriesApi.md#show_embeddable_inventory) | **GET** /api/affiliate/{companyIdentifier}/embeddable-inventory/list | Show Embeddable Inventories
+[**show_embeddable_inventory**](EmbeddableInventoriesApi.md#show_embeddable_inventory) | **GET** /api/embeddable-inventory/list | Show Embeddable Inventories
 
 
 # **show_embeddable_inventory**
-> List[CampaignInventoryAffiliate] show_embeddable_inventory(company_identifier, wink_version=wink_version, accept=accept)
+> List[CampaignInventoryAffiliate] show_embeddable_inventory(wink_version=wink_version, accept=accept)
 
 Show Embeddable Inventories
 
-List all blocking types that can be embedded by one of our Web Components.
+List all inventorytypes that can be embedded by one of our Web Components. This methods differs from the other one as it takes the owner ID from the clientId you authenticated with.
 
 ### Example
 
@@ -41,13 +41,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.EmbeddableInventoriesApi(api_client)
-    company_identifier = 'company-1' # str | Show campaigns for this company
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Embeddable Inventories
-        api_response = api_instance.show_embeddable_inventory(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_embeddable_inventory(wink_version=wink_version, accept=accept)
         print("The response of EmbeddableInventoriesApi->show_embeddable_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -61,7 +60,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show campaigns for this company | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 

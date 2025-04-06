@@ -1,6 +1,6 @@
 # GeoJsonPointSupplier
 
-Coordinate points of the city
+Geo-location
 
 ## Properties
 

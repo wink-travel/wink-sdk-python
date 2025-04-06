@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **modifier_override** | **object** |  | [optional] 
 **type** | **str** | Required if manual override modifier is not null | [optional] 
 **pricing_type** | **str** | Determines whether this discount should be applied per night, per stay or per person - per night; Required if amount override is not null | [optional] 
-**has_fixed_discount_modifier** | **bool** |  | [optional] 
 **has_percent_discount_modifier** | **bool** |  | [optional] 
+**has_fixed_discount_modifier** | **bool** |  | [optional] 
 **is_valid** | **bool** |  | [optional] 
 **description** | [**List[LocalizedDescriptionAffiliate]**](LocalizedDescriptionAffiliate.md) |  | [optional] 
 

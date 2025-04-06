@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**GuestRoomSupplierDetails**](GuestRoomSupplierDetails.md) |  | [optional] 
+**room** | [**GuestRoomLightweightSupplierDetails**](GuestRoomLightweightSupplierDetails.md) |  | [optional] 
 **available** | **bool** |  | [optional] 
 **best_price** | [**RoomConfigurationPriceSupplierDetails**](RoomConfigurationPriceSupplierDetails.md) |  | [optional] 
 **price_configurations** | [**List[RoomConfigurationPriceSupplierDetails]**](RoomConfigurationPriceSupplierDetails.md) |  | [optional] 

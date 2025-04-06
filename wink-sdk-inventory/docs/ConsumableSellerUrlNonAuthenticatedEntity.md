@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **city_name** | **str** | City where inventory is located | [optional] 
 **country_name** | **str** | Country where inventory is located | [optional] 
 **inventory_type** | **str** | Type of inventory | [optional] 
+**itinerary** | [**ItineraryNonAuthenticatedEntity**](ItineraryNonAuthenticatedEntity.md) |  | 
 
 ## Example
 

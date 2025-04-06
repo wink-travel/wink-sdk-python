@@ -49,28 +49,28 @@ Name | Type | Description | Notes
 **source_to_user_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
 **source_to_internal_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
 **phantom** | **bool** |  | 
-**inventory_available** | **bool** |  | [optional] 
-**master_availability** | **bool** |  | [optional] 
-**close_on_arrival** | **bool** |  | [optional] 
-**rate_identifier** | **str** |  | [optional] 
 **start_date** | **bool** |  | [optional] 
 **between_date** | **bool** |  | [optional] 
 **last_night** | **bool** |  | [optional] 
 **bundled_modifier** | **bool** |  | [optional] 
 **close_on_departure** | **bool** |  | [optional] 
+**inventory_available** | **bool** |  | [optional] 
+**master_availability** | **bool** |  | [optional] 
+**close_on_arrival** | **bool** |  | [optional] 
+**rate_identifier** | **str** |  | [optional] 
 **var_date** | **date** |  | [optional] 
 **source** | **str** |  | [optional] 
-**total_discount_percent** | **float** |  | [optional] 
-**source_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**end_date** | **bool** |  | [optional] 
 **max_los** | **int** |  | [optional] 
 **min_los** | **int** |  | [optional] 
-**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**user_specified_currency_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**internal_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **max_occupancy** | **int** |  | [optional] 
 **min_occupancy** | **int** |  | [optional] 
 **quantity** | **int** |  | [optional] 
+**source_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**user_specified_currency_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**internal_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**end_date** | **bool** |  | [optional] 
+**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**total_discount_percent** | **float** |  | [optional] 
 
 ## Example
 

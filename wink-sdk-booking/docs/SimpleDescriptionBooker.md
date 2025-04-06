@@ -1,5 +1,6 @@
 # SimpleDescriptionBooker
 
+Localized description for this perk
 
 ## Properties
 

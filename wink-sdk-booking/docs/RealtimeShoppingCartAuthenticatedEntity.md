@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** | Shopping cart ID | 
 **item_list** | [**List[RealtimeShoppingCartItemAuthenticatedEntity]**](RealtimeShoppingCartItemAuthenticatedEntity.md) | List of priced shopping cart items. Each entry is a separately booked room. | [optional] 
-**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example

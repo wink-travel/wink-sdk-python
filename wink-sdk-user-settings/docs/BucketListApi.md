@@ -4,15 +4,15 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**oauth2_add_bucket_list_entry**](BucketListApi.md#oauth2_add_bucket_list_entry) | **POST** /api/bucket-list | Create Bucket List
-[**oauth2_remove_bucket_list**](BucketListApi.md#oauth2_remove_bucket_list) | **DELETE** /api/bucket-list/{bucketListItemIdentifier} | Delete Bucket List Entry
-[**oauth2_show_bucket_list**](BucketListApi.md#oauth2_show_bucket_list) | **GET** /api/bucket-list | Get Bucket Lists
-[**oauth2_show_bucket_list_entries**](BucketListApi.md#oauth2_show_bucket_list_entries) | **GET** /api/bucket-list/entries | Get Bucket List
-[**oauth2_show_bucket_list_entry**](BucketListApi.md#oauth2_show_bucket_list_entry) | **GET** /api/bucket-list/{type}/{identifier} | Get Bucket List Entries
+[**add_bucket_list_entry**](BucketListApi.md#add_bucket_list_entry) | **POST** /api/bucket-list | Create Bucket List
+[**remove_bucket_list**](BucketListApi.md#remove_bucket_list) | **DELETE** /api/bucket-list/{bucketListItemIdentifier} | Delete Bucket List Entry
+[**show_bucket_list**](BucketListApi.md#show_bucket_list) | **GET** /api/bucket-list | Get Bucket Lists
+[**show_bucket_list_entries**](BucketListApi.md#show_bucket_list_entries) | **GET** /api/bucket-list/entries | Get Bucket List
+[**show_bucket_list_entry**](BucketListApi.md#show_bucket_list_entry) | **GET** /api/bucket-list/{type}/{identifier} | Get Bucket List Entries
 
 
-# **oauth2_add_bucket_list_entry**
-> BucketListEntryViewAuthenticatedEntity oauth2_add_bucket_list_entry(bucket_list_entry_request_authenticated_entity, wink_version=wink_version)
+# **add_bucket_list_entry**
+> BucketListEntryViewAuthenticatedEntity add_bucket_list_entry(bucket_list_entry_request_authenticated_entity, wink_version=wink_version)
 
 Create Bucket List
 
@@ -51,11 +51,11 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
     try:
         # Create Bucket List
-        api_response = api_instance.oauth2_add_bucket_list_entry(bucket_list_entry_request_authenticated_entity, wink_version=wink_version)
-        print("The response of BucketListApi->oauth2_add_bucket_list_entry:\n")
+        api_response = api_instance.add_bucket_list_entry(bucket_list_entry_request_authenticated_entity, wink_version=wink_version)
+        print("The response of BucketListApi->add_bucket_list_entry:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BucketListApi->oauth2_add_bucket_list_entry: %s\n" % e)
+        print("Exception when calling BucketListApi->add_bucket_list_entry: %s\n" % e)
 ```
 
 
@@ -93,8 +93,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **oauth2_remove_bucket_list**
-> BucketListEntryViewAuthenticatedEntity oauth2_remove_bucket_list(bucket_list_item_identifier, wink_version=wink_version, accept=accept)
+# **remove_bucket_list**
+> BucketListEntryViewAuthenticatedEntity remove_bucket_list(bucket_list_item_identifier, wink_version=wink_version, accept=accept)
 
 Delete Bucket List Entry
 
@@ -133,11 +133,11 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
     try:
         # Delete Bucket List Entry
-        api_response = api_instance.oauth2_remove_bucket_list(bucket_list_item_identifier, wink_version=wink_version, accept=accept)
-        print("The response of BucketListApi->oauth2_remove_bucket_list:\n")
+        api_response = api_instance.remove_bucket_list(bucket_list_item_identifier, wink_version=wink_version, accept=accept)
+        print("The response of BucketListApi->remove_bucket_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BucketListApi->oauth2_remove_bucket_list: %s\n" % e)
+        print("Exception when calling BucketListApi->remove_bucket_list: %s\n" % e)
 ```
 
 
@@ -176,8 +176,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **oauth2_show_bucket_list**
-> List[BucketListEntryWrapperAuthenticatedEntity] oauth2_show_bucket_list(wink_version=wink_version, accept=accept)
+# **show_bucket_list**
+> List[BucketListEntryWrapperAuthenticatedEntity] show_bucket_list(wink_version=wink_version, accept=accept)
 
 Get Bucket Lists
 
@@ -215,11 +215,11 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
     try:
         # Get Bucket Lists
-        api_response = api_instance.oauth2_show_bucket_list(wink_version=wink_version, accept=accept)
-        print("The response of BucketListApi->oauth2_show_bucket_list:\n")
+        api_response = api_instance.show_bucket_list(wink_version=wink_version, accept=accept)
+        print("The response of BucketListApi->show_bucket_list:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BucketListApi->oauth2_show_bucket_list: %s\n" % e)
+        print("Exception when calling BucketListApi->show_bucket_list: %s\n" % e)
 ```
 
 
@@ -257,8 +257,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **oauth2_show_bucket_list_entries**
-> List[BucketListEntryAuthenticatedEntity] oauth2_show_bucket_list_entries(wink_version=wink_version, accept=accept)
+# **show_bucket_list_entries**
+> List[BucketListEntryAuthenticatedEntity] show_bucket_list_entries(wink_version=wink_version, accept=accept)
 
 Get Bucket List
 
@@ -296,11 +296,11 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
     try:
         # Get Bucket List
-        api_response = api_instance.oauth2_show_bucket_list_entries(wink_version=wink_version, accept=accept)
-        print("The response of BucketListApi->oauth2_show_bucket_list_entries:\n")
+        api_response = api_instance.show_bucket_list_entries(wink_version=wink_version, accept=accept)
+        print("The response of BucketListApi->show_bucket_list_entries:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BucketListApi->oauth2_show_bucket_list_entries: %s\n" % e)
+        print("Exception when calling BucketListApi->show_bucket_list_entries: %s\n" % e)
 ```
 
 
@@ -338,8 +338,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **oauth2_show_bucket_list_entry**
-> BucketListEntryAuthenticatedEntity oauth2_show_bucket_list_entry(type, identifier, wink_version=wink_version, accept=accept)
+# **show_bucket_list_entry**
+> BucketListEntryAuthenticatedEntity show_bucket_list_entry(type, identifier, wink_version=wink_version, accept=accept)
 
 Get Bucket List Entries
 
@@ -379,11 +379,11 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
     try:
         # Get Bucket List Entries
-        api_response = api_instance.oauth2_show_bucket_list_entry(type, identifier, wink_version=wink_version, accept=accept)
-        print("The response of BucketListApi->oauth2_show_bucket_list_entry:\n")
+        api_response = api_instance.show_bucket_list_entry(type, identifier, wink_version=wink_version, accept=accept)
+        print("The response of BucketListApi->show_bucket_list_entry:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BucketListApi->oauth2_show_bucket_list_entry: %s\n" % e)
+        print("Exception when calling BucketListApi->show_bucket_list_entry: %s\n" % e)
 ```
 
 

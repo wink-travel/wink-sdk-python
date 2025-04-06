@@ -1,6 +1,6 @@
 # InventoryAffiliate
 
-Channel blocking
+Channel inventory
 
 ## Properties
 

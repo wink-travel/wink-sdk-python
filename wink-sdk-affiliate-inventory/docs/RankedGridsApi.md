@@ -4,16 +4,16 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_seller_inventory_ranked_list**](RankedGridsApi.md#create_seller_inventory_ranked_list) | **POST** /api/affiliate/{companyIdentifier}/ranked-grids | Create Ranked Grid
-[**create_seller_inventory_ranked_list_syndication_entry**](RankedGridsApi.md#create_seller_inventory_ranked_list_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/ranked-grids/syndication/entry | Add to WinkLinks
-[**remove_seller_inventory_ranked_list**](RankedGridsApi.md#remove_seller_inventory_ranked_list) | **DELETE** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Delete Ranked Grid
-[**show_seller_inventory_ranked_list**](RankedGridsApi.md#show_seller_inventory_ranked_list) | **GET** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Show Ranked Grid
-[**show_seller_inventory_ranked_lists**](RankedGridsApi.md#show_seller_inventory_ranked_lists) | **GET** /api/affiliate/{companyIdentifier}/ranked-grids/list | Show Ranked Grids
-[**update_seller_inventory_ranked_list**](RankedGridsApi.md#update_seller_inventory_ranked_list) | **PUT** /api/affiliate/{companyIdentifier}/ranked-grids/{listIdentifier} | Update Ranked Grid
+[**create_seller_inventory_ranked_list**](RankedGridsApi.md#create_seller_inventory_ranked_list) | **POST** /api/ranked-grids | Create Ranked Grid
+[**create_seller_inventory_ranked_list_syndication_entry**](RankedGridsApi.md#create_seller_inventory_ranked_list_syndication_entry) | **POST** /api/ranked-grids/syndication/entry | Add to WinkLinks
+[**remove_seller_inventory_ranked_list**](RankedGridsApi.md#remove_seller_inventory_ranked_list) | **DELETE** /api/ranked-grids/{listIdentifier} | Delete Ranked Grid
+[**show_seller_inventory_ranked_list**](RankedGridsApi.md#show_seller_inventory_ranked_list) | **GET** /api/ranked-grids/{listIdentifier} | Show Ranked Grid
+[**show_seller_inventory_ranked_lists**](RankedGridsApi.md#show_seller_inventory_ranked_lists) | **GET** /api/ranked-grids/list | Show Ranked Grids
+[**update_seller_inventory_ranked_list**](RankedGridsApi.md#update_seller_inventory_ranked_list) | **PUT** /api/ranked-grids/{listIdentifier} | Update Ranked Grid
 
 
 # **create_seller_inventory_ranked_list**
-> SellerInventoryRankedListViewAffiliate create_seller_inventory_ranked_list(company_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
+> SellerInventoryRankedListViewAffiliate create_seller_inventory_ranked_list(upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
 
 Create Ranked Grid
 
@@ -47,13 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'owner-1' # str | Create list owned by this owner identifier.
     upsert_seller_inventory_ranked_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryRankedListRequestAffiliate() # UpsertSellerInventoryRankedListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Ranked Grid
-        api_response = api_instance.create_seller_inventory_ranked_list(company_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_ranked_list(upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
         print("The response of RankedGridsApi->create_seller_inventory_ranked_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,7 +66,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create list owned by this owner identifier. | 
  **upsert_seller_inventory_ranked_list_request_affiliate** | [**UpsertSellerInventoryRankedListRequestAffiliate**](UpsertSellerInventoryRankedListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -97,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_seller_inventory_ranked_list_syndication_entry**
-> BooleanResponseAffiliate create_seller_inventory_ranked_list_syndication_entry(company_identifier, create_seller_inventory_ranked_list_syndication_entry_request_affiliate, wink_version=wink_version)
+> BooleanResponseAffiliate create_seller_inventory_ranked_list_syndication_entry(create_seller_inventory_ranked_list_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add to WinkLinks
 
@@ -131,13 +129,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     create_seller_inventory_ranked_list_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateSellerInventoryRankedListSyndicationEntryRequestAffiliate() # CreateSellerInventoryRankedListSyndicationEntryRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add to WinkLinks
-        api_response = api_instance.create_seller_inventory_ranked_list_syndication_entry(company_identifier, create_seller_inventory_ranked_list_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_ranked_list_syndication_entry(create_seller_inventory_ranked_list_syndication_entry_request_affiliate, wink_version=wink_version)
         print("The response of RankedGridsApi->create_seller_inventory_ranked_list_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -151,7 +148,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **create_seller_inventory_ranked_list_syndication_entry_request_affiliate** | [**CreateSellerInventoryRankedListSyndicationEntryRequestAffiliate**](CreateSellerInventoryRankedListSyndicationEntryRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -181,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_seller_inventory_ranked_list**
-> SellerInventoryRankedListViewAffiliate remove_seller_inventory_ranked_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryRankedListViewAffiliate remove_seller_inventory_ranked_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Delete Ranked Grid
 
@@ -214,14 +210,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'owner-1' # str | Remove grid owned by this owner identifier.
     list_identifier = 'ranked-grid-1' # str | Delete grid with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Delete Ranked Grid
-        api_response = api_instance.remove_seller_inventory_ranked_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_seller_inventory_ranked_list(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of RankedGridsApi->remove_seller_inventory_ranked_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -235,7 +230,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove grid owned by this owner identifier. | 
  **list_identifier** | **str**| Delete grid with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -266,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_ranked_list**
-> SellerInventoryRankedListViewAffiliate show_seller_inventory_ranked_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryRankedListViewAffiliate show_seller_inventory_ranked_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Show Ranked Grid
 
@@ -299,14 +293,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'owner-1' # str | Retrieve grid for owner identifier.
     list_identifier = 'ranked-grid-1' # str | Retrieve grid with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Ranked Grid
-        api_response = api_instance.show_seller_inventory_ranked_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_ranked_list(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of RankedGridsApi->show_seller_inventory_ranked_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -320,7 +313,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Retrieve grid for owner identifier. | 
  **list_identifier** | **str**| Retrieve grid with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -351,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_ranked_lists**
-> List[SellerInventoryRankedListViewAffiliate] show_seller_inventory_ranked_lists(company_identifier, wink_version=wink_version, accept=accept)
+> List[SellerInventoryRankedListViewAffiliate] show_seller_inventory_ranked_lists(wink_version=wink_version, accept=accept)
 
 Show Ranked Grids
 
@@ -384,13 +376,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'owner-1' # str | Retrieve list for owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Ranked Grids
-        api_response = api_instance.show_seller_inventory_ranked_lists(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_ranked_lists(wink_version=wink_version, accept=accept)
         print("The response of RankedGridsApi->show_seller_inventory_ranked_lists:\n")
         pprint(api_response)
     except Exception as e:
@@ -404,7 +395,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Retrieve list for owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -434,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_seller_inventory_ranked_list**
-> SellerInventoryRankedListViewAffiliate update_seller_inventory_ranked_list(company_identifier, list_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
+> SellerInventoryRankedListViewAffiliate update_seller_inventory_ranked_list(list_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
 
 Update Ranked Grid
 
@@ -468,14 +458,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.RankedGridsApi(api_client)
-    company_identifier = 'owner-1' # str | Update list owned by this owner identifier.
     list_identifier = 'list-1' # str | Update list with this identifier.
     upsert_seller_inventory_ranked_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryRankedListRequestAffiliate() # UpsertSellerInventoryRankedListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Ranked Grid
-        api_response = api_instance.update_seller_inventory_ranked_list(company_identifier, list_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_seller_inventory_ranked_list(list_identifier, upsert_seller_inventory_ranked_list_request_affiliate, wink_version=wink_version)
         print("The response of RankedGridsApi->update_seller_inventory_ranked_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -489,7 +478,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update list owned by this owner identifier. | 
  **list_identifier** | **str**| Update list with this identifier. | 
  **upsert_seller_inventory_ranked_list_request_affiliate** | [**UpsertSellerInventoryRankedListRequestAffiliate**](UpsertSellerInventoryRankedListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 

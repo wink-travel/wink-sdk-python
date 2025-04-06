@@ -53,6 +53,7 @@ docs/MasterRateApi.md
 docs/MasterRateSupplier.md
 docs/MasterRateViewSupplier.md
 docs/MinutesBeforeBookingStartDateRateQualifierSupplier.md
+docs/PerkLightweightSupplier.md
 docs/PrepayRateQualifierSupplier.md
 docs/PromotionApi.md
 docs/PromotionBundleApi.md
@@ -109,6 +110,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_perk_lightweight_supplier.py
 tox.ini
 wink_sdk_extranet_monetize/__init__.py
 wink_sdk_extranet_monetize/api/__init__.py
@@ -170,6 +172,7 @@ wink_sdk_extranet_monetize/models/localized_description_supplier.py
 wink_sdk_extranet_monetize/models/master_rate_supplier.py
 wink_sdk_extranet_monetize/models/master_rate_view_supplier.py
 wink_sdk_extranet_monetize/models/minutes_before_booking_start_date_rate_qualifier_supplier.py
+wink_sdk_extranet_monetize/models/perk_lightweight_supplier.py
 wink_sdk_extranet_monetize/models/prepay_rate_qualifier_supplier.py
 wink_sdk_extranet_monetize/models/promotion_rate_qualifier_supplier.py
 wink_sdk_extranet_monetize/models/rate_modifier_bundle_supplier.py
