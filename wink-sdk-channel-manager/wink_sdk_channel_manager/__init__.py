@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 
 # import apis into sdk package
 from wink_sdk_channel_manager.api.channel_manager_api import ChannelManagerApi

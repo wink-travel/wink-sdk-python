@@ -15,7 +15,7 @@
 # - Commits changelog changes.
 # - Finishes the Gitflow release (merges into master and develop, tags the release).
 # - Pushes commits and tags to the remote repository.
-# - Creates a GitHub release using the GitHub CLI (`gh`).
+# - Creates a GitHub release in the specified repo using the GitHub CLI (`gh`).
 #
 # Usage:
 #   ./github-release.sh
@@ -147,8 +147,9 @@ create_github_release() {
   if [[ ! -f "$GH_RELEASE_NOTES_FILE" ]]; then
     error "Release notes file '$GH_RELEASE_NOTES_FILE' not found."
   fi
-  echo "Creating GitHub release for tag '$TAG_PREFIX$VERSION'..."
+  echo "Creating GitHub release for tag '$TAG_PREFIX$VERSION' in $REPO_OWNER/$REPO_NAME ..."
   gh release create "$TAG_PREFIX$VERSION" \
+    --repo "$REPO_OWNER/$REPO_NAME" \
     --title "Release $TAG_PREFIX$VERSION" \
     --notes-file "$GH_RELEASE_NOTES_FILE" \
     --target "$MAIN_BRANCH" || error "Failed to create GitHub release."

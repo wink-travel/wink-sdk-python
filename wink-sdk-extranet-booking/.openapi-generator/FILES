@@ -191,14 +191,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_guest_room_lightweight_supplier.py
-test/test_guest_room_lightweight_supplier_details.py
-test/test_perk_lightweight_supplier.py
-test/test_perk_lightweight_supplier_details.py
-test/test_room_configuration_price_rate_plan_supplier.py
-test/test_room_configuration_price_rate_plan_supplier_details.py
-test/test_simple_address_supplier.py
-test/test_simple_address_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
