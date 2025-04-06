@@ -98,9 +98,6 @@ find_all_sdks() {
 # Main Script Execution
 ###############################################################################
 
-echo "Installing/updating build tools..."
-pip install --upgrade pip setuptools wheel twine build
-
 find_all_sdks
 
 # Iterate over each SDK subdirectory and build it
