@@ -76,16 +76,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_custom_monetary_amount.py
-test/test_key_value_pair_affiliate.py
-test/test_managed_by_entity_affiliate.py
-test/test_managed_by_entity_rules_affiliate.py
-test/test_managed_by_entity_rules_supplier.py
-test/test_managed_by_entity_supplier.py
-test/test_online_presence_affiliate.py
-test/test_online_presence_supplier.py
-test/test_upsert_company_online_presence_request_affiliate.py
-test/test_upsert_managed_by_agency_request_affiliate.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py

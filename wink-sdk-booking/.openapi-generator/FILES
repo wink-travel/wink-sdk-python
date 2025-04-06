@@ -155,14 +155,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_guest_room_lightweight_authenticated_entity.py
-test/test_guest_room_lightweight_booker.py
-test/test_perk_lightweight_authenticated_entity.py
-test/test_perk_lightweight_booker.py
-test/test_room_configuration_price_rate_plan_authenticated_entity.py
-test/test_room_configuration_price_rate_plan_booker.py
-test/test_simple_address_authenticated_entity.py
-test/test_simple_address_booker.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py

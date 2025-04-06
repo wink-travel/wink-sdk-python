@@ -110,13 +110,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_guest_room_lightweight_agent.py
-test/test_managed_by_entity_agent.py
-test/test_managed_by_entity_rules_agent.py
-test/test_online_presence_agent.py
-test/test_perk_lightweight_agent.py
-test/test_room_configuration_price_rate_plan_agent.py
-test/test_simple_address_agent.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py

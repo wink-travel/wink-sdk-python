@@ -33,8 +33,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_perk_lightweight_non_authenticated_entity.py
-test/test_simple_description_non_authenticated_entity.py
 tox.ini
 wink_sdk_reference/__init__.py
 wink_sdk_reference/api/__init__.py

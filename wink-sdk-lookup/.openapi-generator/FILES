@@ -68,13 +68,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_add_on_lightweight_non_authenticated_entity.py
-test/test_agency_score_request_non_authenticated_entity.py
-test/test_guest_room_lightweight_non_authenticated_entity.py
-test/test_hotel_on_map_lightweight_non_authenticated_entity.py
-test/test_perk_lightweight_non_authenticated_entity.py
-test/test_room_configuration_price_rate_plan_non_authenticated_entity.py
-test/test_simple_address_non_authenticated_entity.py
 tox.ini
 wink_sdk_lookup/__init__.py
 wink_sdk_lookup/api/__init__.py
