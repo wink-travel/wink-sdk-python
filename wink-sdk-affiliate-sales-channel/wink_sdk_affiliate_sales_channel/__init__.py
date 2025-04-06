@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 
 # import apis into sdk package
 from wink_sdk_affiliate_sales_channel.api.available_supplier_api import AvailableSupplierApi
