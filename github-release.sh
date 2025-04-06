@@ -40,7 +40,7 @@ set -e
 
 # Repository Details
 REPO_OWNER="wink-travel"             # GitHub repository owner
-REPO_NAME="wink-python-sdk"          # GitHub repository name
+REPO_NAME="wink-sdk-python"          # GitHub repository name
 
 # Git Branch Names (Gitflow defaults)
 MAIN_BRANCH="master"                 # Main branch name (e.g., master, main)
@@ -147,9 +147,8 @@ create_github_release() {
   if [[ ! -f "$GH_RELEASE_NOTES_FILE" ]]; then
     error "Release notes file '$GH_RELEASE_NOTES_FILE' not found."
   fi
-  echo "Creating GitHub release for tag '$TAG_PREFIX$VERSION' in $REPO_OWNER/$REPO_NAME ..."
+  echo "Creating GitHub release for tag '$TAG_PREFIX$VERSION' ..."
   gh release create "$TAG_PREFIX$VERSION" \
-    --repo "$REPO_OWNER/$REPO_NAME" \
     --title "Release $TAG_PREFIX$VERSION" \
     --notes-file "$GH_RELEASE_NOTES_FILE" \
     --target "$MAIN_BRANCH" || error "Failed to create GitHub release."
