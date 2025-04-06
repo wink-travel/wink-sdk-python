@@ -16,14 +16,14 @@ Name | Type | Description | Notes
 **approved** | **bool** | Whether this company has been approved by KYC. | [default to False]
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of sales channel | 
-**vat_id** | **str** | An optional VAT ID | 
 **description** | **str** | A personal message from the company. | [optional] 
-**url** | **str** | Company&#39;s main website | 
 **address** | [**AddressSupplier**](AddressSupplier.md) |  | 
 **managers** | [**List[CompanyUserSupplier]**](CompanyUserSupplier.md) |  | [optional] 
-**urls** | **List[str]** | List of all active accounts that could be used for selling or seeing a company&#39;s reach. | [optional] 
 **logo** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md) |  | [optional] 
 **travel_agent** | [**TravelAgentSupplier**](TravelAgentSupplier.md) |  | [optional] 
+**managed_by** | [**ManagedByEntitySupplier**](ManagedByEntitySupplier.md) |  | [optional] 
+**online_presence** | [**List[OnlinePresenceSupplier]**](OnlinePresenceSupplier.md) |  | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example
 

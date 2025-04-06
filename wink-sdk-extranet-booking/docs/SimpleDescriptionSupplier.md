@@ -1,5 +1,6 @@
 # SimpleDescriptionSupplier
 
+Localized description for this perk
 
 ## Properties
 

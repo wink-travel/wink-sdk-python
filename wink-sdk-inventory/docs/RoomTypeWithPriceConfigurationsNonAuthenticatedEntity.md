@@ -6,10 +6,10 @@ List of room types with price configurations based on the itinerary that was pas
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**GuestRoomNonAuthenticatedEntity**](GuestRoomNonAuthenticatedEntity.md) |  | 
+**room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) |  | 
 **price_configurations** | [**List[RoomConfigurationPriceNonAuthenticatedEntity]**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | 
 **available** | **bool** |  | [optional] 
-**best_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
+**lowest_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

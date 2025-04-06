@@ -9,10 +9,8 @@ Name | Type | Description | Notes
 **legal_name** | **str** | Legal name of entity if other than name | [optional] 
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of company | 
-**vat_id** | **str** | A VAT id if required | 
 **description** | **str** | A personal message from the company. | [optional] 
-**url** | **str** | Company&#39;s main website | 
-**urls** | **List[str]** | List of all active accounts that could be used for selling or seeing a company&#39;s reach. | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example
 

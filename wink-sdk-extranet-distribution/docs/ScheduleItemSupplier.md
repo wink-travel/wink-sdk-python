@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **venue_name** | **str** | Name of venue attendees will visit. | [optional] 
 **localized_venue_name** | **str** | Localized name of venue attendees will visit. | [optional] 
 **contact** | [**ContactSupplier**](ContactSupplier.md) |  | [optional] 
-**address** | [**AddressSupplier**](AddressSupplier.md) |  | [optional] 
+**address** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) |  | [optional] 
 **created** | **datetime** | Date time this schedule event was created. | [optional] 
 **last_modified** | **datetime** | Last date time this scheduled event was modified. | [optional] 
 **sequence** | **int** | Schedule event recurring sequence | [optional] [default to 0]

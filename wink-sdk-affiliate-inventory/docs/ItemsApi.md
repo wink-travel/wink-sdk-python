@@ -4,22 +4,22 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_seller_inventory_item**](ItemsApi.md#create_seller_inventory_item) | **POST** /api/affiliate/{companyIdentifier}/items | Create Item
-[**create_seller_inventory_item_syndication_entry**](ItemsApi.md#create_seller_inventory_item_syndication_entry) | **POST** /api/affiliate/{companyIdentifier}/items/syndication/entry | Add to WinkLinks
-[**create_supplier_seller_inventory_item**](ItemsApi.md#create_supplier_seller_inventory_item) | **POST** /api/affiliate/{companyIdentifier}/items/supplier | Create Supplier Item
-[**remove_seller_inventory_item**](ItemsApi.md#remove_seller_inventory_item) | **DELETE** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Delete Item
-[**show_inventory_media1**](ItemsApi.md#show_inventory_media1) | **GET** /api/affiliate/{companyIdentifier}/items/inventory/{channelInventoryIdentifier}/media/list | Show Item Media
-[**show_seller_inventory_item**](ItemsApi.md#show_seller_inventory_item) | **GET** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Show Item
-[**show_seller_inventory_items_for_company**](ItemsApi.md#show_seller_inventory_items_for_company) | **GET** /api/affiliate/{companyIdentifier}/items/list | Show Items
-[**update_seller_inventory_item**](ItemsApi.md#update_seller_inventory_item) | **PUT** /api/affiliate/{companyIdentifier}/items/{inventoryIdentifier} | Update Item
+[**create_seller_inventory_item**](ItemsApi.md#create_seller_inventory_item) | **POST** /api/items | Create Item
+[**create_seller_inventory_item_syndication_entry**](ItemsApi.md#create_seller_inventory_item_syndication_entry) | **POST** /api/items/syndication/entry | Add to WinkLinks
+[**create_supplier_seller_inventory_item**](ItemsApi.md#create_supplier_seller_inventory_item) | **POST** /api/items/supplier | Create Supplier Item
+[**remove_seller_inventory_item**](ItemsApi.md#remove_seller_inventory_item) | **DELETE** /api/items/{inventoryIdentifier} | Delete Item
+[**show_inventory_media1**](ItemsApi.md#show_inventory_media1) | **GET** /api/items/inventory/{channelInventoryIdentifier}/media/list | Show Item Media
+[**show_seller_inventory_item**](ItemsApi.md#show_seller_inventory_item) | **GET** /api/items/{inventoryIdentifier} | Show Item
+[**show_seller_inventory_items_for_company**](ItemsApi.md#show_seller_inventory_items_for_company) | **GET** /api/items/list | Show Items
+[**update_seller_inventory_item**](ItemsApi.md#update_seller_inventory_item) | **PUT** /api/items/{inventoryIdentifier} | Update Item
 
 
 # **create_seller_inventory_item**
-> SellerInventoryItemViewAffiliate create_seller_inventory_item(company_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellerInventoryItemViewAffiliate create_seller_inventory_item(upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
 
 Create Item
 
-Create a new blocking card
+Create a new inventory card
 
 ### Example
 
@@ -49,13 +49,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     upsert_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryItemRequestAffiliate() # UpsertSellerInventoryItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Item
-        api_response = api_instance.create_seller_inventory_item(company_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_item(upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -69,7 +68,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **upsert_seller_inventory_item_request_affiliate** | [**UpsertSellerInventoryItemRequestAffiliate**](UpsertSellerInventoryItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -99,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_seller_inventory_item_syndication_entry**
-> BooleanResponseAffiliate create_seller_inventory_item_syndication_entry(company_identifier, create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
+> BooleanResponseAffiliate create_seller_inventory_item_syndication_entry(create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add to WinkLinks
 
@@ -133,13 +131,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     create_seller_inventory_item_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateSellerInventoryItemSyndicationEntryRequestAffiliate() # CreateSellerInventoryItemSyndicationEntryRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add to WinkLinks
-        api_response = api_instance.create_seller_inventory_item_syndication_entry(company_identifier, create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_item_syndication_entry(create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_seller_inventory_item_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -153,7 +150,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **create_seller_inventory_item_syndication_entry_request_affiliate** | [**CreateSellerInventoryItemSyndicationEntryRequestAffiliate**](CreateSellerInventoryItemSyndicationEntryRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -183,11 +179,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_supplier_seller_inventory_item**
-> SellerInventoryItemViewAffiliate create_supplier_seller_inventory_item(company_identifier, upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellerInventoryItemViewAffiliate create_supplier_seller_inventory_item(upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
 
 Create Supplier Item
 
-Creates a new blocking card for a supplier showing the best priced room.
+Creates a new inventory card for a supplier showing the best priced room.
 
 ### Example
 
@@ -217,13 +213,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to create item for
     upsert_supplier_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierSellerInventoryItemRequestAffiliate() # UpsertSupplierSellerInventoryItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Supplier Item
-        api_response = api_instance.create_supplier_seller_inventory_item(company_identifier, upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_supplier_seller_inventory_item(upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_supplier_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -237,7 +232,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to create item for | 
  **upsert_supplier_seller_inventory_item_request_affiliate** | [**UpsertSupplierSellerInventoryItemRequestAffiliate**](UpsertSupplierSellerInventoryItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -267,11 +261,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_seller_inventory_item**
-> SellerInventoryItemViewAffiliate remove_seller_inventory_item(company_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryItemViewAffiliate remove_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
 
 Delete Item
 
-Remove a unique blocking item
+Remove a unique inventory item
 
 ### Example
 
@@ -300,14 +294,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to delete item from
-    inventory_identifier = 'card-blocking-1' # str | Delete blocking with this identifier.
+    inventory_identifier = 'card-inventory-1' # str | Delete inventory with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Delete Item
-        api_response = api_instance.remove_seller_inventory_item(company_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
         print("The response of ItemsApi->remove_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -321,8 +314,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to delete item from | 
- **inventory_identifier** | **str**| Delete blocking with this identifier. | 
+ **inventory_identifier** | **str**| Delete inventory with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -352,11 +344,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_inventory_media1**
-> List[SimpleMultimediaAffiliate] show_inventory_media1(company_identifier, channel_inventory_identifier, wink_version=wink_version, accept=accept)
+> List[SimpleMultimediaAffiliate] show_inventory_media1(channel_inventory_identifier, wink_version=wink_version, accept=accept)
 
 Show Item Media
 
-Retrieve list of all media associated with this channel blocking identifier.
+Retrieve list of all media associated with this channel inventory identifier.
 
 ### Example
 
@@ -385,14 +377,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to retrieve items for
-    channel_inventory_identifier = 'channel-blocking-1' # str | Retrieve media for this channel blocking identifier.
+    channel_inventory_identifier = 'channel-inventory-1' # str | Retrieve media for this channel inventory identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Item Media
-        api_response = api_instance.show_inventory_media1(company_identifier, channel_inventory_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_inventory_media1(channel_inventory_identifier, wink_version=wink_version, accept=accept)
         print("The response of ItemsApi->show_inventory_media1:\n")
         pprint(api_response)
     except Exception as e:
@@ -406,8 +397,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to retrieve items for | 
- **channel_inventory_identifier** | **str**| Retrieve media for this channel blocking identifier. | 
+ **channel_inventory_identifier** | **str**| Retrieve media for this channel inventory identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -437,11 +427,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_item**
-> SellerInventoryItemViewAffiliate show_seller_inventory_item(company_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
+> SellerInventoryItemViewAffiliate show_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
 
 Show Item
 
-Retrieve a single blocking card.
+Retrieve a single inventory card.
 
 ### Example
 
@@ -470,14 +460,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to retrieve item for
-    inventory_identifier = 'card-blocking-1' # str | Retrieve blocking with this identifier.
+    inventory_identifier = 'card-inventory-1' # str | Retrieve inventory with this identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Item
-        api_response = api_instance.show_seller_inventory_item(company_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
         print("The response of ItemsApi->show_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -491,8 +480,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to retrieve item for | 
- **inventory_identifier** | **str**| Retrieve blocking with this identifier. | 
+ **inventory_identifier** | **str**| Retrieve inventory with this identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -522,7 +510,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_items_for_company**
-> List[SellerInventoryItemViewAffiliate] show_seller_inventory_items_for_company(company_identifier, wink_version=wink_version, accept=accept)
+> List[SellerInventoryItemViewAffiliate] show_seller_inventory_items_for_company(wink_version=wink_version, accept=accept)
 
 Show Items
 
@@ -555,13 +543,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to retrieve items for
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Items
-        api_response = api_instance.show_seller_inventory_items_for_company(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_seller_inventory_items_for_company(wink_version=wink_version, accept=accept)
         print("The response of ItemsApi->show_seller_inventory_items_for_company:\n")
         pprint(api_response)
     except Exception as e:
@@ -575,7 +562,6 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to retrieve items for | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -605,7 +591,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_seller_inventory_item**
-> SellerInventoryItemViewAffiliate update_seller_inventory_item(company_identifier, inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellerInventoryItemViewAffiliate update_seller_inventory_item(inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
 
 Update Item
 
@@ -639,14 +625,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    company_identifier = 'company_identifier_example' # str | Company identifier to update item for
-    inventory_identifier = 'card-blocking-1' # str | Update blocking with this identifier.
+    inventory_identifier = 'card-inventory-1' # str | Update inventory with this identifier.
     upsert_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryItemRequestAffiliate() # UpsertSellerInventoryItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Item
-        api_response = api_instance.update_seller_inventory_item(company_identifier, inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_seller_inventory_item(inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->update_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -660,8 +645,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier to update item for | 
- **inventory_identifier** | **str**| Update blocking with this identifier. | 
+ **inventory_identifier** | **str**| Update inventory with this identifier. | 
  **upsert_seller_inventory_item_request_affiliate** | [**UpsertSellerInventoryItemRequestAffiliate**](UpsertSellerInventoryItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 

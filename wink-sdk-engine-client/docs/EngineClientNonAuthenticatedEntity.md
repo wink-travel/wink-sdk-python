@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **wc_book_click_action** | **str** | Action to complete once a user clicks on the CTA button on blocking. | [optional] 
 **show_unavailable_card** | **bool** | Show unavailable blocking card when blocking not currently for sale. Otherwise, it displays a normal card but without the price. | [optional] 
 **show_rankings** | **bool** | Whether to display rankings (lifestyle, eco score and reviews) on hotel landing page. | [optional] 
+**show_search** | **bool** | This feature flag controls whether to let a user move away from the hotel landing page using search. | [optional] 
 **layout** | **str** | Choose how you want our web component cards laid out. | [optional] [default to 'INFORMATIONAL']
 **card_layout** | **str** | Choose how you large you want our web component cards to be. | [optional] [default to 'VERTICAL']
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique record identifier | 
 **hotel_identifier** | **str** | Hotel identifier. | 
-**featured_ind** | **bool** | Indicates whether this blocking is featured. Use this flag as a way to signify that this blocking is special. | 
+**featured_ind** | **bool** | Indicates whether this inventory is featured. Use this flag as a way to signify that this inventory is special. | 
 **lifestyle_type** | **str** | Indicate the type of lifestyle this blocking should be associated with. | [optional] 
 **location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) |  | 
 **descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | Localized descriptions describing blocking. | 

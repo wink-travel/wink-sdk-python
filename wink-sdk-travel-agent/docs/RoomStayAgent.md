@@ -7,7 +7,7 @@ All information about the room that was booked.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **policy** | [**PropertyPolicyAgent**](PropertyPolicyAgent.md) |  | 
-**room** | [**GuestRoomAgent**](GuestRoomAgent.md) |  | 
+**room** | [**GuestRoomLightweightAgent**](GuestRoomLightweightAgent.md) |  | 
 **rooms** | **int** | Number of rooms. Always 1 since we switched to creating one booking per room. | [default to 1]
 **bedroom_configuration** | [**BedroomConfigurationAgent**](BedroomConfigurationAgent.md) |  | 
 **adults** | **int** | The actual amount of adults as determined by the hotel&#39;s policy. | [default to 2]
@@ -17,19 +17,19 @@ Name | Type | Description | Notes
 **price** | [**StayRateAgent**](StayRateAgent.md) |  | 
 **room_rate_identifier** | **str** | Master rate identifier | 
 **room_rate_internal_name** | **str** | Master rate internal name | 
-**rate_plan** | [**RatePlanAgent**](RatePlanAgent.md) |  | 
-**perk_types** | **List[str]** | List of perks that came with the master rate | [optional] 
+**rate_plan** | [**RoomConfigurationPriceRatePlanAgent**](RoomConfigurationPriceRatePlanAgent.md) |  | 
+**perk_types** | [**List[PerkLightweightAgent]**](PerkLightweightAgent.md) | List of perks that came with the master rate | [optional] 
 **extra_charges** | [**ExtraChargesAgent**](ExtraChargesAgent.md) |  | 
 **active_cancellation_policy** | [**CancellationPolicyAgent**](CancellationPolicyAgent.md) |  | 
-**cancellable_by_hotel** | **bool** |  | [optional] 
-**cancellable_with_potential_charge** | **bool** |  | [optional] 
 **cancellable** | **bool** |  | [optional] 
-**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**guests** | **int** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**cancellable_by_hotel** | **bool** |  | [optional] 
+**cancellable_with_potential_charge** | **bool** |  | [optional] 
 **room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
-**guests** | **int** |  | [optional] 
 
 ## Example
 

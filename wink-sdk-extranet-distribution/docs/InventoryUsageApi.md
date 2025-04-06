@@ -134,7 +134,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     add_on_identifier = 'add-on-1' # str | Add-On identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -155,7 +155,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **add_on_identifier** | **str**| Add-On identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -304,7 +304,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     meeting_room_identifier = 'meeting-room-1' # str | Meeting room identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -325,7 +325,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **meeting_room_identifier** | **str**| Meeting room identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -474,7 +474,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     rate_plan_identifier = 'rate-plan-1' # str | Rate plan identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -495,7 +495,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **rate_plan_identifier** | **str**| Rate plan identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -559,7 +559,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     restaurant_identifier = 'restaurant-1' # str | Restaurant identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -580,7 +580,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **restaurant_identifier** | **str**| Restaurant identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -644,7 +644,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     room_type_identifier = 'room-type-1' # str | Room type identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -665,7 +665,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **room_type_identifier** | **str**| Room type identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -729,7 +729,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryUsageApi(api_client)
-    property_identifier = 'hotel-1' # str | Hotel identifier blocking owner
+    property_identifier = 'hotel-1' # str | Hotel identifier inventoryowner
     spa_identifier = 'spa-1' # str | Spa identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
@@ -750,7 +750,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Hotel identifier blocking owner | 
+ **property_identifier** | **str**| Hotel identifier inventoryowner | 
  **spa_identifier** | **str**| Spa identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 

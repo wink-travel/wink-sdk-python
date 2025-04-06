@@ -6,7 +6,7 @@ Inventory map marker
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channel_inventory_identifier** | **str** | Identifier of the list, channel blocking or search | 
+**channel_inventory_identifier** | **str** | Identifier of the list, channel inventory or search | 
 **point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) |  | 
 **supplier_identifier** | **str** | Hotel identifier | 
 **supplier_name** | **str** | Hotel name | 

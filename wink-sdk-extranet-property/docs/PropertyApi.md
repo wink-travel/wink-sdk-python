@@ -6,7 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**change_property_name**](PropertyApi.md#change_property_name) | **PATCH** /api/property/{propertyIdentifier}/change-name | Change Property Name
 [**improve_welcome_text**](PropertyApi.md#improve_welcome_text) | **POST** /api/property/{propertyIdentifier}/welcome-text/improve | Improve Welcome Text
-[**is_hotel_name_unique**](PropertyApi.md#is_hotel_name_unique) | **GET** /api/property/unique-name | Check Property Name Uniqueness
+[**is_hotel_name_unique**](PropertyApi.md#is_hotel_name_unique) | **GET** /api/property/unique/name | Check Property Name Uniqueness
+[**is_hotel_url_name_unique**](PropertyApi.md#is_hotel_url_name_unique) | **GET** /api/property/unique/url-name | Check Property Url Slug Uniqueness
 [**property_search**](PropertyApi.md#property_search) | **POST** /api/property/grid | Property Search
 [**show_hotel_by_manager**](PropertyApi.md#show_hotel_by_manager) | **GET** /api/property/{propertyIdentifier} | Show Property
 [**show_hotel_status**](PropertyApi.md#show_hotel_status) | **GET** /api/property/{propertyIdentifier}/status | Show Property Status
@@ -248,6 +249,91 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **key** | **str**| Search for uniqueness for this hotel name. | 
+ **hotel_identifier** | **str**| Optional, existing hotel identifier | [optional] 
+ **wink_version** | **str**|  | [optional] 
+ **accept** | **str**|  | [optional] 
+
+### Return type
+
+[**UniqueResultSupplier**](UniqueResultSupplier.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **is_hotel_url_name_unique**
+> UniqueResultSupplier is_hotel_url_name_unique(url_name, hotel_identifier=hotel_identifier, wink_version=wink_version, accept=accept)
+
+Check Property Url Slug Uniqueness
+
+Check if hotel name is a unique.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_extranet_property
+from wink_sdk_extranet_property.models.unique_result_supplier import UniqueResultSupplier
+from wink_sdk_extranet_property.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_extranet_property.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_extranet_property.PropertyApi(api_client)
+    url_name = 'blue-orchid' # str | Search for uniqueness for this hotel url name.
+    hotel_identifier = 'hotelIdentifier' # str | Optional, existing hotel identifier (optional)
+    wink_version = 'wink_version_example' # str |  (optional)
+    accept = 'accept_example' # str |  (optional)
+
+    try:
+        # Check Property Url Slug Uniqueness
+        api_response = api_instance.is_hotel_url_name_unique(url_name, hotel_identifier=hotel_identifier, wink_version=wink_version, accept=accept)
+        print("The response of PropertyApi->is_hotel_url_name_unique:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling PropertyApi->is_hotel_url_name_unique: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url_name** | **str**| Search for uniqueness for this hotel url name. | 
  **hotel_identifier** | **str**| Optional, existing hotel identifier | [optional] 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 

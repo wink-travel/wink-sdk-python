@@ -4,25 +4,25 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**add_inventory_to_curated_list**](CuratedListApi.md#add_inventory_to_curated_list) | **POST** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/item | Add Inventory to List
-[**add_supplier_to_curated_list**](CuratedListApi.md#add_supplier_to_curated_list) | **POST** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/item/supplier | Add Supplier to List
-[**copy_inventory_to_curated_list**](CuratedListApi.md#copy_inventory_to_curated_list) | **POST** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/item/{itemIdentifier} | Copy Item to List
-[**create_curated_list**](CuratedListApi.md#create_curated_list) | **POST** /api/affiliate/{companyIdentifier}/static-list | Create Curated List
-[**create_curated_supplier_list**](CuratedListApi.md#create_curated_supplier_list) | **POST** /api/affiliate/{companyIdentifier}/static-list/supplier | Create Curated List
-[**move_inventory_to_curated_list**](CuratedListApi.md#move_inventory_to_curated_list) | **PUT** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/item/{itemIdentifier} | Move List Item
-[**remove_curated_list**](CuratedListApi.md#remove_curated_list) | **DELETE** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier} | Remove Curated List
-[**remove_inventory_from_curated_list**](CuratedListApi.md#remove_inventory_from_curated_list) | **DELETE** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/item/{itemIdentifier} | Delete List Item
-[**show_curated_lists**](CuratedListApi.md#show_curated_lists) | **GET** /api/affiliate/{companyIdentifier}/static-list | Show Curated Lists
-[**sort_curated_list_items**](CuratedListApi.md#sort_curated_list_items) | **PATCH** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier}/sort | Re-Order List Items
-[**update_curated_list**](CuratedListApi.md#update_curated_list) | **PUT** /api/affiliate/{companyIdentifier}/static-list/{listIdentifier} | Update Curated List
+[**add_inventory_to_curated_list**](CuratedListApi.md#add_inventory_to_curated_list) | **POST** /api/static-list/{listIdentifier}/item | Add Inventory to List
+[**add_supplier_to_curated_list**](CuratedListApi.md#add_supplier_to_curated_list) | **POST** /api/static-list/{listIdentifier}/item/supplier | Add Supplier to List
+[**copy_inventory_to_curated_list**](CuratedListApi.md#copy_inventory_to_curated_list) | **POST** /api/static-list/{listIdentifier}/item/{itemIdentifier} | Copy Item to List
+[**create_curated_list**](CuratedListApi.md#create_curated_list) | **POST** /api/static-list | Create Curated List
+[**create_curated_supplier_list**](CuratedListApi.md#create_curated_supplier_list) | **POST** /api/static-list/supplier | Create Curated List
+[**move_inventory_to_curated_list**](CuratedListApi.md#move_inventory_to_curated_list) | **PUT** /api/static-list/{listIdentifier}/item/{itemIdentifier} | Move List Item
+[**remove_curated_list**](CuratedListApi.md#remove_curated_list) | **DELETE** /api/static-list/{listIdentifier} | Remove Curated List
+[**remove_inventory_from_curated_list**](CuratedListApi.md#remove_inventory_from_curated_list) | **DELETE** /api/static-list/{listIdentifier}/item/{itemIdentifier} | Delete List Item
+[**show_curated_lists**](CuratedListApi.md#show_curated_lists) | **GET** /api/static-list | Show Curated Lists
+[**sort_curated_list_items**](CuratedListApi.md#sort_curated_list_items) | **PATCH** /api/static-list/{listIdentifier}/sort | Re-Order List Items
+[**update_curated_list**](CuratedListApi.md#update_curated_list) | **PUT** /api/static-list/{listIdentifier} | Update Curated List
 
 
 # **add_inventory_to_curated_list**
-> StaticSellerListItemViewAffiliate add_inventory_to_curated_list(company_identifier, list_identifier, add_static_seller_list_item_request_affiliate, wink_version=wink_version)
+> StaticSellerListItemViewAffiliate add_inventory_to_curated_list(list_identifier, add_static_seller_list_item_request_affiliate, wink_version=wink_version)
 
 Add Inventory to List
 
-Add some travel blocking to your existing curated list
+Add some travel inventoryto your existing curated list
 
 ### Example
 
@@ -52,14 +52,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Add blocking to curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     add_static_seller_list_item_request_affiliate = wink_sdk_affiliate_browse.AddStaticSellerListItemRequestAffiliate() # AddStaticSellerListItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add Inventory to List
-        api_response = api_instance.add_inventory_to_curated_list(company_identifier, list_identifier, add_static_seller_list_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.add_inventory_to_curated_list(list_identifier, add_static_seller_list_item_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->add_inventory_to_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -73,7 +72,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Add blocking to curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **add_static_seller_list_item_request_affiliate** | [**AddStaticSellerListItemRequestAffiliate**](AddStaticSellerListItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
@@ -104,7 +102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **add_supplier_to_curated_list**
-> StaticSellerListItemViewAffiliate add_supplier_to_curated_list(company_identifier, list_identifier, add_static_seller_list_supplier_request_affiliate, wink_version=wink_version)
+> StaticSellerListItemViewAffiliate add_supplier_to_curated_list(list_identifier, add_static_seller_list_supplier_request_affiliate, wink_version=wink_version)
 
 Add Supplier to List
 
@@ -138,14 +136,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Add blocking to curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     add_static_seller_list_supplier_request_affiliate = wink_sdk_affiliate_browse.AddStaticSellerListSupplierRequestAffiliate() # AddStaticSellerListSupplierRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add Supplier to List
-        api_response = api_instance.add_supplier_to_curated_list(company_identifier, list_identifier, add_static_seller_list_supplier_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.add_supplier_to_curated_list(list_identifier, add_static_seller_list_supplier_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->add_supplier_to_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,7 +156,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Add blocking to curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **add_static_seller_list_supplier_request_affiliate** | [**AddStaticSellerListSupplierRequestAffiliate**](AddStaticSellerListSupplierRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
@@ -190,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **copy_inventory_to_curated_list**
-> StaticSellerListItemViewAffiliate copy_inventory_to_curated_list(company_identifier, list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
+> StaticSellerListItemViewAffiliate copy_inventory_to_curated_list(list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
 
 Copy Item to List
 
@@ -224,7 +220,6 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Copy blocking to curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
     copy_move_static_seller_list_item_request_affiliate = wink_sdk_affiliate_browse.CopyMoveStaticSellerListItemRequestAffiliate() # CopyMoveStaticSellerListItemRequestAffiliate | 
@@ -232,7 +227,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Copy Item to List
-        api_response = api_instance.copy_inventory_to_curated_list(company_identifier, list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.copy_inventory_to_curated_list(list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->copy_inventory_to_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -246,7 +241,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Copy blocking to curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
  **copy_move_static_seller_list_item_request_affiliate** | [**CopyMoveStaticSellerListItemRequestAffiliate**](CopyMoveStaticSellerListItemRequestAffiliate.md)|  | 
@@ -278,7 +272,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_curated_list**
-> StaticSellerListWrapperAffiliate create_curated_list(company_identifier, create_static_seller_list_and_add_item_request_affiliate, wink_version=wink_version)
+> StaticSellerListWrapperAffiliate create_curated_list(create_static_seller_list_and_add_item_request_affiliate, wink_version=wink_version)
 
 Create Curated List
 
@@ -312,13 +306,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Create curated list owned by this owner identifier.
     create_static_seller_list_and_add_item_request_affiliate = wink_sdk_affiliate_browse.CreateStaticSellerListAndAddItemRequestAffiliate() # CreateStaticSellerListAndAddItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Curated List
-        api_response = api_instance.create_curated_list(company_identifier, create_static_seller_list_and_add_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_curated_list(create_static_seller_list_and_add_item_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->create_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -332,7 +325,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create curated list owned by this owner identifier. | 
  **create_static_seller_list_and_add_item_request_affiliate** | [**CreateStaticSellerListAndAddItemRequestAffiliate**](CreateStaticSellerListAndAddItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -362,7 +354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_curated_supplier_list**
-> StaticSellerListWrapperAffiliate create_curated_supplier_list(company_identifier, create_static_seller_list_and_add_supplier_request_affiliate, wink_version=wink_version)
+> StaticSellerListWrapperAffiliate create_curated_supplier_list(create_static_seller_list_and_add_supplier_request_affiliate, wink_version=wink_version)
 
 Create Curated List
 
@@ -396,13 +388,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Create curated list owned by this owner identifier.
     create_static_seller_list_and_add_supplier_request_affiliate = wink_sdk_affiliate_browse.CreateStaticSellerListAndAddSupplierRequestAffiliate() # CreateStaticSellerListAndAddSupplierRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Curated List
-        api_response = api_instance.create_curated_supplier_list(company_identifier, create_static_seller_list_and_add_supplier_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_curated_supplier_list(create_static_seller_list_and_add_supplier_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->create_curated_supplier_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -416,7 +407,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create curated list owned by this owner identifier. | 
  **create_static_seller_list_and_add_supplier_request_affiliate** | [**CreateStaticSellerListAndAddSupplierRequestAffiliate**](CreateStaticSellerListAndAddSupplierRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -446,7 +436,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **move_inventory_to_curated_list**
-> StaticSellerListItemViewAffiliate move_inventory_to_curated_list(company_identifier, list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
+> StaticSellerListItemViewAffiliate move_inventory_to_curated_list(list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
 
 Move List Item
 
@@ -480,7 +470,6 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Move blocking to curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
     copy_move_static_seller_list_item_request_affiliate = wink_sdk_affiliate_browse.CopyMoveStaticSellerListItemRequestAffiliate() # CopyMoveStaticSellerListItemRequestAffiliate | 
@@ -488,7 +477,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Move List Item
-        api_response = api_instance.move_inventory_to_curated_list(company_identifier, list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.move_inventory_to_curated_list(list_identifier, item_identifier, copy_move_static_seller_list_item_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->move_inventory_to_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -502,7 +491,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Move blocking to curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
  **copy_move_static_seller_list_item_request_affiliate** | [**CopyMoveStaticSellerListItemRequestAffiliate**](CopyMoveStaticSellerListItemRequestAffiliate.md)|  | 
@@ -534,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_curated_list**
-> StaticSellerListViewAffiliate remove_curated_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> StaticSellerListViewAffiliate remove_curated_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Remove Curated List
 
@@ -567,14 +555,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Remove curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Remove Curated List
-        api_response = api_instance.remove_curated_list(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_curated_list(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of CuratedListApi->remove_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -588,7 +575,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -619,7 +605,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_inventory_from_curated_list**
-> StaticSellerListItemViewAffiliate remove_inventory_from_curated_list(company_identifier, list_identifier, item_identifier, wink_version=wink_version, accept=accept)
+> StaticSellerListItemViewAffiliate remove_inventory_from_curated_list(list_identifier, item_identifier, wink_version=wink_version, accept=accept)
 
 Delete List Item
 
@@ -652,7 +638,6 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Remove blocking from curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
     wink_version = 'wink_version_example' # str |  (optional)
@@ -660,7 +645,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Delete List Item
-        api_response = api_instance.remove_inventory_from_curated_list(company_identifier, list_identifier, item_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_inventory_from_curated_list(list_identifier, item_identifier, wink_version=wink_version, accept=accept)
         print("The response of CuratedListApi->remove_inventory_from_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -674,7 +659,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove blocking from curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
  **wink_version** | **str**|  | [optional] 
@@ -706,7 +690,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_curated_lists**
-> List[StaticSellerListWrapperAffiliate] show_curated_lists(company_identifier, with_items=with_items, wink_version=wink_version, accept=accept)
+> List[StaticSellerListWrapperAffiliate] show_curated_lists(with_items=with_items, wink_version=wink_version, accept=accept)
 
 Show Curated Lists
 
@@ -739,14 +723,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Show curated lists owned by this owner identifier.
     with_items = False # bool | Indicate whether to include all the list items in the result (optional) (default to False)
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Curated Lists
-        api_response = api_instance.show_curated_lists(company_identifier, with_items=with_items, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_curated_lists(with_items=with_items, wink_version=wink_version, accept=accept)
         print("The response of CuratedListApi->show_curated_lists:\n")
         pprint(api_response)
     except Exception as e:
@@ -760,7 +743,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Show curated lists owned by this owner identifier. | 
  **with_items** | **bool**| Indicate whether to include all the list items in the result | [optional] [default to False]
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -791,7 +773,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sort_curated_list_items**
-> List[StaticSellerListItemViewAffiliate] sort_curated_list_items(company_identifier, list_identifier, sort_static_seller_list_items_request_affiliate, wink_version=wink_version)
+> List[StaticSellerListItemViewAffiliate] sort_curated_list_items(list_identifier, sort_static_seller_list_items_request_affiliate, wink_version=wink_version)
 
 Re-Order List Items
 
@@ -825,14 +807,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Sort curated list items owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     sort_static_seller_list_items_request_affiliate = wink_sdk_affiliate_browse.SortStaticSellerListItemsRequestAffiliate() # SortStaticSellerListItemsRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Re-Order List Items
-        api_response = api_instance.sort_curated_list_items(company_identifier, list_identifier, sort_static_seller_list_items_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.sort_curated_list_items(list_identifier, sort_static_seller_list_items_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->sort_curated_list_items:\n")
         pprint(api_response)
     except Exception as e:
@@ -846,7 +827,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Sort curated list items owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **sort_static_seller_list_items_request_affiliate** | [**SortStaticSellerListItemsRequestAffiliate**](SortStaticSellerListItemsRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
@@ -877,7 +857,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_curated_list**
-> StaticSellerListWrapperAffiliate update_curated_list(company_identifier, list_identifier, upsert_static_seller_list_request_affiliate, wink_version=wink_version)
+> StaticSellerListWrapperAffiliate update_curated_list(list_identifier, upsert_static_seller_list_request_affiliate, wink_version=wink_version)
 
 Update Curated List
 
@@ -911,14 +891,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
-    company_identifier = 'owner-1' # str | Update curated list owned by this owner identifier.
     list_identifier = 'list-1' # str | List identifier.
     upsert_static_seller_list_request_affiliate = wink_sdk_affiliate_browse.UpsertStaticSellerListRequestAffiliate() # UpsertStaticSellerListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Curated List
-        api_response = api_instance.update_curated_list(company_identifier, list_identifier, upsert_static_seller_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_curated_list(list_identifier, upsert_static_seller_list_request_affiliate, wink_version=wink_version)
         print("The response of CuratedListApi->update_curated_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -932,7 +911,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update curated list owned by this owner identifier. | 
  **list_identifier** | **str**| List identifier. | 
  **upsert_static_seller_list_request_affiliate** | [**UpsertStaticSellerListRequestAffiliate**](UpsertStaticSellerListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 

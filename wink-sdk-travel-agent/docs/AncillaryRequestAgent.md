@@ -7,7 +7,7 @@ Extra reservations of spas, meeting rooms etc that should accompany the room typ
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type_identifier** | **str** | Travel blocking identifier | 
-**channel_inventory_identifier** | **str** | Channel blocking identifier | 
+**channel_inventory_identifier** | **str** | Channel inventory identifier | 
 **transactional_travel_inventory_identifier** | **str** | Travel blocking identifier | 
 **start_date** | **datetime** | Date start time when reservation was made for. | 
 **end_date** | **datetime** | Date end time when reservation was made for. | 

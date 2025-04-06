@@ -1,13 +1,13 @@
 # wink-sdk-extranet-booking
  # Introduction
- Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel blocking on the Wink platform. The API gives you all the tools you need to ready your properties and blocking for sale across 1000s of our native sales channels.
- Integrators, affiliates, travel agents and content creators have the ability search for your travel blocking and promote / sell it in a wide variety of ways.
+ Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.
+ Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.
 
  # Integrations
  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.
 
  # Intended Audience
- Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel blocking and get that same blocking out to as many eyeballs as possible at the lowest price possible.
+ Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.
  - Hotel chains
  - Hotel brands
  - Travel tech companies
@@ -31,16 +31,16 @@
 - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.
 
 ### Consume APIs
-Consume endpoints are for developers who want to find existing travel blocking and either book it or use it to advertise through one of their Wink affiliate accounts.
+Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.
 
  - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.
- - [Lookup](/lookup): All APIs related to locating blocking by region, locale and property flags.
- - [Inventory](/blocking): All APIs related to retrieve known travel blocking as it was found using the Lookup API..
+ - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.
+ - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..
  - [Booking](/booking): All APIs related to creating bookings on the platform.
  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.
 
  ### Produce APIs
- Produce endpoints are for developers who want to create and manage travel blocking.
+ Produce endpoints are for developers who want to create and manage travel inventory.
 
  #### Property
  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
@@ -48,13 +48,13 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
- - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and blocking calendars and more on Wink.
+ - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
 
  #### Affiliate
  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
- - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and blocking to sell.
- - [Inventory](/affiliate/blocking): The Inventory API exposes endpoints for affiliates to manage the blocking they want to sell and how they want to sell it.
+ - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
+ - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
 
@@ -62,7 +62,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
 
  ### Taxonomy APIs
- Taxonomy endpoints are for developers who want to consume and produce travel blocking and need taxonomies of standard and non-standard codes for blocking types, classes, statuses etc.
+ Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.
 
  - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.
 
@@ -72,7 +72,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
 
  ### Payment APIs
- Payment endpoints are for developers who want to purchase travel blocking. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
+ Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
 
  - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.
 
@@ -104,14 +104,14 @@ Browse the endpoints in the left navigation bar to get started.
 
 This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 30.9.11
-- Package version: 0.0.4
-- Generator version: 7.9.0
+- API version: 30.15.2
+- Package version: 0.0.5
+- Generator version: 7.11.0
 - Build package: org.openapitools.codegen.languages.PythonClientCodegen
 
 ## Requirements.
 
-Python 3.7+
+Python 3.8+
 
 ## Installation & Usage
 ### pip install
@@ -123,9 +123,9 @@ pip install wink_sdk_extranet_booking
 
 Or you can install it directly from the repository using:
 ```sh
-pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_extranet_booking&subdirectory=wink-sdk-extranet-booking
+pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_extranet_booking&subdirectory=wink-sdk-extranet-booking
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_extranet_booking&subdirectory=wink_sdk_extranet_booking`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_extranet_booking&subdirectory=wink_sdk_extranet_booking`)
 
 Then import the package:
 ```python
@@ -200,6 +200,7 @@ All URIs are relative to *https://api.wink.travel*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BookingApi* | [**cancel_hotel_booking**](docs/BookingApi.md#cancel_hotel_booking) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancel | Cancel Booking
+*BookingApi* | [**generate_booking_report**](docs/BookingApi.md#generate_booking_report) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/report/pdf | 
 *BookingApi* | [**is_booking_cancellable**](docs/BookingApi.md#is_booking_cancellable) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancellable | Is Booking Cancellable
 *BookingApi* | [**request_refund**](docs/BookingApi.md#request_refund) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/request-refund | Request refund
 *BookingApi* | [**resend_booking_confirmation_email**](docs/BookingApi.md#resend_booking_confirmation_email) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/resend | Resend Booking Confirmation
@@ -287,8 +288,6 @@ Class | Method | HTTP request | Description
  - [CustomMonetaryAmount](docs/CustomMonetaryAmount.md)
  - [DailyRateSupplier](docs/DailyRateSupplier.md)
  - [DailyRateSupplierDetails](docs/DailyRateSupplierDetails.md)
- - [DowPatternGroupSupplier](docs/DowPatternGroupSupplier.md)
- - [DowPatternGroupSupplierDetails](docs/DowPatternGroupSupplierDetails.md)
  - [EngineConfigurationBookingReportSupplier](docs/EngineConfigurationBookingReportSupplier.md)
  - [EngineConfigurationBookingReportSupplierDetails](docs/EngineConfigurationBookingReportSupplierDetails.md)
  - [EngineConfigurationThemeColorsSupplier](docs/EngineConfigurationThemeColorsSupplier.md)
@@ -309,8 +308,8 @@ Class | Method | HTTP request | Description
  - [GeoNameSupplierDetails](docs/GeoNameSupplierDetails.md)
  - [GroupDescriptorSupplier](docs/GroupDescriptorSupplier.md)
  - [GroupedBookingSalesMetricsSupplierDetails](docs/GroupedBookingSalesMetricsSupplierDetails.md)
- - [GuestRoomSupplier](docs/GuestRoomSupplier.md)
- - [GuestRoomSupplierDetails](docs/GuestRoomSupplierDetails.md)
+ - [GuestRoomLightweightSupplier](docs/GuestRoomLightweightSupplier.md)
+ - [GuestRoomLightweightSupplierDetails](docs/GuestRoomLightweightSupplierDetails.md)
  - [GuestUserSupplier](docs/GuestUserSupplier.md)
  - [GuestUserSupplierDetails](docs/GuestUserSupplierDetails.md)
  - [HotelOnMapSupplier](docs/HotelOnMapSupplier.md)
@@ -332,6 +331,8 @@ Class | Method | HTTP request | Description
  - [PayoutSupplierDetails](docs/PayoutSupplierDetails.md)
  - [PendingRefundSupplier](docs/PendingRefundSupplier.md)
  - [PendingRefundSupplierDetails](docs/PendingRefundSupplierDetails.md)
+ - [PerkLightweightSupplier](docs/PerkLightweightSupplier.md)
+ - [PerkLightweightSupplierDetails](docs/PerkLightweightSupplierDetails.md)
  - [PersonalSupplier](docs/PersonalSupplier.md)
  - [PersonalSupplierDetails](docs/PersonalSupplierDetails.md)
  - [PetInfoDtoSupplier](docs/PetInfoDtoSupplier.md)
@@ -349,8 +350,6 @@ Class | Method | HTTP request | Description
  - [QuoteSupplierDetails](docs/QuoteSupplierDetails.md)
  - [RatePlanLevelFeeSupplier](docs/RatePlanLevelFeeSupplier.md)
  - [RatePlanLevelFeeSupplierDetails](docs/RatePlanLevelFeeSupplierDetails.md)
- - [RatePlanSupplier](docs/RatePlanSupplier.md)
- - [RatePlanSupplierDetails](docs/RatePlanSupplierDetails.md)
  - [RefundSupplier](docs/RefundSupplier.md)
  - [RefundSupplierDetails](docs/RefundSupplierDetails.md)
  - [ReportingAncillarySupplier](docs/ReportingAncillarySupplier.md)
@@ -367,11 +366,15 @@ Class | Method | HTTP request | Description
  - [ReviewUserSupplier](docs/ReviewUserSupplier.md)
  - [ReviewUserSupplierDetails](docs/ReviewUserSupplierDetails.md)
  - [ReviewViewSupplier](docs/ReviewViewSupplier.md)
+ - [RoomConfigurationPriceRatePlanSupplier](docs/RoomConfigurationPriceRatePlanSupplier.md)
+ - [RoomConfigurationPriceRatePlanSupplierDetails](docs/RoomConfigurationPriceRatePlanSupplierDetails.md)
  - [RoomConfigurationSupplier](docs/RoomConfigurationSupplier.md)
  - [RoomConfigurationSupplierDetails](docs/RoomConfigurationSupplierDetails.md)
  - [RoomStaySupplier](docs/RoomStaySupplier.md)
  - [RoomStaySupplierDetails](docs/RoomStaySupplierDetails.md)
  - [ShowReview400Response](docs/ShowReview400Response.md)
+ - [SimpleAddressSupplier](docs/SimpleAddressSupplier.md)
+ - [SimpleAddressSupplierDetails](docs/SimpleAddressSupplierDetails.md)
  - [SimpleDateTimeItinerarySupplier](docs/SimpleDateTimeItinerarySupplier.md)
  - [SimpleDateTimeItinerarySupplierDetails](docs/SimpleDateTimeItinerarySupplierDetails.md)
  - [SimpleDescriptionSupplier](docs/SimpleDescriptionSupplier.md)

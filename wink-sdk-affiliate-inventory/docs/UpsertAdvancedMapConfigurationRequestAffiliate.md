@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **engine_configuration_identifier** | **str** | Customization identifier | 
 **name** | **str** | Name of map | 
-**type_identifier** | **str** | Inventory type identifier. Either a single channel blocking identifier, a list identifier or a dynamic search identifier. | 
+**type_identifier** | **str** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
 **type** | **str** | Type of blocking | 
 **center** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) |  | 
 **draggable** | **bool** | User can move around / pan the map | [default to True]

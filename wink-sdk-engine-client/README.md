@@ -1,13 +1,13 @@
 # wink-sdk-engine-client
  # Introduction
- Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel blocking on the Wink platform. The API gives you all the tools you need to ready your properties and blocking for sale across 1000s of our native sales channels.
- Integrators, affiliates, travel agents and content creators have the ability search for your travel blocking and promote / sell it in a wide variety of ways.
+ Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.
+ Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.
 
  # Integrations
  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.
 
  # Intended Audience
- Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel blocking and get that same blocking out to as many eyeballs as possible at the lowest price possible.
+ Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.
  - Hotel chains
  - Hotel brands
  - Travel tech companies
@@ -31,16 +31,16 @@
 - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.
 
 ### Consume APIs
-Consume endpoints are for developers who want to find existing travel blocking and either book it or use it to advertise through one of their Wink affiliate accounts.
+Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.
 
  - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.
- - [Lookup](/lookup): All APIs related to locating blocking by region, locale and property flags.
- - [Inventory](/blocking): All APIs related to retrieve known travel blocking as it was found using the Lookup API..
+ - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.
+ - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..
  - [Booking](/booking): All APIs related to creating bookings on the platform.
  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.
 
  ### Produce APIs
- Produce endpoints are for developers who want to create and manage travel blocking.
+ Produce endpoints are for developers who want to create and manage travel inventory.
 
  #### Property
  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
@@ -48,13 +48,13 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
- - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and blocking calendars and more on Wink.
+ - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
 
  #### Affiliate
  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
- - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and blocking to sell.
- - [Inventory](/affiliate/blocking): The Inventory API exposes endpoints for affiliates to manage the blocking they want to sell and how they want to sell it.
+ - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
+ - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
 
@@ -62,7 +62,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
 
  ### Taxonomy APIs
- Taxonomy endpoints are for developers who want to consume and produce travel blocking and need taxonomies of standard and non-standard codes for blocking types, classes, statuses etc.
+ Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.
 
  - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.
 
@@ -72,7 +72,7 @@ Consume endpoints are for developers who want to find existing travel blocking a
  - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
 
  ### Payment APIs
- Payment endpoints are for developers who want to purchase travel blocking. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
+ Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.
 
  - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.
 
@@ -101,14 +101,14 @@ Browse the endpoints in the left navigation bar to get started.
 
 This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 30.9.11
-- Package version: 0.0.4
-- Generator version: 7.9.0
+- API version: 30.15.2
+- Package version: 0.0.5
+- Generator version: 7.11.0
 - Build package: org.openapitools.codegen.languages.PythonClientCodegen
 
 ## Requirements.
 
-Python 3.7+
+Python 3.8+
 
 ## Installation & Usage
 ### pip install
@@ -120,9 +120,9 @@ pip install wink_sdk_engine_client
 
 Or you can install it directly from the repository using:
 ```sh
-pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_engine_client&subdirectory=wink-sdk-engine-client
+pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_engine_client&subdirectory=wink-sdk-engine-client
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.4#egg=wink_sdk_engine_client&subdirectory=wink_sdk_engine_client`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.5#egg=wink_sdk_engine_client&subdirectory=wink_sdk_engine_client`)
 
 Then import the package:
 ```python
@@ -175,17 +175,17 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_engine_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_engine_client.ConfigurationApi(api_client)
-    identifier = 'identifier_example' # str | 
+    client_id = 'client_id_example' # str | The clientId
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
-        # Load Configuration by ID
-        api_response = api_instance.show_engine_configuration(identifier, wink_version=wink_version, accept=accept)
-        print("The response of ConfigurationApi->show_engine_configuration:\n")
+        # Load Configuration by Client ID
+        api_response = api_instance.show_customization_by_client_id(client_id, wink_version=wink_version, accept=accept)
+        print("The response of ConfigurationApi->show_customization_by_client_id:\n")
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ConfigurationApi->show_engine_configuration: %s\n" % e)
+        print("Exception when calling ConfigurationApi->show_customization_by_client_id: %s\n" % e)
 
 ```
 
@@ -195,9 +195,10 @@ All URIs are relative to *https://api.wink.travel*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ConfigurationApi* | [**show_engine_configuration**](docs/ConfigurationApi.md#show_engine_configuration) | **GET** /api/sell/configuration/{identifier} | Load Configuration by ID
-*ConfigurationApi* | [**show_engine_configuration_with_client_header**](docs/ConfigurationApi.md#show_engine_configuration_with_client_header) | **GET** /api/sell/configuration/client | Load Configuration by Client ID in Header
-*ConfigurationApi* | [**show_primary_engine_configuration**](docs/ConfigurationApi.md#show_primary_engine_configuration) | **GET** /api/sell/configuration/client/{clientId} | Load Configuration by Client ID
+*ConfigurationApi* | [**show_customization_by_client_id**](docs/ConfigurationApi.md#show_customization_by_client_id) | **GET** /api/sell/configuration/client/{clientId} | Load Configuration by Client ID
+*ConfigurationApi* | [**show_customization_by_client_id_header**](docs/ConfigurationApi.md#show_customization_by_client_id_header) | **GET** /api/sell/configuration/client | Load Configuration by Client ID in Header
+*ConfigurationApi* | [**show_customization_by_id**](docs/ConfigurationApi.md#show_customization_by_id) | **GET** /api/sell/configuration/{identifier} | Load Configuration by ID
+*ConfigurationApi* | [**show_customization_by_url_name**](docs/ConfigurationApi.md#show_customization_by_url_name) | **GET** /api/sell/configuration/url-name/{urlName} | Load Configuration by URL name
 
 
 ## Documentation For Models
@@ -207,7 +208,7 @@ Class | Method | HTTP request | Description
  - [EngineConfigurationThemeColorsNonAuthenticatedEntity](docs/EngineConfigurationThemeColorsNonAuthenticatedEntity.md)
  - [GenericErrorMessage](docs/GenericErrorMessage.md)
  - [RoomConfigurationNonAuthenticatedEntity](docs/RoomConfigurationNonAuthenticatedEntity.md)
- - [ShowEngineConfiguration400Response](docs/ShowEngineConfiguration400Response.md)
+ - [ShowCustomizationById400Response](docs/ShowCustomizationById400Response.md)
 
 
 <a id="documentation-for-authorization"></a>

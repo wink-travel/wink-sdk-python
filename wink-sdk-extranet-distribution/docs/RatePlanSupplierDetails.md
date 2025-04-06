@@ -1,6 +1,5 @@
 # RatePlanSupplierDetails
 
-An optional rate plan can be applied to the add-on. The rate plan can help to create availability restrictions.
 
 ## Properties
 

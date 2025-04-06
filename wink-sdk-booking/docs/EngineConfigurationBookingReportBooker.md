@@ -36,6 +36,7 @@ Name | Type | Description | Notes
 **city** | [**GeoNameBooker**](GeoNameBooker.md) |  | [optional] 
 **show_unavailable_card** | **bool** | Show unavailable blocking card when blocking not currently for sale. Otherwise, it displays a normal card but without the price. | [optional] 
 **show_rankings** | **bool** | Whether to display rankings (lifestyle, eco score and reviews) on hotel landing page. | [optional] 
+**show_search** | **bool** | This feature flag controls whether to let a user move away from the hotel landing page using search. | [optional] 
 
 ## Example
 

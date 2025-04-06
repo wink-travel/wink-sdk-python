@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **user_identifier** | **str** | Creator of entry | 
 **owner_identifier** | **str** | The user&#39;s owner company this entry associates with | 
-**intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | 
+**intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
 **engine_configuration_identifier** | **str** | Customization identifier | 
 **initial_display_type** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'GRID_COLUMNS']
 **profile_picture_geometry** | **str** | Controls how to display profile picture | [optional] [default to 'CIRCLE']

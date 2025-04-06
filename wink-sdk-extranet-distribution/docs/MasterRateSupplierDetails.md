@@ -14,8 +14,7 @@ Name | Type | Description | Notes
 **room** | [**GuestRoomSupplierDetails**](GuestRoomSupplierDetails.md) |  | [optional] 
 **rate_plan** | [**RatePlanSupplierDetails**](RatePlanSupplierDetails.md) |  | [optional] 
 **enabled** | **bool** | Flag to enable / disable master rate across all sales channels | [default to True]
-**perk_types** | **List[str]** |  | [optional] 
-**perks_value** | **int** |  | [optional] 
+**perk_types** | [**List[PerkLightweightSupplierDetails]**](PerkLightweightSupplierDetails.md) |  | [optional] 
 
 ## Example
 

@@ -4,14 +4,14 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_saved_search**](SavedSearchApi.md#create_saved_search) | **POST** /api/affiliate/{companyIdentifier}/dynamic-list | Create Saved Search
-[**remove_saved_search**](SavedSearchApi.md#remove_saved_search) | **DELETE** /api/affiliate/{companyIdentifier}/dynamic-list/{listIdentifier} | Remove Saved Search
-[**show_saved_searches**](SavedSearchApi.md#show_saved_searches) | **GET** /api/affiliate/{companyIdentifier}/dynamic-list | Show Saved Searches
-[**update_saved_search**](SavedSearchApi.md#update_saved_search) | **PUT** /api/affiliate/{companyIdentifier}/dynamic-list/{listIdentifier} | Update Saved Search
+[**create_saved_search**](SavedSearchApi.md#create_saved_search) | **POST** /api/dynamic-list | Create Saved Search
+[**remove_saved_search**](SavedSearchApi.md#remove_saved_search) | **DELETE** /api/dynamic-list/{listIdentifier} | Remove Saved Search
+[**show_saved_searches**](SavedSearchApi.md#show_saved_searches) | **GET** /api/dynamic-list | Show Saved Searches
+[**update_saved_search**](SavedSearchApi.md#update_saved_search) | **PUT** /api/dynamic-list/{listIdentifier} | Update Saved Search
 
 
 # **create_saved_search**
-> DynamicSellerListViewAffiliate create_saved_search(company_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
+> DynamicSellerListViewAffiliate create_saved_search(upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
 
 Create Saved Search
 
@@ -45,13 +45,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.SavedSearchApi(api_client)
-    company_identifier = 'owner-1' # str | Create search owned by this owner identifier.
     upsert_dynamic_seller_list_affiliate = wink_sdk_affiliate_browse.UpsertDynamicSellerListAffiliate() # UpsertDynamicSellerListAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Saved Search
-        api_response = api_instance.create_saved_search(company_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_saved_search(upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
         print("The response of SavedSearchApi->create_saved_search:\n")
         pprint(api_response)
     except Exception as e:
@@ -65,7 +64,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Create search owned by this owner identifier. | 
  **upsert_dynamic_seller_list_affiliate** | [**UpsertDynamicSellerListAffiliate**](UpsertDynamicSellerListAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
@@ -95,7 +93,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_saved_search**
-> DynamicSellerListViewAffiliate remove_saved_search(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+> DynamicSellerListViewAffiliate remove_saved_search(list_identifier, wink_version=wink_version, accept=accept)
 
 Remove Saved Search
 
@@ -128,14 +126,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.SavedSearchApi(api_client)
-    company_identifier = 'owner-1' # str | Remove search owned by this owner identifier.
     list_identifier = 'saved-search-1' # str | Saved search identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Remove Saved Search
-        api_response = api_instance.remove_saved_search(company_identifier, list_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_saved_search(list_identifier, wink_version=wink_version, accept=accept)
         print("The response of SavedSearchApi->remove_saved_search:\n")
         pprint(api_response)
     except Exception as e:
@@ -149,7 +146,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove search owned by this owner identifier. | 
  **list_identifier** | **str**| Saved search identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
@@ -180,7 +176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_saved_searches**
-> List[DynamicSellerListViewAffiliate] show_saved_searches(company_identifier, wink_version=wink_version, accept=accept)
+> List[DynamicSellerListViewAffiliate] show_saved_searches(wink_version=wink_version, accept=accept)
 
 Show Saved Searches
 
@@ -213,13 +209,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.SavedSearchApi(api_client)
-    company_identifier = 'owner-1' # str | List searches owned by this owner identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Saved Searches
-        api_response = api_instance.show_saved_searches(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_saved_searches(wink_version=wink_version, accept=accept)
         print("The response of SavedSearchApi->show_saved_searches:\n")
         pprint(api_response)
     except Exception as e:
@@ -233,7 +228,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| List searches owned by this owner identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -263,7 +257,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_saved_search**
-> DynamicSellerListViewAffiliate update_saved_search(company_identifier, list_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
+> DynamicSellerListViewAffiliate update_saved_search(list_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
 
 Update Saved Search
 
@@ -297,14 +291,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.SavedSearchApi(api_client)
-    company_identifier = 'owner-1' # str | Update search owned by this owner identifier.
     list_identifier = 'saved-search-1' # str | Saved search identifier.
     upsert_dynamic_seller_list_affiliate = wink_sdk_affiliate_browse.UpsertDynamicSellerListAffiliate() # UpsertDynamicSellerListAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Saved Search
-        api_response = api_instance.update_saved_search(company_identifier, list_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_saved_search(list_identifier, upsert_dynamic_seller_list_affiliate, wink_version=wink_version)
         print("The response of SavedSearchApi->update_saved_search:\n")
         pprint(api_response)
     except Exception as e:
@@ -318,7 +311,6 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Update search owned by this owner identifier. | 
  **list_identifier** | **str**| Saved search identifier. | 
  **upsert_dynamic_seller_list_affiliate** | [**UpsertDynamicSellerListAffiliate**](UpsertDynamicSellerListAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 

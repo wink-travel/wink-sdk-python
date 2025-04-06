@@ -5,6 +5,7 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**cancel_hotel_booking**](BookingApi.md#cancel_hotel_booking) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancel | Cancel Booking
+[**generate_booking_report**](BookingApi.md#generate_booking_report) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/report/pdf | 
 [**is_booking_cancellable**](BookingApi.md#is_booking_cancellable) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancellable | Is Booking Cancellable
 [**request_refund**](BookingApi.md#request_refund) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/request-refund | Request refund
 [**resend_booking_confirmation_email**](BookingApi.md#resend_booking_confirmation_email) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/resend | Resend Booking Confirmation
@@ -95,6 +96,86 @@ Name | Type | Description  | Notes
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **generate_booking_report**
+> generate_booking_report(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
+
+
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_extranet_booking
+from wink_sdk_extranet_booking.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_extranet_booking.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_extranet_booking.BookingApi(api_client)
+    property_identifier = 'hotel-1' # str | Generate report for property identifier
+    booking_identifier = 'booking-1' # str | Generate report for this booking identifier
+    wink_version = 'wink_version_example' # str |  (optional)
+    accept = 'accept_example' # str |  (optional)
+
+    try:
+        api_instance.generate_booking_report(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
+    except Exception as e:
+        print("Exception when calling BookingApi->generate_booking_report: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **property_identifier** | **str**| Generate report for property identifier | 
+ **booking_identifier** | **str**| Generate report for this booking identifier | 
+ **wink_version** | **str**|  | [optional] 
+ **accept** | **str**|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: */*, application/json, application/xml, text/xml, text/plain
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |

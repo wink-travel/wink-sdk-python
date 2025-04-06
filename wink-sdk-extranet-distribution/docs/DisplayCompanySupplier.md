@@ -13,14 +13,15 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **owner_name** | **str** |  | 
 **description** | **str** |  | [optional] 
-**url** | **str** |  | 
-**urls** | **List[str]** |  | [optional] 
 **type** | **str** |  | 
 **enabled** | **bool** |  | 
 **approved** | **bool** |  | 
 **created_date** | **datetime** |  | 
 **last_update** | **datetime** |  | 
 **travel_agent** | [**TravelAgentSupplier**](TravelAgentSupplier.md) |  | 
+**owner_image_id** | **str** | The company image ID | 
+**online_presence** | [**List[OnlinePresenceSupplier]**](OnlinePresenceSupplier.md) |  | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example
 

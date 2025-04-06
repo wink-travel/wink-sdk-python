@@ -7,7 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **trade_name** | **str** | Doing business as name. | 
 **legal_name** | **str** | Hotel chain name if property is part of that chain. | 
-**local_name** | **str** | Name of the hotel in its local language. | 
+**local_name** | **str** | Name of the hotel in its local language. | [optional] 
+**url_name** | **str** | Url slug that uniquely identifies the property. | [optional] 
 
 ## Example
 

@@ -47,10 +47,10 @@ update_version_file() {
 current_version=$(get_current_version)
 
 # Get the new version number
-new_version=$(npx git-changelog-command-line \
+new_version=$(timeout 60 npx git-changelog-command-line \
   --print-next-version \
   --major-version-pattern BREAKING \
-  --minor-version-pattern feat)
+  --minor-version-pattern feat) || { echo "Error: git-changelog-command-line command timed out or failed." >&2; exit 1; }
 
 echo "Current version: $current_version"
 echo "New version: $new_version"

@@ -17,10 +17,12 @@ docs/KeyValuePairNonAuthenticatedEntity.md
 docs/LanguageNonAuthenticatedEntity.md
 docs/PageExchangeRateViewNonAuthenticatedEntity.md
 docs/PageableObjectNonAuthenticatedEntity.md
+docs/PerkLightweightNonAuthenticatedEntity.md
 docs/QuoteNonAuthenticatedEntity.md
 docs/RateProviderApi.md
 docs/ReferenceApi.md
 docs/ShowSocialNetworks400Response.md
+docs/SimpleDescriptionNonAuthenticatedEntity.md
 docs/SortObject.md
 docs/SubCountryNonAuthenticatedEntity.md
 docs/SubSubCountryNonAuthenticatedEntity.md
@@ -31,6 +33,8 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_perk_lightweight_non_authenticated_entity.py
+test/test_simple_description_non_authenticated_entity.py
 tox.ini
 wink_sdk_reference/__init__.py
 wink_sdk_reference/api/__init__.py
@@ -55,8 +59,10 @@ wink_sdk_reference/models/key_value_pair_non_authenticated_entity.py
 wink_sdk_reference/models/language_non_authenticated_entity.py
 wink_sdk_reference/models/page_exchange_rate_view_non_authenticated_entity.py
 wink_sdk_reference/models/pageable_object_non_authenticated_entity.py
+wink_sdk_reference/models/perk_lightweight_non_authenticated_entity.py
 wink_sdk_reference/models/quote_non_authenticated_entity.py
 wink_sdk_reference/models/show_social_networks400_response.py
+wink_sdk_reference/models/simple_description_non_authenticated_entity.py
 wink_sdk_reference/models/sort_object.py
 wink_sdk_reference/models/sub_country_non_authenticated_entity.py
 wink_sdk_reference/models/sub_sub_country_non_authenticated_entity.py
