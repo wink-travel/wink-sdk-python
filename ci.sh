@@ -69,7 +69,7 @@ if git diff --cached --quiet; then
 else
   # Commit with a message that includes the version
   git commit -m "chore: update SDKs after generation (version $VERSION)" || error "Commit failed."
-  git push origin develop || error "Failed to push commit to development branch."
+  git push origin HEAD:develop || error "Failed to push commit to development branch."
   echo "SDK changes committed and pushed."
 fi
 
