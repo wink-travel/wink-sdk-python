@@ -41,6 +41,6 @@ echo "=== CD Process Initiated ==="
 # 1. Perform PyPI Release
 ###############################################################################
 echo "--- Running pypi-release.sh ---"
-bash pypi-release.sh || error "PyPI release process failed."
+source pypi-release.sh || error "PyPI release process failed."
 
 echo "=== CD Process Completed Successfully ==="
