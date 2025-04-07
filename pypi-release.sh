@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################################################
-# release.sh
+# pypi-release.sh
 #
 # A CD script to upload built SDK packages to PyPI.
 #
@@ -11,7 +11,7 @@
 #        - Upload the built package in the "dist" folder to PyPI using Twine.
 #
 # Usage:
-#   bash release.sh
+#   bash pypi-release.sh
 #
 # Requirements:
 #   - Bash 4 or higher
