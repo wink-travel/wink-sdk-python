@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.18"
+__version__ = "0.0.19"
 
 # import apis into sdk package
 from wink_sdk_ping.api.ping_api import PingApi
