@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.13"
+__version__ = "0.0.14"
 
 # import apis into sdk package
 from wink_sdk_reference.api.geo_data_api import GeoDataApi
