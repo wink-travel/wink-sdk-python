@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wink_sdk_affiliate_browse"
-version = "0.0.17"
+version = "0.0.18"
 description = "Wink API"
 authors = ["Bjorn Harvold <bjorn@wink.travel>"]
 license = "NoLicense"
