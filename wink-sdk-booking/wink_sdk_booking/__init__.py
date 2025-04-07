@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.17"
+__version__ = "0.0.18"
 
 # import apis into sdk package
 from wink_sdk_booking.api.booking_api import BookingApi
