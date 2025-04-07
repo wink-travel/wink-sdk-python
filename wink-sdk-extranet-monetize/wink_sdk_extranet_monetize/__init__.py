@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.11"
+__version__ = "0.0.12"
 
 # import apis into sdk package
 from wink_sdk_extranet_monetize.api.add_on_api import AddOnApi
