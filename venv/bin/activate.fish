@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /opt/bamboo-agent-1/xml-data/build-dir/WINK-WSP-JOB1/venv
+set -gx VIRTUAL_ENV /opt/bamboo-agent-2/xml-data/build-dir/WINK-WSP-JOB1/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
