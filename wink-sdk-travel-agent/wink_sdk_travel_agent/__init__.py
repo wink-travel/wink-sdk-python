@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.19"
+__version__ = "0.0.20"
 
 # import apis into sdk package
 from wink_sdk_travel_agent.api.travel_agent_api import TravelAgentApi
