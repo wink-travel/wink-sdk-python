@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.16"
+__version__ = "0.0.17"
 
 # import apis into sdk package
 from wink_sdk_affiliate.api.account_manager_api import AccountManagerApi

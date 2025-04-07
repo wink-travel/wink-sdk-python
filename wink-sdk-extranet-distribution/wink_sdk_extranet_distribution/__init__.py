@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.16"
+__version__ = "0.0.17"
 
 # import apis into sdk package
 from wink_sdk_extranet_distribution.api.affiliate_api import AffiliateApi
