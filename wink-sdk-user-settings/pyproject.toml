@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wink_sdk_user_settings"
-version = "0.0.15"
+version = "0.0.16"
 description = "Wink API"
 authors = ["Bjorn Harvold <bjorn@wink.travel>"]
 license = "NoLicense"
