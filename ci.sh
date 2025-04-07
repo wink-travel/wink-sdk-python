@@ -85,6 +85,6 @@ bash github-release.sh || error "GitHub release process failed."
 ###############################################################################
 echo "--- Running pypi-build.sh to build SDK artifacts ---"
 
-bash pypi-build.sh || error "PyPI build process failed."
+source pypi-build.sh || error "PyPI build process failed."
 
 echo "=== CI Process Completed Successfully ==="
