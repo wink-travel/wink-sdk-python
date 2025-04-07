@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.14"
+__version__ = "0.0.15"
 
 # import apis into sdk package
 from wink_sdk_affiliate_winklinks.api.syndication_consumer_api import SyndicationConsumerApi
