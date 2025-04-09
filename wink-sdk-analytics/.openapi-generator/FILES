@@ -28,7 +28,7 @@ docs/PageableObjectNonAuthenticatedEntity.md
 docs/RemoveEntryResponseAuthenticatedEntity.md
 docs/ShowChartRequest400Response.md
 docs/SortDescriptorNonAuthenticatedEntity.md
-docs/SortObject.md
+docs/SortObjectNonAuthenticatedEntity.md
 docs/StateNonAuthenticatedEntity.md
 docs/UpsertChartRequestWrapperAuthenticatedEntity.md
 git_push.sh
@@ -38,6 +38,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_non_authenticated_entity.py
 tox.ini
 wink_sdk_analytics/__init__.py
 wink_sdk_analytics/api/__init__.py
@@ -71,7 +72,7 @@ wink_sdk_analytics/models/pageable_object_non_authenticated_entity.py
 wink_sdk_analytics/models/remove_entry_response_authenticated_entity.py
 wink_sdk_analytics/models/show_chart_request400_response.py
 wink_sdk_analytics/models/sort_descriptor_non_authenticated_entity.py
-wink_sdk_analytics/models/sort_object.py
+wink_sdk_analytics/models/sort_object_non_authenticated_entity.py
 wink_sdk_analytics/models/state_non_authenticated_entity.py
 wink_sdk_analytics/models/upsert_chart_request_wrapper_authenticated_entity.py
 wink_sdk_analytics/py.typed

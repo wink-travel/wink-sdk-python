@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **language** | **str** | User&#39;s language preference | 
 **currency** | **str** | User&#39;s currency preference | 
 **lifestyle** | **str** | Control which lifestyle context your user was in. | [optional] 
-**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example

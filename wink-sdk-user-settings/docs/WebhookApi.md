@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_webhooks**
-> List[Webhook] show_webhooks(wink_version=wink_version, accept=accept)
+> List[Webhook] show_webhooks(owner_identifier=owner_identifier, wink_version=wink_version, accept=accept)
 
 Show Webhooks
 
@@ -375,12 +375,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.WebhookApi(api_client)
+    owner_identifier = 'owner_identifier_example' # str | Optional ownerIdentifier to filter on (optional)
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Webhooks
-        api_response = api_instance.show_webhooks(wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_webhooks(owner_identifier=owner_identifier, wink_version=wink_version, accept=accept)
         print("The response of WebhookApi->show_webhooks:\n")
         pprint(api_response)
     except Exception as e:
@@ -394,6 +395,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **owner_identifier** | **str**| Optional ownerIdentifier to filter on | [optional] 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 

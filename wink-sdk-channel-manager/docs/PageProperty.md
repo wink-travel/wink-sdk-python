@@ -7,14 +7,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**sort** | [**SortObject**](SortObject.md) |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[ModelProperty]**](ModelProperty.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**sort** | [**List[SortObject]**](SortObject.md) |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**pageable** | [**PageableObject**](PageableObject.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**pageable** | [**PageableObject**](PageableObject.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

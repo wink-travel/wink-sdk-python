@@ -134,7 +134,7 @@ docs/SimpleMultimediaBooker.md
 docs/SocialAuthenticatedEntity.md
 docs/SocialBooker.md
 docs/SortDescriptorBooker.md
-docs/SortObject.md
+docs/SortObjectBooker.md
 docs/StateBooker.md
 docs/StayRateAuthenticatedEntity.md
 docs/StayRateBooker.md
@@ -155,6 +155,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_booker.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py
@@ -294,7 +295,7 @@ wink_sdk_booking/models/simple_multimedia_booker.py
 wink_sdk_booking/models/social_authenticated_entity.py
 wink_sdk_booking/models/social_booker.py
 wink_sdk_booking/models/sort_descriptor_booker.py
-wink_sdk_booking/models/sort_object.py
+wink_sdk_booking/models/sort_object_booker.py
 wink_sdk_booking/models/state_booker.py
 wink_sdk_booking/models/stay_rate_authenticated_entity.py
 wink_sdk_booking/models/stay_rate_booker.py

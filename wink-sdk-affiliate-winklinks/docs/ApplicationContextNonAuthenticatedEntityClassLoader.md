@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **registered_as_parallel_capable** | **bool** |  | [optional] 
 **parent** | [**ApplicationContextNonAuthenticatedEntityClassLoaderParent**](ApplicationContextNonAuthenticatedEntityClassLoaderParent.md) |  | [optional] 
 **unnamed_module** | [**ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModule**](ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModule.md) |  | [optional] 
-**defined_packages** | [**List[ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleClassLoaderDefinedPackagesInner]**](ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleClassLoaderDefinedPackagesInner.md) |  | [optional] 
+**defined_packages** | [**List[ApplicationContextNonAuthenticatedEntityClassLoaderParentDefinedPackagesInner]**](ApplicationContextNonAuthenticatedEntityClassLoaderParentDefinedPackagesInner.md) |  | [optional] 
 **default_assertion_status** | **bool** |  | [optional] 
 
 ## Example

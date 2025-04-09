@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotels_by_manager**
-> List[HotelViewSupplier] show_hotels_by_manager(wink_version=wink_version, accept=accept)
+> List[HotelLightweightSupplier] show_hotels_by_manager(wink_version=wink_version, accept=accept)
 
 Property List
 
@@ -624,7 +624,7 @@ Retrieve a list of all your hotels
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.hotel_lightweight_supplier import HotelLightweightSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -669,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[HotelViewSupplier]**](HotelViewSupplier.md)
+[**List[HotelLightweightSupplier]**](HotelLightweightSupplier.md)
 
 ### Authorization
 

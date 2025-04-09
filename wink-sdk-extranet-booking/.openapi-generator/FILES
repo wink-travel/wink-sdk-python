@@ -168,7 +168,7 @@ docs/SimpleMultimediaSupplierDetails.md
 docs/SocialSupplier.md
 docs/SocialSupplierDetails.md
 docs/SortDescriptorSupplier.md
-docs/SortObject.md
+docs/SortObjectSupplier.md
 docs/StateSupplier.md
 docs/StayRateSupplier.md
 docs/StayRateSupplierDetails.md
@@ -191,6 +191,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
@@ -364,7 +365,7 @@ wink_sdk_extranet_booking/models/simple_multimedia_supplier_details.py
 wink_sdk_extranet_booking/models/social_supplier.py
 wink_sdk_extranet_booking/models/social_supplier_details.py
 wink_sdk_extranet_booking/models/sort_descriptor_supplier.py
-wink_sdk_extranet_booking/models/sort_object.py
+wink_sdk_extranet_booking/models/sort_object_supplier.py
 wink_sdk_extranet_booking/models/state_supplier.py
 wink_sdk_extranet_booking/models/stay_rate_supplier.py
 wink_sdk_extranet_booking/models/stay_rate_supplier_details.py

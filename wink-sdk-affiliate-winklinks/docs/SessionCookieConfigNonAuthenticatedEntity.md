@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **name** | **str** |  | [optional] 
 **attributes** | **Dict[str, str]** |  | [optional] 
 **comment** | **str** |  | [optional] 
-**secure** | **bool** |  | [optional] 
 **max_age** | **int** |  | [optional] 
 **http_only** | **bool** |  | [optional] 
+**secure** | **bool** |  | [optional] 
 
 ## Example
 

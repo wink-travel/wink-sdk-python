@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**show_companies**](AffiliateApi.md#show_companies) | **GET** /api/affiliate/list | Show Affiliates
 [**show_company**](AffiliateApi.md#show_company) | **GET** /api/affiliate/{companyIdentifier} | Show Affiliate
 [**show_my_account**](AffiliateApi.md#show_my_account) | **GET** /api/my-account | Show My Account
-[**show_sales_channels**](AffiliateApi.md#show_sales_channels) | **GET** /api/sales-channel/search/{name} | Sales Channel Search
+[**show_sales_channels**](AffiliateApi.md#show_sales_channels) | **GET** /api/sales-channel/search | Sales Channel Search
 [**update_company**](AffiliateApi.md#update_company) | **PATCH** /api/affiliate/{companyIdentifier} | Update Affiliate
 [**update_company1**](AffiliateApi.md#update_company1) | **PATCH** /api/affiliate/{companyIdentifier}/status | Toggle Affiliate Status
 [**update_company_address**](AffiliateApi.md#update_company_address) | **PATCH** /api/affiliate/{companyIdentifier}/address | Update Affiliate Address

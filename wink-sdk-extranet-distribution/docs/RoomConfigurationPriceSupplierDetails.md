@@ -27,10 +27,10 @@ Name | Type | Description | Notes
 **direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]
 **price_list** | [**List[LocalizedTransactionalTravelInventorySupplierDetails]**](LocalizedTransactionalTravelInventorySupplierDetails.md) |  | [optional] 
 **available** | **bool** |  | [optional] 
-**rate_source** | **str** |  | [optional] 
-**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**rate_source** | **str** |  | [optional] 
 
 ## Example
 

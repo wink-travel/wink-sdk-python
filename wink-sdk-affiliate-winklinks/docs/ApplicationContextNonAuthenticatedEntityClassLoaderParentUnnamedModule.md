@@ -6,7 +6,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | [optional] 
-**class_loader** | [**ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleClassLoader**](ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleClassLoader.md) |  | [optional] 
 **descriptor** | [**ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleDescriptor**](ApplicationContextNonAuthenticatedEntityClassLoaderParentUnnamedModuleDescriptor.md) |  | [optional] 
 **named** | **bool** |  | [optional] 
 **annotations** | **List[object]** |  | [optional] 

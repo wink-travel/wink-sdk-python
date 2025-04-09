@@ -23,6 +23,7 @@ docs/GeoJsonPointSupplier.md
 docs/GeoLocationApi.md
 docs/GeoNameSupplier.md
 docs/GroupDescriptorSupplier.md
+docs/HotelLightweightSupplier.md
 docs/HotelSupplier.md
 docs/HotelViewSupplier.md
 docs/ImageAttributionSupplier.md
@@ -46,7 +47,7 @@ docs/SocialNetworksRequestSupplier.md
 docs/SocialNetworksResponseSupplier.md
 docs/SocialSupplier.md
 docs/SortDescriptorSupplier.md
-docs/SortObject.md
+docs/SortObjectSupplier.md
 docs/StateSupplier.md
 docs/SubCountrySupplier.md
 docs/SubSubCountrySupplier.md
@@ -75,6 +76,8 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_hotel_lightweight_supplier.py
+test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_extranet_property/__init__.py
 wink_sdk_extranet_property/api/__init__.py
@@ -109,6 +112,7 @@ wink_sdk_extranet_property/models/generic_error_message.py
 wink_sdk_extranet_property/models/geo_json_point_supplier.py
 wink_sdk_extranet_property/models/geo_name_supplier.py
 wink_sdk_extranet_property/models/group_descriptor_supplier.py
+wink_sdk_extranet_property/models/hotel_lightweight_supplier.py
 wink_sdk_extranet_property/models/hotel_supplier.py
 wink_sdk_extranet_property/models/hotel_view_supplier.py
 wink_sdk_extranet_property/models/image_attribution_supplier.py
@@ -126,7 +130,7 @@ wink_sdk_extranet_property/models/social_networks_request_supplier.py
 wink_sdk_extranet_property/models/social_networks_response_supplier.py
 wink_sdk_extranet_property/models/social_supplier.py
 wink_sdk_extranet_property/models/sort_descriptor_supplier.py
-wink_sdk_extranet_property/models/sort_object.py
+wink_sdk_extranet_property/models/sort_object_supplier.py
 wink_sdk_extranet_property/models/state_supplier.py
 wink_sdk_extranet_property/models/sub_country_supplier.py
 wink_sdk_extranet_property/models/sub_sub_country_supplier.py

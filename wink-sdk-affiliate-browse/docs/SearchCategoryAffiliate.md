@@ -6,9 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | Type of search category. | 
-**key** | **str** | Usually the OTA reactive code. | 
-**value** | **str** | Usually the OTA reactive code value. | 
+**key** | **str** | Usually the OTA inventory code. | 
+**value** | **str** | Usually the OTA inventory code value. | 
 **count** | **int** | Quantity of items in this category. | [optional] 
+**identifier** | **str** | UUID. | [optional] 
 
 ## Example
 

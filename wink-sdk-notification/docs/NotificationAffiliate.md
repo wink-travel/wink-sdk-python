@@ -10,8 +10,11 @@ Name | Type | Description | Notes
 **priority** | **str** | Importance of message | 
 **type** | **str** | Message type | 
 **recipient_type** | **str** | Recipient type | 
+**application** | **str** | Application domain | 
+**message_template_id** | **str** | Message template | 
 **subject** | **str** | Subject of message | 
-**body** | **str** | Body of message | 
+**body** | **str** | Subject of message | 
+**cta_url** | **str** | Path to feature | 
 **read** | **bool** | Company read announcement | [optional] 
 **marked_as_removed** | **bool** | Message marked as removed | [optional] 
 **notify_via_email** | **bool** | Also send email announcement | [optional] 

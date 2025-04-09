@@ -7,6 +7,7 @@ docs/AddressSupplier.md
 docs/AggregateGreendexAnswersSupplier.md
 docs/AggregateGreendexScoreByCategorySupplier.md
 docs/ContactSupplier.md
+docs/CountResponseSupplier.md
 docs/CountrySupplier.md
 docs/CustomMonetaryAmount.md
 docs/GeneralManagerSupplier.md
@@ -43,6 +44,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_count_response_supplier.py
 tox.ini
 wink_sdk_extranet_property_register/__init__.py
 wink_sdk_extranet_property_register/api/__init__.py
@@ -57,6 +59,7 @@ wink_sdk_extranet_property_register/models/address_supplier.py
 wink_sdk_extranet_property_register/models/aggregate_greendex_answers_supplier.py
 wink_sdk_extranet_property_register/models/aggregate_greendex_score_by_category_supplier.py
 wink_sdk_extranet_property_register/models/contact_supplier.py
+wink_sdk_extranet_property_register/models/count_response_supplier.py
 wink_sdk_extranet_property_register/models/country_supplier.py
 wink_sdk_extranet_property_register/models/custom_monetary_amount.py
 wink_sdk_extranet_property_register/models/general_manager_supplier.py

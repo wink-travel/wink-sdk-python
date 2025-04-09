@@ -40,7 +40,7 @@ docs/SearchCategoryAffiliate.md
 docs/SimpleDescriptionAffiliate.md
 docs/SimpleMultimediaAffiliate.md
 docs/SocialAffiliate.md
-docs/SortObject.md
+docs/SortObjectAffiliate.md
 docs/SortStaticSellerListItemsRequestAffiliate.md
 docs/StaticSellerListAffiliate.md
 docs/StaticSellerListItemAffiliate.md
@@ -61,6 +61,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_affiliate.py
 tox.ini
 wink_sdk_affiliate_browse/__init__.py
 wink_sdk_affiliate_browse/api/__init__.py
@@ -106,7 +107,7 @@ wink_sdk_affiliate_browse/models/search_category_affiliate.py
 wink_sdk_affiliate_browse/models/simple_description_affiliate.py
 wink_sdk_affiliate_browse/models/simple_multimedia_affiliate.py
 wink_sdk_affiliate_browse/models/social_affiliate.py
-wink_sdk_affiliate_browse/models/sort_object.py
+wink_sdk_affiliate_browse/models/sort_object_affiliate.py
 wink_sdk_affiliate_browse/models/sort_static_seller_list_items_request_affiliate.py
 wink_sdk_affiliate_browse/models/static_seller_list_affiliate.py
 wink_sdk_affiliate_browse/models/static_seller_list_item_affiliate.py

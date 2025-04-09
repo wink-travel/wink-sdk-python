@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **continent** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) |  | 
 **name** | **str** |  | 
 **owner_name** | **str** |  | 
+**url_name** | **str** |  | 
 **description** | **str** |  | [optional] 
 **type** | **str** |  | 
 **enabled** | **bool** |  | 

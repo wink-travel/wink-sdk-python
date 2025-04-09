@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | Type of social network. | [optional] 
 **location** | **str** | URL or social network identifier to social network profile | [optional] 
-**enabled** | **bool** | Whether social network is available for use. | [optional] 
 
 ## Example
 

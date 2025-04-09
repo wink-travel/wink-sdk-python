@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **owner_identifier** | **str** | The company ID. | [optional] 
 **type** | **str** | The company type | [optional] 
 **owner_name** | **str** | The company name | [optional] 
+**url_name** | **str** | The company url slug | [optional] 
 **continent** | **str** | The company continent | [optional] 
 **country** | **str** | The company country | [optional] 
 **country_geo_name_id** | **str** | The company country geo name ID | [optional] 

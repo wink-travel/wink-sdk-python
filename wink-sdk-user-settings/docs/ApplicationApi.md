@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_applications**
-> List[Application] show_applications(wink_version=wink_version, accept=accept)
+> List[Application] show_applications(owner_identifier=owner_identifier, wink_version=wink_version, accept=accept)
 
 Show Applications
 
@@ -378,12 +378,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.ApplicationApi(api_client)
+    owner_identifier = 'owner_identifier_example' # str | Optional ownerIdentifier to filter on (optional)
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Applications
-        api_response = api_instance.show_applications(wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_applications(owner_identifier=owner_identifier, wink_version=wink_version, accept=accept)
         print("The response of ApplicationApi->show_applications:\n")
         pprint(api_response)
     except Exception as e:
@@ -397,6 +398,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **owner_identifier** | **str**| Optional ownerIdentifier to filter on | [optional] 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -426,7 +428,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_managing_entities**
-> List[ManagingEntity] show_managing_entities(wink_version=wink_version, accept=accept)
+> List[ManagingEntity] show_managing_entities(sub_type=sub_type, wink_version=wink_version, accept=accept)
 
 Show Managing Entities
 
@@ -459,12 +461,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.ApplicationApi(api_client)
+    sub_type = 'sub_type_example' # str | Optional subType to filter on (optional)
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Managing Entities
-        api_response = api_instance.show_managing_entities(wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_managing_entities(sub_type=sub_type, wink_version=wink_version, accept=accept)
         print("The response of ApplicationApi->show_managing_entities:\n")
         pprint(api_response)
     except Exception as e:
@@ -478,6 +481,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **sub_type** | **str**| Optional subType to filter on | [optional] 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 

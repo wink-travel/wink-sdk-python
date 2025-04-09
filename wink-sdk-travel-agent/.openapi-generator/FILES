@@ -93,7 +93,7 @@ docs/SimpleDescriptionAgent.md
 docs/SimpleMultimediaAgent.md
 docs/SocialAgent.md
 docs/SortDescriptorAgent.md
-docs/SortObject.md
+docs/SortObjectAgent.md
 docs/StateAgent.md
 docs/StayRateAgent.md
 docs/SubCountryAgent.md
@@ -110,6 +110,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_agent.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py
@@ -209,7 +210,7 @@ wink_sdk_travel_agent/models/simple_description_agent.py
 wink_sdk_travel_agent/models/simple_multimedia_agent.py
 wink_sdk_travel_agent/models/social_agent.py
 wink_sdk_travel_agent/models/sort_descriptor_agent.py
-wink_sdk_travel_agent/models/sort_object.py
+wink_sdk_travel_agent/models/sort_object_agent.py
 wink_sdk_travel_agent/models/state_agent.py
 wink_sdk_travel_agent/models/stay_rate_agent.py
 wink_sdk_travel_agent/models/sub_country_agent.py

@@ -114,7 +114,7 @@ docs/SimpleAddressNonAuthenticatedEntity.md
 docs/SimpleDescriptionNonAuthenticatedEntity.md
 docs/SimpleMultimediaNonAuthenticatedEntity.md
 docs/SocialNonAuthenticatedEntity.md
-docs/SortObject.md
+docs/SortObjectNonAuthenticatedEntity.md
 docs/SpaLightweightNonAuthenticatedEntity.md
 docs/SpaLocalizedInventoryNonAuthenticatedEntity.md
 docs/SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md
@@ -130,6 +130,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_non_authenticated_entity.py
 tox.ini
 wink_sdk_inventory/__init__.py
 wink_sdk_inventory/api/__init__.py
@@ -249,7 +250,7 @@ wink_sdk_inventory/models/simple_address_non_authenticated_entity.py
 wink_sdk_inventory/models/simple_description_non_authenticated_entity.py
 wink_sdk_inventory/models/simple_multimedia_non_authenticated_entity.py
 wink_sdk_inventory/models/social_non_authenticated_entity.py
-wink_sdk_inventory/models/sort_object.py
+wink_sdk_inventory/models/sort_object_non_authenticated_entity.py
 wink_sdk_inventory/models/spa_lightweight_non_authenticated_entity.py
 wink_sdk_inventory/models/spa_localized_inventory_non_authenticated_entity.py
 wink_sdk_inventory/models/spa_localized_inventory_with_hotel_best_price_non_authenticated_entity.py
