@@ -54,7 +54,7 @@ docs/SimpleDescriptionSupplier.md
 docs/SimpleMultimediaAffiliate.md
 docs/SimpleMultimediaSupplier.md
 docs/SortDescriptorSupplier.md
-docs/SortObject.md
+docs/SortObjectSupplier.md
 docs/StateSupplier.md
 docs/SubCountryAffiliate.md
 docs/SubCountrySupplier.md
@@ -76,6 +76,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py
@@ -135,7 +136,7 @@ wink_sdk_affiliate/models/simple_description_supplier.py
 wink_sdk_affiliate/models/simple_multimedia_affiliate.py
 wink_sdk_affiliate/models/simple_multimedia_supplier.py
 wink_sdk_affiliate/models/sort_descriptor_supplier.py
-wink_sdk_affiliate/models/sort_object.py
+wink_sdk_affiliate/models/sort_object_supplier.py
 wink_sdk_affiliate/models/state_supplier.py
 wink_sdk_affiliate/models/sub_country_affiliate.py
 wink_sdk_affiliate/models/sub_country_supplier.py

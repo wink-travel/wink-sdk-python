@@ -25,8 +25,8 @@ Name | Type | Description | Notes
 **hosts** | **List[str]** |  | [optional] 
 **propagate_query_properties** | **bool** |  | [optional] 
 **redirect_view** | **bool** |  | [optional] 
-**attributes** | **Dict[str, str]** |  | [optional] 
 **attributes_csv** | **str** |  | [optional] 
+**attributes** | **Dict[str, str]** |  | [optional] 
 **attributes_map** | **Dict[str, object]** |  | [optional] 
 
 ## Example

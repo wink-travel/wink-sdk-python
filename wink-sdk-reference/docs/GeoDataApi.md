@@ -4,7 +4,7 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**search_for_cities**](GeoDataApi.md#search_for_cities) | **GET** /reference-data/geo/city/search/{term} | Find Geo Name by Term
+[**search_for_cities**](GeoDataApi.md#search_for_cities) | **GET** /reference-data/geo/city/search | Find Geo Name by Term
 [**search_for_city**](GeoDataApi.md#search_for_city) | **GET** /reference-data/geo-ip/city/{searchTerm} | City Search
 [**show_continents**](GeoDataApi.md#show_continents) | **GET** /reference-data/geo-ip/continent/list | Show All Continents
 [**show_countries**](GeoDataApi.md#show_countries) | **GET** /reference-data/geo-ip/country/list | Show Geo Name Countries

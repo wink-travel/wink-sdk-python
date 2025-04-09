@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[ConsumableSyndicationEntryNonAuthenticatedEntity]**](ConsumableSyndicationEntryNonAuthenticatedEntity.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**sort** | [**List[SortObject]**](SortObject.md) |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectNonAuthenticatedEntity**](SortObjectNonAuthenticatedEntity.md) |  | [optional] 
+**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

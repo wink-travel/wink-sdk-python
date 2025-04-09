@@ -47,7 +47,6 @@ Name | Type | Description | Notes
 **loyalty_score** | **int** | A property&#39;s loyalty score is based on calculating how many available rate plans honor loyalty points. There is no max score; it&#39;s there to compare it against other properties. | [optional] [default to 0]
 **popular_score** | **int** | A property&#39;s popular score is based on calculating number of bookings across room types. There is no max score; it&#39;s there to compare it against other properties. | [optional] [default to 0]
 **experience_score** | **int** | A property&#39;s experience score is based on how calculating how many types of experiences are available and at what price ranges. There is no max score; it&#39;s there to compare it against other properties. | [optional] [default to 0]
-**views** | **int** | Total number of user views of this property. | [optional] [default to 0]
 **hotel_amenity_codes** | **List[str]** | Supported OTA specification &#x60;HAC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **property_accessibility_codes** | **List[str]** | Supported OTA specification &#x60;PHY&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **property_security_codes** | **List[str]** | Supported OTA specification &#x60;SEC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 

@@ -22,14 +22,14 @@ Name | Type | Description | Notes
 **extra_charges** | [**ExtraChargesAgent**](ExtraChargesAgent.md) |  | 
 **active_cancellation_policy** | [**CancellationPolicyAgent**](CancellationPolicyAgent.md) |  | 
 **cancellable** | **bool** |  | [optional] 
-**guests** | **int** |  | [optional] 
-**rate_source** | **str** |  | [optional] 
-**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
+**rate_source** | **str** |  | [optional] 
+**guests** | **int** |  | [optional] 
 **cancellable_by_hotel** | **bool** |  | [optional] 
 **cancellable_with_potential_charge** | **bool** |  | [optional] 
-**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 
 ## Example
 

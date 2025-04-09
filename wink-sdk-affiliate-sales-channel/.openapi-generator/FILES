@@ -41,7 +41,7 @@ docs/SimpleDescriptionAffiliate.md
 docs/SimpleMultimediaAffiliate.md
 docs/SocialAffiliate.md
 docs/SortDescriptorAffiliate.md
-docs/SortObject.md
+docs/SortObjectAffiliate.md
 docs/StateAffiliate.md
 docs/SubCountryAffiliate.md
 docs/SubSubCountryAffiliate.md
@@ -54,6 +54,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_affiliate.py
 tox.ini
 wink_sdk_affiliate_sales_channel/__init__.py
 wink_sdk_affiliate_sales_channel/api/__init__.py
@@ -100,7 +101,7 @@ wink_sdk_affiliate_sales_channel/models/simple_description_affiliate.py
 wink_sdk_affiliate_sales_channel/models/simple_multimedia_affiliate.py
 wink_sdk_affiliate_sales_channel/models/social_affiliate.py
 wink_sdk_affiliate_sales_channel/models/sort_descriptor_affiliate.py
-wink_sdk_affiliate_sales_channel/models/sort_object.py
+wink_sdk_affiliate_sales_channel/models/sort_object_affiliate.py
 wink_sdk_affiliate_sales_channel/models/state_affiliate.py
 wink_sdk_affiliate_sales_channel/models/sub_country_affiliate.py
 wink_sdk_affiliate_sales_channel/models/sub_sub_country_affiliate.py

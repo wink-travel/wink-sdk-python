@@ -23,7 +23,7 @@ docs/RateProviderApi.md
 docs/ReferenceApi.md
 docs/ShowSocialNetworks400Response.md
 docs/SimpleDescriptionNonAuthenticatedEntity.md
-docs/SortObject.md
+docs/SortObjectNonAuthenticatedEntity.md
 docs/SubCountryNonAuthenticatedEntity.md
 docs/SubSubCountryNonAuthenticatedEntity.md
 git_push.sh
@@ -33,6 +33,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_non_authenticated_entity.py
 tox.ini
 wink_sdk_reference/__init__.py
 wink_sdk_reference/api/__init__.py
@@ -61,7 +62,7 @@ wink_sdk_reference/models/perk_lightweight_non_authenticated_entity.py
 wink_sdk_reference/models/quote_non_authenticated_entity.py
 wink_sdk_reference/models/show_social_networks400_response.py
 wink_sdk_reference/models/simple_description_non_authenticated_entity.py
-wink_sdk_reference/models/sort_object.py
+wink_sdk_reference/models/sort_object_non_authenticated_entity.py
 wink_sdk_reference/models/sub_country_non_authenticated_entity.py
 wink_sdk_reference/models/sub_sub_country_non_authenticated_entity.py
 wink_sdk_reference/py.typed

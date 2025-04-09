@@ -190,7 +190,7 @@ docs/SimpleMultimediaSupplierDetails.md
 docs/SocialSupplier.md
 docs/SocialSupplierDetails.md
 docs/SortDescriptorSupplier.md
-docs/SortObject.md
+docs/SortObjectSupplier.md
 docs/StateSupplier.md
 docs/StayDateRateQualifierSupplier.md
 docs/StayDateRateQualifierSupplierDetails.md
@@ -221,6 +221,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_extranet_distribution/__init__.py
 wink_sdk_extranet_distribution/api/__init__.py
@@ -416,7 +417,7 @@ wink_sdk_extranet_distribution/models/simple_multimedia_supplier_details.py
 wink_sdk_extranet_distribution/models/social_supplier.py
 wink_sdk_extranet_distribution/models/social_supplier_details.py
 wink_sdk_extranet_distribution/models/sort_descriptor_supplier.py
-wink_sdk_extranet_distribution/models/sort_object.py
+wink_sdk_extranet_distribution/models/sort_object_supplier.py
 wink_sdk_extranet_distribution/models/state_supplier.py
 wink_sdk_extranet_distribution/models/stay_date_rate_qualifier_supplier.py
 wink_sdk_extranet_distribution/models/stay_date_rate_qualifier_supplier_details.py

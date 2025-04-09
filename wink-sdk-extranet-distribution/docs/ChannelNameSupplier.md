@@ -5,6 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**property_identifier** | **str** |  | 
 **sub_type** | **str** |  | 
 **owner_identifier** | **str** |  | [optional] 
 **name** | **str** |  | 

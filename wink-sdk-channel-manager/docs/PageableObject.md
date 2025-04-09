@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**sort** | [**SortObject**](SortObject.md) |  | [optional] 
 **offset** | **int** |  | [optional] 
-**sort** | [**List[SortObject]**](SortObject.md) |  | [optional] 
 **paged** | **bool** |  | [optional] 
-**page_number** | **int** |  | [optional] 
 **page_size** | **int** |  | [optional] 
+**page_number** | **int** |  | [optional] 
 **unpaged** | **bool** |  | [optional] 
 
 ## Example
