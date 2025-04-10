@@ -221,7 +221,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_extranet_distribution/__init__.py
 wink_sdk_extranet_distribution/api/__init__.py

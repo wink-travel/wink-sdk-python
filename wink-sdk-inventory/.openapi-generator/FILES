@@ -130,7 +130,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_sort_object_non_authenticated_entity.py
 tox.ini
 wink_sdk_inventory/__init__.py
 wink_sdk_inventory/api/__init__.py

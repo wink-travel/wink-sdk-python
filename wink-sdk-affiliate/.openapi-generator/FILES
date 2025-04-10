@@ -76,7 +76,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_sort_object_supplier.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py
