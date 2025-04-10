@@ -110,7 +110,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_sort_object_agent.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py

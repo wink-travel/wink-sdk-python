@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **items** | [**List[BookingItineraryRoomConfigurationSupplierDetails]**](BookingItineraryRoomConfigurationSupplierDetails.md) | Room configurations | [optional] 
 **hours** | **int** | Number of hours between start and end dates. Used for itineraries that require bookings that occur within hours and not days. E.g. Meeting room reservation. | [optional] [readonly] 
 **children** | **int** | How many total children for this stay | [optional] 
-**guests** | **int** | How many total guests for this stay | [optional] 
 **rooms** | **int** | How many total rooms for this stay | [optional] 
+**guests** | **int** | How many total guests for this stay | [optional] 
 
 ## Example
 

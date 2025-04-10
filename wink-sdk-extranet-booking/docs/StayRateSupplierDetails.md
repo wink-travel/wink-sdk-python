@@ -43,8 +43,8 @@ Name | Type | Description | Notes
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**internal_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**internal_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **total_discount_percent** | **float** |  | [optional] 
 

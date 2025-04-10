@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **context_path** | **str** |  | [optional] 
 **init_parameter_names** | **object** |  | [optional] 
 **session_tracking_modes** | **List[str]** |  | [optional] 
+**session_cookie_config** | [**SessionCookieConfigNonAuthenticatedEntity**](SessionCookieConfigNonAuthenticatedEntity.md) |  | [optional] 
 **session_timeout** | **int** |  | [optional] 
 **default_session_tracking_modes** | **List[str]** |  | [optional] 
 **effective_major_version** | **int** |  | [optional] 
@@ -25,7 +26,6 @@ Name | Type | Description | Notes
 **virtual_server_name** | **str** |  | [optional] 
 **request_character_encoding** | **str** |  | [optional] 
 **response_character_encoding** | **str** |  | [optional] 
-**session_cookie_config** | [**SessionCookieConfigNonAuthenticatedEntity**](SessionCookieConfigNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

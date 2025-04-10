@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**taglibs** | [**List[TaglibDescriptorNonAuthenticatedEntity]**](TaglibDescriptorNonAuthenticatedEntity.md) |  | [optional] 
 **jsp_property_groups** | [**List[JspPropertyGroupDescriptorNonAuthenticatedEntity]**](JspPropertyGroupDescriptorNonAuthenticatedEntity.md) |  | [optional] 
+**taglibs** | [**List[TaglibDescriptorNonAuthenticatedEntity]**](TaglibDescriptorNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

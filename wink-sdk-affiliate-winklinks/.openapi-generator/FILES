@@ -66,9 +66,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_application_context_non_authenticated_entity_class_loader_parent_defined_packages_inner.py
-test/test_sort_object_non_authenticated_entity.py
-test/test_tik_tok_embed_non_authenticated_entity.py
 tox.ini
 wink_sdk_affiliate_winklinks/__init__.py
 wink_sdk_affiliate_winklinks/api/__init__.py
