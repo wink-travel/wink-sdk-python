@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**include_codas** | **List[str]** |  | [optional] 
-**deferred_syntax_allowed_as_literal** | **str** |  | [optional] 
-**is_xml** | **str** |  | [optional] 
-**default_content_type** | **str** |  | [optional] 
-**include_preludes** | **List[str]** |  | [optional] 
-**page_encoding** | **str** |  | [optional] 
 **error_on_el_not_found** | **str** |  | [optional] 
-**el_ignored** | **str** |  | [optional] 
-**error_on_undeclared_namespace** | **str** |  | [optional] 
-**trim_directive_whitespaces** | **str** |  | [optional] 
+**page_encoding** | **str** |  | [optional] 
 **scripting_invalid** | **str** |  | [optional] 
+**is_xml** | **str** |  | [optional] 
+**include_preludes** | **List[str]** |  | [optional] 
+**include_codas** | **List[str]** |  | [optional] 
+**error_on_undeclared_namespace** | **str** |  | [optional] 
+**el_ignored** | **str** |  | [optional] 
+**trim_directive_whitespaces** | **str** |  | [optional] 
+**deferred_syntax_allowed_as_literal** | **str** |  | [optional] 
 **buffer** | **str** |  | [optional] 
+**default_content_type** | **str** |  | [optional] 
 **url_patterns** | **List[str]** |  | [optional] 
 
 ## Example

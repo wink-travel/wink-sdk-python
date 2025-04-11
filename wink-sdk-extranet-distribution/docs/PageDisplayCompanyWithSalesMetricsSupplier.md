@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[DisplayCompanyWithSalesMetricsSupplier]**](DisplayCompanyWithSalesMetricsSupplier.md) |  | [optional] 
 **number** | **int** |  | [optional] 
+**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
-**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 

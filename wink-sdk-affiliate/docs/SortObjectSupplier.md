@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**empty** | **bool** |  | [optional] 
 **sorted** | **bool** |  | [optional] 
+**empty** | **bool** |  | [optional] 
 **unsorted** | **bool** |  | [optional] 
 
 ## Example
