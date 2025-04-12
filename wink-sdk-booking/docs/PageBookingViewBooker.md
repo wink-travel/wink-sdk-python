@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
 **total_elements** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingViewBooker]**](BookingViewBooker.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectBooker**](SortObjectBooker.md) |  | [optional] 
+**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 

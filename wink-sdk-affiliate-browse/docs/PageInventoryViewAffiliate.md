@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
 **total_elements** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[InventoryViewAffiliate]**](InventoryViewAffiliate.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**pageable** | [**PageableObjectAffiliate**](PageableObjectAffiliate.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectAffiliate**](SortObjectAffiliate.md) |  | [optional] 
+**pageable** | [**PageableObjectAffiliate**](PageableObjectAffiliate.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 
