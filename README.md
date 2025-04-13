@@ -12,7 +12,7 @@ Python 3.8+
 
 Download libraries from PyPi.
 
-### Affiliate
+## Affiliate
 
 [API and SDK documentation](wink-sdk-affiliate/README.md)
 
@@ -26,8 +26,17 @@ The Affiliate API exposes endpoints to manage affiliate accounts. This API lets 
 - AffiliateApi: Create affiliates. 
 - AccountManagerApi: Create account managers.
 
+#### How to install
 
-### Affiliate Browse
+[PyPi URL](https://pypi.org/project/wink-sdk-affiliate)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_affiliate
+```
+
+
+## Affiliate Browse
 
 [API and SDK documentation](wink-sdk-affiliate-browse/README.md)
 
@@ -47,7 +56,18 @@ The Affiliate Browse API exposes endpoints for affiliates to browse inventory. T
 - SearchCategoriesApi: Retrieve categories to search for.
 
 
-### Affiliate Inventory
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-affiliate-browse)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_affiliate_browse
+```
+
+
+
+## Affiliate Inventory
 
 [API and SDK documentation](wink-sdk-affiliate-inventory/README.md)
 
@@ -72,7 +92,18 @@ The Affiliate Inventory API exposes endpoints for affiliates to manage the inven
 - SupplierLinksApi: Manage shareable supplier links.
 
 
-### Affiliate Sales Channel
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-affiliate-inventory)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_affiliate_inventory
+```
+
+
+
+## Affiliate Sales Channel
 
 [API and SDK documentation](wink-sdk-affiliate-sales-channel/README.md)
 
@@ -90,7 +121,18 @@ The Sales Channel API exposes endpoints for affiliates to manage existing sales 
 - SalesChannelApi: Manage existing sales channels.
 
 
-### Affiliate WinkLinks
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-affiliate-sales-channel)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_affiliate_sales_channel
+```
+
+
+
+## Affiliate WinkLinks
 
 [API and SDK documentation](wink-sdk-affiliate-winklinks/README.md)
 
@@ -106,18 +148,42 @@ The WinkLinks API exposes endpoints to manage WinkLink entries, categories and s
 - SyndicationPublisherApi: Manage your WinkLinks account
 
 
-### Analytics
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-affiliate-winklinks)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_affiliate_winklinks
+```
+
+
+
+## Analytics
 
 [API and SDK documentation](wink-sdk-analytics/README.md)
 
 The Analytics API gives you access to time series data on a variety of data sources to measure bookings and insights on properties, affiliates and traveler data.
+
 
 #### API's
 
 - AnalyticsApi: Create analytics that is meaningful to you. We provide the filters, sorting mechanisms and data points you need to track everything you want on our platform.
 - LeaderboardApi: Track where you stand compared to other affiliates. The metric is bookings.
 
-### Booking
+
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-analytics)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_analytics
+```
+
+
+
+## Booking
 
 [API and SDK documentation](wink-sdk-booking/README.md)
 
@@ -128,6 +194,7 @@ Welcome to the Booking Engine API - A programmer-friendly way to book inventory 
 - Booking: Move selected inventory through to booking completion.
 - Review: Leave a review after a completed stay. 
 
+
 #### API's
 
 - ShoppingCartApi: Manage shopping cart.
@@ -135,7 +202,19 @@ Welcome to the Booking Engine API - A programmer-friendly way to book inventory 
 - BookingApi: Manage bookings.
 - ReviewApi: Leave a review after a completed stay.
 
-### Channel manager
+
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-booking)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_booking
+```
+
+
+
+## Channel manager
 
 [API and SDK documentation](wink-sdk-channel-manager/README.md)
 
@@ -147,18 +226,41 @@ The Channel Manager API enables external channel manager partners to map, exchan
 - ChannelManagerApi: Everything related to pushing rates and availability as well as querying properties managed by your channel manager account with us.
 
 
-### Booking Engine Client
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-channel-manager)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_channel_manager
+```
+
+
+
+## Booking Engine Client
 
 [API and SDK documentation](wink-sdk-engine-client/README.md)
 
 A single endpoint to retrieve affiliate information needed to display the booking engine.
+
 
 #### API's
 
 - ConfigurationApi: Load affiliate information
 
 
-### Extranet Booking
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-engine-client)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_engine_client
+```
+
+
+
+## Extranet Booking
 
 [API and SDK documentation](wink-sdk-extranet-booking/README.md)
 
@@ -168,6 +270,7 @@ The Booking API exposes endpoints to manage bookings. This API lets you:
 - Review: Manage and respond to user reviews.
 - Sync w. Calendar: Manage calendar sync with your favorite calendar software.
 
+
 #### API's
 
 - BookingApi: Manage bookings including cancellations.
@@ -175,7 +278,18 @@ The Booking API exposes endpoints to manage bookings. This API lets you:
 - CalendarSyncApi: Sync w. Calendar: Manage calendar sync with your favorite calendar software.
 
 
-### Extranet Distribution
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-booking)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_booking
+```
+
+
+
+## Extranet Distribution
 
 [API and SDK documentation](wink-sdk-extranet-distribution/README.md)
 
@@ -186,6 +300,7 @@ The Distribution API exposes endpoints for sales channels, connecting with affil
 3. Explore Network: Find new affiliates to work with.
 4. Inventory: Manage inventory at the sales channel-level.
 5. Calendars: Manage availability calendars for all your inventory.
+
 
 #### API's
 
@@ -198,7 +313,18 @@ The Distribution API exposes endpoints for sales channels, connecting with affil
 - SalesChannelRelationshipRequestsApi: Manage affiliate relationship requests.
 
 
-### Extranet Experiences
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-distribution)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_distribution
+```
+
+
+
+## Extranet Experiences
 
 [API and SDK documentation](wink-sdk-extranet-experiences/README.md)
 
@@ -208,6 +334,7 @@ This part of the documentation concerns itself with the management of experience
 - Attractions: Manage attractions on and off the premises.
 - Places: Manage places on and off the premises.
 
+
 #### API's
 
 - ActivityApi: Manage activities on and off the premises.
@@ -215,7 +342,18 @@ This part of the documentation concerns itself with the management of experience
 - PlaceApi: Manage places on and off the premises.
 
 
-### Extranet Facilities
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-experiences)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_experiences
+```
+
+
+
+## Extranet Facilities
 
 [API and SDK documentation](wink-sdk-extranet-facilities/README.md)
 
@@ -226,6 +364,7 @@ This part of the documentation concerns itself with the management of facilities
 - Restaurant: Manage restaurants on and off the premises.
 - Spa: Manage spas on and off the premises.
 
+
 #### API's
 
 - GuestRoomApi: Manage room types on and off the premises.
@@ -234,7 +373,18 @@ This part of the documentation concerns itself with the management of facilities
 - SpaApi: Manage spas on and off the premises.
 
 
-### Extranet Monetize
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-facilities)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_facilities
+```
+
+
+
+## Extranet Monetize
 
 [API and SDK documentation](wink-sdk-extranet-monetize/README.md)
 
@@ -247,6 +397,7 @@ This part of the documentation concerns itself with the management of cancellati
 - Promotion bundle: Manage bundled promotions.
 - Rate plan: Manage rate plans.
 
+
 #### API's
 
 - AddOnApi: Manage add-ons.
@@ -257,7 +408,18 @@ This part of the documentation concerns itself with the management of cancellati
 - RatePlanApi: Manage rate plans.
 
 
-### Extranet Property
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-monetize)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_monetize
+```
+
+
+
+## Extranet Property
 
 [API and SDK documentation](wink-sdk-extranet-property/README.md)
 
@@ -276,6 +438,7 @@ This part of the documentation concerns itself with basic property management. I
 - Social media: Manage property social media networks.
 - Welcome text: Manage property descriptions
 
+
 #### API's
 
 - AnnouncementApi: Manage announcements to travelers in a pop-up window.
@@ -289,7 +452,18 @@ This part of the documentation concerns itself with basic property management. I
 - SocialNetworkApi: Manage property social media networks.
 
 
-### Extranet Property Register
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-property)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_property
+```
+
+
+
+## Extranet Property Register
 
 [API and SDK documentation](wink-sdk-extranet-property-register/README.md)
 
@@ -306,9 +480,20 @@ This part of the documentation concerns itself about adding new properties to Wi
 - PropertyRegistrationApi: Create properties.
 
 
-### Inventory
+#### How to install
 
-[API documentation](https://docs.wink.travel/inventory)
+[PyPi URL](https://pypi.org/project/wink-sdk-extranet-property-register)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_extranet_property_register
+```
+
+
+
+## Inventory
+
+[API documentation](wink-sdk-inventory/README.md)
 
 The Inventory API exposes endpoints to retrieve inventory you already know about. This API lets you:
 
@@ -316,50 +501,99 @@ The Inventory API exposes endpoints to retrieve inventory you already know about
 - Load up a known property with availability.
 - Load up all inventories that were created by our affiliates such as grids, maps, and individual items.
 
+
 #### API's
 
 - InventoryApi: Everything related to querying property availability.
 - ShareableLinkApi: Consume shareable links.
 
 
-### Lookup
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-inventory)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_inventory
+```
+
+
+
+## Lookup
 
 [API and SDK documentation](wink-sdk-lookup/README.md)
 
 The Lookup API exposes endpoints to search for inventory by region, type. It's the entryway to bookable inventory when you don't yet know what you are looking for.
+
 
 #### API's
 
 - LookupApi: Everything related to querying for best priced room types using various filter mechanisms
 
 
-### Notification
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-lookup)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_lookup
+```
+
+
+
+## Notification
 
 [API and SDK documentation](wink-sdk-notification/README.md)
 
 The Notifications API is a way for us to stay in touch with your user, property or affiliate account.
+
 
 #### API's
 
 - NotificationApi: Retrieve platform notifications.
 
 
-### Ping
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-notification)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_notification
+```
+
+
+
+## Ping
 
 [API and SDK documentation](wink-sdk-ping/README.md)
 
 Easy way to test your credentials.
+
 
 #### API's
 
 - PingApi: Test connection with Wink.
 
 
-### Reference
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-ping)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_ping
+```
+
+
+
+## Reference
 
 [API and SDK documentation](wink-sdk-reference/README.md)
 
 The Reference API exposes endpoints related to supported taxonomies of reference data that this platform supports.
+
 
 #### API's
 
@@ -367,7 +601,18 @@ The Reference API exposes endpoints related to supported taxonomies of reference
 - ReferenceApi: Everything related to structured datasets and their meaning. E.g. OTA Room View Code list
 
 
-### Travel Agent
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-reference)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_reference
+```
+
+
+
+## Travel Agent
 
 [API and SDK documentation](wink-sdk-travel-agent/README.md)
 
@@ -376,12 +621,24 @@ The Travel Agent API exposes endpoints to manage agent-facilitated bookings. Thi
 - Travel Agent: Manage agent entity.
 - Booking: Create / Manage bookings
 
+
 #### API's
 
 - TravelAgentApi: Create agents and manage bookings.
 
 
-### User Settings
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-travel-agent)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_travel_agent
+```
+
+
+
+## User Settings
 
 [API and SDK documentation](wink-sdk-user-settings/README.md)
 
@@ -392,12 +649,24 @@ The User Settings API exposes endpoints to allow 3rd party integrators to commun
 - User: Manage user settings.
 - Webhook: Subscribe to receive Wink events as they occur in realtime.
 
+
 #### API's
 
 - ApplicationApi: Manage 3rd party access to Wink.
 - BucketListApi: Manage your bucket list on Wink.
 - UserSettingsApi: Manage user settings.
 - WebhookApi: Subscribe to receive Wink events as they occur in realtime.
+
+
+#### How to install
+
+[PyPi URL](https://pypi.org/project/wink-sdk-user-settings)
+
+You can install the package from PyPi using:
+```sh
+pip install wink_sdk_user_settings
+```
+
 
 
 ## Configuration
