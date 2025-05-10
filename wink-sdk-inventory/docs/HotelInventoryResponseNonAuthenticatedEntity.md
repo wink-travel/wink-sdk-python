@@ -23,9 +23,9 @@ Name | Type | Description | Notes
 **announcements** | [**List[AnnouncementNonAuthenticatedEntity]**](AnnouncementNonAuthenticatedEntity.md) | List of property announcements | [optional] 
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
 **sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) |  | [optional] 
-**cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
 **available** | **bool** |  | [optional] 
 **lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
+**cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
 
 ## Example
 

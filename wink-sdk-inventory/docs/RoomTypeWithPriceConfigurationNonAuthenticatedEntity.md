@@ -1,6 +1,6 @@
 # RoomTypeWithPriceConfigurationNonAuthenticatedEntity
 
-Uses the content from roomTypes and shows the room type with the lowest price.
+Uses the content from roomTypes and displays the lowest price for each room type that is available.
 
 ## Properties
 

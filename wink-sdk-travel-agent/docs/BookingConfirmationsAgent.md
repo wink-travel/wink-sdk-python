@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **list** | [**List[BookingViewAgent]**](BookingViewAgent.md) |  | [optional] 
-**points_to_be_earned** | **int** |  | [optional] 
+**points_to_be_earned** | **int** | Total points to be earned by Wink | [optional] [default to 0]
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
