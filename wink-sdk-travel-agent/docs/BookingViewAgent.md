@@ -1,5 +1,6 @@
 # BookingViewAgent
 
+List of all bookings whether they were successful or not
 
 ## Properties
 

@@ -8,6 +8,12 @@ Name | Type | Description | Notes
 **class_loader** | [**ApplicationContextNonAuthenticatedEntityClassLoaderParent**](ApplicationContextNonAuthenticatedEntityClassLoaderParent.md) |  | [optional] 
 **major_version** | **int** |  | [optional] 
 **minor_version** | **int** |  | [optional] 
+**attribute_names** | **object** |  | [optional] 
+**context_path** | **str** |  | [optional] 
+**init_parameter_names** | **object** |  | [optional] 
+**session_tracking_modes** | **List[str]** |  | [optional] 
+**session_cookie_config** | [**SessionCookieConfigNonAuthenticatedEntity**](SessionCookieConfigNonAuthenticatedEntity.md) |  | [optional] 
+**session_timeout** | **int** |  | [optional] 
 **default_session_tracking_modes** | **List[str]** |  | [optional] 
 **effective_major_version** | **int** |  | [optional] 
 **effective_minor_version** | **int** |  | [optional] 
@@ -18,14 +24,8 @@ Name | Type | Description | Notes
 **effective_session_tracking_modes** | **List[str]** |  | [optional] 
 **jsp_config_descriptor** | [**JspConfigDescriptorNonAuthenticatedEntity**](JspConfigDescriptorNonAuthenticatedEntity.md) |  | [optional] 
 **virtual_server_name** | **str** |  | [optional] 
-**session_timeout** | **int** |  | [optional] 
 **request_character_encoding** | **str** |  | [optional] 
 **response_character_encoding** | **str** |  | [optional] 
-**attribute_names** | **object** |  | [optional] 
-**context_path** | **str** |  | [optional] 
-**init_parameter_names** | **object** |  | [optional] 
-**session_tracking_modes** | **List[str]** |  | [optional] 
-**session_cookie_config** | [**SessionCookieConfigNonAuthenticatedEntity**](SessionCookieConfigNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 
