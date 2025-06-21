@@ -1,6 +1,5 @@
 # ManagedByEntityRulesSupplier
 
-Optional rules for expiration date etc when agency is no longer managing this entity.
 
 ## Properties
 

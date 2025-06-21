@@ -6,10 +6,10 @@ Test booking request body for property ID
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**query** | [**VerifyRatesRequestSupplierDetails**](VerifyRatesRequestSupplierDetails.md) |  | 
-**room** | [**RoomConfigurationPriceSupplierDetails**](RoomConfigurationPriceSupplierDetails.md) |  | 
+**query** | [**VerifyRatesRequestSupplierDetails**](VerifyRatesRequestSupplierDetails.md) | Query object that was used to generate the room property | 
+**room** | [**RoomConfigurationPriceSupplierDetails**](RoomConfigurationPriceSupplierDetails.md) | The room we want to book | 
 **announcement** | [**BookingTestNotificationSupplierDetails**](BookingTestNotificationSupplierDetails.md) |  | [optional] 
-**notification** | [**BookingTestNotificationSupplierDetails**](BookingTestNotificationSupplierDetails.md) |  | 
+**notification** | [**BookingTestNotificationSupplierDetails**](BookingTestNotificationSupplierDetails.md) | Notification options | 
 
 ## Example
 

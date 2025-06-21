@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **set_perks**
-> MasterRateViewSupplier set_perks(property_identifier, master_rate_identifier, set_master_rate_perk_request_supplier, wink_version=wink_version)
+> MasterRateSupplier set_perks(property_identifier, master_rate_identifier, set_master_rate_perk_request_supplier, wink_version=wink_version)
 
 Set Master Rate Perks
 
@@ -23,7 +23,7 @@ Manage perks for this master rate.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.master_rate_view_supplier import MasterRateViewSupplier
+from wink_sdk_extranet_monetize.models.master_rate_supplier import MasterRateSupplier
 from wink_sdk_extranet_monetize.models.set_master_rate_perk_request_supplier import SetMasterRatePerkRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MasterRateViewSupplier**](MasterRateViewSupplier.md)
+[**MasterRateSupplier**](MasterRateSupplier.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_master_rate**
-> MasterRateViewSupplier show_master_rate(property_identifier, master_rate_identifier, wink_version=wink_version, accept=accept)
+> MasterRateSupplier show_master_rate(property_identifier, master_rate_identifier, wink_version=wink_version, accept=accept)
 
 Show Master Rate
 
@@ -109,7 +109,7 @@ Retrieve a master rate by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.master_rate_view_supplier import MasterRateViewSupplier
+from wink_sdk_extranet_monetize.models.master_rate_supplier import MasterRateSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MasterRateViewSupplier**](MasterRateViewSupplier.md)
+[**MasterRateSupplier**](MasterRateSupplier.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_master_rates**
-> List[MasterRateViewSupplier] show_master_rates(property_identifier, wink_version=wink_version, accept=accept)
+> List[MasterRateSupplier] show_master_rates(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Master Rates
 
@@ -194,7 +194,7 @@ Retrieve list of master rates
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.master_rate_view_supplier import MasterRateViewSupplier
+from wink_sdk_extranet_monetize.models.master_rate_supplier import MasterRateSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[MasterRateViewSupplier]**](MasterRateViewSupplier.md)
+[**List[MasterRateSupplier]**](MasterRateSupplier.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **toggle_master_rate**
-> MasterRateViewSupplier toggle_master_rate(property_identifier, master_rate_identifier, toggle_master_rate_request_supplier, wink_version=wink_version)
+> MasterRateSupplier toggle_master_rate(property_identifier, master_rate_identifier, toggle_master_rate_request_supplier, wink_version=wink_version)
 
 Toggle Master Rate
 
@@ -277,7 +277,7 @@ Update a master rate by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.master_rate_view_supplier import MasterRateViewSupplier
+from wink_sdk_extranet_monetize.models.master_rate_supplier import MasterRateSupplier
 from wink_sdk_extranet_monetize.models.toggle_master_rate_request_supplier import ToggleMasterRateRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MasterRateViewSupplier**](MasterRateViewSupplier.md)
+[**MasterRateSupplier**](MasterRateSupplier.md)
 
 ### Authorization
 

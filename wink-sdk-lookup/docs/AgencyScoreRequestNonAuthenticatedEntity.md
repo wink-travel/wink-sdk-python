@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **city_url_name_or_country_code** | **str** | Unique url name for city or country code for country. | [optional] 
 **sort** | **str** | Choose the criteria you want the results sorted on. | 
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session is the current search state. SimpleDateTimeItinerary and other data points are all included here. | 
 **page** | **int** | The page to paginate to. Note: Page uses a 0-based index. | [default to 0]
 **size** | **int** | The result size to return. | [default to 6]
 

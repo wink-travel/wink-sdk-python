@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **update_geo_location**
-> HotelViewSupplier update_geo_location(property_identifier, update_location_request_supplier, wink_version=wink_version)
+> PropertySupplier update_geo_location(property_identifier, update_location_request_supplier, wink_version=wink_version)
 
 Set Geo-Location
 
@@ -20,7 +20,7 @@ Update property geo-location. Note: x = longitude, y = latitude, type = Point, c
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.update_location_request_supplier import UpdateLocationRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

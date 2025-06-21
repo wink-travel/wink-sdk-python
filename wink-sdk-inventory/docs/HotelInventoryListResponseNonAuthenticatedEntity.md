@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[HotelInventoryResponseNonAuthenticatedEntity]**](HotelInventoryResponseNonAuthenticatedEntity.md) |  | [optional] 
+**list** | **List[object]** |  | [optional] 
 
 ## Example
 

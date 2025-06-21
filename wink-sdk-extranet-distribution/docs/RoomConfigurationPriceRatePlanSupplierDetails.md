@@ -1,6 +1,5 @@
 # RoomConfigurationPriceRatePlanSupplierDetails
 
-Specified rate plan
 
 ## Properties
 
@@ -16,8 +15,8 @@ Name | Type | Description | Notes
 **all_inclusive_plus_alcohol** | **bool** | Everything included with alcohol | [default to False]
 **early_check_in_charge** | [**VariableChargeSupplierDetails**](VariableChargeSupplierDetails.md) |  | [optional] 
 **late_check_out_charge** | [**VariableChargeSupplierDetails**](VariableChargeSupplierDetails.md) |  | [optional] 
-**cancellation_policy** | [**CancellationPolicySupplierDetails**](CancellationPolicySupplierDetails.md) |  | [optional] 
-**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsSupplierDetails**](CancellationPolicyExceptionsSupplierDetails.md) |  | [optional] 
+**cancellation_policy** | [**CancellationPolicyLightweightSupplierDetails**](CancellationPolicyLightweightSupplierDetails.md) | The cancellation policy for this rate plan. | [optional] 
+**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsSupplierDetails**](CancellationPolicyExceptionsSupplierDetails.md) | Allows a property to dynamically use another cancellation policy for a specific date range | [optional] 
 
 ## Example
 

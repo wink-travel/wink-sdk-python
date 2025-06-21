@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Company ID | 
-**name** | **str** | Company name | 
+**id** | **str** | AffiliateAccountLightweight ID | 
+**name** | **str** | AffiliateAccountLightweight name | 
 **image_identifier** | **str** | Image ID if available | [optional] 
 
 ## Example

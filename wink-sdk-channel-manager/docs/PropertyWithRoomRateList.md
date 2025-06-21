@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**var_property** | [**ModelProperty**](ModelProperty.md) |  | 
+**var_property** | [**ChannelManagerProperty**](ChannelManagerProperty.md) |  | 
 **list** | [**List[PropertyRoomRate]**](PropertyRoomRate.md) |  | [optional] 
 
 ## Example

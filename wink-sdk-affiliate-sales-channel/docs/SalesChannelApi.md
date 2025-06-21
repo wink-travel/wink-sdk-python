@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **browse_sales_channels**
-> PageSalesChannelViewAffiliate browse_sales_channels(state_affiliate, wink_version=wink_version)
+> PageSalesChannelAffiliate browse_sales_channels(state_affiliate, wink_version=wink_version)
 
 Sales Channel Search
 
@@ -21,7 +21,7 @@ Retrieve page of existing sales channels based on criteria.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.page_sales_channel_view_affiliate import PageSalesChannelViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.page_sales_channel_affiliate import PageSalesChannelAffiliate
 from wink_sdk_affiliate_sales_channel.models.state_affiliate import StateAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageSalesChannelViewAffiliate**](PageSalesChannelViewAffiliate.md)
+[**PageSalesChannelAffiliate**](PageSalesChannelAffiliate.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_sales_channel**
-> SalesChannelViewAffiliate show_sales_channel(supplier_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelAffiliate show_sales_channel(supplier_identifier, wink_version=wink_version, accept=accept)
 
 Show Sales Channel
 
@@ -103,7 +103,7 @@ Retrieve sales channel specified by the company ID and the supplier ID.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.sales_channel_view_affiliate import SalesChannelViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.sales_channel_affiliate import SalesChannelAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelViewAffiliate**](SalesChannelViewAffiliate.md)
+[**SalesChannelAffiliate**](SalesChannelAffiliate.md)
 
 ### Authorization
 

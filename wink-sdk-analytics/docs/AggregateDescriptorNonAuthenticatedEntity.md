@@ -1,6 +1,5 @@
 # AggregateDescriptorNonAuthenticatedEntity
 
-Primitive aggregate data points
 
 ## Properties
 

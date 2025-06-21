@@ -1,6 +1,5 @@
 # LengthOfStayRateQualifierSupplierDetails
 
-Restrict promotion to users who want to stay a certain number of days.
 
 ## Properties
 

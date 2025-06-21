@@ -6,8 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sort** | **str** | Choose the criteria you want the results sorted on. | 
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
-**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) |  | [optional] 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session is the current search state. SimpleDateTimeItinerary and other data points are all included here. | 
+**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) | How user likes to have results displayed | [optional] 
 **page** | **int** | The page to paginate to. Note: Page uses a 0-based index. | [default to 0]
 **size** | **int** | The result size to return. | [default to 6]
 

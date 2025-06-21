@@ -1,6 +1,5 @@
 # MetaDataNonAuthenticatedEntity
 
-List of property meta data.
 
 ## Properties
 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | Type of reason | 
 **description** | **str** | Textual description of why the refund is being requested | 
-**refund** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
+**refund** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Requested amount to refund | 
 **cancel_on_refund** | **str** | Whether to cancel the booking alongside requesting a refund. | 
 
 ## Example

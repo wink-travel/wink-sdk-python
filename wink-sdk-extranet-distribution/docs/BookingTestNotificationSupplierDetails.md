@@ -1,6 +1,5 @@
 # BookingTestNotificationSupplierDetails
 
-Notification options
 
 ## Properties
 
@@ -9,7 +8,7 @@ Name | Type | Description | Notes
 **notify_property** | **bool** | Whether to notify property of booking | [optional] 
 **notify_channel_manager** | **bool** | Whether to notify channel manager of booking | [optional] 
 **notify_booker** | **bool** | Whether to notify booker of booking | [optional] 
-**booker** | [**BookingUserSupplierDetails**](BookingUserSupplierDetails.md) |  | [optional] 
+**booker** | [**BookingUserSupplierDetails**](BookingUserSupplierDetails.md) | Whether to notify booker of booking | [optional] 
 
 ## Example
 

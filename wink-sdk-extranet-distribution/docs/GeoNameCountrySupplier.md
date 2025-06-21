@@ -1,6 +1,5 @@
 # GeoNameCountrySupplier
 
-country to restrict on
 
 ## Properties
 

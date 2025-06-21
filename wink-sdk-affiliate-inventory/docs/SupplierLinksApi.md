@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **create_supplier_url**
-> SupplierUrlViewAffiliate create_supplier_url(upsert_supplier_url_request_affiliate, wink_version=wink_version)
+> SellableSupplierUrlAffiliate create_supplier_url(upsert_sellable_supplier_url_request_affiliate, wink_version=wink_version)
 
 Create Link
 
@@ -25,8 +25,8 @@ Create a new shareable link
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_supplier_url_request_affiliate import UpsertSupplierUrlRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_supplier_url_request_affiliate import UpsertSellableSupplierUrlRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
-    upsert_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierUrlRequestAffiliate() # UpsertSupplierUrlRequestAffiliate | 
+    upsert_sellable_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableSupplierUrlRequestAffiliate() # UpsertSellableSupplierUrlRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Link
-        api_response = api_instance.create_supplier_url(upsert_supplier_url_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_supplier_url(upsert_sellable_supplier_url_request_affiliate, wink_version=wink_version)
         print("The response of SupplierLinksApi->create_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -66,12 +66,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_supplier_url_request_affiliate** | [**UpsertSupplierUrlRequestAffiliate**](UpsertSupplierUrlRequestAffiliate.md)|  | 
+ **upsert_sellable_supplier_url_request_affiliate** | [**UpsertSellableSupplierUrlRequestAffiliate**](UpsertSellableSupplierUrlRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SupplierUrlViewAffiliate**](SupplierUrlViewAffiliate.md)
+[**SellableSupplierUrlAffiliate**](SellableSupplierUrlAffiliate.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_supplier_url_syndication_entry**
-> SyndicationEntryAffiliate create_supplier_url_syndication_entry(create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
+> SyndicatedItemAffiliate create_supplier_url_syndication_entry(create_supplier_url_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add to WinkLinks
 
@@ -108,7 +108,7 @@ Creates a new WinkLinks entry from the specified link ID.
 ```python
 import wink_sdk_affiliate_inventory
 from wink_sdk_affiliate_inventory.models.create_supplier_url_syndication_entry_request_affiliate import CreateSupplierUrlSyndicationEntryRequestAffiliate
-from wink_sdk_affiliate_inventory.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_inventory.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_supplier_url**
-> SupplierUrlViewAffiliate remove_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
+> SellableSupplierUrlAffiliate remove_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
 
 Delete Link
 
@@ -189,7 +189,7 @@ Delete a shareable link
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SupplierUrlViewAffiliate**](SupplierUrlViewAffiliate.md)
+[**SellableSupplierUrlAffiliate**](SellableSupplierUrlAffiliate.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_url**
-> SupplierUrlViewAffiliate show_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
+> SellableSupplierUrlAffiliate show_supplier_url(supplier_url_identifier, wink_version=wink_version, accept=accept)
 
 Show Link
 
@@ -272,7 +272,7 @@ Retrieve a specific shareable url for this seller
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SupplierUrlViewAffiliate**](SupplierUrlViewAffiliate.md)
+[**SellableSupplierUrlAffiliate**](SellableSupplierUrlAffiliate.md)
 
 ### Authorization
 
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_urls**
-> List[SupplierUrlViewAffiliate] show_supplier_urls(wink_version=wink_version, accept=accept)
+> List[SellableSupplierUrlAffiliate] show_supplier_urls(wink_version=wink_version, accept=accept)
 
 Show Links
 
@@ -355,7 +355,7 @@ Retrieve list of shareable urls for this seller
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SupplierUrlViewAffiliate]**](SupplierUrlViewAffiliate.md)
+[**List[SellableSupplierUrlAffiliate]**](SellableSupplierUrlAffiliate.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_supplier_url**
-> SupplierUrlViewAffiliate update_supplier_url(supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+> SellableSupplierUrlAffiliate update_supplier_url(supplier_url_identifier, upsert_sellable_supplier_url_request_affiliate, wink_version=wink_version)
 
 Update link
 
@@ -436,8 +436,8 @@ Modify a shareable link
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_supplier_url_request_affiliate import UpsertSupplierUrlRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_supplier_url_request_affiliate import UpsertSellableSupplierUrlRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -459,12 +459,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.SupplierLinksApi(api_client)
     supplier_url_identifier = 'seller-url-1' # str | Update url with this identifier.
-    upsert_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierUrlRequestAffiliate() # UpsertSupplierUrlRequestAffiliate | 
+    upsert_sellable_supplier_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableSupplierUrlRequestAffiliate() # UpsertSellableSupplierUrlRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update link
-        api_response = api_instance.update_supplier_url(supplier_url_identifier, upsert_supplier_url_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_supplier_url(supplier_url_identifier, upsert_sellable_supplier_url_request_affiliate, wink_version=wink_version)
         print("The response of SupplierLinksApi->update_supplier_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -479,12 +479,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_url_identifier** | **str**| Update url with this identifier. | 
- **upsert_supplier_url_request_affiliate** | [**UpsertSupplierUrlRequestAffiliate**](UpsertSupplierUrlRequestAffiliate.md)|  | 
+ **upsert_sellable_supplier_url_request_affiliate** | [**UpsertSellableSupplierUrlRequestAffiliate**](UpsertSellableSupplierUrlRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SupplierUrlViewAffiliate**](SupplierUrlViewAffiliate.md)
+[**SellableSupplierUrlAffiliate**](SellableSupplierUrlAffiliate.md)
 
 ### Authorization
 

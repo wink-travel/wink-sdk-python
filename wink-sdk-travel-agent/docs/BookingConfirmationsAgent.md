@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[BookingViewAgent]**](BookingViewAgent.md) |  | [optional] 
+**list** | **List[object]** |  | [optional] 
 **points_to_be_earned** | **int** | Total points to be earned by Wink | [optional] [default to 0]
-**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Total amount of money to be paid by the user in display currency | [optional] 
+**source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Total amount of money to be paid by the user in source currency | [optional] 
 
 ## Example
 

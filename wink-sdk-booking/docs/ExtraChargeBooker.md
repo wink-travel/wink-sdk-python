@@ -1,14 +1,13 @@
 # ExtraChargeBooker
 
-List of extra charges that applies to the rate plan.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rate_plan_level_fee** | [**RatePlanLevelFeeBooker**](RatePlanLevelFeeBooker.md) |  | [optional] 
-**unit_price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) |  | [optional] 
-**price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) |  | [optional] 
+**rate_plan_level_fee** | [**RatePlanLevelFeeBooker**](RatePlanLevelFeeBooker.md) | What the guest is paying extra for | [optional] 
+**unit_price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) | The localized unit price of the extra charge | [optional] 
+**price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) | The localized price of the extra charge | [optional] 
 
 ## Example
 

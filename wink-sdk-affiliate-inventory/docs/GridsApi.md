@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **create_seller_inventory_list**
-> SellerInventoryListViewAffiliate create_seller_inventory_list(upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+> SellableListAffiliate create_seller_inventory_list(upsert_sellable_list_request_affiliate, wink_version=wink_version)
 
 Create Grid
 
@@ -25,8 +25,8 @@ Create a new curated / saved search list
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_list_view_affiliate import SellerInventoryListViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_seller_inventory_list_request_affiliate import UpsertSellerInventoryListRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_list_affiliate import SellableListAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_list_request_affiliate import UpsertSellableListRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    upsert_seller_inventory_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryListRequestAffiliate() # UpsertSellerInventoryListRequestAffiliate | 
+    upsert_sellable_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableListRequestAffiliate() # UpsertSellableListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Grid
-        api_response = api_instance.create_seller_inventory_list(upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_list(upsert_sellable_list_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->create_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -66,12 +66,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_seller_inventory_list_request_affiliate** | [**UpsertSellerInventoryListRequestAffiliate**](UpsertSellerInventoryListRequestAffiliate.md)|  | 
+ **upsert_sellable_list_request_affiliate** | [**UpsertSellableListRequestAffiliate**](UpsertSellableListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SellerInventoryListViewAffiliate**](SellerInventoryListViewAffiliate.md)
+[**SellableListAffiliate**](SellableListAffiliate.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_seller_inventory_list_syndication_entry**
-> SyndicationEntryAffiliate create_seller_inventory_list_syndication_entry(create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
+> SyndicatedItemAffiliate create_seller_inventory_list_syndication_entry(create_static_list_syndication_entry_request_affiliate, wink_version=wink_version)
 
 Add List to WinkLinks
 
@@ -107,8 +107,8 @@ Creates a new WinkLinks entry from the specified list ID.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.create_static_seller_list_syndication_entry_request_affiliate import CreateStaticSellerListSyndicationEntryRequestAffiliate
-from wink_sdk_affiliate_inventory.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_inventory.models.create_static_list_syndication_entry_request_affiliate import CreateStaticListSyndicationEntryRequestAffiliate
+from wink_sdk_affiliate_inventory.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -129,12 +129,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
-    create_static_seller_list_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateStaticSellerListSyndicationEntryRequestAffiliate() # CreateStaticSellerListSyndicationEntryRequestAffiliate | 
+    create_static_list_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateStaticListSyndicationEntryRequestAffiliate() # CreateStaticListSyndicationEntryRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add List to WinkLinks
-        api_response = api_instance.create_seller_inventory_list_syndication_entry(create_static_seller_list_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_list_syndication_entry(create_static_list_syndication_entry_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->create_seller_inventory_list_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -148,12 +148,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_static_seller_list_syndication_entry_request_affiliate** | [**CreateStaticSellerListSyndicationEntryRequestAffiliate**](CreateStaticSellerListSyndicationEntryRequestAffiliate.md)|  | 
+ **create_static_list_syndication_entry_request_affiliate** | [**CreateStaticListSyndicationEntryRequestAffiliate**](CreateStaticListSyndicationEntryRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_seller_inventory_list**
-> SellerInventoryListViewAffiliate remove_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
+> SellableListAffiliate remove_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Delete Grid
 
@@ -189,7 +189,7 @@ Remove a curated / saved search list
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_list_view_affiliate import SellerInventoryListViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_list_affiliate import SellableListAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryListViewAffiliate**](SellerInventoryListViewAffiliate.md)
+[**SellableListAffiliate**](SellableListAffiliate.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_list**
-> SellerInventoryListViewAffiliate show_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
+> SellableListAffiliate show_seller_inventory_list(list_identifier, wink_version=wink_version, accept=accept)
 
 Show Grid
 
@@ -272,7 +272,7 @@ Retrieve a specific curated / saved search list.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_list_view_affiliate import SellerInventoryListViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_list_affiliate import SellableListAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryListViewAffiliate**](SellerInventoryListViewAffiliate.md)
+[**SellableListAffiliate**](SellableListAffiliate.md)
 
 ### Authorization
 
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_lists**
-> List[SellerInventoryListViewAffiliate] show_seller_inventory_lists(wink_version=wink_version, accept=accept)
+> List[SellableListAffiliate] show_seller_inventory_lists(wink_version=wink_version, accept=accept)
 
 Show Grids
 
@@ -355,7 +355,7 @@ Retrieve curated / saved search list lists.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_list_view_affiliate import SellerInventoryListViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_list_affiliate import SellableListAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SellerInventoryListViewAffiliate]**](SellerInventoryListViewAffiliate.md)
+[**List[SellableListAffiliate]**](SellableListAffiliate.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_seller_inventory_list**
-> SellerInventoryListViewAffiliate update_seller_inventory_list(list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+> SellableListAffiliate update_seller_inventory_list(list_identifier, upsert_sellable_list_request_affiliate, wink_version=wink_version)
 
 Update Grid
 
@@ -436,8 +436,8 @@ Update an existing curated / saved search list.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_list_view_affiliate import SellerInventoryListViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_seller_inventory_list_request_affiliate import UpsertSellerInventoryListRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_list_affiliate import SellableListAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_list_request_affiliate import UpsertSellableListRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -459,12 +459,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.GridsApi(api_client)
     list_identifier = 'list-1' # str | Update list with this identifier.
-    upsert_seller_inventory_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryListRequestAffiliate() # UpsertSellerInventoryListRequestAffiliate | 
+    upsert_sellable_list_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableListRequestAffiliate() # UpsertSellableListRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Grid
-        api_response = api_instance.update_seller_inventory_list(list_identifier, upsert_seller_inventory_list_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_seller_inventory_list(list_identifier, upsert_sellable_list_request_affiliate, wink_version=wink_version)
         print("The response of GridsApi->update_seller_inventory_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -479,12 +479,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| Update list with this identifier. | 
- **upsert_seller_inventory_list_request_affiliate** | [**UpsertSellerInventoryListRequestAffiliate**](UpsertSellerInventoryListRequestAffiliate.md)|  | 
+ **upsert_sellable_list_request_affiliate** | [**UpsertSellableListRequestAffiliate**](UpsertSellableListRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SellerInventoryListViewAffiliate**](SellerInventoryListViewAffiliate.md)
+[**SellableListAffiliate**](SellableListAffiliate.md)
 
 ### Authorization
 

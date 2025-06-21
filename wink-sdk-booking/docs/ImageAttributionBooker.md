@@ -1,6 +1,5 @@
 # ImageAttributionBooker
 
-Whether image has attribution properties
 
 ## Properties
 

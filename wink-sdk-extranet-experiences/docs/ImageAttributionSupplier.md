@@ -1,6 +1,5 @@
 # ImageAttributionSupplier
 
-Whether image has attribution properties
 
 ## Properties
 

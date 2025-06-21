@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **skip** | **int** | Number of records to be skipped by the pager. | [optional] [default to 0]
 **take** | **int** | Number of records to take. | [optional] [default to 30]
 **sort** | [**List[SortDescriptorAgent]**](SortDescriptorAgent.md) | Descriptors used for sorting result set. | [optional] 
-**filter** | [**CompositeFilterDescriptorAgent**](CompositeFilterDescriptorAgent.md) |  | [optional] 
+**filter** | [**CompositeFilterDescriptorAgent**](CompositeFilterDescriptorAgent.md) | Descriptors used for filtering result set | [optional] 
 **group** | [**List[GroupDescriptorAgent]**](GroupDescriptorAgent.md) | Descriptors to group result sets by. | [optional] 
 
 ## Example

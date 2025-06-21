@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **search_for_cities**
-> List[GeoNameNonAuthenticatedEntity] search_for_cities(term, wink_version=wink_version, accept=accept)
+> List[GeoNameLightweightNonAuthenticatedEntity] search_for_cities(term, wink_version=wink_version, accept=accept)
 
 Find Geo Name by Term
 
@@ -25,7 +25,7 @@ Finds a list of geo-name entities for a term that `sounds like`.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.geo_name_non_authenticated_entity import GeoNameNonAuthenticatedEntity
+from wink_sdk_reference.models.geo_name_lightweight_non_authenticated_entity import GeoNameLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[GeoNameNonAuthenticatedEntity]**](GeoNameNonAuthenticatedEntity.md)
+[**List[GeoNameLightweightNonAuthenticatedEntity]**](GeoNameLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_for_city**
-> List[GeoIPNonAuthenticatedEntity] search_for_city(search_term, wink_version=wink_version, accept=accept)
+> List[GeoIpLightweightNonAuthenticatedEntity] search_for_city(search_term, wink_version=wink_version, accept=accept)
 
 City Search
 
@@ -108,7 +108,7 @@ Searches for city matching search term.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.geo_ip_non_authenticated_entity import GeoIPNonAuthenticatedEntity
+from wink_sdk_reference.models.geo_ip_lightweight_non_authenticated_entity import GeoIpLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[GeoIPNonAuthenticatedEntity]**](GeoIPNonAuthenticatedEntity.md)
+[**List[GeoIpLightweightNonAuthenticatedEntity]**](GeoIpLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_geo_name_by_id**
-> GeoNameNonAuthenticatedEntity show_geo_name_by_id(geo_name_id, wink_version=wink_version, accept=accept)
+> GeoNameLightweightNonAuthenticatedEntity show_geo_name_by_id(geo_name_id, wink_version=wink_version, accept=accept)
 
 Find Geo Name by Id
 
@@ -353,7 +353,7 @@ Finds geo-name by given identifier.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.geo_name_non_authenticated_entity import GeoNameNonAuthenticatedEntity
+from wink_sdk_reference.models.geo_name_lightweight_non_authenticated_entity import GeoNameLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GeoNameNonAuthenticatedEntity**](GeoNameNonAuthenticatedEntity.md)
+[**GeoNameLightweightNonAuthenticatedEntity**](GeoNameLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 

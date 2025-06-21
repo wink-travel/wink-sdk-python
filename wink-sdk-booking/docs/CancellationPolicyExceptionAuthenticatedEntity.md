@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cancellation_policy_identifier** | **str** | Cancellation policy | 
-**cancellation_policy** | [**CancellationPolicyAuthenticatedEntity**](CancellationPolicyAuthenticatedEntity.md) |  | 
+**cancellation_policy** | [**CancellationPolicyLightweightAuthenticatedEntity**](CancellationPolicyLightweightAuthenticatedEntity.md) | Cancellation policy | 
 **start_date** | **date** | Start date for when this cancellation policy should start to override the default cancellation policy. | 
 **end_date** | **date** | End date for when this cancellation policy should end overriding the default cancellation policy. | 
 

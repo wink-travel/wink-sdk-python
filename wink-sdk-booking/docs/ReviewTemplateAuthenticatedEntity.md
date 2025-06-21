@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **hotel_identifier** | **str** | Hotel ID to review | 
 **hotel_name** | **str** | Hotel name to review | 
 **user_identifier** | **str** | User ID doing the reviewing | 
-**questions** | [**List[ReviewQuestionAuthenticatedEntity]**](ReviewQuestionAuthenticatedEntity.md) |  | 
+**questions** | **List[object]** |  | 
 
 ## Example
 

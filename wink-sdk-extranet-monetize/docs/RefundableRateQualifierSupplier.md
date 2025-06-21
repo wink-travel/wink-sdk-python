@@ -1,6 +1,5 @@
 # RefundableRateQualifierSupplier
 
-Restrict promotion to either refundable / non-refundable rates.
 
 ## Properties
 

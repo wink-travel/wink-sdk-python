@@ -1,6 +1,5 @@
 # GroupDescriptorNonAuthenticatedEntity
 
-Descriptors to group result sets by.
 
 ## Properties
 

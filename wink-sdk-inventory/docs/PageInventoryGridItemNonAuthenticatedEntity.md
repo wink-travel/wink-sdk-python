@@ -1,6 +1,5 @@
 # PageInventoryGridItemNonAuthenticatedEntity
 
-Property details along with the grid record.
 
 ## Properties
 

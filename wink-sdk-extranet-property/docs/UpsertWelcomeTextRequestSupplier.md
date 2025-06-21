@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | Long and short property descriptions | 
+**list** | [**List[UpsertSimpleDescriptionSupplier]**](UpsertSimpleDescriptionSupplier.md) |  | 
 
 ## Example
 

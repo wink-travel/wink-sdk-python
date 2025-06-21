@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **respond_to_review**
-> ReviewViewSupplier respond_to_review(property_identifier, review_identifier, review_response_supplier, wink_version=wink_version)
+> ReviewSupplier respond_to_review(property_identifier, review_identifier, review_response_supplier, wink_version=wink_version)
 
 Respond to Review
 
@@ -24,7 +24,7 @@ Respond to a unique review for a hotel identified by its identifier
 ```python
 import wink_sdk_extranet_booking
 from wink_sdk_extranet_booking.models.review_response_supplier import ReviewResponseSupplier
-from wink_sdk_extranet_booking.models.review_view_supplier import ReviewViewSupplier
+from wink_sdk_extranet_booking.models.review_supplier import ReviewSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ReviewViewSupplier**](ReviewViewSupplier.md)
+[**ReviewSupplier**](ReviewSupplier.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_review**
-> ReviewViewSupplier show_review(property_identifier, review_identifier, wink_version=wink_version, accept=accept)
+> ReviewSupplier show_review(property_identifier, review_identifier, wink_version=wink_version, accept=accept)
 
 Show Review
 
@@ -109,7 +109,7 @@ Retrieve a unique review of a hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.review_view_supplier import ReviewViewSupplier
+from wink_sdk_extranet_booking.models.review_supplier import ReviewSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ReviewViewSupplier**](ReviewViewSupplier.md)
+[**ReviewSupplier**](ReviewSupplier.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_reviews**
-> PageReviewViewSupplier show_reviews(property_identifier, state_supplier, wink_version=wink_version)
+> PageReviewSupplier show_reviews(property_identifier, state_supplier, wink_version=wink_version)
 
 Show Reviews
 
@@ -277,7 +277,7 @@ Retrieve a paginated list of reviews for specified property
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.page_review_view_supplier import PageReviewViewSupplier
+from wink_sdk_extranet_booking.models.page_review_supplier import PageReviewSupplier
 from wink_sdk_extranet_booking.models.state_supplier import StateSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageReviewViewSupplier**](PageReviewViewSupplier.md)
+[**PageReviewSupplier**](PageReviewSupplier.md)
 
 ### Authorization
 

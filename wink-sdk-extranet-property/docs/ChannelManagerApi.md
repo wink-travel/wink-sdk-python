@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **update_channel_manager**
-> HotelViewSupplier update_channel_manager(property_identifier, update_channel_manager_request_supplier, wink_version=wink_version)
+> PropertySupplier update_channel_manager(property_identifier, update_channel_manager_request_supplier, wink_version=wink_version)
 
 Set Channel Manager
 
@@ -20,7 +20,7 @@ Set which channel manager this property uses. Channel managers are not allowed a
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.update_channel_manager_request_supplier import UpdateChannelManagerRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

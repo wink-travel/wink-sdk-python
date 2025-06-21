@@ -1,6 +1,5 @@
 # PromotionRateQualifierSupplierDetails
 
-Restrict promotion by requiring users to enter a promo code.
 
 ## Properties
 

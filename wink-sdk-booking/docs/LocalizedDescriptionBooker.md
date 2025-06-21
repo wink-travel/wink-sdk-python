@@ -1,6 +1,5 @@
 # LocalizedDescriptionBooker
 
-List of localized descriptions for this fee.
 
 ## Properties
 

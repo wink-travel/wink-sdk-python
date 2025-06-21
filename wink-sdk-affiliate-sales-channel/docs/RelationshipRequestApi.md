@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_supplier_request**
-> SalesChannelRelationshipRequestView create_supplier_request(upsert_sales_channel_relationship_request_request, wink_version=wink_version)
+> SalesChannelRequest create_supplier_request(upsert_sales_channel_request_request, wink_version=wink_version)
 
 Create Supplier Request
 
@@ -24,8 +24,8 @@ Create a new property request.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.sales_channel_relationship_request_view import SalesChannelRelationshipRequestView
-from wink_sdk_affiliate_sales_channel.models.upsert_sales_channel_relationship_request_request import UpsertSalesChannelRelationshipRequestRequest
+from wink_sdk_affiliate_sales_channel.models.sales_channel_request import SalesChannelRequest
+from wink_sdk_affiliate_sales_channel.models.upsert_sales_channel_request_request import UpsertSalesChannelRequestRequest
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -46,12 +46,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
-    upsert_sales_channel_relationship_request_request = wink_sdk_affiliate_sales_channel.UpsertSalesChannelRelationshipRequestRequest() # UpsertSalesChannelRelationshipRequestRequest | 
+    upsert_sales_channel_request_request = wink_sdk_affiliate_sales_channel.UpsertSalesChannelRequestRequest() # UpsertSalesChannelRequestRequest | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Supplier Request
-        api_response = api_instance.create_supplier_request(upsert_sales_channel_relationship_request_request, wink_version=wink_version)
+        api_response = api_instance.create_supplier_request(upsert_sales_channel_request_request, wink_version=wink_version)
         print("The response of RelationshipRequestApi->create_supplier_request:\n")
         pprint(api_response)
     except Exception as e:
@@ -65,12 +65,12 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_sales_channel_relationship_request_request** | [**UpsertSalesChannelRelationshipRequestRequest**](UpsertSalesChannelRelationshipRequestRequest.md)|  | 
+ **upsert_sales_channel_request_request** | [**UpsertSalesChannelRequestRequest**](UpsertSalesChannelRequestRequest.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SalesChannelRelationshipRequestView**](SalesChannelRelationshipRequestView.md)
+[**SalesChannelRequest**](SalesChannelRequest.md)
 
 ### Authorization
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **re_apply_supplier_request**
-> SalesChannelRelationshipRequestView re_apply_supplier_request(sales_channel_request_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelRequest re_apply_supplier_request(sales_channel_request_identifier, wink_version=wink_version, accept=accept)
 
 Re-apply Supplier Request
 
@@ -106,7 +106,7 @@ Allows the affiliate to re-apply a previously rejected property request after 90
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.sales_channel_relationship_request_view import SalesChannelRelationshipRequestView
+from wink_sdk_affiliate_sales_channel.models.sales_channel_request import SalesChannelRequest
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelRelationshipRequestView**](SalesChannelRelationshipRequestView.md)
+[**SalesChannelRequest**](SalesChannelRequest.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_supplier_request**
-> RemoveEntryResponse remove_supplier_request(sales_channel_request_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelRequest remove_supplier_request(sales_channel_request_identifier, wink_version=wink_version, accept=accept)
 
 Delete Relationship Request
 
@@ -189,7 +189,7 @@ Delete a relationship request
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.remove_entry_response import RemoveEntryResponse
+from wink_sdk_affiliate_sales_channel.models.sales_channel_request import SalesChannelRequest
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RemoveEntryResponse**](RemoveEntryResponse.md)
+[**SalesChannelRequest**](SalesChannelRequest.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_request**
-> SalesChannelRelationshipRequestView show_supplier_request(supplier_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelRequest show_supplier_request(supplier_identifier, wink_version=wink_version, accept=accept)
 
 Show Supplier Request
 
@@ -272,7 +272,7 @@ Retrieve a specific property request based on a companyId and a supplierId.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.sales_channel_relationship_request_view import SalesChannelRelationshipRequestView
+from wink_sdk_affiliate_sales_channel.models.sales_channel_request import SalesChannelRequest
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelRelationshipRequestView**](SalesChannelRelationshipRequestView.md)
+[**SalesChannelRequest**](SalesChannelRequest.md)
 
 ### Authorization
 
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier_requests**
-> List[SalesChannelRelationshipRequestViewAffiliate] show_supplier_requests(wink_version=wink_version, accept=accept)
+> List[SalesChannelRequestAffiliate] show_supplier_requests(wink_version=wink_version, accept=accept)
 
 Show Supplier Requests
 
@@ -355,7 +355,7 @@ Retrieve list of all property requests for this company.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.sales_channel_relationship_request_view_affiliate import SalesChannelRelationshipRequestViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.sales_channel_request_affiliate import SalesChannelRequestAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SalesChannelRelationshipRequestViewAffiliate]**](SalesChannelRelationshipRequestViewAffiliate.md)
+[**List[SalesChannelRequestAffiliate]**](SalesChannelRequestAffiliate.md)
 
 ### Authorization
 

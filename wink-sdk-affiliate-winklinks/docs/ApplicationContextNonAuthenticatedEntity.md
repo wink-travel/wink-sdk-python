@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**parent** | [**ApplicationContextNonAuthenticatedEntity**](ApplicationContextNonAuthenticatedEntity.md) |  | [optional] 
+**parent** | **object** |  | [optional] 
 **id** | **str** |  | [optional] 
 **display_name** | **str** |  | [optional] 
-**autowire_capable_bean_factory** | **object** |  | [optional] 
 **application_name** | **str** |  | [optional] 
 **startup_date** | **int** |  | [optional] 
+**autowire_capable_bean_factory** | **object** |  | [optional] 
 **environment** | [**EnvironmentNonAuthenticatedEntity**](EnvironmentNonAuthenticatedEntity.md) |  | [optional] 
 **bean_definition_count** | **int** |  | [optional] 
 **bean_definition_names** | **List[str]** |  | [optional] 

@@ -1,6 +1,5 @@
 # BookingUserBooker
 
-User details for the authenticated person that made the booking.
 
 ## Properties
 

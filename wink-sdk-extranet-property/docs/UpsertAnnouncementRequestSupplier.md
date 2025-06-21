@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **start_date** | **date** | Start date for when announcement is valid | [optional] 
 **end_date** | **date** | End date for when announcement is no longer valid | [optional] 
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | List of all localized announcements. | 
+**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | 
 **show_title** | **bool** | When enabled, the property does not want the title to be displayed | [optional] [default to False]
 **show_always** | **bool** | When enabled, the property wants this announcement always to be displayed | [optional] [default to False]
 

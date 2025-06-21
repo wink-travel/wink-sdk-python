@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **cancel_booking**
-> BookingViewBooker cancel_booking(booking_identifier, cancellation_detail_booker, wink_version=wink_version)
+> BookingBooker cancel_booking(booking_identifier, cancellation_detail_booker, wink_version=wink_version)
 
 Cancel Booking
 
@@ -29,7 +29,7 @@ Cancel a booking by its booking identifier
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.models.cancellation_detail_booker import CancellationDetailBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewBooker**](BookingViewBooker.md)
+[**BookingBooker**](BookingBooker.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **cancel_group_booking**
-> List[BookingViewBooker] cancel_group_booking(group_identifier, cancellation_detail_booker, wink_version=wink_version)
+> List[BookingBooker] cancel_group_booking(group_identifier, cancellation_detail_booker, wink_version=wink_version)
 
 Cancel Group Booking
 
@@ -113,7 +113,7 @@ Cancel a group booking by its group identifier
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.models.cancellation_detail_booker import CancellationDetailBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[BookingViewBooker]**](BookingViewBooker.md)
+[**List[BookingBooker]**](BookingBooker.md)
 
 ### Authorization
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_booking**
-> BookingViewBooker show_booking(booking_identifier, wink_version=wink_version, accept=accept)
+> BookingBooker show_booking(booking_identifier, wink_version=wink_version, accept=accept)
 
 Show Booking
 
@@ -280,7 +280,7 @@ Retrieve a booking by its booking identifier.
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewBooker**](BookingViewBooker.md)
+[**BookingBooker**](BookingBooker.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_booking_by_transaction_id**
-> BookingViewBooker show_booking_by_transaction_id(transaction_identifier, wink_version=wink_version, accept=accept)
+> BookingBooker show_booking_by_transaction_id(transaction_identifier, wink_version=wink_version, accept=accept)
 
 Show Booking by TX ID
 
@@ -363,7 +363,7 @@ Retrieve a booking by its transaction identifier.
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewBooker**](BookingViewBooker.md)
+[**BookingBooker**](BookingBooker.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_booking_grid**
-> PageBookingViewBooker show_booking_grid(state_booker, wink_version=wink_version)
+> PageBookingBooker show_booking_grid(state_booker, wink_version=wink_version)
 
 Search Bookings
 
@@ -446,7 +446,7 @@ Retrieve paginated bookings based on a query state
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.page_booking_view_booker import PageBookingViewBooker
+from wink_sdk_booking.models.page_booking_booker import PageBookingBooker
 from wink_sdk_booking.models.state_booker import StateBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageBookingViewBooker**](PageBookingViewBooker.md)
+[**PageBookingBooker**](PageBookingBooker.md)
 
 ### Authorization
 
@@ -516,7 +516,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_bookings**
-> PageBookingViewBooker show_bookings(page=page, size=size, wink_version=wink_version, accept=accept)
+> PageBookingBooker show_bookings(page=page, size=size, wink_version=wink_version, accept=accept)
 
 Show Booking List
 
@@ -528,7 +528,7 @@ Retrieve bookings in a paginated list
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.page_booking_view_booker import PageBookingViewBooker
+from wink_sdk_booking.models.page_booking_booker import PageBookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -577,7 +577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageBookingViewBooker**](PageBookingViewBooker.md)
+[**PageBookingBooker**](PageBookingBooker.md)
 
 ### Authorization
 
@@ -601,7 +601,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_bookings_by_review_state**
-> List[BookingViewBooker] show_bookings_by_review_state(state=state, wink_version=wink_version, accept=accept)
+> List[BookingBooker] show_bookings_by_review_state(state=state, wink_version=wink_version, accept=accept)
 
 Show Bookings by Review
 
@@ -613,7 +613,7 @@ List bookings by their review state
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -660,7 +660,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[BookingViewBooker]**](BookingViewBooker.md)
+[**List[BookingBooker]**](BookingBooker.md)
 
 ### Authorization
 
@@ -684,7 +684,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_bookings_by_state**
-> List[BookingViewBooker] show_bookings_by_state(state=state, wink_version=wink_version, accept=accept)
+> List[BookingBooker] show_bookings_by_state(state=state, wink_version=wink_version, accept=accept)
 
 Show Bookings by Time
 
@@ -696,7 +696,7 @@ Retrieve bookings for a date state
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -743,7 +743,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[BookingViewBooker]**](BookingViewBooker.md)
+[**List[BookingBooker]**](BookingBooker.md)
 
 ### Authorization
 
@@ -767,7 +767,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_grouped_bookings**
-> List[BookingViewBooker] show_grouped_bookings(group_identifier, wink_version=wink_version, accept=accept)
+> List[BookingBooker] show_grouped_bookings(group_identifier, wink_version=wink_version, accept=accept)
 
 Show Grouped Bookings
 
@@ -779,7 +779,7 @@ Retrieve a list of bookings by group identifier. User needs to be authenticated.
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.booking_view_booker import BookingViewBooker
+from wink_sdk_booking.models.booking_booker import BookingBooker
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
 
@@ -826,7 +826,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[BookingViewBooker]**](BookingViewBooker.md)
+[**List[BookingBooker]**](BookingBooker.md)
 
 ### Authorization
 

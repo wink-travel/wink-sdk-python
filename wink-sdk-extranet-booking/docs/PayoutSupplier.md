@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **type** | **str** | Type of withdrawal. | 
 **entry** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
 **fees** | [**List[PayoutFeeSupplier]**](PayoutFeeSupplier.md) | Fees incurred when making the withdrawal. | [optional] 
-**quote** | [**QuoteSupplier**](QuoteSupplier.md) |  | [optional] 
+**quote** | [**QuoteLightweightSupplier**](QuoteLightweightSupplier.md) | FX quote for this transfer. | [optional] 
 **created** | **datetime** | When the payout record was created. | 
 **description** | **str** | Textual response from provider | [optional] 
 **payout_id** | **str** | The ledgerIdentifier that was generated when scheduling the payout. This will come from the payout provider such as Stripe. | [optional] 

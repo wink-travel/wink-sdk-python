@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | **List[str]** | List of new lifestyles to set on property. | [optional] 
+**list** | **List[str]** |  | [optional] 
 
 ## Example
 

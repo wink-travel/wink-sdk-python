@@ -3,9 +3,9 @@
 """
     Wink API
 
-     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Inventory API The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it. This API lets you:  1. Manage customizations. 2. Shareable Links: Manage shareable supplier / inventory links. 3. Inventory: Manage individual inventory items. 4. Lists: Manage curated / ranked grids. 5. Maps: Manage maps.  Browse the endpoints in the left navigation bar to get started.  
+     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Inventory API The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it. This API lets you:  1. Manage customizations. 2. Shareable Links: Manage shareable supplier / inventory links. 3. Inventory: Manage individual inventory items. 4. Lists: Manage curated / ranked grids. 5. Maps: Manage maps.  Browse the endpoints in the left navigation bar to get started.  
 
-    The version of the OpenAPI document: 30.16.4
+    The version of the OpenAPI document: 30.17.1
     Contact: bjorn@wink.travel
     Generated by OpenAPI Generator (https://openapi-generator.tech)
 
@@ -21,9 +21,9 @@ from pydantic import Field, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
 from wink_sdk_affiliate_inventory.models.create_supplier_url_syndication_entry_request_affiliate import CreateSupplierUrlSyndicationEntryRequestAffiliate
-from wink_sdk_affiliate_inventory.models.supplier_url_view_affiliate import SupplierUrlViewAffiliate
-from wink_sdk_affiliate_inventory.models.syndication_entry_affiliate import SyndicationEntryAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_supplier_url_request_affiliate import UpsertSupplierUrlRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
+from wink_sdk_affiliate_inventory.models.syndicated_item_affiliate import SyndicatedItemAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_supplier_url_request_affiliate import UpsertSellableSupplierUrlRequestAffiliate
 
 from wink_sdk_affiliate_inventory.api_client import ApiClient, RequestSerialized
 from wink_sdk_affiliate_inventory.api_response import ApiResponse
@@ -46,7 +46,7 @@ class SupplierLinksApi:
     @validate_call
     def create_supplier_url(
         self,
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -60,13 +60,13 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> SupplierUrlViewAffiliate:
+    ) -> SellableSupplierUrlAffiliate:
         """Create Link
 
         Create a new shareable link
 
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -92,7 +92,7 @@ class SupplierLinksApi:
         """ # noqa: E501
 
         _param = self._create_supplier_url_serialize(
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -105,7 +105,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SupplierUrlViewAffiliate",
+            '201': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -121,7 +121,7 @@ class SupplierLinksApi:
     @validate_call
     def create_supplier_url_with_http_info(
         self,
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -135,13 +135,13 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[SupplierUrlViewAffiliate]:
+    ) -> ApiResponse[SellableSupplierUrlAffiliate]:
         """Create Link
 
         Create a new shareable link
 
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -167,7 +167,7 @@ class SupplierLinksApi:
         """ # noqa: E501
 
         _param = self._create_supplier_url_serialize(
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -180,7 +180,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SupplierUrlViewAffiliate",
+            '201': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -196,7 +196,7 @@ class SupplierLinksApi:
     @validate_call
     def create_supplier_url_without_preload_content(
         self,
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -215,8 +215,8 @@ class SupplierLinksApi:
 
         Create a new shareable link
 
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -242,7 +242,7 @@ class SupplierLinksApi:
         """ # noqa: E501
 
         _param = self._create_supplier_url_serialize(
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -255,7 +255,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SupplierUrlViewAffiliate",
+            '201': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -266,7 +266,7 @@ class SupplierLinksApi:
 
     def _create_supplier_url_serialize(
         self,
-        upsert_supplier_url_request_affiliate,
+        upsert_sellable_supplier_url_request_affiliate,
         wink_version,
         _request_auth,
         _content_type,
@@ -295,8 +295,8 @@ class SupplierLinksApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if upsert_supplier_url_request_affiliate is not None:
-            _body_params = upsert_supplier_url_request_affiliate
+        if upsert_sellable_supplier_url_request_affiliate is not None:
+            _body_params = upsert_sellable_supplier_url_request_affiliate
 
 
         # set the HTTP header `Accept`
@@ -365,7 +365,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> SyndicationEntryAffiliate:
+    ) -> SyndicatedItemAffiliate:
         """Add to WinkLinks
 
         Creates a new WinkLinks entry from the specified link ID.
@@ -410,7 +410,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SyndicationEntryAffiliate",
+            '201': "SyndicatedItemAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -440,7 +440,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[SyndicationEntryAffiliate]:
+    ) -> ApiResponse[SyndicatedItemAffiliate]:
         """Add to WinkLinks
 
         Creates a new WinkLinks entry from the specified link ID.
@@ -485,7 +485,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SyndicationEntryAffiliate",
+            '201': "SyndicatedItemAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -560,7 +560,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '201': "SyndicationEntryAffiliate",
+            '201': "SyndicatedItemAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -671,7 +671,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> SupplierUrlViewAffiliate:
+    ) -> SellableSupplierUrlAffiliate:
         """Delete Link
 
         Delete a shareable link
@@ -719,7 +719,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -750,7 +750,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[SupplierUrlViewAffiliate]:
+    ) -> ApiResponse[SellableSupplierUrlAffiliate]:
         """Delete Link
 
         Delete a shareable link
@@ -798,7 +798,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -877,7 +877,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -978,7 +978,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> SupplierUrlViewAffiliate:
+    ) -> SellableSupplierUrlAffiliate:
         """Show Link
 
         Retrieve a specific shareable url for this seller
@@ -1026,7 +1026,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1057,7 +1057,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[SupplierUrlViewAffiliate]:
+    ) -> ApiResponse[SellableSupplierUrlAffiliate]:
         """Show Link
 
         Retrieve a specific shareable url for this seller
@@ -1105,7 +1105,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1184,7 +1184,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1284,7 +1284,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> List[SupplierUrlViewAffiliate]:
+    ) -> List[SellableSupplierUrlAffiliate]:
         """Show Links
 
         Retrieve list of shareable urls for this seller
@@ -1329,7 +1329,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "List[SupplierUrlViewAffiliate]",
+            '200': "List[SellableSupplierUrlAffiliate]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1359,7 +1359,7 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[List[SupplierUrlViewAffiliate]]:
+    ) -> ApiResponse[List[SellableSupplierUrlAffiliate]]:
         """Show Links
 
         Retrieve list of shareable urls for this seller
@@ -1404,7 +1404,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "List[SupplierUrlViewAffiliate]",
+            '200': "List[SellableSupplierUrlAffiliate]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1479,7 +1479,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "List[SupplierUrlViewAffiliate]",
+            '200': "List[SellableSupplierUrlAffiliate]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1563,7 +1563,7 @@ class SupplierLinksApi:
     def update_supplier_url(
         self,
         supplier_url_identifier: Annotated[StrictStr, Field(description="Update url with this identifier.")],
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1577,15 +1577,15 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> SupplierUrlViewAffiliate:
+    ) -> SellableSupplierUrlAffiliate:
         """Update link
 
         Modify a shareable link
 
         :param supplier_url_identifier: Update url with this identifier. (required)
         :type supplier_url_identifier: str
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1612,7 +1612,7 @@ class SupplierLinksApi:
 
         _param = self._update_supplier_url_serialize(
             supplier_url_identifier=supplier_url_identifier,
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1625,7 +1625,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1642,7 +1642,7 @@ class SupplierLinksApi:
     def update_supplier_url_with_http_info(
         self,
         supplier_url_identifier: Annotated[StrictStr, Field(description="Update url with this identifier.")],
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1656,15 +1656,15 @@ class SupplierLinksApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[SupplierUrlViewAffiliate]:
+    ) -> ApiResponse[SellableSupplierUrlAffiliate]:
         """Update link
 
         Modify a shareable link
 
         :param supplier_url_identifier: Update url with this identifier. (required)
         :type supplier_url_identifier: str
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1691,7 +1691,7 @@ class SupplierLinksApi:
 
         _param = self._update_supplier_url_serialize(
             supplier_url_identifier=supplier_url_identifier,
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1704,7 +1704,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1721,7 +1721,7 @@ class SupplierLinksApi:
     def update_supplier_url_without_preload_content(
         self,
         supplier_url_identifier: Annotated[StrictStr, Field(description="Update url with this identifier.")],
-        upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate,
+        upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1742,8 +1742,8 @@ class SupplierLinksApi:
 
         :param supplier_url_identifier: Update url with this identifier. (required)
         :type supplier_url_identifier: str
-        :param upsert_supplier_url_request_affiliate: (required)
-        :type upsert_supplier_url_request_affiliate: UpsertSupplierUrlRequestAffiliate
+        :param upsert_sellable_supplier_url_request_affiliate: (required)
+        :type upsert_sellable_supplier_url_request_affiliate: UpsertSellableSupplierUrlRequestAffiliate
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1770,7 +1770,7 @@ class SupplierLinksApi:
 
         _param = self._update_supplier_url_serialize(
             supplier_url_identifier=supplier_url_identifier,
-            upsert_supplier_url_request_affiliate=upsert_supplier_url_request_affiliate,
+            upsert_sellable_supplier_url_request_affiliate=upsert_sellable_supplier_url_request_affiliate,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1783,7 +1783,7 @@ class SupplierLinksApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowSupplierUrl400Response",
-            '200': "SupplierUrlViewAffiliate",
+            '200': "SellableSupplierUrlAffiliate",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1795,7 +1795,7 @@ class SupplierLinksApi:
     def _update_supplier_url_serialize(
         self,
         supplier_url_identifier,
-        upsert_supplier_url_request_affiliate,
+        upsert_sellable_supplier_url_request_affiliate,
         wink_version,
         _request_auth,
         _content_type,
@@ -1826,8 +1826,8 @@ class SupplierLinksApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if upsert_supplier_url_request_affiliate is not None:
-            _body_params = upsert_supplier_url_request_affiliate
+        if upsert_sellable_supplier_url_request_affiliate is not None:
+            _body_params = upsert_sellable_supplier_url_request_affiliate
 
 
         # set the HTTP header `Accept`

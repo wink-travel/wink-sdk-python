@@ -1,16 +1,15 @@
 # LocalizedPriceSupplierDetails
 
-Localized price
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**source_to_user_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
-**source_to_internal_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
-**user_specified_currency_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
-**source_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
-**internal_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
+**source_to_user_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) | Hotel to user currency exchange rate. | 
+**source_to_internal_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) | Hotel to wink currency exchange rate. | 
+**user_specified_currency_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Base total in user specified currency. | 
+**source_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Base total in hotel currency. | 
+**internal_base_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Base total in wink currency. | 
 **user_specified_currency_promotional_modifier** | **float** | Promotional modifiers in user specified currency | [optional] 
 **source_promotional_modifier** | **float** | Promotional modifiers in hotel currency | [optional] 
 **internal_promotional_modifier** | **float** | Promotional modifiers in wink currency | [optional] 

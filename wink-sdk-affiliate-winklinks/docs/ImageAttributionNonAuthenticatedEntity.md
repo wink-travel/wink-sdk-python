@@ -1,6 +1,5 @@
 # ImageAttributionNonAuthenticatedEntity
 
-Whether image has attribution properties
 
 ## Properties
 

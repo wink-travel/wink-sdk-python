@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **skip** | **int** | Number of records to be skipped by the pager. | [optional] [default to 0]
 **take** | **int** | Number of records to take. | [optional] [default to 30]
 **sort** | [**List[SortDescriptorAffiliate]**](SortDescriptorAffiliate.md) | Descriptors used for sorting result set. | [optional] 
-**filter** | [**CompositeFilterDescriptorAffiliate**](CompositeFilterDescriptorAffiliate.md) |  | [optional] 
+**filter** | [**CompositeFilterDescriptorAffiliate**](CompositeFilterDescriptorAffiliate.md) | Descriptors used for filtering result set | [optional] 
 **group** | [**List[GroupDescriptorAffiliate]**](GroupDescriptorAffiliate.md) | Descriptors to group result sets by. | [optional] 
 
 ## Example

@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **show_all_exchange_rates**
-> PageExchangeRateViewNonAuthenticatedEntity show_all_exchange_rates(page, size, wink_version=wink_version, accept=accept)
+> PageQuoteNonAuthenticatedEntity show_all_exchange_rates(page, size, wink_version=wink_version, accept=accept)
 
 Show All Exchange Rates
 
@@ -32,7 +32,7 @@ Show exchange rates for target currency and all reactive-supported currencies.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.page_exchange_rate_view_non_authenticated_entity import PageExchangeRateViewNonAuthenticatedEntity
+from wink_sdk_reference.models.page_quote_non_authenticated_entity import PageQuoteNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageExchangeRateViewNonAuthenticatedEntity**](PageExchangeRateViewNonAuthenticatedEntity.md)
+[**PageQuoteNonAuthenticatedEntity**](PageQuoteNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_countries1**
-> List[CountryNonAuthenticatedEntity] show_countries1(wink_version=wink_version, accept=accept)
+> List[CountryLightweightNonAuthenticatedEntity] show_countries1(wink_version=wink_version, accept=accept)
 
 Show Countries
 
@@ -281,7 +281,7 @@ Show list of reactive-supported countries.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.country_non_authenticated_entity import CountryNonAuthenticatedEntity
+from wink_sdk_reference.models.country_lightweight_non_authenticated_entity import CountryLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[CountryNonAuthenticatedEntity]**](CountryNonAuthenticatedEntity.md)
+[**List[CountryLightweightNonAuthenticatedEntity]**](CountryLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_exchange_rate**
-> QuoteNonAuthenticatedEntity show_exchange_rate(source_currency, target_currency, wink_version=wink_version)
+> QuoteLightweightNonAuthenticatedEntity show_exchange_rate(source_currency, target_currency, wink_version=wink_version)
 
 Show Exchange Rate
 
@@ -436,7 +436,7 @@ Show exchange rate between target and source currency
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.quote_non_authenticated_entity import QuoteNonAuthenticatedEntity
+from wink_sdk_reference.models.quote_lightweight_non_authenticated_entity import QuoteLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuoteNonAuthenticatedEntity**](QuoteNonAuthenticatedEntity.md)
+[**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -588,7 +588,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_exchange_rate_for_target_currency**
-> List[QuoteNonAuthenticatedEntity] show_exchange_rate_for_target_currency(currency, wink_version=wink_version)
+> List[QuoteLightweightNonAuthenticatedEntity] show_exchange_rate_for_target_currency(currency, wink_version=wink_version)
 
 Show Exchange Rates
 
@@ -600,7 +600,7 @@ Show exchange rates for target currency and all reactive-supported currencies.
 
 ```python
 import wink_sdk_reference
-from wink_sdk_reference.models.quote_non_authenticated_entity import QuoteNonAuthenticatedEntity
+from wink_sdk_reference.models.quote_lightweight_non_authenticated_entity import QuoteLightweightNonAuthenticatedEntity
 from wink_sdk_reference.rest import ApiException
 from pprint import pprint
 
@@ -645,7 +645,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[QuoteNonAuthenticatedEntity]**](QuoteNonAuthenticatedEntity.md)
+[**List[QuoteLightweightNonAuthenticatedEntity]**](QuoteLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -812,13 +812,12 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: */*, application/json, application/xml, text/xml, text/plain
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |

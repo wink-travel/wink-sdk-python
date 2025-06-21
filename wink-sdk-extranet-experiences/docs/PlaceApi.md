@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **create_place**
-> RefPointViewSupplier create_place(property_identifier, upsert_place_request_supplier, wink_version=wink_version)
+> PlaceSupplier create_place(property_identifier, upsert_place_request_supplier, wink_version=wink_version)
 
 Create Place
 
@@ -26,7 +26,7 @@ Create a new place.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.models.upsert_place_request_supplier import UpsertPlaceRequestSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RefPointViewSupplier**](RefPointViewSupplier.md)
+[**PlaceSupplier**](PlaceSupplier.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_place**
-> RefPointViewSupplier remove_place(property_identifier, place_identifier, wink_version=wink_version, accept=accept)
+> PlaceSupplier remove_place(property_identifier, place_identifier, wink_version=wink_version, accept=accept)
 
 Delete Place
 
@@ -110,7 +110,7 @@ Delete a place by its identifier.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RefPointViewSupplier**](RefPointViewSupplier.md)
+[**PlaceSupplier**](PlaceSupplier.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_place**
-> RefPointViewSupplier show_place(property_identifier, place_identifier, wink_version=wink_version, accept=accept)
+> PlaceSupplier show_place(property_identifier, place_identifier, wink_version=wink_version, accept=accept)
 
 Show Place
 
@@ -195,7 +195,7 @@ Retrieve a place by its identifier.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RefPointViewSupplier**](RefPointViewSupplier.md)
+[**PlaceSupplier**](PlaceSupplier.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_places**
-> List[RefPointViewSupplier] show_places(property_identifier, wink_version=wink_version, accept=accept)
+> List[PlaceSupplier] show_places(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Places
 
@@ -363,7 +363,7 @@ Retrieve list of places for property.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RefPointViewSupplier]**](RefPointViewSupplier.md)
+[**List[PlaceSupplier]**](PlaceSupplier.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_place**
-> RefPointViewSupplier update_place(property_identifier, place_identifier, upsert_place_request_supplier, wink_version=wink_version)
+> PlaceSupplier update_place(property_identifier, place_identifier, upsert_place_request_supplier, wink_version=wink_version)
 
 Update Place
 
@@ -446,7 +446,7 @@ Update a place by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.models.upsert_place_request_supplier import UpsertPlaceRequestSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RefPointViewSupplier**](RefPointViewSupplier.md)
+[**PlaceSupplier**](PlaceSupplier.md)
 
 ### Authorization
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_place_media**
-> RefPointViewSupplier upload_place_media(property_identifier, place_identifier, files)
+> PlaceSupplier upload_place_media(property_identifier, place_identifier, files)
 
 Upload Binary Multimedia
 
@@ -532,7 +532,7 @@ Upload a list of binary / multipart videos and/or images to an existing place.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.ref_point_view_supplier import RefPointViewSupplier
+from wink_sdk_extranet_experiences.models.place_supplier import PlaceSupplier
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -579,7 +579,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RefPointViewSupplier**](RefPointViewSupplier.md)
+[**PlaceSupplier**](PlaceSupplier.md)
 
 ### Authorization
 

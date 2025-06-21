@@ -6,8 +6,8 @@ The price of the link being exposed
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Original price | [optional] 
+**price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Discounted price | [optional] 
 **percent_discount** | **float** | Price discount in percent | [optional] 
 
 ## Example

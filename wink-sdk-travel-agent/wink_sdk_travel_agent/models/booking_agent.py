@@ -3,9 +3,9 @@
 """
     Wink API
 
-     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Travel Agent API The Travel Agent API exposes endpoints to manage agent-facilitated bookings. This API lets you:  1. Travel Agent: Manage agent entity. 2. Booking: Create / Manage bookings  Browse the endpoints in the left navigation bar to get started.  
+     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Travel Agent API The Travel Agent API exposes endpoints to manage agent-facilitated bookings. This API lets you:  1. Travel Agent: Manage agent entity. 2. Booking: Create / Manage bookings  Browse the endpoints in the left navigation bar to get started.  
 
-    The version of the OpenAPI document: 30.16.4
+    The version of the OpenAPI document: 30.17.1
     Contact: bjorn@wink.travel
     Generated by OpenAPI Generator (https://openapi-generator.tech)
 
@@ -21,20 +21,15 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictFloat, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from wink_sdk_travel_agent.models.address_agent import AddressAgent
 from wink_sdk_travel_agent.models.booking_ancillary_agent import BookingAncillaryAgent
 from wink_sdk_travel_agent.models.booking_contract_agent import BookingContractAgent
 from wink_sdk_travel_agent.models.booking_user_agent import BookingUserAgent
 from wink_sdk_travel_agent.models.booking_user_session_agent import BookingUserSessionAgent
 from wink_sdk_travel_agent.models.commissionable_entry_agent import CommissionableEntryAgent
-from wink_sdk_travel_agent.models.contact_agent import ContactAgent
 from wink_sdk_travel_agent.models.custom_monetary_amount import CustomMonetaryAmount
-from wink_sdk_travel_agent.models.engine_configuration_booking_report_agent import EngineConfigurationBookingReportAgent
-from wink_sdk_travel_agent.models.hotel_on_map_agent import HotelOnMapAgent
-from wink_sdk_travel_agent.models.reporting_ancillary_agent import ReportingAncillaryAgent
-from wink_sdk_travel_agent.models.reporting_daily_rate_agent import ReportingDailyRateAgent
-from wink_sdk_travel_agent.models.reporting_extra_charge_agent import ReportingExtraChargeAgent
-from wink_sdk_travel_agent.models.review_agent import ReviewAgent
+from wink_sdk_travel_agent.models.customization_lightweight_agent import CustomizationLightweightAgent
+from wink_sdk_travel_agent.models.property_aggregate_lightweight_agent import PropertyAggregateLightweightAgent
+from wink_sdk_travel_agent.models.review_lightweight_agent import ReviewLightweightAgent
 from wink_sdk_travel_agent.models.room_stay_agent import RoomStayAgent
 from wink_sdk_travel_agent.models.social_agent import SocialAgent
 from typing import Optional, Set
@@ -42,36 +37,36 @@ from typing_extensions import Self
 
 class BookingAgent(BaseModel):
     """
-    Booking data object
+    BookingAgent
     """ # noqa: E501
-    creation: Optional[StrictStr] = Field(default='NORMAL', description="Communicates whether the booking was created normally or if it failed or was just for testing.")
-    var_date: datetime = Field(description="Date and time the booking was made.", alias="date")
+    id: Optional[StrictStr] = Field(default=None, description="Document UUID")
+    created_date: Optional[datetime] = Field(default=None, description="Datetime this record was first created", alias="createdDate")
+    last_update: Optional[datetime] = Field(default=None, description="Datetime this record was last updated", alias="lastUpdate")
+    version: Optional[StrictInt] = Field(default=None, description="Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception.")
+    creation: StrictStr = Field(description="Communicates whether the booking was created normally or if it failed or was just for testing.")
     group_identifier: StrictStr = Field(description="Unique record identifier for the collection of bookings that were made at the same time.", alias="groupIdentifier")
-    identifier: StrictStr = Field(description="Unique record identifier")
-    engine_configuration: EngineConfigurationBookingReportAgent = Field(alias="engineConfiguration")
+    customization: CustomizationLightweightAgent = Field(description="Which customization configuration record did the entity application used to facilitate in making this booking happen.")
     booking_code: StrictStr = Field(description="Unique user-friendly booking geoname. This code should be used when corresponding with travelers.", alias="bookingCode")
-    user: BookingUserAgent
-    user_session: BookingUserSessionAgent = Field(alias="userSession")
+    user: BookingUserAgent = Field(description="User details for the authenticated person that made the booking.")
+    user_session: BookingUserSessionAgent = Field(description="User session state as it was when the user made the booking.", alias="userSession")
     server_url: StrictStr = Field(description="The URL the booking occurred", alias="serverUrl")
-    contact_info: ContactAgent = Field(alias="contactInfo")
-    address: AddressAgent
     socials: Optional[List[SocialAgent]] = Field(default=None, description="List of all social network account property has for the traveler to get in touch.")
-    review: Optional[ReviewAgent] = None
+    review: Optional[ReviewLightweightAgent] = Field(default=None, description="User review created by the traveler after the booking completed.")
     email_header_logo_url: StrictStr = Field(description="Full url of the image logo optimized for emails", alias="emailHeaderLogoUrl")
     logo_identifier: Optional[StrictStr] = Field(default=None, description="Logo cloudinary identifier for potential reuse", alias="logoIdentifier")
-    hotel: HotelOnMapAgent
-    room_stay: Optional[RoomStayAgent] = Field(default=None, alias="roomStay")
+    hotel: PropertyAggregateLightweightAgent = Field(description="Combined property data.")
+    room_stay: Optional[RoomStayAgent] = Field(default=None, description="All information about the room that was booked.", alias="roomStay")
     special_requests: Optional[StrictStr] = Field(default=None, description="Free text where the traveler can add a message to the property.", alias="specialRequests")
     comment: Optional[StrictStr] = Field(default=None, description="Internal comment field the platform can add and make available to channel manager partners.")
-    early_check_in_charge: Optional[CustomMonetaryAmount] = Field(default=None, alias="earlyCheckInCharge")
-    late_check_out_charge: Optional[CustomMonetaryAmount] = Field(default=None, alias="lateCheckOutCharge")
+    early_check_in_charge: Optional[CustomMonetaryAmount] = Field(default=None, description="Early check-in charge fixed amount that is due if guest checks out early.", alias="earlyCheckInCharge")
+    late_check_out_charge: Optional[CustomMonetaryAmount] = Field(default=None, description="Late check-out charge fixed amount that is due if guest checks out late.", alias="lateCheckOutCharge")
     early_check_in_charge_percent: Optional[Union[StrictFloat, StrictInt]] = Field(default=None, description="Early check-in charge calculated in percent of first room night price.", alias="earlyCheckInChargePercent")
     late_check_out_charge_percent: Optional[Union[StrictFloat, StrictInt]] = Field(default=None, description="Early check-in charge calculated in percent of first room night price.", alias="lateCheckOutChargePercent")
     hotel_image_url: StrictStr = Field(description="Absolute URL of hotel image that can be used as-is", alias="hotelImageUrl")
     room_image_url: StrictStr = Field(description="Absolute URL of room image that can be used as-is", alias="roomImageUrl")
     commission_list: Optional[List[CommissionableEntryAgent]] = Field(default=None, description="List of all travel inventory entries that are due a commission to the affiliate.", alias="commissionList")
     ancillary_list: Optional[List[BookingAncillaryAgent]] = Field(default=None, alias="ancillaryList")
-    booking_contract: Optional[BookingContractAgent] = Field(default=None, alias="bookingContract")
+    booking_contract: Optional[BookingContractAgent] = Field(default=None, description="Booking contract created by TripPay", alias="bookingContract")
     static_map_image_url: Optional[StrictStr] = Field(default=None, description="Url of map image that can be sent via email", alias="staticMapImageUrl")
     static_map_url: Optional[StrictStr] = Field(default=None, description="Url of map image location on Google Maps", alias="staticMapUrl")
     status: Optional[StrictStr] = Field(default=None, description="Convenience data point to show which status the booking currently has.")
@@ -88,7 +83,6 @@ class BookingAgent(BaseModel):
     cancellable_by_agent: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the agent.", alias="cancellableByAgent")
     cancellable_by_supplier: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the supplier.", alias="cancellableBySupplier")
     cancellable_by_traveler: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the traveller.", alias="cancellableByTraveler")
-    full_address: Optional[StrictStr] = Field(default=None, description="Convenience data point to return the full hotel address.", alias="fullAddress")
     has_breakfast: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to breakfast quickly.", alias="hasBreakfast")
     has_brunch: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to brunch quickly.", alias="hasBrunch")
     has_lunch: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to lunch quickly.", alias="hasLunch")
@@ -103,17 +97,14 @@ class BookingAgent(BaseModel):
     has_activities: Optional[StrictBool] = Field(default=None, description="Convenience data point to check if any activity reservations are included in this booking.", alias="hasActivities")
     has_attractions: Optional[StrictBool] = Field(default=None, description="Convenience data point to check if any attractions reservations are included in this booking.", alias="hasAttractions")
     has_places: Optional[StrictBool] = Field(default=None, description="Convenience data point to check if any place reservations are included in this booking.", alias="hasPlaces")
-    reporting_daily_rate_list: Optional[List[ReportingDailyRateAgent]] = Field(default=None, alias="reportingDailyRateList")
-    reporting_ancillary_list: Optional[List[ReportingAncillaryAgent]] = Field(default=None, alias="reportingAncillaryList")
-    reporting_extra_charge_list: Optional[List[ReportingExtraChargeAgent]] = Field(default=None, alias="reportingExtraChargeList")
-    __properties: ClassVar[List[str]] = ["creation", "date", "groupIdentifier", "identifier", "engineConfiguration", "bookingCode", "user", "userSession", "serverUrl", "contactInfo", "address", "socials", "review", "emailHeaderLogoUrl", "logoIdentifier", "hotel", "roomStay", "specialRequests", "comment", "earlyCheckInCharge", "lateCheckOutCharge", "earlyCheckInChargePercent", "lateCheckOutChargePercent", "hotelImageUrl", "roomImageUrl", "commissionList", "ancillaryList", "bookingContract", "staticMapImageUrl", "staticMapUrl", "status", "meetingRooms", "restaurants", "spas", "activities", "attractions", "places", "roomTypeAncillaries", "addOns", "rateSource", "hasAddOns", "cancellableByAgent", "cancellableBySupplier", "cancellableByTraveler", "fullAddress", "hasBreakfast", "hasBrunch", "hasLunch", "hasDinner", "hasAllInclusive", "hasAllInclusivePlusAlcohol", "hasRoomTypeAncillaries", "hasFood", "hasRestaurants", "hasMeetingRooms", "hasSpas", "hasActivities", "hasAttractions", "hasPlaces", "reportingDailyRateList", "reportingAncillaryList", "reportingExtraChargeList"]
+    reporting_daily_rate_list: Optional[List[Any]] = Field(default=None, alias="reportingDailyRateList")
+    reporting_ancillary_list: Optional[List[Any]] = Field(default=None, alias="reportingAncillaryList")
+    reporting_extra_charge_list: Optional[List[Any]] = Field(default=None, alias="reportingExtraChargeList")
+    __properties: ClassVar[List[str]] = ["id", "createdDate", "lastUpdate", "version", "creation", "groupIdentifier", "customization", "bookingCode", "user", "userSession", "serverUrl", "socials", "review", "emailHeaderLogoUrl", "logoIdentifier", "hotel", "roomStay", "specialRequests", "comment", "earlyCheckInCharge", "lateCheckOutCharge", "earlyCheckInChargePercent", "lateCheckOutChargePercent", "hotelImageUrl", "roomImageUrl", "commissionList", "ancillaryList", "bookingContract", "staticMapImageUrl", "staticMapUrl", "status", "meetingRooms", "restaurants", "spas", "activities", "attractions", "places", "roomTypeAncillaries", "addOns", "rateSource", "hasAddOns", "cancellableByAgent", "cancellableBySupplier", "cancellableByTraveler", "hasBreakfast", "hasBrunch", "hasLunch", "hasDinner", "hasAllInclusive", "hasAllInclusivePlusAlcohol", "hasRoomTypeAncillaries", "hasFood", "hasRestaurants", "hasMeetingRooms", "hasSpas", "hasActivities", "hasAttractions", "hasPlaces", "reportingDailyRateList", "reportingAncillaryList", "reportingExtraChargeList"]
 
     @field_validator('creation')
     def creation_validate_enum(cls, value):
         """Validates the enum"""
-        if value is None:
-            return value
-
         if value not in set(['NORMAL', 'TEST', 'FAILED']):
             raise ValueError("must be one of enum values ('NORMAL', 'TEST', 'FAILED')")
         return value
@@ -167,21 +158,15 @@ class BookingAgent(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
-        # override the default output from pydantic by calling `to_dict()` of engine_configuration
-        if self.engine_configuration:
-            _dict['engineConfiguration'] = self.engine_configuration.to_dict()
+        # override the default output from pydantic by calling `to_dict()` of customization
+        if self.customization:
+            _dict['customization'] = self.customization.to_dict()
         # override the default output from pydantic by calling `to_dict()` of user
         if self.user:
             _dict['user'] = self.user.to_dict()
         # override the default output from pydantic by calling `to_dict()` of user_session
         if self.user_session:
             _dict['userSession'] = self.user_session.to_dict()
-        # override the default output from pydantic by calling `to_dict()` of contact_info
-        if self.contact_info:
-            _dict['contactInfo'] = self.contact_info.to_dict()
-        # override the default output from pydantic by calling `to_dict()` of address
-        if self.address:
-            _dict['address'] = self.address.to_dict()
         # override the default output from pydantic by calling `to_dict()` of each item in socials (list)
         _items = []
         if self.socials:
@@ -277,27 +262,6 @@ class BookingAgent(BaseModel):
                 if _item_add_ons:
                     _items.append(_item_add_ons.to_dict())
             _dict['addOns'] = _items
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_daily_rate_list (list)
-        _items = []
-        if self.reporting_daily_rate_list:
-            for _item_reporting_daily_rate_list in self.reporting_daily_rate_list:
-                if _item_reporting_daily_rate_list:
-                    _items.append(_item_reporting_daily_rate_list.to_dict())
-            _dict['reportingDailyRateList'] = _items
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_ancillary_list (list)
-        _items = []
-        if self.reporting_ancillary_list:
-            for _item_reporting_ancillary_list in self.reporting_ancillary_list:
-                if _item_reporting_ancillary_list:
-                    _items.append(_item_reporting_ancillary_list.to_dict())
-            _dict['reportingAncillaryList'] = _items
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_extra_charge_list (list)
-        _items = []
-        if self.reporting_extra_charge_list:
-            for _item_reporting_extra_charge_list in self.reporting_extra_charge_list:
-                if _item_reporting_extra_charge_list:
-                    _items.append(_item_reporting_extra_charge_list.to_dict())
-            _dict['reportingExtraChargeList'] = _items
         return _dict
 
     @classmethod
@@ -310,22 +274,22 @@ class BookingAgent(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
+            "id": obj.get("id"),
+            "createdDate": obj.get("createdDate"),
+            "lastUpdate": obj.get("lastUpdate"),
+            "version": obj.get("version"),
             "creation": obj.get("creation") if obj.get("creation") is not None else 'NORMAL',
-            "date": obj.get("date"),
             "groupIdentifier": obj.get("groupIdentifier"),
-            "identifier": obj.get("identifier"),
-            "engineConfiguration": EngineConfigurationBookingReportAgent.from_dict(obj["engineConfiguration"]) if obj.get("engineConfiguration") is not None else None,
+            "customization": CustomizationLightweightAgent.from_dict(obj["customization"]) if obj.get("customization") is not None else None,
             "bookingCode": obj.get("bookingCode"),
             "user": BookingUserAgent.from_dict(obj["user"]) if obj.get("user") is not None else None,
             "userSession": BookingUserSessionAgent.from_dict(obj["userSession"]) if obj.get("userSession") is not None else None,
             "serverUrl": obj.get("serverUrl"),
-            "contactInfo": ContactAgent.from_dict(obj["contactInfo"]) if obj.get("contactInfo") is not None else None,
-            "address": AddressAgent.from_dict(obj["address"]) if obj.get("address") is not None else None,
             "socials": [SocialAgent.from_dict(_item) for _item in obj["socials"]] if obj.get("socials") is not None else None,
-            "review": ReviewAgent.from_dict(obj["review"]) if obj.get("review") is not None else None,
+            "review": ReviewLightweightAgent.from_dict(obj["review"]) if obj.get("review") is not None else None,
             "emailHeaderLogoUrl": obj.get("emailHeaderLogoUrl"),
             "logoIdentifier": obj.get("logoIdentifier"),
-            "hotel": HotelOnMapAgent.from_dict(obj["hotel"]) if obj.get("hotel") is not None else None,
+            "hotel": PropertyAggregateLightweightAgent.from_dict(obj["hotel"]) if obj.get("hotel") is not None else None,
             "roomStay": RoomStayAgent.from_dict(obj["roomStay"]) if obj.get("roomStay") is not None else None,
             "specialRequests": obj.get("specialRequests"),
             "comment": obj.get("comment"),
@@ -354,7 +318,6 @@ class BookingAgent(BaseModel):
             "cancellableByAgent": obj.get("cancellableByAgent"),
             "cancellableBySupplier": obj.get("cancellableBySupplier"),
             "cancellableByTraveler": obj.get("cancellableByTraveler"),
-            "fullAddress": obj.get("fullAddress"),
             "hasBreakfast": obj.get("hasBreakfast"),
             "hasBrunch": obj.get("hasBrunch"),
             "hasLunch": obj.get("hasLunch"),
@@ -369,9 +332,9 @@ class BookingAgent(BaseModel):
             "hasActivities": obj.get("hasActivities"),
             "hasAttractions": obj.get("hasAttractions"),
             "hasPlaces": obj.get("hasPlaces"),
-            "reportingDailyRateList": [ReportingDailyRateAgent.from_dict(_item) for _item in obj["reportingDailyRateList"]] if obj.get("reportingDailyRateList") is not None else None,
-            "reportingAncillaryList": [ReportingAncillaryAgent.from_dict(_item) for _item in obj["reportingAncillaryList"]] if obj.get("reportingAncillaryList") is not None else None,
-            "reportingExtraChargeList": [ReportingExtraChargeAgent.from_dict(_item) for _item in obj["reportingExtraChargeList"]] if obj.get("reportingExtraChargeList") is not None else None
+            "reportingDailyRateList": obj.get("reportingDailyRateList"),
+            "reportingAncillaryList": obj.get("reportingAncillaryList"),
+            "reportingExtraChargeList": obj.get("reportingExtraChargeList")
         })
         return _obj
 

@@ -1,6 +1,5 @@
 # KeyValuePairNonAuthenticatedEntity
 
-Optional user categories
 
 ## Properties
 

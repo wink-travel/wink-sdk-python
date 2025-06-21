@@ -3,9 +3,9 @@
 """
     Wink API
 
-     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/engine-client): A single endpoint to retrieve whitelabel + customization information for the booking engine.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Extranet Monetize API This part of the documentation concerns itself with the management of cancellation policies, promotions, restrictions etc. This API lets you create:  1. Add-ons: Manage add-ons. 2. Cancellation policies: Manage cancellation policies for your property. 3. Rate plan: Manage property rate plans. 4. Master rates: Manage perks for room type / rate plan combos. 5. Promotions: Manage promotions. 6. Promotion bundle: Manage bundled promotions.  Browse the endpoints in the left navigation bar to get started.  
+     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reactive): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant reactive widget for all other entities.   - [TripPay](/reactive): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Extranet Monetize API This part of the documentation concerns itself with the management of cancellation policies, promotions, restrictions etc. This API lets you create:  1. Add-ons: Manage add-ons. 2. Cancellation policies: Manage cancellation policies for your property. 3. Rate plan: Manage property rate plans. 4. Master rates: Manage perks for room type / rate plan combos. 5. Promotions: Manage promotions. 6. Promotion bundle: Manage bundled promotions.  Browse the endpoints in the left navigation bar to get started.  
 
-    The version of the OpenAPI document: 30.16.4
+    The version of the OpenAPI document: 30.17.1
     Contact: bjorn@wink.travel
     Generated by OpenAPI Generator (https://openapi-generator.tech)
 
@@ -20,8 +20,8 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
-from wink_sdk_extranet_monetize.models.upsert_rate_modifier_bundle_request_supplier import UpsertRateModifierBundleRequestSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
+from wink_sdk_extranet_monetize.models.upsert_special_rate_bundle_request_supplier import UpsertSpecialRateBundleRequestSupplier
 
 from wink_sdk_extranet_monetize.api_client import ApiClient, RequestSerialized
 from wink_sdk_extranet_monetize.api_response import ApiResponse
@@ -45,7 +45,7 @@ class PromotionBundleApi:
     def create_rate_modifier_bundle(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Create new promotion bundle and associate with this property identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -59,15 +59,15 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> RateModifierBundleViewSupplier:
+    ) -> SpecialRateBundleSupplier:
         """Create Promotion Bundle
 
         Create a new rate modifier ancillary
 
         :param property_identifier: Create new promotion bundle and associate with this property identifier. (required)
         :type property_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -94,7 +94,7 @@ class PromotionBundleApi:
 
         _param = self._create_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -107,7 +107,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '201': "RateModifierBundleViewSupplier",
+            '201': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -124,7 +124,7 @@ class PromotionBundleApi:
     def create_rate_modifier_bundle_with_http_info(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Create new promotion bundle and associate with this property identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -138,15 +138,15 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[RateModifierBundleViewSupplier]:
+    ) -> ApiResponse[SpecialRateBundleSupplier]:
         """Create Promotion Bundle
 
         Create a new rate modifier ancillary
 
         :param property_identifier: Create new promotion bundle and associate with this property identifier. (required)
         :type property_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -173,7 +173,7 @@ class PromotionBundleApi:
 
         _param = self._create_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -186,7 +186,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '201': "RateModifierBundleViewSupplier",
+            '201': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -203,7 +203,7 @@ class PromotionBundleApi:
     def create_rate_modifier_bundle_without_preload_content(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Create new promotion bundle and associate with this property identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -224,8 +224,8 @@ class PromotionBundleApi:
 
         :param property_identifier: Create new promotion bundle and associate with this property identifier. (required)
         :type property_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -252,7 +252,7 @@ class PromotionBundleApi:
 
         _param = self._create_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -265,7 +265,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '201': "RateModifierBundleViewSupplier",
+            '201': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -277,7 +277,7 @@ class PromotionBundleApi:
     def _create_rate_modifier_bundle_serialize(
         self,
         property_identifier,
-        upsert_rate_modifier_bundle_request_supplier,
+        upsert_special_rate_bundle_request_supplier,
         wink_version,
         _request_auth,
         _content_type,
@@ -308,8 +308,8 @@ class PromotionBundleApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if upsert_rate_modifier_bundle_request_supplier is not None:
-            _body_params = upsert_rate_modifier_bundle_request_supplier
+        if upsert_special_rate_bundle_request_supplier is not None:
+            _body_params = upsert_special_rate_bundle_request_supplier
 
 
         # set the HTTP header `Accept`
@@ -380,7 +380,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> RateModifierBundleViewSupplier:
+    ) -> SpecialRateBundleSupplier:
         """Delete Promotion Bundle
 
         Delete a rate modifier ancillary by its identifier
@@ -431,7 +431,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -463,7 +463,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[RateModifierBundleViewSupplier]:
+    ) -> ApiResponse[SpecialRateBundleSupplier]:
         """Delete Promotion Bundle
 
         Delete a rate modifier ancillary by its identifier
@@ -514,7 +514,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -597,7 +597,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -702,7 +702,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> RateModifierBundleViewSupplier:
+    ) -> SpecialRateBundleSupplier:
         """Show Promotion Bundle
 
         Retrieve a rate modifier ancillary by its identifier
@@ -753,7 +753,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -785,7 +785,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[RateModifierBundleViewSupplier]:
+    ) -> ApiResponse[SpecialRateBundleSupplier]:
         """Show Promotion Bundle
 
         Retrieve a rate modifier ancillary by its identifier
@@ -836,7 +836,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -919,7 +919,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1023,7 +1023,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> List[RateModifierBundleViewSupplier]:
+    ) -> List[SpecialRateBundleSupplier]:
         """Show Promotion Bundles
 
         Retrieve list of rate modifier bundles
@@ -1071,7 +1071,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "List[RateModifierBundleViewSupplier]",
+            '200': "List[SpecialRateBundleSupplier]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1102,7 +1102,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[List[RateModifierBundleViewSupplier]]:
+    ) -> ApiResponse[List[SpecialRateBundleSupplier]]:
         """Show Promotion Bundles
 
         Retrieve list of rate modifier bundles
@@ -1150,7 +1150,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "List[RateModifierBundleViewSupplier]",
+            '200': "List[SpecialRateBundleSupplier]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1229,7 +1229,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "List[RateModifierBundleViewSupplier]",
+            '200': "List[SpecialRateBundleSupplier]",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1317,7 +1317,7 @@ class PromotionBundleApi:
         self,
         property_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle owned by this property identifier.")],
         rate_modifier_bundle_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle with this identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1331,7 +1331,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> RateModifierBundleViewSupplier:
+    ) -> SpecialRateBundleSupplier:
         """Update Promotion Bundle
 
         Update a rate modifier ancillary by its identifier
@@ -1340,8 +1340,8 @@ class PromotionBundleApi:
         :type property_identifier: str
         :param rate_modifier_bundle_identifier: Update existing promotion bundle with this identifier. (required)
         :type rate_modifier_bundle_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1369,7 +1369,7 @@ class PromotionBundleApi:
         _param = self._update_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
             rate_modifier_bundle_identifier=rate_modifier_bundle_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1382,7 +1382,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1400,7 +1400,7 @@ class PromotionBundleApi:
         self,
         property_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle owned by this property identifier.")],
         rate_modifier_bundle_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle with this identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1414,7 +1414,7 @@ class PromotionBundleApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[RateModifierBundleViewSupplier]:
+    ) -> ApiResponse[SpecialRateBundleSupplier]:
         """Update Promotion Bundle
 
         Update a rate modifier ancillary by its identifier
@@ -1423,8 +1423,8 @@ class PromotionBundleApi:
         :type property_identifier: str
         :param rate_modifier_bundle_identifier: Update existing promotion bundle with this identifier. (required)
         :type rate_modifier_bundle_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1452,7 +1452,7 @@ class PromotionBundleApi:
         _param = self._update_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
             rate_modifier_bundle_identifier=rate_modifier_bundle_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1465,7 +1465,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1483,7 +1483,7 @@ class PromotionBundleApi:
         self,
         property_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle owned by this property identifier.")],
         rate_modifier_bundle_identifier: Annotated[StrictStr, Field(description="Update existing promotion bundle with this identifier.")],
-        upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier,
+        upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1506,8 +1506,8 @@ class PromotionBundleApi:
         :type property_identifier: str
         :param rate_modifier_bundle_identifier: Update existing promotion bundle with this identifier. (required)
         :type rate_modifier_bundle_identifier: str
-        :param upsert_rate_modifier_bundle_request_supplier: (required)
-        :type upsert_rate_modifier_bundle_request_supplier: UpsertRateModifierBundleRequestSupplier
+        :param upsert_special_rate_bundle_request_supplier: (required)
+        :type upsert_special_rate_bundle_request_supplier: UpsertSpecialRateBundleRequestSupplier
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1535,7 +1535,7 @@ class PromotionBundleApi:
         _param = self._update_rate_modifier_bundle_serialize(
             property_identifier=property_identifier,
             rate_modifier_bundle_identifier=rate_modifier_bundle_identifier,
-            upsert_rate_modifier_bundle_request_supplier=upsert_rate_modifier_bundle_request_supplier,
+            upsert_special_rate_bundle_request_supplier=upsert_special_rate_bundle_request_supplier,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1548,7 +1548,7 @@ class PromotionBundleApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowRatePlan400Response",
-            '200': "RateModifierBundleViewSupplier",
+            '200': "SpecialRateBundleSupplier",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1561,7 +1561,7 @@ class PromotionBundleApi:
         self,
         property_identifier,
         rate_modifier_bundle_identifier,
-        upsert_rate_modifier_bundle_request_supplier,
+        upsert_special_rate_bundle_request_supplier,
         wink_version,
         _request_auth,
         _content_type,
@@ -1594,8 +1594,8 @@ class PromotionBundleApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if upsert_rate_modifier_bundle_request_supplier is not None:
-            _body_params = upsert_rate_modifier_bundle_request_supplier
+        if upsert_special_rate_bundle_request_supplier is not None:
+            _body_params = upsert_special_rate_bundle_request_supplier
 
 
         # set the HTTP header `Accept`

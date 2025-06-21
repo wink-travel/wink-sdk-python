@@ -1,6 +1,5 @@
 # ProfileUserNonAuthenticatedEntity
 
-User details
 
 ## Properties
 

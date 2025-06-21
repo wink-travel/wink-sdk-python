@@ -7,7 +7,7 @@ Room Configuration
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adults** | **int** | Number of adults | [default to 1]
-**children** | [**List[ChildBooker]**](ChildBooker.md) | Children configurations | [optional] 
+**children** | [**List[ChildBooker]**](ChildBooker.md) |  | [optional] 
 
 ## Example
 

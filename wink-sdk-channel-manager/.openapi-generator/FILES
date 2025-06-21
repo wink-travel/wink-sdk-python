@@ -4,10 +4,10 @@
 .travis.yml
 README.md
 docs/ChannelManagerApi.md
+docs/ChannelManagerProperty.md
 docs/CustomMonetaryAmount.md
 docs/GenericErrorMessage.md
-docs/ModelProperty.md
-docs/PageProperty.md
+docs/PageChannelManagerProperty.md
 docs/PageableObject.md
 docs/PingResponse.md
 docs/PropertyBooking.md
@@ -25,6 +25,8 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_channel_manager_property.py
+test/test_page_channel_manager_property.py
 tox.ini
 wink_sdk_channel_manager/__init__.py
 wink_sdk_channel_manager/api/__init__.py
@@ -34,10 +36,10 @@ wink_sdk_channel_manager/api_response.py
 wink_sdk_channel_manager/configuration.py
 wink_sdk_channel_manager/exceptions.py
 wink_sdk_channel_manager/models/__init__.py
+wink_sdk_channel_manager/models/channel_manager_property.py
 wink_sdk_channel_manager/models/custom_monetary_amount.py
 wink_sdk_channel_manager/models/generic_error_message.py
-wink_sdk_channel_manager/models/model_property.py
-wink_sdk_channel_manager/models/page_property.py
+wink_sdk_channel_manager/models/page_channel_manager_property.py
 wink_sdk_channel_manager/models/pageable_object.py
 wink_sdk_channel_manager/models/ping_response.py
 wink_sdk_channel_manager/models/property_booking.py

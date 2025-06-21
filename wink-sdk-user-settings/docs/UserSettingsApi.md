@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_profile**
-> ProfileViewNonAuthenticatedEntity show_profile(wink_version=wink_version, accept=accept)
+> ProfileNonAuthenticatedEntity show_profile(wink_version=wink_version, accept=accept)
 
 Show Profile
 
@@ -106,7 +106,7 @@ Show profile by profile owner.
 
 ```python
 import wink_sdk_user_settings
-from wink_sdk_user_settings.models.profile_view_non_authenticated_entity import ProfileViewNonAuthenticatedEntity
+from wink_sdk_user_settings.models.profile_non_authenticated_entity import ProfileNonAuthenticatedEntity
 from wink_sdk_user_settings.rest import ApiException
 from pprint import pprint
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ProfileViewNonAuthenticatedEntity**](ProfileViewNonAuthenticatedEntity.md)
+[**ProfileNonAuthenticatedEntity**](ProfileNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_profile**
-> ProfileViewNonAuthenticatedEntity update_profile(upsert_profile_request_non_authenticated_entity, wink_version=wink_version)
+> ProfileNonAuthenticatedEntity update_profile(upsert_profile_request_non_authenticated_entity, wink_version=wink_version)
 
 Update Profile
 
@@ -268,7 +268,7 @@ Update profile by profile owner.
 
 ```python
 import wink_sdk_user_settings
-from wink_sdk_user_settings.models.profile_view_non_authenticated_entity import ProfileViewNonAuthenticatedEntity
+from wink_sdk_user_settings.models.profile_non_authenticated_entity import ProfileNonAuthenticatedEntity
 from wink_sdk_user_settings.models.upsert_profile_request_non_authenticated_entity import UpsertProfileRequestNonAuthenticatedEntity
 from wink_sdk_user_settings.rest import ApiException
 from pprint import pprint
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ProfileViewNonAuthenticatedEntity**](ProfileViewNonAuthenticatedEntity.md)
+[**ProfileNonAuthenticatedEntity**](ProfileNonAuthenticatedEntity.md)
 
 ### Authorization
 

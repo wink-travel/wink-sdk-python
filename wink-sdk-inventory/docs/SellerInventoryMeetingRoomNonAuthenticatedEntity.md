@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inventory** | [**MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**configuration** | [**SellerInventoryItemNonAuthenticatedEntity**](SellerInventoryItemNonAuthenticatedEntity.md) |  | [optional] 
+**inventory** | [**MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Property details along with the priced meeting room record. | [optional] 
+**configuration** | [**SellableItemLightweightNonAuthenticatedEntity**](SellableItemLightweightNonAuthenticatedEntity.md) | Identifier blocking record | [optional] 
 
 ## Example
 

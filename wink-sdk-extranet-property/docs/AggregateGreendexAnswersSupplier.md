@@ -1,6 +1,5 @@
 # AggregateGreendexAnswersSupplier
 
-Properties that answered the Green Index questionnaire [full or partial], will have aggregate scores available.
 
 ## Properties
 
@@ -9,7 +8,7 @@ Name | Type | Description | Notes
 **high_score** | **int** | The highest possible score from all questions | [optional] 
 **total_score** | **int** | The total score from all questions answered | [optional] 
 **aggregate_score** | **float** | Total score divided by high score | [optional] 
-**scores_by_category** | [**List[AggregateGreendexScoreByCategorySupplier]**](AggregateGreendexScoreByCategorySupplier.md) | Aggregate scores by Green Index category | [optional] 
+**scores_by_category** | [**List[AggregateGreendexScoreByCategorySupplier]**](AggregateGreendexScoreByCategorySupplier.md) |  | [optional] 
 
 ## Example
 

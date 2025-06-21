@@ -1,6 +1,5 @@
 # SortDescriptorBooker
 
-Descriptors used for sorting result set.
 
 ## Properties
 

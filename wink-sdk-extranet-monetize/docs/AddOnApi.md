@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **add_multimedia**
-> UpgradeView add_multimedia(property_identifier, add_on_identifier, simple_multimedia, wink_version=wink_version)
+> AddOn add_multimedia(property_identifier, add_on_identifier, simple_multimedia, wink_version=wink_version)
 
 Add Multimedia
 
@@ -28,8 +28,8 @@ Uploads a videos and/or images to an add-on identified by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.models.simple_multimedia import SimpleMultimedia
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_add_on**
-> UpgradeView create_add_on(property_identifier, upsert_add_on_request, wink_version=wink_version)
+> AddOn create_add_on(property_identifier, upsert_add_on_request, wink_version=wink_version)
 
 Create Add-On
 
@@ -114,7 +114,7 @@ Create a new add-on.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.models.upsert_add_on_request import UpsertAddOnRequest
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_multimedia**
-> UpgradeView remove_multimedia(property_identifier, add_on_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+> AddOn remove_multimedia(property_identifier, add_on_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
 
 Delete Multimedia
 
@@ -283,7 +283,7 @@ Remove media from an existing add-on.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -334,7 +334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_add_on**
-> UpgradeView show_add_on(property_identifier, add_on_identifier, wink_version=wink_version, accept=accept)
+> AddOn show_add_on(property_identifier, add_on_identifier, wink_version=wink_version, accept=accept)
 
 Show Add-On
 
@@ -370,7 +370,7 @@ Retrieve an add-on by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -443,7 +443,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_add_ons**
-> List[UpgradeView] show_add_ons(property_identifier, wink_version=wink_version, accept=accept)
+> List[AddOn] show_add_ons(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Add-Ons
 
@@ -455,7 +455,7 @@ Retrieve a list of all add-ons for property.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -502,7 +502,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[UpgradeView]**](UpgradeView.md)
+[**List[AddOn]**](AddOn.md)
 
 ### Authorization
 
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_add_on**
-> UpgradeView update_add_on(property_identifier, add_on_identifier, upsert_add_on_request, wink_version=wink_version)
+> AddOn update_add_on(property_identifier, add_on_identifier, upsert_add_on_request, wink_version=wink_version)
 
 Update Add-On
 
@@ -538,7 +538,7 @@ Update an existing add-on.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.models.upsert_add_on_request import UpsertAddOnRequest
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -588,7 +588,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_add_on_multimedia**
-> UpgradeView update_add_on_multimedia(property_identifier, add_on_identifier, multimedia_identifier, simple_multimedia, wink_version=wink_version)
+> AddOn update_add_on_multimedia(property_identifier, add_on_identifier, multimedia_identifier, simple_multimedia, wink_version=wink_version)
 
 Update Multimedia
 
@@ -624,8 +624,8 @@ Update media meta data for a specific package media entry.
 
 ```python
 import wink_sdk_extranet_monetize
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.models.simple_multimedia import SimpleMultimedia
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -676,7 +676,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 
@@ -700,7 +700,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_binary_add_on_media**
-> UpgradeView upload_binary_add_on_media(property_identifier, add_on_identifier, files)
+> AddOn upload_binary_add_on_media(property_identifier, add_on_identifier, files)
 
 Upload Binary Multimedia
 
@@ -712,7 +712,7 @@ Upload a list of binary / multipart videos and/or images to an existing add-on.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.upgrade_view import UpgradeView
+from wink_sdk_extranet_monetize.models.add_on import AddOn
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -759,7 +759,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpgradeView**](UpgradeView.md)
+[**AddOn**](AddOn.md)
 
 ### Authorization
 

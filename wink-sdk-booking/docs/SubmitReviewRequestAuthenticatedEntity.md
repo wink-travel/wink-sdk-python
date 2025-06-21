@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**answers** | [**List[SubmitReviewAnswerAuthenticatedEntity]**](SubmitReviewAnswerAuthenticatedEntity.md) | List of user review answers. | 
+**answers** | [**List[SubmitReviewAnswerAuthenticatedEntity]**](SubmitReviewAnswerAuthenticatedEntity.md) |  | 
 **message_from_guest** | **str** | Private message from guest to the hotel. Is not displayed on property profile. | [optional] 
 **image_identifier** | **str** | Reviewer can upload her best picture from the property. Cloudinary image identifier. | [optional] 
 **text** | **str** | Free text record created by traveler | [optional] 

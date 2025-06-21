@@ -4,16 +4,16 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_customization**](CustomizationApi.md#create_customization) | **POST** /api/configuration | Create Customization
-[**remove_customization**](CustomizationApi.md#remove_customization) | **DELETE** /api/configuration/{engineConfigurationIdentifier} | Remove Customization
-[**show_application_configuration**](CustomizationApi.md#show_application_configuration) | **GET** /api/configuration/{engineConfigurationIdentifier} | Show Customization
-[**show_application_configurations_by_owner**](CustomizationApi.md#show_application_configurations_by_owner) | **GET** /api/configuration/list | Show Customizations
-[**show_primary_application_configuration**](CustomizationApi.md#show_primary_application_configuration) | **GET** /api/configuration | Show Primary Customization
-[**update_customization**](CustomizationApi.md#update_customization) | **PUT** /api/configuration/{engineConfigurationIdentifier} | Update Customization
+[**create_customization**](CustomizationApi.md#create_customization) | **POST** /api/customization | Create Customization
+[**remove_customization**](CustomizationApi.md#remove_customization) | **DELETE** /api/customization/{customizationIdentifier} | Remove Customization
+[**show_application_configuration**](CustomizationApi.md#show_application_configuration) | **GET** /api/customization/{customizationIdentifier} | Show Customization
+[**show_application_configurations_by_owner**](CustomizationApi.md#show_application_configurations_by_owner) | **GET** /api/customization/list | Show Customizations
+[**show_primary_application_configuration**](CustomizationApi.md#show_primary_application_configuration) | **GET** /api/customization | Show Primary Customization
+[**update_customization**](CustomizationApi.md#update_customization) | **PUT** /api/customization/{customizationIdentifier} | Update Customization
 
 
 # **create_customization**
-> EngineConfigurationViewAffiliate create_customization(upsert_engine_configuration_request_affiliate, wink_version=wink_version)
+> CustomizationAffiliate create_customization(upsert_customization_request_affiliate, wink_version=wink_version)
 
 Create Customization
 
@@ -25,8 +25,8 @@ Create a new customization and associate it with the specified application.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_engine_configuration_request_affiliate import UpsertEngineConfigurationRequestAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_customization_request_affiliate import UpsertCustomizationRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.CustomizationApi(api_client)
-    upsert_engine_configuration_request_affiliate = wink_sdk_affiliate_inventory.UpsertEngineConfigurationRequestAffiliate() # UpsertEngineConfigurationRequestAffiliate | 
+    upsert_customization_request_affiliate = wink_sdk_affiliate_inventory.UpsertCustomizationRequestAffiliate() # UpsertCustomizationRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Customization
-        api_response = api_instance.create_customization(upsert_engine_configuration_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_customization(upsert_customization_request_affiliate, wink_version=wink_version)
         print("The response of CustomizationApi->create_customization:\n")
         pprint(api_response)
     except Exception as e:
@@ -66,12 +66,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_engine_configuration_request_affiliate** | [**UpsertEngineConfigurationRequestAffiliate**](UpsertEngineConfigurationRequestAffiliate.md)|  | 
+ **upsert_customization_request_affiliate** | [**UpsertCustomizationRequestAffiliate**](UpsertCustomizationRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**EngineConfigurationViewAffiliate**](EngineConfigurationViewAffiliate.md)
+[**CustomizationAffiliate**](CustomizationAffiliate.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_customization**
-> EngineConfigurationViewAffiliate remove_customization(engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> CustomizationAffiliate remove_customization(customization_identifier, wink_version=wink_version, accept=accept)
 
 Remove Customization
 
@@ -107,7 +107,7 @@ Remove an existing customization.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -128,13 +128,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.CustomizationApi(api_client)
-    engine_configuration_identifier = 'customization-1' # str | Remove customization with this identifier
+    customization_identifier = 'customization-1' # str | Remove customization with this identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Remove Customization
-        api_response = api_instance.remove_customization(engine_configuration_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_customization(customization_identifier, wink_version=wink_version, accept=accept)
         print("The response of CustomizationApi->remove_customization:\n")
         pprint(api_response)
     except Exception as e:
@@ -148,13 +148,13 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **engine_configuration_identifier** | **str**| Remove customization with this identifier | 
+ **customization_identifier** | **str**| Remove customization with this identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**EngineConfigurationViewAffiliate**](EngineConfigurationViewAffiliate.md)
+[**CustomizationAffiliate**](CustomizationAffiliate.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_application_configuration**
-> EngineConfigurationViewAffiliate show_application_configuration(engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> CustomizationAffiliate show_application_configuration(customization_identifier, wink_version=wink_version, accept=accept)
 
 Show Customization
 
@@ -190,7 +190,7 @@ Retrieve the primary customization for an application.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -211,13 +211,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.CustomizationApi(api_client)
-    engine_configuration_identifier = 'customization-1' # str | Load customization with this identifier
+    customization_identifier = 'customization-1' # str | Load customization with this identifier
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Customization
-        api_response = api_instance.show_application_configuration(engine_configuration_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_application_configuration(customization_identifier, wink_version=wink_version, accept=accept)
         print("The response of CustomizationApi->show_application_configuration:\n")
         pprint(api_response)
     except Exception as e:
@@ -231,13 +231,13 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **engine_configuration_identifier** | **str**| Load customization with this identifier | 
+ **customization_identifier** | **str**| Load customization with this identifier | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**EngineConfigurationViewAffiliate**](EngineConfigurationViewAffiliate.md)
+[**CustomizationAffiliate**](CustomizationAffiliate.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_application_configurations_by_owner**
-> List[EngineConfigurationViewAffiliate] show_application_configurations_by_owner(wink_version=wink_version, accept=accept)
+> List[CustomizationAffiliate] show_application_configurations_by_owner(wink_version=wink_version, accept=accept)
 
 Show Customizations
 
@@ -273,7 +273,7 @@ Retrieve a list of customizations for specified company.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[EngineConfigurationViewAffiliate]**](EngineConfigurationViewAffiliate.md)
+[**List[CustomizationAffiliate]**](CustomizationAffiliate.md)
 
 ### Authorization
 
@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_primary_application_configuration**
-> EngineConfigurationViewAffiliate show_primary_application_configuration(wink_version=wink_version, accept=accept)
+> CustomizationAffiliate show_primary_application_configuration(wink_version=wink_version, accept=accept)
 
 Show Primary Customization
 
@@ -354,7 +354,7 @@ Retrieve the primary customization for an application.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -399,7 +399,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EngineConfigurationViewAffiliate**](EngineConfigurationViewAffiliate.md)
+[**CustomizationAffiliate**](CustomizationAffiliate.md)
 
 ### Authorization
 
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_customization**
-> EngineConfigurationViewAffiliate update_customization(engine_configuration_identifier, upsert_engine_configuration_request_affiliate, wink_version=wink_version)
+> CustomizationAffiliate update_customization(customization_identifier, upsert_customization_request_affiliate, wink_version=wink_version)
 
 Update Customization
 
@@ -435,8 +435,8 @@ Update an existing customization.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.engine_configuration_view_affiliate import EngineConfigurationViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_engine_configuration_request_affiliate import UpsertEngineConfigurationRequestAffiliate
+from wink_sdk_affiliate_inventory.models.customization_affiliate import CustomizationAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_customization_request_affiliate import UpsertCustomizationRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -457,13 +457,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.CustomizationApi(api_client)
-    engine_configuration_identifier = 'customization-1' # str | Update customization with this application
-    upsert_engine_configuration_request_affiliate = wink_sdk_affiliate_inventory.UpsertEngineConfigurationRequestAffiliate() # UpsertEngineConfigurationRequestAffiliate | 
+    customization_identifier = 'customization-1' # str | Update customization with this application
+    upsert_customization_request_affiliate = wink_sdk_affiliate_inventory.UpsertCustomizationRequestAffiliate() # UpsertCustomizationRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Customization
-        api_response = api_instance.update_customization(engine_configuration_identifier, upsert_engine_configuration_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_customization(customization_identifier, upsert_customization_request_affiliate, wink_version=wink_version)
         print("The response of CustomizationApi->update_customization:\n")
         pprint(api_response)
     except Exception as e:
@@ -477,13 +477,13 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **engine_configuration_identifier** | **str**| Update customization with this application | 
- **upsert_engine_configuration_request_affiliate** | [**UpsertEngineConfigurationRequestAffiliate**](UpsertEngineConfigurationRequestAffiliate.md)|  | 
+ **customization_identifier** | **str**| Update customization with this application | 
+ **upsert_customization_request_affiliate** | [**UpsertCustomizationRequestAffiliate**](UpsertCustomizationRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**EngineConfigurationViewAffiliate**](EngineConfigurationViewAffiliate.md)
+[**CustomizationAffiliate**](CustomizationAffiliate.md)
 
 ### Authorization
 

@@ -1,6 +1,5 @@
 # ChartTitleNonAuthenticatedEntity
 
-The configuration options for the chart title
 
 ## Properties
 

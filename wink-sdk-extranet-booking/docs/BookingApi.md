@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **cancel_hotel_booking**
-> BookingViewSupplier cancel_hotel_booking(property_identifier, booking_identifier, cancellation_detail_supplier, wink_version=wink_version)
+> BookingSupplier cancel_hotel_booking(property_identifier, booking_identifier, cancellation_detail_supplier, wink_version=wink_version)
 
 Cancel Booking
 
@@ -31,7 +31,7 @@ Booking is cancelled by the property.
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.booking_view_supplier import BookingViewSupplier
+from wink_sdk_extranet_booking.models.booking_supplier import BookingSupplier
 from wink_sdk_extranet_booking.models.cancellation_detail_supplier import CancellationDetailSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewSupplier**](BookingViewSupplier.md)
+[**BookingSupplier**](BookingSupplier.md)
 
 ### Authorization
 
@@ -167,17 +167,17 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: */*, application/json, application/xml, text/xml, text/plain
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
 **400** | Bad Request |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **request_refund**
-> BookingViewSupplier request_refund(property_identifier, booking_identifier, property_booking_refund_request_supplier, wink_version=wink_version)
+> BookingSupplier request_refund(property_identifier, booking_identifier, property_booking_refund_request_supplier, wink_version=wink_version)
 
 Request refund
 
@@ -280,7 +280,7 @@ Under certain circumstances, a property can request a partial refund of the fund
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.booking_view_supplier import BookingViewSupplier
+from wink_sdk_extranet_booking.models.booking_supplier import BookingSupplier
 from wink_sdk_extranet_booking.models.property_booking_refund_request_supplier import PropertyBookingRefundRequestSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewSupplier**](BookingViewSupplier.md)
+[**BookingSupplier**](BookingSupplier.md)
 
 ### Authorization
 
@@ -772,7 +772,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotel_booking**
-> BookingViewSupplierDetails show_hotel_booking(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
+> BookingSupplierDetails show_hotel_booking(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
 
 Show Booking
 
@@ -784,7 +784,7 @@ Retrieve a single booking specific by its identifier.
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.booking_view_supplier_details import BookingViewSupplierDetails
+from wink_sdk_extranet_booking.models.booking_supplier_details import BookingSupplierDetails
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
 
@@ -833,7 +833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewSupplierDetails**](BookingViewSupplierDetails.md)
+[**BookingSupplierDetails**](BookingSupplierDetails.md)
 
 ### Authorization
 
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotel_bookings**
-> PageBookingViewSupplier show_hotel_bookings(property_identifier, state_supplier, wink_version=wink_version)
+> PageBookingSupplier show_hotel_bookings(property_identifier, state_supplier, wink_version=wink_version)
 
 Search Bookings
 
@@ -869,7 +869,7 @@ Retrieve page of bookings for a specific hotel with advanced filtering rules.
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.page_booking_view_supplier import PageBookingViewSupplier
+from wink_sdk_extranet_booking.models.page_booking_supplier import PageBookingSupplier
 from wink_sdk_extranet_booking.models.state_supplier import StateSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
@@ -917,7 +917,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageBookingViewSupplier**](PageBookingViewSupplier.md)
+[**PageBookingSupplier**](PageBookingSupplier.md)
 
 ### Authorization
 
@@ -941,7 +941,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotel_bookings1**
-> PageBookingViewSupplier show_hotel_bookings1(property_identifier, state=state, page_number=page_number, max_results=max_results, search=search, wink_version=wink_version, accept=accept)
+> PageBookingSupplier show_hotel_bookings1(property_identifier, state=state, page_number=page_number, max_results=max_results, search=search, wink_version=wink_version, accept=accept)
 
 Show Bookings
 
@@ -953,7 +953,7 @@ Retrieve bookings for hotel with simple filter rules.
 
 ```python
 import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.page_booking_view_supplier import PageBookingViewSupplier
+from wink_sdk_extranet_booking.models.page_booking_supplier import PageBookingSupplier
 from wink_sdk_extranet_booking.rest import ApiException
 from pprint import pprint
 
@@ -1008,7 +1008,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageBookingViewSupplier**](PageBookingViewSupplier.md)
+[**PageBookingSupplier**](PageBookingSupplier.md)
 
 ### Authorization
 

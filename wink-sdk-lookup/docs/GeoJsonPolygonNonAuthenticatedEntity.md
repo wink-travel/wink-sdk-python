@@ -1,6 +1,5 @@
 # GeoJsonPolygonNonAuthenticatedEntity
 
-Map bounds the user is looking. Bounds provided by map provider.
 
 ## Properties
 

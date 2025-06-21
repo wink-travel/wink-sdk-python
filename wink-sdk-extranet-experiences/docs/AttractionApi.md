@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **create_attraction**
-> AttractionView create_attraction(property_identifier, upsert_attraction_request, wink_version=wink_version)
+> Attraction create_attraction(property_identifier, upsert_attraction_request, wink_version=wink_version)
 
 Create Attraction
 
@@ -26,7 +26,7 @@ Create a new attraction
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.models.upsert_attraction_request import UpsertAttractionRequest
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AttractionView**](AttractionView.md)
+[**Attraction**](Attraction.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_attraction**
-> AttractionView remove_attraction(property_identifier, attraction_identifier, wink_version=wink_version, accept=accept)
+> Attraction remove_attraction(property_identifier, attraction_identifier, wink_version=wink_version, accept=accept)
 
 Delete attraction
 
@@ -110,7 +110,7 @@ Delete an attraction by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AttractionView**](AttractionView.md)
+[**Attraction**](Attraction.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_attraction**
-> AttractionView show_attraction(property_identifier, attraction_identifier, wink_version=wink_version, accept=accept)
+> Attraction show_attraction(property_identifier, attraction_identifier, wink_version=wink_version, accept=accept)
 
 Show Attraction
 
@@ -195,7 +195,7 @@ Retrieve an attraction by identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AttractionView**](AttractionView.md)
+[**Attraction**](Attraction.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_attractions**
-> List[AttractionView] show_attractions(property_identifier, wink_version=wink_version, accept=accept)
+> List[Attraction] show_attractions(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Attractions
 
@@ -363,7 +363,7 @@ Retrieve list of attractions
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[AttractionView]**](AttractionView.md)
+[**List[Attraction]**](Attraction.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_attraction**
-> AttractionView update_attraction(property_identifier, attraction_identifier, upsert_attraction_request, wink_version=wink_version)
+> Attraction update_attraction(property_identifier, attraction_identifier, upsert_attraction_request, wink_version=wink_version)
 
 Update Attraction
 
@@ -446,7 +446,7 @@ Update an attraction by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.models.upsert_attraction_request import UpsertAttractionRequest
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AttractionView**](AttractionView.md)
+[**Attraction**](Attraction.md)
 
 ### Authorization
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_attraction_media**
-> AttractionView upload_attraction_media(property_identifier, attraction_identifier, files)
+> Attraction upload_attraction_media(property_identifier, attraction_identifier, files)
 
 Upload Binary Multimedia
 
@@ -532,7 +532,7 @@ Upload binary videos and/or images to an attraction identified by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.attraction_view import AttractionView
+from wink_sdk_extranet_experiences.models.attraction import Attraction
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -579,7 +579,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AttractionView**](AttractionView.md)
+[**Attraction**](Attraction.md)
 
 ### Authorization
 

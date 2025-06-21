@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **show_aggregate_green_index_scores** | **bool** | Flag to indicate whether to return property green index score data. This field populates &#x60;greenIndexScores&#x60; data in response. Note: You only need to return hotel data to get the overall aggregate Green Index score and not detailed category scores. | [optional] [default to False]
 **show_announcements** | **bool** | Flag to indicate whether to return property announcement data. Announcements are messages the property wishes to convey to travelers for certain dates. This field populates &#x60;announcements&#x60; data in response. | [optional] [default to False]
 **show_reviews** | **bool** | Flag to indicate whether to return property review data. Note: You only need to return hotel data to get the overall aggregate review score and not the entire list of reviews. This field populates &#x60;reviews&#x60; data in response. | [optional] [default to False]
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | Returns the same user session that was sent by the caller. | 
 
 ## Example
 

@@ -1,6 +1,5 @@
 # ContactAffiliate
 
-Contact details for reservations desk
 
 ## Properties
 

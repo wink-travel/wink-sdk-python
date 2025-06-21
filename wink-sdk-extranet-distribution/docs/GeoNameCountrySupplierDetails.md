@@ -1,6 +1,5 @@
 # GeoNameCountrySupplierDetails
 
-A booker coming from a specific country
 
 ## Properties
 

@@ -11,11 +11,11 @@ Method | HTTP request | Description
 [**consume_spotify_url**](SyndicationConsumerApi.md#consume_spotify_url) | **GET** /api/sell/{companyIdentifier}/syndication/spotify | Consume Spotify URL
 [**consume_tik_tok_url**](SyndicationConsumerApi.md#consume_tik_tok_url) | **GET** /api/sell/{companyIdentifier}/syndication/tiktok | Consume TikTok URL
 [**consume_twitter_url**](SyndicationConsumerApi.md#consume_twitter_url) | **GET** /api/sell/{companyIdentifier}/syndication/tweet | Consume Tweet URL
-[**redirect_url**](SyndicationConsumerApi.md#redirect_url) | **GET** /api/sell/{companyIdentifier}/syndication/{syndicationEntryIdentifier}/redirect | Redirect WinkLinks link
+[**redirect_url**](SyndicationConsumerApi.md#redirect_url) | **GET** /api/sell/{companyIdentifier}/syndication/{syndicatedItemIdentifier}/redirect | Redirect WinkLinks link
 [**show_syndication_account**](SyndicationConsumerApi.md#show_syndication_account) | **GET** /api/sell/syndication/{urlName} | Show Syndication Account
 [**show_syndication_categories**](SyndicationConsumerApi.md#show_syndication_categories) | **GET** /api/sell/{companyIdentifier}/syndication/category/list | Show Syndication Categories
 [**show_syndication_entry_grid**](SyndicationConsumerApi.md#show_syndication_entry_grid) | **POST** /api/sell/{companyIdentifier}/syndication/grid | Show Syndication Entries
-[**track_share**](SyndicationConsumerApi.md#track_share) | **GET** /api/sell/{companyIdentifier}/syndication/{syndicationEntryIdentifier}/share | Track WinkLinks share
+[**track_share**](SyndicationConsumerApi.md#track_share) | **GET** /api/sell/{companyIdentifier}/syndication/{syndicatedItemIdentifier}/share | Track WinkLinks share
 
 
 # **consume_facebook_page_url**
@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **redirect_url**
-> RedirectViewNonAuthenticatedEntity redirect_url(company_identifier, syndication_entry_identifier, user_agent, host, referer)
+> RedirectViewNonAuthenticatedEntity redirect_url(company_identifier, syndicated_item_identifier, user_agent, host, referer)
 
 Redirect WinkLinks link
 
@@ -634,14 +634,14 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
     company_identifier = 'owner-1' # str | Redirect for this owner identifier.
-    syndication_entry_identifier = 'syndication-entry-1' # str | Redirect to URL for this syndication entry ID.
+    syndicated_item_identifier = 'syndication-entry-1' # str | Redirect to URL for this syndication entry ID.
     user_agent = 'user_agent_example' # str | User-Agent header.
     host = 'host_example' # str | Host header.
     referer = 'referer_example' # str | Referrer header.
 
     try:
         # Redirect WinkLinks link
-        api_response = api_instance.redirect_url(company_identifier, syndication_entry_identifier, user_agent, host, referer)
+        api_response = api_instance.redirect_url(company_identifier, syndicated_item_identifier, user_agent, host, referer)
         print("The response of SyndicationConsumerApi->redirect_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -656,7 +656,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Redirect for this owner identifier. | 
- **syndication_entry_identifier** | **str**| Redirect to URL for this syndication entry ID. | 
+ **syndicated_item_identifier** | **str**| Redirect to URL for this syndication entry ID. | 
  **user_agent** | **str**| User-Agent header. | 
  **host** | **str**| Host header. | 
  **referer** | **str**| Referrer header. | 
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_entry_grid**
-> PageConsumableSyndicationEntryNonAuthenticatedEntity show_syndication_entry_grid(company_identifier, state_non_authenticated_entity, wink_version=wink_version)
+> PageConsumableSyndicatedItemNonAuthenticatedEntity show_syndication_entry_grid(company_identifier, state_non_authenticated_entity, wink_version=wink_version)
 
 Show Syndication Entries
 
@@ -865,7 +865,7 @@ Retrieve list of syndication entries.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.page_consumable_syndication_entry_non_authenticated_entity import PageConsumableSyndicationEntryNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.models.page_consumable_syndicated_item_non_authenticated_entity import PageConsumableSyndicatedItemNonAuthenticatedEntity
 from wink_sdk_affiliate_winklinks.models.state_non_authenticated_entity import StateNonAuthenticatedEntity
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
@@ -913,7 +913,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageConsumableSyndicationEntryNonAuthenticatedEntity**](PageConsumableSyndicationEntryNonAuthenticatedEntity.md)
+[**PageConsumableSyndicatedItemNonAuthenticatedEntity**](PageConsumableSyndicatedItemNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -937,7 +937,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **track_share**
-> BooleanResponseNonAuthenticatedEntity track_share(company_identifier, syndication_entry_identifier, platform, user_agent, host, referer, wink_version=wink_version)
+> BooleanResponseNonAuthenticatedEntity track_share(company_identifier, syndicated_item_identifier, platform, user_agent, host, referer, wink_version=wink_version)
 
 Track WinkLinks share
 
@@ -971,7 +971,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
     company_identifier = 'owner-1' # str | Redirect for this owner identifier.
-    syndication_entry_identifier = 'syndication-entry-1' # str | Redirect to URL for this syndication entry ID.
+    syndicated_item_identifier = 'syndication-entry-1' # str | Redirect to URL for this syndication entry ID.
     platform = 'twitter' # str | Platform user is sharing on.
     user_agent = 'user_agent_example' # str | User-Agent header.
     host = 'host_example' # str | Host header.
@@ -980,7 +980,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
     try:
         # Track WinkLinks share
-        api_response = api_instance.track_share(company_identifier, syndication_entry_identifier, platform, user_agent, host, referer, wink_version=wink_version)
+        api_response = api_instance.track_share(company_identifier, syndicated_item_identifier, platform, user_agent, host, referer, wink_version=wink_version)
         print("The response of SyndicationConsumerApi->track_share:\n")
         pprint(api_response)
     except Exception as e:
@@ -995,7 +995,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Redirect for this owner identifier. | 
- **syndication_entry_identifier** | **str**| Redirect to URL for this syndication entry ID. | 
+ **syndicated_item_identifier** | **str**| Redirect to URL for this syndication entry ID. | 
  **platform** | **str**| Platform user is sharing on. | 
  **user_agent** | **str**| User-Agent header. | 
  **host** | **str**| Host header. | 

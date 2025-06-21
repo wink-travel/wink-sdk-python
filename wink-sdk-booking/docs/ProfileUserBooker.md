@@ -1,6 +1,5 @@
 # ProfileUserBooker
 
-User details
 
 ## Properties
 

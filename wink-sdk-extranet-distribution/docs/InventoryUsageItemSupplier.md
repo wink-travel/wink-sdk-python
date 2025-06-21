@@ -1,6 +1,5 @@
 # InventoryUsageItemSupplier
 
-How the inventoryIdentifier is currently being used
 
 ## Properties
 

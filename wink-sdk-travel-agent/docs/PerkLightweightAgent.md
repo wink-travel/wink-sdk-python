@@ -1,6 +1,5 @@
 # PerkLightweightAgent
 
-List of perks that came with the master rate
 
 ## Properties
 

@@ -7,7 +7,7 @@ A way to persist a GeoJSON circle
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **radius** | **float** | Circle radius from center | 
-**point** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) |  | 
+**point** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) | Circle center point | 
 
 ## Example
 

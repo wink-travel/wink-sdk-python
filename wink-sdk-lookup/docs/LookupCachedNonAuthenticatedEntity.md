@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **type_identifier** | **str** | Unique lookup type identifier | [optional] 
 **name** | **str** | Name of lookup | [optional] 
 **url_name** | **str** | Url-friendly slug that uniquely identifies this lookup | [optional] 
-**owner_identifier** | **str** | Lookup that is supplier blocking includes the supplier identifier | [optional] 
-**owner_name** | **str** | Lookup that is supplier blocking includes the supplier name | [optional] 
+**owner_identifier** | **str** | Lookup that is supplier inventory includes the supplier identifier | [optional] 
+**owner_name** | **str** | Lookup that is supplier inventory includes the supplier name | [optional] 
 **city_name** | **str** | Closest city where lookup entry is located | [optional] 
 **country_name** | **str** | Country where lookup entry is located | [optional] 
 **sub_country_name** | **str** | State where lookup entry is located | [optional] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **lowercase_name** | **str** | Name in lower case | [optional] 
 **location_x** | **float** | Longitude | [optional] 
 **location_y** | **float** | Latitude | [optional] 
-**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) |  | [optional] 
+**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) | GeoJson location | [optional] 
 
 ## Example
 

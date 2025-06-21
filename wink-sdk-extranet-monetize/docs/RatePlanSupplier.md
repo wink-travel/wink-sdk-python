@@ -1,12 +1,14 @@
 # RatePlanSupplier
 
-Rate plan data object
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Rate plan identifier | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **hotel_identifier** | **str** | Hotel Identifier | 
 **name** | **str** | Provides the name of the rate plan. | 
 **prepaid** | **bool** | When true, indicates if the rate is a prepaid rate. | [default to False]
@@ -30,16 +32,15 @@ Name | Type | Description | Notes
 **max_los** | **int** | Indicates the maximum length of stay. | [optional] 
 **min_age** | **int** | The minimum age to qualify for this rate plan. | [optional] 
 **max_age** | **int** | The maximum age to qualify for this rate plan. | [optional] 
-**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) | This can be a one-time fee such as a cleaning fee | [optional] 
+**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) |  | [optional] 
 **available_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **arrival_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **departure_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **required_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **early_check_in_charge** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **late_check_out_charge** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
-**cancellation_policy_identifier** | **str** | The cancellation policy for this rate plan. | 
-**cancellation_policy** | [**CancellationPolicySupplier**](CancellationPolicySupplier.md) |  | [optional] 
-**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsSupplier**](CancellationPolicyExceptionsSupplier.md) |  | [optional] 
+**cancellation_policy** | [**CancellationPolicyLightweightSupplier**](CancellationPolicyLightweightSupplier.md) | The cancellation policy for this rate plan. | [optional] 
+**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsSupplier**](CancellationPolicyExceptionsSupplier.md) | Allows a property to dynamically use another cancellation policy for a specific date range | [optional] 
 **single_occupancy_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **extra_pax_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **extra_child_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 

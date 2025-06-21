@@ -1,6 +1,5 @@
 # RealtimeShoppingCartItemAuthenticatedEntity
 
-List of priced shopping cart items. Each entry is a separately booked room.
 
 ## Properties
 
@@ -10,15 +9,15 @@ Name | Type | Description | Notes
 **hotel_identifier** | **str** | Unique hotel record identifier. | 
 **start_date** | **date** | Date when guest arrives on the premises. | 
 **end_date** | **date** | Date when guest departs the premises. | 
-**room_configuration** | [**RoomConfigurationAuthenticatedEntity**](RoomConfigurationAuthenticatedEntity.md) |  | 
-**promotional_codes** | **List[str]** |  | [optional] 
+**room_configuration** | [**RoomConfigurationAuthenticatedEntity**](RoomConfigurationAuthenticatedEntity.md) | Room configuration is how the guest wants the room to support her accompanying guests. | 
+**promotional_codes** | **List[object]** |  | [optional] 
 **room_rate_identifier** | **str** | The unique master rate that made the guest room / rate plan available for sale. | 
 **bedroom_configuration_identifier** | **str** | Guest can optionally request a specific bedroom layout if the room type is set up with multiple layout choices. | [optional] 
-**ancillaries** | [**List[BookingAncillaryAuthenticatedEntity]**](BookingAncillaryAuthenticatedEntity.md) |  | [optional] 
+**ancillaries** | **List[object]** |  | [optional] 
 **special_requests** | **str** | A guest can send a special request to the hotel in free-text here. | [optional] 
-**user** | [**BookingUserRequestAuthenticatedEntity**](BookingUserRequestAuthenticatedEntity.md) |  | 
-**hotel** | [**HotelOnMapAuthenticatedEntity**](HotelOnMapAuthenticatedEntity.md) |  | 
-**stay** | [**RoomStayAuthenticatedEntity**](RoomStayAuthenticatedEntity.md) |  | 
+**user** | [**BookingUserRequestAuthenticatedEntity**](BookingUserRequestAuthenticatedEntity.md) | User object contains details of the person that made the booking. | 
+**hotel** | [**PropertyAggregateLightweightAuthenticatedEntity**](PropertyAggregateLightweightAuthenticatedEntity.md) | The hotel where the stay occurs. | 
+**stay** | [**RoomStayAuthenticatedEntity**](RoomStayAuthenticatedEntity.md) | The priced stay. | 
 **commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | 
 **commission** | **float** | The commission percentage. | 
 **language** | **str** | User&#39;s language preference | 

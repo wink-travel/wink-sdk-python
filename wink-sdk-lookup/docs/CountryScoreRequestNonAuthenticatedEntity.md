@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **country_code** | **str** | Unique country code you want to search in as it was given to you in the lookup entry or by using standard country codes as defined here [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). | 
 **sort** | **str** | Choose the criteria you want the results sorted on. | 
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
-**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) |  | [optional] 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session is the current search state. SimpleDateTimeItinerary and other data points are all included here. | 
+**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) | How user likes to have results displayed | [optional] 
 **page** | **int** | The page to paginate to. Note: Page uses a 0-based index. | [default to 0]
 **size** | **int** | The result size to return. | [default to 6]
 

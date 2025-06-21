@@ -1,12 +1,11 @@
 # ArrivalDaysOfWeekRateQualifierSupplierDetails
 
-Restrict promotion to specific days of the week the guest is arriving.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**days_of_week** | [**DowPatternGroupSupplierDetails**](DowPatternGroupSupplierDetails.md) |  | 
+**days_of_week** | [**DowPatternGroupSupplierDetails**](DowPatternGroupSupplierDetails.md) | The days of the week when this rate is available for guests to arrive on | 
 
 ## Example
 

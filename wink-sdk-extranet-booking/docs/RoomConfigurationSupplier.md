@@ -7,7 +7,7 @@ Room Configuration
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adults** | **int** | Number of adults | [default to 1]
-**children** | [**List[ChildSupplier]**](ChildSupplier.md) | Children configurations | [optional] 
+**children** | [**List[ChildSupplier]**](ChildSupplier.md) |  | [optional] 
 
 ## Example
 

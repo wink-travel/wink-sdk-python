@@ -1,13 +1,12 @@
 # AddOnLocalizedInventoryNonAuthenticatedEntity
 
-Add-ons that are available with this room configuration
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**add_on** | [**AddOnLightweightNonAuthenticatedEntity**](AddOnLightweightNonAuthenticatedEntity.md) |  | 
-**price_list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
+**add_on** | [**AddOnLightweightNonAuthenticatedEntity**](AddOnLightweightNonAuthenticatedEntity.md) | The original add-on record created by the property. | 
+**price_list** | **List[object]** |  | [optional] 
 **channel_inventory_identifier** | **str** | Channel inventory identifier referencing this record. | [optional] 
 **commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | [optional] 
 **commission** | **float** | The commission percentage. | [optional] 

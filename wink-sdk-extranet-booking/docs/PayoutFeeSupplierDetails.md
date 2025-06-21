@@ -1,13 +1,12 @@
 # PayoutFeeSupplierDetails
 
-Fees incurred when making the withdrawal.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique system ID. | 
-**fee** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
+**fee** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Fee amount | 
 **type** | **str** | Type of fee | 
 **candidate** | **str** | Who pays for this fee | 
 **description** | **str** | Withdrawal fee description | 

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inventory** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**configuration** | [**SellerInventoryItemNonAuthenticatedEntity**](SellerInventoryItemNonAuthenticatedEntity.md) |  | [optional] 
+**inventory** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Property details along with the priced activity record. | [optional] 
+**configuration** | [**SellableItemLightweightNonAuthenticatedEntity**](SellableItemLightweightNonAuthenticatedEntity.md) | Identifier blocking record | [optional] 
 
 ## Example
 

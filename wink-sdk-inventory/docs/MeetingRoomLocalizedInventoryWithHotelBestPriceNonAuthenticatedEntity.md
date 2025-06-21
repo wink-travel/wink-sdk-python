@@ -1,13 +1,12 @@
 # MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity
 
-Populated only when the type of grid item is `MEETING_ROOM`
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inventory_with_price** | [**MeetingRoomLocalizedInventoryNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryNonAuthenticatedEntity.md) |  | [optional] 
-**hotel_with_best_price** | [**HotelWithBestPriceNonAuthenticatedEntity**](HotelWithBestPriceNonAuthenticatedEntity.md) |  | [optional] 
+**inventory_with_price** | [**MeetingRoomLocalizedInventoryNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryNonAuthenticatedEntity.md) | Meeting room details | [optional] 
+**hotel_with_best_price** | [**PropertyWithBestPriceNonAuthenticatedEntity**](PropertyWithBestPriceNonAuthenticatedEntity.md) | Property details along with the best room type price this property has to offer. | [optional] 
 **sort** | **int** | Populated when the record is in the context of static lists. | [optional] [default to 0]
 
 ## Example

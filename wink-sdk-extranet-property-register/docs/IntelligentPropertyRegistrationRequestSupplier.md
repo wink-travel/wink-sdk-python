@@ -8,19 +8,21 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name_in_english** | **str** | Unique hotel trade name. The hotel name must be unique. If there are multiple hotels with the same name, we recommend appending destination to the name. [Verify uniqueness here](#operation/isHotelNameUnique). | 
 **name_in_local_language** | **str** | Local name of the hotel as it is referred to in the local language. | [optional] 
-**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) |  | 
-**address_local** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) |  | [optional] 
-**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) |  | 
-**multimedia_identifiers** | **List[str]** |  | [optional] 
+**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) | Property address. | 
+**address_local** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) | Property local address. | [optional] 
+**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Reservation desk information. | 
+**multimedia_identifiers** | **List[object]** |  | [optional] 
 **approve_rating** | **bool** | Whether to approve the incoming rating from Google Places | [optional] [default to False]
 **website** | **str** | Website of property | [optional] 
-**reservation** | [**ContactSupplier**](ContactSupplier.md) |  | 
+**reservation** | [**ContactSupplier**](ContactSupplier.md) | Reservation desk information. | 
+**revenue** | [**ContactSupplier**](ContactSupplier.md) | Revenue information. | 
+**marketing** | [**ContactSupplier**](ContactSupplier.md) | Marketing information. | 
 **agreement_accepted** | **bool** | Agreement accepted by legal signer. | [default to True]
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | [optional] 
-**profile** | [**IntelligentProfileSupplier**](IntelligentProfileSupplier.md) |  | 
-**hotel_amenity_codes** | **List[str]** |  | [optional] 
-**property_accessibility_codes** | **List[str]** |  | [optional] 
-**property_security_codes** | **List[str]** |  | [optional] 
+**descriptions** | **List[object]** |  | [optional] 
+**profile** | [**IntelligentProfileSupplier**](IntelligentProfileSupplier.md) | Property profile. | 
+**hotel_amenity_codes** | **List[object]** |  | [optional] 
+**property_accessibility_codes** | **List[object]** |  | [optional] 
+**property_security_codes** | **List[object]** |  | [optional] 
 
 ## Example
 

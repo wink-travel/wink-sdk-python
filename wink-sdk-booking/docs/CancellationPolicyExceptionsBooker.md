@@ -1,12 +1,11 @@
 # CancellationPolicyExceptionsBooker
 
-Allows a property to dynamically use another cancellation policy for a specific date range
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionBooker]**](CancellationPolicyExceptionBooker.md) | List of cancellation policy exceptions | 
+**list** | [**List[CancellationPolicyExceptionBooker]**](CancellationPolicyExceptionBooker.md) |  | 
 
 ## Example
 

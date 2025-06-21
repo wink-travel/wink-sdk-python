@@ -7,8 +7,8 @@ General manager related data.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of GM currently managing the property. | 
-**image** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) |  | [optional] 
-**descriptions** | [**List[LocalizedDescriptionAffiliate]**](LocalizedDescriptionAffiliate.md) | Localized welcome message from GM. | [optional] 
+**image** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | Cloudinary image identifier of GM currently managing the property. | [optional] 
+**descriptions** | [**List[LocalizedDescriptionAffiliate]**](LocalizedDescriptionAffiliate.md) |  | [optional] 
 
 ## Example
 

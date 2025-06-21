@@ -1,6 +1,5 @@
 # CommissionableEntryAgent
 
-List of all travel inventory entries that are due a commission to the affiliate.
 
 ## Properties
 

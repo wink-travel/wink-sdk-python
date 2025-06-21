@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_meeting_room**](MeetingRoomApi.md#create_meeting_room) | **POST** /api/property/{propertyIdentifier}/facility/meeting-room | Create Meeting Room
 [**remove_meeting_room**](MeetingRoomApi.md#remove_meeting_room) | **DELETE** /api/property/{propertyIdentifier}/facility/meeting-room/{meetingRoomIdentifier} | Delete Meeting Room
-[**remove_multimedia1**](MeetingRoomApi.md#remove_multimedia1) | **DELETE** /api/property/{propertyIdentifier}/facility/meeting-room/{meetingRoomIdentifier}/multimedia/{multimediaIdentifier} | Delete Multimedia
+[**remove_multimedia2**](MeetingRoomApi.md#remove_multimedia2) | **DELETE** /api/property/{propertyIdentifier}/facility/meeting-room/{meetingRoomIdentifier}/multimedia/{multimediaIdentifier} | Delete Multimedia
 [**show_meeting_room**](MeetingRoomApi.md#show_meeting_room) | **GET** /api/property/{propertyIdentifier}/facility/meeting-room/{meetingRoomIdentifier} | Show Meeting Room
 [**show_meeting_room_pairs**](MeetingRoomApi.md#show_meeting_room_pairs) | **GET** /api/property/{propertyIdentifier}/facility/meeting-room/list/pair | Show Reference Pairs
 [**show_meeting_rooms**](MeetingRoomApi.md#show_meeting_rooms) | **GET** /api/property/{propertyIdentifier}/facility/meeting-room/list | Show Meeting Rooms
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **create_meeting_room**
-> MeetingRoomViewSupplier create_meeting_room(property_identifier, upsert_meeting_room_request_supplier, wink_version=wink_version)
+> MeetingRoomSupplier create_meeting_room(property_identifier, upsert_meeting_room_request_supplier, wink_version=wink_version)
 
 Create Meeting Room
 
@@ -27,7 +27,7 @@ Create a new meeting room
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.models.upsert_meeting_room_request_supplier import UpsertMeetingRoomRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_meeting_room**
-> MeetingRoomViewSupplier remove_meeting_room(property_identifier, meeting_room_identifier, wink_version=wink_version, accept=accept)
+> MeetingRoomSupplier remove_meeting_room(property_identifier, meeting_room_identifier, wink_version=wink_version, accept=accept)
 
 Delete Meeting Room
 
@@ -111,7 +111,7 @@ Remove a meeting room by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -183,8 +183,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **remove_multimedia1**
-> MeetingRoomViewSupplier remove_multimedia1(property_identifier, meeting_room_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+# **remove_multimedia2**
+> MeetingRoomSupplier remove_multimedia2(property_identifier, meeting_room_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
 
 Delete Multimedia
 
@@ -196,7 +196,7 @@ Remove a meeting room's video or image by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -225,11 +225,11 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 
     try:
         # Delete Multimedia
-        api_response = api_instance.remove_multimedia1(property_identifier, meeting_room_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
-        print("The response of MeetingRoomApi->remove_multimedia1:\n")
+        api_response = api_instance.remove_multimedia2(property_identifier, meeting_room_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+        print("The response of MeetingRoomApi->remove_multimedia2:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MeetingRoomApi->remove_multimedia1: %s\n" % e)
+        print("Exception when calling MeetingRoomApi->remove_multimedia2: %s\n" % e)
 ```
 
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_meeting_room**
-> MeetingRoomViewSupplier show_meeting_room(property_identifier, meeting_room_identifier, wink_version=wink_version, accept=accept)
+> MeetingRoomSupplier show_meeting_room(property_identifier, meeting_room_identifier, wink_version=wink_version, accept=accept)
 
 Show Meeting Room
 
@@ -283,7 +283,7 @@ Retrieve a meeting room by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_meeting_rooms**
-> List[MeetingRoomViewSupplier] show_meeting_rooms(property_identifier, wink_version=wink_version, accept=accept)
+> List[MeetingRoomSupplier] show_meeting_rooms(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Meeting Rooms
 
@@ -451,7 +451,7 @@ Retrieve list of meeting rooms
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[MeetingRoomViewSupplier]**](MeetingRoomViewSupplier.md)
+[**List[MeetingRoomSupplier]**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_meeting_room**
-> MeetingRoomViewSupplier update_meeting_room(property_identifier, meeting_room_identifier, upsert_meeting_room_request_supplier, wink_version=wink_version)
+> MeetingRoomSupplier update_meeting_room(property_identifier, meeting_room_identifier, upsert_meeting_room_request_supplier, wink_version=wink_version)
 
 Update Meeting Room
 
@@ -534,7 +534,7 @@ Update a meeting room by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.models.upsert_meeting_room_request_supplier import UpsertMeetingRoomRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -584,7 +584,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_meeting_room_media**
-> MeetingRoomViewSupplier upload_meeting_room_media(property_identifier, meeting_room_identifier, files)
+> MeetingRoomSupplier upload_meeting_room_media(property_identifier, meeting_room_identifier, files)
 
 Upload Binary Multimedia
 
@@ -620,7 +620,7 @@ Upload binary videos and/or images to a meeting room identified by its identifie
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.meeting_room_view_supplier import MeetingRoomViewSupplier
+from wink_sdk_extranet_facilities.models.meeting_room_supplier import MeetingRoomSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeetingRoomViewSupplier**](MeetingRoomViewSupplier.md)
+[**MeetingRoomSupplier**](MeetingRoomSupplier.md)
 
 ### Authorization
 

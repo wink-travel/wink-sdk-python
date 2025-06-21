@@ -1,6 +1,5 @@
 # RoomRangeRateQualifierSupplierDetails
 
-Restrict promotion by restricting to how many rooms the user wants.
 
 ## Properties
 

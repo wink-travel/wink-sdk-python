@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of company | 
 **description** | **str** | A personal message from the company. | [optional] 
-**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
 
 ## Example
 

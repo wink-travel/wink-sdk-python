@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **show_customization_by_client_id**
-> EngineClientNonAuthenticatedEntity show_customization_by_client_id(client_id, wink_version=wink_version, accept=accept)
+> CustomizationClientNonAuthenticatedEntity show_customization_by_client_id(client_id, wink_version=wink_version, accept=accept)
 
 Load Configuration by Client ID
 
@@ -23,7 +23,7 @@ Retrieve affiliate configuration by clientId in the path
 
 ```python
 import wink_sdk_engine_client
-from wink_sdk_engine_client.models.engine_client_non_authenticated_entity import EngineClientNonAuthenticatedEntity
+from wink_sdk_engine_client.models.customization_client_non_authenticated_entity import CustomizationClientNonAuthenticatedEntity
 from wink_sdk_engine_client.rest import ApiException
 from pprint import pprint
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EngineClientNonAuthenticatedEntity**](EngineClientNonAuthenticatedEntity.md)
+[**CustomizationClientNonAuthenticatedEntity**](CustomizationClientNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_customization_by_client_id_header**
-> EngineClientNonAuthenticatedEntity show_customization_by_client_id_header(client_id, wink_version=wink_version, accept=accept)
+> CustomizationClientNonAuthenticatedEntity show_customization_by_client_id_header(client_id, wink_version=wink_version, accept=accept)
 
 Load Configuration by Client ID in Header
 
@@ -106,7 +106,7 @@ Retrieve affiliate configuration by clientId in the header
 
 ```python
 import wink_sdk_engine_client
-from wink_sdk_engine_client.models.engine_client_non_authenticated_entity import EngineClientNonAuthenticatedEntity
+from wink_sdk_engine_client.models.customization_client_non_authenticated_entity import CustomizationClientNonAuthenticatedEntity
 from wink_sdk_engine_client.rest import ApiException
 from pprint import pprint
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EngineClientNonAuthenticatedEntity**](EngineClientNonAuthenticatedEntity.md)
+[**CustomizationClientNonAuthenticatedEntity**](CustomizationClientNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_customization_by_id**
-> EngineClientNonAuthenticatedEntity show_customization_by_id(identifier, wink_version=wink_version, accept=accept)
+> CustomizationClientNonAuthenticatedEntity show_customization_by_id(identifier, wink_version=wink_version, accept=accept)
 
 Load Configuration by ID
 
@@ -189,7 +189,7 @@ Retrieve specific affiliate configuration
 
 ```python
 import wink_sdk_engine_client
-from wink_sdk_engine_client.models.engine_client_non_authenticated_entity import EngineClientNonAuthenticatedEntity
+from wink_sdk_engine_client.models.customization_client_non_authenticated_entity import CustomizationClientNonAuthenticatedEntity
 from wink_sdk_engine_client.rest import ApiException
 from pprint import pprint
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EngineClientNonAuthenticatedEntity**](EngineClientNonAuthenticatedEntity.md)
+[**CustomizationClientNonAuthenticatedEntity**](CustomizationClientNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_customization_by_url_name**
-> EngineClientNonAuthenticatedEntity show_customization_by_url_name(url_name, wink_version=wink_version, accept=accept)
+> CustomizationClientNonAuthenticatedEntity show_customization_by_url_name(url_name, wink_version=wink_version, accept=accept)
 
 Load Configuration by URL name
 
@@ -272,7 +272,7 @@ Retrieve affiliate configuration by company urlName
 
 ```python
 import wink_sdk_engine_client
-from wink_sdk_engine_client.models.engine_client_non_authenticated_entity import EngineClientNonAuthenticatedEntity
+from wink_sdk_engine_client.models.customization_client_non_authenticated_entity import CustomizationClientNonAuthenticatedEntity
 from wink_sdk_engine_client.rest import ApiException
 from pprint import pprint
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EngineClientNonAuthenticatedEntity**](EngineClientNonAuthenticatedEntity.md)
+[**CustomizationClientNonAuthenticatedEntity**](CustomizationClientNonAuthenticatedEntity.md)
 
 ### Authorization
 

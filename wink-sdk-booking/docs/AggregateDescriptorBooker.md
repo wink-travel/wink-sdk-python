@@ -1,6 +1,5 @@
 # AggregateDescriptorBooker
 
-Primitive aggregate data points
 
 ## Properties
 

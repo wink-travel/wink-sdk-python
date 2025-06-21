@@ -1,6 +1,5 @@
 # SellDateRateQualifierSupplier
 
-Restrict promotion to specific dates the booking is made.
 
 ## Properties
 

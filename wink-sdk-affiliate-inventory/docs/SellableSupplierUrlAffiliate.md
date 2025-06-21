@@ -1,0 +1,46 @@
+# SellableSupplierUrlAffiliate
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
+**owner_identifier** | **str** | AffiliateAccountLightweight identifier | 
+**name** | **str** | Descriptive name of this url for seller use only | 
+**customization_identifier** | **str** | Customization identifier | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized link descriptions | 
+**keywords** | **List[object]** |  | 
+**unique_id** | **str** | Unique link id | 
+**twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
+**facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 
+**theme** | **str** | Url theme controls the look and feel of the ad banner. | [optional] 
+**status** | **str** | Url sell status | 
+**supplier_identifier** | **str** | The entity supplying the blocking. Usually a hotel. | 
+**multimedia_identifiers** | **List[str]** | Cloudinary identifiers | 
+**animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
+**animate_delay** | **int** | Animation delay in milliseconds | [optional] [default to -1]
+
+## Example
+
+```python
+from wink_sdk_affiliate_inventory.models.sellable_supplier_url_affiliate import SellableSupplierUrlAffiliate
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of SellableSupplierUrlAffiliate from a JSON string
+sellable_supplier_url_affiliate_instance = SellableSupplierUrlAffiliate.from_json(json)
+# print the JSON string representation of the object
+print(SellableSupplierUrlAffiliate.to_json())
+
+# convert the object into a dict
+sellable_supplier_url_affiliate_dict = sellable_supplier_url_affiliate_instance.to_dict()
+# create an instance of SellableSupplierUrlAffiliate from a dict
+sellable_supplier_url_affiliate_from_dict = SellableSupplierUrlAffiliate.from_dict(sellable_supplier_url_affiliate_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

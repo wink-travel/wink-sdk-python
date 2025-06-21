@@ -1,6 +1,5 @@
 # BookingUserSupplierDetails
 
-Whether to notify booker of booking
 
 ## Properties
 

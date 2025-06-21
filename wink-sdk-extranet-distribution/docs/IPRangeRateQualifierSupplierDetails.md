@@ -1,6 +1,5 @@
 # IPRangeRateQualifierSupplierDetails
 
-Restrict promotion to specific IP ranges.
 
 ## Properties
 

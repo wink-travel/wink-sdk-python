@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_socials**
-> HotelViewSupplier update_socials(property_identifier, social_networks_request_supplier, wink_version=wink_version)
+> PropertySupplier update_socials(property_identifier, social_networks_request_supplier, wink_version=wink_version)
 
 Update Social Networks
 
@@ -104,7 +104,7 @@ Update hotel's social networks. Refer to [Social Networks](#tag/Social-Networks)
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.social_networks_request_supplier import SocialNetworksRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

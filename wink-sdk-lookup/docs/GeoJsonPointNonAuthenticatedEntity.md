@@ -1,6 +1,5 @@
 # GeoJsonPointNonAuthenticatedEntity
 
-User's last map location
 
 ## Properties
 

@@ -7,8 +7,8 @@ General manager related data.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of GM currently managing the property. | 
-**image** | [**SimpleMultimediaBooker**](SimpleMultimediaBooker.md) |  | [optional] 
-**descriptions** | [**List[LocalizedDescriptionBooker]**](LocalizedDescriptionBooker.md) | Localized welcome message from GM. | [optional] 
+**image** | [**SimpleMultimediaBooker**](SimpleMultimediaBooker.md) | Cloudinary image identifier of GM currently managing the property. | [optional] 
+**descriptions** | [**List[LocalizedDescriptionBooker]**](LocalizedDescriptionBooker.md) |  | [optional] 
 
 ## Example
 

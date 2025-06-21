@@ -1,6 +1,5 @@
 # ProfileUserSupplier
 
-User details
 
 ## Properties
 

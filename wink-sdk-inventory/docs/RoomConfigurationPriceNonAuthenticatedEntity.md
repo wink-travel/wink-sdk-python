@@ -1,6 +1,5 @@
 # RoomConfigurationPriceNonAuthenticatedEntity
 
-Price if available
 
 ## Properties
 
@@ -12,21 +11,21 @@ Name | Type | Description | Notes
 **end_date** | **date** | SimpleDateTimeItinerary endDate | 
 **room_rate_identifier** | **str** | Specified master rate identifier | 
 **room_rate_internal_name** | **str** | Specified master rate internal name | 
-**rate_plan** | [**RoomConfigurationPriceRatePlanNonAuthenticatedEntity**](RoomConfigurationPriceRatePlanNonAuthenticatedEntity.md) |  | 
-**perk_types** | [**List[PerkLightweightNonAuthenticatedEntity]**](PerkLightweightNonAuthenticatedEntity.md) |  | [optional] 
-**price** | [**StayRateNonAuthenticatedEntity**](StayRateNonAuthenticatedEntity.md) |  | 
-**extra_charges** | [**ExtraChargesNonAuthenticatedEntity**](ExtraChargesNonAuthenticatedEntity.md) |  | [optional] 
-**configuration** | [**RoomConfigurationNonAuthenticatedEntity**](RoomConfigurationNonAuthenticatedEntity.md) |  | 
-**add_on_offers** | [**List[AddOnLocalizedInventoryNonAuthenticatedEntity]**](AddOnLocalizedInventoryNonAuthenticatedEntity.md) |  | [optional] 
+**rate_plan** | [**RoomConfigurationPriceRatePlanNonAuthenticatedEntity**](RoomConfigurationPriceRatePlanNonAuthenticatedEntity.md) | Specified rate plan | 
+**perk_types** | **List[object]** |  | [optional] 
+**price** | [**StayRateNonAuthenticatedEntity**](StayRateNonAuthenticatedEntity.md) | Calculated price | 
+**extra_charges** | [**ExtraChargesNonAuthenticatedEntity**](ExtraChargesNonAuthenticatedEntity.md) | Per rate plan level extra charges with localized prices | [optional] 
+**configuration** | [**RoomConfigurationNonAuthenticatedEntity**](RoomConfigurationNonAuthenticatedEntity.md) | The selected room configuration that created this record | 
+**add_on_offers** | **List[object]** |  | [optional] 
 **perk_value** | **int** | The combined value of these perkTypes | [optional] 
-**active_cancellation_policy** | [**CancellationPolicyNonAuthenticatedEntity**](CancellationPolicyNonAuthenticatedEntity.md) |  | 
+**active_cancellation_policy** | [**CancellationPolicyLightweightNonAuthenticatedEntity**](CancellationPolicyLightweightNonAuthenticatedEntity.md) | The active / selected cancellation policy for this room configuration | 
 **room_nights** | **int** | Number of nights the guests will be staying | 
 **list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
 **channel_inventory_identifier** | **str** | Sales channel inventory identifier | 
 **commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | 
 **commission** | **float** | The commission percentage. | 
 **direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]
-**price_list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
+**price_list** | **List[object]** |  | [optional] 
 **available** | **bool** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 

@@ -1,6 +1,5 @@
 # KeyValuePairAffiliate
 
-Extended metadata
 
 ## Properties
 

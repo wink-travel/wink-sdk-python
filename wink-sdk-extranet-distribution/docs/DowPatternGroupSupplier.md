@@ -1,6 +1,5 @@
 # DowPatternGroupSupplier
 
-The days of the week the user has to stay on to get this rate
 
 ## Properties
 

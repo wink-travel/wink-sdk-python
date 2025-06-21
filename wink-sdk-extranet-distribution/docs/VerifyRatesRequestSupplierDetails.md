@@ -6,17 +6,17 @@ Rate request body
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channel** | [**ChannelNameSupplierDetails**](ChannelNameSupplierDetails.md) |  | 
+**channel** | [**ChannelNameSupplierDetails**](ChannelNameSupplierDetails.md) | Channel owner of inventory | 
 **stay_start_date** | **date** | Arrival date | 
 **stay_end_date** | **date** | Departure date | 
-**room_configurations** | [**List[RoomConfigurationSupplierDetails]**](RoomConfigurationSupplierDetails.md) |  | 
+**room_configurations** | **List[object]** |  | 
 **currency** | **str** | Display currency | 
 **booking_date** | **date** | The booking start date | [optional] 
 **sell_start_date** | **date** | The sell start date | [optional] 
 **sell_end_date** | **date** | The sell end date | [optional] 
 **promotion** | **str** | A promo code | [optional] 
-**city** | [**GeoIPSupplierDetails**](GeoIPSupplierDetails.md) |  | [optional] 
-**country** | [**GeoNameCountrySupplierDetails**](GeoNameCountrySupplierDetails.md) |  | [optional] 
+**city** | [**GeoIpLightweightSupplierDetails**](GeoIpLightweightSupplierDetails.md) | A booker coming from a specific city | [optional] 
+**country** | [**GeoNameCountrySupplierDetails**](GeoNameCountrySupplierDetails.md) | A booker coming from a specific country | [optional] 
 **continent** | **str** | A booker coming from a specific continent | [optional] 
 **ip_number** | **str** | A booker coming from a specific IP number | [optional] 
 **timezone** | **str** | A booker coming from a specific timezone | [optional] 

@@ -1,25 +1,27 @@
 # SalesChannelSupplier
 
-Parent sales channel
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier of this segment / account | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **supplier_identifier** | **str** | Channel is owned by this supplier identifier. | 
 **supplier_name** | **str** | Name of property / supplier that owns this channel | 
-**supplier_available** | **bool** | Flag when supplier not available. E.g. Hotel disables property | [optional] [default to True]
+**supplier_available** | **bool** | Flag when supplier not available. E.g. Hotel disables property | [default to True]
 **sub_type** | **str** | What type of segment of channel is this. | 
 **owner_identifier** | **str** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | 
-**owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking engine&#x60; when it&#39;s the booking engine. | 
+**owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking customization&#x60; when it&#39;s the booking customization. | 
 **enabled** | **bool** | Flag the supplier can use to enable / disable this channel | [optional] [default to True]
 **channel_disabled** | **bool** | System override by reactive to disable. E.g. Platform disables supplier. | [optional] 
 **blacklisted** | **bool** | A way to blacklist a specific channel a property doesn&#39;t want to send blocking to. | 
 **percent_discount** | **float** | Percent discount on this channel and all its children [unless configured at the child level]. | [optional] 
 **commission** | **float** | Amount of sales commission earned through this channel and all its children [unless configured at the child level]. | [optional] 
-**rate_modifiers** | [**List[RateModifierSupplier]**](RateModifierSupplier.md) | Promotions for this channel | [optional] 
-**rate_modifier_bundles** | [**List[RateModifierBundleSupplier]**](RateModifierBundleSupplier.md) | Promotion bundles for this channel | [optional] 
+**rate_modifiers** | [**List[SpecialRateLightweightSupplier]**](SpecialRateLightweightSupplier.md) | Promotions for this channel | [optional] 
+**rate_modifier_bundles** | [**List[SpecialRateBundleLightweightSupplier]**](SpecialRateBundleLightweightSupplier.md) | Promotion bundles for this channel | [optional] 
 **self_acquires** | **bool** | Whether the sales channel is a self-acquiring entity. | [optional] 
 
 ## Example

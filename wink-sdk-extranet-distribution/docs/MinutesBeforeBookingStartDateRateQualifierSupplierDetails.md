@@ -1,6 +1,5 @@
 # MinutesBeforeBookingStartDateRateQualifierSupplierDetails
 
-Restrict promotion to users who want to book a room close to the date.
 
 ## Properties
 

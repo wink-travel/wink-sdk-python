@@ -1,6 +1,5 @@
 # SalesChannelInfoNonAuthenticatedEntity
 
-Sales channel that owns this booking
 
 ## Properties
 

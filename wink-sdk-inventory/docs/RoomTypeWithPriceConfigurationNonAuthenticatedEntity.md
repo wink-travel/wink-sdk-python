@@ -1,13 +1,12 @@
 # RoomTypeWithPriceConfigurationNonAuthenticatedEntity
 
-Uses the content from roomTypes and displays the lowest price for each room type that is available.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) |  | 
-**price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
+**room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) | The room type | 
+**price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) | Price if available | [optional] 
 
 ## Example
 

@@ -1,6 +1,5 @@
 # RoomConfigurationPriceRatePlanAgent
 
-Rate plan used for this stay
 
 ## Properties
 
@@ -16,8 +15,8 @@ Name | Type | Description | Notes
 **all_inclusive_plus_alcohol** | **bool** | Everything included with alcohol | [default to False]
 **early_check_in_charge** | **object** |  | [optional] 
 **late_check_out_charge** | **object** |  | [optional] 
-**cancellation_policy** | [**CancellationPolicyAgent**](CancellationPolicyAgent.md) |  | [optional] 
-**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsAgent**](CancellationPolicyExceptionsAgent.md) |  | [optional] 
+**cancellation_policy** | [**CancellationPolicyLightweightAgent**](CancellationPolicyLightweightAgent.md) | The cancellation policy for this rate plan. | [optional] 
+**cancellation_policy_exceptions** | [**CancellationPolicyExceptionsAgent**](CancellationPolicyExceptionsAgent.md) | Allows a property to dynamically use another cancellation policy for a specific date range | [optional] 
 
 ## Example
 

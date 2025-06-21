@@ -1,12 +1,11 @@
 # CityRateQualifierSupplierDetails
 
-Restrict promotion to specific cities. See [Geo-IP city geoname data](#operation/searchForCity)
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**city** | [**GeoIPSupplierDetails**](GeoIPSupplierDetails.md) |  | 
+**city** | [**GeoIpLightweightSupplierDetails**](GeoIpLightweightSupplierDetails.md) | City geoIP | 
 
 ## Example
 

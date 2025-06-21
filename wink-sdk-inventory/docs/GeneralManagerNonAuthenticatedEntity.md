@@ -7,8 +7,8 @@ General manager related data.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of GM currently managing the property. | 
-**image** | [**SimpleMultimediaNonAuthenticatedEntity**](SimpleMultimediaNonAuthenticatedEntity.md) |  | [optional] 
-**descriptions** | [**List[LocalizedDescriptionNonAuthenticatedEntity]**](LocalizedDescriptionNonAuthenticatedEntity.md) | Localized welcome message from GM. | [optional] 
+**image** | [**SimpleMultimediaNonAuthenticatedEntity**](SimpleMultimediaNonAuthenticatedEntity.md) | Cloudinary image identifier of GM currently managing the property. | [optional] 
+**descriptions** | [**List[LocalizedDescriptionNonAuthenticatedEntity]**](LocalizedDescriptionNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

@@ -1,6 +1,5 @@
 # KeyValuePairAuthenticatedEntity
 
-Filter on user identifier. Which authenticated user made the booking.
 
 ## Properties
 
