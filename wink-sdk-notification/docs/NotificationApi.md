@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **remove_notification**
-> NotificationViewAffiliate remove_notification(company_identifier, message_identifier, wink_version=wink_version, accept=accept)
+> NotificationAffiliate remove_notification(company_identifier, message_identifier, wink_version=wink_version, accept=accept)
 
 Delete Notification
 
@@ -23,7 +23,7 @@ Remove announcement specified by its identifier.
 
 ```python
 import wink_sdk_notification
-from wink_sdk_notification.models.notification_view_affiliate import NotificationViewAffiliate
+from wink_sdk_notification.models.notification_affiliate import NotificationAffiliate
 from wink_sdk_notification.rest import ApiException
 from pprint import pprint
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**NotificationViewAffiliate**](NotificationViewAffiliate.md)
+[**NotificationAffiliate**](NotificationAffiliate.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_notification**
-> NotificationViewAffiliate show_notification(company_identifier, message_identifier, wink_version=wink_version, accept=accept)
+> NotificationAffiliate show_notification(company_identifier, message_identifier, wink_version=wink_version, accept=accept)
 
 Show Notification
 
@@ -108,7 +108,7 @@ Retrieve messages for a specific company by ID
 
 ```python
 import wink_sdk_notification
-from wink_sdk_notification.models.notification_view_affiliate import NotificationViewAffiliate
+from wink_sdk_notification.models.notification_affiliate import NotificationAffiliate
 from wink_sdk_notification.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**NotificationViewAffiliate**](NotificationViewAffiliate.md)
+[**NotificationAffiliate**](NotificationAffiliate.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_notifications**
-> List[NotificationViewAffiliate] show_notifications(company_identifier, app=app, wink_version=wink_version, accept=accept)
+> List[NotificationAffiliate] show_notifications(company_identifier, app=app, wink_version=wink_version, accept=accept)
 
 Show Notifications
 
@@ -193,7 +193,7 @@ Retrieve all the messages for this company
 
 ```python
 import wink_sdk_notification
-from wink_sdk_notification.models.notification_view_affiliate import NotificationViewAffiliate
+from wink_sdk_notification.models.notification_affiliate import NotificationAffiliate
 from wink_sdk_notification.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[NotificationViewAffiliate]**](NotificationViewAffiliate.md)
+[**List[NotificationAffiliate]**](NotificationAffiliate.md)
 
 ### Authorization
 

@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **booking_identifier** | **str** | Booking ID | 
-**property_identifier** | **str** | Property ID | 
+**property_identifier** | **str** | ChannelManagerProperty ID | 
 **room_rate_identifier** | **str** | Master Rate ID | 
 **name** | **str** | Master Rate name | 
 **guest_room_name** | **str** | Guest room name | 

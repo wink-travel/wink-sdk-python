@@ -1,12 +1,11 @@
 # CancellationPolicyExceptionsAuthenticatedEntity
 
-Allows a property to dynamically use another cancellation policy for a specific date range
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionAuthenticatedEntity]**](CancellationPolicyExceptionAuthenticatedEntity.md) | List of cancellation policy exceptions | 
+**list** | [**List[CancellationPolicyExceptionAuthenticatedEntity]**](CancellationPolicyExceptionAuthenticatedEntity.md) |  | 
 
 ## Example
 

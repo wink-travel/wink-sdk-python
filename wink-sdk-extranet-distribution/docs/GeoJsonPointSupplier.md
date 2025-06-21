@@ -1,6 +1,5 @@
 # GeoJsonPointSupplier
 
-Geo-location
 
 ## Properties
 

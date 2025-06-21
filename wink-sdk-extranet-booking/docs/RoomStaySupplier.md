@@ -1,35 +1,34 @@
 # RoomStaySupplier
 
-All information about the room that was booked.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**policy** | [**PropertyPolicySupplier**](PropertyPolicySupplier.md) |  | 
-**room** | [**GuestRoomLightweightSupplier**](GuestRoomLightweightSupplier.md) |  | 
+**policy** | [**PropertyPolicySupplier**](PropertyPolicySupplier.md) | Property policy information. | 
+**room** | [**GuestRoomLightweightSupplier**](GuestRoomLightweightSupplier.md) | Guest room details. | 
 **rooms** | **int** | Number of rooms. Always 1 since we switched to creating one booking per room. | [default to 1]
-**bedroom_configuration** | [**BedroomConfigurationSupplier**](BedroomConfigurationSupplier.md) |  | 
+**bedroom_configuration** | [**BedroomConfigurationSupplier**](BedroomConfigurationSupplier.md) | Desired bedroom layout | 
 **adults** | **int** | The actual amount of adults as determined by the hotel&#39;s policy. | [default to 2]
 **children** | **int** | The actual amount of children as determined by the hotel&#39;s policy. | [default to 0]
 **start_date** | **date** | Stay start date | 
 **end_date** | **date** | Stay end date | 
-**price** | [**StayRateSupplier**](StayRateSupplier.md) |  | 
+**price** | [**StayRateSupplier**](StayRateSupplier.md) | Price details | 
 **room_rate_identifier** | **str** | Master rate identifier | 
 **room_rate_internal_name** | **str** | Master rate internal name | 
-**rate_plan** | [**RoomConfigurationPriceRatePlanSupplier**](RoomConfigurationPriceRatePlanSupplier.md) |  | 
+**rate_plan** | [**RoomConfigurationPriceRatePlanSupplier**](RoomConfigurationPriceRatePlanSupplier.md) | Rate plan used for this stay | 
 **perk_types** | [**List[PerkLightweightSupplier]**](PerkLightweightSupplier.md) | List of perks that came with the master rate | [optional] 
-**extra_charges** | [**ExtraChargesSupplier**](ExtraChargesSupplier.md) |  | 
-**active_cancellation_policy** | [**CancellationPolicySupplier**](CancellationPolicySupplier.md) |  | 
-**cancellable_by_hotel** | **bool** |  | [optional] 
-**cancellable_with_potential_charge** | **bool** |  | [optional] 
-**cancellable** | **bool** |  | [optional] 
+**extra_charges** | [**ExtraChargesSupplier**](ExtraChargesSupplier.md) | Rate plan-level extra charges | 
+**active_cancellation_policy** | [**CancellationPolicyLightweightSupplier**](CancellationPolicyLightweightSupplier.md) | Based on the itinerary, the cancellation policy could be taken directly from the rate plan or it could be a policy exception also listed on the rate plan | 
 **room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **guests** | **int** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**cancellable_by_hotel** | **bool** |  | [optional] 
+**cancellable_with_potential_charge** | **bool** |  | [optional] 
+**cancellable** | **bool** |  | [optional] 
 
 ## Example
 

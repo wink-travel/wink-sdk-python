@@ -1,6 +1,5 @@
 # GeoJsonPointAffiliate
 
-Geo-location
 
 ## Properties
 

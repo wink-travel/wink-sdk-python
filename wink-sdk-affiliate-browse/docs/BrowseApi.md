@@ -5,7 +5,9 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**show_cities_for_inventory**](BrowseApi.md#show_cities_for_inventory) | **GET** /api/browse/supplier/city/list | Show Supplier Cities
-[**show_cities_for_inventory_0**](BrowseApi.md#show_cities_for_inventory_0) | **GET** /api/browse/inventory/city/list | Show Inventory Cities
+[**show_cities_for_inventory1**](BrowseApi.md#show_cities_for_inventory1) | **GET** /api/browse/inventory/city/list | Show Inventory Cities
+[**show_continents_for_inventory**](BrowseApi.md#show_continents_for_inventory) | **GET** /api/browse/inventory/continent/list | Show Inventory Continents
+[**show_continents_for_inventory_supplier**](BrowseApi.md#show_continents_for_inventory_supplier) | **GET** /api/browse/supplier/continent/list | Show Supplier Countries
 [**show_countries_for_inventory**](BrowseApi.md#show_countries_for_inventory) | **GET** /api/browse/inventory/country/list | Show Inventory Countries
 [**show_countries_for_inventory_supplier**](BrowseApi.md#show_countries_for_inventory_supplier) | **GET** /api/browse/supplier/country/list | Show Supplier Countries
 [**show_dynamic_seller_inventory**](BrowseApi.md#show_dynamic_seller_inventory) | **POST** /api/browse/inventory/grid | Inventory Search
@@ -18,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **show_cities_for_inventory**
-> List[GeoNameAffiliate] show_cities_for_inventory(wink_version=wink_version, accept=accept)
+> List[KeyValuePairAffiliate] show_cities_for_inventory(wink_version=wink_version, accept=accept)
 
 Show Supplier Cities
 
@@ -30,7 +32,7 @@ Retrieve list of cities affiliate has access to.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.geo_name_affiliate import GeoNameAffiliate
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -75,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[GeoNameAffiliate]**](GeoNameAffiliate.md)
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
 
 ### Authorization
 
@@ -98,8 +100,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_cities_for_inventory_0**
-> List[GeoNameAffiliate] show_cities_for_inventory_0(wink_version=wink_version, accept=accept)
+# **show_cities_for_inventory1**
+> List[KeyValuePairAffiliate] show_cities_for_inventory1(wink_version=wink_version, accept=accept)
 
 Show Inventory Cities
 
@@ -111,7 +113,7 @@ Retrieve list of cities affiliate has access to.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.geo_name_affiliate import GeoNameAffiliate
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -137,11 +139,11 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
     try:
         # Show Inventory Cities
-        api_response = api_instance.show_cities_for_inventory_0(wink_version=wink_version, accept=accept)
-        print("The response of BrowseApi->show_cities_for_inventory_0:\n")
+        api_response = api_instance.show_cities_for_inventory1(wink_version=wink_version, accept=accept)
+        print("The response of BrowseApi->show_cities_for_inventory1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling BrowseApi->show_cities_for_inventory_0: %s\n" % e)
+        print("Exception when calling BrowseApi->show_cities_for_inventory1: %s\n" % e)
 ```
 
 
@@ -156,7 +158,169 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[GeoNameAffiliate]**](GeoNameAffiliate.md)
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **show_continents_for_inventory**
+> List[KeyValuePairAffiliate] show_continents_for_inventory(wink_version=wink_version, accept=accept)
+
+Show Inventory Continents
+
+Retrieve list of countries affiliate has access to.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate_browse
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
+from wink_sdk_affiliate_browse.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate_browse.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
+    wink_version = 'wink_version_example' # str |  (optional)
+    accept = 'accept_example' # str |  (optional)
+
+    try:
+        # Show Inventory Continents
+        api_response = api_instance.show_continents_for_inventory(wink_version=wink_version, accept=accept)
+        print("The response of BrowseApi->show_continents_for_inventory:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling BrowseApi->show_continents_for_inventory: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **wink_version** | **str**|  | [optional] 
+ **accept** | **str**|  | [optional] 
+
+### Return type
+
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **show_continents_for_inventory_supplier**
+> List[KeyValuePairAffiliate] show_continents_for_inventory_supplier(wink_version=wink_version, accept=accept)
+
+Show Supplier Countries
+
+Retrieve list of countries affiliate has access to.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate_browse
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
+from wink_sdk_affiliate_browse.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate_browse.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
+    wink_version = 'wink_version_example' # str |  (optional)
+    accept = 'accept_example' # str |  (optional)
+
+    try:
+        # Show Supplier Countries
+        api_response = api_instance.show_continents_for_inventory_supplier(wink_version=wink_version, accept=accept)
+        print("The response of BrowseApi->show_continents_for_inventory_supplier:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling BrowseApi->show_continents_for_inventory_supplier: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **wink_version** | **str**|  | [optional] 
+ **accept** | **str**|  | [optional] 
+
+### Return type
+
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
 
 ### Authorization
 
@@ -180,7 +344,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_countries_for_inventory**
-> List[CountryAffiliate] show_countries_for_inventory(wink_version=wink_version, accept=accept)
+> List[KeyValuePairAffiliate] show_countries_for_inventory(wink_version=wink_version, accept=accept)
 
 Show Inventory Countries
 
@@ -192,7 +356,7 @@ Retrieve list of countries affiliate has access to.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.country_affiliate import CountryAffiliate
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -237,7 +401,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[CountryAffiliate]**](CountryAffiliate.md)
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
 
 ### Authorization
 
@@ -261,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_countries_for_inventory_supplier**
-> List[CountryAffiliate] show_countries_for_inventory_supplier(wink_version=wink_version, accept=accept)
+> List[KeyValuePairAffiliate] show_countries_for_inventory_supplier(wink_version=wink_version, accept=accept)
 
 Show Supplier Countries
 
@@ -273,7 +437,7 @@ Retrieve list of countries affiliate has access to.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.country_affiliate import CountryAffiliate
+from wink_sdk_affiliate_browse.models.key_value_pair_affiliate import KeyValuePairAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -318,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[CountryAffiliate]**](CountryAffiliate.md)
+[**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md)
 
 ### Authorization
 
@@ -342,7 +506,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_dynamic_seller_inventory**
-> PageInventoryViewAffiliate show_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
+> PageInventoryAggregateLightweightAffiliate show_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
 
 Inventory Search
 
@@ -355,7 +519,7 @@ Retrieves a paginated result set of inventorybased on the search criteria of the
 ```python
 import wink_sdk_affiliate_browse
 from wink_sdk_affiliate_browse.models.dynamic_seller_list_request_affiliate import DynamicSellerListRequestAffiliate
-from wink_sdk_affiliate_browse.models.page_inventory_view_affiliate import PageInventoryViewAffiliate
+from wink_sdk_affiliate_browse.models.page_inventory_aggregate_lightweight_affiliate import PageInventoryAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -400,7 +564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageInventoryViewAffiliate**](PageInventoryViewAffiliate.md)
+[**PageInventoryAggregateLightweightAffiliate**](PageInventoryAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -424,7 +588,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_dynamic_seller_inventory_by_id**
-> PageInventorySupplierAffiliate show_dynamic_seller_inventory_by_id(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> PageInventorySupplierAggregateLightweightAffiliate show_dynamic_seller_inventory_by_id(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Supplier Search by Saved Search
 
@@ -436,7 +600,7 @@ Retrieves a paginated result set based on the given list identifier.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.page_inventory_supplier_affiliate import PageInventorySupplierAffiliate
+from wink_sdk_affiliate_browse.models.page_inventory_supplier_aggregate_lightweight_affiliate import PageInventorySupplierAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -489,7 +653,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageInventorySupplierAffiliate**](PageInventorySupplierAffiliate.md)
+[**PageInventorySupplierAggregateLightweightAffiliate**](PageInventorySupplierAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -513,7 +677,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_dynamic_seller_inventory_by_id_0**
-> PageInventoryViewAffiliate show_dynamic_seller_inventory_by_id_0(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> PageInventoryAggregateLightweightAffiliate show_dynamic_seller_inventory_by_id_0(dynamic_list_identifier, page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Inventory Search by Saved Search
 
@@ -525,7 +689,7 @@ Retrieves a paginated result set based on the given saved search ID.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.page_inventory_view_affiliate import PageInventoryViewAffiliate
+from wink_sdk_affiliate_browse.models.page_inventory_aggregate_lightweight_affiliate import PageInventoryAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -578,7 +742,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageInventoryViewAffiliate**](PageInventoryViewAffiliate.md)
+[**PageInventoryAggregateLightweightAffiliate**](PageInventoryAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -602,7 +766,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_inventory_supplier**
-> InventorySupplierAffiliate show_inventory_supplier(supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> InventorySupplierAggregateLightweightAffiliate show_inventory_supplier(supplier_identifier, sales_channel_identifier, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Show Supplier
 
@@ -614,7 +778,7 @@ Retrieves supplier details based on existing sales channel ID.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.inventory_supplier_affiliate import InventorySupplierAffiliate
+from wink_sdk_affiliate_browse.models.inventory_supplier_aggregate_lightweight_affiliate import InventorySupplierAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -665,7 +829,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InventorySupplierAffiliate**](InventorySupplierAffiliate.md)
+[**InventorySupplierAggregateLightweightAffiliate**](InventorySupplierAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -689,7 +853,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_latest_inventory**
-> List[InventoryViewAffiliate] show_latest_inventory(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> List[InventoryAggregateLightweightAffiliate] show_latest_inventory(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Latest Inventory
 
@@ -701,7 +865,7 @@ Retrieves a list of latest available inventory.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.inventory_view_affiliate import InventoryViewAffiliate
+from wink_sdk_affiliate_browse.models.inventory_aggregate_lightweight_affiliate import InventoryAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -752,7 +916,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[InventoryViewAffiliate]**](InventoryViewAffiliate.md)
+[**List[InventoryAggregateLightweightAffiliate]**](InventoryAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -776,7 +940,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_latest_inventory_supplier_list**
-> List[InventorySupplierAffiliate] show_latest_inventory_supplier_list(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
+> List[InventorySupplierAggregateLightweightAffiliate] show_latest_inventory_supplier_list(page=page, size=size, display_currency=display_currency, wink_version=wink_version, accept=accept)
 
 Latest Suppliers
 
@@ -788,7 +952,7 @@ Retrieves a list of latest available inventorysuppliers.
 
 ```python
 import wink_sdk_affiliate_browse
-from wink_sdk_affiliate_browse.models.inventory_supplier_affiliate import InventorySupplierAffiliate
+from wink_sdk_affiliate_browse.models.inventory_supplier_aggregate_lightweight_affiliate import InventorySupplierAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -839,7 +1003,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[InventorySupplierAffiliate]**](InventorySupplierAffiliate.md)
+[**List[InventorySupplierAggregateLightweightAffiliate]**](InventorySupplierAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -863,7 +1027,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_suppliers_for_dynamic_seller_inventory**
-> PageInventorySupplierAffiliate show_suppliers_for_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
+> PageInventorySupplierAggregateLightweightAffiliate show_suppliers_for_dynamic_seller_inventory(dynamic_seller_list_request_affiliate, wink_version=wink_version)
 
 Supplier Search
 
@@ -876,7 +1040,7 @@ Retrieves a paginated result set of suppliers of inventorybased on the search cr
 ```python
 import wink_sdk_affiliate_browse
 from wink_sdk_affiliate_browse.models.dynamic_seller_list_request_affiliate import DynamicSellerListRequestAffiliate
-from wink_sdk_affiliate_browse.models.page_inventory_supplier_affiliate import PageInventorySupplierAffiliate
+from wink_sdk_affiliate_browse.models.page_inventory_supplier_aggregate_lightweight_affiliate import PageInventorySupplierAggregateLightweightAffiliate
 from wink_sdk_affiliate_browse.rest import ApiException
 from pprint import pprint
 
@@ -921,7 +1085,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageInventorySupplierAffiliate**](PageInventorySupplierAffiliate.md)
+[**PageInventorySupplierAggregateLightweightAffiliate**](PageInventorySupplierAggregateLightweightAffiliate.md)
 
 ### Authorization
 

@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **submit_review**
-> ReviewViewAuthenticatedEntity submit_review(booking_identifier, submit_review_request_authenticated_entity, wink_version=wink_version)
+> ReviewAuthenticatedEntity submit_review(booking_identifier, submit_review_request_authenticated_entity, wink_version=wink_version)
 
 Submit Review
 
@@ -104,7 +104,7 @@ Submit review for booking
 
 ```python
 import wink_sdk_booking
-from wink_sdk_booking.models.review_view_authenticated_entity import ReviewViewAuthenticatedEntity
+from wink_sdk_booking.models.review_authenticated_entity import ReviewAuthenticatedEntity
 from wink_sdk_booking.models.submit_review_request_authenticated_entity import SubmitReviewRequestAuthenticatedEntity
 from wink_sdk_booking.rest import ApiException
 from pprint import pprint
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ReviewViewAuthenticatedEntity**](ReviewViewAuthenticatedEntity.md)
+[**ReviewAuthenticatedEntity**](ReviewAuthenticatedEntity.md)
 
 ### Authorization
 

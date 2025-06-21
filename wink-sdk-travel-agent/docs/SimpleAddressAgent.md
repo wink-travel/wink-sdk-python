@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **county** | **str** | County | [optional] 
 **city** | **str** | City name | 
 **country_code** | **str** | Country | 
+**country** | **str** | Country | [optional] [readonly] 
 **full_address** | **str** | Address 1, Address 2, City, State, Postal / Zip code, Country | [optional] [readonly] 
 
 ## Example

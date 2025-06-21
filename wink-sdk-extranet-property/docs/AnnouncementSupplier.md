@@ -1,16 +1,18 @@
 # AnnouncementSupplier
 
-Announcement
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique announcement identifier. | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **hotel_identifier** | **str** | Hotel identifier manager has access to. | 
 **start_date** | **date** | Start date for when announcement is valid | [optional] 
 **end_date** | **date** | End date for when announcement is no longer valid | [optional] 
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | List of all localized announcements. | 
+**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | 
 **show_title** | **bool** | When enabled, the property does not want the title to be displayed | [optional] [default to False]
 **show_always** | **bool** | When enabled, the property wants this announcement always to be displayed | [optional] [default to False]
 

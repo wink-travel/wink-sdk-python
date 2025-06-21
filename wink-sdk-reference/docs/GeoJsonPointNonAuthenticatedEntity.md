@@ -1,6 +1,5 @@
 # GeoJsonPointNonAuthenticatedEntity
 
-Coordinate points of the city
 
 ## Properties
 

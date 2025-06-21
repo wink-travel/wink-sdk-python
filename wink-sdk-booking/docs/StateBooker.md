@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **skip** | **int** | Number of records to be skipped by the pager. | [optional] [default to 0]
 **take** | **int** | Number of records to take. | [optional] [default to 30]
 **sort** | [**List[SortDescriptorBooker]**](SortDescriptorBooker.md) | Descriptors used for sorting result set. | [optional] 
-**filter** | [**CompositeFilterDescriptorBooker**](CompositeFilterDescriptorBooker.md) |  | [optional] 
+**filter** | [**CompositeFilterDescriptorBooker**](CompositeFilterDescriptorBooker.md) | Descriptors used for filtering result set | [optional] 
 **group** | [**List[GroupDescriptorBooker]**](GroupDescriptorBooker.md) | Descriptors to group result sets by. | [optional] 
 
 ## Example

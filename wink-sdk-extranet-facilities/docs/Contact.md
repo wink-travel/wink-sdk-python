@@ -1,6 +1,5 @@
 # Contact
 
-Associate a contact person for this blocking (if applicable).
 
 ## Properties
 

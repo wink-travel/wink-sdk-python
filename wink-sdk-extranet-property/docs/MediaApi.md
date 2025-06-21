@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **create_multimedia**
-> HotelViewSupplier create_multimedia(property_identifier, simple_multimedia_supplier, wink_version=wink_version)
+> PropertySupplier create_multimedia(property_identifier, simple_multimedia_supplier, wink_version=wink_version)
 
 Create Multimedia
 
@@ -26,7 +26,7 @@ Save multimedia of a hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.simple_multimedia_supplier import SimpleMultimediaSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_media_list**
-> HotelViewSupplier remove_media_list(property_identifier, multimedia_identifiers, wink_version=wink_version, accept=accept)
+> PropertySupplier remove_media_list(property_identifier, multimedia_identifiers, wink_version=wink_version, accept=accept)
 
 Delete Multimedia List
 
@@ -110,7 +110,7 @@ Remove multimedia list of a hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_multimedia**
-> HotelViewSupplier remove_multimedia(property_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+> PropertySupplier remove_multimedia(property_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
 
 Delete Multimedia
 
@@ -195,7 +195,7 @@ Remove multimedia record for hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_media_list**
-> HotelViewSupplier update_media_list(property_identifier, simple_multimedia_supplier, wink_version=wink_version)
+> PropertySupplier update_media_list(property_identifier, simple_multimedia_supplier, wink_version=wink_version)
 
 Update Multimedia List
 
@@ -363,7 +363,7 @@ Save/Update multimedia list of a hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.simple_multimedia_supplier import SimpleMultimediaSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_multimedia**
-> HotelViewSupplier update_multimedia(property_identifier, multimedia_identifier, simple_multimedia_supplier, wink_version=wink_version)
+> PropertySupplier update_multimedia(property_identifier, multimedia_identifier, simple_multimedia_supplier, wink_version=wink_version)
 
 Update Multimedia
 
@@ -447,7 +447,7 @@ Update multimedia properties of a hotel identified by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.simple_multimedia_supplier import SimpleMultimediaSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -521,7 +521,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_multipart_files**
-> HotelViewSupplier upload_multipart_files(property_identifier, files)
+> PropertySupplier upload_multipart_files(property_identifier, files)
 
 Upload Multimedia
 
@@ -533,7 +533,7 @@ Upload videos and/or images and associate it with specified hotelIdentifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

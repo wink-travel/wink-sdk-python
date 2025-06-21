@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**logo** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) |  | [optional] 
+**logo** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | Customize account with a custom logo / profile picture. | [optional] 
 
 ## Example
 

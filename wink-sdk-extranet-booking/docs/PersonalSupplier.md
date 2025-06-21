@@ -1,6 +1,5 @@
 # PersonalSupplier
 
-Detailed customer information for this profile
 
 ## Properties
 
@@ -19,9 +18,9 @@ Name | Type | Description | Notes
 **country** | **str** | Country | [optional] 
 **preferred_currency** | **str** | Type of funds preferred for reviewing monetary values, in ISO 4217 codes | [optional] 
 **language** | **str** | The primary language of the customer | [optional] 
-**contact_person** | [**List[ContactSupplier]**](ContactSupplier.md) |  | [optional] 
-**phys_chall_name** | **List[str]** |  | [optional] 
-**pet_info** | [**List[PetInfoDtoSupplier]**](PetInfoDtoSupplier.md) |  | [optional] 
+**contact_person** | **List[object]** |  | [optional] 
+**phys_chall_name** | **List[object]** |  | [optional] 
+**pet_info** | **List[object]** |  | [optional] 
 
 ## Example
 

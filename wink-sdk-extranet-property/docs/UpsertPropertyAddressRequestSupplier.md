@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) |  | 
+**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) | Updated property address. | 
 
 ## Example
 

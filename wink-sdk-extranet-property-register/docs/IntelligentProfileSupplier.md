@@ -1,6 +1,5 @@
 # IntelligentProfileSupplier
 
-Property profile.
 
 ## Properties
 

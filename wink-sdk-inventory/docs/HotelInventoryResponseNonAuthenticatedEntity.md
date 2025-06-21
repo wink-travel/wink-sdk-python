@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **hotel_identifier** | **str** | Unique property identifier to retrieve inventory for. | [optional] 
 **url_name** | **str** | Unique url-friendly record identifier of property. | [optional] 
-**hotel** | [**HotelOnMapLightweightNonAuthenticatedEntity**](HotelOnMapLightweightNonAuthenticatedEntity.md) |  | [optional] 
-**green_index_scores** | [**AggregateGreendexAnswersNonAuthenticatedEntity**](AggregateGreendexAnswersNonAuthenticatedEntity.md) |  | [optional] 
+**hotel** | [**PropertyAggregateLightweightNonAuthenticatedEntity**](PropertyAggregateLightweightNonAuthenticatedEntity.md) | Property details | [optional] 
+**green_index_scores** | [**AggregateGreendexAnswersNonAuthenticatedEntity**](AggregateGreendexAnswersNonAuthenticatedEntity.md) | Detailed Green Index scores on hoe the property scores by category | [optional] 
 **room_types** | [**List[RoomTypeWithPriceConfigurationsNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationsNonAuthenticatedEntity.md) | List of room types with price configurations based on the itinerary that was passed on the user session. | [optional] 
 **meeting_rooms** | [**List[MeetingRoomLocalizedInventoryNonAuthenticatedEntity]**](MeetingRoomLocalizedInventoryNonAuthenticatedEntity.md) | List of property meeting rooms on and off the premises. | [optional] 
 **restaurants** | [**List[RestaurantLocalizedInventoryNonAuthenticatedEntity]**](RestaurantLocalizedInventoryNonAuthenticatedEntity.md) | List of property restaurants on and off the premises. | [optional] 
@@ -20,11 +20,11 @@ Name | Type | Description | Notes
 **images** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | List of property images | [optional] 
 **videos** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | List of property videos | [optional] 
 **recognitions** | [**List[TravelInventoryRecognitionNonAuthenticatedEntity]**](TravelInventoryRecognitionNonAuthenticatedEntity.md) | List of property recognitions | [optional] 
-**announcements** | [**List[AnnouncementNonAuthenticatedEntity]**](AnnouncementNonAuthenticatedEntity.md) | List of property announcements | [optional] 
+**announcements** | [**List[AnnouncementLightweightNonAuthenticatedEntity]**](AnnouncementLightweightNonAuthenticatedEntity.md) | List of property announcements | [optional] 
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
-**sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) |  | [optional] 
+**sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) | Sales channel that owns this booking | [optional] 
 **available** | **bool** |  | [optional] 
-**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) |  | [optional] 
+**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and shows the room type with the lowest price. | [optional] 
 **cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
 
 ## Example

@@ -1,14 +1,16 @@
 # SimpleDescriptionSupplier
 
-Localized description for this perk
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | Use as title or short text description | [optional] 
+**name** | **str** | Use as title or short text description | 
 **description** | **str** | Longer text description | 
 **language** | **str** | Indicate which language this description is written in. | [default to 'en']
+**creator** | **str** | Whether it was user or system generated. | [optional] [default to 'USER']
+**md5_content_hash** | **str** | The md5 hash of the name, description and language. | [optional] 
+**hash_mismatch** | **bool** |  | [optional] [readonly] 
 
 ## Example
 

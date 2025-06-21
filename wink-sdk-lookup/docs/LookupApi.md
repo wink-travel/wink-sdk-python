@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **score_inventory_by_agency**
-> PageHotelWithBestPriceNonAuthenticatedEntity score_inventory_by_agency(agency_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity score_inventory_by_agency(agency_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 Ranked Agency Search
 
@@ -29,7 +29,7 @@ Search for hotels represented by a property management agency.
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.agency_score_request_non_authenticated_entity import AgencyScoreRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **score_inventory_by_city**
-> PageHotelWithBestPriceNonAuthenticatedEntity score_inventory_by_city(city_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity score_inventory_by_city(city_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 Ranked City Search
 
@@ -115,7 +115,7 @@ Search for hotels in / around a city and order by scoring type
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.city_score_request_non_authenticated_entity import CityScoreRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_by_geo_location**
-> PageHotelWithBestPriceNonAuthenticatedEntity search_by_geo_location(map_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity search_by_geo_location(map_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 By Geo-Location
 
@@ -201,7 +201,7 @@ Search for properties near a point or within bounds. Populate either `request.us
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.map_request_non_authenticated_entity import MapRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_inventory_by_city**
-> PageHotelWithBestPriceNonAuthenticatedEntity search_inventory_by_city(city_search_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity search_inventory_by_city(city_search_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 City Search
 
@@ -287,7 +287,7 @@ Search for hotels in / around a city
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.city_search_request_non_authenticated_entity import CitySearchRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_score_by_country**
-> PageHotelWithBestPriceNonAuthenticatedEntity search_score_by_country(country_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity search_score_by_country(country_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 Ranked Country Search
 
@@ -373,7 +373,7 @@ Search for hotels in a country and order by scoring type
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.country_score_request_non_authenticated_entity import CountryScoreRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -446,7 +446,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_score_by_global**
-> PageHotelWithBestPriceNonAuthenticatedEntity search_score_by_global(global_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
+> PagePropertyWithBestPriceNonAuthenticatedEntity search_score_by_global(global_score_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, wink_version=wink_version, accept=accept)
 
 Ranked Global Search
 
@@ -459,7 +459,7 @@ Search best scoring hotels in the world and order by scoring type
 ```python
 import wink_sdk_lookup
 from wink_sdk_lookup.models.global_score_request_non_authenticated_entity import GlobalScoreRequestNonAuthenticatedEntity
-from wink_sdk_lookup.models.page_hotel_with_best_price_non_authenticated_entity import PageHotelWithBestPriceNonAuthenticatedEntity
+from wink_sdk_lookup.models.page_property_with_best_price_non_authenticated_entity import PagePropertyWithBestPriceNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelWithBestPriceNonAuthenticatedEntity**](PageHotelWithBestPriceNonAuthenticatedEntity.md)
+[**PagePropertyWithBestPriceNonAuthenticatedEntity**](PagePropertyWithBestPriceNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_lookup**
-> LookupNonAuthenticatedEntity show_lookup(url_name, type, wink_version=wink_version, accept=accept)
+> LookupLightweightNonAuthenticatedEntity show_lookup(url_name, type, wink_version=wink_version, accept=accept)
 
 Show Lookup
 
@@ -708,7 +708,7 @@ Show lookup object by its unique url name.
 
 ```python
 import wink_sdk_lookup
-from wink_sdk_lookup.models.lookup_non_authenticated_entity import LookupNonAuthenticatedEntity
+from wink_sdk_lookup.models.lookup_lightweight_non_authenticated_entity import LookupLightweightNonAuthenticatedEntity
 from wink_sdk_lookup.rest import ApiException
 from pprint import pprint
 
@@ -757,7 +757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LookupNonAuthenticatedEntity**](LookupNonAuthenticatedEntity.md)
+[**LookupLightweightNonAuthenticatedEntity**](LookupLightweightNonAuthenticatedEntity.md)
 
 ### Authorization
 

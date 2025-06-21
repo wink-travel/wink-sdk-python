@@ -1,14 +1,13 @@
 # ExtraChargeAgent
 
-List of extra charges that applies to the rate plan.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rate_plan_level_fee** | [**RatePlanLevelFeeAgent**](RatePlanLevelFeeAgent.md) |  | [optional] 
-**unit_price** | [**LocalizedPriceAgent**](LocalizedPriceAgent.md) |  | [optional] 
-**price** | [**LocalizedPriceAgent**](LocalizedPriceAgent.md) |  | [optional] 
+**rate_plan_level_fee** | [**RatePlanLevelFeeAgent**](RatePlanLevelFeeAgent.md) | What the guest is paying extra for | [optional] 
+**unit_price** | [**LocalizedPriceAgent**](LocalizedPriceAgent.md) | The localized unit price of the extra charge | [optional] 
+**price** | [**LocalizedPriceAgent**](LocalizedPriceAgent.md) | The localized price of the extra charge | [optional] 
 
 ## Example
 

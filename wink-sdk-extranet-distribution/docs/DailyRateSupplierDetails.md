@@ -46,11 +46,10 @@ Name | Type | Description | Notes
 **max_child_occupancy** | **int** | Maximum number of children allowed in a room type. | [default to 0]
 **included_adult_occupancy** | **int** | The number of pax the room price was meant for | [default to 2]
 **included_child_occupancy** | **int** | The number of children the room price was meant for | [default to 0]
-**source_to_user_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
-**source_to_internal_currency_quote** | [**QuoteSupplierDetails**](QuoteSupplierDetails.md) |  | 
+**source_to_user_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
+**source_to_internal_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **phantom** | **bool** |  | 
 **var_date** | **date** |  | [optional] 
-**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **quantity** | **int** |  | [optional] 
 **source_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
@@ -58,6 +57,7 @@ Name | Type | Description | Notes
 **end_date** | **bool** |  | [optional] 
 **max_occupancy** | **int** |  | [optional] 
 **min_occupancy** | **int** |  | [optional] 
+**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **min_los** | **int** |  | [optional] 
 **max_los** | **int** |  | [optional] 
 **total_discount_percent** | **float** |  | [optional] 

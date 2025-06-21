@@ -1,6 +1,5 @@
 # ExtraChargesAgent
 
-Rate plan-level extra charges
 
 ## Properties
 

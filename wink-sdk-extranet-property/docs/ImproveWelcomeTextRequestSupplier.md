@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**short_description** | **str** | Short description | 
-**long_description** | **str** | Long description | 
+**name** | **str** | Short description | 
+**description** | **str** | Long description | 
 **language** | **str** |  | 
 
 ## Example

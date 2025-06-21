@@ -1,6 +1,5 @@
 # ContinentRateQualifierSupplierDetails
 
-Restrict promotion to specific continents. See [Geo-IP continent geoname data](#operation/showContinents)
 
 ## Properties
 

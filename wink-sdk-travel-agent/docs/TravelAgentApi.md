@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **cancel_booking_as_travel_agent**
-> BookingViewAgent cancel_booking_as_travel_agent(company_identifier, booking_identifier, cancellation_detail_agent, wink_version=wink_version)
+> BookingAgent cancel_booking_as_travel_agent(company_identifier, booking_identifier, cancellation_detail_agent, wink_version=wink_version)
 
 Cancel Booking
 
@@ -25,7 +25,7 @@ Cancel a booking by its booking identifier
 
 ```python
 import wink_sdk_travel_agent
-from wink_sdk_travel_agent.models.booking_view_agent import BookingViewAgent
+from wink_sdk_travel_agent.models.booking_agent import BookingAgent
 from wink_sdk_travel_agent.models.cancellation_detail_agent import CancellationDetailAgent
 from wink_sdk_travel_agent.rest import ApiException
 from pprint import pprint
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewAgent**](BookingViewAgent.md)
+[**BookingAgent**](BookingAgent.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_booking_as_travel_agent**
-> BookingViewAgent show_booking_as_travel_agent(company_identifier, booking_identifier, wink_version=wink_version, accept=accept)
+> BookingAgent show_booking_as_travel_agent(company_identifier, booking_identifier, wink_version=wink_version, accept=accept)
 
 Show Booking
 
@@ -278,7 +278,7 @@ Show a booking record by its identifier.
 
 ```python
 import wink_sdk_travel_agent
-from wink_sdk_travel_agent.models.booking_view_agent import BookingViewAgent
+from wink_sdk_travel_agent.models.booking_agent import BookingAgent
 from wink_sdk_travel_agent.rest import ApiException
 from pprint import pprint
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewAgent**](BookingViewAgent.md)
+[**BookingAgent**](BookingAgent.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_booking_grid_as_travel_agent**
-> PageBookingViewAgent show_booking_grid_as_travel_agent(company_identifier, state_agent, wink_version=wink_version)
+> PageBookingAgent show_booking_grid_as_travel_agent(company_identifier, state_agent, wink_version=wink_version)
 
 Show Bookings
 
@@ -363,7 +363,7 @@ Show bookings for the company that helped create those booking.
 
 ```python
 import wink_sdk_travel_agent
-from wink_sdk_travel_agent.models.page_booking_view_agent import PageBookingViewAgent
+from wink_sdk_travel_agent.models.page_booking_agent import PageBookingAgent
 from wink_sdk_travel_agent.models.state_agent import StateAgent
 from wink_sdk_travel_agent.rest import ApiException
 from pprint import pprint
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageBookingViewAgent**](PageBookingViewAgent.md)
+[**PageBookingAgent**](PageBookingAgent.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_agent**
-> CompanyViewAgent update_agent(company_identifier, upsert_travel_agent_request_agent, wink_version=wink_version)
+> AffiliateAccountAgent update_agent(company_identifier, upsert_travel_agent_request_agent, wink_version=wink_version)
 
 Update Agent
 
@@ -447,7 +447,7 @@ Update an existing agent
 
 ```python
 import wink_sdk_travel_agent
-from wink_sdk_travel_agent.models.company_view_agent import CompanyViewAgent
+from wink_sdk_travel_agent.models.affiliate_account_agent import AffiliateAccountAgent
 from wink_sdk_travel_agent.models.upsert_travel_agent_request_agent import UpsertTravelAgentRequestAgent
 from wink_sdk_travel_agent.rest import ApiException
 from pprint import pprint
@@ -495,7 +495,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAgent**](CompanyViewAgent.md)
+[**AffiliateAccountAgent**](AffiliateAccountAgent.md)
 
 ### Authorization
 

@@ -1,6 +1,5 @@
 # LocalizedDescriptionNonAuthenticatedEntity
 
-Localized offer details if rate plan discount applies.
 
 ## Properties
 

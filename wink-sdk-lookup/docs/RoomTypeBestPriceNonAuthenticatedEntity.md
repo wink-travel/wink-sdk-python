@@ -1,13 +1,12 @@
 # RoomTypeBestPriceNonAuthenticatedEntity
 
-Best-priced room types
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **room_type_identifier** | **str** | Room type identifier. | 
-**price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | 
+**price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) | Price details for this room type configuration. | 
 **perk_value** | **int** | The sum of all perks the master rate had made available. | 
 **available** | **bool** | Whether this room type is available with this configuration | 
 **sort** | **int** | When this room type is displayed in conjunction with many others, this sort property will often times be populated to indicate how the room types should be sorted and displayed. | 

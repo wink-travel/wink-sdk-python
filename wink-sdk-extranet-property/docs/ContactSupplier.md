@@ -1,6 +1,5 @@
 # ContactSupplier
 
-Accounting contact information
 
 ## Properties
 

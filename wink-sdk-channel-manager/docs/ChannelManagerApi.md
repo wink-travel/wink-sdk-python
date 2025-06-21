@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ping**](ChannelManagerApi.md#ping) | **GET** /api/channel-manager/ping | Say Hello
 [**show_properties**](ChannelManagerApi.md#show_properties) | **GET** /api/channel-manager/property/list | Show Properties
-[**show_property**](ChannelManagerApi.md#show_property) | **GET** /api/channel-manager/property/{propertyIdentifier} | Show Property
+[**show_property**](ChannelManagerApi.md#show_property) | **GET** /api/channel-manager/property/{propertyIdentifier} | Show ChannelManagerProperty
 [**show_property_booking**](ChannelManagerApi.md#show_property_booking) | **GET** /api/channel-manager/property/{propertyIdentifier}/booking/{bookingIdentifier} | Show Booking
 [**show_property_bookings**](ChannelManagerApi.md#show_property_bookings) | **GET** /api/channel-manager/property/{propertyIdentifier}/booking/list | Show Bookings
 [**show_property_room_rates**](ChannelManagerApi.md#show_property_room_rates) | **GET** /api/channel-manager/property/{propertyIdentifier}/master-rate/{masterRateIdentifier} | Show Daily Rates
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_properties**
-> PageProperty show_properties(page=page, size=size, wink_version=wink_version, accept=accept)
+> PageChannelManagerProperty show_properties(page=page, size=size, wink_version=wink_version, accept=accept)
 
 Show Properties
 
@@ -108,7 +108,7 @@ The properties endpoint provides the entry point into the listener and is used t
 
 ```python
 import wink_sdk_channel_manager
-from wink_sdk_channel_manager.models.page_property import PageProperty
+from wink_sdk_channel_manager.models.page_channel_manager_property import PageChannelManagerProperty
 from wink_sdk_channel_manager.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageProperty**](PageProperty.md)
+[**PageChannelManagerProperty**](PageChannelManagerProperty.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 # **show_property**
 > PropertyWithRoomRateList show_property(property_identifier, wink_version=wink_version, accept=accept)
 
-Show Property
+Show ChannelManagerProperty
 
 Retrieves property record with master rates included.
 
@@ -220,7 +220,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     accept = 'accept_example' # str |  (optional)
 
     try:
-        # Show Property
+        # Show ChannelManagerProperty
         api_response = api_instance.show_property(property_identifier, wink_version=wink_version, accept=accept)
         print("The response of ChannelManagerApi->show_property:\n")
         pprint(api_response)

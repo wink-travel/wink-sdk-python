@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | When the type is FIXED, fixedAmount is required. When the type is PERCENTAGE, percent is required. | 
 **percent** | **float** | A percentage of the total stay amount for an early check-in or late check-out | [optional] 
-**fixed_amount** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**fixed_amount** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | A localized amount | [optional] 
 
 ## Example
 

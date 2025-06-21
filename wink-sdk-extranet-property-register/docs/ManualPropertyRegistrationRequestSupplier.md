@@ -8,8 +8,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Unique hotel trade name. The hotel name must be unique. If there are multiple hotels with the same name, we recommend appending destination to the name. [Verify uniqueness here](#operation/isHotelNameUnique). | 
 **local_name** | **str** | Local name of the hotel as it is referred to in the local language. | 
-**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) |  | 
-**reservation** | [**ContactSupplier**](ContactSupplier.md) |  | 
+**address** | [**UpsertAddressRequestSupplier**](UpsertAddressRequestSupplier.md) | Property address. | 
+**reservation** | [**ContactSupplier**](ContactSupplier.md) | Reservation desk information. | 
+**revenue** | [**ContactSupplier**](ContactSupplier.md) | Revenue information. | 
+**marketing** | [**ContactSupplier**](ContactSupplier.md) | Marketing information. | 
 **agreement_accepted** | **bool** | Agreement accepted by legal signer. | [default to True]
 
 ## Example

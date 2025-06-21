@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **create_sales_channel**
-> SalesChannelViewSupplier create_sales_channel(property_identifier, sales_channel_create_request_supplier, wink_version=wink_version)
+> SalesChannelSupplier create_sales_channel(property_identifier, sales_channel_create_request_supplier, wink_version=wink_version)
 
 Create Sales Channel
 
@@ -29,7 +29,7 @@ Create a new sales channel.
 ```python
 import wink_sdk_extranet_distribution
 from wink_sdk_extranet_distribution.models.sales_channel_create_request_supplier import SalesChannelCreateRequestSupplier
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelViewSupplier**](SalesChannelViewSupplier.md)
+[**SalesChannelSupplier**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_sales_channel**
-> SalesChannelViewSupplier remove_sales_channel(property_identifier, sales_channel_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelSupplier remove_sales_channel(property_identifier, sales_channel_identifier, wink_version=wink_version, accept=accept)
 
 Remove Sales Channel
 
@@ -112,7 +112,7 @@ Delete a specific sales channel
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelViewSupplier**](SalesChannelViewSupplier.md)
+[**SalesChannelSupplier**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_accounts**
-> List[SalesChannelViewSupplier] show_accounts(property_identifier, wink_version=wink_version, accept=accept)
+> List[SalesChannelSupplier] show_accounts(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Sales Channels
 
@@ -197,7 +197,7 @@ Retrieve list of all sales channels for this property. You can decide to retriev
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SalesChannelViewSupplier]**](SalesChannelViewSupplier.md)
+[**List[SalesChannelSupplier]**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_sales_channel**
-> SalesChannelViewSupplier show_sales_channel(property_identifier, sales_channel_identifier, wink_version=wink_version, accept=accept)
+> SalesChannelSupplier show_sales_channel(property_identifier, sales_channel_identifier, wink_version=wink_version, accept=accept)
 
 Show Sales Channel
 
@@ -280,7 +280,7 @@ Retrieve a specific sales channel by identifier.
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelViewSupplier**](SalesChannelViewSupplier.md)
+[**SalesChannelSupplier**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -523,7 +523,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **toggle_sales_channel_promo_availability**
-> List[SalesChannelViewSupplier] toggle_sales_channel_promo_availability(property_identifier, rate_modifier_identifier, inventory_update_request_supplier, wink_version=wink_version)
+> List[SalesChannelSupplier] toggle_sales_channel_promo_availability(property_identifier, rate_modifier_identifier, inventory_update_request_supplier, wink_version=wink_version)
 
 Update Sale Channels Rate Modifiers
 
@@ -536,7 +536,7 @@ Toggles availability of a promo for a list of sales channels
 ```python
 import wink_sdk_extranet_distribution
 from wink_sdk_extranet_distribution.models.inventory_update_request_supplier import InventoryUpdateRequestSupplier
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -585,7 +585,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SalesChannelViewSupplier]**](SalesChannelViewSupplier.md)
+[**List[SalesChannelSupplier]**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **toggle_sales_channel_promo_bundle_availability**
-> List[SalesChannelViewSupplier] toggle_sales_channel_promo_bundle_availability(property_identifier, rate_modifier_bundle_identifier, inventory_update_request_supplier, wink_version=wink_version)
+> List[SalesChannelSupplier] toggle_sales_channel_promo_bundle_availability(property_identifier, rate_modifier_bundle_identifier, inventory_update_request_supplier, wink_version=wink_version)
 
 Update Sale Channels Rate Modifier Bundles
 
@@ -622,7 +622,7 @@ Toggles availability of a promo bundle for a list of sales channels
 ```python
 import wink_sdk_extranet_distribution
 from wink_sdk_extranet_distribution.models.inventory_update_request_supplier import InventoryUpdateRequestSupplier
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -671,7 +671,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SalesChannelViewSupplier]**](SalesChannelViewSupplier.md)
+[**List[SalesChannelSupplier]**](SalesChannelSupplier.md)
 
 ### Authorization
 
@@ -695,7 +695,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_sales_channel**
-> SalesChannelViewSupplier update_sales_channel(property_identifier, sales_channel_identifier, sales_channel_update_request_supplier, wink_version=wink_version)
+> SalesChannelSupplier update_sales_channel(property_identifier, sales_channel_identifier, sales_channel_update_request_supplier, wink_version=wink_version)
 
 Update Sales Channel
 
@@ -707,8 +707,8 @@ Update a chosen sales channel
 
 ```python
 import wink_sdk_extranet_distribution
+from wink_sdk_extranet_distribution.models.sales_channel_supplier import SalesChannelSupplier
 from wink_sdk_extranet_distribution.models.sales_channel_update_request_supplier import SalesChannelUpdateRequestSupplier
-from wink_sdk_extranet_distribution.models.sales_channel_view_supplier import SalesChannelViewSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -757,7 +757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalesChannelViewSupplier**](SalesChannelViewSupplier.md)
+[**SalesChannelSupplier**](SalesChannelSupplier.md)
 
 ### Authorization
 

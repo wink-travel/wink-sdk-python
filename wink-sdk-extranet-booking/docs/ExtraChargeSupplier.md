@@ -1,14 +1,13 @@
 # ExtraChargeSupplier
 
-List of extra charges that applies to the rate plan.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rate_plan_level_fee** | [**RatePlanLevelFeeSupplier**](RatePlanLevelFeeSupplier.md) |  | [optional] 
-**unit_price** | [**LocalizedPriceSupplier**](LocalizedPriceSupplier.md) |  | [optional] 
-**price** | [**LocalizedPriceSupplier**](LocalizedPriceSupplier.md) |  | [optional] 
+**rate_plan_level_fee** | [**RatePlanLevelFeeSupplier**](RatePlanLevelFeeSupplier.md) | What the guest is paying extra for | [optional] 
+**unit_price** | [**LocalizedPriceSupplier**](LocalizedPriceSupplier.md) | The localized unit price of the extra charge | [optional] 
+**price** | [**LocalizedPriceSupplier**](LocalizedPriceSupplier.md) | The localized price of the extra charge | [optional] 
 
 ## Example
 

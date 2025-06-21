@@ -1,12 +1,11 @@
 # RequiredDaysOfWeekRateQualifierSupplier
 
-Restrict promotion to specific days of the week the guest has to stay.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | 
+**days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) | The days of the week the user has to stay on to get this rate | 
 
 ## Example
 

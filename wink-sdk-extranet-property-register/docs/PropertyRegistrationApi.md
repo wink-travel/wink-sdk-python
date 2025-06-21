@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **register_property_intelligently**
-> HotelViewSupplier register_property_intelligently(lead_identifier, intelligent_property_registration_request_supplier, wink_version=wink_version)
+> PropertySupplier register_property_intelligently(lead_identifier, intelligent_property_registration_request_supplier, wink_version=wink_version)
 
 Register Property Intelligently
 
@@ -109,8 +109,8 @@ Registers a new property with the minimum required dataset to onboard a property
 
 ```python
 import wink_sdk_extranet_property_register
-from wink_sdk_extranet_property_register.models.hotel_view_supplier import HotelViewSupplier
 from wink_sdk_extranet_property_register.models.intelligent_property_registration_request_supplier import IntelligentPropertyRegistrationRequestSupplier
+from wink_sdk_extranet_property_register.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property_register.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **register_property_manually**
-> HotelViewSupplier register_property_manually(manual_property_registration_request_supplier, wink_version=wink_version)
+> PropertySupplier register_property_manually(manual_property_registration_request_supplier, wink_version=wink_version)
 
 Register Property Manually
 
@@ -193,8 +193,8 @@ Registers a new property with the minimum required dataset to onboard a property
 
 ```python
 import wink_sdk_extranet_property_register
-from wink_sdk_extranet_property_register.models.hotel_view_supplier import HotelViewSupplier
 from wink_sdk_extranet_property_register.models.manual_property_registration_request_supplier import ManualPropertyRegistrationRequestSupplier
+from wink_sdk_extranet_property_register.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property_register.rest import ApiException
 from pprint import pprint
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

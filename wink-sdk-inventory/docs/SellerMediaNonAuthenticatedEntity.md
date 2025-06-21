@@ -1,6 +1,5 @@
 # SellerMediaNonAuthenticatedEntity
 
-The video you want to accompany this link
 
 ## Properties
 

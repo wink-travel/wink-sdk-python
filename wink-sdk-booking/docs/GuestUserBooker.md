@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **last_name** | **str** | Last name | 
 **email** | **str** | Email | 
 **telephone** | **str** | Telephone | [optional] 
-**profile** | [**ProfileBooker**](ProfileBooker.md) |  | [optional] 
+**profile** | [**ProfileLightweightBooker**](ProfileLightweightBooker.md) | Optional profile record | [optional] 
 **full_name** | **str** | Full name | [optional] [readonly] 
 
 ## Example

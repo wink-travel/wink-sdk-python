@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **hotel_identifier** | **str** | Lifestyles belong to this property identifier  | 
-**list** | **List[str]** | List of new lifestyles to set on property. | [optional] 
+**list** | **List[str]** |  | [optional] 
 
 ## Example
 

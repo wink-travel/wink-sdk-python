@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | Use as title or short text description | [optional] 
+**name** | **str** | Use as title or short text description | 
 **description** | **str** | Longer text description | 
 **language** | **str** | Indicate which language this description is written in. | [default to 'en']
 

@@ -75,19 +75,19 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: */*, application/json, application/xml, text/xml, text/plain
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **400** | Bad Request |  -  |
 **405** | Method Not Allowed |  -  |
 **415** | Unsupported Media Type |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -1,16 +1,15 @@
 # LineChartSupplier
 
-Interesting property-level chart data overview
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique line chart identifier | [optional] 
-**title** | [**ChartTitleSupplier**](ChartTitleSupplier.md) |  | [optional] 
-**legend** | [**ChartLegendSupplier**](ChartLegendSupplier.md) |  | [optional] 
+**title** | [**ChartTitleSupplier**](ChartTitleSupplier.md) | The configuration options for the chart title | [optional] 
+**legend** | [**ChartLegendSupplier**](ChartLegendSupplier.md) | The configuration options for the chart legend. | [optional] 
 **series** | [**List[ChartSeriesSupplier]**](ChartSeriesSupplier.md) | The configuration of the chart series. The series type is determined by the value of the type field. If a type value is missing, the chart renders the type that is specified in &#x60;seriesDefaults&#x60;. Some options accept functions as arguments. These arguments are evaluated for each point which is supplied as a parameter. If no value is returned, the chart uses the &#x60;theme&#x60; or &#x60;seriesDefaults&#x60; values. | [optional] 
-**x_axis** | [**ChartCategoryAxisSupplier**](ChartCategoryAxisSupplier.md) |  | [optional] 
+**x_axis** | [**ChartCategoryAxisSupplier**](ChartCategoryAxisSupplier.md) | The configuration options of the category axis. | [optional] 
 **xaxis** | [**ChartCategoryAxisSupplier**](ChartCategoryAxisSupplier.md) |  | [optional] 
 
 ## Example

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique identifier | 
 **name** | **str** | Name of layout | 
-**bedroom_list** | [**List[BedroomSupplier]**](BedroomSupplier.md) | A room type can have more than one bedroom configuration. | 
+**bedroom_list** | [**List[BedroomSupplier]**](BedroomSupplier.md) |  | 
 
 ## Example
 

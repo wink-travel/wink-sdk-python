@@ -1,6 +1,5 @@
 # PrepayRateQualifierSupplier
 
-Restrict promotion to either prepaid / non-prepaid rates.
 
 ## Properties
 

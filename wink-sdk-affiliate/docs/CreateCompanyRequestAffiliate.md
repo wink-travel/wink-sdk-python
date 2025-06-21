@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 **type** | **str** | Type of company | 
 **description** | **str** | A personal message from the company. | [optional] 
 **city_geo_name_id** | **str** | City geo name ID | 
-**travel_agent** | **object** | If the company type is travel agent, this object will be filled out too. | [optional] 
-**online_presence** | [**List[OnlinePresenceAffiliate]**](OnlinePresenceAffiliate.md) |  | [optional] 
-**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**travel_agent** | **object** |  | [optional] 
+**online_presence** | **List[object]** |  | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
 
 ## Example
 

@@ -1,12 +1,11 @@
 # UpsertCancellationPolicyExceptionsSupplier
 
-Allows a property to dynamically use another cancellation policy for a specific date range
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[UpsertCancellationPolicyExceptionSupplier]**](UpsertCancellationPolicyExceptionSupplier.md) | List of cancellation policy exceptions | 
+**list** | [**List[UpsertCancellationPolicyExceptionSupplier]**](UpsertCancellationPolicyExceptionSupplier.md) |  | 
 
 ## Example
 

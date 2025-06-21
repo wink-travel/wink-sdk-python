@@ -1,6 +1,5 @@
 # KeyValuePairSupplier
 
-This can be an enum for external channel managers or an identifier for a Wink company rate provider
 
 ## Properties
 

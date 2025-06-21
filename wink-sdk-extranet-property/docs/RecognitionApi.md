@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **create_recognition**
-> HotelViewSupplier create_recognition(property_identifier, upsert_recognition_supplier, wink_version=wink_version)
+> PropertySupplier create_recognition(property_identifier, upsert_recognition_supplier, wink_version=wink_version)
 
 Create Recognition
 
@@ -25,7 +25,7 @@ Create a new request
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.upsert_recognition_supplier import UpsertRecognitionSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_recognition**
-> HotelViewSupplier remove_recognition(property_identifier, recognition_identifier, wink_version=wink_version, accept=accept)
+> PropertySupplier remove_recognition(property_identifier, recognition_identifier, wink_version=wink_version, accept=accept)
 
 Delete Recognition
 
@@ -109,7 +109,7 @@ Delete a recognition by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_recognition**
-> HotelViewSupplier update_recognition(property_identifier, recognition_identifier, upsert_recognition_supplier, wink_version=wink_version)
+> PropertySupplier update_recognition(property_identifier, recognition_identifier, upsert_recognition_supplier, wink_version=wink_version)
 
 Update Recognition
 
@@ -447,7 +447,7 @@ Update a recognition by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.upsert_recognition_supplier import UpsertRecognitionSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

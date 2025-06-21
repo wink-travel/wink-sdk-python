@@ -1,6 +1,5 @@
 # ContactSupplierDetails
 
-Array of emergency contact information for the customer
 
 ## Properties
 

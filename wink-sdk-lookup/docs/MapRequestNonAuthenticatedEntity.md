@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
-**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) |  | [optional] 
-**bounds** | [**GeoJsonPolygonNonAuthenticatedEntity**](GeoJsonPolygonNonAuthenticatedEntity.md) |  | [optional] 
-**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) |  | [optional] 
-**inventory_types** | **List[str]** |  | [optional] 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session containing geo-location to search around. | 
+**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) | User&#39;s last map location | [optional] 
+**bounds** | [**GeoJsonPolygonNonAuthenticatedEntity**](GeoJsonPolygonNonAuthenticatedEntity.md) | Map bounds the user is looking. Bounds provided by map provider. | [optional] 
+**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) | How user likes to have results displayed | [optional] 
+**inventory_types** | **List[object]** |  | [optional] 
 **page** | **int** | The page to paginate to. Note: Page uses a 0-based index. | [optional] [default to 0]
 **size** | **int** | The result size to return. | [optional] [default to 10]
 

@@ -8,11 +8,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique transactional identifier | 
 **name** | **str** | Internal name of transactional blocking. | 
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | Localized descriptions describing blocking. | 
+**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | 
 **pricing_type** | **str** | How this blocking item should be priced. | 
-**base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
-**discounted_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
-**multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) | List of images / videos of item. | [optional] 
+**base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Base price of booking this blocking. | 
+**discounted_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | If you are selling this blocking at a discount, indicate the discounted selling price. Leave empty if there is no discount. | 
+**multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) |  | [optional] 
 **min_pax** | **int** | Whether there is a limit to minimum group size. | [optional] 
 **max_pax** | **int** | Whether there is a limit to maximum group size. | [optional] 
 **percent_discount** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 

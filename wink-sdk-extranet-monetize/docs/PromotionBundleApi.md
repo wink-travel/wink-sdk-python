@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_rate_modifier_bundle**
-> RateModifierBundleViewSupplier create_rate_modifier_bundle(property_identifier, upsert_rate_modifier_bundle_request_supplier, wink_version=wink_version)
+> SpecialRateBundleSupplier create_rate_modifier_bundle(property_identifier, upsert_special_rate_bundle_request_supplier, wink_version=wink_version)
 
 Create Promotion Bundle
 
@@ -24,8 +24,8 @@ Create a new rate modifier ancillary
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
-from wink_sdk_extranet_monetize.models.upsert_rate_modifier_bundle_request_supplier import UpsertRateModifierBundleRequestSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
+from wink_sdk_extranet_monetize.models.upsert_special_rate_bundle_request_supplier import UpsertSpecialRateBundleRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.PromotionBundleApi(api_client)
     property_identifier = 'hotel-1' # str | Create new promotion bundle and associate with this property identifier.
-    upsert_rate_modifier_bundle_request_supplier = wink_sdk_extranet_monetize.UpsertRateModifierBundleRequestSupplier() # UpsertRateModifierBundleRequestSupplier | 
+    upsert_special_rate_bundle_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateBundleRequestSupplier() # UpsertSpecialRateBundleRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Promotion Bundle
-        api_response = api_instance.create_rate_modifier_bundle(property_identifier, upsert_rate_modifier_bundle_request_supplier, wink_version=wink_version)
+        api_response = api_instance.create_rate_modifier_bundle(property_identifier, upsert_special_rate_bundle_request_supplier, wink_version=wink_version)
         print("The response of PromotionBundleApi->create_rate_modifier_bundle:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,12 +67,12 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create new promotion bundle and associate with this property identifier. | 
- **upsert_rate_modifier_bundle_request_supplier** | [**UpsertRateModifierBundleRequestSupplier**](UpsertRateModifierBundleRequestSupplier.md)|  | 
+ **upsert_special_rate_bundle_request_supplier** | [**UpsertSpecialRateBundleRequestSupplier**](UpsertSpecialRateBundleRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**RateModifierBundleViewSupplier**](RateModifierBundleViewSupplier.md)
+[**SpecialRateBundleSupplier**](SpecialRateBundleSupplier.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_rate_modifier_bundle**
-> RateModifierBundleViewSupplier remove_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, wink_version=wink_version, accept=accept)
+> SpecialRateBundleSupplier remove_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, wink_version=wink_version, accept=accept)
 
 Delete Promotion Bundle
 
@@ -108,7 +108,7 @@ Delete a rate modifier ancillary by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierBundleViewSupplier**](RateModifierBundleViewSupplier.md)
+[**SpecialRateBundleSupplier**](SpecialRateBundleSupplier.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_rate_modifier_bundle**
-> RateModifierBundleViewSupplier show_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, wink_version=wink_version, accept=accept)
+> SpecialRateBundleSupplier show_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, wink_version=wink_version, accept=accept)
 
 Show Promotion Bundle
 
@@ -193,7 +193,7 @@ Retrieve a rate modifier ancillary by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierBundleViewSupplier**](RateModifierBundleViewSupplier.md)
+[**SpecialRateBundleSupplier**](SpecialRateBundleSupplier.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_rate_modifier_bundles**
-> List[RateModifierBundleViewSupplier] show_rate_modifier_bundles(property_identifier, wink_version=wink_version, accept=accept)
+> List[SpecialRateBundleSupplier] show_rate_modifier_bundles(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Promotion Bundles
 
@@ -278,7 +278,7 @@ Retrieve list of rate modifier bundles
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RateModifierBundleViewSupplier]**](RateModifierBundleViewSupplier.md)
+[**List[SpecialRateBundleSupplier]**](SpecialRateBundleSupplier.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_rate_modifier_bundle**
-> RateModifierBundleViewSupplier update_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, upsert_rate_modifier_bundle_request_supplier, wink_version=wink_version)
+> SpecialRateBundleSupplier update_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, upsert_special_rate_bundle_request_supplier, wink_version=wink_version)
 
 Update Promotion Bundle
 
@@ -361,8 +361,8 @@ Update a rate modifier ancillary by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_bundle_view_supplier import RateModifierBundleViewSupplier
-from wink_sdk_extranet_monetize.models.upsert_rate_modifier_bundle_request_supplier import UpsertRateModifierBundleRequestSupplier
+from wink_sdk_extranet_monetize.models.special_rate_bundle_supplier import SpecialRateBundleSupplier
+from wink_sdk_extranet_monetize.models.upsert_special_rate_bundle_request_supplier import UpsertSpecialRateBundleRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -385,12 +385,12 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.PromotionBundleApi(api_client)
     property_identifier = 'hotel-1' # str | Update existing promotion bundle owned by this property identifier.
     rate_modifier_bundle_identifier = 'promotion-bundle-1' # str | Update existing promotion bundle with this identifier.
-    upsert_rate_modifier_bundle_request_supplier = wink_sdk_extranet_monetize.UpsertRateModifierBundleRequestSupplier() # UpsertRateModifierBundleRequestSupplier | 
+    upsert_special_rate_bundle_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateBundleRequestSupplier() # UpsertSpecialRateBundleRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Promotion Bundle
-        api_response = api_instance.update_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, upsert_rate_modifier_bundle_request_supplier, wink_version=wink_version)
+        api_response = api_instance.update_rate_modifier_bundle(property_identifier, rate_modifier_bundle_identifier, upsert_special_rate_bundle_request_supplier, wink_version=wink_version)
         print("The response of PromotionBundleApi->update_rate_modifier_bundle:\n")
         pprint(api_response)
     except Exception as e:
@@ -406,12 +406,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update existing promotion bundle owned by this property identifier. | 
  **rate_modifier_bundle_identifier** | **str**| Update existing promotion bundle with this identifier. | 
- **upsert_rate_modifier_bundle_request_supplier** | [**UpsertRateModifierBundleRequestSupplier**](UpsertRateModifierBundleRequestSupplier.md)|  | 
+ **upsert_special_rate_bundle_request_supplier** | [**UpsertSpecialRateBundleRequestSupplier**](UpsertSpecialRateBundleRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**RateModifierBundleViewSupplier**](RateModifierBundleViewSupplier.md)
+[**SpecialRateBundleSupplier**](SpecialRateBundleSupplier.md)
 
 ### Authorization
 

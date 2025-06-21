@@ -429,7 +429,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_managing_entities**
-> List[ManagingEntity] show_managing_entities(sub_type=sub_type, wink_version=wink_version, accept=accept)
+> List[ManagingEntityAuthenticatedEntity] show_managing_entities(sub_type=sub_type, wink_version=wink_version, accept=accept)
 
 Show Managing Entities
 
@@ -441,7 +441,7 @@ Lists all entities, including user entity, owned by user.
 
 ```python
 import wink_sdk_user_settings
-from wink_sdk_user_settings.models.managing_entity import ManagingEntity
+from wink_sdk_user_settings.models.managing_entity_authenticated_entity import ManagingEntityAuthenticatedEntity
 from wink_sdk_user_settings.rest import ApiException
 from pprint import pprint
 
@@ -488,7 +488,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[ManagingEntity]**](ManagingEntity.md)
+[**List[ManagingEntityAuthenticatedEntity]**](ManagingEntityAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -512,7 +512,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_managing_entity**
-> ManagingEntity show_managing_entity(managing_entity_identifier, wink_version=wink_version, accept=accept)
+> ManagingEntityAuthenticatedEntity show_managing_entity(managing_entity_identifier, wink_version=wink_version, accept=accept)
 
 Show Managing Entity
 
@@ -524,7 +524,7 @@ Load single managing entity.
 
 ```python
 import wink_sdk_user_settings
-from wink_sdk_user_settings.models.managing_entity import ManagingEntity
+from wink_sdk_user_settings.models.managing_entity_authenticated_entity import ManagingEntityAuthenticatedEntity
 from wink_sdk_user_settings.rest import ApiException
 from pprint import pprint
 
@@ -571,7 +571,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ManagingEntity**](ManagingEntity.md)
+[**ManagingEntityAuthenticatedEntity**](ManagingEntityAuthenticatedEntity.md)
 
 ### Authorization
 

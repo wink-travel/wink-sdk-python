@@ -6,8 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Record identifier | 
-**engine_configuration_identifier** | **str** | The configuration identifier that was used during this call. | [optional] 
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session containing itinerary and other data by the user | 
+**customization_identifier** | **str** | The configuration identifier that was used during this call. | [optional] 
+**locale** | **str** |  | [optional] 
 
 ## Example
 

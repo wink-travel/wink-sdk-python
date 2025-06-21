@@ -1,6 +1,5 @@
 # ReviewUserAgent
 
-User details of creator of booking.
 
 ## Properties
 

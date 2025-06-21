@@ -1,6 +1,5 @@
 # BlackoutDateSupplier
 
-Exclude this promotion from specific date ranges.
 
 ## Properties
 

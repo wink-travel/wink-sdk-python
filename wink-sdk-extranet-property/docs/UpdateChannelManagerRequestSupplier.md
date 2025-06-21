@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rate_provider** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) |  | 
+**rate_provider** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) | Property&#39;s channel manager. Rate ownership is decided based on the channel manager selected. This can be both an enum and an identifier. | 
 
 ## Example
 

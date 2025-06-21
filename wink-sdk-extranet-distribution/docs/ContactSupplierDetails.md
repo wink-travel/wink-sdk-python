@@ -1,6 +1,5 @@
 # ContactSupplierDetails
 
-Contact details for reservations desk
 
 ## Properties
 

@@ -7,7 +7,6 @@ docs/CountResponseAffiliate.md
 docs/GenericErrorMessage.md
 docs/NotificationAffiliate.md
 docs/NotificationApi.md
-docs/NotificationViewAffiliate.md
 docs/ShowNotification400Response.md
 git_push.sh
 pyproject.toml
@@ -28,7 +27,6 @@ wink_sdk_notification/models/__init__.py
 wink_sdk_notification/models/count_response_affiliate.py
 wink_sdk_notification/models/generic_error_message.py
 wink_sdk_notification/models/notification_affiliate.py
-wink_sdk_notification/models/notification_view_affiliate.py
 wink_sdk_notification/models/show_notification400_response.py
 wink_sdk_notification/py.typed
 wink_sdk_notification/rest.py

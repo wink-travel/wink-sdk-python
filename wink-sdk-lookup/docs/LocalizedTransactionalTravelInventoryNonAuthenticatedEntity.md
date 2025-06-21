@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique transactional identifier | 
 **name** | **str** | Internal name of transactional blocking. | 
-**descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Localized descriptions describing blocking. | 
+**descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) |  | 
 **pricing_type** | **str** | How this blocking item should be priced. | 
-**price** | [**LocalizedPriceNonAuthenticatedEntity**](LocalizedPriceNonAuthenticatedEntity.md) |  | 
-**multimedias** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | List of images / videos of item. | [optional] 
+**price** | [**LocalizedPriceNonAuthenticatedEntity**](LocalizedPriceNonAuthenticatedEntity.md) | Localized price | 
+**multimedias** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) |  | [optional] 
 **min_pax** | **int** | Whether there is a limit to minimum group size. | [optional] 
 **max_pax** | **int** | Whether there is a limit to maximum group size. | [optional] 
 **offer_details** | [**List[LocalizedDescriptionNonAuthenticatedEntity]**](LocalizedDescriptionNonAuthenticatedEntity.md) | Localized offer details if rate plan discount applies. | [optional] 

@@ -19,15 +19,15 @@ Name | Type | Description | Notes
 **http10_compatible** | **bool** |  | [optional] 
 **expose_model_attributes** | **bool** |  | [optional] 
 **encoding_scheme** | **str** |  | [optional] 
-**status_code** | [**HttpStatusCodeNonAuthenticatedEntity**](HttpStatusCodeNonAuthenticatedEntity.md) |  | [optional] 
+**status_code** | [**RedirectViewNonAuthenticatedEntityStatusCode**](RedirectViewNonAuthenticatedEntityStatusCode.md) |  | [optional] 
 **expand_uri_template_variables** | **bool** |  | [optional] 
 **propagate_query_params** | **bool** |  | [optional] 
 **hosts** | **List[str]** |  | [optional] 
-**redirect_view** | **bool** |  | [optional] 
 **propagate_query_properties** | **bool** |  | [optional] 
+**redirect_view** | **bool** |  | [optional] 
+**attributes_csv** | **str** |  | [optional] 
 **attributes** | **Dict[str, str]** |  | [optional] 
 **attributes_map** | **Dict[str, object]** |  | [optional] 
-**attributes_csv** | **str** |  | [optional] 
 
 ## Example
 

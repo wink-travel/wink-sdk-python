@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 # **create_company**
-> CompanyViewAffiliate create_company(create_company_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate create_company(create_company_request_affiliate, wink_version=wink_version)
 
 Create Affiliate
 
@@ -39,7 +39,7 @@ Create a new affiliate
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.create_company_request_affiliate import CreateCompanyRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_company**
-> CompanyViewAffiliate remove_company(company_identifier, wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate remove_company(company_identifier, wink_version=wink_version, accept=accept)
 
 Delete Affiliate
 
@@ -203,7 +203,7 @@ Delete a company by identifier
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_my_account**
-> CompanyViewAffiliate remove_my_account(wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate remove_my_account(wink_version=wink_version, accept=accept)
 
 Delete Affiliate
 
@@ -286,7 +286,7 @@ Delete a company by identifier
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -331,7 +331,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_affiliates**
-> PageCompanyViewSupplier search_affiliates(state_supplier, wink_version=wink_version)
+> PageAffiliateAccountSupplier search_affiliates(state_supplier, wink_version=wink_version)
 
 Affiliate Search
 
@@ -367,7 +367,7 @@ Retrieve a paginated list of affiliates that you manage.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.page_company_view_supplier import PageCompanyViewSupplier
+from wink_sdk_affiliate.models.page_affiliate_account_supplier import PageAffiliateAccountSupplier
 from wink_sdk_affiliate.models.state_supplier import StateSupplier
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -413,7 +413,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageCompanyViewSupplier**](PageCompanyViewSupplier.md)
+[**PageAffiliateAccountSupplier**](PageAffiliateAccountSupplier.md)
 
 ### Authorization
 
@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_companies**
-> List[CompanyViewAffiliate] show_companies(type=type, wink_version=wink_version, accept=accept)
+> List[AffiliateAccountAffiliate] show_companies(type=type, wink_version=wink_version, accept=accept)
 
 Show Affiliates
 
@@ -616,7 +616,7 @@ List all companies owned by caller.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -663,7 +663,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[CompanyViewAffiliate]**](CompanyViewAffiliate.md)
+[**List[AffiliateAccountAffiliate]**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -687,7 +687,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_company**
-> CompanyViewAffiliate show_company(company_identifier, wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate show_company(company_identifier, wink_version=wink_version, accept=accept)
 
 Show Affiliate
 
@@ -699,7 +699,7 @@ Retrieve company by identifier
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -746,7 +746,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -770,7 +770,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_my_account**
-> CompanyViewAffiliate show_my_account(wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate show_my_account(wink_version=wink_version, accept=accept)
 
 Show My Account
 
@@ -782,7 +782,7 @@ Retrieve my own account on Wink
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -827,7 +827,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -934,7 +934,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company**
-> CompanyViewAffiliate update_company(company_identifier, upsert_company_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_company(company_identifier, upsert_company_request_affiliate, wink_version=wink_version)
 
 Update Affiliate
 
@@ -946,7 +946,7 @@ Update an existing company
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_request_affiliate import UpsertCompanyRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -994,7 +994,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1018,7 +1018,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company1**
-> CompanyViewAffiliate update_company1(company_identifier, upsert_company_status_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_company1(company_identifier, upsert_company_status_request_affiliate, wink_version=wink_version)
 
 Toggle Affiliate Status
 
@@ -1030,7 +1030,7 @@ Update company status
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_status_request_affiliate import UpsertCompanyStatusRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1078,7 +1078,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1102,7 +1102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company_address**
-> CompanyViewAffiliate update_company_address(company_identifier, upsert_address_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_company_address(company_identifier, upsert_address_request_affiliate, wink_version=wink_version)
 
 Update Affiliate Address
 
@@ -1114,7 +1114,7 @@ Updates company address.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_address_request_affiliate import UpsertAddressRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1162,7 +1162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1186,7 +1186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company_logo**
-> CompanyViewAffiliate update_company_logo(company_identifier, upsert_company_logo_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_company_logo(company_identifier, upsert_company_logo_request_affiliate, wink_version=wink_version)
 
 Update Affiliate Logo
 
@@ -1198,7 +1198,7 @@ Updates company logo.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_logo_request_affiliate import UpsertCompanyLogoRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1246,7 +1246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1270,7 +1270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_company_online_presence**
-> CompanyViewAffiliate update_company_online_presence(company_identifier, upsert_company_online_presence_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_company_online_presence(company_identifier, upsert_company_online_presence_request_affiliate, wink_version=wink_version)
 
 Update Affiliate Online Presence
 
@@ -1282,7 +1282,7 @@ Updates company online presence.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_online_presence_request_affiliate import UpsertCompanyOnlinePresenceRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1330,7 +1330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1354,7 +1354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_my_account**
-> CompanyViewAffiliate update_my_account(upsert_company_status_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_my_account(upsert_company_status_request_affiliate, wink_version=wink_version)
 
 Toggle My Account Status
 
@@ -1366,7 +1366,7 @@ Update company status
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_status_request_affiliate import UpsertCompanyStatusRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1412,7 +1412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1436,7 +1436,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_my_account_address**
-> CompanyViewAffiliate update_my_account_address(upsert_address_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_my_account_address(upsert_address_request_affiliate, wink_version=wink_version)
 
 Update My Account Address
 
@@ -1448,7 +1448,7 @@ Updates company address.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_address_request_affiliate import UpsertAddressRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1494,7 +1494,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1518,7 +1518,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_my_account_logo**
-> CompanyViewAffiliate update_my_account_logo(upsert_company_logo_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_my_account_logo(upsert_company_logo_request_affiliate, wink_version=wink_version)
 
 Update My Account Logo
 
@@ -1530,7 +1530,7 @@ Updates company logo.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_logo_request_affiliate import UpsertCompanyLogoRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1576,7 +1576,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -1600,7 +1600,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_my_account_online_presence**
-> CompanyViewAffiliate update_my_account_online_presence(upsert_company_online_presence_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_my_account_online_presence(upsert_company_online_presence_request_affiliate, wink_version=wink_version)
 
 Update My Account Online Presence
 
@@ -1612,7 +1612,7 @@ Updates company online presence.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_company_online_presence_request_affiliate import UpsertCompanyOnlinePresenceRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -1658,7 +1658,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 

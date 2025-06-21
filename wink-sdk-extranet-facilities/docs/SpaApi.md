@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **create_spa**
-> SpaViewSupplier create_spa(property_identifier, upsert_spa_request_supplier, wink_version=wink_version)
+> SpaSupplier create_spa(property_identifier, upsert_spa_request_supplier, wink_version=wink_version)
 
 Create Spa
 
@@ -27,7 +27,7 @@ Create a new spa
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.models.upsert_spa_request_supplier import UpsertSpaRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_multimedia**
-> SpaViewSupplier delete_multimedia(property_identifier, spa_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+> SpaSupplier delete_multimedia(property_identifier, spa_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
 
 Delete Multimedia
 
@@ -111,7 +111,7 @@ Remove media from an existing spa.
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_spa**
-> SpaViewSupplier remove_spa(property_identifier, spa_identifier, wink_version=wink_version, accept=accept)
+> SpaSupplier remove_spa(property_identifier, spa_identifier, wink_version=wink_version, accept=accept)
 
 Delete Spa
 
@@ -198,7 +198,7 @@ Delete a spa by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_spa**
-> SpaViewSupplier show_spa(property_identifier, spa_identifier, wink_version=wink_version, accept=accept)
+> SpaSupplier show_spa(property_identifier, spa_identifier, wink_version=wink_version, accept=accept)
 
 Show Spa
 
@@ -283,7 +283,7 @@ Retrieve a spa by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_spas**
-> List[SpaViewSupplier] show_spas(property_identifier, wink_version=wink_version, accept=accept)
+> List[SpaSupplier] show_spas(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Spas
 
@@ -451,7 +451,7 @@ Retrieve list of spas for property.
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SpaViewSupplier]**](SpaViewSupplier.md)
+[**List[SpaSupplier]**](SpaSupplier.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_spa**
-> SpaViewSupplier update_spa(property_identifier, spa_identifier, upsert_spa_request_supplier, wink_version=wink_version)
+> SpaSupplier update_spa(property_identifier, spa_identifier, upsert_spa_request_supplier, wink_version=wink_version)
 
 Update Spa
 
@@ -534,7 +534,7 @@ Update a spa by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.models.upsert_spa_request_supplier import UpsertSpaRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -584,7 +584,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_spa_media**
-> SpaViewSupplier upload_spa_media(property_identifier, spa_identifier, files)
+> SpaSupplier upload_spa_media(property_identifier, spa_identifier, files)
 
 Upload Binary Multimedia
 
@@ -620,7 +620,7 @@ Upload a list of binary / multipart videos and/or images to an existing spa.
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.spa_view_supplier import SpaViewSupplier
+from wink_sdk_extranet_facilities.models.spa_supplier import SpaSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SpaViewSupplier**](SpaViewSupplier.md)
+[**SpaSupplier**](SpaSupplier.md)
 
 ### Authorization
 

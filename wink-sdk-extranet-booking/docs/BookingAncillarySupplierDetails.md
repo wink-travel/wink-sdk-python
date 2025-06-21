@@ -1,6 +1,5 @@
 # BookingAncillarySupplierDetails
 
-Add-on records.
 
 ## Properties
 
@@ -13,7 +12,7 @@ Name | Type | Description | Notes
 **name** | **str** | Name of blocking | 
 **pricing_type** | **str** | Pricing type | 
 **type** | **str** | Inventory type | 
-**price** | [**LocalizedPriceSupplierDetails**](LocalizedPriceSupplierDetails.md) |  | 
+**price** | [**LocalizedPriceSupplierDetails**](LocalizedPriceSupplierDetails.md) | Pricing information for this ancillary. | 
 **start_date** | **datetime** | Date start time when reservation was made for. | 
 **end_date** | **datetime** | Date end time when reservation was made for. | 
 **attendees** | **int** | Number of guests that are part of this reservation. | [default to 1]
@@ -21,8 +20,8 @@ Name | Type | Description | Notes
 **image_url** | **str** | Absolute URL to image of blocking | 
 **localized_name** | **str** | Name of travel blocking in traveler language (if available). Defaults to English. | 
 **localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
-**contact** | [**ContactSupplierDetails**](ContactSupplierDetails.md) |  | 
-**address** | [**SimpleAddressSupplierDetails**](SimpleAddressSupplierDetails.md) |  | 
+**contact** | [**ContactSupplierDetails**](ContactSupplierDetails.md) | Travel blocking contact (if applicable) | 
+**address** | [**SimpleAddressSupplierDetails**](SimpleAddressSupplierDetails.md) | Travel blocking address (if applicable) | 
 **commissionable** | **bool** |  | 
 **mandatory** | **bool** |  | 
 **commission** | **float** |  | 

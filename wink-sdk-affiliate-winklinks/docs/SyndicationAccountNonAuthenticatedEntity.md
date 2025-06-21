@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **name** | **str** | The company name | 
 **description** | **str** | The company description | 
 **member_since** | **date** | When the company account was created | 
-**logo** | [**SimpleMultimediaNonAuthenticatedEntity**](SimpleMultimediaNonAuthenticatedEntity.md) |  | [optional] 
-**online_presence** | [**List[OnlinePresenceNonAuthenticatedEntity]**](OnlinePresenceNonAuthenticatedEntity.md) |  | [optional] 
+**logo** | [**SimpleMultimediaNonAuthenticatedEntity**](SimpleMultimediaNonAuthenticatedEntity.md) | The company ID | [optional] 
+**online_presence** | **List[object]** |  | [optional] 
 
 ## Example
 

@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **start_date** | **date** | Date when guest arrives on the premises. | 
 **end_date** | **date** | Date when guest departs the premises. Optional if nights is specified. | [optional] 
 **nights** | **int** | Date when guest departs the premises. Optional if endDate is specified. | [optional] 
-**room_configuration** | [**RoomConfigurationAuthenticatedEntity**](RoomConfigurationAuthenticatedEntity.md) |  | 
-**promotional_codes** | **List[str]** |  | [optional] 
+**room_configuration** | [**RoomConfigurationAuthenticatedEntity**](RoomConfigurationAuthenticatedEntity.md) | Room configuration is how the guest wants the room to support her accompanying guests. | 
+**promotional_codes** | **List[object]** |  | [optional] 
 **room_rate_identifier** | **str** | The unique master rate that made the guest room / rate plan available for sale. | 
 **bedroom_configuration_identifier** | **str** | Guest can optionally request a specific bedroom layout if the room type is set up with multiple layout choices. | [optional] 
-**ancillaries** | [**List[AncillaryRequestAuthenticatedEntity]**](AncillaryRequestAuthenticatedEntity.md) |  | [optional] 
+**ancillaries** | **List[object]** |  | [optional] 
 **special_requests** | **str** | A guest can send a special request to the hotel in free-text here. | [optional] 
-**user** | [**BookingUserRequestAuthenticatedEntity**](BookingUserRequestAuthenticatedEntity.md) |  | 
+**user** | [**BookingUserRequestAuthenticatedEntity**](BookingUserRequestAuthenticatedEntity.md) | User object contains details of the person that made the booking. | 
 **language** | **str** | User&#39;s language preference | [optional] 
 **currency** | **str** | User&#39;s currency preference | 
 **lifestyle** | **str** | Control which lifestyle the user used. | [optional] 

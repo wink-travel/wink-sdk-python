@@ -1,6 +1,5 @@
 # TravelAgentAgent
 
-Customize account with a custom logo / profile picture.
 
 ## Properties
 

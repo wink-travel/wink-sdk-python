@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **max_los** | **int** | Indicates the maximum length of stay. | [optional] 
 **min_age** | **int** | The minimum age to qualify for this rate plan. | [optional] 
 **max_age** | **int** | The maximum age to qualify for this rate plan. | [optional] 
-**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) | This can be a one-time fee such as a cleaning fee | [optional] 
+**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) |  | [optional] 
 **available_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **arrival_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **departure_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 **early_check_in_charge** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **late_check_out_charge** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **cancellation_policy_identifier** | **str** | The cancellation policy for this rate plan. | 
-**cancellation_policy_exceptions** | [**UpsertCancellationPolicyExceptionsSupplier**](UpsertCancellationPolicyExceptionsSupplier.md) |  | [optional] 
+**cancellation_policy_exceptions** | [**UpsertCancellationPolicyExceptionsSupplier**](UpsertCancellationPolicyExceptionsSupplier.md) | Allows a property to dynamically use another cancellation policy for a specific date range | [optional] 
 **single_occupancy_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **extra_pax_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **extra_child_rate_modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 

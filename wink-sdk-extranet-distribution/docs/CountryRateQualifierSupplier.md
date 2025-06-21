@@ -1,12 +1,11 @@
 # CountryRateQualifierSupplier
 
-Restrict promotion to specific countries. See [Geo-IP country geoname data](#operation/showCountries)
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**country** | [**GeoNameCountrySupplier**](GeoNameCountrySupplier.md) |  | 
+**country** | [**GeoNameCountrySupplier**](GeoNameCountrySupplier.md) | country to restrict on | 
 
 ## Example
 

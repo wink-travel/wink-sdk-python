@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **create_activity**
-> RecreationView create_activity(property_identifier, upsert_activity_request, wink_version=wink_version)
+> Activity create_activity(property_identifier, upsert_activity_request, wink_version=wink_version)
 
 Create Activity
 
@@ -26,7 +26,7 @@ Persist new activity record.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.models.upsert_activity_request import UpsertActivityRequest
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RecreationView**](RecreationView.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_activity**
-> RecreationView remove_activity(property_identifier, activity_identifier, wink_version=wink_version, accept=accept)
+> Activity remove_activity(property_identifier, activity_identifier, wink_version=wink_version, accept=accept)
 
 Delete Activity
 
@@ -110,7 +110,7 @@ Delete a activity by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RecreationView**](RecreationView.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_activities**
-> List[RecreationView] show_activities(property_identifier, wink_version=wink_version, accept=accept)
+> List[Activity] show_activities(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Activities
 
@@ -195,7 +195,7 @@ Retrieve list of activities for property.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RecreationView]**](RecreationView.md)
+[**List[Activity]**](Activity.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_activity**
-> RecreationView show_activity(property_identifier, activity_identifier, wink_version=wink_version, accept=accept)
+> Activity show_activity(property_identifier, activity_identifier, wink_version=wink_version, accept=accept)
 
 Show Activity
 
@@ -278,7 +278,7 @@ Retrieve activity record by its identifier.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RecreationView**](RecreationView.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_activity**
-> RecreationView update_activity(property_identifier, activity_identifier, upsert_activity_request, wink_version=wink_version)
+> Activity update_activity(property_identifier, activity_identifier, upsert_activity_request, wink_version=wink_version)
 
 Update Activity
 
@@ -446,7 +446,7 @@ Update a recreation by its identifier
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.models.upsert_activity_request import UpsertActivityRequest
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RecreationView**](RecreationView.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_activity_media**
-> RecreationView upload_activity_media(property_identifier, activity_identifier, files)
+> Activity upload_activity_media(property_identifier, activity_identifier, files)
 
 Upload Binary Multimedia
 
@@ -532,7 +532,7 @@ Upload a list of binary / multipart videos and/or images to an existing add-on.
 
 ```python
 import wink_sdk_extranet_experiences
-from wink_sdk_extranet_experiences.models.recreation_view import RecreationView
+from wink_sdk_extranet_experiences.models.activity import Activity
 from wink_sdk_extranet_experiences.rest import ApiException
 from pprint import pprint
 
@@ -579,7 +579,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RecreationView**](RecreationView.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 

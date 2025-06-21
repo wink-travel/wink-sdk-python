@@ -1,12 +1,14 @@
 # CancellationPolicySupplier
 
-Cancellation policy
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique cancellation policy identifier | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **hotel_identifier** | **str** | Property this cancellation is associated with | 
 **refundable** | **bool** | Whether this cancellation policy is refundable or not | [default to False]
 **advance_cancellation_free_of_charge** | **str** | When the cancellation policy is refundable, this flag can be set and indicates there is more rules involved than just a no-questions-asked refundable. | [optional] 

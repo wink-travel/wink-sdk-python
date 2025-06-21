@@ -1,6 +1,5 @@
 # SearchFiltersNonAuthenticatedEntity
 
-How user likes to have results displayed
 
 ## Properties
 

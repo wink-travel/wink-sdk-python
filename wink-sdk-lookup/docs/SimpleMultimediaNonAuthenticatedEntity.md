@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **identifier** | **str** | Use this identifier to communicate with Cloudinary. | 
 **type** | **str** | Whether Cloudinary media is a VIDEO or IMAGE. | 
 **source** | **str** | Currently ONLY using Cloudinary to store all image / video assets. | [default to 'CLOUDINARY']
-**sort** | **int** | Sort allows you to control how you want to sort this record in a list of media records. | [optional] [default to 999]
+**sort** | **int** | Sort allows you to control how you want to sort this record in a list of media records. | [default to 999]
 **angle** | **str** | Media angle | [optional] 
 **width** | **int** | Media width in pixels. | 
 **height** | **int** | Media height in pixels. | 

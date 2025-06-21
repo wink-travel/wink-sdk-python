@@ -6,8 +6,8 @@ Room Configuration
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**adults** | **int** | Number of adults | [optional] [default to 1]
-**children** | [**List[BookingItineraryRoomConfigurationChildBooker]**](BookingItineraryRoomConfigurationChildBooker.md) | Children configurations | [optional] 
+**adults** | **int** | Number of adults | [default to 1]
+**children** | [**List[BookingItineraryRoomConfigurationChildBooker]**](BookingItineraryRoomConfigurationChildBooker.md) |  | [optional] 
 
 ## Example
 

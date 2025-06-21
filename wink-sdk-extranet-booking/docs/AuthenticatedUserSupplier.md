@@ -1,6 +1,5 @@
 # AuthenticatedUserSupplier
 
-The authenticated user ID that made the request
 
 ## Properties
 

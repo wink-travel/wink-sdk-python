@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **share** | **bool** | Indicates whether the user wants to share this profile of themselves with hotel(s) | 
-**user** | [**ProfileUserNonAuthenticatedEntity**](ProfileUserNonAuthenticatedEntity.md) |  | 
-**personal** | [**PersonalNonAuthenticatedEntity**](PersonalNonAuthenticatedEntity.md) |  | 
-**preferences** | [**PreferencesNonAuthenticatedEntity**](PreferencesNonAuthenticatedEntity.md) |  | 
+**user** | [**ProfileUserNonAuthenticatedEntity**](ProfileUserNonAuthenticatedEntity.md) | User details | 
+**personal** | [**PersonalNonAuthenticatedEntity**](PersonalNonAuthenticatedEntity.md) | Detailed customer information for this profile | 
+**preferences** | [**PreferencesNonAuthenticatedEntity**](PreferencesNonAuthenticatedEntity.md) | Customer preferences | 
 
 ## Example
 

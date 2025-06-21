@@ -1,12 +1,11 @@
 # CancellationPolicyExceptionsAgent
 
-Allows a property to dynamically use another cancellation policy for a specific date range
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionAgent]**](CancellationPolicyExceptionAgent.md) | List of cancellation policy exceptions | 
+**list** | [**List[CancellationPolicyExceptionAgent]**](CancellationPolicyExceptionAgent.md) |  | 
 
 ## Example
 

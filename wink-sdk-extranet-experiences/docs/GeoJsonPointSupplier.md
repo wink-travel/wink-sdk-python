@@ -1,6 +1,5 @@
 # GeoJsonPointSupplier
 
-Geo-location point where blocking takes place. Defaults to location of property.
 
 ## Properties
 

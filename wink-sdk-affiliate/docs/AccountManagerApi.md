@@ -47,7 +47,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    company_identifier = 'hotel-1' # str | Company identifier for which to accept invite to
+    company_identifier = 'hotel-1' # str | AffiliateAccountLightweight identifier for which to accept invite to
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -67,7 +67,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Company identifier for which to accept invite to | 
+ **company_identifier** | **str**| AffiliateAccountLightweight identifier for which to accept invite to | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invite_manager**
-> CompanyViewAffiliate invite_manager(invite_manager_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate invite_manager(invite_manager_request_affiliate, wink_version=wink_version)
 
 Invite Manager
 
@@ -109,7 +109,7 @@ Invite user to be a manager for this company.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.invite_manager_request_affiliate import InviteManagerRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **reject_invite**
-> CompanyViewSupplier reject_invite(company_identifier, wink_version=wink_version, accept=accept)
+> AffiliateAccountSupplier reject_invite(company_identifier, wink_version=wink_version, accept=accept)
 
 Reject Invite
 
@@ -191,7 +191,7 @@ Remove manager by specified identifier
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_supplier import CompanyViewSupplier
+from wink_sdk_affiliate.models.affiliate_account_supplier import AffiliateAccountSupplier
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewSupplier**](CompanyViewSupplier.md)
+[**AffiliateAccountSupplier**](AffiliateAccountSupplier.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_company_user**
-> CompanyViewAffiliate remove_company_user(email, wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate remove_company_user(email, wink_version=wink_version, accept=accept)
 
 Remove Manager
 
@@ -274,7 +274,7 @@ Disassociate user from this company.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_manager_agency**
-> CompanyViewAffiliate remove_manager_agency(wink_version=wink_version, accept=accept)
+> AffiliateAccountAffiliate remove_manager_agency(wink_version=wink_version, accept=accept)
 
 Remove Managing Agency
 
@@ -357,7 +357,7 @@ Unset managing agency.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -402,7 +402,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_manager_agency**
-> CompanyViewAffiliate update_manager_agency(upsert_managed_by_agency_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate update_manager_agency(upsert_managed_by_agency_request_affiliate, wink_version=wink_version)
 
 Set Managing Agency
 
@@ -519,7 +519,7 @@ Indicates that the entity is managed by an another entity on the platform. This 
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.company_view_affiliate import CompanyViewAffiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.upsert_managed_by_agency_request_affiliate import UpsertManagedByAgencyRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
@@ -565,7 +565,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyViewAffiliate**](CompanyViewAffiliate.md)
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
 
 ### Authorization
 

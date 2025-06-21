@@ -1,6 +1,5 @@
 # StayDateRateQualifierSupplier
 
-Restrict promotion to specific stay dates the user wants to arrive.
 
 ## Properties
 

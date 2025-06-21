@@ -6,9 +6,9 @@ City search request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**geo_name_id** | **str** | GeoName identifier from the [https://geonames.org](https://geonames.org) dataset. | 
-**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) |  | 
-**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) |  | [optional] 
+**geo_name_id** | **str** | GeoNameLightweight identifier from the [https://geonames.org](https://geonames.org) dataset. | 
+**user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session is the current search state. SimpleDateTimeItinerary and other data points are all included here. | 
+**search_filters** | [**SearchFiltersNonAuthenticatedEntity**](SearchFiltersNonAuthenticatedEntity.md) | How user likes to have results displayed | [optional] 
 **page** | **int** | The page to paginate to. Note: Page uses a 0-based index. | [default to 0]
 **size** | **int** | The result size to return. | [default to 6]
 

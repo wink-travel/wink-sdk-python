@@ -1,13 +1,12 @@
 # RoomTypeWithPriceConfigurationsNonAuthenticatedEntity
 
-List of room types with price configurations based on the itinerary that was passed on the user session.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) |  | 
-**price_configurations** | [**List[RoomConfigurationPriceNonAuthenticatedEntity]**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | 
+**room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) | The room type. | 
+**price_configurations** | **List[object]** |  | 
 **available** | **bool** |  | [optional] 
 **lowest_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
 

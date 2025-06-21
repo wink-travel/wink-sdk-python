@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_announcement**
-> AnnouncementViewSupplier create_announcement(property_identifier, upsert_announcement_request_supplier, wink_version=wink_version)
+> AnnouncementSupplier create_announcement(property_identifier, upsert_announcement_request_supplier, wink_version=wink_version)
 
 Create Announcement
 
@@ -24,7 +24,7 @@ Create a new announcement
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.announcement_view_supplier import AnnouncementViewSupplier
+from wink_sdk_extranet_property.models.announcement_supplier import AnnouncementSupplier
 from wink_sdk_extranet_property.models.upsert_announcement_request_supplier import UpsertAnnouncementRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnnouncementViewSupplier**](AnnouncementViewSupplier.md)
+[**AnnouncementSupplier**](AnnouncementSupplier.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_announcement**
-> AnnouncementViewSupplier remove_announcement(property_identifier, announcement_identifier, wink_version=wink_version, accept=accept)
+> AnnouncementSupplier remove_announcement(property_identifier, announcement_identifier, wink_version=wink_version, accept=accept)
 
 Delete Announcement
 
@@ -108,7 +108,7 @@ Delete an announcement by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.announcement_view_supplier import AnnouncementViewSupplier
+from wink_sdk_extranet_property.models.announcement_supplier import AnnouncementSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnnouncementViewSupplier**](AnnouncementViewSupplier.md)
+[**AnnouncementSupplier**](AnnouncementSupplier.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_announcement**
-> AnnouncementViewSupplier show_announcement(property_identifier, announcement_identifier, wink_version=wink_version, accept=accept)
+> AnnouncementSupplier show_announcement(property_identifier, announcement_identifier, wink_version=wink_version, accept=accept)
 
 Show Announcement
 
@@ -193,7 +193,7 @@ Retrieve an announcement by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.announcement_view_supplier import AnnouncementViewSupplier
+from wink_sdk_extranet_property.models.announcement_supplier import AnnouncementSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnnouncementViewSupplier**](AnnouncementViewSupplier.md)
+[**AnnouncementSupplier**](AnnouncementSupplier.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_announcements**
-> List[AnnouncementViewSupplier] show_announcements(property_identifier, wink_version=wink_version, accept=accept)
+> List[AnnouncementSupplier] show_announcements(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Announcements
 
@@ -278,7 +278,7 @@ Retrieve list of announcements
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.announcement_view_supplier import AnnouncementViewSupplier
+from wink_sdk_extranet_property.models.announcement_supplier import AnnouncementSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[AnnouncementViewSupplier]**](AnnouncementViewSupplier.md)
+[**List[AnnouncementSupplier]**](AnnouncementSupplier.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_announcement**
-> AnnouncementViewSupplier update_announcement(property_identifier, announcement_identifier, upsert_announcement_request_supplier, wink_version=wink_version)
+> AnnouncementSupplier update_announcement(property_identifier, announcement_identifier, upsert_announcement_request_supplier, wink_version=wink_version)
 
 Update Announcement
 
@@ -361,7 +361,7 @@ Update an announcement by its identifier
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.announcement_view_supplier import AnnouncementViewSupplier
+from wink_sdk_extranet_property.models.announcement_supplier import AnnouncementSupplier
 from wink_sdk_extranet_property.models.upsert_announcement_request_supplier import UpsertAnnouncementRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnnouncementViewSupplier**](AnnouncementViewSupplier.md)
+[**AnnouncementSupplier**](AnnouncementSupplier.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**online_presence** | [**List[OnlinePresenceAffiliate]**](OnlinePresenceAffiliate.md) |  | [optional] 
+**online_presence** | **List[object]** |  | [optional] 
 
 ## Example
 

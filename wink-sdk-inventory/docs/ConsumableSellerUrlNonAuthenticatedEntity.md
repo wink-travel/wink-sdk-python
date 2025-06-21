@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **unique_id** | **str** | The URL ID that uniquely represents this link | [optional] 
 **twitter_account** | **str** | Optional X account ID | [optional] 
 **facebook_app_id** | **str** | Optional Facebook app ID | [optional] 
-**image** | [**SellerMediaNonAuthenticatedEntity**](SellerMediaNonAuthenticatedEntity.md) |  | [optional] 
-**video** | [**SellerMediaNonAuthenticatedEntity**](SellerMediaNonAuthenticatedEntity.md) |  | [optional] 
+**image** | [**SellerMediaNonAuthenticatedEntity**](SellerMediaNonAuthenticatedEntity.md) | The image you want to accompany this link | [optional] 
+**video** | [**SellerMediaNonAuthenticatedEntity**](SellerMediaNonAuthenticatedEntity.md) | The video you want to accompany this link | [optional] 
 **transact_url** | **str** | The transation url, or where to redirect to when clicking the CTA button. | [optional] 
 **supplier_identifier** | **str** | The owner ID of the inventory you want to sell | [optional] 
 **supplier_name** | **str** | The owner name of the inventory you want to sell | [optional] 
@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **city_name** | **str** | City where inventory is located | [optional] 
 **country_name** | **str** | Country where inventory is located | [optional] 
 **inventory_type** | **str** | Type of inventory | [optional] 
-**itinerary** | [**ItineraryNonAuthenticatedEntity**](ItineraryNonAuthenticatedEntity.md) |  | 
+**itinerary** | [**ItineraryNonAuthenticatedEntity**](ItineraryNonAuthenticatedEntity.md) | Dates and travel info. | 
 
 ## Example
 

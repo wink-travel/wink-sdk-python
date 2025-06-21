@@ -1,6 +1,5 @@
 # UpsertDynamicSellerListRequestAffiliate
 
-Contains the caller's search criteria.
 
 ## Properties
 
@@ -13,20 +12,20 @@ Name | Type | Description | Notes
 **hotel_categories** | **List[str]** | Supported OTA specification &#x60;PCT&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **architectural_styles** | **List[str]** | Supported OTA specification &#x60;ARC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **inventory_name** | **str** | Regex expression filter matching on blocking name | [optional] 
-**continents** | **List[str]** | Continent filter | [optional] 
-**countries** | **List[str]** | Country filter | [optional] 
-**cities** | **List[str]** | City filter | [optional] 
+**continents** | **List[object]** |  | [optional] 
+**countries** | **List[object]** |  | [optional] 
+**cities** | **List[object]** |  | [optional] 
 **show_eco_friendly** | **bool** | Filter on eco-friendly hotels | [optional] [default to False]
 **show_pet_friendly** | **bool** | Filter on pet-friendly hotels | [optional] [default to False]
 **show_child_friendly** | **bool** | Filter on child-friendly hotels | [optional] [default to False]
 **show_popular** | **bool** | Filter on hotel that has had a certain amount of bookings | [optional] [default to False]
 **show_direct_only** | **bool** | Filter on direct blocking | [optional] [default to False]
-**lifestyles** | **List[str]** | Filter on lifestyles | [optional] 
+**lifestyles** | **List[str]** |  | [optional] 
 **hotel_stars** | **int** | Filter on number of stars the hotel has. | [optional] 
 **aggregate_review_rating** | **int** | Filter on aggregate review score the hotel has | [optional] 
-**near_point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) |  | [optional] 
+**near_point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Find hotels close to certain location | [optional] 
 **radius_in_meters** | **int** | Use this in conjunction with &#x60;nearPoint&#x60;. Control the distance from point we are searching for. | [optional] 
-**inventory_types** | **List[str]** | Filter on blocking types | [optional] 
+**inventory_types** | **List[str]** |  | [optional] 
 **primary_order_by** | **str** | Control how you want the search results sorted. Options are:  - 1: Inventory name - 2: Price: High to low - 3: Price: Low to high - 4: Commission: High to low - 5: Commission: Low to high - 6: Discount: High to low - 7: Discount: Low to high  | [optional] 
 
 ## Example

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **create_cancellation_policy**
-> CancellationPolicyViewSupplier create_cancellation_policy(property_identifier, upsert_cancellation_policy_request_supplier, wink_version=wink_version)
+> CancellationPolicySupplier create_cancellation_policy(property_identifier, upsert_cancellation_policy_request_supplier, wink_version=wink_version)
 
 Create Cancellation Policy
 
@@ -25,7 +25,7 @@ Create a new cancellation policy
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.cancellation_policy_view_supplier import CancellationPolicyViewSupplier
+from wink_sdk_extranet_monetize.models.cancellation_policy_supplier import CancellationPolicySupplier
 from wink_sdk_extranet_monetize.models.upsert_cancellation_policy_request_supplier import UpsertCancellationPolicyRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CancellationPolicyViewSupplier**](CancellationPolicyViewSupplier.md)
+[**CancellationPolicySupplier**](CancellationPolicySupplier.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_cancellation_policy**
-> CancellationPolicyViewSupplier remove_cancellation_policy(property_identifier, cancellation_policy_identifier, wink_version=wink_version, accept=accept)
+> CancellationPolicySupplier remove_cancellation_policy(property_identifier, cancellation_policy_identifier, wink_version=wink_version, accept=accept)
 
 Delete Cancellation Policy
 
@@ -194,7 +194,7 @@ Delete a cancellation policy by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.cancellation_policy_view_supplier import CancellationPolicyViewSupplier
+from wink_sdk_extranet_monetize.models.cancellation_policy_supplier import CancellationPolicySupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CancellationPolicyViewSupplier**](CancellationPolicyViewSupplier.md)
+[**CancellationPolicySupplier**](CancellationPolicySupplier.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_cancellation_policy**
-> CancellationPolicyViewSupplier show_cancellation_policy(property_identifier, cancellation_policy_identifier, wink_version=wink_version, accept=accept)
+> CancellationPolicySupplier show_cancellation_policy(property_identifier, cancellation_policy_identifier, wink_version=wink_version, accept=accept)
 
 Show Cancellation Policy
 
@@ -279,7 +279,7 @@ Retrieve a cancellation policy by its identifier.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.cancellation_policy_view_supplier import CancellationPolicyViewSupplier
+from wink_sdk_extranet_monetize.models.cancellation_policy_supplier import CancellationPolicySupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CancellationPolicyViewSupplier**](CancellationPolicyViewSupplier.md)
+[**CancellationPolicySupplier**](CancellationPolicySupplier.md)
 
 ### Authorization
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_cancellation_policy_list**
-> List[CancellationPolicyViewSupplier] show_cancellation_policy_list(property_identifier, wink_version=wink_version, accept=accept)
+> List[CancellationPolicySupplier] show_cancellation_policy_list(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Cancellation Policies
 
@@ -364,7 +364,7 @@ Retrieve list of cancellation policies for property
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.cancellation_policy_view_supplier import CancellationPolicyViewSupplier
+from wink_sdk_extranet_monetize.models.cancellation_policy_supplier import CancellationPolicySupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[CancellationPolicyViewSupplier]**](CancellationPolicyViewSupplier.md)
+[**List[CancellationPolicySupplier]**](CancellationPolicySupplier.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_cancellation_policy**
-> CancellationPolicyViewSupplier update_cancellation_policy(property_identifier, cancellation_policy_identifier, upsert_cancellation_policy_request_supplier, wink_version=wink_version)
+> CancellationPolicySupplier update_cancellation_policy(property_identifier, cancellation_policy_identifier, upsert_cancellation_policy_request_supplier, wink_version=wink_version)
 
 Update Cancellation Policy
 
@@ -447,7 +447,7 @@ Update a cancellation policy by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.cancellation_policy_view_supplier import CancellationPolicyViewSupplier
+from wink_sdk_extranet_monetize.models.cancellation_policy_supplier import CancellationPolicySupplier
 from wink_sdk_extranet_monetize.models.upsert_cancellation_policy_request_supplier import UpsertCancellationPolicyRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CancellationPolicyViewSupplier**](CancellationPolicyViewSupplier.md)
+[**CancellationPolicySupplier**](CancellationPolicySupplier.md)
 
 ### Authorization
 

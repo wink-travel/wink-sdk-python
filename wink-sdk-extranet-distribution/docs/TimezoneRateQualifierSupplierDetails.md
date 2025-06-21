@@ -1,6 +1,5 @@
 # TimezoneRateQualifierSupplierDetails
 
-Restrict promotion to specific time zones. See [Geo-IP timezone geoname data](#operation/showTimezones)
 
 ## Properties
 

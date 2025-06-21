@@ -1,6 +1,5 @@
 # ExtraChargesNonAuthenticatedEntity
 
-Per rate plan level extra charges with localized prices
 
 ## Properties
 

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_promotion**
-> RateModifierViewSupplier create_promotion(property_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+> SpecialRateSupplier create_promotion(property_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
 
 Create Promotion
 
@@ -24,7 +24,7 @@ Create a new promotion
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_view_supplier import RateModifierViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
 from wink_sdk_extranet_monetize.models.upsert_rate_modifier_request_supplier import UpsertRateModifierRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierViewSupplier**](RateModifierViewSupplier.md)
+[**SpecialRateSupplier**](SpecialRateSupplier.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_rate_modifier**
-> RateModifierViewSupplier remove_rate_modifier(property_identifier, rate_modifier_identifier, wink_version=wink_version, accept=accept)
+> SpecialRateSupplier remove_rate_modifier(property_identifier, rate_modifier_identifier, wink_version=wink_version, accept=accept)
 
 Delete Promotion
 
@@ -108,7 +108,7 @@ Delete a promotion by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_view_supplier import RateModifierViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierViewSupplier**](RateModifierViewSupplier.md)
+[**SpecialRateSupplier**](SpecialRateSupplier.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_promotion**
-> RateModifierViewSupplier show_promotion(property_identifier, rate_modifier_identifier, wink_version=wink_version, accept=accept)
+> SpecialRateSupplier show_promotion(property_identifier, rate_modifier_identifier, wink_version=wink_version, accept=accept)
 
 Show Promotion
 
@@ -193,7 +193,7 @@ Retrieve a rate modifier by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_view_supplier import RateModifierViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierViewSupplier**](RateModifierViewSupplier.md)
+[**SpecialRateSupplier**](SpecialRateSupplier.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_promotions**
-> List[RateModifierViewSupplier] show_promotions(property_identifier, wink_version=wink_version, accept=accept)
+> List[SpecialRateSupplier] show_promotions(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Promotions
 
@@ -278,7 +278,7 @@ Retrieve list of promotions for property
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_view_supplier import RateModifierViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RateModifierViewSupplier]**](RateModifierViewSupplier.md)
+[**List[SpecialRateSupplier]**](SpecialRateSupplier.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_promotion**
-> RateModifierViewSupplier update_promotion(property_identifier, rate_modifier_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+> SpecialRateSupplier update_promotion(property_identifier, rate_modifier_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
 
 Update Promotion
 
@@ -361,7 +361,7 @@ Update an existing promotion by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_modifier_view_supplier import RateModifierViewSupplier
+from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
 from wink_sdk_extranet_monetize.models.upsert_rate_modifier_request_supplier import UpsertRateModifierRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RateModifierViewSupplier**](RateModifierViewSupplier.md)
+[**SpecialRateSupplier**](SpecialRateSupplier.md)
 
 ### Authorization
 

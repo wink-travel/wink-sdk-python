@@ -1,12 +1,11 @@
 # CancellationPolicyExceptionsSupplierDetails
 
-Allows a property to dynamically use another cancellation policy for a specific date range
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionSupplierDetails]**](CancellationPolicyExceptionSupplierDetails.md) | List of cancellation policy exceptions | 
+**list** | [**List[CancellationPolicyExceptionSupplierDetails]**](CancellationPolicyExceptionSupplierDetails.md) |  | 
 
 ## Example
 

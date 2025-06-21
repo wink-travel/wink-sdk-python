@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_inventory**
-> InventoryViewSupplier show_inventory(property_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
+> InventorySupplier show_inventory(property_identifier, inventory_identifier, wink_version=wink_version, accept=accept)
 
 Show Inventory
 
@@ -616,7 +616,7 @@ Retrieve blocking specified by identifier
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.inventory_view_supplier import InventoryViewSupplier
+from wink_sdk_extranet_distribution.models.inventory_supplier import InventorySupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InventoryViewSupplier**](InventoryViewSupplier.md)
+[**InventorySupplier**](InventorySupplier.md)
 
 ### Authorization
 
@@ -689,7 +689,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_inventory_list**
-> List[InventoryViewSupplier] show_inventory_list(property_identifier, wink_version=wink_version, accept=accept)
+> List[InventorySupplier] show_inventory_list(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Inventory List
 
@@ -701,7 +701,7 @@ Retrieve list of blocking for specified property
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.inventory_view_supplier import InventoryViewSupplier
+from wink_sdk_extranet_distribution.models.inventory_supplier import InventorySupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -748,7 +748,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[InventoryViewSupplier]**](InventoryViewSupplier.md)
+[**List[InventorySupplier]**](InventorySupplier.md)
 
 ### Authorization
 
@@ -1019,7 +1019,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_pageable_channel_inventory**
-> PageInventoryViewSupplier show_pageable_channel_inventory(property_identifier, state_supplier, wink_version=wink_version)
+> PageInventorySupplier show_pageable_channel_inventory(property_identifier, state_supplier, wink_version=wink_version)
 
 Search Inventory
 
@@ -1031,7 +1031,7 @@ Retrieve page of blocking for specified property.
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.page_inventory_view_supplier import PageInventoryViewSupplier
+from wink_sdk_extranet_distribution.models.page_inventory_supplier import PageInventorySupplier
 from wink_sdk_extranet_distribution.models.state_supplier import StateSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
@@ -1079,7 +1079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageInventoryViewSupplier**](PageInventoryViewSupplier.md)
+[**PageInventorySupplier**](PageInventorySupplier.md)
 
 ### Authorization
 
@@ -1188,7 +1188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **toggle_inventory_availability**
-> InventoryViewSupplier toggle_inventory_availability(property_identifier, inventory_identifier, inventory_update_request_supplier, wink_version=wink_version)
+> InventorySupplier toggle_inventory_availability(property_identifier, inventory_identifier, inventory_update_request_supplier, wink_version=wink_version)
 
 Update Inventory
 
@@ -1200,8 +1200,8 @@ Toggle blocking availability. Only used to enable / disable blocking.
 
 ```python
 import wink_sdk_extranet_distribution
+from wink_sdk_extranet_distribution.models.inventory_supplier import InventorySupplier
 from wink_sdk_extranet_distribution.models.inventory_update_request_supplier import InventoryUpdateRequestSupplier
-from wink_sdk_extranet_distribution.models.inventory_view_supplier import InventoryViewSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -1250,7 +1250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InventoryViewSupplier**](InventoryViewSupplier.md)
+[**InventorySupplier**](InventorySupplier.md)
 
 ### Authorization
 
@@ -1274,7 +1274,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **toggle_inventory_list_availability**
-> List[InventoryViewSupplier] toggle_inventory_list_availability(property_identifier, inventory_update_request_supplier, wink_version=wink_version)
+> List[InventorySupplier] toggle_inventory_list_availability(property_identifier, inventory_update_request_supplier, wink_version=wink_version)
 
 Update Inventory List
 
@@ -1286,8 +1286,8 @@ Toggle blocking list availability. Only used to enable / disable blocking.
 
 ```python
 import wink_sdk_extranet_distribution
+from wink_sdk_extranet_distribution.models.inventory_supplier import InventorySupplier
 from wink_sdk_extranet_distribution.models.inventory_update_request_supplier import InventoryUpdateRequestSupplier
-from wink_sdk_extranet_distribution.models.inventory_view_supplier import InventoryViewSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -1334,7 +1334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[InventoryViewSupplier]**](InventoryViewSupplier.md)
+[**List[InventorySupplier]**](InventorySupplier.md)
 
 ### Authorization
 

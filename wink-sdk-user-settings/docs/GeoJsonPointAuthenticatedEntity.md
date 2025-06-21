@@ -1,6 +1,5 @@
 # GeoJsonPointAuthenticatedEntity
 
-Geo-location
 
 ## Properties
 

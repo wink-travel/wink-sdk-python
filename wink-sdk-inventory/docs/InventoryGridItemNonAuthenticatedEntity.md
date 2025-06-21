@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **type** | **str** | The type of blocking this item represents. | 
 **identifier** | **str** | Unique blocking identifier | 
 **supplier_identifier** | **str** | Supplier identifier referencing blocking owner | 
-**activity** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**attraction** | [**AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**place** | [**PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**room_type** | [**HotelWithBestPriceNonAuthenticatedEntity**](HotelWithBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**meeting_room** | [**MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**restaurant** | [**RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**spa** | [**SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
-**add_on** | [**AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) |  | [optional] 
+**activity** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ACTIVITY&#x60; | [optional] 
+**attraction** | [**AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ATTRACTION&#x60; | [optional] 
+**place** | [**PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;PLACE&#x60; | [optional] 
+**room_type** | [**PropertyWithBestPriceNonAuthenticatedEntity**](PropertyWithBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;GUEST_ROOM&#x60; | [optional] 
+**meeting_room** | [**MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](MeetingRoomLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;MEETING_ROOM&#x60; | [optional] 
+**restaurant** | [**RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;RESTAURANT&#x60; | [optional] 
+**spa** | [**SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;SPA&#x60; | [optional] 
+**add_on** | [**AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ADD_ON&#x60; | [optional] 
 **available** | **bool** | Whether this blocking is available | [optional] 
 
 ## Example

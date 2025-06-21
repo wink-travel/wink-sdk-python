@@ -19,14 +19,14 @@ Method | HTTP request | Description
 [**update_general_manager**](PropertyApi.md#update_general_manager) | **PATCH** /api/property/{propertyIdentifier}/general-manager | Update General Manager
 [**update_hotel_status**](PropertyApi.md#update_hotel_status) | **PATCH** /api/property/{propertyIdentifier}/status | Update Property Status
 [**update_property_profile**](PropertyApi.md#update_property_profile) | **PATCH** /api/property/{propertyIdentifier}/profile | Update Property Profile
-[**update_reservations_desk**](PropertyApi.md#update_reservations_desk) | **PATCH** /api/property/{propertyIdentifier}/reservations-desk | Update Reservations Desk
+[**update_reservations_desk**](PropertyApi.md#update_reservations_desk) | **PATCH** /api/property/{propertyIdentifier}/contact-info | Update Reservations Desk
 [**update_services**](PropertyApi.md#update_services) | **PATCH** /api/property/{propertyIdentifier}/services | Update Property Services
 [**update_welcome_text**](PropertyApi.md#update_welcome_text) | **PATCH** /api/property/{propertyIdentifier}/welcome-text | Update Property Text
 [**upload_general_manager_profile_picture**](PropertyApi.md#upload_general_manager_profile_picture) | **POST** /api/property/{propertyIdentifier}/multimedia/general-manager/upload | Upload General Manager Image
 
 
 # **change_property_name**
-> HotelViewSupplier change_property_name(property_identifier, change_property_name_request_supplier, wink_version=wink_version)
+> PropertySupplier change_property_name(property_identifier, change_property_name_request_supplier, wink_version=wink_version)
 
 Change Property Name
 
@@ -39,7 +39,7 @@ Gives property owners a way to change the property name.
 ```python
 import wink_sdk_extranet_property
 from wink_sdk_extranet_property.models.change_property_name_request_supplier import ChangePropertyNameRequestSupplier
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -364,7 +364,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **property_search**
-> PageHotelViewSupplier property_search(state_supplier, wink_version=wink_version)
+> PagePropertySupplier property_search(state_supplier, wink_version=wink_version)
 
 Property Search
 
@@ -376,7 +376,7 @@ Retrieve a paginated list of  hotels you manage.
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.page_hotel_view_supplier import PageHotelViewSupplier
+from wink_sdk_extranet_property.models.page_property_supplier import PagePropertySupplier
 from wink_sdk_extranet_property.models.state_supplier import StateSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelViewSupplier**](PageHotelViewSupplier.md)
+[**PagePropertySupplier**](PagePropertySupplier.md)
 
 ### Authorization
 
@@ -446,7 +446,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotel_by_manager**
-> HotelViewSupplier show_hotel_by_manager(property_identifier, wink_version=wink_version, accept=accept)
+> PropertySupplier show_hotel_by_manager(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Property
 
@@ -458,7 +458,7 @@ Retrieve property by record ID
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -505,7 +505,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_hotels_by_manager**
-> List[HotelLightweightSupplier] show_hotels_by_manager(wink_version=wink_version, accept=accept)
+> List[PropertyLightweightSupplier] show_hotels_by_manager(wink_version=wink_version, accept=accept)
 
 Property List
 
@@ -624,7 +624,7 @@ Retrieve a list of all your hotels
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_lightweight_supplier import HotelLightweightSupplier
+from wink_sdk_extranet_property.models.property_lightweight_supplier import PropertyLightweightSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -669,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[HotelLightweightSupplier]**](HotelLightweightSupplier.md)
+[**List[PropertyLightweightSupplier]**](PropertyLightweightSupplier.md)
 
 ### Authorization
 
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_address**
-> HotelViewSupplier update_address(property_identifier, upsert_property_address_request_supplier, wink_version=wink_version)
+> PropertySupplier update_address(property_identifier, upsert_property_address_request_supplier, wink_version=wink_version)
 
 Update Property Address
 
@@ -957,7 +957,7 @@ Update address
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.upsert_property_address_request_supplier import UpsertPropertyAddressRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -1005,7 +1005,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1029,7 +1029,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_general_manager**
-> HotelViewSupplier update_general_manager(property_identifier, general_manager_supplier, wink_version=wink_version)
+> PropertySupplier update_general_manager(property_identifier, general_manager_supplier, wink_version=wink_version)
 
 Update General Manager
 
@@ -1042,7 +1042,7 @@ Update general manager information
 ```python
 import wink_sdk_extranet_property
 from wink_sdk_extranet_property.models.general_manager_supplier import GeneralManagerSupplier
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -1089,7 +1089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1113,7 +1113,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_hotel_status**
-> HotelViewSupplier update_hotel_status(property_identifier, update_external_hotel_status_request_supplier, wink_version=wink_version)
+> PropertySupplier update_hotel_status(property_identifier, update_external_hotel_status_request_supplier, wink_version=wink_version)
 
 Update Property Status
 
@@ -1125,7 +1125,7 @@ Update hotel status
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.update_external_hotel_status_request_supplier import UpdateExternalHotelStatusRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -1173,7 +1173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1197,7 +1197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_property_profile**
-> HotelViewSupplier update_property_profile(property_identifier, upsert_property_profile_request_supplier, wink_version=wink_version)
+> PropertySupplier update_property_profile(property_identifier, upsert_property_profile_request_supplier, wink_version=wink_version)
 
 Update Property Profile
 
@@ -1209,7 +1209,7 @@ Update basic property information
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.upsert_property_profile_request_supplier import UpsertPropertyProfileRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -1257,7 +1257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1281,7 +1281,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_reservations_desk**
-> HotelViewSupplier update_reservations_desk(property_identifier, upsert_reservations_desk_request_supplier, wink_version=wink_version)
+> PropertySupplier update_reservations_desk(property_identifier, upsert_contact_info_request_supplier, wink_version=wink_version)
 
 Update Reservations Desk
 
@@ -1293,8 +1293,8 @@ Manage reservation desk hours of operation and contact details.
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
-from wink_sdk_extranet_property.models.upsert_reservations_desk_request_supplier import UpsertReservationsDeskRequestSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
+from wink_sdk_extranet_property.models.upsert_contact_info_request_supplier import UpsertContactInfoRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -1316,12 +1316,12 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.PropertyApi(api_client)
     property_identifier = 'hotel-1' # str | Update important request for this property identifier
-    upsert_reservations_desk_request_supplier = wink_sdk_extranet_property.UpsertReservationsDeskRequestSupplier() # UpsertReservationsDeskRequestSupplier | 
+    upsert_contact_info_request_supplier = wink_sdk_extranet_property.UpsertContactInfoRequestSupplier() # UpsertContactInfoRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Reservations Desk
-        api_response = api_instance.update_reservations_desk(property_identifier, upsert_reservations_desk_request_supplier, wink_version=wink_version)
+        api_response = api_instance.update_reservations_desk(property_identifier, upsert_contact_info_request_supplier, wink_version=wink_version)
         print("The response of PropertyApi->update_reservations_desk:\n")
         pprint(api_response)
     except Exception as e:
@@ -1336,12 +1336,12 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update important request for this property identifier | 
- **upsert_reservations_desk_request_supplier** | [**UpsertReservationsDeskRequestSupplier**](UpsertReservationsDeskRequestSupplier.md)|  | 
+ **upsert_contact_info_request_supplier** | [**UpsertContactInfoRequestSupplier**](UpsertContactInfoRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1365,7 +1365,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_services**
-> HotelViewSupplier update_services(property_identifier, update_property_amenities_and_services_request_supplier, wink_version=wink_version)
+> PropertySupplier update_services(property_identifier, update_property_amenities_and_services_request_supplier, wink_version=wink_version)
 
 Update Property Services
 
@@ -1377,7 +1377,7 @@ Manage property amenity, accessibility and security features.
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.update_property_amenities_and_services_request_supplier import UpdatePropertyAmenitiesAndServicesRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -1425,7 +1425,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1449,7 +1449,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_welcome_text**
-> HotelViewSupplier update_welcome_text(property_identifier, upsert_welcome_text_request_supplier, wink_version=wink_version)
+> PropertySupplier update_welcome_text(property_identifier, upsert_welcome_text_request_supplier, wink_version=wink_version)
 
 Update Property Text
 
@@ -1461,7 +1461,7 @@ Update localized welcome text
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.models.upsert_welcome_text_request_supplier import UpsertWelcomeTextRequestSupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
@@ -1509,7 +1509,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -1533,7 +1533,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_general_manager_profile_picture**
-> HotelViewSupplier upload_general_manager_profile_picture(property_identifier, file)
+> PropertySupplier upload_general_manager_profile_picture(property_identifier, file)
 
 Upload General Manager Image
 
@@ -1545,7 +1545,7 @@ Uploads videos and/or images to the general manager profile associated with hote
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -1590,7 +1590,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **parking_access** | **str** | Indicates what type of parking is available at the property. | 
 **pets_allowed** | **bool** | Indicates whether pets are allowed on the property. Note: There are thousand different kinds of pets. Just because the property allows small dogs does not mean the guest can bring a python. Always best to check with property. | [default to False]
 **pet_max_weight_in_kilos** | **int** | If pets are allowed, property can further limit on weight. | [optional] 
-**pet_charge** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**pet_charge** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | If pets are allowed, property can tell travelers if there is a charge applicable for the pet. | [optional] 
 **check_out_time** | **str** | When the guest has to check out. | 
 **check_in_time** | **str** | When the guest can check in. | 
 

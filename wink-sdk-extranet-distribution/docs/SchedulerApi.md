@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_schedule_item**
-> ScheduleItemViewSupplier create_schedule_item(property_identifier, inventory_identifier, create_schedule_item_request_supplier, wink_version=wink_version)
+> ScheduleItemSupplier create_schedule_item(property_identifier, inventory_identifier, create_schedule_item_request_supplier, wink_version=wink_version)
 
 Create Scheduler Item
 
@@ -24,7 +24,7 @@ Create a calendar item for any travel inventorysuch as meeting room, restaurant,
 ```python
 import wink_sdk_extranet_distribution
 from wink_sdk_extranet_distribution.models.create_schedule_item_request_supplier import CreateScheduleItemRequestSupplier
-from wink_sdk_extranet_distribution.models.schedule_item_view_supplier import ScheduleItemViewSupplier
+from wink_sdk_extranet_distribution.models.schedule_item_supplier import ScheduleItemSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ScheduleItemViewSupplier**](ScheduleItemViewSupplier.md)
+[**ScheduleItemSupplier**](ScheduleItemSupplier.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_schedule_item**
-> ScheduleItemViewSupplier remove_schedule_item(property_identifier, inventory_identifier, identifier, wink_version=wink_version, accept=accept)
+> ScheduleItemSupplier remove_schedule_item(property_identifier, inventory_identifier, identifier, wink_version=wink_version, accept=accept)
 
 Delete Scheduler Item
 
@@ -109,7 +109,7 @@ Delete a calendar item for any travel inventorysuch as meeting room, restaurant,
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.schedule_item_view_supplier import ScheduleItemViewSupplier
+from wink_sdk_extranet_distribution.models.schedule_item_supplier import ScheduleItemSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ScheduleItemViewSupplier**](ScheduleItemViewSupplier.md)
+[**ScheduleItemSupplier**](ScheduleItemSupplier.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_schedule_items**
-> List[ScheduleItemViewSupplier] show_schedule_items(property_identifier, inventory_identifier, start, end, wink_version=wink_version, accept=accept)
+> List[ScheduleItemSupplier] show_schedule_items(property_identifier, inventory_identifier, start, end, wink_version=wink_version, accept=accept)
 
 Show Scheduler Items
 
@@ -196,7 +196,7 @@ Retrieve list of calendar items for a meeting room, restaurant, spa, activity, a
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.schedule_item_view_supplier import ScheduleItemViewSupplier
+from wink_sdk_extranet_distribution.models.schedule_item_supplier import ScheduleItemSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[ScheduleItemViewSupplier]**](ScheduleItemViewSupplier.md)
+[**List[ScheduleItemSupplier]**](ScheduleItemSupplier.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_schedule_item**
-> ScheduleItemViewSupplier update_schedule_item(property_identifier, inventory_identifier, identifier, update_schedule_item_request_supplier, wink_version=wink_version)
+> ScheduleItemSupplier update_schedule_item(property_identifier, inventory_identifier, identifier, update_schedule_item_request_supplier, wink_version=wink_version)
 
 Update Scheduler Item
 
@@ -285,7 +285,7 @@ Update an existing calendar item for any travel inventorysuch as meeting room, r
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.schedule_item_view_supplier import ScheduleItemViewSupplier
+from wink_sdk_extranet_distribution.models.schedule_item_supplier import ScheduleItemSupplier
 from wink_sdk_extranet_distribution.models.update_schedule_item_request_supplier import UpdateScheduleItemRequestSupplier
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ScheduleItemViewSupplier**](ScheduleItemViewSupplier.md)
+[**ScheduleItemSupplier**](ScheduleItemSupplier.md)
 
 ### Authorization
 

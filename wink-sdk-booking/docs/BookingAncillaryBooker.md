@@ -1,6 +1,5 @@
 # BookingAncillaryBooker
 
-Add-on records.
 
 ## Properties
 
@@ -13,7 +12,7 @@ Name | Type | Description | Notes
 **name** | **str** | Name of blocking | 
 **pricing_type** | **str** | Pricing type | 
 **type** | **str** | Inventory type | 
-**price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) |  | 
+**price** | [**LocalizedPriceBooker**](LocalizedPriceBooker.md) | Pricing information for this ancillary. | 
 **start_date** | **datetime** | Date start time when reservation was made for. | 
 **end_date** | **datetime** | Date end time when reservation was made for. | 
 **attendees** | **int** | Number of guests that are part of this reservation. | [default to 1]
@@ -21,8 +20,8 @@ Name | Type | Description | Notes
 **image_url** | **str** | Absolute URL to image of blocking | 
 **localized_name** | **str** | Name of travel blocking in traveler language (if available). Defaults to English. | 
 **localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
-**contact** | [**ContactBooker**](ContactBooker.md) |  | 
-**address** | [**SimpleAddressBooker**](SimpleAddressBooker.md) |  | 
+**contact** | [**ContactBooker**](ContactBooker.md) | Travel blocking contact (if applicable) | 
+**address** | [**SimpleAddressBooker**](SimpleAddressBooker.md) | Travel blocking address (if applicable) | 
 **commissionable** | **bool** |  | 
 **mandatory** | **bool** |  | 
 **commission** | **float** |  | 

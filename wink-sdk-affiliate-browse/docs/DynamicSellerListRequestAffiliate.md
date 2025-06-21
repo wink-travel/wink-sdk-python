@@ -6,7 +6,7 @@ Paginated search for travel blocking.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**UpsertDynamicSellerListRequestAffiliate**](UpsertDynamicSellerListRequestAffiliate.md) |  | 
+**list** | [**UpsertDynamicSellerListRequestAffiliate**](UpsertDynamicSellerListRequestAffiliate.md) | Contains the caller&#39;s search criteria. | 
 **page** | **int** | Which page to view out of total search results. | [default to 0]
 **size** | **int** | How many result set to return at the time. | [default to 24]
 **display_currency** | **str** | Which currency to display the prices in. | [optional] [default to 'USD']

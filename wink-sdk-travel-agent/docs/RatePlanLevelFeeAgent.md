@@ -1,13 +1,12 @@
 # RatePlanLevelFeeAgent
 
-What the guest is paying extra for
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **descriptions** | [**List[LocalizedDescriptionAgent]**](LocalizedDescriptionAgent.md) | List of localized descriptions for this fee. | 
-**fixed_amount** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
+**fixed_amount** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Rate plan level fixed fee amount in property currency | 
 **type** | **str** | Rate plan fee type | 
 
 ## Example

@@ -1,6 +1,5 @@
 # ProfileUserAgent
 
-User details
 
 ## Properties
 

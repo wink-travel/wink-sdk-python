@@ -5,12 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**profile_identifier** | **str** | Profile identifier | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **user_identifier** | **str** | User identifier | 
 **share** | **bool** | Indicates whether the user wants to share this profile of themselves with hotel(s) | 
-**user** | [**ProfileUserNonAuthenticatedEntity**](ProfileUserNonAuthenticatedEntity.md) |  | 
-**personal** | [**PersonalNonAuthenticatedEntity**](PersonalNonAuthenticatedEntity.md) |  | 
-**preferences** | [**PreferencesNonAuthenticatedEntity**](PreferencesNonAuthenticatedEntity.md) |  | 
+**user** | [**ProfileUserNonAuthenticatedEntity**](ProfileUserNonAuthenticatedEntity.md) | User details | 
+**personal** | [**PersonalNonAuthenticatedEntity**](PersonalNonAuthenticatedEntity.md) | Detailed customer information for this profile | 
+**preferences** | [**PreferencesNonAuthenticatedEntity**](PreferencesNonAuthenticatedEntity.md) | Customer preferences | 
 
 ## Example
 

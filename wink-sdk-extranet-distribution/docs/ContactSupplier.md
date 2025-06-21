@@ -1,6 +1,5 @@
 # ContactSupplier
 
-Venue contact person
 
 ## Properties
 

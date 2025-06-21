@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_rate_plan**
-> RatePlanViewSupplier create_rate_plan(property_identifier, upsert_rate_plan_request_supplier, wink_version=wink_version)
+> RatePlanSupplier create_rate_plan(property_identifier, upsert_rate_plan_request_supplier, wink_version=wink_version)
 
 Create Rate Plan
 
@@ -24,7 +24,7 @@ Create a new rate plan
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_plan_view_supplier import RatePlanViewSupplier
+from wink_sdk_extranet_monetize.models.rate_plan_supplier import RatePlanSupplier
 from wink_sdk_extranet_monetize.models.upsert_rate_plan_request_supplier import UpsertRatePlanRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RatePlanViewSupplier**](RatePlanViewSupplier.md)
+[**RatePlanSupplier**](RatePlanSupplier.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_rate_plan**
-> RatePlanViewSupplier remove_rate_plan(property_identifier, rate_plan_identifier, wink_version=wink_version, accept=accept)
+> RatePlanSupplier remove_rate_plan(property_identifier, rate_plan_identifier, wink_version=wink_version, accept=accept)
 
 Delete Rate Plan
 
@@ -108,7 +108,7 @@ Remove a rate plan by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_plan_view_supplier import RatePlanViewSupplier
+from wink_sdk_extranet_monetize.models.rate_plan_supplier import RatePlanSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RatePlanViewSupplier**](RatePlanViewSupplier.md)
+[**RatePlanSupplier**](RatePlanSupplier.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_rate_plan**
-> RatePlanViewSupplier show_rate_plan(property_identifier, rate_plan_identifier, wink_version=wink_version, accept=accept)
+> RatePlanSupplier show_rate_plan(property_identifier, rate_plan_identifier, wink_version=wink_version, accept=accept)
 
 Show Rate Plan
 
@@ -193,7 +193,7 @@ Retrieve a single rate plan identified by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_plan_view_supplier import RatePlanViewSupplier
+from wink_sdk_extranet_monetize.models.rate_plan_supplier import RatePlanSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RatePlanViewSupplier**](RatePlanViewSupplier.md)
+[**RatePlanSupplier**](RatePlanSupplier.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_rate_plans**
-> List[RatePlanViewSupplier] show_rate_plans(property_identifier, wink_version=wink_version, accept=accept)
+> List[RatePlanSupplier] show_rate_plans(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Rate Plans
 
@@ -278,7 +278,7 @@ Retrieve list of rate plans for property.
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_plan_view_supplier import RatePlanViewSupplier
+from wink_sdk_extranet_monetize.models.rate_plan_supplier import RatePlanSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RatePlanViewSupplier]**](RatePlanViewSupplier.md)
+[**List[RatePlanSupplier]**](RatePlanSupplier.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_rate_plan**
-> RatePlanViewSupplier update_rate_plan(property_identifier, rate_plan_identifier, upsert_rate_plan_request_supplier, wink_version=wink_version)
+> RatePlanSupplier update_rate_plan(property_identifier, rate_plan_identifier, upsert_rate_plan_request_supplier, wink_version=wink_version)
 
 Update Rate Plan
 
@@ -361,7 +361,7 @@ Update an existing rate plan by its identifier
 
 ```python
 import wink_sdk_extranet_monetize
-from wink_sdk_extranet_monetize.models.rate_plan_view_supplier import RatePlanViewSupplier
+from wink_sdk_extranet_monetize.models.rate_plan_supplier import RatePlanSupplier
 from wink_sdk_extranet_monetize.models.upsert_rate_plan_request_supplier import UpsertRatePlanRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RatePlanViewSupplier**](RatePlanViewSupplier.md)
+[**RatePlanSupplier**](RatePlanSupplier.md)
 
 ### Authorization
 

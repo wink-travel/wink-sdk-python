@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_test_booking**
-> BookingViewSupplierDetails create_test_booking(property_identifier, booking_test_request_supplier_details, wink_version=wink_version)
+> BookingSupplierDetails create_test_booking(property_identifier, booking_test_request_supplier_details, wink_version=wink_version)
 
 Test Rate / Availability
 
@@ -113,8 +113,8 @@ Test whether the rates and availability for a sales channel is coming backing th
 
 ```python
 import wink_sdk_extranet_distribution
+from wink_sdk_extranet_distribution.models.booking_supplier_details import BookingSupplierDetails
 from wink_sdk_extranet_distribution.models.booking_test_request_supplier_details import BookingTestRequestSupplierDetails
-from wink_sdk_extranet_distribution.models.booking_view_supplier_details import BookingViewSupplierDetails
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookingViewSupplierDetails**](BookingViewSupplierDetails.md)
+[**BookingSupplierDetails**](BookingSupplierDetails.md)
 
 ### Authorization
 

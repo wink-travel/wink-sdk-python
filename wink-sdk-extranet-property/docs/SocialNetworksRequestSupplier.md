@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[SocialSupplier]**](SocialSupplier.md) | List of social networks. | [optional] 
+**list** | [**List[SocialSupplier]**](SocialSupplier.md) |  | [optional] 
 
 ## Example
 

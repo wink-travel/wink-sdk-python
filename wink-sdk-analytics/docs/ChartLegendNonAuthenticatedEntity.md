@@ -1,12 +1,11 @@
 # ChartLegendNonAuthenticatedEntity
 
-The configuration options for the chart legend.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | **List[str]** |  | [optional] 
+**data** | **List[object]** |  | [optional] 
 
 ## Example
 

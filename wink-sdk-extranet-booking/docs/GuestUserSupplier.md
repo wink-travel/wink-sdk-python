@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **last_name** | **str** | Last name | 
 **email** | **str** | Email | 
 **telephone** | **str** | Telephone | [optional] 
-**profile** | [**ProfileSupplier**](ProfileSupplier.md) |  | [optional] 
+**profile** | [**ProfileLightweightSupplier**](ProfileLightweightSupplier.md) | Optional profile record | [optional] 
 **full_name** | **str** | Full name | [optional] [readonly] 
 
 ## Example

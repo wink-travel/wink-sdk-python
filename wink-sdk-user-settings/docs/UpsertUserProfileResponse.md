@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **first_name** | **str** | First name | 
 **last_name** | **str** | Last name | 
 **username** | **str** | Unique user email | 
-**profile_picture** | [**SimpleMultimedia**](SimpleMultimedia.md) |  | [optional] 
+**profile_picture** | [**SimpleMultimedia**](SimpleMultimedia.md) | Profile picture url that originates from a federated authentication system | [optional] 
 **profile_picture_url** | **str** | A fully qualified URL based on the Cloudinary identifier | [optional] 
 
 ## Example

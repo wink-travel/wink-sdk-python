@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **browse_suppliers**
-> PageHotelOnMapViewAffiliate browse_suppliers(state_affiliate, wink_version=wink_version)
+> PagePropertyAggregateLightweightAffiliate browse_suppliers(state_affiliate, wink_version=wink_version)
 
 Supplier Search
 
@@ -24,7 +24,7 @@ Retrieve page of available suppliers based on search criteria.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.page_hotel_on_map_view_affiliate import PageHotelOnMapViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.page_property_aggregate_lightweight_affiliate import PagePropertyAggregateLightweightAffiliate
 from wink_sdk_affiliate_sales_channel.models.state_affiliate import StateAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageHotelOnMapViewAffiliate**](PageHotelOnMapViewAffiliate.md)
+[**PagePropertyAggregateLightweightAffiliate**](PagePropertyAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_latest_supplier**
-> List[HotelOnMapViewAffiliate] show_latest_supplier(page=page, size=size, wink_version=wink_version, accept=accept)
+> List[PropertyAggregateLightweightAffiliate] show_latest_supplier(page=page, size=size, wink_version=wink_version, accept=accept)
 
 Recent Supplier List
 
@@ -106,7 +106,7 @@ Retrieves a list of recent suppliers.
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.hotel_on_map_view_affiliate import HotelOnMapViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.property_aggregate_lightweight_affiliate import PropertyAggregateLightweightAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[HotelOnMapViewAffiliate]**](HotelOnMapViewAffiliate.md)
+[**List[PropertyAggregateLightweightAffiliate]**](PropertyAggregateLightweightAffiliate.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_supplier**
-> HotelOnMapViewAffiliate show_supplier(supplier_identifier, wink_version=wink_version, accept=accept)
+> PropertyAggregateLightweightAffiliate show_supplier(supplier_identifier, wink_version=wink_version, accept=accept)
 
 Show Supplier
 
@@ -191,7 +191,7 @@ Retrieve supplier information specified by identifier
 
 ```python
 import wink_sdk_affiliate_sales_channel
-from wink_sdk_affiliate_sales_channel.models.hotel_on_map_view_affiliate import HotelOnMapViewAffiliate
+from wink_sdk_affiliate_sales_channel.models.property_aggregate_lightweight_affiliate import PropertyAggregateLightweightAffiliate
 from wink_sdk_affiliate_sales_channel.rest import ApiException
 from pprint import pprint
 
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelOnMapViewAffiliate**](HotelOnMapViewAffiliate.md)
+[**PropertyAggregateLightweightAffiliate**](PropertyAggregateLightweightAffiliate.md)
 
 ### Authorization
 

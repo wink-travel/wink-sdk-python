@@ -1,6 +1,5 @@
 # AdvanceBookingRateQualifierSupplier
 
-Restrict promotion to users who want to book in advance.
 
 ## Properties
 

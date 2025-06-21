@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **create_chart_request**
-> ChartRequestViewAuthenticatedEntity create_chart_request(upsert_chart_request_wrapper_authenticated_entity, wink_version=wink_version)
+> ChartAuthenticatedEntity create_chart_request(upsert_chart_request_authenticated_entity, wink_version=wink_version)
 
 Create Chart
 
@@ -26,8 +26,8 @@ Creates a new chart request.
 
 ```python
 import wink_sdk_analytics
-from wink_sdk_analytics.models.chart_request_view_authenticated_entity import ChartRequestViewAuthenticatedEntity
-from wink_sdk_analytics.models.upsert_chart_request_wrapper_authenticated_entity import UpsertChartRequestWrapperAuthenticatedEntity
+from wink_sdk_analytics.models.chart_authenticated_entity import ChartAuthenticatedEntity
+from wink_sdk_analytics.models.upsert_chart_request_authenticated_entity import UpsertChartRequestAuthenticatedEntity
 from wink_sdk_analytics.rest import ApiException
 from pprint import pprint
 
@@ -48,12 +48,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
-    upsert_chart_request_wrapper_authenticated_entity = wink_sdk_analytics.UpsertChartRequestWrapperAuthenticatedEntity() # UpsertChartRequestWrapperAuthenticatedEntity | 
+    upsert_chart_request_authenticated_entity = wink_sdk_analytics.UpsertChartRequestAuthenticatedEntity() # UpsertChartRequestAuthenticatedEntity | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Chart
-        api_response = api_instance.create_chart_request(upsert_chart_request_wrapper_authenticated_entity, wink_version=wink_version)
+        api_response = api_instance.create_chart_request(upsert_chart_request_authenticated_entity, wink_version=wink_version)
         print("The response of AnalyticsApi->create_chart_request:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,12 +67,12 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_chart_request_wrapper_authenticated_entity** | [**UpsertChartRequestWrapperAuthenticatedEntity**](UpsertChartRequestWrapperAuthenticatedEntity.md)|  | 
+ **upsert_chart_request_authenticated_entity** | [**UpsertChartRequestAuthenticatedEntity**](UpsertChartRequestAuthenticatedEntity.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**ChartRequestViewAuthenticatedEntity**](ChartRequestViewAuthenticatedEntity.md)
+[**ChartAuthenticatedEntity**](ChartAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_chart_request**
-> ChartRequestViewAuthenticatedEntity show_chart_request(chart_identifier, wink_version=wink_version, accept=accept)
+> ChartAuthenticatedEntity show_chart_request(chart_identifier, wink_version=wink_version, accept=accept)
 
 Show Chart
 
@@ -354,7 +354,7 @@ Displays a single chart request by identifier.
 
 ```python
 import wink_sdk_analytics
-from wink_sdk_analytics.models.chart_request_view_authenticated_entity import ChartRequestViewAuthenticatedEntity
+from wink_sdk_analytics.models.chart_authenticated_entity import ChartAuthenticatedEntity
 from wink_sdk_analytics.rest import ApiException
 from pprint import pprint
 
@@ -401,7 +401,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ChartRequestViewAuthenticatedEntity**](ChartRequestViewAuthenticatedEntity.md)
+[**ChartAuthenticatedEntity**](ChartAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_chart_requests**
-> List[ChartRequestViewAuthenticatedEntity] show_chart_requests(wink_version=wink_version, accept=accept)
+> List[ChartAuthenticatedEntity] show_chart_requests(wink_version=wink_version, accept=accept)
 
 Show Charts
 
@@ -437,7 +437,7 @@ Displays all charts for caller.
 
 ```python
 import wink_sdk_analytics
-from wink_sdk_analytics.models.chart_request_view_authenticated_entity import ChartRequestViewAuthenticatedEntity
+from wink_sdk_analytics.models.chart_authenticated_entity import ChartAuthenticatedEntity
 from wink_sdk_analytics.rest import ApiException
 from pprint import pprint
 
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[ChartRequestViewAuthenticatedEntity]**](ChartRequestViewAuthenticatedEntity.md)
+[**List[ChartAuthenticatedEntity]**](ChartAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -506,7 +506,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_chart_request**
-> ChartRequestViewAuthenticatedEntity update_chart_request(chart_identifier, upsert_chart_request_wrapper_authenticated_entity, wink_version=wink_version)
+> ChartAuthenticatedEntity update_chart_request(chart_identifier, upsert_chart_request_authenticated_entity, wink_version=wink_version)
 
 Update Chart
 
@@ -518,8 +518,8 @@ Updates an existing chart request by identifier.
 
 ```python
 import wink_sdk_analytics
-from wink_sdk_analytics.models.chart_request_view_authenticated_entity import ChartRequestViewAuthenticatedEntity
-from wink_sdk_analytics.models.upsert_chart_request_wrapper_authenticated_entity import UpsertChartRequestWrapperAuthenticatedEntity
+from wink_sdk_analytics.models.chart_authenticated_entity import ChartAuthenticatedEntity
+from wink_sdk_analytics.models.upsert_chart_request_authenticated_entity import UpsertChartRequestAuthenticatedEntity
 from wink_sdk_analytics.rest import ApiException
 from pprint import pprint
 
@@ -541,12 +541,12 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
     chart_identifier = 'chart-1' # str | Chart identifier
-    upsert_chart_request_wrapper_authenticated_entity = wink_sdk_analytics.UpsertChartRequestWrapperAuthenticatedEntity() # UpsertChartRequestWrapperAuthenticatedEntity | 
+    upsert_chart_request_authenticated_entity = wink_sdk_analytics.UpsertChartRequestAuthenticatedEntity() # UpsertChartRequestAuthenticatedEntity | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Chart
-        api_response = api_instance.update_chart_request(chart_identifier, upsert_chart_request_wrapper_authenticated_entity, wink_version=wink_version)
+        api_response = api_instance.update_chart_request(chart_identifier, upsert_chart_request_authenticated_entity, wink_version=wink_version)
         print("The response of AnalyticsApi->update_chart_request:\n")
         pprint(api_response)
     except Exception as e:
@@ -561,12 +561,12 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **chart_identifier** | **str**| Chart identifier | 
- **upsert_chart_request_wrapper_authenticated_entity** | [**UpsertChartRequestWrapperAuthenticatedEntity**](UpsertChartRequestWrapperAuthenticatedEntity.md)|  | 
+ **upsert_chart_request_authenticated_entity** | [**UpsertChartRequestAuthenticatedEntity**](UpsertChartRequestAuthenticatedEntity.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**ChartRequestViewAuthenticatedEntity**](ChartRequestViewAuthenticatedEntity.md)
+[**ChartAuthenticatedEntity**](ChartAuthenticatedEntity.md)
 
 ### Authorization
 

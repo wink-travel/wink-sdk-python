@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**point** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) |  | 
+**point** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | New location for property. | 
 
 ## Example
 

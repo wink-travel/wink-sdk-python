@@ -1,6 +1,5 @@
 # ChannelNameSupplierDetails
 
-Channel owner of blocking
 
 ## Properties
 

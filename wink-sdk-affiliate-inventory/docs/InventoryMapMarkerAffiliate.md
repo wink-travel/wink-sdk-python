@@ -7,14 +7,13 @@ Inventory map marker
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **channel_inventory_identifier** | **str** | Identifier of the list, channel inventory or search | 
-**point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) |  | 
+**point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Location of blocking | 
 **supplier_identifier** | **str** | Hotel identifier | 
 **supplier_name** | **str** | Hotel name | 
-**supplier_url_name** | **str** | Hotel url name | 
 **inventory_identifier** | **str** | Actual blocking identifier | 
 **inventory_type** | **str** | Type of blocking | 
 **inventory_name** | **str** | Name of blocking | 
-**lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
+**lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Lowest price of blocking in desired currency | 
 
 ## Example
 

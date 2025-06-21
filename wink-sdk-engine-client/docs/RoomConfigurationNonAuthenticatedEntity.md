@@ -7,7 +7,7 @@ Room Configuration
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adults** | **int** | Number of adults | [default to 1]
-**children** | [**List[ChildNonAuthenticatedEntity]**](ChildNonAuthenticatedEntity.md) | Children configurations | [optional] 
+**children** | [**List[ChildNonAuthenticatedEntity]**](ChildNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

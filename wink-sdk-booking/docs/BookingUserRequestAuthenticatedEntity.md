@@ -1,6 +1,5 @@
 # BookingUserRequestAuthenticatedEntity
 
-User object contains details of the person that made the booking.
 
 ## Properties
 

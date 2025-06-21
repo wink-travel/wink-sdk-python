@@ -1,6 +1,5 @@
 # ManagedByEntitySupplier
 
-If another company entity is managing this property, on behalf of the property, it can be specified here and the managing entity would be applicable a management fee on every booking.
 
 ## Properties
 
@@ -9,7 +8,7 @@ Name | Type | Description | Notes
 **identifier** | **str** | Entity identifier | 
 **name** | **str** | Name of entity | 
 **commission_in_percent** | **float** | Agency commission | 
-**rules** | [**ManagedByEntityRulesSupplier**](ManagedByEntityRulesSupplier.md) |  | [optional] 
+**rules** | [**ManagedByEntityRulesSupplier**](ManagedByEntityRulesSupplier.md) | Optional rules for expiration date etc when agency is no longer managing this entity. | [optional] 
 **valid** | **bool** | Whether managing entity is eligible a commission. | [optional] [readonly] 
 
 ## Example

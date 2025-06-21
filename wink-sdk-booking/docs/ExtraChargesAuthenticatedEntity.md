@@ -1,6 +1,5 @@
 # ExtraChargesAuthenticatedEntity
 
-Rate plan-level extra charges
 
 ## Properties
 

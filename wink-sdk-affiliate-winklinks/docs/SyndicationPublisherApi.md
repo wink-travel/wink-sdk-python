@@ -8,20 +8,20 @@ Method | HTTP request | Description
 [**create_syndication_category**](SyndicationPublisherApi.md#create_syndication_category) | **POST** /api/syndication/category | Create WinkLinks Category
 [**create_syndication_entry**](SyndicationPublisherApi.md#create_syndication_entry) | **POST** /api/syndication/entry | Create WinkLinks Entry
 [**remove_syndication_category**](SyndicationPublisherApi.md#remove_syndication_category) | **DELETE** /api/syndication/category/{syndicationCategoryIdentifier} | Delete WinkLinks Category
-[**remove_syndication_entry**](SyndicationPublisherApi.md#remove_syndication_entry) | **DELETE** /api/syndication/entry/{syndicationEntryIdentifier} | Delete WinkLinks Entry
+[**remove_syndication_entry**](SyndicationPublisherApi.md#remove_syndication_entry) | **DELETE** /api/syndication/entry/{syndicatedItemIdentifier} | Delete WinkLinks Entry
 [**show_syndication_category**](SyndicationPublisherApi.md#show_syndication_category) | **GET** /api/syndication/category/{syndicationCategoryIdentifier} | Show WinkLinks Category
 [**show_syndication_category_list**](SyndicationPublisherApi.md#show_syndication_category_list) | **GET** /api/syndication/category/list | Show WinkLinks Categories
-[**show_syndication_entry**](SyndicationPublisherApi.md#show_syndication_entry) | **GET** /api/syndication/entry/{syndicationEntryIdentifier} | Show WinkLinks Entry
+[**show_syndication_entry**](SyndicationPublisherApi.md#show_syndication_entry) | **GET** /api/syndication/entry/{syndicatedItemIdentifier} | Show WinkLinks Entry
 [**show_syndication_entry_list**](SyndicationPublisherApi.md#show_syndication_entry_list) | **GET** /api/syndication/entry/list | Show WinkLinks Entries
 [**show_syndication_settings**](SyndicationPublisherApi.md#show_syndication_settings) | **GET** /api/syndication/settings | Show WinkLinks Settings
 [**sort_syndication_entry_list**](SyndicationPublisherApi.md#sort_syndication_entry_list) | **PATCH** /api/syndication/entry/list/sort | Sort WinkLink Entries
 [**update_syndication_category**](SyndicationPublisherApi.md#update_syndication_category) | **PUT** /api/syndication/category/{syndicationCategoryIdentifier} | Update WinkLinks Category
-[**update_syndication_entry**](SyndicationPublisherApi.md#update_syndication_entry) | **PUT** /api/syndication/entry/{syndicationEntryIdentifier} | Update WinkLinks Entry
+[**update_syndication_entry**](SyndicationPublisherApi.md#update_syndication_entry) | **PUT** /api/syndication/entry/{syndicatedItemIdentifier} | Update WinkLinks Entry
 [**upsert_syndication_settings**](SyndicationPublisherApi.md#upsert_syndication_settings) | **PUT** /api/syndication/settings | Upsert WinkLinks Settings
 
 
 # **consume_external_url_for_syndication_entry**
-> UpsertSyndicationEntryAffiliate consume_external_url_for_syndication_entry(consume_external_url_request_affiliate, wink_version=wink_version)
+> UpsertSyndicatedItemAffiliate consume_external_url_for_syndication_entry(consume_external_url_request_affiliate, wink_version=wink_version)
 
 Consume External URL
 
@@ -34,7 +34,7 @@ Utility method for reading Open Graph data from an external URL.
 ```python
 import wink_sdk_affiliate_winklinks
 from wink_sdk_affiliate_winklinks.models.consume_external_url_request_affiliate import ConsumeExternalUrlRequestAffiliate
-from wink_sdk_affiliate_winklinks.models.upsert_syndication_entry_affiliate import UpsertSyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.upsert_syndicated_item_affiliate import UpsertSyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UpsertSyndicationEntryAffiliate**](UpsertSyndicationEntryAffiliate.md)
+[**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_syndication_entry**
-> SyndicationEntryAffiliate create_syndication_entry(upsert_syndication_entry_affiliate, wink_version=wink_version)
+> SyndicatedItemAffiliate create_syndication_entry(upsert_syndicated_item_affiliate, wink_version=wink_version)
 
 Create WinkLinks Entry
 
@@ -197,8 +197,8 @@ Creates a new syndication entry.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
-from wink_sdk_affiliate_winklinks.models.upsert_syndication_entry_affiliate import UpsertSyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
+from wink_sdk_affiliate_winklinks.models.upsert_syndicated_item_affiliate import UpsertSyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -219,12 +219,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
-    upsert_syndication_entry_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicationEntryAffiliate() # UpsertSyndicationEntryAffiliate | Request body
+    upsert_syndicated_item_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicatedItemAffiliate() # UpsertSyndicatedItemAffiliate | Request body
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create WinkLinks Entry
-        api_response = api_instance.create_syndication_entry(upsert_syndication_entry_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_syndication_entry(upsert_syndicated_item_affiliate, wink_version=wink_version)
         print("The response of SyndicationPublisherApi->create_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -238,12 +238,12 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_syndication_entry_affiliate** | [**UpsertSyndicationEntryAffiliate**](UpsertSyndicationEntryAffiliate.md)| Request body | 
+ **upsert_syndicated_item_affiliate** | [**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)| Request body | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -350,7 +350,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_syndication_entry**
-> SyndicationEntryAffiliate remove_syndication_entry(syndication_entry_identifier, wink_version=wink_version, accept=accept)
+> SyndicatedItemAffiliate remove_syndication_entry(syndicated_item_identifier, wink_version=wink_version, accept=accept)
 
 Delete WinkLinks Entry
 
@@ -362,7 +362,7 @@ Deletes a syndication entry.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -383,13 +383,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
-    syndication_entry_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
+    syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Delete WinkLinks Entry
-        api_response = api_instance.remove_syndication_entry(syndication_entry_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.remove_syndication_entry(syndicated_item_identifier, wink_version=wink_version, accept=accept)
         print("The response of SyndicationPublisherApi->remove_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -403,13 +403,13 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **syndication_entry_identifier** | **str**| Syndication entry identifier. | 
+ **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_entry**
-> SyndicationEntryAffiliate show_syndication_entry(syndication_entry_identifier, wink_version=wink_version, accept=accept)
+> SyndicatedItemAffiliate show_syndication_entry(syndicated_item_identifier, wink_version=wink_version, accept=accept)
 
 Show WinkLinks Entry
 
@@ -609,7 +609,7 @@ Retrieve syndication entry.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -630,13 +630,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
-    syndication_entry_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
+    syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show WinkLinks Entry
-        api_response = api_instance.show_syndication_entry(syndication_entry_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_syndication_entry(syndicated_item_identifier, wink_version=wink_version, accept=accept)
         print("The response of SyndicationPublisherApi->show_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -650,13 +650,13 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **syndication_entry_identifier** | **str**| Syndication entry identifier. | 
+ **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -680,7 +680,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_entry_list**
-> List[SyndicationEntryAffiliate] show_syndication_entry_list(wink_version=wink_version, accept=accept)
+> List[SyndicatedItemAffiliate] show_syndication_entry_list(wink_version=wink_version, accept=accept)
 
 Show WinkLinks Entries
 
@@ -692,7 +692,7 @@ Retrieve list of syndication entries.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -737,7 +737,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SyndicationEntryAffiliate]**](SyndicationEntryAffiliate.md)
+[**List[SyndicatedItemAffiliate]**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -842,7 +842,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sort_syndication_entry_list**
-> List[SyndicationEntryAffiliate] sort_syndication_entry_list(sorted_affiliate, wink_version=wink_version)
+> List[SyndicatedItemAffiliate] sort_syndication_entry_list(sorted_affiliate, wink_version=wink_version)
 
 Sort WinkLink Entries
 
@@ -855,7 +855,7 @@ Re-sorts all list entries.
 ```python
 import wink_sdk_affiliate_winklinks
 from wink_sdk_affiliate_winklinks.models.sorted_affiliate import SortedAffiliate
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -900,7 +900,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SyndicationEntryAffiliate]**](SyndicationEntryAffiliate.md)
+[**List[SyndicatedItemAffiliate]**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 
@@ -1008,7 +1008,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_syndication_entry**
-> SyndicationEntryAffiliate update_syndication_entry(syndication_entry_identifier, upsert_syndication_entry_affiliate, wink_version=wink_version)
+> SyndicatedItemAffiliate update_syndication_entry(syndicated_item_identifier, upsert_syndicated_item_affiliate, wink_version=wink_version)
 
 Update WinkLinks Entry
 
@@ -1020,8 +1020,8 @@ Updates an existing syndication entry.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_entry_affiliate import SyndicationEntryAffiliate
-from wink_sdk_affiliate_winklinks.models.upsert_syndication_entry_affiliate import UpsertSyndicationEntryAffiliate
+from wink_sdk_affiliate_winklinks.models.syndicated_item_affiliate import SyndicatedItemAffiliate
+from wink_sdk_affiliate_winklinks.models.upsert_syndicated_item_affiliate import UpsertSyndicatedItemAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -1042,13 +1042,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
-    syndication_entry_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
-    upsert_syndication_entry_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicationEntryAffiliate() # UpsertSyndicationEntryAffiliate | Request body
+    syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
+    upsert_syndicated_item_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicatedItemAffiliate() # UpsertSyndicatedItemAffiliate | Request body
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update WinkLinks Entry
-        api_response = api_instance.update_syndication_entry(syndication_entry_identifier, upsert_syndication_entry_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_syndication_entry(syndicated_item_identifier, upsert_syndicated_item_affiliate, wink_version=wink_version)
         print("The response of SyndicationPublisherApi->update_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -1062,13 +1062,13 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **syndication_entry_identifier** | **str**| Syndication entry identifier. | 
- **upsert_syndication_entry_affiliate** | [**UpsertSyndicationEntryAffiliate**](UpsertSyndicationEntryAffiliate.md)| Request body | 
+ **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
+ **upsert_syndicated_item_affiliate** | [**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)| Request body | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SyndicationEntryAffiliate**](SyndicationEntryAffiliate.md)
+[**SyndicatedItemAffiliate**](SyndicatedItemAffiliate.md)
 
 ### Authorization
 

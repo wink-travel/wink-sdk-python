@@ -1,6 +1,5 @@
 # KeyValuePairAffiliate
 
-Optional user categories
 
 ## Properties
 

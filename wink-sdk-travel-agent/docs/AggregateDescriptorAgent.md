@@ -1,6 +1,5 @@
 # AggregateDescriptorAgent
 
-Primitive aggregate data points
 
 ## Properties
 

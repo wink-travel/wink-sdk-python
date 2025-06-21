@@ -6,7 +6,7 @@ Wrapper to query for multiple property inventories
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[HotelInventoryRequestNonAuthenticatedEntity]**](HotelInventoryRequestNonAuthenticatedEntity.md) |  | 
+**list** | **List[object]** |  | 
 
 ## Example
 

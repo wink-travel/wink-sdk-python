@@ -5,7 +5,7 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_restaurant**](RestaurantApi.md#create_restaurant) | **POST** /api/property/{propertyIdentifier}/facility/restaurant | Create Restaurant
-[**remove_multimedia**](RestaurantApi.md#remove_multimedia) | **DELETE** /api/property/{propertyIdentifier}/facility/restaurant/{restaurantIdentifier}/multimedia/{multimediaIdentifier} | Delete Multimedia
+[**remove_multimedia1**](RestaurantApi.md#remove_multimedia1) | **DELETE** /api/property/{propertyIdentifier}/facility/restaurant/{restaurantIdentifier}/multimedia/{multimediaIdentifier} | Delete Multimedia
 [**remove_restaurant**](RestaurantApi.md#remove_restaurant) | **DELETE** /api/property/{propertyIdentifier}/facility/restaurant/{restaurantIdentifier} | Delete Restaurant
 [**show_restaurant**](RestaurantApi.md#show_restaurant) | **GET** /api/property/{propertyIdentifier}/facility/restaurant/{restaurantIdentifier} | Show Restaurant
 [**show_restaurant_pairs**](RestaurantApi.md#show_restaurant_pairs) | **GET** /api/property/{propertyIdentifier}/facility/restaurant/list/pair | Show Reference Pairs
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **create_restaurant**
-> RestaurantViewSupplier create_restaurant(property_identifier, upsert_restaurant_request_supplier, wink_version=wink_version)
+> RestaurantSupplier create_restaurant(property_identifier, upsert_restaurant_request_supplier, wink_version=wink_version)
 
 Create Restaurant
 
@@ -27,7 +27,7 @@ Create a new restaurant
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.models.upsert_restaurant_request_supplier import UpsertRestaurantRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -98,8 +98,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **remove_multimedia**
-> RestaurantViewSupplier remove_multimedia(property_identifier, restaurant_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+# **remove_multimedia1**
+> RestaurantSupplier remove_multimedia1(property_identifier, restaurant_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
 
 Delete Multimedia
 
@@ -111,7 +111,7 @@ Remove media from an existing restaurant.
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -140,11 +140,11 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 
     try:
         # Delete Multimedia
-        api_response = api_instance.remove_multimedia(property_identifier, restaurant_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
-        print("The response of RestaurantApi->remove_multimedia:\n")
+        api_response = api_instance.remove_multimedia1(property_identifier, restaurant_identifier, multimedia_identifier, wink_version=wink_version, accept=accept)
+        print("The response of RestaurantApi->remove_multimedia1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RestaurantApi->remove_multimedia: %s\n" % e)
+        print("Exception when calling RestaurantApi->remove_multimedia1: %s\n" % e)
 ```
 
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_restaurant**
-> RestaurantViewSupplier remove_restaurant(property_identifier, restaurant_identifier, wink_version=wink_version, accept=accept)
+> RestaurantSupplier remove_restaurant(property_identifier, restaurant_identifier, wink_version=wink_version, accept=accept)
 
 Delete Restaurant
 
@@ -198,7 +198,7 @@ Remove a restaurant by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_restaurant**
-> RestaurantViewSupplier show_restaurant(property_identifier, restaurant_identifier, wink_version=wink_version, accept=accept)
+> RestaurantSupplier show_restaurant(property_identifier, restaurant_identifier, wink_version=wink_version, accept=accept)
 
 Show Restaurant
 
@@ -283,7 +283,7 @@ Retrieve a restaurant by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_restaurants**
-> List[RestaurantViewSupplier] show_restaurants(property_identifier, wink_version=wink_version, accept=accept)
+> List[RestaurantSupplier] show_restaurants(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Restaurants
 
@@ -451,7 +451,7 @@ Retrieve list of restaurants for property.
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[RestaurantViewSupplier]**](RestaurantViewSupplier.md)
+[**List[RestaurantSupplier]**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_restaurant**
-> RestaurantViewSupplier update_restaurant(property_identifier, restaurant_identifier, upsert_restaurant_request_supplier, wink_version=wink_version)
+> RestaurantSupplier update_restaurant(property_identifier, restaurant_identifier, upsert_restaurant_request_supplier, wink_version=wink_version)
 
 Update Restaurant
 
@@ -534,7 +534,7 @@ Update a restaurant by its identifier
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.models.upsert_restaurant_request_supplier import UpsertRestaurantRequestSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
@@ -584,7 +584,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_restaurant_media**
-> RestaurantViewSupplier upload_restaurant_media(property_identifier, restaurant_identifier, files)
+> RestaurantSupplier upload_restaurant_media(property_identifier, restaurant_identifier, files)
 
 Upload Binary Multimedia
 
@@ -620,7 +620,7 @@ Upload a list of binary / multipart videos and/or images to an existing restaura
 
 ```python
 import wink_sdk_extranet_facilities
-from wink_sdk_extranet_facilities.models.restaurant_view_supplier import RestaurantViewSupplier
+from wink_sdk_extranet_facilities.models.restaurant_supplier import RestaurantSupplier
 from wink_sdk_extranet_facilities.rest import ApiException
 from pprint import pprint
 
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestaurantViewSupplier**](RestaurantViewSupplier.md)
+[**RestaurantSupplier**](RestaurantSupplier.md)
 
 ### Authorization
 

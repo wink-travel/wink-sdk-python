@@ -1,13 +1,15 @@
 # InventorySupplier
 
-Inventory data
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Inventory identifier | 
-**sales_channel** | [**SalesChannelSupplier**](SalesChannelSupplier.md) |  | 
+**id** | **str** | Document UUID | [optional] 
+**created_date** | **datetime** | Datetime this record was first created | [optional] 
+**last_update** | **datetime** | Datetime this record was last updated | [optional] 
+**version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
+**sales_channel** | [**SalesChannelLightweightSupplier**](SalesChannelLightweightSupplier.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
 **inventory_identifier** | **str** | Inventory type identifier | 
 **inventory_name** | **str** | Name of blocking as hotel is seeing it | 
@@ -15,14 +17,13 @@ Name | Type | Description | Notes
 **enabled** | **bool** | Whether this blocking is enabled or not | [default to True]
 **image_identifier** | **str** | Main image of blocking | 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
-**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) |  | 
-**address** | [**AddressSupplier**](AddressSupplier.md) |  | 
+**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Location | 
+**address** | [**InventoryAddressSupplier**](InventoryAddressSupplier.md) | Defaults to property address. | 
 **quantity** | **int** | quantity | [default to 0]
 **commissionable** | **bool** | Whether this is commissionable or not | [default to False]
 **bookable** | **bool** | Whether blocking can be booked | [default to True]
-**lowest_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**hotel** | [**HotelOnMapSupplier**](HotelOnMapSupplier.md) |  | 
+**lowest_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary | [optional] 
+**lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary in platform currency | [optional] 
 
 ## Example
 

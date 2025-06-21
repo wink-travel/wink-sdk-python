@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_status_code** | **str** | Via OTA spec: 1 &#x3D; Active, 6 &#x3D; Inactive. This status can be changed by the hotel. | [optional] 
+**status** | **str** | Via OTA spec: 1 &#x3D; Active, 6 &#x3D; Inactive. This status can be changed by the hotel. | [optional] 
 
 ## Example
 

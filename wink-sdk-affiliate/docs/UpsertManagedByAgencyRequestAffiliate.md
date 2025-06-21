@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **managing_entity_identifier** | **str** | Existing user account managingEntityIdentifier to make manager | 
 **commission_in_percent** | **float** | Agency commission | 
-**rules** | [**ManagedByEntityRulesAffiliate**](ManagedByEntityRulesAffiliate.md) |  | [optional] 
+**rules** | [**ManagedByEntityRulesAffiliate**](ManagedByEntityRulesAffiliate.md) | Optional rules for expiration date etc when agency is no longer managing this entity. | [optional] 
 
 ## Example
 

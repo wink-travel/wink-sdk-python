@@ -21,8 +21,8 @@ Name | Type | Description | Notes
 **last_update** | **datetime** |  | 
 **travel_agent** | [**TravelAgentSupplier**](TravelAgentSupplier.md) |  | 
 **owner_image_id** | **str** | The company image ID | 
-**online_presence** | [**List[OnlinePresenceSupplier]**](OnlinePresenceSupplier.md) |  | [optional] 
-**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**online_presence** | **List[object]** |  | [optional] 
+**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
 
 ## Example
 

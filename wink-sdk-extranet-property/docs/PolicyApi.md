@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **create_policy**
-> HotelViewSupplier create_policy(property_identifier, property_policy_supplier, wink_version=wink_version)
+> PropertySupplier create_policy(property_identifier, property_policy_supplier, wink_version=wink_version)
 
 Create property policy
 
@@ -22,8 +22,8 @@ Creates the initial property policy record for the hotel.
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
 from wink_sdk_extranet_property.models.property_policy_supplier import PropertyPolicySupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_property_policy**
-> HotelViewSupplier update_property_policy(property_identifier, property_policy_supplier, wink_version=wink_version)
+> PropertySupplier update_property_policy(property_identifier, property_policy_supplier, wink_version=wink_version)
 
 Update property policy
 
@@ -189,8 +189,8 @@ Update property policy record for the hotel.
 
 ```python
 import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.hotel_view_supplier import HotelViewSupplier
 from wink_sdk_extranet_property.models.property_policy_supplier import PropertyPolicySupplier
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
 from wink_sdk_extranet_property.rest import ApiException
 from pprint import pprint
 
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HotelViewSupplier**](HotelViewSupplier.md)
+[**PropertySupplier**](PropertySupplier.md)
 
 ### Authorization
 
