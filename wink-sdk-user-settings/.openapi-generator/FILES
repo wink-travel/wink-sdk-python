@@ -51,11 +51,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_inventory_address_authenticated_entity.py
-test/test_managing_entity_authenticated_entity.py
-test/test_sales_channel_lightweight_authenticated_entity.py
-test/test_special_rate_bundle_lightweight_authenticated_entity.py
-test/test_special_rate_lightweight_authenticated_entity.py
 tox.ini
 wink_sdk_user_settings/__init__.py
 wink_sdk_user_settings/api/__init__.py

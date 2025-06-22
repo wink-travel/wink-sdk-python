@@ -43,11 +43,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_country_lightweight_supplier.py
-test/test_geo_name_lightweight_supplier.py
-test/test_property_supplier.py
-test/test_sub_country_lightweight_supplier.py
-test/test_sub_sub_country_lightweight_supplier.py
 tox.ini
 wink_sdk_extranet_property_register/__init__.py
 wink_sdk_extranet_property_register/api/__init__.py

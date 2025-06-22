@@ -33,13 +33,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_country_lightweight_non_authenticated_entity.py
-test/test_geo_ip_lightweight_non_authenticated_entity.py
-test/test_geo_name_lightweight_non_authenticated_entity.py
-test/test_page_quote_non_authenticated_entity.py
-test/test_quote_lightweight_non_authenticated_entity.py
-test/test_sub_country_lightweight_non_authenticated_entity.py
-test/test_sub_sub_country_lightweight_non_authenticated_entity.py
 tox.ini
 wink_sdk_reference/__init__.py
 wink_sdk_reference/api/__init__.py

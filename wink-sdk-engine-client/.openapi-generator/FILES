@@ -17,8 +17,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_customization_client_non_authenticated_entity.py
-test/test_customization_theme_colors_non_authenticated_entity.py
 tox.ini
 wink_sdk_engine_client/__init__.py
 wink_sdk_engine_client/api/__init__.py
