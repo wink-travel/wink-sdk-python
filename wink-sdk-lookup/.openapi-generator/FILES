@@ -64,12 +64,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_cancellation_policy_lightweight_non_authenticated_entity.py
-test/test_lookup_lightweight_non_authenticated_entity.py
-test/test_page_property_with_best_price_non_authenticated_entity.py
-test/test_property_aggregate_lightweight_non_authenticated_entity.py
-test/test_property_with_best_price_non_authenticated_entity.py
-test/test_quote_lightweight_non_authenticated_entity.py
 tox.ini
 wink_sdk_lookup/__init__.py
 wink_sdk_lookup/api/__init__.py

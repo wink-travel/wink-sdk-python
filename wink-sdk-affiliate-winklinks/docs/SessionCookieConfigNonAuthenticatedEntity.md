@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**domain** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
 **path** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
 **attributes** | **Dict[str, str]** |  | [optional] 
 **comment** | **str** |  | [optional] 
-**http_only** | **bool** |  | [optional] 
+**domain** | **str** |  | [optional] 
 **secure** | **bool** |  | [optional] 
 **max_age** | **int** |  | [optional] 
+**http_only** | **bool** |  | [optional] 
 
 ## Example
 

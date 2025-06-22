@@ -25,8 +25,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_channel_manager_property.py
-test/test_page_channel_manager_property.py
 tox.ini
 wink_sdk_channel_manager/__init__.py
 wink_sdk_channel_manager/api/__init__.py
