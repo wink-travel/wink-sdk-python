@@ -5,19 +5,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**default_content_type** | **str** |  | [optional] 
+**page_encoding** | **str** |  | [optional] 
+**deferred_syntax_allowed_as_literal** | **str** |  | [optional] 
 **scripting_invalid** | **str** |  | [optional] 
 **include_preludes** | **List[str]** |  | [optional] 
 **include_codas** | **List[str]** |  | [optional] 
 **trim_directive_whitespaces** | **str** |  | [optional] 
 **error_on_undeclared_namespace** | **str** |  | [optional] 
-**page_encoding** | **str** |  | [optional] 
-**deferred_syntax_allowed_as_literal** | **str** |  | [optional] 
 **buffer** | **str** |  | [optional] 
+**is_xml** | **str** |  | [optional] 
+**url_patterns** | **List[str]** |  | [optional] 
 **el_ignored** | **str** |  | [optional] 
 **error_on_el_not_found** | **str** |  | [optional] 
-**default_content_type** | **str** |  | [optional] 
-**url_patterns** | **List[str]** |  | [optional] 
-**is_xml** | **str** |  | [optional] 
 
 ## Example
 

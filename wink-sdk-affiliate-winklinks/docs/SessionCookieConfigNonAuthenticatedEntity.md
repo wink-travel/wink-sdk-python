@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **path** | **str** |  | [optional] 
+**domain** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
 **attributes** | **Dict[str, str]** |  | [optional] 
 **comment** | **str** |  | [optional] 
-**domain** | **str** |  | [optional] 
 **secure** | **bool** |  | [optional] 
 **max_age** | **int** |  | [optional] 
 **http_only** | **bool** |  | [optional] 
