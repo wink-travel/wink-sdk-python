@@ -27,6 +27,7 @@ docs/ImageAttributionAffiliate.md
 docs/InventoryLinksApi.md
 docs/InventoryMapAffiliate.md
 docs/InventoryMapMarkerAffiliate.md
+docs/ItemsApi.md
 docs/KeyValuePairAffiliate.md
 docs/LookupLightweightAffiliate.md
 docs/MapsApi.md
@@ -35,7 +36,6 @@ docs/RankedGridsApi.md
 docs/RoomConfigurationAffiliate.md
 docs/SellableInventoryUrlAffiliate.md
 docs/SellableItemAffiliate.md
-docs/SellableItemsApi.md
 docs/SellableListAffiliate.md
 docs/SellableRankedListAffiliate.md
 docs/SellableSupplierUrlAffiliate.md
@@ -69,9 +69,9 @@ wink_sdk_affiliate_inventory/api/customization_api.py
 wink_sdk_affiliate_inventory/api/embeddable_inventories_api.py
 wink_sdk_affiliate_inventory/api/grids_api.py
 wink_sdk_affiliate_inventory/api/inventory_links_api.py
+wink_sdk_affiliate_inventory/api/items_api.py
 wink_sdk_affiliate_inventory/api/maps_api.py
 wink_sdk_affiliate_inventory/api/ranked_grids_api.py
-wink_sdk_affiliate_inventory/api/sellable_items_api.py
 wink_sdk_affiliate_inventory/api/supplier_links_api.py
 wink_sdk_affiliate_inventory/api_client.py
 wink_sdk_affiliate_inventory/api_response.py

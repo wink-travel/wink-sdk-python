@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **create_seller_inventory_item**
-> SellerInventoryItemViewAffiliate create_seller_inventory_item(upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellableItemAffiliate create_seller_inventory_item(upsert_sellable_item_request_affiliate, wink_version=wink_version)
 
 Create Item
 
@@ -27,8 +27,8 @@ Create a new inventory card
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_seller_inventory_item_request_affiliate import UpsertSellerInventoryItemRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_item_request_affiliate import UpsertSellableItemRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -49,12 +49,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    upsert_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryItemRequestAffiliate() # UpsertSellerInventoryItemRequestAffiliate | 
+    upsert_sellable_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableItemRequestAffiliate() # UpsertSellableItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Item
-        api_response = api_instance.create_seller_inventory_item(upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_item(upsert_sellable_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -68,12 +68,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_seller_inventory_item_request_affiliate** | [**UpsertSellerInventoryItemRequestAffiliate**](UpsertSellerInventoryItemRequestAffiliate.md)|  | 
+ **upsert_sellable_item_request_affiliate** | [**UpsertSellableItemRequestAffiliate**](UpsertSellableItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SellerInventoryItemViewAffiliate**](SellerInventoryItemViewAffiliate.md)
+[**SellableItemAffiliate**](SellableItemAffiliate.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_seller_inventory_item_syndication_entry**
-> BooleanResponseAffiliate create_seller_inventory_item_syndication_entry(create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
+> BooleanResponseAffiliate create_seller_inventory_item_syndication_entry(create_sellable_item_syndicated_item_request_affiliate, wink_version=wink_version)
 
 Add to WinkLinks
 
@@ -110,7 +110,7 @@ Creates a new WinkLinks entry from the specified item ID.
 ```python
 import wink_sdk_affiliate_inventory
 from wink_sdk_affiliate_inventory.models.boolean_response_affiliate import BooleanResponseAffiliate
-from wink_sdk_affiliate_inventory.models.create_seller_inventory_item_syndication_entry_request_affiliate import CreateSellerInventoryItemSyndicationEntryRequestAffiliate
+from wink_sdk_affiliate_inventory.models.create_sellable_item_syndicated_item_request_affiliate import CreateSellableItemSyndicatedItemRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -131,12 +131,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    create_seller_inventory_item_syndication_entry_request_affiliate = wink_sdk_affiliate_inventory.CreateSellerInventoryItemSyndicationEntryRequestAffiliate() # CreateSellerInventoryItemSyndicationEntryRequestAffiliate | 
+    create_sellable_item_syndicated_item_request_affiliate = wink_sdk_affiliate_inventory.CreateSellableItemSyndicatedItemRequestAffiliate() # CreateSellableItemSyndicatedItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Add to WinkLinks
-        api_response = api_instance.create_seller_inventory_item_syndication_entry(create_seller_inventory_item_syndication_entry_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_seller_inventory_item_syndication_entry(create_sellable_item_syndicated_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_seller_inventory_item_syndication_entry:\n")
         pprint(api_response)
     except Exception as e:
@@ -150,7 +150,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_seller_inventory_item_syndication_entry_request_affiliate** | [**CreateSellerInventoryItemSyndicationEntryRequestAffiliate**](CreateSellerInventoryItemSyndicationEntryRequestAffiliate.md)|  | 
+ **create_sellable_item_syndicated_item_request_affiliate** | [**CreateSellableItemSyndicatedItemRequestAffiliate**](CreateSellableItemSyndicatedItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_supplier_seller_inventory_item**
-> SellerInventoryItemViewAffiliate create_supplier_seller_inventory_item(upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellableItemAffiliate create_supplier_seller_inventory_item(upsert_supplier_sellable_item_request_affiliate, wink_version=wink_version)
 
 Create Supplier Item
 
@@ -191,8 +191,8 @@ Creates a new inventory card for a supplier showing the best priced room.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_supplier_seller_inventory_item_request_affiliate import UpsertSupplierSellerInventoryItemRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_supplier_sellable_item_request_affiliate import UpsertSupplierSellableItemRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -213,12 +213,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
-    upsert_supplier_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierSellerInventoryItemRequestAffiliate() # UpsertSupplierSellerInventoryItemRequestAffiliate | 
+    upsert_supplier_sellable_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierSellableItemRequestAffiliate() # UpsertSupplierSellableItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Supplier Item
-        api_response = api_instance.create_supplier_seller_inventory_item(upsert_supplier_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_supplier_seller_inventory_item(upsert_supplier_sellable_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->create_supplier_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -232,12 +232,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_supplier_seller_inventory_item_request_affiliate** | [**UpsertSupplierSellerInventoryItemRequestAffiliate**](UpsertSupplierSellerInventoryItemRequestAffiliate.md)|  | 
+ **upsert_supplier_sellable_item_request_affiliate** | [**UpsertSupplierSellableItemRequestAffiliate**](UpsertSupplierSellableItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SellerInventoryItemViewAffiliate**](SellerInventoryItemViewAffiliate.md)
+[**SellableItemAffiliate**](SellableItemAffiliate.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_seller_inventory_item**
-> SellerInventoryItemViewAffiliate remove_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
+> SellableItemAffiliate remove_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
 
 Delete Item
 
@@ -273,7 +273,7 @@ Remove a unique inventory item
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryItemViewAffiliate**](SellerInventoryItemViewAffiliate.md)
+[**SellableItemAffiliate**](SellableItemAffiliate.md)
 
 ### Authorization
 
@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_item**
-> SellerInventoryItemViewAffiliate show_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
+> SellableItemAffiliate show_seller_inventory_item(inventory_identifier, wink_version=wink_version, accept=accept)
 
 Show Item
 
@@ -439,7 +439,7 @@ Retrieve a single inventory card.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryItemViewAffiliate**](SellerInventoryItemViewAffiliate.md)
+[**SellableItemAffiliate**](SellableItemAffiliate.md)
 
 ### Authorization
 
@@ -510,7 +510,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_seller_inventory_items_for_company**
-> List[SellerInventoryItemViewAffiliate] show_seller_inventory_items_for_company(wink_version=wink_version, accept=accept)
+> List[SellableItemAffiliate] show_seller_inventory_items_for_company(wink_version=wink_version, accept=accept)
 
 Show Items
 
@@ -522,7 +522,7 @@ Retrieve a list of all saved inventories for company.
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -567,7 +567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[SellerInventoryItemViewAffiliate]**](SellerInventoryItemViewAffiliate.md)
+[**List[SellableItemAffiliate]**](SellableItemAffiliate.md)
 
 ### Authorization
 
@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_seller_inventory_item**
-> SellerInventoryItemViewAffiliate update_seller_inventory_item(inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+> SellableItemAffiliate update_seller_inventory_item(inventory_identifier, upsert_sellable_item_request_affiliate, wink_version=wink_version)
 
 Update Item
 
@@ -603,8 +603,8 @@ Update an existing card
 
 ```python
 import wink_sdk_affiliate_inventory
-from wink_sdk_affiliate_inventory.models.seller_inventory_item_view_affiliate import SellerInventoryItemViewAffiliate
-from wink_sdk_affiliate_inventory.models.upsert_seller_inventory_item_request_affiliate import UpsertSellerInventoryItemRequestAffiliate
+from wink_sdk_affiliate_inventory.models.sellable_item_affiliate import SellableItemAffiliate
+from wink_sdk_affiliate_inventory.models.upsert_sellable_item_request_affiliate import UpsertSellableItemRequestAffiliate
 from wink_sdk_affiliate_inventory.rest import ApiException
 from pprint import pprint
 
@@ -626,12 +626,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.ItemsApi(api_client)
     inventory_identifier = 'card-inventory-1' # str | Update inventory with this identifier.
-    upsert_seller_inventory_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellerInventoryItemRequestAffiliate() # UpsertSellerInventoryItemRequestAffiliate | 
+    upsert_sellable_item_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableItemRequestAffiliate() # UpsertSellableItemRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Item
-        api_response = api_instance.update_seller_inventory_item(inventory_identifier, upsert_seller_inventory_item_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_seller_inventory_item(inventory_identifier, upsert_sellable_item_request_affiliate, wink_version=wink_version)
         print("The response of ItemsApi->update_seller_inventory_item:\n")
         pprint(api_response)
     except Exception as e:
@@ -646,12 +646,12 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inventory_identifier** | **str**| Update inventory with this identifier. | 
- **upsert_seller_inventory_item_request_affiliate** | [**UpsertSellerInventoryItemRequestAffiliate**](UpsertSellerInventoryItemRequestAffiliate.md)|  | 
+ **upsert_sellable_item_request_affiliate** | [**UpsertSellableItemRequestAffiliate**](UpsertSellableItemRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**SellerInventoryItemViewAffiliate**](SellerInventoryItemViewAffiliate.md)
+[**SellableItemAffiliate**](SellableItemAffiliate.md)
 
 ### Authorization
 

@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **redirect_url**
-> RedirectViewNonAuthenticatedEntity redirect_url(company_identifier, syndicated_item_identifier, user_agent, host, referer)
+> RedirectView redirect_url(company_identifier, syndicated_item_identifier, user_agent, host, referer)
 
 Redirect WinkLinks link
 
@@ -612,7 +612,7 @@ Utility method to track external URLs and redirect to it.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.redirect_view_non_authenticated_entity import RedirectViewNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.models.redirect_view import RedirectView
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -663,7 +663,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RedirectViewNonAuthenticatedEntity**](RedirectViewNonAuthenticatedEntity.md)
+[**RedirectView**](RedirectView.md)
 
 ### Authorization
 

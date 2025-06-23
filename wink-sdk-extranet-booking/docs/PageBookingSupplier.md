@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingSupplier]**](BookingSupplier.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**first** | **bool** |  | [optional] 
-**last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
-**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
+**first** | **bool** |  | [optional] 
+**last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example
