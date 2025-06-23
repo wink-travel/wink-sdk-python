@@ -22,9 +22,9 @@ Name | Type | Description | Notes
 **active_cancellation_policy** | [**CancellationPolicyLightweightBooker**](CancellationPolicyLightweightBooker.md) | Based on the itinerary, the cancellation policy could be taken directly from the rate plan or it could be a policy exception also listed on the rate plan | 
 **cancellable_by_hotel** | **bool** |  | [optional] 
 **cancellable_with_potential_charge** | **bool** |  | [optional] 
-**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **guests** | **int** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
+**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
