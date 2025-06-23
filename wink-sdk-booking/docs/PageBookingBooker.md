@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingBooker]**](BookingBooker.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**first** | **bool** |  | [optional] 
-**last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectBooker**](SortObjectBooker.md) |  | [optional] 
-**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
+**first** | **bool** |  | [optional] 
+**last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

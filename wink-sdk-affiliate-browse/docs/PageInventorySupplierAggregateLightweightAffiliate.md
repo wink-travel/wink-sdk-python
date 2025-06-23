@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[InventorySupplierAggregateLightweightAffiliate]**](InventorySupplierAggregateLightweightAffiliate.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**first** | **bool** |  | [optional] 
-**last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectAffiliate**](PageableObjectAffiliate.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectAffiliate**](SortObjectAffiliate.md) |  | [optional] 
-**pageable** | [**PageableObjectAffiliate**](PageableObjectAffiliate.md) |  | [optional] 
+**first** | **bool** |  | [optional] 
+**last** | **bool** |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example
