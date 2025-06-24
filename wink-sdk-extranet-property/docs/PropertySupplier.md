@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **legal_name** | **str** | Legal name of your hotel as it is registered. | 
 **url_name** | **str** | Unique url-friendly slug to identify property | 
 **currency_code** | **str** | Currency code | 
-**status** | **str** | wink.travel sets this status as the hotel moves through the payment workflow and manually for approval. | [default to WAITING_ON_CONTRACT]
-**external_status** | **str** | Property goes active by changing externalStatus from 6 (Inactive) to 1 (Active) according to OTA property status. | [default to 6]
+**status** | **str** | wink.travel sets this status as the hotel moves through the payment workflow and manually for approval. | [default to 'APPROVED']
+**external_status** | **str** | Property goes active by changing externalStatus. | [default to 'ACTIVE']
 **multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) |  | [optional] 
 **recognition_list** | [**List[TravelInventoryRecognitionSupplier]**](TravelInventoryRecognitionSupplier.md) |  | [optional] 
 **location_category** | **str** | Supported OTA specification &#x60;LOC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
@@ -58,10 +58,10 @@ Name | Type | Description | Notes
 **active** | **bool** | Property is both approved and activated. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
 **platform_active** | **bool** | Platform approved property. | [optional] 
+**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 **social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
 **full_address** | **str** | Concatenated address into a single string | [optional] 
-**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 
 ## Example
 

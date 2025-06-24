@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **name** | **str** | Unique hotel trade name. The hotel name must be unique. If there are multiple hotels with the same name, we recommend appending destination to the name. [Verify uniqueness here](#operation/isHotelNameUnique). | 
 **url_name** | **str** | Unique url-friendly slug to identify property | 
 **currency_code** | **str** | Currency code | 
-**status** | **str** | wink.travel sets this status as the hotel moves through the payment workflow and manually for approval. | [default to WAITING_ON_CONTRACT]
-**external_status** | **str** | Property goes active by changing externalStatus from 6 (Inactive) to 1 (Active) according to OTA property status. | [default to 6]
+**status** | **str** | wink.travel sets this status as the hotel moves through the payment workflow and manually for approval. | [default to 'APPROVED']
+**external_status** | **str** | Property goes active by changing externalStatus. | [default to 'ACTIVE']
 **stars** | **int** | Hotel star rating. | [optional] 
 **number_of_rooms** | **int** | Number of rooms / keys for property | 
 **active** | **bool** | Property is both approved and activated. | [optional] 
