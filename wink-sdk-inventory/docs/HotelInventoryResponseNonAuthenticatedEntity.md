@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
 **sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) | Sales channel that owns this booking | [optional] 
 **cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
-**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and shows the room type with the lowest price. | [optional] 
 **available** | **bool** |  | [optional] 
+**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and shows the room type with the lowest price. | [optional] 
 
 ## Example
 
