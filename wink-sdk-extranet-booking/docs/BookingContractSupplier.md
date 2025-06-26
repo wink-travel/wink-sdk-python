@@ -153,11 +153,11 @@ Name | Type | Description | Notes
 **self_acquiring** | **bool** |  | [optional] 
 **lodging** | [**BookingContractItemSupplier**](BookingContractItemSupplier.md) | Returns the lodging item only. | [optional] 
 **cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
+**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
+**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
 **fully_refunded** | **bool** |  | [optional] 
 **cancellable_with_no_charges** | **bool** | Whether the cancellation comes at no cost to the traveler. | [optional] 
 **is_cancellable_with_potential_charges** | **bool** | Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable. | [optional] 
-**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
-**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
 
 ## Example
 

@@ -43,9 +43,13 @@ Name | Type | Description | Notes
 **attractions** | [**List[BookingAncillarySupplierDetails]**](BookingAncillarySupplierDetails.md) | Attraction reservation records. | [optional] 
 **places** | [**List[BookingAncillarySupplierDetails]**](BookingAncillarySupplierDetails.md) | Place reservation records. | [optional] 
 **room_type_ancillaries** | [**List[BookingAncillarySupplierDetails]**](BookingAncillarySupplierDetails.md) | Room type ancillary records. | [optional] 
-**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by the agent. | [optional] 
+**add_ons** | [**List[BookingAncillarySupplierDetails]**](BookingAncillarySupplierDetails.md) | Add-on records. | [optional] 
 **rate_source** | **str** | Rate origin. This is usually the property channel manager. | [optional] 
 **has_add_ons** | **bool** | Convenience data point to check if any add-on offers are in this booking. | [optional] 
+**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by the agent. | [optional] 
+**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
+**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
+**reporting_extra_charge_list** | **List[object]** |  | [optional] 
 **has_breakfast** | **bool** | Convenience data point to get to breakfast quickly. | [optional] 
 **has_brunch** | **bool** | Convenience data point to get to brunch quickly. | [optional] 
 **has_lunch** | **bool** | Convenience data point to get to lunch quickly. | [optional] 
@@ -62,10 +66,6 @@ Name | Type | Description | Notes
 **has_places** | **bool** | Convenience data point to check if any place reservations are included in this booking. | [optional] 
 **reporting_daily_rate_list** | **List[object]** |  | [optional] 
 **reporting_ancillary_list** | **List[object]** |  | [optional] 
-**reporting_extra_charge_list** | **List[object]** |  | [optional] 
-**add_ons** | [**List[BookingAncillarySupplierDetails]**](BookingAncillarySupplierDetails.md) | Add-on records. | [optional] 
-**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
-**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
 
 ## Example
 
