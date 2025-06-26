@@ -18,11 +18,10 @@ Name | Type | Description | Notes
 **image_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The image list | [optional] 
 **video_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The video list | [optional] 
 **audio_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The audio list | [optional] 
-**metadata** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Extended metadata | [optional] 
+**metadata** | **Dict[str, object]** | Extended metadata | [optional] 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
-**og_type** | **str** | The open graph content type | [optional] 
 **tags** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Optional user categories | [optional] 
-**media** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | The main media for this entry. | [optional] 
+**multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) | The main multimedias for this entry. | [optional] 
 **intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
 
 ## Example

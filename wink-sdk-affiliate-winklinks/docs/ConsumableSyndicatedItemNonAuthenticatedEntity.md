@@ -14,11 +14,10 @@ Name | Type | Description | Notes
 **image_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The image list | [optional] 
 **video_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The video list | [optional] 
 **audio_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The audio list | [optional] 
-**metadata** | [**List[KeyValuePairNonAuthenticatedEntity]**](KeyValuePairNonAuthenticatedEntity.md) | Extended metadata | [optional] 
+**metadata** | **Dict[str, object]** | Extended metadata | [optional] 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) |  | 
-**og_type** | **str** | The open graph content type | 
 **tags** | [**List[KeyValuePairNonAuthenticatedEntity]**](KeyValuePairNonAuthenticatedEntity.md) | Optional user categories | 
-**media** | [**SimpleMultimediaNonAuthenticatedEntity**](SimpleMultimediaNonAuthenticatedEntity.md) | The main media for this entry. | [optional] 
+**multimedias** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | The main multimedias for this entry. | [optional] 
 **intelligent** | **bool** | Settings flag for whether to infuse this entry with intelligence | 
 **initial_display_type** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'LIST']
 **profile_picture_geometry** | **str** | Controls how to display profile picture | [optional] [default to 'CIRCLE']
