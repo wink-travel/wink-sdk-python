@@ -49,6 +49,8 @@ Name | Type | Description | Notes
 **source_to_user_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **source_to_internal_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **phantom** | **bool** |  | 
+**var_date** | **date** |  | [optional] 
+**quantity** | **int** |  | [optional] 
 **start_date** | **bool** |  | [optional] 
 **between_date** | **bool** |  | [optional] 
 **last_night** | **bool** |  | [optional] 
@@ -58,12 +60,10 @@ Name | Type | Description | Notes
 **master_availability** | **bool** |  | [optional] 
 **close_on_arrival** | **bool** |  | [optional] 
 **rate_identifier** | **str** |  | [optional] 
-**var_date** | **date** |  | [optional] 
-**min_los** | **int** |  | [optional] 
-**max_los** | **int** |  | [optional] 
-**quantity** | **int** |  | [optional] 
 **max_occupancy** | **int** |  | [optional] 
 **min_occupancy** | **int** |  | [optional] 
+**min_los** | **int** |  | [optional] 
+**max_los** | **int** |  | [optional] 
 **source_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
