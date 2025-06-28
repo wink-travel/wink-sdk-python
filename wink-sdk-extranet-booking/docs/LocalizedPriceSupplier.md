@@ -23,12 +23,12 @@ Name | Type | Description | Notes
 **promotional_discount_percent** | **float** | Promotional discount percent | [optional] 
 **channel_discount_percent** | **float** | Channel discount percent | [optional] 
 **premium_percent** | **float** | Premium percent | [optional] 
-**has_channel_discount** | **bool** |  | [optional] 
+**has_premium** | **bool** |  | [optional] 
+**has_promotion** | **bool** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**has_premium** | **bool** |  | [optional] 
-**has_promotion** | **bool** |  | [optional] 
+**has_channel_discount** | **bool** |  | [optional] 
 **total_discount_percent** | **float** |  | [optional] 
 
 ## Example
