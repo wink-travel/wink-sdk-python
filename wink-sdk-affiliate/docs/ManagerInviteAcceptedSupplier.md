@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | AffiliateAccountLightweight ID | 
+**id** | **str** | AffiliateAccount ID | 
 **type** | **str** | Type of account | 
 
 ## Example

@@ -47,7 +47,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    company_identifier = 'hotel-1' # str | AffiliateAccountLightweight identifier for which to accept invite to
+    company_identifier = 'hotel-1' # str | AffiliateAccount identifier for which to accept invite to
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -67,7 +67,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| AffiliateAccountLightweight identifier for which to accept invite to | 
+ **company_identifier** | **str**| AffiliateAccount identifier for which to accept invite to | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
