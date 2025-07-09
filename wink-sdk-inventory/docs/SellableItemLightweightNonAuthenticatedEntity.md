@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique identifier | 
-**owner_identifier** | **str** | AffiliateAccountLightweight / Owner identifier | 
+**owner_identifier** | **str** | AffiliateAccount / Owner identifier | 
 **name** | **str** | Descriptive name of this item for seller use | 
 **customization_identifier** | **str** | Which configuration to use with this item | 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Title and description of blocking. | 

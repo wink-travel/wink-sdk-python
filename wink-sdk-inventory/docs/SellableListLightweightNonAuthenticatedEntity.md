@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique identifier | 
-**seller_identifier** | **str** | AffiliateAccountLightweight identifier | 
+**seller_identifier** | **str** | AffiliateAccount identifier | 
 **name** | **str** | Descriptive name of this list for seller use only | 
 **customization_identifier** | **str** | Customization identifier | 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Contains custom title and description of grid | 

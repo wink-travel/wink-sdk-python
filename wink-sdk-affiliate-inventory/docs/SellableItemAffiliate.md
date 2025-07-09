@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**owner_identifier** | **str** | AffiliateAccountLightweight / Owner identifier | 
+**owner_identifier** | **str** | AffiliateAccount / Owner identifier | 
 **name** | **str** | Descriptive name of this item for seller use | 
 **customization_identifier** | **str** | Which configuration to use with this item | 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Title and description of blocking. | 

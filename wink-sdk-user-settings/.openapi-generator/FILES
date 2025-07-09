@@ -22,7 +22,6 @@ docs/InventoryAuthenticatedEntity.md
 docs/KeyValuePair.md
 docs/LocalizedDescriptionAuthenticatedEntity.md
 docs/ManagingEntity.md
-docs/ManagingEntityAuthenticatedEntity.md
 docs/PersonalNonAuthenticatedEntity.md
 docs/PreferencesNonAuthenticatedEntity.md
 docs/ProfileNonAuthenticatedEntity.md
@@ -80,7 +79,6 @@ wink_sdk_user_settings/models/inventory_authenticated_entity.py
 wink_sdk_user_settings/models/key_value_pair.py
 wink_sdk_user_settings/models/localized_description_authenticated_entity.py
 wink_sdk_user_settings/models/managing_entity.py
-wink_sdk_user_settings/models/managing_entity_authenticated_entity.py
 wink_sdk_user_settings/models/personal_non_authenticated_entity.py
 wink_sdk_user_settings/models/preferences_non_authenticated_entity.py
 wink_sdk_user_settings/models/profile_non_authenticated_entity.py
