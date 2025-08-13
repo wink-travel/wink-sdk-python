@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**usage** | **str** | The type of technology using the blocking | 
+**usage** | **str** | The type of technology using the inventory | 
 **count** | **int** |  | 
 
 ## Example

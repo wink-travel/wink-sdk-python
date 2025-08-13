@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -264,7 +264,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -431,7 +431,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -514,7 +514,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -678,7 +678,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -762,7 +762,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -846,7 +846,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -930,7 +930,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1014,7 +1014,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1098,7 +1098,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1182,7 +1182,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1266,7 +1266,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1350,7 +1350,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1434,7 +1434,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1518,7 +1518,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1599,7 +1599,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

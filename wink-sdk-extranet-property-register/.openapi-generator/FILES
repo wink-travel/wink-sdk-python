@@ -15,7 +15,6 @@ docs/GenericErrorMessage.md
 docs/GeoJsonPointSupplier.md
 docs/GeoNameLightweightSupplier.md
 docs/GooglePlaceDetailRequestSupplier.md
-docs/ImageAttributionSupplier.md
 docs/IntelligentProfileSupplier.md
 docs/IntelligentPropertyRegistrationRequestSupplier.md
 docs/IsPropertyNameUnique400Response.md
@@ -23,6 +22,7 @@ docs/KeyValuePairSupplier.md
 docs/LocalizedDescriptionSupplier.md
 docs/ManageLeadsApi.md
 docs/ManualPropertyRegistrationRequestSupplier.md
+docs/MediaAuthorAttributionSupplier.md
 docs/PropertyPolicySupplier.md
 docs/PropertyRegistrationApi.md
 docs/PropertySupplier.md
@@ -43,6 +43,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_supplier.py
 tox.ini
 wink_sdk_extranet_property_register/__init__.py
 wink_sdk_extranet_property_register/api/__init__.py
@@ -65,13 +66,13 @@ wink_sdk_extranet_property_register/models/generic_error_message.py
 wink_sdk_extranet_property_register/models/geo_json_point_supplier.py
 wink_sdk_extranet_property_register/models/geo_name_lightweight_supplier.py
 wink_sdk_extranet_property_register/models/google_place_detail_request_supplier.py
-wink_sdk_extranet_property_register/models/image_attribution_supplier.py
 wink_sdk_extranet_property_register/models/intelligent_profile_supplier.py
 wink_sdk_extranet_property_register/models/intelligent_property_registration_request_supplier.py
 wink_sdk_extranet_property_register/models/is_property_name_unique400_response.py
 wink_sdk_extranet_property_register/models/key_value_pair_supplier.py
 wink_sdk_extranet_property_register/models/localized_description_supplier.py
 wink_sdk_extranet_property_register/models/manual_property_registration_request_supplier.py
+wink_sdk_extranet_property_register/models/media_author_attribution_supplier.py
 wink_sdk_extranet_property_register/models/property_policy_supplier.py
 wink_sdk_extranet_property_register/models/property_supplier.py
 wink_sdk_extranet_property_register/models/simple_address_supplier.py

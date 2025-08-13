@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -413,7 +413,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -461,7 +461,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
-    channel_inventory_identifier = 'channel-blocking-1' # str | Show map marker for specific blocking.
+    channel_inventory_identifier = 'channel-inventory-1' # str | Show map marker for specific inventory.
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -481,7 +481,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channel_inventory_identifier** | **str**| Show map marker for specific blocking. | 
+ **channel_inventory_identifier** | **str**| Show map marker for specific inventory. | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -664,7 +664,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -748,7 +748,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

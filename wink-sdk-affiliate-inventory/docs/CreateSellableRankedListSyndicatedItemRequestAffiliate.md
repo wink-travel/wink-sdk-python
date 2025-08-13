@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | ID of seller blocking ranked list to create a syndication entry from | 
+**identifier** | **str** | ID of seller inventory ranked list to create a syndication entry from | 
 
 ## Example
 

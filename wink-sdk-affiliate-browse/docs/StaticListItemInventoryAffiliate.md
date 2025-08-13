@@ -9,13 +9,14 @@ Name | Type | Description | Notes
 **sales_channel** | [**SalesChannelLightweightAffiliate**](SalesChannelLightweightAffiliate.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
 **inventory_identifier** | **str** | Inventory type identifier | 
-**inventory_name_in_english** | **str** | Name of blocking as traveler is seeing it | 
-**enabled** | **bool** | Whether this blocking is enabled or not | [default to True]
-**image_identifier** | **str** | Main image of blocking | 
+**inventory_name_in_english** | **str** | Name of inventory as traveler is seeing it | 
+**enabled** | **bool** | Whether this inventory is enabled or not | [default to True]
+**image** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | Main image of inventory | 
 **location** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Location | 
 **commissionable** | **bool** | Whether this is commissionable or not | [default to False]
 **lowest_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary | [optional] 
 **lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary in platform currency | [optional] 
+**price_point** | **str** | Level of expensiveness. | [default to 'THREE']
 
 ## Example
 

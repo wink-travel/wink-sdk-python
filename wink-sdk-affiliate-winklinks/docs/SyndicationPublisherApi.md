@@ -4,7 +4,6 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**consume_external_url_for_syndication_entry**](SyndicationPublisherApi.md#consume_external_url_for_syndication_entry) | **POST** /api/syndication/entry/consume-url | Consume External URL
 [**create_syndication_category**](SyndicationPublisherApi.md#create_syndication_category) | **POST** /api/syndication/category | Create WinkLinks Category
 [**create_syndication_entry**](SyndicationPublisherApi.md#create_syndication_entry) | **POST** /api/syndication/entry | Create WinkLinks Entry
 [**remove_syndication_category**](SyndicationPublisherApi.md#remove_syndication_category) | **DELETE** /api/syndication/category/{syndicationCategoryIdentifier} | Delete WinkLinks Category
@@ -19,88 +18,6 @@ Method | HTTP request | Description
 [**update_syndication_entry**](SyndicationPublisherApi.md#update_syndication_entry) | **PUT** /api/syndication/entry/{syndicatedItemIdentifier} | Update WinkLinks Entry
 [**upsert_syndication_settings**](SyndicationPublisherApi.md#upsert_syndication_settings) | **PUT** /api/syndication/settings | Upsert WinkLinks Settings
 
-
-# **consume_external_url_for_syndication_entry**
-> UpsertSyndicatedItemAffiliate consume_external_url_for_syndication_entry(consume_external_url_request_affiliate, wink_version=wink_version)
-
-Consume External URL
-
-Utility method for reading Open Graph data from an external URL.
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.consume_external_url_request_affiliate import ConsumeExternalUrlRequestAffiliate
-from wink_sdk_affiliate_winklinks.models.upsert_syndicated_item_affiliate import UpsertSyndicatedItemAffiliate
-from wink_sdk_affiliate_winklinks.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_affiliate_winklinks.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
-    consume_external_url_request_affiliate = wink_sdk_affiliate_winklinks.ConsumeExternalUrlRequestAffiliate() # ConsumeExternalUrlRequestAffiliate | Body payload filtering and sorting preferences
-    wink_version = 'wink_version_example' # str |  (optional)
-
-    try:
-        # Consume External URL
-        api_response = api_instance.consume_external_url_for_syndication_entry(consume_external_url_request_affiliate, wink_version=wink_version)
-        print("The response of SyndicationPublisherApi->consume_external_url_for_syndication_entry:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling SyndicationPublisherApi->consume_external_url_for_syndication_entry: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **consume_external_url_request_affiliate** | [**ConsumeExternalUrlRequestAffiliate**](ConsumeExternalUrlRequestAffiliate.md)| Body payload filtering and sorting preferences | 
- **wink_version** | **str**|  | [optional] 
-
-### Return type
-
-[**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_syndication_category**
 > SyndicationCategoryAffiliate create_syndication_category(upsert_syndication_category_affiliate, wink_version=wink_version)
@@ -170,7 +87,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -252,7 +169,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -335,7 +252,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -418,7 +335,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -501,7 +418,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -582,7 +499,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -665,7 +582,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -680,7 +597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_entry_list**
-> List[SyndicatedItemAffiliate] show_syndication_entry_list(wink_version=wink_version, accept=accept)
+> List[SyndicatedItemAffiliate] show_syndication_entry_list(status=status, wink_version=wink_version, accept=accept)
 
 Show WinkLinks Entries
 
@@ -713,12 +630,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationPublisherApi(api_client)
+    status = PUBLISHED # str | Return based on this status. (optional) (default to PUBLISHED)
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show WinkLinks Entries
-        api_response = api_instance.show_syndication_entry_list(wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_syndication_entry_list(status=status, wink_version=wink_version, accept=accept)
         print("The response of SyndicationPublisherApi->show_syndication_entry_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -732,6 +650,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **status** | **str**| Return based on this status. | [optional] [default to PUBLISHED]
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -746,7 +665,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -761,7 +680,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_settings**
-> SyndicationSettingsAffiliate show_syndication_settings(wink_version=wink_version, accept=accept)
+> SyndicationSettingsWithThemeColorsAffiliate show_syndication_settings(wink_version=wink_version, accept=accept)
 
 Show WinkLinks Settings
 
@@ -773,7 +692,7 @@ Load WinkLinks settings.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_settings_affiliate import SyndicationSettingsAffiliate
+from wink_sdk_affiliate_winklinks.models.syndication_settings_with_theme_colors_affiliate import SyndicationSettingsWithThemeColorsAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -818,7 +737,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SyndicationSettingsAffiliate**](SyndicationSettingsAffiliate.md)
+[**SyndicationSettingsWithThemeColorsAffiliate**](SyndicationSettingsWithThemeColorsAffiliate.md)
 
 ### Authorization
 
@@ -827,7 +746,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -909,7 +828,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -993,7 +912,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1077,7 +996,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1092,7 +1011,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upsert_syndication_settings**
-> SyndicationSettingsAffiliate upsert_syndication_settings(upsert_syndication_settings_affiliate, wink_version=wink_version)
+> SyndicationSettingsWithThemeColorsAffiliate upsert_syndication_settings(upsert_syndication_settings_affiliate, wink_version=wink_version)
 
 Upsert WinkLinks Settings
 
@@ -1104,7 +1023,7 @@ Upsert a new syndication settings.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.syndication_settings_affiliate import SyndicationSettingsAffiliate
+from wink_sdk_affiliate_winklinks.models.syndication_settings_with_theme_colors_affiliate import SyndicationSettingsWithThemeColorsAffiliate
 from wink_sdk_affiliate_winklinks.models.upsert_syndication_settings_affiliate import UpsertSyndicationSettingsAffiliate
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
@@ -1150,7 +1069,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SyndicationSettingsAffiliate**](SyndicationSettingsAffiliate.md)
+[**SyndicationSettingsWithThemeColorsAffiliate**](SyndicationSettingsWithThemeColorsAffiliate.md)
 
 ### Authorization
 
@@ -1159,7 +1078,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

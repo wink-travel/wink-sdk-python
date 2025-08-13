@@ -26,7 +26,6 @@ docs/GeoJsonPolygonNonAuthenticatedEntity.md
 docs/GlobalScoreRequestNonAuthenticatedEntity.md
 docs/GuestRoomLightweightNonAuthenticatedEntity.md
 docs/HotelPerCountryCountNonAuthenticatedEntity.md
-docs/ImageAttributionNonAuthenticatedEntity.md
 docs/ItineraryNonAuthenticatedEntity.md
 docs/LocalizedDescriptionNonAuthenticatedEntity.md
 docs/LocalizedPriceNonAuthenticatedEntity.md
@@ -35,6 +34,7 @@ docs/LookupApi.md
 docs/LookupCachedNonAuthenticatedEntity.md
 docs/LookupLightweightNonAuthenticatedEntity.md
 docs/MapRequestNonAuthenticatedEntity.md
+docs/MediaAuthorAttributionNonAuthenticatedEntity.md
 docs/PagePropertyWithBestPriceNonAuthenticatedEntity.md
 docs/PageableObjectNonAuthenticatedEntity.md
 docs/PointNonAuthenticatedEntity.md
@@ -64,6 +64,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_non_authenticated_entity.py
 tox.ini
 wink_sdk_lookup/__init__.py
 wink_sdk_lookup/api/__init__.py
@@ -96,7 +97,6 @@ wink_sdk_lookup/models/geo_json_polygon_non_authenticated_entity.py
 wink_sdk_lookup/models/global_score_request_non_authenticated_entity.py
 wink_sdk_lookup/models/guest_room_lightweight_non_authenticated_entity.py
 wink_sdk_lookup/models/hotel_per_country_count_non_authenticated_entity.py
-wink_sdk_lookup/models/image_attribution_non_authenticated_entity.py
 wink_sdk_lookup/models/itinerary_non_authenticated_entity.py
 wink_sdk_lookup/models/localized_description_non_authenticated_entity.py
 wink_sdk_lookup/models/localized_price_non_authenticated_entity.py
@@ -104,6 +104,7 @@ wink_sdk_lookup/models/localized_transactional_travel_inventory_non_authenticate
 wink_sdk_lookup/models/lookup_cached_non_authenticated_entity.py
 wink_sdk_lookup/models/lookup_lightweight_non_authenticated_entity.py
 wink_sdk_lookup/models/map_request_non_authenticated_entity.py
+wink_sdk_lookup/models/media_author_attribution_non_authenticated_entity.py
 wink_sdk_lookup/models/page_property_with_best_price_non_authenticated_entity.py
 wink_sdk_lookup/models/pageable_object_non_authenticated_entity.py
 wink_sdk_lookup/models/point_non_authenticated_entity.py

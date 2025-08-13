@@ -11,10 +11,10 @@ Method | HTTP request | Description
 [**consume_spotify_url**](SyndicationConsumerApi.md#consume_spotify_url) | **GET** /api/sell/{companyIdentifier}/syndication/spotify | Consume Spotify URL
 [**consume_tik_tok_url**](SyndicationConsumerApi.md#consume_tik_tok_url) | **GET** /api/sell/{companyIdentifier}/syndication/tiktok | Consume TikTok URL
 [**consume_twitter_url**](SyndicationConsumerApi.md#consume_twitter_url) | **GET** /api/sell/{companyIdentifier}/syndication/tweet | Consume Tweet URL
+[**show_syndicated_item_grid**](SyndicationConsumerApi.md#show_syndicated_item_grid) | **POST** /api/sell/{companyIdentifier}/syndication/grid | Show Syndicated Grid
 [**show_syndication_account**](SyndicationConsumerApi.md#show_syndication_account) | **GET** /api/sell/syndication/{urlName} | Show Syndication Account
 [**show_syndication_categories**](SyndicationConsumerApi.md#show_syndication_categories) | **GET** /api/sell/{companyIdentifier}/syndication/category/list | Show Syndication Categories
-[**show_syndication_entry_grid**](SyndicationConsumerApi.md#show_syndication_entry_grid) | **POST** /api/sell/{companyIdentifier}/syndication/grid | Show Syndication Entries
-[**track_share**](SyndicationConsumerApi.md#track_share) | **GET** /api/sell/{companyIdentifier}/syndication/{syndicatedItemIdentifier}/share | Track WinkLinks share
+[**unlock_syndicated_item**](SyndicationConsumerApi.md#unlock_syndicated_item) | **POST** /api/sell/{companyIdentifier}/syndication/{syndicatedItemIdentifier}/unlock | Unlock Syndicated Item
 
 
 # **consume_facebook_page_url**
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -501,7 +501,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -584,7 +584,97 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **show_syndicated_item_grid**
+> PageConsumableSyndicatedItemNonAuthenticatedEntity show_syndicated_item_grid(company_identifier, state_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version)
+
+Show Syndicated Grid
+
+Retrieve list of syndicated items.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate_winklinks
+from wink_sdk_affiliate_winklinks.models.page_consumable_syndicated_item_non_authenticated_entity import PageConsumableSyndicatedItemNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.models.state_non_authenticated_entity import StateNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate_winklinks.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
+    company_identifier = 'company_identifier_example' # str | Account ID
+    state_non_authenticated_entity = wink_sdk_affiliate_winklinks.StateNonAuthenticatedEntity() # StateNonAuthenticatedEntity | Body payload filtering and sorting preferences
+    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
+    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
+    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Show Syndicated Grid
+        api_response = api_instance.show_syndicated_item_grid(company_identifier, state_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version)
+        print("The response of SyndicationConsumerApi->show_syndicated_item_grid:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling SyndicationConsumerApi->show_syndicated_item_grid: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **company_identifier** | **str**| Account ID | 
+ **state_non_authenticated_entity** | [**StateNonAuthenticatedEntity**](StateNonAuthenticatedEntity.md)| Body payload filtering and sorting preferences | 
+ **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
+ **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
+ **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**PageConsumableSyndicatedItemNonAuthenticatedEntity**](PageConsumableSyndicatedItemNonAuthenticatedEntity.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -599,7 +689,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_syndication_account**
-> SyndicationAccountNonAuthenticatedEntity show_syndication_account(url_name, wink_version=wink_version, accept=accept)
+> SyndicationAccountNonAuthenticatedEntity show_syndication_account(url_name, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version, accept=accept)
 
 Show Syndication Account
 
@@ -633,12 +723,15 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
     url_name = 'url_name_example' # str | Account url name slug
+    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
+    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
+    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Syndication Account
-        api_response = api_instance.show_syndication_account(url_name, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_syndication_account(url_name, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version, accept=accept)
         print("The response of SyndicationConsumerApi->show_syndication_account:\n")
         pprint(api_response)
     except Exception as e:
@@ -653,6 +746,9 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **url_name** | **str**| Account url name slug | 
+ **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
+ **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
+ **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -667,7 +763,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -750,7 +846,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -764,12 +860,12 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_syndication_entry_grid**
-> PageConsumableSyndicatedItemNonAuthenticatedEntity show_syndication_entry_grid(company_identifier, state_non_authenticated_entity, wink_version=wink_version)
+# **unlock_syndicated_item**
+> ConsumableSyndicatedItemNonAuthenticatedEntity unlock_syndicated_item(company_identifier, syndicated_item_identifier, unlock_syndicated_item_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version)
 
-Show Syndication Entries
+Unlock Syndicated Item
 
-Retrieve list of syndication entries.
+Unlocks entry with supplied code.
 
 ### Example
 
@@ -777,8 +873,8 @@ Retrieve list of syndication entries.
 
 ```python
 import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.page_consumable_syndicated_item_non_authenticated_entity import PageConsumableSyndicatedItemNonAuthenticatedEntity
-from wink_sdk_affiliate_winklinks.models.state_non_authenticated_entity import StateNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.models.consumable_syndicated_item_non_authenticated_entity import ConsumableSyndicatedItemNonAuthenticatedEntity
+from wink_sdk_affiliate_winklinks.models.unlock_syndicated_item_non_authenticated_entity import UnlockSyndicatedItemNonAuthenticatedEntity
 from wink_sdk_affiliate_winklinks.rest import ApiException
 from pprint import pprint
 
@@ -800,16 +896,20 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
     company_identifier = 'company_identifier_example' # str | Account ID
-    state_non_authenticated_entity = wink_sdk_affiliate_winklinks.StateNonAuthenticatedEntity() # StateNonAuthenticatedEntity | Body payload filtering and sorting preferences
+    syndicated_item_identifier = 'syndicated_item_identifier_example' # str | Syndicated Item ID
+    unlock_syndicated_item_non_authenticated_entity = wink_sdk_affiliate_winklinks.UnlockSyndicatedItemNonAuthenticatedEntity() # UnlockSyndicatedItemNonAuthenticatedEntity | Body payload filtering and sorting preferences
+    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
+    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
+    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # Show Syndication Entries
-        api_response = api_instance.show_syndication_entry_grid(company_identifier, state_non_authenticated_entity, wink_version=wink_version)
-        print("The response of SyndicationConsumerApi->show_syndication_entry_grid:\n")
+        # Unlock Syndicated Item
+        api_response = api_instance.unlock_syndicated_item(company_identifier, syndicated_item_identifier, unlock_syndicated_item_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, wink_version=wink_version)
+        print("The response of SyndicationConsumerApi->unlock_syndicated_item:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SyndicationConsumerApi->show_syndication_entry_grid: %s\n" % e)
+        print("Exception when calling SyndicationConsumerApi->unlock_syndicated_item: %s\n" % e)
 ```
 
 
@@ -820,12 +920,16 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Account ID | 
- **state_non_authenticated_entity** | [**StateNonAuthenticatedEntity**](StateNonAuthenticatedEntity.md)| Body payload filtering and sorting preferences | 
+ **syndicated_item_identifier** | **str**| Syndicated Item ID | 
+ **unlock_syndicated_item_non_authenticated_entity** | [**UnlockSyndicatedItemNonAuthenticatedEntity**](UnlockSyndicatedItemNonAuthenticatedEntity.md)| Body payload filtering and sorting preferences | 
+ **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
+ **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
+ **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**PageConsumableSyndicatedItemNonAuthenticatedEntity**](PageConsumableSyndicatedItemNonAuthenticatedEntity.md)
+[**ConsumableSyndicatedItemNonAuthenticatedEntity**](ConsumableSyndicatedItemNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -834,98 +938,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **track_share**
-> BooleanResponseNonAuthenticatedEntity track_share(company_identifier, syndicated_item_identifier, platform, user_agent, host, referer, wink_version=wink_version)
-
-Track WinkLinks share
-
-Utility method to track sharing a url.
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_affiliate_winklinks
-from wink_sdk_affiliate_winklinks.models.boolean_response_non_authenticated_entity import BooleanResponseNonAuthenticatedEntity
-from wink_sdk_affiliate_winklinks.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_affiliate_winklinks.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_affiliate_winklinks.SyndicationConsumerApi(api_client)
-    company_identifier = 'owner-1' # str | Redirect for this owner identifier.
-    syndicated_item_identifier = 'syndication-entry-1' # str | Redirect to URL for this syndication entry ID.
-    platform = 'twitter' # str | Platform user is sharing on.
-    user_agent = 'user_agent_example' # str | User-Agent header.
-    host = 'host_example' # str | Host header.
-    referer = 'referer_example' # str | Referrer header.
-    wink_version = 'wink_version_example' # str |  (optional)
-
-    try:
-        # Track WinkLinks share
-        api_response = api_instance.track_share(company_identifier, syndicated_item_identifier, platform, user_agent, host, referer, wink_version=wink_version)
-        print("The response of SyndicationConsumerApi->track_share:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling SyndicationConsumerApi->track_share: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Redirect for this owner identifier. | 
- **syndicated_item_identifier** | **str**| Redirect to URL for this syndication entry ID. | 
- **platform** | **str**| Platform user is sharing on. | 
- **user_agent** | **str**| User-Agent header. | 
- **host** | **str**| Host header. | 
- **referer** | **str**| Referrer header. | 
- **wink_version** | **str**|  | [optional] 
-
-### Return type
-
-[**BooleanResponseNonAuthenticatedEntity**](BooleanResponseNonAuthenticatedEntity.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

@@ -22,13 +22,13 @@ docs/GeoJsonPointSupplier.md
 docs/GeoLocationApi.md
 docs/GeoNameLightweightSupplier.md
 docs/GroupDescriptorSupplier.md
-docs/ImageAttributionSupplier.md
 docs/ImproveWelcomeTextRequestSupplier.md
 docs/KeyValuePairSupplier.md
 docs/LifestyleApi.md
 docs/LifestylesResponseSupplier.md
 docs/LocalizedDescriptionSupplier.md
 docs/MediaApi.md
+docs/MediaAuthorAttributionSupplier.md
 docs/PagePropertySupplier.md
 docs/PageableObjectSupplier.md
 docs/PolicyApi.md
@@ -75,6 +75,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_supplier.py
 tox.ini
 wink_sdk_extranet_property/__init__.py
 wink_sdk_extranet_property/api/__init__.py
@@ -108,11 +109,11 @@ wink_sdk_extranet_property/models/generic_error_message.py
 wink_sdk_extranet_property/models/geo_json_point_supplier.py
 wink_sdk_extranet_property/models/geo_name_lightweight_supplier.py
 wink_sdk_extranet_property/models/group_descriptor_supplier.py
-wink_sdk_extranet_property/models/image_attribution_supplier.py
 wink_sdk_extranet_property/models/improve_welcome_text_request_supplier.py
 wink_sdk_extranet_property/models/key_value_pair_supplier.py
 wink_sdk_extranet_property/models/lifestyles_response_supplier.py
 wink_sdk_extranet_property/models/localized_description_supplier.py
+wink_sdk_extranet_property/models/media_author_attribution_supplier.py
 wink_sdk_extranet_property/models/page_property_supplier.py
 wink_sdk_extranet_property/models/pageable_object_supplier.py
 wink_sdk_extranet_property/models/property_lightweight_supplier.py

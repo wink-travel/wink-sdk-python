@@ -21,8 +21,8 @@ docs/ChartTitleSupplier.md
 docs/CompositeFilterDescriptorSupplier.md
 docs/CountryLightweightAffiliate.md
 docs/CountryLightweightSupplier.md
+docs/CreateAffiliateAccountRequestAffiliate.md
 docs/CreateCompany400Response.md
-docs/CreateCompanyRequestAffiliate.md
 docs/CustomMonetaryAmount.md
 docs/FilterDescriptorSupplier.md
 docs/GenericErrorMessage.md
@@ -32,8 +32,6 @@ docs/GeoNameLightweightAffiliate.md
 docs/GeoNameLightweightSupplier.md
 docs/GroupDescriptorSupplier.md
 docs/GroupedBookingSalesMetricsSupplierDetails.md
-docs/ImageAttributionAffiliate.md
-docs/ImageAttributionSupplier.md
 docs/InviteManagerRequestAffiliate.md
 docs/KeyValuePairAffiliate.md
 docs/LineChartSupplier.md
@@ -43,6 +41,8 @@ docs/ManagedByEntityRulesSupplier.md
 docs/ManagedByEntitySupplier.md
 docs/ManagerInviteAcceptedSupplier.md
 docs/ManagerInviteAffiliate.md
+docs/MediaAuthorAttributionAffiliate.md
+docs/MediaAuthorAttributionSupplier.md
 docs/PageAffiliateAccountSupplier.md
 docs/PageableObjectSupplier.md
 docs/SimpleDescriptionAffiliate.md
@@ -60,6 +60,7 @@ docs/TravelAgentSupplier.md
 docs/UniqueRequestAffiliate.md
 docs/UniqueResultAffiliate.md
 docs/UpsertAddressRequestAffiliate.md
+docs/UpsertAffiliateAccountProfileRequestAffiliate.md
 docs/UpsertCompanyLogoRequestAffiliate.md
 docs/UpsertCompanyOnlinePresenceRequestAffiliate.md
 docs/UpsertCompanyRequestAffiliate.md
@@ -72,6 +73,10 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_create_affiliate_account_request_affiliate.py
+test/test_media_author_attribution_affiliate.py
+test/test_media_author_attribution_supplier.py
+test/test_upsert_affiliate_account_profile_request_affiliate.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py
@@ -98,8 +103,8 @@ wink_sdk_affiliate/models/chart_title_supplier.py
 wink_sdk_affiliate/models/composite_filter_descriptor_supplier.py
 wink_sdk_affiliate/models/country_lightweight_affiliate.py
 wink_sdk_affiliate/models/country_lightweight_supplier.py
+wink_sdk_affiliate/models/create_affiliate_account_request_affiliate.py
 wink_sdk_affiliate/models/create_company400_response.py
-wink_sdk_affiliate/models/create_company_request_affiliate.py
 wink_sdk_affiliate/models/custom_monetary_amount.py
 wink_sdk_affiliate/models/filter_descriptor_supplier.py
 wink_sdk_affiliate/models/generic_error_message.py
@@ -109,8 +114,6 @@ wink_sdk_affiliate/models/geo_name_lightweight_affiliate.py
 wink_sdk_affiliate/models/geo_name_lightweight_supplier.py
 wink_sdk_affiliate/models/group_descriptor_supplier.py
 wink_sdk_affiliate/models/grouped_booking_sales_metrics_supplier_details.py
-wink_sdk_affiliate/models/image_attribution_affiliate.py
-wink_sdk_affiliate/models/image_attribution_supplier.py
 wink_sdk_affiliate/models/invite_manager_request_affiliate.py
 wink_sdk_affiliate/models/key_value_pair_affiliate.py
 wink_sdk_affiliate/models/line_chart_supplier.py
@@ -120,6 +123,8 @@ wink_sdk_affiliate/models/managed_by_entity_rules_supplier.py
 wink_sdk_affiliate/models/managed_by_entity_supplier.py
 wink_sdk_affiliate/models/manager_invite_accepted_supplier.py
 wink_sdk_affiliate/models/manager_invite_affiliate.py
+wink_sdk_affiliate/models/media_author_attribution_affiliate.py
+wink_sdk_affiliate/models/media_author_attribution_supplier.py
 wink_sdk_affiliate/models/page_affiliate_account_supplier.py
 wink_sdk_affiliate/models/pageable_object_supplier.py
 wink_sdk_affiliate/models/simple_description_affiliate.py
@@ -137,6 +142,7 @@ wink_sdk_affiliate/models/travel_agent_supplier.py
 wink_sdk_affiliate/models/unique_request_affiliate.py
 wink_sdk_affiliate/models/unique_result_affiliate.py
 wink_sdk_affiliate/models/upsert_address_request_affiliate.py
+wink_sdk_affiliate/models/upsert_affiliate_account_profile_request_affiliate.py
 wink_sdk_affiliate/models/upsert_company_logo_request_affiliate.py
 wink_sdk_affiliate/models/upsert_company_online_presence_request_affiliate.py
 wink_sdk_affiliate/models/upsert_company_request_affiliate.py

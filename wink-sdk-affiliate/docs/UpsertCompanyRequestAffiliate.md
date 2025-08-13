@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **legal_name** | **str** | Legal name of entity if other than name | [optional] 
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of company | 
-**description** | **str** | A personal message from the company. | [optional] 
-**annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
+**description** | **str** | Account description. | [optional] 
+**annual_travel_spend_in_dollars** | **int** | How much user or company spends on travel per year. | [optional] 
 
 ## Example
 

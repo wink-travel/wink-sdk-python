@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **stars** | **int** | Hotel star rating. | [optional] 
 **number_of_rooms** | **int** | Number of rooms / keys for property | 
 **active** | **bool** | Property is both approved and activated. | [optional] 
-**platform_active** | **bool** | Platform approved property. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
+**platform_active** | **bool** | Platform approved property. | [optional] 
 
 ## Example
 

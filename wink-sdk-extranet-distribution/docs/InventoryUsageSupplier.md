@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **inventory_identifier** | **str** | Inventory type identifier | 
-**name** | **str** | Name of the blocking | 
+**name** | **str** | Name of the inventory | 
 **type** | **str** | Inventory type | 
 **item_list** | [**List[InventoryUsageItemSupplier]**](InventoryUsageItemSupplier.md) | How the inventoryIdentifier is currently being used | 
 **referenced** | **bool** |  | [optional] 

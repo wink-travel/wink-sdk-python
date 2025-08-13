@@ -8,13 +8,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Descriptive name of this url for seller use only | 
 **customization_identifier** | **str** | Customization identifier | 
-**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized link descriptions | 
+**descriptions** | **List[object]** |  | 
+**multimedias** | **List[object]** |  | [optional] 
 **keywords** | **List[object]** |  | 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 
 **theme** | **str** | Url theme controls the look and feel of the ad banner. | [optional] 
-**supplier_identifier** | **str** | The entity supplying the blocking. Usually a hotel. | 
-**multimedia_identifiers** | **List[str]** | Cloudinary identifiers | 
+**supplier_identifier** | **str** | The entity supplying the inventory. Usually a hotel. | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Animation delay in milliseconds | [optional] [default to -1]
 

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Contains custom title and description of grid | 
 **keywords** | **List[object]** |  | 
 **status** | **str** | Status | [default to 'ACTIVE']
-**lookup** | [**LookupLightweightAffiliate**](LookupLightweightAffiliate.md) | The destination to display ranked blocking from. | 
+**lookup** | [**LookupLightweightAffiliate**](LookupLightweightAffiliate.md) | The destination to display ranked inventory from. | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Controls animation delay in milliseconds. -1 is disabled | [optional] [default to -1]
 **sort** | **str** | Determines which badge to show on the Web Component. Is also used to sort properties for search grids. | [optional] 

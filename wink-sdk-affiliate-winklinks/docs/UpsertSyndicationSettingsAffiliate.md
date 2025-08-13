@@ -5,10 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | 
-**engine_configuration_identifier** | **str** | Customization identifier | 
-**initial_display_type** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'GRID_COLUMNS']
+**item_display** | **str** | Whether to treat all links as flat web links or try to embed more advanced data. | 
+**customization_identifier** | **str** | Customization identifier | 
+**layout_display** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'GRID_COLUMNS']
 **profile_picture_geometry** | **str** | Controls how to display profile picture | [optional] [default to 'CIRCLE']
+**online_presence_position** | **str** | Where to show the online presence icons | [optional] [default to 'TOP']
+**theme_colors** | [**CustomizationThemeColorsAffiliate**](CustomizationThemeColorsAffiliate.md) | Theme colors are connected with the primary account customization. | [optional] 
 
 ## Example
 

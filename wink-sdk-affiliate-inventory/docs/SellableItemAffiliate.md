@@ -12,15 +12,15 @@ Name | Type | Description | Notes
 **owner_identifier** | **str** | AffiliateAccount / Owner identifier | 
 **name** | **str** | Descriptive name of this item for seller use | 
 **customization_identifier** | **str** | Which configuration to use with this item | 
-**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Title and description of blocking. | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Title and description of inventory. | 
 **keywords** | **List[object]** |  | 
 **status** | **str** | Availability status | [default to 'ACTIVE']
 **inventory_status** | **str** | Url sell status | 
-**inventory_type** | **str** | The type of blocking being offer up for sale | 
-**channel_inventory_type** | **str** | Channel inventory type is a subset of blocking type in that it does not include the &#x60;HOTEL&#x60; type. THe way it works is, as a seller you might want to sell a guest room but instead of showing the price of that guest room, you would like to display the best room type price for the property. | 
-**supplier_identifier** | **str** | Supplier / Hotel identifier that owns this blocking. | 
+**inventory_type** | **str** | The type of inventory being offer up for sale | 
+**channel_inventory_type** | **str** | Channel inventory type is a subset of inventory type in that it does not include the &#x60;HOTEL&#x60; type. THe way it works is, as a seller you might want to sell a guest room but instead of showing the price of that guest room, you would like to display the best room type price for the property. | 
+**supplier_identifier** | **str** | Supplier / Hotel identifier that owns this inventory. | 
 **channel_inventory_identifier** | **str** | The channel inventory record identifier describing the relationship between supplier and seller. | 
-**multimedia_identifiers** | **List[str]** | Reference identifiers to Cloudinary media assets | 
+**multimedias** | **List[object]** |  | 
 **animate** | **bool** | Create an animated gif instead of a list of images. Feature currently not available. Feel free to enable and it will become available at a later date. | [optional] [default to False]
 **animate_delay** | **int** | Controls animation delay in milliseconds. | [optional] 
 **sort** | **str** | The specific badge to display over the image on the Web Component. | [optional] 

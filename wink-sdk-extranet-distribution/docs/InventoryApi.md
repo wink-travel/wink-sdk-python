@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -340,7 +340,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -506,7 +506,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -589,7 +589,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 
 Show Inventory
 
-Retrieve blocking specified by identifier
+Retrieve inventory specified by identifier
 
 ### Example
 
@@ -637,8 +637,8 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to retrieve specified blocking for
-    inventory_identifier = 'inventory_identifier_example' # str | The blocking ID to retrieve
+    property_identifier = 'property_identifier_example' # str | The property ID to retrieve specified inventory for
+    inventory_identifier = 'inventory_identifier_example' # str | The inventory ID to retrieve
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -658,8 +658,8 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to retrieve specified blocking for | 
- **inventory_identifier** | **str**| The blocking ID to retrieve | 
+ **property_identifier** | **str**| The property ID to retrieve specified inventory for | 
+ **inventory_identifier** | **str**| The inventory ID to retrieve | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -674,7 +674,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -693,7 +693,7 @@ Name | Type | Description  | Notes
 
 Show Inventory List
 
-Retrieve list of blocking for specified property
+Retrieve list of inventory for specified property
 
 ### Example
 
@@ -757,7 +757,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -776,7 +776,7 @@ Name | Type | Description  | Notes
 
 Show Inventory Names
 
-Retrieve list of unique blocking names for chosen property.
+Retrieve list of unique inventory names for chosen property.
 
 ### Example
 
@@ -804,7 +804,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to retrieve blocking names for
+    property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory names for
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -824,7 +824,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to retrieve blocking names for | 
+ **property_identifier** | **str**| The property ID to retrieve inventory names for | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -839,7 +839,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -858,7 +858,7 @@ Name | Type | Description  | Notes
 
 Show All Inventory Types
 
-Retrieve array of all blocking types. E.g. ['GUEST_ROOM', 'MEETING_ROOM'].
+Retrieve array of all inventory types. E.g. ['GUEST_ROOM', 'MEETING_ROOM'].
 
 ### Example
 
@@ -886,7 +886,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to retrieve blocking types for
+    property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory types for
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -906,7 +906,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to retrieve blocking types for | 
+ **property_identifier** | **str**| The property ID to retrieve inventory types for | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -921,7 +921,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1004,7 +1004,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1023,7 +1023,7 @@ Name | Type | Description  | Notes
 
 Search Inventory
 
-Retrieve page of blocking for specified property.
+Retrieve page of inventory for specified property.
 
 ### Example
 
@@ -1053,7 +1053,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to retrieve blocking grid for
+    property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory grid for
     state_supplier = wink_sdk_extranet_distribution.StateSupplier() # StateSupplier | Filter grid by state request body
     wink_version = 'wink_version_example' # str |  (optional)
 
@@ -1073,7 +1073,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to retrieve blocking grid for | 
+ **property_identifier** | **str**| The property ID to retrieve inventory grid for | 
  **state_supplier** | [**StateSupplier**](StateSupplier.md)| Filter grid by state request body | 
  **wink_version** | **str**|  | [optional] 
 
@@ -1088,7 +1088,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1107,7 +1107,7 @@ Name | Type | Description  | Notes
 
 Show Inventory as Channels
 
-Retrieve list of blocking specified by blocking identifier. The list will contain the same blocking available to different sales channels. E.g. Inventory A for Seller A. Inventory A for Seller B etc.
+Retrieve list of inventory specified by inventory identifier. The list will contain the same inventory available to different sales channels. E.g. Inventory A for Seller A. Inventory A for Seller B etc.
 
 ### Example
 
@@ -1137,7 +1137,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve sales channels for
-    inventory_type_identifier = 'inventory_type_identifier_example' # str | The blocking type ID to retrieve sales channel for
+    inventory_type_identifier = 'inventory_type_identifier_example' # str | The inventory type ID to retrieve sales channel for
     wink_version = 'wink_version_example' # str |  (optional)
     accept = 'accept_example' # str |  (optional)
 
@@ -1158,7 +1158,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve sales channels for | 
- **inventory_type_identifier** | **str**| The blocking type ID to retrieve sales channel for | 
+ **inventory_type_identifier** | **str**| The inventory type ID to retrieve sales channel for | 
  **wink_version** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
 
@@ -1173,7 +1173,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1192,7 +1192,7 @@ Name | Type | Description  | Notes
 
 Update Inventory
 
-Toggle blocking availability. Only used to enable / disable blocking.
+Toggle inventory availability. Only used to enable / disable inventory.
 
 ### Example
 
@@ -1222,9 +1222,9 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to update blocking for
-    inventory_identifier = 'inventory_identifier_example' # str | The blocking ID to update
-    inventory_update_request_supplier = wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier() # InventoryUpdateRequestSupplier | Update blocking request body
+    property_identifier = 'property_identifier_example' # str | The property ID to update inventory for
+    inventory_identifier = 'inventory_identifier_example' # str | The inventory ID to update
+    inventory_update_request_supplier = wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier() # InventoryUpdateRequestSupplier | Update inventory request body
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
@@ -1243,9 +1243,9 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to update blocking for | 
- **inventory_identifier** | **str**| The blocking ID to update | 
- **inventory_update_request_supplier** | [**InventoryUpdateRequestSupplier**](InventoryUpdateRequestSupplier.md)| Update blocking request body | 
+ **property_identifier** | **str**| The property ID to update inventory for | 
+ **inventory_identifier** | **str**| The inventory ID to update | 
+ **inventory_update_request_supplier** | [**InventoryUpdateRequestSupplier**](InventoryUpdateRequestSupplier.md)| Update inventory request body | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
@@ -1259,7 +1259,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1278,7 +1278,7 @@ Name | Type | Description  | Notes
 
 Update Inventory List
 
-Toggle blocking list availability. Only used to enable / disable blocking.
+Toggle inventory list availability. Only used to enable / disable inventory.
 
 ### Example
 
@@ -1308,7 +1308,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
-    property_identifier = 'property_identifier_example' # str | The property ID to update blocking for
+    property_identifier = 'property_identifier_example' # str | The property ID to update inventory for
     inventory_update_request_supplier = [wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier()] # List[InventoryUpdateRequestSupplier] | Update inventories request body
     wink_version = 'wink_version_example' # str |  (optional)
 
@@ -1328,7 +1328,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| The property ID to update blocking for | 
+ **property_identifier** | **str**| The property ID to update inventory for | 
  **inventory_update_request_supplier** | [**List[InventoryUpdateRequestSupplier]**](InventoryUpdateRequestSupplier.md)| Update inventories request body | 
  **wink_version** | **str**|  | [optional] 
 
@@ -1343,7 +1343,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

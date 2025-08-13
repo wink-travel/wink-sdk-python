@@ -14,9 +14,9 @@ docs/GeneralManagerAffiliate.md
 docs/GenericErrorMessage.md
 docs/GeoJsonPointAffiliate.md
 docs/GroupDescriptorAffiliate.md
-docs/ImageAttributionAffiliate.md
 docs/KeyValuePairAffiliate.md
 docs/LocalizedDescriptionAffiliate.md
+docs/MediaAuthorAttributionAffiliate.md
 docs/PagePropertyAggregateLightweightAffiliate.md
 docs/PageSalesChannelAffiliate.md
 docs/PageableObjectAffiliate.md
@@ -45,6 +45,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_affiliate.py
 tox.ini
 wink_sdk_affiliate_sales_channel/__init__.py
 wink_sdk_affiliate_sales_channel/api/__init__.py
@@ -66,9 +67,9 @@ wink_sdk_affiliate_sales_channel/models/general_manager_affiliate.py
 wink_sdk_affiliate_sales_channel/models/generic_error_message.py
 wink_sdk_affiliate_sales_channel/models/geo_json_point_affiliate.py
 wink_sdk_affiliate_sales_channel/models/group_descriptor_affiliate.py
-wink_sdk_affiliate_sales_channel/models/image_attribution_affiliate.py
 wink_sdk_affiliate_sales_channel/models/key_value_pair_affiliate.py
 wink_sdk_affiliate_sales_channel/models/localized_description_affiliate.py
+wink_sdk_affiliate_sales_channel/models/media_author_attribution_affiliate.py
 wink_sdk_affiliate_sales_channel/models/page_property_aggregate_lightweight_affiliate.py
 wink_sdk_affiliate_sales_channel/models/page_sales_channel_affiliate.py
 wink_sdk_affiliate_sales_channel/models/pageable_object_affiliate.py
