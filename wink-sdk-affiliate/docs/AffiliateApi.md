@@ -5,7 +5,8 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_company**](AffiliateApi.md#create_company) | **POST** /api/affiliate | Create Affiliate
-[**is_company_name_unique**](AffiliateApi.md#is_company_name_unique) | **POST** /api/affiliate/unique | Verify Affiliate Name
+[**is_affiliate_account_name_unique**](AffiliateApi.md#is_affiliate_account_name_unique) | **POST** /api/affiliate-name-check | Verify Affiliate Name
+[**is_company_url_name_unique**](AffiliateApi.md#is_company_url_name_unique) | **POST** /api/affiliate-url-name-check | Verify Affiliate Url Name
 [**remove_company**](AffiliateApi.md#remove_company) | **DELETE** /api/affiliate/{companyIdentifier} | Delete Affiliate
 [**remove_my_account**](AffiliateApi.md#remove_my_account) | **DELETE** /api/my-account | Delete Affiliate
 [**search_affiliates**](AffiliateApi.md#search_affiliates) | **POST** /api/affiliate/grid | Affiliate Search
@@ -24,10 +25,11 @@ Method | HTTP request | Description
 [**update_my_account_address**](AffiliateApi.md#update_my_account_address) | **PATCH** /api/my-account/address | Update My Account Address
 [**update_my_account_logo**](AffiliateApi.md#update_my_account_logo) | **PATCH** /api/my-account/logo | Update My Account Logo
 [**update_my_account_online_presence**](AffiliateApi.md#update_my_account_online_presence) | **PATCH** /api/my-account/online-presence | Update My Account Online Presence
+[**update_profile**](AffiliateApi.md#update_profile) | **PATCH** /api/affiliate/{companyIdentifier}/profile | Update Profile
 
 
 # **create_company**
-> AffiliateAccountAffiliate create_company(create_company_request_affiliate, wink_version=wink_version)
+> AffiliateAccountAffiliate create_company(create_affiliate_account_request_affiliate, wink_version=wink_version)
 
 Create Affiliate
 
@@ -40,7 +42,7 @@ Create a new affiliate
 ```python
 import wink_sdk_affiliate
 from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
-from wink_sdk_affiliate.models.create_company_request_affiliate import CreateCompanyRequestAffiliate
+from wink_sdk_affiliate.models.create_affiliate_account_request_affiliate import CreateAffiliateAccountRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -61,12 +63,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AffiliateApi(api_client)
-    create_company_request_affiliate = wink_sdk_affiliate.CreateCompanyRequestAffiliate() # CreateCompanyRequestAffiliate | 
+    create_affiliate_account_request_affiliate = wink_sdk_affiliate.CreateAffiliateAccountRequestAffiliate() # CreateAffiliateAccountRequestAffiliate | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Affiliate
-        api_response = api_instance.create_company(create_company_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.create_company(create_affiliate_account_request_affiliate, wink_version=wink_version)
         print("The response of AffiliateApi->create_company:\n")
         pprint(api_response)
     except Exception as e:
@@ -80,7 +82,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_company_request_affiliate** | [**CreateCompanyRequestAffiliate**](CreateCompanyRequestAffiliate.md)|  | 
+ **create_affiliate_account_request_affiliate** | [**CreateAffiliateAccountRequestAffiliate**](CreateAffiliateAccountRequestAffiliate.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
@@ -94,7 +96,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -108,8 +110,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **is_company_name_unique**
-> UniqueResultAffiliate is_company_name_unique(unique_request_affiliate, wink_version=wink_version)
+# **is_affiliate_account_name_unique**
+> UniqueResultAffiliate is_affiliate_account_name_unique(unique_request_affiliate, wink_version=wink_version)
 
 Verify Affiliate Name
 
@@ -148,11 +150,11 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
     try:
         # Verify Affiliate Name
-        api_response = api_instance.is_company_name_unique(unique_request_affiliate, wink_version=wink_version)
-        print("The response of AffiliateApi->is_company_name_unique:\n")
+        api_response = api_instance.is_affiliate_account_name_unique(unique_request_affiliate, wink_version=wink_version)
+        print("The response of AffiliateApi->is_affiliate_account_name_unique:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling AffiliateApi->is_company_name_unique: %s\n" % e)
+        print("Exception when calling AffiliateApi->is_affiliate_account_name_unique: %s\n" % e)
 ```
 
 
@@ -176,7 +178,89 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **is_company_url_name_unique**
+> UniqueResultAffiliate is_company_url_name_unique(unique_request_affiliate, wink_version=wink_version)
+
+Verify Affiliate Url Name
+
+Check if affiliate url name is unique
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate
+from wink_sdk_affiliate.models.unique_request_affiliate import UniqueRequestAffiliate
+from wink_sdk_affiliate.models.unique_result_affiliate import UniqueResultAffiliate
+from wink_sdk_affiliate.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate.AffiliateApi(api_client)
+    unique_request_affiliate = wink_sdk_affiliate.UniqueRequestAffiliate() # UniqueRequestAffiliate | 
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Verify Affiliate Url Name
+        api_response = api_instance.is_company_url_name_unique(unique_request_affiliate, wink_version=wink_version)
+        print("The response of AffiliateApi->is_company_url_name_unique:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling AffiliateApi->is_company_url_name_unique: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **unique_request_affiliate** | [**UniqueRequestAffiliate**](UniqueRequestAffiliate.md)|  | 
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**UniqueResultAffiliate**](UniqueResultAffiliate.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -259,7 +343,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -340,7 +424,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -422,7 +506,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -506,7 +590,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -589,7 +673,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -672,7 +756,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -755,7 +839,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -836,7 +920,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -919,7 +1003,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1003,7 +1087,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1087,7 +1171,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1171,7 +1255,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1255,7 +1339,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1339,7 +1423,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1421,7 +1505,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1503,7 +1587,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1585,7 +1669,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
@@ -1667,7 +1751,91 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_profile**
+> AffiliateAccountAffiliate update_profile(company_identifier, upsert_affiliate_account_profile_request_affiliate, wink_version=wink_version)
+
+Update Profile
+
+Update affiliate account profile.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate
+from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
+from wink_sdk_affiliate.models.upsert_affiliate_account_profile_request_affiliate import UpsertAffiliateAccountProfileRequestAffiliate
+from wink_sdk_affiliate.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate.AffiliateApi(api_client)
+    company_identifier = 'company_identifier_example' # str | Update company with given identifier
+    upsert_affiliate_account_profile_request_affiliate = wink_sdk_affiliate.UpsertAffiliateAccountProfileRequestAffiliate() # UpsertAffiliateAccountProfileRequestAffiliate | 
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Update Profile
+        api_response = api_instance.update_profile(company_identifier, upsert_affiliate_account_profile_request_affiliate, wink_version=wink_version)
+        print("The response of AffiliateApi->update_profile:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling AffiliateApi->update_profile: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **company_identifier** | **str**| Update company with given identifier | 
+ **upsert_affiliate_account_profile_request_affiliate** | [**UpsertAffiliateAccountProfileRequestAffiliate**](UpsertAffiliateAccountProfileRequestAffiliate.md)|  | 
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

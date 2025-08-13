@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **page** | [**PageInventoryGridItemNonAuthenticatedEntity**](PageInventoryGridItemNonAuthenticatedEntity.md) | Property details along with the grid record. | [optional] 
-**list** | [**SellableListLightweightNonAuthenticatedEntity**](SellableListLightweightNonAuthenticatedEntity.md) | Identifier blocking record | [optional] 
+**list** | [**SellableListLightweightNonAuthenticatedEntity**](SellableListLightweightNonAuthenticatedEntity.md) | Identifier inventory record | [optional] 
 
 ## Example
 

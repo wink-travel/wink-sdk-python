@@ -9,11 +9,13 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
+**user_identifier** | **str** | Creator of entry | 
 **owner_identifier** | **str** | AffiliateAccount identifier | 
 **name** | **str** | Descriptive name of this url for seller use only | 
 **customization_identifier** | **str** | Customization identifier | 
-**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized link descriptions | 
-**keywords** | **List[str]** | Keywords | 
+**descriptions** | **List[object]** |  | 
+**multimedias** | **List[object]** |  | [optional] 
+**keywords** | **List[object]** |  | 
 **unique_id** | **str** | Unique link id | 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 
@@ -21,11 +23,10 @@ Name | Type | Description | Notes
 **status** | **str** | Url sell status | 
 **inventory_status** | **str** | Url sell status | 
 **inventory_type** | **str** | Inventory type | 
-**channel_inventory_type** | **str** | Channel inventory type is a subset of blocking type in that it does not include the &#x60;HOTEL&#x60; type. THe way it works is, as a seller you might want to sell a guest room but instead of showing the price of that guest room, you would like to display the best room type price for the property. | 
-**supplier_identifier** | **str** | The entity supplying the blocking. Usually a hotel. | 
-**channel_inventory_identifier** | **str** | Selected blocking record | 
+**channel_inventory_type** | **str** | Channel inventory type is a subset of inventory type in that it does not include the &#x60;HOTEL&#x60; type. THe way it works is, as a seller you might want to sell a guest room but instead of showing the price of that guest room, you would like to display the best room type price for the property. | 
+**supplier_identifier** | **str** | The entity supplying the inventory. Usually a hotel. | 
+**channel_inventory_identifier** | **str** | Selected inventory record | 
 **transactional_item_identifier** | **str** | The transactional item to retrieve pricing for. If left empty, will find the cheapest priced item. | 
-**multimedia_identifiers** | **List[str]** | Cloudinary identifiers | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Animation delay in milliseconds | [optional] [default to -1]
 

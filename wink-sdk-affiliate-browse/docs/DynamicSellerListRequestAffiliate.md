@@ -1,6 +1,6 @@
 # DynamicSellerListRequestAffiliate
 
-Paginated search for travel blocking.
+Paginated search for travel inventory.
 
 ## Properties
 

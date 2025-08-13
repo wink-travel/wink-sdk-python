@@ -11,18 +11,23 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **user_identifier** | **str** | Creator of entry | 
 **owner_identifier** | **str** | The user&#39;s owner company this entry associates with | 
+**title** | **str** | The site name of this entry | 
 **content_url** | **str** | The url of this entry | 
 **sort** | **int** | How the author wants this entry to get sorted | 
-**status** | **str** | The syndication entry status | 
+**status** | **str** | This can change if it&#39;s linked to travel inventory that is no longer available. | 
 **type** | **str** | The syndication entry type | 
-**image_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The image list | [optional] 
-**video_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The video list | [optional] 
-**audio_list** | [**List[OpenGraphMediaAffiliate]**](OpenGraphMediaAffiliate.md) | The audio list | [optional] 
 **metadata** | **Dict[str, object]** | Extended metadata | [optional] 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
 **tags** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Optional user categories | [optional] 
 **multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) | The main multimedias for this entry. | [optional] 
-**intelligent** | **bool** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
+**display** | **str** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
+**disabled** | **bool** | Whether author wants to disable the post. | [optional] [default to False]
+**publish_date** | **datetime** | An optional date for when this post will be displayed. | [optional] 
+**publish_status** | **str** | Publish status of post. | [optional] [default to 'PUBLISHED']
+**lock_code** | **str** | Optional code the author can require be entered by the user in order to see the post. | [optional] 
+**unique_id** | **str** | Optional unique code that can be used to access this record. | [optional] 
+**user_tags** | **List[object]** |  | [optional] 
+**hash_tags** | **List[object]** |  | [optional] 
 
 ## Example
 

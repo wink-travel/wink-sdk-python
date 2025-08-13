@@ -8,19 +8,22 @@ Name | Type | Description | Notes
 **id** | **str** | Document UUID | 
 **owner_identifier** | **str** | Owner ID | 
 **created_date** | **datetime** | Datetime this record was first created | 
+**title** | **str** | The site name of this entry | 
 **content_url** | **str** | The url of this entry | 
 **sort** | **int** | How the author wants this entry to get sorted | 
 **type** | **str** | The syndication entry type | 
-**image_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The image list | [optional] 
-**video_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The video list | [optional] 
-**audio_list** | [**List[OpenGraphMediaNonAuthenticatedEntity]**](OpenGraphMediaNonAuthenticatedEntity.md) | The audio list | [optional] 
 **metadata** | **Dict[str, object]** | Extended metadata | [optional] 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) |  | 
 **tags** | [**List[KeyValuePairNonAuthenticatedEntity]**](KeyValuePairNonAuthenticatedEntity.md) | Optional user categories | 
 **multimedias** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | The main multimedias for this entry. | [optional] 
-**intelligent** | **bool** | Settings flag for whether to infuse this entry with intelligence | 
-**initial_display_type** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'LIST']
-**profile_picture_geometry** | **str** | Controls how to display profile picture | [optional] [default to 'CIRCLE']
+**item_display** | **str** | Item indicator for how to display itself | 
+**lock_code** | **str** | Optional code the author can require be entered by the user in order to see the post. | [optional] 
+**unique_id** | **str** | Optional unique code that can be used to access this record. | [optional] 
+**user_tags** | **List[object]** |  | [optional] 
+**hash_tags** | **List[object]** |  | [optional] 
+**parent_item_display** | **str** | Settings indicator for how to display the item | 
+**layout_display** | **str** | Which way to display the list when WinkLinks first loads | [optional] [default to 'LIST']
+**profile_picture_geometry** | **str** | Controls how to itemDisplay profile picture | [optional] [default to 'CIRCLE']
 **configuration_id** | **str** | Customization identifier | 
 **client_id** | **str** | The registered user&#39;s default clientId | 
 

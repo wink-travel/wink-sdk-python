@@ -1,6 +1,6 @@
 # StaticListLightweightAffiliate
 
-A curated list is a bucket that holds any type of travel blocking.
+A curated list is a bucket that holds any type of travel inventory.
 
 ## Properties
 

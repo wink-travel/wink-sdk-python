@@ -14,11 +14,11 @@ Name | Type | Description | Notes
 **name** | **str** | Name of company | 
 **url_name** | **str** | Url slug of company name | 
 **legal_name** | **str** | Legal name of entity if other than name | [optional] 
-**enabled** | **bool** | Whether this company is enabled by reactive. | 
+**enabled** | **bool** | Whether this company is enabled by platform. | 
 **approved** | **bool** | Whether this company has been approved by KYC. | [default to False]
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of sales channel | 
-**description** | **str** | A personal message from the company. | [optional] 
+**description** | **str** | Account description. | [optional] 
 **address** | [**AddressAgent**](AddressAgent.md) |  | 
 **managers** | [**List[AffiliateAccountUserAgent]**](AffiliateAccountUserAgent.md) |  | [optional] 
 **logo** | [**SimpleMultimediaAgent**](SimpleMultimediaAgent.md) | Customize account with a custom logo / profile picture. | [optional] 

@@ -51,11 +51,11 @@ docs/GeoNameLightweightAgent.md
 docs/GroupDescriptorAgent.md
 docs/GuestRoomLightweightAgent.md
 docs/GuestUserAgent.md
-docs/ImageAttributionAgent.md
 docs/LocalizedDescriptionAgent.md
 docs/LocalizedPriceAgent.md
 docs/ManagedByEntityAgent.md
 docs/ManagedByEntityRulesAgent.md
+docs/MediaAuthorAttributionAgent.md
 docs/PageBookingAgent.md
 docs/PageableObjectAgent.md
 docs/PayoutAgent.md
@@ -99,6 +99,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_agent.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py
@@ -156,11 +157,11 @@ wink_sdk_travel_agent/models/geo_name_lightweight_agent.py
 wink_sdk_travel_agent/models/group_descriptor_agent.py
 wink_sdk_travel_agent/models/guest_room_lightweight_agent.py
 wink_sdk_travel_agent/models/guest_user_agent.py
-wink_sdk_travel_agent/models/image_attribution_agent.py
 wink_sdk_travel_agent/models/localized_description_agent.py
 wink_sdk_travel_agent/models/localized_price_agent.py
 wink_sdk_travel_agent/models/managed_by_entity_agent.py
 wink_sdk_travel_agent/models/managed_by_entity_rules_agent.py
+wink_sdk_travel_agent/models/media_author_attribution_agent.py
 wink_sdk_travel_agent/models/page_booking_agent.py
 wink_sdk_travel_agent/models/pageable_object_agent.py
 wink_sdk_travel_agent/models/payout_agent.py

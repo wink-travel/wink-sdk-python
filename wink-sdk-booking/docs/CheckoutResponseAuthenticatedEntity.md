@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[PayableContractResponseAuthenticatedEntity]**](PayableContractResponseAuthenticatedEntity.md) | TripPay&#39;s ID to be used in conjunction with TripPay&#39;s reactive widget | 
+**list** | [**List[PayableContractResponseAuthenticatedEntity]**](PayableContractResponseAuthenticatedEntity.md) | TripPay&#39;s ID to be used in conjunction with TripPay&#39;s payment widget | 
 
 ## Example
 

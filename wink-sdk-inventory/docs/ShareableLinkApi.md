@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **show_consumable_url**
-> ConsumableSellerUrlNonAuthenticatedEntity show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
+> AbstractOpenGraphRedirectUrlNonAuthenticatedEntity show_consumable_url(code, user_session_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, cid=cid, gl=gl, wink_version=wink_version)
 
 Show Shareable Link
 
@@ -20,7 +20,7 @@ Retrieve a shareable link by its unique code
 
 ```python
 import wink_sdk_inventory
-from wink_sdk_inventory.models.consumable_seller_url_non_authenticated_entity import ConsumableSellerUrlNonAuthenticatedEntity
+from wink_sdk_inventory.models.abstract_open_graph_redirect_url_non_authenticated_entity import AbstractOpenGraphRedirectUrlNonAuthenticatedEntity
 from wink_sdk_inventory.models.user_session_non_authenticated_entity import UserSessionNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
@@ -44,13 +44,16 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_inventory.ShareableLinkApi(api_client)
     code = 'code_example' # str | Unique link code
     user_session_non_authenticated_entity = wink_sdk_inventory.UserSessionNonAuthenticatedEntity() # UserSessionNonAuthenticatedEntity | 
-    cid = 'cid_example' # str | Optional campaign id (optional)
-    gl = 'gl_example' # str | Optional GA4 cross-site link id (optional)
+    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
+    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
+    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
+    cid = 'cid_example' # str | Optional campaignId (optional)
+    gl = 'gl_example' # str | Optional GA4 cross link ID (optional)
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Show Shareable Link
-        api_response = api_instance.show_consumable_url(code, user_session_non_authenticated_entity, cid=cid, gl=gl, wink_version=wink_version)
+        api_response = api_instance.show_consumable_url(code, user_session_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, cid=cid, gl=gl, wink_version=wink_version)
         print("The response of ShareableLinkApi->show_consumable_url:\n")
         pprint(api_response)
     except Exception as e:
@@ -66,13 +69,16 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **code** | **str**| Unique link code | 
  **user_session_non_authenticated_entity** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md)|  | 
- **cid** | **str**| Optional campaign id | [optional] 
- **gl** | **str**| Optional GA4 cross-site link id | [optional] 
+ **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
+ **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
+ **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
+ **cid** | **str**| Optional campaignId | [optional] 
+ **gl** | **str**| Optional GA4 cross link ID | [optional] 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**ConsumableSellerUrlNonAuthenticatedEntity**](ConsumableSellerUrlNonAuthenticatedEntity.md)
+[**AbstractOpenGraphRedirectUrlNonAuthenticatedEntity**](AbstractOpenGraphRedirectUrlNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -81,7 +87,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 

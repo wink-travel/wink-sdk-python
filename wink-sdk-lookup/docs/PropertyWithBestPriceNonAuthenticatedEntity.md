@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **price_list** | [**List[RoomTypeBestPriceNonAuthenticatedEntity]**](RoomTypeBestPriceNonAuthenticatedEntity.md) | Best-priced room types | 
 **potential_channel_discount_percent** | **float** | The potential discount the user is entitled to if user is a member / authenticated. | 
 **source_to_user_currency_quote** | [**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md) | Exchange rate quote between the property&#39;s source currency and the user&#39;s desired currency that was used to populate price. | 
-**source_to_internal_currency_quote** | [**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md) | Exchange rate quote between the property&#39;s source currency and the reactive&#39;s currency that was used to populate price. | 
+**source_to_internal_currency_quote** | [**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md) | Exchange rate quote between the property&#39;s source currency and the user&#39;s currency that was used to populate price. | 
 **available** | **bool** | Flag to indicate whether this blocking is available or not. This data point is identifier to the available flag on the &#x60;price&#x60; child data point. | [optional] 
 
 ## Example

@@ -8,19 +8,19 @@ Name | Type | Description | Notes
 **identifier** | **str** | Room type ID | 
 **hotel_identifier** | **str** | Hotel ID | 
 **featured_ind** | **bool** | Indicates whether this inventory is featured. Use this flag as a way to signify that this inventory is special. | 
-**lifestyle_type** | **str** | Indicate the type of lifestyle this blocking should be associated with. | [optional] 
-**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Geo-location point where blocking takes place. Defaults to location of property. | 
+**lifestyle_type** | **str** | Indicate the type of lifestyle this inventory should be associated with. | [optional] 
+**location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Geo-location point where inventory takes place. Defaults to location of property. | 
 **descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | 
 **multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) |  | 
-**contact** | [**ContactSupplier**](ContactSupplier.md) | Associate a contact person for this blocking (if applicable). | 
+**contact** | [**ContactSupplier**](ContactSupplier.md) | Associate a contact person for this inventory (if applicable). | 
 **address** | [**AddressSupplier**](AddressSupplier.md) | Defaults to property address. | 
-**commissionable** | **bool** | Indicate whether sales channels receive commission for selling this blocking. | [default to True]
-**name** | **str** | Internal name of blocking. | 
+**commissionable** | **bool** | Indicate whether sales channels receive commission for selling this inventory. | [default to True]
+**name** | **str** | Internal name of inventory. | 
 **proximity_code** | **str** | Supported OTA specification &#x60;PRX&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | 
-**sort** | **int** | Use this property to sort an blocking in a list of activities. | [optional] 
+**sort** | **int** | Use this property to sort an inventory in a list of activities. | [optional] 
 **min_age_appropriate_code** | **str** | Supported OTA specification &#x60;AQC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
-**bookable** | **bool** | Indicates if this blocking can be added to a booking or if it is read-only marketing material only. | [default to True]
-**active** | **bool** | Modify blocking availability with this flag. | [default to True]
+**bookable** | **bool** | Indicates if this inventory can be added to a booking or if it is read-only marketing material only. | [default to True]
+**active** | **bool** | Modify inventory availability with this flag. | [default to True]
 **disability_features** | **List[str]** |  | [optional] 
 **security_features** | **List[str]** |  | [optional] 
 **socials** | [**List[SocialSupplier]**](SocialSupplier.md) |  | [optional] 

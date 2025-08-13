@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **room** | [**GuestRoomLightweightNonAuthenticatedEntity**](GuestRoomLightweightNonAuthenticatedEntity.md) | The room type. | 
 **price_configurations** | **List[object]** |  | 
-**available** | **bool** |  | [optional] 
 **lowest_price** | [**RoomConfigurationPriceNonAuthenticatedEntity**](RoomConfigurationPriceNonAuthenticatedEntity.md) |  | [optional] 
+**available** | **bool** |  | [optional] 
 
 ## Example
 

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **customization_identifier** | **str** | Customization identifier | 
 **name** | **str** | Name of map | 
 **supplier_identifier** | **str** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
-**type** | **str** | Type of blocking | 
+**type** | **str** | Type of inventory | 
 **draggable** | **bool** | User can move around / pan the map | [default to True]
 **zoomable** | **bool** | User can zoom in/out of the map | [default to True]
 **initial_zoom_level** | **int** | Valid Google maps zoom level | 

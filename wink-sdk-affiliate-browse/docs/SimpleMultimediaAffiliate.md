@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **category** | **str** | Supported OTA specification &#x60;PIC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized media captions to give user some context about where this media was taken. | [optional] 
 **lifestyle_type** | **str** | Associate this media with a specific lifestyle type. A user searching and filtering inventory based on lifestyles can be shown relevant media first. | [optional] 
-**attribution** | [**List[ImageAttributionAffiliate]**](ImageAttributionAffiliate.md) | Whether image has attribution properties | [optional] 
+**attribution** | [**List[MediaAuthorAttributionAffiliate]**](MediaAuthorAttributionAffiliate.md) | Whether image has attribution properties | [optional] 
 **is_landscape** | **bool** | True if media width is greater or equal to height | [optional] 
 
 ## Example

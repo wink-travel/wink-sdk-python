@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **owner_identifier** | **str** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | 
 **owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking customization&#x60; when it&#39;s the booking customization. | 
 **enabled** | **bool** | Flag the supplier can use to enable / disable this channel | [optional] [default to True]
-**channel_disabled** | **bool** | System override by reactive to disable. E.g. Platform disables supplier. | [optional] 
+**channel_disabled** | **bool** | System override by supplier to disable channel. E.g. Platform disables supplier. | [optional] 
 **blacklisted** | **bool** | A way to blacklist a specific channel a property doesn&#39;t want to send blocking to. | 
 **percent_discount** | **float** | Percent discount on this channel and all its children [unless configured at the child level]. | [optional] 
 **commission** | **float** | Amount of sales commission earned through this channel and all its children [unless configured at the child level]. | [optional] 

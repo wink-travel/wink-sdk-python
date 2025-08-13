@@ -12,16 +12,16 @@ Name | Type | Description | Notes
 **sales_channel** | [**SalesChannelLightweightSupplierDetails**](SalesChannelLightweightSupplierDetails.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
 **inventory_identifier** | **str** | Inventory type identifier | 
-**inventory_name** | **str** | Name of blocking as hotel is seeing it | 
-**inventory_name_in_english** | **str** | Name of blocking as traveler is seeing it | 
-**enabled** | **bool** | Whether this blocking is enabled or not | [default to True]
-**image_identifier** | **str** | Main image of blocking | 
+**inventory_name** | **str** | Name of inventory as hotel is seeing it | 
+**inventory_name_in_english** | **str** | Name of inventory as traveler is seeing it | 
+**enabled** | **bool** | Whether this inventory is enabled or not | [default to True]
+**image** | [**SimpleMultimediaSupplierDetails**](SimpleMultimediaSupplierDetails.md) | Main image of inventory | 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
 **location** | [**GeoJsonPointSupplierDetails**](GeoJsonPointSupplierDetails.md) | Location | 
 **address** | [**InventoryAddressSupplierDetails**](InventoryAddressSupplierDetails.md) | Defaults to property address. | 
 **quantity** | **int** | quantity | [default to 0]
 **commissionable** | **bool** | Whether this is commissionable or not | [default to False]
-**bookable** | **bool** | Whether blocking can be booked | [default to True]
+**bookable** | **bool** | Whether inventory can be booked | [default to True]
 **lowest_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary | [optional] 
 **lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary in platform currency | [optional] 
 

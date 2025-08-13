@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sort** | **int** | Sort property indicates how this grid item fits in with the rest of the items in the list. | 
-**type** | **str** | The type of blocking this item represents. | 
-**identifier** | **str** | Unique blocking identifier | 
-**supplier_identifier** | **str** | Supplier identifier referencing blocking owner | 
+**type** | **str** | The type of inventory this item represents. | 
+**identifier** | **str** | Unique inventory identifier | 
+**supplier_identifier** | **str** | Supplier identifier referencing inventory owner | 
 **activity** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ACTIVITY&#x60; | [optional] 
 **attraction** | [**AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ATTRACTION&#x60; | [optional] 
 **place** | [**PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;PLACE&#x60; | [optional] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **restaurant** | [**RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](RestaurantLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;RESTAURANT&#x60; | [optional] 
 **spa** | [**SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](SpaLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;SPA&#x60; | [optional] 
 **add_on** | [**AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AddOnLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ADD_ON&#x60; | [optional] 
-**available** | **bool** | Whether this blocking is available | [optional] 
+**available** | **bool** | Whether this inventory is available | [optional] 
 
 ## Example
 

@@ -23,7 +23,6 @@ docs/GenericErrorMessage.md
 docs/GeoJsonPointAffiliate.md
 docs/GeoNameLightweightAffiliate.md
 docs/GridsApi.md
-docs/ImageAttributionAffiliate.md
 docs/InventoryLinksApi.md
 docs/InventoryMapAffiliate.md
 docs/InventoryMapMarkerAffiliate.md
@@ -31,7 +30,7 @@ docs/ItemsApi.md
 docs/KeyValuePairAffiliate.md
 docs/LookupLightweightAffiliate.md
 docs/MapsApi.md
-docs/OpenGraphMediaAffiliate.md
+docs/MediaAuthorAttributionAffiliate.md
 docs/RankedGridsApi.md
 docs/RoomConfigurationAffiliate.md
 docs/SellableInventoryUrlAffiliate.md
@@ -62,6 +61,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_media_author_attribution_affiliate.py
 tox.ini
 wink_sdk_affiliate_inventory/__init__.py
 wink_sdk_affiliate_inventory/api/__init__.py
@@ -95,12 +95,11 @@ wink_sdk_affiliate_inventory/models/customization_theme_colors_affiliate.py
 wink_sdk_affiliate_inventory/models/generic_error_message.py
 wink_sdk_affiliate_inventory/models/geo_json_point_affiliate.py
 wink_sdk_affiliate_inventory/models/geo_name_lightweight_affiliate.py
-wink_sdk_affiliate_inventory/models/image_attribution_affiliate.py
 wink_sdk_affiliate_inventory/models/inventory_map_affiliate.py
 wink_sdk_affiliate_inventory/models/inventory_map_marker_affiliate.py
 wink_sdk_affiliate_inventory/models/key_value_pair_affiliate.py
 wink_sdk_affiliate_inventory/models/lookup_lightweight_affiliate.py
-wink_sdk_affiliate_inventory/models/open_graph_media_affiliate.py
+wink_sdk_affiliate_inventory/models/media_author_attribution_affiliate.py
 wink_sdk_affiliate_inventory/models/room_configuration_affiliate.py
 wink_sdk_affiliate_inventory/models/sellable_inventory_url_affiliate.py
 wink_sdk_affiliate_inventory/models/sellable_item_affiliate.py

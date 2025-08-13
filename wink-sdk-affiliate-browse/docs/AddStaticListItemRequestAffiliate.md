@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channel_inventory_identifier** | **str** | The blocking ID | 
+**channel_inventory_identifier** | **str** | The inventory ID | 
 
 ## Example
 

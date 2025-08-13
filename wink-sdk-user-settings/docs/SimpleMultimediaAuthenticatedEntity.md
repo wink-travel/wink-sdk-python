@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **identifier** | **str** | Use this identifier to communicate with Cloudinary. | 
 **type** | **str** | Whether Cloudinary media is a VIDEO or IMAGE. | 
 **source** | **str** | Currently ONLY using Cloudinary to store all image / video assets. | [default to 'CLOUDINARY']
-**sort** | **int** | Sort allows you to control how you want to sort this record in a list of media records. | [optional] [default to 999]
+**sort** | **int** | Sort allows you to control how you want to sort this record in a list of media records. | [default to 999]
 **angle** | **str** | Media angle | [optional] 
 **width** | **int** | Media width in pixels. | 
 **height** | **int** | Media height in pixels. | 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **category** | **str** | Supported OTA specification &#x60;PIC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **descriptions** | [**List[SimpleDescriptionAuthenticatedEntity]**](SimpleDescriptionAuthenticatedEntity.md) | Localized media captions to give user some context about where this media was taken. | [optional] 
 **lifestyle_type** | **str** | Associate this media with a specific lifestyle type. A user searching and filtering inventory based on lifestyles can be shown relevant media first. | [optional] 
-**attribution** | [**List[ImageAttributionAuthenticatedEntity]**](ImageAttributionAuthenticatedEntity.md) | Whether image has attribution properties | [optional] 
+**attribution** | [**List[MediaAuthorAttributionAuthenticatedEntity]**](MediaAuthorAttributionAuthenticatedEntity.md) | Whether image has attribution properties | [optional] 
 **is_landscape** | **bool** | True if media width is greater or equal to height | [optional] 
 
 ## Example

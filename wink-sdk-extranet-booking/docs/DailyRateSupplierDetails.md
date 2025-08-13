@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The displayPrice of this item in the original displayPrice quoted in the TripPay contract. | 
 **display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The displayPrice of this item converted to desired quote. | 
 **supplier_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The displayPrice of this item converted to supplier quote. | 
-**internal_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The internalPrice of this item. The price in reactive currency. | 
+**internal_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The internalPrice of this item. The price in platform currency. | 
 **capture_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | The capturePrice of this item. The price we charged with the acquirer. | 
 
 ## Example
