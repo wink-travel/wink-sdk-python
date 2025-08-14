@@ -64,7 +64,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_media_author_attribution_non_authenticated_entity.py
 tox.ini
 wink_sdk_lookup/__init__.py
 wink_sdk_lookup/api/__init__.py

@@ -73,10 +73,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_create_affiliate_account_request_affiliate.py
-test/test_media_author_attribution_affiliate.py
-test/test_media_author_attribution_supplier.py
-test/test_upsert_affiliate_account_profile_request_affiliate.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py
