@@ -47,11 +47,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_customization_theme_colors_affiliate.py
-test/test_media_author_attribution_affiliate.py
-test/test_media_author_attribution_non_authenticated_entity.py
-test/test_syndication_settings_with_theme_colors_affiliate.py
-test/test_unlock_syndicated_item_non_authenticated_entity.py
 tox.ini
 wink_sdk_affiliate_winklinks/__init__.py
 wink_sdk_affiliate_winklinks/api/__init__.py

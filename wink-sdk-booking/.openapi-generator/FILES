@@ -136,8 +136,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_media_author_attribution_authenticated_entity.py
-test/test_media_author_attribution_booker.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py

@@ -106,8 +106,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_media_author_attribution.py
-test/test_media_author_attribution_supplier.py
 tox.ini
 wink_sdk_extranet_monetize/__init__.py
 wink_sdk_extranet_monetize/api/__init__.py
