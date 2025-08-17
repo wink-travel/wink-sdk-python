@@ -49,15 +49,15 @@ Name | Type | Description | Notes
 **source_to_user_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **source_to_internal_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **phantom** | **bool** |  | 
+**start_date** | **bool** |  | [optional] 
+**between_date** | **bool** |  | [optional] 
+**last_night** | **bool** |  | [optional] 
+**bundled_modifier** | **bool** |  | [optional] 
 **close_on_departure** | **bool** |  | [optional] 
 **inventory_available** | **bool** |  | [optional] 
 **master_availability** | **bool** |  | [optional] 
 **close_on_arrival** | **bool** |  | [optional] 
 **rate_identifier** | **str** |  | [optional] 
-**start_date** | **bool** |  | [optional] 
-**between_date** | **bool** |  | [optional] 
-**last_night** | **bool** |  | [optional] 
-**bundled_modifier** | **bool** |  | [optional] 
 **var_date** | **date** |  | [optional] 
 **source** | **str** |  | [optional] 
 **quantity** | **int** |  | [optional] 
