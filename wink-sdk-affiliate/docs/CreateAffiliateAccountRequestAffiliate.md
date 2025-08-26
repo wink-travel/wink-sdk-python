@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **name** | **str** | Name of company | 
 **legal_name** | **str** | Legal name of entity if other than name | [optional] 
 **url_name** | **str** | Url slug of entity | [optional] 
+**unique_id** | **str** | Unique short ID of entity | [optional] 
 **company_type** | **str** | Type of company | 
 **type** | **str** | Type of company | 
 **description** | **str** | Account description. | [optional] 

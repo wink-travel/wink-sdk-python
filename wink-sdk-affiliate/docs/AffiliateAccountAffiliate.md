@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **owner** | [**AffiliateAccountUserAffiliate**](AffiliateAccountUserAffiliate.md) | Owner | 
 **name** | **str** | Name of company | 
 **url_name** | **str** | Url slug of company name | 
+**unique_id** | **str** | Even shorter url identifier | 
 **legal_name** | **str** | Legal name of entity if other than name | [optional] 
 **enabled** | **bool** | Whether this company is enabled by platform. | 
 **approved** | **bool** | Whether this company has been approved by KYC. | [default to False]
