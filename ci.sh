@@ -12,6 +12,7 @@
 #  2) Stages and commits the generated SDK changes to the development branch.
 #     - The commit message includes the version (read from the VERSION file).
 #  3) Performs a GitHub release by invoking github-release.sh.
+#  4) Builds the SDK artifacts for PyPI release using pypi-build.sh.
 #
 # Requirements:
 #   - Bash 4 or higher
