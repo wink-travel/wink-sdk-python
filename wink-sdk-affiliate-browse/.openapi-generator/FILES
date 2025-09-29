@@ -30,7 +30,6 @@ docs/PageableObjectAffiliate.md
 docs/PropertyAggregateLightweightAffiliate.md
 docs/PropertyPolicyAffiliate.md
 docs/SalesChannelLightweightAffiliate.md
-docs/SearchCategoriesApi.md
 docs/SearchCategoryAffiliate.md
 docs/SimpleAddressAffiliate.md
 docs/SimpleDescriptionAffiliate.md
@@ -63,7 +62,6 @@ wink_sdk_affiliate_browse/api/__init__.py
 wink_sdk_affiliate_browse/api/browse_api.py
 wink_sdk_affiliate_browse/api/curated_list_api.py
 wink_sdk_affiliate_browse/api/dynamic_list_api.py
-wink_sdk_affiliate_browse/api/search_categories_api.py
 wink_sdk_affiliate_browse/api_client.py
 wink_sdk_affiliate_browse/api_response.py
 wink_sdk_affiliate_browse/configuration.py

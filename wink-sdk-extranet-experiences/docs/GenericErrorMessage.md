@@ -6,11 +6,10 @@ Generic error message
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**timestamp** | **str** |  | [optional] 
 **status** | **int** |  | [optional] 
 **error** | **str** |  | [optional] 
 **message** | **str** |  | [optional] 
-**path** | **str** |  | [optional] 
+**timestamp** | **str** |  | [optional] 
 
 ## Example
 

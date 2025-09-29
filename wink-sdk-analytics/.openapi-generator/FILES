@@ -3,6 +3,7 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
+docs/AffiliateApi.md
 docs/AggregateDescriptorAuthenticatedEntity.md
 docs/AggregateSharesProjectionAuthenticatedEntity.md
 docs/AnalyticsApi.md
@@ -22,7 +23,7 @@ docs/PageBookingLeaderboardEntryNonAuthenticatedEntity.md
 docs/PageLineChartAuthenticatedEntity.md
 docs/PageableObjectAuthenticatedEntity.md
 docs/PageableObjectNonAuthenticatedEntity.md
-docs/ShowLeaderboardByOwner400Response.md
+docs/ShowShareAnalytics400Response.md
 docs/SortDescriptorAuthenticatedEntity.md
 docs/SortObjectAuthenticatedEntity.md
 docs/SortObjectNonAuthenticatedEntity.md
@@ -34,9 +35,12 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_affiliate_api.py
+test/test_show_share_analytics400_response.py
 tox.ini
 wink_sdk_analytics/__init__.py
 wink_sdk_analytics/api/__init__.py
+wink_sdk_analytics/api/affiliate_api.py
 wink_sdk_analytics/api/analytics_api.py
 wink_sdk_analytics/api_client.py
 wink_sdk_analytics/api_response.py
@@ -61,7 +65,7 @@ wink_sdk_analytics/models/page_booking_leaderboard_entry_non_authenticated_entit
 wink_sdk_analytics/models/page_line_chart_authenticated_entity.py
 wink_sdk_analytics/models/pageable_object_authenticated_entity.py
 wink_sdk_analytics/models/pageable_object_non_authenticated_entity.py
-wink_sdk_analytics/models/show_leaderboard_by_owner400_response.py
+wink_sdk_analytics/models/show_share_analytics400_response.py
 wink_sdk_analytics/models/sort_descriptor_authenticated_entity.py
 wink_sdk_analytics/models/sort_object_authenticated_entity.py
 wink_sdk_analytics/models/sort_object_non_authenticated_entity.py

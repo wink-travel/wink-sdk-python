@@ -4,30 +4,30 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**notify_property**](InventoryApi.md#notify_property) | **POST** /api/inventory/unavailable | Lacks Inventory
-[**show_consumer_map**](InventoryApi.md#show_consumer_map) | **GET** /api/sell/map/{inventoryMapIdentifier}/markers | Map + Markers
+[**notify_property**](InventoryApi.md#notify_property) | **POST** /api/inventory/unavailable | No Inventory
+[**show_consumable_url**](InventoryApi.md#show_consumable_url) | **POST** /api/shareable-link/{code} | Show Shareable Link
 [**show_inventory_grid_item**](InventoryApi.md#show_inventory_grid_item) | **POST** /api/inventory/grid/item | Show Inventory Grid Item
-[**show_property_add_on**](InventoryApi.md#show_property_add_on) | **POST** /api/add-on | Show Add-On Inventory
 [**show_property_aggregate**](InventoryApi.md#show_property_aggregate) | **POST** /api/inventory/property | Show Property Inventory
 [**show_property_attraction**](InventoryApi.md#show_property_attraction) | **POST** /api/experience/attraction | Show Attraction Inventory
 [**show_property_inventory**](InventoryApi.md#show_property_inventory) | **POST** /api/inventory | Show Property
 [**show_property_list**](InventoryApi.md#show_property_list) | **POST** /api/inventory/list | Show Property List
 [**show_property_meeting_room**](InventoryApi.md#show_property_meeting_room) | **POST** /api/facility/meeting-room | Show Meeting Room Inventory
 [**show_property_place**](InventoryApi.md#show_property_place) | **POST** /api/experience/place | Show Place Inventory
+[**show_property_rate_period**](InventoryApi.md#show_property_rate_period) | **POST** /api/inventory/period | Show Property Rate Period
 [**show_property_recreation**](InventoryApi.md#show_property_recreation) | **POST** /api/experience/activity | Show Activity Inventory
 [**show_property_restaurant**](InventoryApi.md#show_property_restaurant) | **POST** /api/facility/restaurant | Show Restaurant Inventory
 [**show_property_room_type**](InventoryApi.md#show_property_room_type) | **POST** /api/facility/room-type | Show Guest Room Inventory
 [**show_property_spa**](InventoryApi.md#show_property_spa) | **POST** /api/facility/spa | Show Spa Inventory
-[**show_seller_inventory_list**](InventoryApi.md#show_seller_inventory_list) | **POST** /api/inventory/grid | Search Inventory
+[**show_seller_inventory_list**](InventoryApi.md#show_seller_inventory_list) | **POST** /api/inventory/grid | Show Inventory Grid
 [**show_seller_inventory_ranked_list**](InventoryApi.md#show_seller_inventory_ranked_list) | **POST** /api/inventory/ranked/grid | Show Ranked Inventories
 
 
 # **notify_property**
 > InventoryUnavailableNotificationNonAuthenticatedEntity notify_property(inventory_unavailable_notification_non_authenticated_entity, wink_version=wink_version)
 
-Lacks Inventory
+No Inventory
 
-Notify property that there is a demand but no supply for a specified blocking.
+Notify property that there is a demand but no supply for the specified inventory.
 
 ### Example
 
@@ -60,7 +60,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # Lacks Inventory
+        # No Inventory
         api_response = api_instance.notify_property(inventory_unavailable_notification_non_authenticated_entity, wink_version=wink_version)
         print("The response of InventoryApi->notify_property:\n")
         pprint(api_response)
@@ -103,12 +103,12 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_consumer_map**
-> ConsumerDataMapNonAuthenticatedEntity show_consumer_map(inventory_map_identifier, wink_version=wink_version, accept=accept)
+# **show_consumable_url**
+> AbstractOpenGraphRedirectUrlNonAuthenticatedEntity show_consumable_url(code, user_session_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, cid=cid, gl=gl, wink_version=wink_version)
 
-Map + Markers
+Show Shareable Link
 
-Load map and map markers for a configurable map.
+Retrieve a shareable link by its unique code
 
 ### Example
 
@@ -116,7 +116,8 @@ Load map and map markers for a configurable map.
 
 ```python
 import wink_sdk_inventory
-from wink_sdk_inventory.models.consumer_data_map_non_authenticated_entity import ConsumerDataMapNonAuthenticatedEntity
+from wink_sdk_inventory.models.abstract_open_graph_redirect_url_non_authenticated_entity import AbstractOpenGraphRedirectUrlNonAuthenticatedEntity
+from wink_sdk_inventory.models.user_session_non_authenticated_entity import UserSessionNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -137,17 +138,22 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
-    inventory_map_identifier = 'inventory_map_identifier_example' # str | 
+    code = 'code_example' # str | Unique link code
+    user_session_non_authenticated_entity = wink_sdk_inventory.UserSessionNonAuthenticatedEntity() # UserSessionNonAuthenticatedEntity | 
+    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
+    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
+    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
+    cid = 'cid_example' # str | Optional campaignId (optional)
+    gl = 'gl_example' # str | Optional GA4 cross link ID (optional)
     wink_version = 'wink_version_example' # str |  (optional)
-    accept = 'accept_example' # str |  (optional)
 
     try:
-        # Map + Markers
-        api_response = api_instance.show_consumer_map(inventory_map_identifier, wink_version=wink_version, accept=accept)
-        print("The response of InventoryApi->show_consumer_map:\n")
+        # Show Shareable Link
+        api_response = api_instance.show_consumable_url(code, user_session_non_authenticated_entity, user_agent=user_agent, host=host, referer=referer, cid=cid, gl=gl, wink_version=wink_version)
+        print("The response of InventoryApi->show_consumable_url:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling InventoryApi->show_consumer_map: %s\n" % e)
+        print("Exception when calling InventoryApi->show_consumable_url: %s\n" % e)
 ```
 
 
@@ -157,13 +163,18 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inventory_map_identifier** | **str**|  | 
+ **code** | **str**| Unique link code | 
+ **user_session_non_authenticated_entity** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md)|  | 
+ **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
+ **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
+ **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
+ **cid** | **str**| Optional campaignId | [optional] 
+ **gl** | **str**| Optional GA4 cross link ID | [optional] 
  **wink_version** | **str**|  | [optional] 
- **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**ConsumerDataMapNonAuthenticatedEntity**](ConsumerDataMapNonAuthenticatedEntity.md)
+[**AbstractOpenGraphRedirectUrlNonAuthenticatedEntity**](AbstractOpenGraphRedirectUrlNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -171,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
@@ -270,92 +281,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_property_add_on**
-> SellerInventoryAddOnNonAuthenticatedEntity show_property_add_on(aggregate_add_on_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
-
-Show Add-On Inventory
-
-Show single add-on based on a channel inventory identifier
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_inventory
-from wink_sdk_inventory.models.aggregate_add_on_request_non_authenticated_entity import AggregateAddOnRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_add_on_non_authenticated_entity import SellerInventoryAddOnNonAuthenticatedEntity
-from wink_sdk_inventory.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_inventory.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_inventory.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_inventory.InventoryApi(api_client)
-    aggregate_add_on_request_non_authenticated_entity = wink_sdk_inventory.AggregateAddOnRequestNonAuthenticatedEntity() # AggregateAddOnRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
-    accept = 'accept_example' # str |  (optional)
-
-    try:
-        # Show Add-On Inventory
-        api_response = api_instance.show_property_add_on(aggregate_add_on_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
-        print("The response of InventoryApi->show_property_add_on:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling InventoryApi->show_property_add_on: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **aggregate_add_on_request_non_authenticated_entity** | [**AggregateAddOnRequestNonAuthenticatedEntity**](AggregateAddOnRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
- **accept** | **str**|  | [optional] 
-
-### Return type
-
-[**SellerInventoryAddOnNonAuthenticatedEntity**](SellerInventoryAddOnNonAuthenticatedEntity.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **show_property_aggregate**
-> SellerInventoryPropertyNonAuthenticatedEntity show_property_aggregate(aggregate_property_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryPropertyNonAuthenticatedEntity show_property_aggregate(aggregate_property_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Property Inventory
 
@@ -368,7 +295,7 @@ Show single hotel card with price based on a given record identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_property_request_non_authenticated_entity import AggregatePropertyRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_property_non_authenticated_entity import SellerInventoryPropertyNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_property_non_authenticated_entity import SellableInventoryPropertyNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -415,7 +342,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryPropertyNonAuthenticatedEntity**](SellerInventoryPropertyNonAuthenticatedEntity.md)
+[**SellableInventoryPropertyNonAuthenticatedEntity**](SellableInventoryPropertyNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -439,7 +366,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_attraction**
-> SellerInventoryAttractionNonAuthenticatedEntity show_property_attraction(aggregate_attraction_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryAttractionNonAuthenticatedEntity show_property_attraction(aggregate_attraction_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Attraction Inventory
 
@@ -452,7 +379,7 @@ Show single attraction based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_attraction_request_non_authenticated_entity import AggregateAttractionRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_attraction_non_authenticated_entity import SellerInventoryAttractionNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_attraction_non_authenticated_entity import SellableInventoryAttractionNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -499,7 +426,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryAttractionNonAuthenticatedEntity**](SellerInventoryAttractionNonAuthenticatedEntity.md)
+[**SellableInventoryAttractionNonAuthenticatedEntity**](SellableInventoryAttractionNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -523,7 +450,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_inventory**
-> HotelInventoryResponseNonAuthenticatedEntity show_property_inventory(hotel_inventory_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, images=images, videos=videos, wink_version=wink_version)
+> PropertyInventoryResponseNonAuthenticatedEntity show_property_inventory(hotel_inventory_request_non_authenticated_entity, customization_identifier=customization_identifier, images=images, videos=videos, wink_version=wink_version)
 
 Show Property
 
@@ -536,7 +463,7 @@ Show property content / availability / rate details.
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.hotel_inventory_request_non_authenticated_entity import HotelInventoryRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.hotel_inventory_response_non_authenticated_entity import HotelInventoryResponseNonAuthenticatedEntity
+from wink_sdk_inventory.models.property_inventory_response_non_authenticated_entity import PropertyInventoryResponseNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -558,14 +485,14 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     hotel_inventory_request_non_authenticated_entity = wink_sdk_inventory.HotelInventoryRequestNonAuthenticatedEntity() # HotelInventoryRequestNonAuthenticatedEntity | 
-    engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
+    customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
     images = 20 # int | Number of images to return for inventory (optional) (default to 20)
     videos = 1 # int | Number of videos to return for inventory (optional) (default to 1)
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Show Property
-        api_response = api_instance.show_property_inventory(hotel_inventory_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, images=images, videos=videos, wink_version=wink_version)
+        api_response = api_instance.show_property_inventory(hotel_inventory_request_non_authenticated_entity, customization_identifier=customization_identifier, images=images, videos=videos, wink_version=wink_version)
         print("The response of InventoryApi->show_property_inventory:\n")
         pprint(api_response)
     except Exception as e:
@@ -580,14 +507,14 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hotel_inventory_request_non_authenticated_entity** | [**HotelInventoryRequestNonAuthenticatedEntity**](HotelInventoryRequestNonAuthenticatedEntity.md)|  | 
- **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
+ **customization_identifier** | **str**| Customization identifier | [optional] 
  **images** | **int**| Number of images to return for inventory | [optional] [default to 20]
  **videos** | **int**| Number of videos to return for inventory | [optional] [default to 1]
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
 
-[**HotelInventoryResponseNonAuthenticatedEntity**](HotelInventoryResponseNonAuthenticatedEntity.md)
+[**PropertyInventoryResponseNonAuthenticatedEntity**](PropertyInventoryResponseNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -611,7 +538,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_list**
-> HotelInventoryListResponseNonAuthenticatedEntity show_property_list(hotel_inventory_list_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, images=images, videos=videos, wink_version=wink_version)
+> HotelInventoryListResponseNonAuthenticatedEntity show_property_list(hotel_inventory_list_request_non_authenticated_entity, customization_identifier=customization_identifier, images=images, videos=videos, wink_version=wink_version)
 
 Show Property List
 
@@ -646,14 +573,14 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     hotel_inventory_list_request_non_authenticated_entity = wink_sdk_inventory.HotelInventoryListRequestNonAuthenticatedEntity() # HotelInventoryListRequestNonAuthenticatedEntity | 
-    engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
+    customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
     images = 20 # int | Number of images to return for inventory (optional) (default to 20)
     videos = 1 # int | Number of videos to return for inventory (optional) (default to 1)
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Show Property List
-        api_response = api_instance.show_property_list(hotel_inventory_list_request_non_authenticated_entity, engine_configuration_identifier=engine_configuration_identifier, images=images, videos=videos, wink_version=wink_version)
+        api_response = api_instance.show_property_list(hotel_inventory_list_request_non_authenticated_entity, customization_identifier=customization_identifier, images=images, videos=videos, wink_version=wink_version)
         print("The response of InventoryApi->show_property_list:\n")
         pprint(api_response)
     except Exception as e:
@@ -668,7 +595,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hotel_inventory_list_request_non_authenticated_entity** | [**HotelInventoryListRequestNonAuthenticatedEntity**](HotelInventoryListRequestNonAuthenticatedEntity.md)|  | 
- **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
+ **customization_identifier** | **str**| Customization identifier | [optional] 
  **images** | **int**| Number of images to return for inventory | [optional] [default to 20]
  **videos** | **int**| Number of videos to return for inventory | [optional] [default to 1]
  **wink_version** | **str**|  | [optional] 
@@ -699,7 +626,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_meeting_room**
-> SellerInventoryMeetingRoomNonAuthenticatedEntity show_property_meeting_room(aggregate_meeting_room_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryMeetingRoomNonAuthenticatedEntity show_property_meeting_room(aggregate_meeting_room_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Meeting Room Inventory
 
@@ -712,7 +639,7 @@ Show single meeting room based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_meeting_room_request_non_authenticated_entity import AggregateMeetingRoomRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_meeting_room_non_authenticated_entity import SellerInventoryMeetingRoomNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_meeting_room_non_authenticated_entity import SellableInventoryMeetingRoomNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -759,7 +686,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryMeetingRoomNonAuthenticatedEntity**](SellerInventoryMeetingRoomNonAuthenticatedEntity.md)
+[**SellableInventoryMeetingRoomNonAuthenticatedEntity**](SellableInventoryMeetingRoomNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -783,7 +710,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_place**
-> SellerInventoryPlaceNonAuthenticatedEntity show_property_place(aggregate_place_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryPlaceNonAuthenticatedEntity show_property_place(aggregate_place_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Place Inventory
 
@@ -796,7 +723,7 @@ Show single place based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_place_request_non_authenticated_entity import AggregatePlaceRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_place_non_authenticated_entity import SellerInventoryPlaceNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_place_non_authenticated_entity import SellableInventoryPlaceNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -843,7 +770,91 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryPlaceNonAuthenticatedEntity**](SellerInventoryPlaceNonAuthenticatedEntity.md)
+[**SellableInventoryPlaceNonAuthenticatedEntity**](SellableInventoryPlaceNonAuthenticatedEntity.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **show_property_rate_period**
+> PeriodForPropertyResponseNonAuthenticatedEntity show_property_rate_period(period_for_property_request_non_authenticated_entity, customization_identifier=customization_identifier, wink_version=wink_version)
+
+Show Property Rate Period
+
+Returns all possible date range combinations of best rates for a property.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_inventory
+from wink_sdk_inventory.models.period_for_property_request_non_authenticated_entity import PeriodForPropertyRequestNonAuthenticatedEntity
+from wink_sdk_inventory.models.period_for_property_response_non_authenticated_entity import PeriodForPropertyResponseNonAuthenticatedEntity
+from wink_sdk_inventory.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_inventory.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_inventory.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_inventory.InventoryApi(api_client)
+    period_for_property_request_non_authenticated_entity = wink_sdk_inventory.PeriodForPropertyRequestNonAuthenticatedEntity() # PeriodForPropertyRequestNonAuthenticatedEntity | 
+    customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Show Property Rate Period
+        api_response = api_instance.show_property_rate_period(period_for_property_request_non_authenticated_entity, customization_identifier=customization_identifier, wink_version=wink_version)
+        print("The response of InventoryApi->show_property_rate_period:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling InventoryApi->show_property_rate_period: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **period_for_property_request_non_authenticated_entity** | [**PeriodForPropertyRequestNonAuthenticatedEntity**](PeriodForPropertyRequestNonAuthenticatedEntity.md)|  | 
+ **customization_identifier** | **str**| Customization identifier | [optional] 
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**PeriodForPropertyResponseNonAuthenticatedEntity**](PeriodForPropertyResponseNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -867,7 +878,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_recreation**
-> SellerInventoryActivityNonAuthenticatedEntity show_property_recreation(aggregate_activity_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryActivityNonAuthenticatedEntity show_property_recreation(aggregate_activity_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Activity Inventory
 
@@ -880,7 +891,7 @@ Show single activity based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_activity_request_non_authenticated_entity import AggregateActivityRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_activity_non_authenticated_entity import SellerInventoryActivityNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_activity_non_authenticated_entity import SellableInventoryActivityNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -927,7 +938,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryActivityNonAuthenticatedEntity**](SellerInventoryActivityNonAuthenticatedEntity.md)
+[**SellableInventoryActivityNonAuthenticatedEntity**](SellableInventoryActivityNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -951,7 +962,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_restaurant**
-> SellerInventoryRestaurantNonAuthenticatedEntity show_property_restaurant(aggregate_restaurant_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryRestaurantNonAuthenticatedEntity show_property_restaurant(aggregate_restaurant_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Restaurant Inventory
 
@@ -964,7 +975,7 @@ Show single restaurant based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_restaurant_request_non_authenticated_entity import AggregateRestaurantRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_restaurant_non_authenticated_entity import SellerInventoryRestaurantNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_restaurant_non_authenticated_entity import SellableInventoryRestaurantNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -1011,7 +1022,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryRestaurantNonAuthenticatedEntity**](SellerInventoryRestaurantNonAuthenticatedEntity.md)
+[**SellableInventoryRestaurantNonAuthenticatedEntity**](SellableInventoryRestaurantNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -1035,7 +1046,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_room_type**
-> SellerInventoryGuestRoomNonAuthenticatedEntity show_property_room_type(aggregate_room_type_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SellableInventoryGuestRoomNonAuthenticatedEntity show_property_room_type(aggregate_room_type_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Guest Room Inventory
 
@@ -1048,7 +1059,7 @@ Show single guest room based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_room_type_request_non_authenticated_entity import AggregateRoomTypeRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_guest_room_non_authenticated_entity import SellerInventoryGuestRoomNonAuthenticatedEntity
+from wink_sdk_inventory.models.sellable_inventory_guest_room_non_authenticated_entity import SellableInventoryGuestRoomNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -1095,7 +1106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventoryGuestRoomNonAuthenticatedEntity**](SellerInventoryGuestRoomNonAuthenticatedEntity.md)
+[**SellableInventoryGuestRoomNonAuthenticatedEntity**](SellableInventoryGuestRoomNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -1119,7 +1130,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_property_spa**
-> SellerInventorySpaNonAuthenticatedEntity show_property_spa(aggregate_spa_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
+> SpaSellableItemNonAuthenticatedEntity show_property_spa(aggregate_spa_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
 Show Spa Inventory
 
@@ -1132,7 +1143,7 @@ Show single spa based on a channel inventory identifier
 ```python
 import wink_sdk_inventory
 from wink_sdk_inventory.models.aggregate_spa_request_non_authenticated_entity import AggregateSpaRequestNonAuthenticatedEntity
-from wink_sdk_inventory.models.seller_inventory_spa_non_authenticated_entity import SellerInventorySpaNonAuthenticatedEntity
+from wink_sdk_inventory.models.spa_sellable_item_non_authenticated_entity import SpaSellableItemNonAuthenticatedEntity
 from wink_sdk_inventory.rest import ApiException
 from pprint import pprint
 
@@ -1179,7 +1190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SellerInventorySpaNonAuthenticatedEntity**](SellerInventorySpaNonAuthenticatedEntity.md)
+[**SpaSellableItemNonAuthenticatedEntity**](SpaSellableItemNonAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -1205,9 +1216,9 @@ Name | Type | Description  | Notes
 # **show_seller_inventory_list**
 > SellableListResponseNonAuthenticatedEntity show_seller_inventory_list(aggregate_seller_inventory_list_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
 
-Search Inventory
+Show Inventory Grid
 
-Shows page of blocking items
+Shows page of inventory items
 
 ### Example
 
@@ -1242,7 +1253,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     accept = 'accept_example' # str |  (optional)
 
     try:
-        # Search Inventory
+        # Show Inventory Grid
         api_response = api_instance.show_seller_inventory_list(aggregate_seller_inventory_list_request_non_authenticated_entity, wink_version=wink_version, accept=accept)
         print("The response of InventoryApi->show_seller_inventory_list:\n")
         pprint(api_response)
@@ -1291,7 +1302,7 @@ Name | Type | Description  | Notes
 
 Show Ranked Inventories
 
-Shows a paginated list of ranked blocking.
+Shows a paginated list of ranked inventory.
 
 ### Example
 

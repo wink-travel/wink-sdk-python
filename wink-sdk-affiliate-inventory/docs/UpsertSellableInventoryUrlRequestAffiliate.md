@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **inventory_type** | **str** | Inventory type | 
 **supplier_identifier** | **str** | The entity supplying the inventory. Usually a hotel. | 
 **channel_inventory_identifier** | **str** | Selected inventory record | 
-**transactional_item_identifier** | **str** | The transactional item to retrieve pricing for. If left empty, will find the cheapest priced item. | 
+**transactional_item_identifier** | **str** | In use by ancillary items only. Not used room type or property. The transactional item on the ancillary to retrieve pricing for. If left empty, will find the cheapest priced item. | [optional] 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Animation delay in milliseconds | [optional] [default to -1]
 

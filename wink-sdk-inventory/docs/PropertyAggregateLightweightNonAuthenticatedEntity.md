@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **chain** | **str** | Name of hotel chain if applicable. | [optional] 
 **brand** | **str** | Name of hotel brand | [optional] 
 **url_name** | **str** | Unique URL-friendly name slug of hotel | [optional] 
+**unique_id** | **str** | Event shorter name | 
 **star_rating** | **int** | Official or self-designated property star rating. Note that in some regions there are 6-star hotels. They are the same as 5-star hotels everywhere else. | [optional] 
 **bookings** | **int** | Number of bookings for this property on the wink.travel platform. | [optional] [default to 0]
 **aggregate_review_rating** | **float** | Aggregate score based on all current user reviews. | [optional] [default to 0.0]

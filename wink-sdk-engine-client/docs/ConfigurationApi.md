@@ -4,10 +4,10 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**show_customization_by_client_id**](ConfigurationApi.md#show_customization_by_client_id) | **GET** /api/sell/configuration/client/{clientId} | Load Configuration by Client ID
-[**show_customization_by_client_id_header**](ConfigurationApi.md#show_customization_by_client_id_header) | **GET** /api/sell/configuration/client | Load Configuration by Client ID in Header
-[**show_customization_by_id**](ConfigurationApi.md#show_customization_by_id) | **GET** /api/sell/configuration/{identifier} | Load Configuration by ID
-[**show_customization_by_url_name**](ConfigurationApi.md#show_customization_by_url_name) | **GET** /api/sell/configuration/url-name/{urlName} | Load Configuration by URL name
+[**show_customization_by_client_id**](ConfigurationApi.md#show_customization_by_client_id) | **GET** /api/public/configuration/client/{clientId} | Load Configuration by Client ID
+[**show_customization_by_client_id_header**](ConfigurationApi.md#show_customization_by_client_id_header) | **GET** /api/public/configuration/client | Load Configuration by Client ID in Header
+[**show_customization_by_id**](ConfigurationApi.md#show_customization_by_id) | **GET** /api/public/configuration/{identifier} | Load Configuration by ID
+[**show_customization_by_url_name**](ConfigurationApi.md#show_customization_by_url_name) | **GET** /api/public/configuration/url-name/{urlName} | Load Configuration by URL name
 
 
 # **show_customization_by_client_id**

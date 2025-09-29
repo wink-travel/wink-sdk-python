@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**place_id** | **str** | Unique ID | 
-**name** | **str** | Name of lead | 
-**message_from_user** | **str** | A personalized message from the inviter | [optional] 
+**place_id** | **str** |  | 
+**name** | **str** |  | 
+**message_from_user** | **str** |  | [optional] 
 
 ## Example
 

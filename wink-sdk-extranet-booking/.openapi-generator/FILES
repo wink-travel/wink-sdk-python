@@ -4,6 +4,7 @@
 .travis.yml
 README.md
 docs/AggregateDescriptorSupplier.md
+docs/AnalyticsApi.md
 docs/AuthenticatedUserSupplier.md
 docs/AuthenticatedUserSupplierDetails.md
 docs/BedSupplier.md
@@ -36,6 +37,8 @@ docs/BookingItinerarySupplierDetails.md
 docs/BookingOverviewRequestSupplier.md
 docs/BookingSupplier.md
 docs/BookingSupplierDetails.md
+docs/BookingTestNotificationSupplierDetails.md
+docs/BookingTestRequestSupplierDetails.md
 docs/BookingUserSessionSupplier.md
 docs/BookingUserSessionSupplierDetails.md
 docs/BookingUserSupplier.md
@@ -50,6 +53,7 @@ docs/CancellationPolicyExceptionsSupplier.md
 docs/CancellationPolicyExceptionsSupplierDetails.md
 docs/CancellationPolicyLightweightSupplier.md
 docs/CancellationPolicyLightweightSupplierDetails.md
+docs/ChannelNameSupplierDetails.md
 docs/ChartCategoryAxisSupplier.md
 docs/ChartLegendSupplier.md
 docs/ChartSeriesSupplier.md
@@ -69,6 +73,7 @@ docs/CustomizationLightweightSupplier.md
 docs/CustomizationLightweightSupplierDetails.md
 docs/CustomizationThemeColorsSupplier.md
 docs/CustomizationThemeColorsSupplierDetails.md
+docs/DailyRateRateSupplierDetails.md
 docs/DailyRateSupplierDetails.md
 docs/ExtraChargeSupplier.md
 docs/ExtraChargeSupplierDetails.md
@@ -78,8 +83,10 @@ docs/FilterDescriptorSupplier.md
 docs/GeneralManagerSupplier.md
 docs/GeneralManagerSupplierDetails.md
 docs/GenericErrorMessage.md
+docs/GeoIpLightweightSupplierDetails.md
 docs/GeoJsonPointSupplier.md
 docs/GeoJsonPointSupplierDetails.md
+docs/GeoNameCountrySupplierDetails.md
 docs/GeoNameLightweightSupplier.md
 docs/GeoNameLightweightSupplierDetails.md
 docs/GroupDescriptorSupplier.md
@@ -94,6 +101,7 @@ docs/LocalizedDescriptionSupplier.md
 docs/LocalizedDescriptionSupplierDetails.md
 docs/LocalizedPriceSupplier.md
 docs/LocalizedPriceSupplierDetails.md
+docs/LocalizedTransactionalTravelInventorySupplierDetails.md
 docs/MediaAuthorAttributionSupplier.md
 docs/MediaAuthorAttributionSupplierDetails.md
 docs/PageBookingSupplier.md
@@ -135,6 +143,7 @@ docs/ReviewUserSupplier.md
 docs/ReviewUserSupplierDetails.md
 docs/RoomConfigurationPriceRatePlanSupplier.md
 docs/RoomConfigurationPriceRatePlanSupplierDetails.md
+docs/RoomConfigurationPriceSupplierDetails.md
 docs/RoomConfigurationSupplier.md
 docs/RoomConfigurationSupplierDetails.md
 docs/RoomStaySupplier.md
@@ -167,6 +176,7 @@ docs/TravelInventoryRecognitionSupplier.md
 docs/TravelInventoryRecognitionSupplierDetails.md
 docs/VariableChargeSupplier.md
 docs/VariableChargeSupplierDetails.md
+docs/VerifyRatesRequestSupplierDetails.md
 git_push.sh
 pyproject.toml
 requirements.txt
@@ -174,9 +184,20 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_analytics_api.py
+test/test_booking_test_notification_supplier_details.py
+test/test_booking_test_request_supplier_details.py
+test/test_channel_name_supplier_details.py
+test/test_daily_rate_rate_supplier_details.py
+test/test_geo_ip_lightweight_supplier_details.py
+test/test_geo_name_country_supplier_details.py
+test/test_localized_transactional_travel_inventory_supplier_details.py
+test/test_room_configuration_price_supplier_details.py
+test/test_verify_rates_request_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
+wink_sdk_extranet_booking/api/analytics_api.py
 wink_sdk_extranet_booking/api/booking_api.py
 wink_sdk_extranet_booking/api/calendar_sync_api.py
 wink_sdk_extranet_booking/api/review_api.py
@@ -217,6 +238,8 @@ wink_sdk_extranet_booking/models/booking_itinerary_supplier_details.py
 wink_sdk_extranet_booking/models/booking_overview_request_supplier.py
 wink_sdk_extranet_booking/models/booking_supplier.py
 wink_sdk_extranet_booking/models/booking_supplier_details.py
+wink_sdk_extranet_booking/models/booking_test_notification_supplier_details.py
+wink_sdk_extranet_booking/models/booking_test_request_supplier_details.py
 wink_sdk_extranet_booking/models/booking_user_session_supplier.py
 wink_sdk_extranet_booking/models/booking_user_session_supplier_details.py
 wink_sdk_extranet_booking/models/booking_user_supplier.py
@@ -230,6 +253,7 @@ wink_sdk_extranet_booking/models/cancellation_policy_exceptions_supplier.py
 wink_sdk_extranet_booking/models/cancellation_policy_exceptions_supplier_details.py
 wink_sdk_extranet_booking/models/cancellation_policy_lightweight_supplier.py
 wink_sdk_extranet_booking/models/cancellation_policy_lightweight_supplier_details.py
+wink_sdk_extranet_booking/models/channel_name_supplier_details.py
 wink_sdk_extranet_booking/models/chart_category_axis_supplier.py
 wink_sdk_extranet_booking/models/chart_legend_supplier.py
 wink_sdk_extranet_booking/models/chart_series_supplier.py
@@ -249,6 +273,7 @@ wink_sdk_extranet_booking/models/customization_lightweight_supplier.py
 wink_sdk_extranet_booking/models/customization_lightweight_supplier_details.py
 wink_sdk_extranet_booking/models/customization_theme_colors_supplier.py
 wink_sdk_extranet_booking/models/customization_theme_colors_supplier_details.py
+wink_sdk_extranet_booking/models/daily_rate_rate_supplier_details.py
 wink_sdk_extranet_booking/models/daily_rate_supplier_details.py
 wink_sdk_extranet_booking/models/extra_charge_supplier.py
 wink_sdk_extranet_booking/models/extra_charge_supplier_details.py
@@ -258,8 +283,10 @@ wink_sdk_extranet_booking/models/filter_descriptor_supplier.py
 wink_sdk_extranet_booking/models/general_manager_supplier.py
 wink_sdk_extranet_booking/models/general_manager_supplier_details.py
 wink_sdk_extranet_booking/models/generic_error_message.py
+wink_sdk_extranet_booking/models/geo_ip_lightweight_supplier_details.py
 wink_sdk_extranet_booking/models/geo_json_point_supplier.py
 wink_sdk_extranet_booking/models/geo_json_point_supplier_details.py
+wink_sdk_extranet_booking/models/geo_name_country_supplier_details.py
 wink_sdk_extranet_booking/models/geo_name_lightweight_supplier.py
 wink_sdk_extranet_booking/models/geo_name_lightweight_supplier_details.py
 wink_sdk_extranet_booking/models/group_descriptor_supplier.py
@@ -274,6 +301,7 @@ wink_sdk_extranet_booking/models/localized_description_supplier.py
 wink_sdk_extranet_booking/models/localized_description_supplier_details.py
 wink_sdk_extranet_booking/models/localized_price_supplier.py
 wink_sdk_extranet_booking/models/localized_price_supplier_details.py
+wink_sdk_extranet_booking/models/localized_transactional_travel_inventory_supplier_details.py
 wink_sdk_extranet_booking/models/media_author_attribution_supplier.py
 wink_sdk_extranet_booking/models/media_author_attribution_supplier_details.py
 wink_sdk_extranet_booking/models/page_booking_supplier.py
@@ -314,6 +342,7 @@ wink_sdk_extranet_booking/models/review_user_supplier.py
 wink_sdk_extranet_booking/models/review_user_supplier_details.py
 wink_sdk_extranet_booking/models/room_configuration_price_rate_plan_supplier.py
 wink_sdk_extranet_booking/models/room_configuration_price_rate_plan_supplier_details.py
+wink_sdk_extranet_booking/models/room_configuration_price_supplier_details.py
 wink_sdk_extranet_booking/models/room_configuration_supplier.py
 wink_sdk_extranet_booking/models/room_configuration_supplier_details.py
 wink_sdk_extranet_booking/models/room_stay_supplier.py
@@ -346,5 +375,6 @@ wink_sdk_extranet_booking/models/travel_inventory_recognition_supplier.py
 wink_sdk_extranet_booking/models/travel_inventory_recognition_supplier_details.py
 wink_sdk_extranet_booking/models/variable_charge_supplier.py
 wink_sdk_extranet_booking/models/variable_charge_supplier_details.py
+wink_sdk_extranet_booking/models/verify_rates_request_supplier_details.py
 wink_sdk_extranet_booking/py.typed
 wink_sdk_extranet_booking/rest.py

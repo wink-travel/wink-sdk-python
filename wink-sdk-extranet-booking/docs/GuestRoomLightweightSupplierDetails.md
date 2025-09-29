@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **contact** | [**ContactSupplierDetails**](ContactSupplierDetails.md) | Associate a contact person for this blocking (if applicable). | 
 **address** | [**SimpleAddressSupplierDetails**](SimpleAddressSupplierDetails.md) | Defaults to property address. | 
 **commissionable** | **bool** | Indicate whether sales channels receive commission for selling this blocking. | [default to True]
-**name** | **str** | Internal name of blocking. | 
+**name** | **str** | Internal name of inventory. | 
 **proximity_code** | **str** | Supported OTA specification &#x60;PRX&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | 
 **sort** | **int** | Use this property to sort an blocking in a list of activities. | [optional] 
 **min_age_appropriate_code** | **str** | Supported OTA specification &#x60;AQC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 

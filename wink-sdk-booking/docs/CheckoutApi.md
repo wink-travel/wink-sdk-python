@@ -4,13 +4,13 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**checkout**](CheckoutApi.md#checkout) | **POST** /api/checkout | Prepare reactive
+[**checkout**](CheckoutApi.md#checkout) | **POST** /api/checkout | Prepare booking
 
 
 # **checkout**
 > CheckoutResponseAuthenticatedEntity checkout(checkout_request_authenticated_entity, wink_version=wink_version)
 
-Prepare reactive
+Prepare booking
 
 Communicates shopping cart to TripPay.
 
@@ -46,7 +46,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # Prepare reactive
+        # Prepare booking
         api_response = api_instance.checkout(checkout_request_authenticated_entity, wink_version=wink_version)
         print("The response of CheckoutApi->checkout:\n")
         pprint(api_response)

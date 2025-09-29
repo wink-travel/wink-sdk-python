@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**set_perks**](MasterRateApi.md#set_perks) | **PATCH** /api/property/{propertyIdentifier}/master-rate/{masterRateIdentifier}/perks | Set Master Rate Perks
 [**show_master_rate**](MasterRateApi.md#show_master_rate) | **GET** /api/property/{propertyIdentifier}/master-rate/{masterRateIdentifier} | Show Master Rate
-[**show_master_rates**](MasterRateApi.md#show_master_rates) | **GET** /api/property/{propertyIdentifier}/master-rate/list | Show Master Rates
+[**show_master_rates1**](MasterRateApi.md#show_master_rates1) | **GET** /api/property/{propertyIdentifier}/master-rate/list | Show Master Rates
 [**toggle_master_rate**](MasterRateApi.md#toggle_master_rate) | **PATCH** /api/property/{propertyIdentifier}/master-rate/{masterRateIdentifier}/toggle | Toggle Master Rate
 
 
@@ -181,8 +181,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **show_master_rates**
-> List[MasterRateSupplier] show_master_rates(property_identifier, wink_version=wink_version, accept=accept)
+# **show_master_rates1**
+> List[MasterRateSupplier] show_master_rates1(property_identifier, wink_version=wink_version, accept=accept)
 
 Show Master Rates
 
@@ -221,11 +221,11 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 
     try:
         # Show Master Rates
-        api_response = api_instance.show_master_rates(property_identifier, wink_version=wink_version, accept=accept)
-        print("The response of MasterRateApi->show_master_rates:\n")
+        api_response = api_instance.show_master_rates1(property_identifier, wink_version=wink_version, accept=accept)
+        print("The response of MasterRateApi->show_master_rates1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling MasterRateApi->show_master_rates: %s\n" % e)
+        print("Exception when calling MasterRateApi->show_master_rates1: %s\n" % e)
 ```
 
 

@@ -4,15 +4,15 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**caldav**](CalendarSyncApi.md#caldav) | **GET** /api/cal/property/{propertyIdentifier}/booking/list | CalDAV calendar
-[**generate_cal_dav_auth**](CalendarSyncApi.md#generate_cal_dav_auth) | **GET** /api/property/{propertyIdentifier}/caldav/auth/regen | Create CalDAV connection
+[**caldav**](CalendarSyncApi.md#caldav) | **GET** /api/cal/property/{propertyIdentifier}/booking/list | Load CalDAV Calendar
+[**generate_cal_dav_auth**](CalendarSyncApi.md#generate_cal_dav_auth) | **GET** /api/property/{propertyIdentifier}/caldav/auth/regen | Create CalDAV Connection
 [**retrieve_cal_dav_auth**](CalendarSyncApi.md#retrieve_cal_dav_auth) | **GET** /api/property/{propertyIdentifier}/caldav/auth | Show CalDAV Connection
 
 
 # **caldav**
 > str caldav(property_identifier, wink_version=wink_version)
 
-CalDAV calendar
+Load CalDAV Calendar
 
 This is the CalDAV URL you can add to your calendar program.
 
@@ -46,7 +46,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # CalDAV calendar
+        # Load CalDAV Calendar
         api_response = api_instance.caldav(property_identifier, wink_version=wink_version)
         print("The response of CalendarSyncApi->caldav:\n")
         pprint(api_response)
@@ -75,19 +75,19 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, text/html
+ - **Accept**: */*, application/json, application/xml, text/xml, text/plain, text/html
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**503** | Service Unavailable |  -  |
 **400** | Bad Request |  -  |
 **405** | Method Not Allowed |  -  |
 **415** | Unsupported Media Type |  -  |
 **500** | Internal Server Error |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
-**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 # **generate_cal_dav_auth**
 > CalDavResponseSupplier generate_cal_dav_auth(property_identifier, wink_version=wink_version)
 
-Create CalDAV connection
+Create CalDAV Connection
 
 Generates new CalDav passkey the property can use to authenticate the CalDAV url.
 
@@ -130,7 +130,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # Create CalDAV connection
+        # Create CalDAV Connection
         api_response = api_instance.generate_cal_dav_auth(property_identifier, wink_version=wink_version)
         print("The response of CalendarSyncApi->generate_cal_dav_auth:\n")
         pprint(api_response)

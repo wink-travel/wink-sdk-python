@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **recurrence_id** | **str** | The parent ID of the recurring event. | [optional] 
 **recurrence_exception** | **List[datetime]** | Exceptions to the recurrence rule. | [optional] 
 **booking_identifier** | **str** | Booking identifier this scheduled event was created as part of. | 
-**type** | **str** | The type of travel blocking. | 
+**type** | **str** | The type of travel inventory. | 
 **attendees** | **int** | Number of guests attending this event. | [default to 1]
 
 ## Example

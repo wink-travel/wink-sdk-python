@@ -5,6 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**channel_inventory_identifier** | **str** | Sales channel inventory identifier | 
+**list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
+**commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | 
+**commission** | **float** | The commission percentage. | 
+**direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]
 **adults** | **int** | The actual amount of adults as determined by the hotel&#39;s policy | 
 **children** | **int** | The actual amount of children as determined by the hotel&#39;s policy | [optional] 
 **start_date** | **date** | SimpleDateTimeItinerary startDate | 
@@ -20,17 +25,12 @@ Name | Type | Description | Notes
 **perk_value** | **int** | The combined value of these perkTypes | [optional] 
 **active_cancellation_policy** | [**CancellationPolicyLightweightNonAuthenticatedEntity**](CancellationPolicyLightweightNonAuthenticatedEntity.md) | The active / selected cancellation policy for this room configuration | 
 **room_nights** | **int** | Number of nights the guests will be staying | 
-**list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
-**channel_inventory_identifier** | **str** | Sales channel inventory identifier | 
-**commissionable** | **bool** | Whether this package is commissionable based on the incoming sales channel. | 
-**commission** | **float** | The commission percentage. | 
-**direct** | **bool** | Indicates whether the blocking from sales channel is direct or not. If you are a travel agent doing your own acquiring, this flag has to be true to make a booking. | [default to False]
 **price_list** | **List[object]** |  | [optional] 
 **available** | **bool** |  | [optional] 
-**rate_source** | **str** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**rate_source** | **str** |  | [optional] 
 
 ## Example
 
