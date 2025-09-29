@@ -2,6 +2,22 @@
 
 Changelog of wink-sdk-python.
 
+## v0.0.41 (2025-08-26)
+
+### Other changes
+
+**Merge branch 'release/0.0.41'**
+
+
+[867cf](https://github.com/wink-travel/wink-sdk-python/commit/867cf8c92ab0ba8) bjornharvold *2025-08-26 08:14:00*
+
+**Merge tag '0.0.40' into develop**
+
+* chore: release v0.0.40 0.0.40 
+
+[672ab](https://github.com/wink-travel/wink-sdk-python/commit/672abdde8654325) bjornharvold *2025-08-17 13:19:08*
+
+
 ## v0.0.40 (2025-08-17)
 
 ### Other changes
