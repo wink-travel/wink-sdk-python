@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **channel_inventory_type** | **str** | Channel inventory type is a subset of inventory type in that it does not include the &#x60;HOTEL&#x60; type. THe way it works is, as a seller you might want to sell a guest room but instead of showing the price of that guest room, you would like to display the best room type price for the property. | 
 **supplier_identifier** | **str** | The entity supplying the inventory. Usually a hotel. | 
 **channel_inventory_identifier** | **str** | Selected inventory record | 
-**transactional_item_identifier** | **str** | The transactional item to retrieve pricing for. If left empty, will find the cheapest priced item. | 
+**transactional_item_identifier** | **str** | In use by ancillary items only. Not used room type or property. The transactional item on the ancillary to retrieve pricing for. If left empty, will find the cheapest priced item. | [optional] 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Animation delay in milliseconds | [optional] [default to -1]
 

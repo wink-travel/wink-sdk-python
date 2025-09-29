@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **image_identifier** | **str** | Cloudinary image identifier | 
 **image_url** | **str** | Absolute URL to image of inventory | 
 **localized_name** | **str** | Name of travel inventory in traveler language (if available). Defaults to English. | 
-**localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
+**localized_description** | **str** | Description of travel inventory in traveler language (if available). Defaults to English. | 
 **contact** | [**ContactAgent**](ContactAgent.md) | Travel blocking contact (if applicable) | 
 **address** | [**SimpleAddressAgent**](SimpleAddressAgent.md) | Travel blocking address (if applicable) | 
 **commissionable** | **bool** |  | 

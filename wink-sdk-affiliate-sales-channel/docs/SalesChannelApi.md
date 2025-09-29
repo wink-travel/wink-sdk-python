@@ -4,14 +4,14 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**browse_sales_channels**](SalesChannelApi.md#browse_sales_channels) | **POST** /api/sales-channel/grid | Sales Channel Search
+[**browse_sales_channels**](SalesChannelApi.md#browse_sales_channels) | **POST** /api/sales-channel/grid | Sales Channel Grid
 [**show_sales_channel**](SalesChannelApi.md#show_sales_channel) | **GET** /api/sales-channel/supplier/{supplierIdentifier} | Show Sales Channel
 
 
 # **browse_sales_channels**
 > PageSalesChannelAffiliate browse_sales_channels(state_affiliate, wink_version=wink_version)
 
-Sales Channel Search
+Sales Channel Grid
 
 Retrieve page of existing sales channels based on criteria.
 
@@ -47,7 +47,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
-        # Sales Channel Search
+        # Sales Channel Grid
         api_response = api_instance.browse_sales_channels(state_affiliate, wink_version=wink_version)
         print("The response of SalesChannelApi->browse_sales_channels:\n")
         pprint(api_response)

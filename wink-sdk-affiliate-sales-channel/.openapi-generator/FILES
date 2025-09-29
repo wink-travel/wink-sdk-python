@@ -3,6 +3,7 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
+docs/AffiliateApi.md
 docs/AggregateDescriptorAffiliate.md
 docs/AvailableSupplierApi.md
 docs/BrowseSuppliers400Response.md
@@ -45,9 +46,11 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_affiliate_api.py
 tox.ini
 wink_sdk_affiliate_sales_channel/__init__.py
 wink_sdk_affiliate_sales_channel/api/__init__.py
+wink_sdk_affiliate_sales_channel/api/affiliate_api.py
 wink_sdk_affiliate_sales_channel/api/available_supplier_api.py
 wink_sdk_affiliate_sales_channel/api/relationship_request_api.py
 wink_sdk_affiliate_sales_channel/api/sales_channel_api.py

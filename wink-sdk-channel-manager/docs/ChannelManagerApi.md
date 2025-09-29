@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ping**](ChannelManagerApi.md#ping) | **GET** /api/channel-manager/ping | Say Hello
 [**show_properties**](ChannelManagerApi.md#show_properties) | **GET** /api/channel-manager/property/list | Show Properties
-[**show_property**](ChannelManagerApi.md#show_property) | **GET** /api/channel-manager/property/{propertyIdentifier} | Show ChannelManagerProperty
+[**show_property**](ChannelManagerApi.md#show_property) | **GET** /api/channel-manager/property/{propertyIdentifier} | Show Property
 [**show_property_booking**](ChannelManagerApi.md#show_property_booking) | **GET** /api/channel-manager/property/{propertyIdentifier}/booking/{bookingIdentifier} | Show Booking
 [**show_property_bookings**](ChannelManagerApi.md#show_property_bookings) | **GET** /api/channel-manager/property/{propertyIdentifier}/booking/list | Show Bookings
 [**show_property_room_rates**](ChannelManagerApi.md#show_property_room_rates) | **GET** /api/channel-manager/property/{propertyIdentifier}/master-rate/{masterRateIdentifier} | Show Daily Rates
@@ -80,17 +80,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -166,17 +165,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -184,7 +182,7 @@ Name | Type | Description  | Notes
 # **show_property**
 > PropertyWithRoomRateList show_property(property_identifier, wink_version=wink_version, accept=accept)
 
-Show ChannelManagerProperty
+Show Property
 
 Retrieves property record with master rates included.
 
@@ -220,7 +218,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     accept = 'accept_example' # str |  (optional)
 
     try:
-        # Show ChannelManagerProperty
+        # Show Property
         api_response = api_instance.show_property(property_identifier, wink_version=wink_version, accept=accept)
         print("The response of ChannelManagerApi->show_property:\n")
         pprint(api_response)
@@ -250,17 +248,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -336,17 +333,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -424,17 +420,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -514,17 +509,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -601,17 +595,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/plain, */*, application/hal+json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **500** | Internal Server Error |  -  |
-**404** | Not Found |  -  |
-**400** | Bad Request |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

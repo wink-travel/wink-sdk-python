@@ -4,7 +4,6 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**change_property_name**](PropertyApi.md#change_property_name) | **PATCH** /api/property/{propertyIdentifier}/change-name | Change Property Name
 [**improve_welcome_text**](PropertyApi.md#improve_welcome_text) | **POST** /api/property/{propertyIdentifier}/welcome-text/improve | Improve Welcome Text
 [**is_hotel_name_unique**](PropertyApi.md#is_hotel_name_unique) | **GET** /api/property/unique/name | Check Property Name Uniqueness
 [**is_hotel_url_name_unique**](PropertyApi.md#is_hotel_url_name_unique) | **GET** /api/property/unique/url-name | Check Property Url Slug Uniqueness
@@ -23,91 +22,8 @@ Method | HTTP request | Description
 [**update_services**](PropertyApi.md#update_services) | **PATCH** /api/property/{propertyIdentifier}/services | Update Property Services
 [**update_welcome_text**](PropertyApi.md#update_welcome_text) | **PATCH** /api/property/{propertyIdentifier}/welcome-text | Update Property Text
 [**upload_general_manager_profile_picture**](PropertyApi.md#upload_general_manager_profile_picture) | **POST** /api/property/{propertyIdentifier}/multimedia/general-manager/upload | Upload General Manager Image
+[**upload_hotel_logos**](PropertyApi.md#upload_hotel_logos) | **POST** /api/property/{propertyIdentifier}/logo | Upload hotel logo
 
-
-# **change_property_name**
-> PropertySupplier change_property_name(property_identifier, change_property_name_request_supplier, wink_version=wink_version)
-
-Change Property Name
-
-Gives property owners a way to change the property name.
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_extranet_property
-from wink_sdk_extranet_property.models.change_property_name_request_supplier import ChangePropertyNameRequestSupplier
-from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
-from wink_sdk_extranet_property.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_extranet_property.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_extranet_property.PropertyApi(api_client)
-    property_identifier = 'hotel-1' # str | Update basic information for this property identifier
-    change_property_name_request_supplier = wink_sdk_extranet_property.ChangePropertyNameRequestSupplier() # ChangePropertyNameRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
-
-    try:
-        # Change Property Name
-        api_response = api_instance.change_property_name(property_identifier, change_property_name_request_supplier, wink_version=wink_version)
-        print("The response of PropertyApi->change_property_name:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling PropertyApi->change_property_name: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Update basic information for this property identifier | 
- **change_property_name_request_supplier** | [**ChangePropertyNameRequestSupplier**](ChangePropertyNameRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
-
-### Return type
-
-[**PropertySupplier**](PropertySupplier.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **improve_welcome_text**
 > SimpleDescriptionSupplier improve_welcome_text(property_identifier, improve_welcome_text_request_supplier, wink_version=wink_version)
@@ -1587,6 +1503,87 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Add general manager profile picture for this property identifier | 
  **file** | **bytearray**|  | 
+
+### Return type
+
+[**PropertySupplier**](PropertySupplier.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**207** | Multi-Status |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **upload_hotel_logos**
+> PropertySupplier upload_hotel_logos(property_identifier, file)
+
+Upload hotel logo
+
+Upload images of hotel logo that wink.travel can use for marketing purposes.
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_extranet_property
+from wink_sdk_extranet_property.models.property_supplier import PropertySupplier
+from wink_sdk_extranet_property.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_extranet_property.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_extranet_property.PropertyApi(api_client)
+    property_identifier = 'hotel-123' # str | Property identifier
+    file = None # bytearray | Multipart file array
+
+    try:
+        # Upload hotel logo
+        api_response = api_instance.upload_hotel_logos(property_identifier, file)
+        print("The response of PropertyApi->upload_hotel_logos:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling PropertyApi->upload_hotel_logos: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **property_identifier** | **str**| Property identifier | 
+ **file** | **bytearray**| Multipart file array | 
 
 ### Return type
 

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **create_promotion**
-> SpecialRateSupplier create_promotion(property_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+> SpecialRateSupplier create_promotion(property_identifier, upsert_special_rate_request_supplier, wink_version=wink_version)
 
 Create Promotion
 
@@ -25,7 +25,7 @@ Create a new promotion
 ```python
 import wink_sdk_extranet_monetize
 from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
-from wink_sdk_extranet_monetize.models.upsert_rate_modifier_request_supplier import UpsertRateModifierRequestSupplier
+from wink_sdk_extranet_monetize.models.upsert_special_rate_request_supplier import UpsertSpecialRateRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Create new promotion and associate with this property identifier.
-    upsert_rate_modifier_request_supplier = wink_sdk_extranet_monetize.UpsertRateModifierRequestSupplier() # UpsertRateModifierRequestSupplier | 
+    upsert_special_rate_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateRequestSupplier() # UpsertSpecialRateRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Create Promotion
-        api_response = api_instance.create_promotion(property_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+        api_response = api_instance.create_promotion(property_identifier, upsert_special_rate_request_supplier, wink_version=wink_version)
         print("The response of PromotionApi->create_promotion:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,7 +67,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create new promotion and associate with this property identifier. | 
- **upsert_rate_modifier_request_supplier** | [**UpsertRateModifierRequestSupplier**](UpsertRateModifierRequestSupplier.md)|  | 
+ **upsert_special_rate_request_supplier** | [**UpsertSpecialRateRequestSupplier**](UpsertSpecialRateRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_promotion**
-> SpecialRateSupplier update_promotion(property_identifier, rate_modifier_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+> SpecialRateSupplier update_promotion(property_identifier, rate_modifier_identifier, upsert_special_rate_request_supplier, wink_version=wink_version)
 
 Update Promotion
 
@@ -362,7 +362,7 @@ Update an existing promotion by its identifier
 ```python
 import wink_sdk_extranet_monetize
 from wink_sdk_extranet_monetize.models.special_rate_supplier import SpecialRateSupplier
-from wink_sdk_extranet_monetize.models.upsert_rate_modifier_request_supplier import UpsertRateModifierRequestSupplier
+from wink_sdk_extranet_monetize.models.upsert_special_rate_request_supplier import UpsertSpecialRateRequestSupplier
 from wink_sdk_extranet_monetize.rest import ApiException
 from pprint import pprint
 
@@ -385,12 +385,12 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Update existing promotion owned by this property identifier.
     rate_modifier_identifier = 'promotion-1' # str | Update existing promotion with this identifier.
-    upsert_rate_modifier_request_supplier = wink_sdk_extranet_monetize.UpsertRateModifierRequestSupplier() # UpsertRateModifierRequestSupplier | 
+    upsert_special_rate_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateRequestSupplier() # UpsertSpecialRateRequestSupplier | 
     wink_version = 'wink_version_example' # str |  (optional)
 
     try:
         # Update Promotion
-        api_response = api_instance.update_promotion(property_identifier, rate_modifier_identifier, upsert_rate_modifier_request_supplier, wink_version=wink_version)
+        api_response = api_instance.update_promotion(property_identifier, rate_modifier_identifier, upsert_special_rate_request_supplier, wink_version=wink_version)
         print("The response of PromotionApi->update_promotion:\n")
         pprint(api_response)
     except Exception as e:
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update existing promotion owned by this property identifier. | 
  **rate_modifier_identifier** | **str**| Update existing promotion with this identifier. | 
- **upsert_rate_modifier_request_supplier** | [**UpsertRateModifierRequestSupplier**](UpsertRateModifierRequestSupplier.md)|  | 
+ **upsert_special_rate_request_supplier** | [**UpsertSpecialRateRequestSupplier**](UpsertSpecialRateRequestSupplier.md)|  | 
  **wink_version** | **str**|  | [optional] 
 
 ### Return type

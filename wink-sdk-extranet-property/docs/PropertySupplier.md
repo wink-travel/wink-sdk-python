@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **local_name** | **str** | Name of the hotel in its local language if you use it for domestic guests. | [optional] 
 **legal_name** | **str** | Legal name of your hotel as it is registered. | 
 **url_name** | **str** | Unique url-friendly slug to identify property | 
-**unique_id** | **str** | Even shorter url identifier | 
+**unique_id** | **str** | Event shorter name | 
 **currency_code** | **str** | Currency code | 
 **status** | **str** | wink.travel sets this status as the hotel moves through the payment workflow and manually for approval. | [default to 'APPROVED']
 **external_status** | **str** | Property goes active by changing externalStatus. | [default to 'ACTIVE']
@@ -43,7 +43,7 @@ Name | Type | Description | Notes
 **revenue_contact** | [**ContactSupplier**](ContactSupplier.md) | Accounting contact information | [optional] 
 **marketing_contact** | [**ContactSupplier**](ContactSupplier.md) | Accounting contact address | [optional] 
 **lifestyle_types** | **List[str]** | List of all lifestyles property has associated with. See [Lifestyle geoname data](#operation/showLifestyles) | [optional] 
-**green_index_scores** | [**AggregateGreendexAnswersSupplier**](AggregateGreendexAnswersSupplier.md) | Properties that answered the Green Index questionnaire [full or partial], will have aggregate scores available. | [optional] 
+**green_index_scores** | [**PropertyAggregateGreenIndexAnswersSupplier**](PropertyAggregateGreenIndexAnswersSupplier.md) | Properties that answered the Green Index questionnaire [full or partial], will have aggregate scores available. | [optional] 
 **agreement_accepted** | **bool** | Property has accepted our terms and conditions. | 
 **marketing_optin_allowed** | **bool** | Property agreed to let the payment use its logo and images for marketing purposes (with proper credits). | [optional] 
 **logo** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md) | Property logo | [optional] 
@@ -58,9 +58,9 @@ Name | Type | Description | Notes
 **previous_url_name_list** | **List[object]** |  | [optional] 
 **active** | **bool** | Property is both approved and activated. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
+**platform_active** | **bool** | Platform approved property. | [optional] 
 **social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
-**platform_active** | **bool** | Platform approved property. | [optional] 
 **full_address** | **str** | Concatenated address into a single string | [optional] 
 **contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 

@@ -5,13 +5,14 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**cancel_hotel_booking**](BookingApi.md#cancel_hotel_booking) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancel | Cancel Booking
-[**generate_booking_report**](BookingApi.md#generate_booking_report) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/report/pdf | 
+[**create_test_booking**](BookingApi.md#create_test_booking) | **POST** /api/property/{propertyIdentifier}/sandbox/booking | Test Rate / Availability
+[**generate_booking_report**](BookingApi.md#generate_booking_report) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/report/pdf | Download Booking
 [**is_booking_cancellable**](BookingApi.md#is_booking_cancellable) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/cancellable | Is Booking Cancellable
 [**request_refund**](BookingApi.md#request_refund) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/request-refund | Request refund
 [**resend_booking_confirmation_email**](BookingApi.md#resend_booking_confirmation_email) | **PATCH** /api/property/{propertyIdentifier}/booking/{bookingIdentifier}/resend | Resend Booking Confirmation
+[**respond_to_review**](BookingApi.md#respond_to_review) | **PATCH** /api/property/{propertyIdentifier}/review/{reviewIdentifier}/response | Respond to Review
 [**show_active_affiliates**](BookingApi.md#show_active_affiliates) | **GET** /api/property/{propertyIdentifier}/booking/owner/list | Show Active Affiliates
 [**show_active_master_rates**](BookingApi.md#show_active_master_rates) | **GET** /api/property/{propertyIdentifier}/booking/roomrate/list | Show Active Master Rates
-[**show_booking_analytics**](BookingApi.md#show_booking_analytics) | **POST** /api/property/{propertyIdentifier}/booking/analytics | Property Booking Analytics
 [**show_booking_overview**](BookingApi.md#show_booking_overview) | **GET** /api/property/{propertyIdentifier}/booking/overview | Property Booking Overview
 [**show_hotel_booking**](BookingApi.md#show_hotel_booking) | **GET** /api/property/{propertyIdentifier}/booking/{bookingIdentifier} | Show Booking
 [**show_hotel_bookings**](BookingApi.md#show_hotel_bookings) | **POST** /api/property/{propertyIdentifier}/booking/grid | Search Bookings
@@ -104,8 +105,96 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **create_test_booking**
+> BookingSupplierDetails create_test_booking(property_identifier, booking_test_request_supplier_details, wink_version=wink_version)
+
+Test Rate / Availability
+
+Test whether the rates and availability for a sales channel is coming backing the way the property wants
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_extranet_booking
+from wink_sdk_extranet_booking.models.booking_supplier_details import BookingSupplierDetails
+from wink_sdk_extranet_booking.models.booking_test_request_supplier_details import BookingTestRequestSupplierDetails
+from wink_sdk_extranet_booking.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_extranet_booking.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_extranet_booking.BookingApi(api_client)
+    property_identifier = 'hotel-1' # str | Create test booking for property ID
+    booking_test_request_supplier_details = wink_sdk_extranet_booking.BookingTestRequestSupplierDetails() # BookingTestRequestSupplierDetails | 
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Test Rate / Availability
+        api_response = api_instance.create_test_booking(property_identifier, booking_test_request_supplier_details, wink_version=wink_version)
+        print("The response of BookingApi->create_test_booking:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling BookingApi->create_test_booking: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **property_identifier** | **str**| Create test booking for property ID | 
+ **booking_test_request_supplier_details** | [**BookingTestRequestSupplierDetails**](BookingTestRequestSupplierDetails.md)|  | 
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**BookingSupplierDetails**](BookingSupplierDetails.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**201** | Created |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **generate_booking_report**
 > generate_booking_report(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
+
+Download Booking
+
+Returns a PDF with booking details.
 
 ### Example
 
@@ -139,6 +228,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     accept = 'accept_example' # str |  (optional)
 
     try:
+        # Download Booking
         api_instance.generate_booking_report(property_identifier, booking_identifier, wink_version=wink_version, accept=accept)
     except Exception as e:
         print("Exception when calling BookingApi->generate_booking_report: %s\n" % e)
@@ -167,17 +257,17 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+ - **Accept**: */*, application/json, application/xml, text/xml, text/html, text/plain
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -438,6 +528,92 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **respond_to_review**
+> ReviewSupplier respond_to_review(property_identifier, review_identifier, review_response_supplier, wink_version=wink_version)
+
+Respond to Review
+
+Respond to a unique review for a hotel identified by its identifier
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_extranet_booking
+from wink_sdk_extranet_booking.models.review_response_supplier import ReviewResponseSupplier
+from wink_sdk_extranet_booking.models.review_supplier import ReviewSupplier
+from wink_sdk_extranet_booking.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_extranet_booking.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_extranet_booking.BookingApi(api_client)
+    property_identifier = 'hotel-1' # str | Respond to review given hotel with this identifier
+    review_identifier = 'review-1' # str | Respond to review with this identifier
+    review_response_supplier = wink_sdk_extranet_booking.ReviewResponseSupplier() # ReviewResponseSupplier | 
+    wink_version = 'wink_version_example' # str |  (optional)
+
+    try:
+        # Respond to Review
+        api_response = api_instance.respond_to_review(property_identifier, review_identifier, review_response_supplier, wink_version=wink_version)
+        print("The response of BookingApi->respond_to_review:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling BookingApi->respond_to_review: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **property_identifier** | **str**| Respond to review given hotel with this identifier | 
+ **review_identifier** | **str**| Respond to review with this identifier | 
+ **review_response_supplier** | [**ReviewResponseSupplier**](ReviewResponseSupplier.md)|  | 
+ **wink_version** | **str**|  | [optional] 
+
+### Return type
+
+[**ReviewSupplier**](ReviewSupplier.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **show_active_affiliates**
 > List[KeyValuePairSupplier] show_active_affiliates(property_identifier, wink_version=wink_version, accept=accept)
 
@@ -590,90 +766,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **show_booking_analytics**
-> BookingAnalyticsSupplier show_booking_analytics(property_identifier, booking_overview_request_supplier, wink_version=wink_version)
-
-Property Booking Analytics
-
-Basic booking analytics data
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_extranet_booking
-from wink_sdk_extranet_booking.models.booking_analytics_supplier import BookingAnalyticsSupplier
-from wink_sdk_extranet_booking.models.booking_overview_request_supplier import BookingOverviewRequestSupplier
-from wink_sdk_extranet_booking.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_extranet_booking.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_extranet_booking.BookingApi(api_client)
-    property_identifier = 'hotel-1' # str | Show active booking count for hotel with this identifier
-    booking_overview_request_supplier = wink_sdk_extranet_booking.BookingOverviewRequestSupplier() # BookingOverviewRequestSupplier | Overview request body
-    wink_version = 'wink_version_example' # str |  (optional)
-
-    try:
-        # Property Booking Analytics
-        api_response = api_instance.show_booking_analytics(property_identifier, booking_overview_request_supplier, wink_version=wink_version)
-        print("The response of BookingApi->show_booking_analytics:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling BookingApi->show_booking_analytics: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **property_identifier** | **str**| Show active booking count for hotel with this identifier | 
- **booking_overview_request_supplier** | [**BookingOverviewRequestSupplier**](BookingOverviewRequestSupplier.md)| Overview request body | 
- **wink_version** | **str**|  | [optional] 
-
-### Return type
-
-[**BookingAnalyticsSupplier**](BookingAnalyticsSupplier.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
