@@ -74,11 +74,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_key_value_pair_non_authenticated_entity.py
-test/test_property_aggregate_green_index_answer_supplier.py
-test/test_property_aggregate_green_index_answers_supplier.py
-test/test_property_aggregate_green_index_score_by_category_supplier.py
-test/test_reference_api.py
 tox.ini
 wink_sdk_extranet_property/__init__.py
 wink_sdk_extranet_property/api/__init__.py

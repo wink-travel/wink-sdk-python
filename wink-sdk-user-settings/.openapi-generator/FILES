@@ -20,7 +20,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_show_user_profile400_response.py
 tox.ini
 wink_sdk_user_settings/__init__.py
 wink_sdk_user_settings/api/__init__.py

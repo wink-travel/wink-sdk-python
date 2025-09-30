@@ -61,9 +61,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_create_syndicated_item_from_sellable_inventory_url_request_affiliate.py
-test/test_create_syndicated_item_from_sellable_supplier_url_request_affiliate.py
-test/test_syndicated_item_api.py
 tox.ini
 wink_sdk_affiliate_inventory/__init__.py
 wink_sdk_affiliate_inventory/api/__init__.py

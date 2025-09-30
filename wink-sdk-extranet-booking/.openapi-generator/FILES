@@ -184,16 +184,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_analytics_api.py
-test/test_booking_test_notification_supplier_details.py
-test/test_booking_test_request_supplier_details.py
-test/test_channel_name_supplier_details.py
-test/test_daily_rate_rate_supplier_details.py
-test/test_geo_ip_lightweight_supplier_details.py
-test/test_geo_name_country_supplier_details.py
-test/test_localized_transactional_travel_inventory_supplier_details.py
-test/test_room_configuration_price_supplier_details.py
-test/test_verify_rates_request_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
