@@ -27,9 +27,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_syndicated_item_api.py
-test/test_syndication_category_api.py
-test/test_syndication_settings_api.py
 tox.ini
 wink_sdk_affiliate_winklinks/__init__.py
 wink_sdk_affiliate_winklinks/api/__init__.py

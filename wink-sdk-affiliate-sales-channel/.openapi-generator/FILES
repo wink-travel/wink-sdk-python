@@ -46,7 +46,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_affiliate_api.py
 tox.ini
 wink_sdk_affiliate_sales_channel/__init__.py
 wink_sdk_affiliate_sales_channel/api/__init__.py

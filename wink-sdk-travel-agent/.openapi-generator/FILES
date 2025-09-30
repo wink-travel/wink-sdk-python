@@ -101,15 +101,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_analytics_api.py
-test/test_booking_analytics_supplier.py
-test/test_booking_overview_request_supplier.py
-test/test_chart_category_axis_supplier.py
-test/test_chart_legend_supplier.py
-test/test_chart_series_supplier.py
-test/test_chart_title_supplier.py
-test/test_grouped_booking_sales_metrics_supplier_details.py
-test/test_line_chart_supplier.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py
