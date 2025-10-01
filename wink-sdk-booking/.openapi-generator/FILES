@@ -14,7 +14,6 @@ docs/BedroomConfigurationBooker.md
 docs/BeneficiaryBooker.md
 docs/BeneficiaryChargeBooker.md
 docs/BookingAncillaryBooker.md
-docs/BookingApi.md
 docs/BookingBooker.md
 docs/BookingContractBooker.md
 docs/BookingContractItemBooker.md
@@ -41,6 +40,7 @@ docs/ChildAuthenticatedEntity.md
 docs/ChildBooker.md
 docs/CommissionableEntryBooker.md
 docs/CompositeFilterDescriptorBooker.md
+docs/ConsumerBookingApi.md
 docs/ContactAuthenticatedEntity.md
 docs/ContactBooker.md
 docs/CountryLightweightBooker.md
@@ -136,11 +136,12 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_consumer_booking_api.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py
-wink_sdk_booking/api/booking_api.py
 wink_sdk_booking/api/checkout_api.py
+wink_sdk_booking/api/consumer_booking_api.py
 wink_sdk_booking/api/review_api.py
 wink_sdk_booking/api/shopping_cart_api.py
 wink_sdk_booking/api_client.py

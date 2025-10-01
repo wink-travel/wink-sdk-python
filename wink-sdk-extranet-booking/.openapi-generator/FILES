@@ -20,7 +20,6 @@ docs/BeneficiarySupplierDetails.md
 docs/BookingAnalyticsSupplier.md
 docs/BookingAncillarySupplier.md
 docs/BookingAncillarySupplierDetails.md
-docs/BookingApi.md
 docs/BookingCancellableSupplier.md
 docs/BookingContractItemSupplier.md
 docs/BookingContractItemSupplierDetails.md
@@ -63,6 +62,7 @@ docs/ChildSupplierDetails.md
 docs/CommissionableEntrySupplier.md
 docs/CommissionableEntrySupplierDetails.md
 docs/CompositeFilterDescriptorSupplier.md
+docs/ConsumerBookingApi.md
 docs/ContactSupplier.md
 docs/ContactSupplierDetails.md
 docs/CountResponseSupplier.md
@@ -123,6 +123,7 @@ docs/ProfileUserSupplier.md
 docs/ProfileUserSupplierDetails.md
 docs/PropertyAggregateLightweightSupplier.md
 docs/PropertyAggregateLightweightSupplierDetails.md
+docs/PropertyBookingApi.md
 docs/PropertyBookingRefundRequestSupplier.md
 docs/PropertyPolicySupplier.md
 docs/PropertyPolicySupplierDetails.md
@@ -170,6 +171,7 @@ docs/SubSubCountryLightweightSupplier.md
 docs/SubSubCountryLightweightSupplierDetails.md
 docs/SupplierContractItemPolicySupplier.md
 docs/SupplierContractItemPolicySupplierDetails.md
+docs/TestBookingApi.md
 docs/TransactionalTravelInventorySupplier.md
 docs/TransactionalTravelInventorySupplierDetails.md
 docs/TravelInventoryRecognitionSupplier.md
@@ -184,13 +186,18 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_consumer_booking_api.py
+test/test_property_booking_api.py
+test/test_test_booking_api.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
 wink_sdk_extranet_booking/api/analytics_api.py
-wink_sdk_extranet_booking/api/booking_api.py
 wink_sdk_extranet_booking/api/calendar_sync_api.py
+wink_sdk_extranet_booking/api/consumer_booking_api.py
+wink_sdk_extranet_booking/api/property_booking_api.py
 wink_sdk_extranet_booking/api/review_api.py
+wink_sdk_extranet_booking/api/test_booking_api.py
 wink_sdk_extranet_booking/api_client.py
 wink_sdk_extranet_booking/api_response.py
 wink_sdk_extranet_booking/configuration.py
