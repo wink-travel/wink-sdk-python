@@ -50,7 +50,7 @@ Name | Type | Description | Notes
 **source_to_internal_currency_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) |  | 
 **phantom** | **bool** |  | 
 **var_date** | **date** |  | [optional] 
-**rate_identifier** | **str** |  | [optional] 
+**quantity** | **int** |  | [optional] 
 **start_date** | **bool** |  | [optional] 
 **between_date** | **bool** |  | [optional] 
 **last_night** | **bool** |  | [optional] 
@@ -59,17 +59,17 @@ Name | Type | Description | Notes
 **inventory_available** | **bool** |  | [optional] 
 **master_availability** | **bool** |  | [optional] 
 **close_on_arrival** | **bool** |  | [optional] 
+**rate_identifier** | **str** |  | [optional] 
+**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **min_los** | **int** |  | [optional] 
 **max_los** | **int** |  | [optional] 
-**quantity** | **int** |  | [optional] 
+**max_occupancy** | **int** |  | [optional] 
+**min_occupancy** | **int** |  | [optional] 
 **source_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **end_date** | **bool** |  | [optional] 
-**max_occupancy** | **int** |  | [optional] 
-**min_occupancy** | **int** |  | [optional] 
 **total_discount_percent** | **float** |  | [optional] 
-**base_rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source** | **str** |  | [optional] 
 
 ## Example
