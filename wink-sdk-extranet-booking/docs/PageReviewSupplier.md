@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
 **total_elements** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[ReviewSupplier]**](ReviewSupplier.md) |  | [optional] 
 **number** | **int** |  | [optional] 
