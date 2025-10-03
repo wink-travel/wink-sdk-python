@@ -26,11 +26,11 @@ Name | Type | Description | Notes
 **active_cancellation_policy** | [**CancellationPolicyLightweightSupplierDetails**](CancellationPolicyLightweightSupplierDetails.md) | The active / selected cancellation policy for this room configuration | 
 **room_nights** | **int** | Number of nights the guests will be staying | 
 **price_list** | **List[object]** |  | [optional] 
-**available** | **bool** |  | [optional] 
-**rate_source** | **str** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**available** | **bool** |  | [optional] 
+**rate_source** | **str** |  | [optional] 
 
 ## Example
 
