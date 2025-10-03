@@ -186,9 +186,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_consumer_booking_api.py
-test/test_property_booking_api.py
-test/test_test_booking_api.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
