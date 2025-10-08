@@ -1,6 +1,6 @@
 # UpsertSellableInventoryUrlRequestAffiliate
 
-Upserts a SellableInventoryUrlLightweight entity
+Upserts a SellableInventoryUrl entity
 
 ## Properties
 

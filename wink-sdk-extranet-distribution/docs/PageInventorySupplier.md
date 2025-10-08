@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[InventorySupplier]**](InventorySupplier.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
 **pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 

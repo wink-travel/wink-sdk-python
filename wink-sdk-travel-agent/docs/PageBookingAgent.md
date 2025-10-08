@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingAgent]**](BookingAgent.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**sort** | [**SortObjectAgent**](SortObjectAgent.md) |  | [optional] 
 **number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectAgent**](SortObjectAgent.md) |  | [optional] 
 **pageable** | [**PageableObjectAgent**](PageableObjectAgent.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 

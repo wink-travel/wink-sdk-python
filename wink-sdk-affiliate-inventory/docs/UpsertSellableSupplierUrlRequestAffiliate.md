@@ -1,6 +1,6 @@
 # UpsertSellableSupplierUrlRequestAffiliate
 
-Upserts a SellableSupplierUrlLightweight entity
+Upserts a SellableSupplierUrl entity
 
 ## Properties
 

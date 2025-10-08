@@ -20,15 +20,15 @@ Name | Type | Description | Notes
 **perk_types** | [**List[PerkLightweightSupplier]**](PerkLightweightSupplier.md) | List of perks that came with the master rate | [optional] 
 **extra_charges** | [**ExtraChargesSupplier**](ExtraChargesSupplier.md) | Rate plan-level extra charges | 
 **active_cancellation_policy** | [**CancellationPolicyLightweightSupplier**](CancellationPolicyLightweightSupplier.md) | Based on the itinerary, the cancellation policy could be taken directly from the rate plan or it could be a policy exception also listed on the rate plan | 
-**cancellable_by_hotel** | **bool** |  | [optional] 
-**cancellable_with_potential_charge** | **bool** |  | [optional] 
 **cancellable** | **bool** |  | [optional] 
+**cancellable_with_potential_charge** | **bool** |  | [optional] 
+**cancellable_by_hotel** | **bool** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**guests** | **int** |  | [optional] 
 **room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **rate_source** | **str** |  | [optional] 
+**guests** | **int** |  | [optional] 
 
 ## Example
 
