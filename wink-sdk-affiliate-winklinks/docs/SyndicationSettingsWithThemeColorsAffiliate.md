@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **layout_display** | **str** | Which way to itemDisplay the list when WinkLinks first loads | [optional] [default to 'GRID_COLUMNS']
 **profile_picture_geometry** | **str** | Controls how to itemDisplay profile picture | [optional] [default to 'CIRCLE']
 **online_presence_position** | **str** | Where to show the online presence icons | [optional] [default to 'TOP']
+**qr_code_options** | [**SyndicationSettingsQrCodeOptionsAffiliate**](SyndicationSettingsQrCodeOptionsAffiliate.md) | Customizable QR code options | [optional] 
 **theme_colors** | [**CustomizationThemeColorsAffiliate**](CustomizationThemeColorsAffiliate.md) | Theme colors are connected with the primary account customization. | [optional] 
 
 ## Example

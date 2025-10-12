@@ -60,9 +60,9 @@ Name | Type | Description | Notes
 **social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
 **full_address** | **str** | Concatenated address into a single string | [optional] 
+**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
 **platform_active** | **bool** | Platform approved property. | [optional] 
-**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 
 ## Example
 

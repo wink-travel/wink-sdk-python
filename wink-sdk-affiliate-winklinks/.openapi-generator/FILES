@@ -16,6 +16,7 @@ docs/SyndicatedItemApi.md
 docs/SyndicationCategoryAffiliate.md
 docs/SyndicationCategoryApi.md
 docs/SyndicationSettingsApi.md
+docs/SyndicationSettingsQrCodeOptionsAffiliate.md
 docs/SyndicationSettingsWithThemeColorsAffiliate.md
 docs/UpsertSyndicatedItemAffiliate.md
 docs/UpsertSyndicationCategoryAffiliate.md
@@ -27,6 +28,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_syndication_settings_qr_code_options_affiliate.py
 tox.ini
 wink_sdk_affiliate_winklinks/__init__.py
 wink_sdk_affiliate_winklinks/api/__init__.py
@@ -48,6 +50,7 @@ wink_sdk_affiliate_winklinks/models/simple_multimedia_affiliate.py
 wink_sdk_affiliate_winklinks/models/sorted_affiliate.py
 wink_sdk_affiliate_winklinks/models/syndicated_item_affiliate.py
 wink_sdk_affiliate_winklinks/models/syndication_category_affiliate.py
+wink_sdk_affiliate_winklinks/models/syndication_settings_qr_code_options_affiliate.py
 wink_sdk_affiliate_winklinks/models/syndication_settings_with_theme_colors_affiliate.py
 wink_sdk_affiliate_winklinks/models/upsert_syndicated_item_affiliate.py
 wink_sdk_affiliate_winklinks/models/upsert_syndication_category_affiliate.py
