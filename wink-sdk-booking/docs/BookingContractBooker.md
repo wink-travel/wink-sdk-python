@@ -150,14 +150,14 @@ Name | Type | Description | Notes
 **platform_identifier** | **str** | Returns the account identifier for the beneficiary taking a platform fee | [optional] 
 **total_funds_grouped_by_beneficiary** | [**List[BeneficiaryBooker]**](BeneficiaryBooker.md) | Returns all the beneficiaries in this contract with their total amounts | [optional] 
 **total_tokens_earned** | **int** | Total amount of tokens minted on this contract. | [optional] 
+**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
+**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
+**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
 **self_acquiring** | **bool** |  | [optional] 
+**lodging** | [**BookingContractItemBooker**](BookingContractItemBooker.md) | Returns the lodging item only. | [optional] 
 **fully_refunded** | **bool** |  | [optional] 
 **cancellable_with_no_charges** | **bool** | Whether the cancellation comes at no cost to the traveler. | [optional] 
 **is_cancellable_with_potential_charges** | **bool** | Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable. | [optional] 
-**cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
-**cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
-**lodging** | [**BookingContractItemBooker**](BookingContractItemBooker.md) | Returns the lodging item only. | [optional] 
-**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
 
 ## Example
 
