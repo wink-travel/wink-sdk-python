@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **pricing_type** | **str** | Determines whether this discount should be applied per night, per stay or per person - per night; Required if amount override is not null | [optional] 
 **is_valid** | **bool** |  | [optional] 
 **description** | [**List[LocalizedDescriptionSupplier]**](LocalizedDescriptionSupplier.md) |  | [optional] 
-**has_fixed_discount_modifier** | **bool** |  | [optional] 
 **has_percent_discount_modifier** | **bool** |  | [optional] 
+**has_fixed_discount_modifier** | **bool** |  | [optional] 
 
 ## Example
 
