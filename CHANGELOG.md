@@ -2,6 +2,16 @@
 
 Changelog of wink-sdk-python.
 
+## v0.0.50 (2025-10-14)
+
+### Other changes
+
+**Merge branch 'master' into develop**
+
+
+[afdc8](https://github.com/wink-travel/wink-sdk-python/commit/afdc801ef57b3e7) bjornharvold *2025-10-14 06:34:41*
+
+
 ## v0.0.49 (2025-10-14)
 
 ### Other changes
