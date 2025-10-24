@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **customization_identifier** | **str** | Customization identifier | 
 **descriptions** | **List[object]** |  | 
 **multimedias** | **List[object]** |  | [optional] 
-**keywords** | **List[object]** |  | 
+**keywords** | **List[object]** |  | [optional] 
 **unique_id** | **str** | Unique link id | 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 

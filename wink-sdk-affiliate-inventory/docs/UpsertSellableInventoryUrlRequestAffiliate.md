@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **customization_identifier** | **str** | Customization identifier | 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized link descriptions | 
 **multimedias** | **List[object]** |  | [optional] 
-**keywords** | **List[str]** | Keywords | 
+**keywords** | **List[object]** |  | [optional] 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 
 **theme** | **str** | Url theme controls the look and feel of the ad banner. | 

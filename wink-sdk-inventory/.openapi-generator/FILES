@@ -95,7 +95,7 @@ docs/SellableListResponseNonAuthenticatedEntity.md
 docs/SellableRankedListLightweightNonAuthenticatedEntity.md
 docs/SellableRankedListResponseNonAuthenticatedEntity.md
 docs/SellerMediaNonAuthenticatedEntity.md
-docs/ShowConsumableUrl400Response.md
+docs/ShowPropertyInventory400Response.md
 docs/SimpleAddressNonAuthenticatedEntity.md
 docs/SimpleDescriptionNonAuthenticatedEntity.md
 docs/SimpleMultimediaNonAuthenticatedEntity.md
@@ -117,6 +117,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_show_property_inventory400_response.py
 tox.ini
 wink_sdk_inventory/__init__.py
 wink_sdk_inventory/api/__init__.py
@@ -217,7 +218,7 @@ wink_sdk_inventory/models/sellable_list_response_non_authenticated_entity.py
 wink_sdk_inventory/models/sellable_ranked_list_lightweight_non_authenticated_entity.py
 wink_sdk_inventory/models/sellable_ranked_list_response_non_authenticated_entity.py
 wink_sdk_inventory/models/seller_media_non_authenticated_entity.py
-wink_sdk_inventory/models/show_consumable_url400_response.py
+wink_sdk_inventory/models/show_property_inventory400_response.py
 wink_sdk_inventory/models/simple_address_non_authenticated_entity.py
 wink_sdk_inventory/models/simple_description_non_authenticated_entity.py
 wink_sdk_inventory/models/simple_multimedia_non_authenticated_entity.py

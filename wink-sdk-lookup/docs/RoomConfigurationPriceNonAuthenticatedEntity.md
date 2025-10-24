@@ -28,9 +28,9 @@ Name | Type | Description | Notes
 **price_list** | **List[object]** |  | [optional] 
 **available** | **bool** |  | [optional] 
 **rate_source** | **str** |  | [optional] 
-**internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 
 ## Example
 

@@ -42,7 +42,7 @@ Name | Type | Description | Notes
 **reservations_contact** | [**ContactSupplier**](ContactSupplier.md) | Reservation desk contact information | [optional] 
 **revenue_contact** | [**ContactSupplier**](ContactSupplier.md) | Accounting contact information | [optional] 
 **marketing_contact** | [**ContactSupplier**](ContactSupplier.md) | Accounting contact address | [optional] 
-**lifestyle_types** | **List[str]** | List of all lifestyles property has associated with. See [Lifestyle geoname data](#operation/showLifestyles) | [optional] 
+**lifestyle_types** | **List[object]** |  | [optional] 
 **green_index_scores** | [**PropertyAggregateGreenIndexAnswersSupplier**](PropertyAggregateGreenIndexAnswersSupplier.md) | Properties that answered the Green Index questionnaire [full or partial], will have aggregate scores available. | [optional] 
 **agreement_accepted** | **bool** | Property has accepted our terms and conditions. | 
 **marketing_optin_allowed** | **bool** | Property agreed to let the payment use its logo and images for marketing purposes (with proper credits). | [optional] 
@@ -57,11 +57,11 @@ Name | Type | Description | Notes
 **rate_provider** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) | This can be an enum for external channel managers or an identifier for a Wink company rate provider | [optional] 
 **previous_url_name_list** | **List[object]** |  | [optional] 
 **active** | **bool** | Property is both approved and activated. | [optional] 
+**social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
+**lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
 **platform_active** | **bool** | Platform approved property. | [optional] 
 **full_address** | **str** | Concatenated address into a single string | [optional] 
-**social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
-**lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
 **contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 
 ## Example
