@@ -16,7 +16,6 @@ docs/BookingAgent.md
 docs/BookingAnalyticsSupplier.md
 docs/BookingAncillaryAgent.md
 docs/BookingConfirmationsAgent.md
-docs/BookingContractAgent.md
 docs/BookingContractItemAgent.md
 docs/BookingContractPaymentDetailsAgent.md
 docs/BookingItineraryAgent.md
@@ -94,6 +93,7 @@ docs/SubSubCountryLightweightAgent.md
 docs/SupplierContractItemPolicyAgent.md
 docs/TravelAgentApi.md
 docs/TravelInventoryRecognitionAgent.md
+docs/WinkBookingContractAgent.md
 git_push.sh
 pyproject.toml
 requirements.txt
@@ -101,6 +101,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_wink_booking_contract_agent.py
 tox.ini
 wink_sdk_travel_agent/__init__.py
 wink_sdk_travel_agent/api/__init__.py
@@ -123,7 +124,6 @@ wink_sdk_travel_agent/models/booking_agent.py
 wink_sdk_travel_agent/models/booking_analytics_supplier.py
 wink_sdk_travel_agent/models/booking_ancillary_agent.py
 wink_sdk_travel_agent/models/booking_confirmations_agent.py
-wink_sdk_travel_agent/models/booking_contract_agent.py
 wink_sdk_travel_agent/models/booking_contract_item_agent.py
 wink_sdk_travel_agent/models/booking_contract_payment_details_agent.py
 wink_sdk_travel_agent/models/booking_itinerary_agent.py
@@ -200,5 +200,6 @@ wink_sdk_travel_agent/models/sub_country_lightweight_agent.py
 wink_sdk_travel_agent/models/sub_sub_country_lightweight_agent.py
 wink_sdk_travel_agent/models/supplier_contract_item_policy_agent.py
 wink_sdk_travel_agent/models/travel_inventory_recognition_agent.py
+wink_sdk_travel_agent/models/wink_booking_contract_agent.py
 wink_sdk_travel_agent/py.typed
 wink_sdk_travel_agent/rest.py

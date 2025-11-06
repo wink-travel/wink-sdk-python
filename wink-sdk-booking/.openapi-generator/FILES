@@ -15,7 +15,6 @@ docs/BeneficiaryBooker.md
 docs/BeneficiaryChargeBooker.md
 docs/BookingAncillaryBooker.md
 docs/BookingBooker.md
-docs/BookingContractBooker.md
 docs/BookingContractItemBooker.md
 docs/BookingContractPaymentDetailsBooker.md
 docs/BookingItineraryBooker.md
@@ -129,6 +128,7 @@ docs/SupplierContractItemPolicyBooker.md
 docs/TravelInventoryRecognitionAuthenticatedEntity.md
 docs/TravelInventoryRecognitionBooker.md
 docs/UpsertShoppingCartItemRequestAuthenticatedEntity.md
+docs/WinkBookingContractBooker.md
 git_push.sh
 pyproject.toml
 requirements.txt
@@ -136,6 +136,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_wink_booking_contract_booker.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py
@@ -160,7 +161,6 @@ wink_sdk_booking/models/beneficiary_booker.py
 wink_sdk_booking/models/beneficiary_charge_booker.py
 wink_sdk_booking/models/booking_ancillary_booker.py
 wink_sdk_booking/models/booking_booker.py
-wink_sdk_booking/models/booking_contract_booker.py
 wink_sdk_booking/models/booking_contract_item_booker.py
 wink_sdk_booking/models/booking_contract_payment_details_booker.py
 wink_sdk_booking/models/booking_itinerary_booker.py
@@ -270,5 +270,6 @@ wink_sdk_booking/models/supplier_contract_item_policy_booker.py
 wink_sdk_booking/models/travel_inventory_recognition_authenticated_entity.py
 wink_sdk_booking/models/travel_inventory_recognition_booker.py
 wink_sdk_booking/models/upsert_shopping_cart_item_request_authenticated_entity.py
+wink_sdk_booking/models/wink_booking_contract_booker.py
 wink_sdk_booking/py.typed
 wink_sdk_booking/rest.py

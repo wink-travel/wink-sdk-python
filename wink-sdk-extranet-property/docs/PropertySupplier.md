@@ -61,8 +61,8 @@ Name | Type | Description | Notes
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
 **platform_active** | **bool** | Platform approved property. | [optional] 
-**full_address** | **str** | Concatenated address into a single string | [optional] 
 **contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
+**full_address** | **str** | Concatenated address into a single string | [optional] 
 
 ## Example
 

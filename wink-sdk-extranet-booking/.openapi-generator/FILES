@@ -25,8 +25,6 @@ docs/BookingContractItemSupplier.md
 docs/BookingContractItemSupplierDetails.md
 docs/BookingContractPaymentDetailsSupplier.md
 docs/BookingContractPaymentDetailsSupplierDetails.md
-docs/BookingContractSupplier.md
-docs/BookingContractSupplierDetails.md
 docs/BookingItineraryRoomConfigurationChildSupplier.md
 docs/BookingItineraryRoomConfigurationChildSupplierDetails.md
 docs/BookingItineraryRoomConfigurationSupplier.md
@@ -179,6 +177,8 @@ docs/TravelInventoryRecognitionSupplierDetails.md
 docs/VariableChargeSupplier.md
 docs/VariableChargeSupplierDetails.md
 docs/VerifyRatesRequestSupplierDetails.md
+docs/WinkBookingContractSupplier.md
+docs/WinkBookingContractSupplierDetails.md
 git_push.sh
 pyproject.toml
 requirements.txt
@@ -186,6 +186,8 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_wink_booking_contract_supplier.py
+test/test_wink_booking_contract_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py
@@ -221,8 +223,6 @@ wink_sdk_extranet_booking/models/booking_contract_item_supplier.py
 wink_sdk_extranet_booking/models/booking_contract_item_supplier_details.py
 wink_sdk_extranet_booking/models/booking_contract_payment_details_supplier.py
 wink_sdk_extranet_booking/models/booking_contract_payment_details_supplier_details.py
-wink_sdk_extranet_booking/models/booking_contract_supplier.py
-wink_sdk_extranet_booking/models/booking_contract_supplier_details.py
 wink_sdk_extranet_booking/models/booking_itinerary_room_configuration_child_supplier.py
 wink_sdk_extranet_booking/models/booking_itinerary_room_configuration_child_supplier_details.py
 wink_sdk_extranet_booking/models/booking_itinerary_room_configuration_supplier.py
@@ -370,5 +370,7 @@ wink_sdk_extranet_booking/models/travel_inventory_recognition_supplier_details.p
 wink_sdk_extranet_booking/models/variable_charge_supplier.py
 wink_sdk_extranet_booking/models/variable_charge_supplier_details.py
 wink_sdk_extranet_booking/models/verify_rates_request_supplier_details.py
+wink_sdk_extranet_booking/models/wink_booking_contract_supplier.py
+wink_sdk_extranet_booking/models/wink_booking_contract_supplier_details.py
 wink_sdk_extranet_booking/py.typed
 wink_sdk_extranet_booking/rest.py
