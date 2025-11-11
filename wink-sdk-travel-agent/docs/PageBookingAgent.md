@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingAgent]**](BookingAgent.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**sort** | [**SortObjectAgent**](SortObjectAgent.md) |  | [optional] 
-**pageable** | [**PageableObjectAgent**](PageableObjectAgent.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectAgent**](PageableObjectAgent.md) |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectAgent**](SortObjectAgent.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

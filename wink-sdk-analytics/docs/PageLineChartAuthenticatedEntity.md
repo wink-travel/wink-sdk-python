@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
 **total_elements** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[LineChartAuthenticatedEntity]**](LineChartAuthenticatedEntity.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**sort** | [**SortObjectAuthenticatedEntity**](SortObjectAuthenticatedEntity.md) |  | [optional] 
-**pageable** | [**PageableObjectAuthenticatedEntity**](PageableObjectAuthenticatedEntity.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectAuthenticatedEntity**](PageableObjectAuthenticatedEntity.md) |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectAuthenticatedEntity**](SortObjectAuthenticatedEntity.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

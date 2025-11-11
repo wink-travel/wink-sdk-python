@@ -26,10 +26,10 @@ Name | Type | Description | Notes
 **has_premium** | **bool** |  | [optional] 
 **has_promotion** | **bool** |  | [optional] 
 **has_channel_discount** | **bool** |  | [optional] 
+**total_discount_percent** | **float** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**total_discount_percent** | **float** |  | [optional] 
 
 ## Example
 

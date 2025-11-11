@@ -23,12 +23,12 @@ Name | Type | Description | Notes
 **cancellable** | **bool** |  | [optional] 
 **cancellable_by_hotel** | **bool** |  | [optional] 
 **cancellable_with_potential_charge** | **bool** |  | [optional] 
+**rate_source** | **str** |  | [optional] 
+**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**rate_source** | **str** |  | [optional] 
 **guests** | **int** |  | [optional] 
-**room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
 
 ## Example
 

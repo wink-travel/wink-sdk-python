@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
 **total_elements** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[DisplayCompanyWithSalesMetricsSupplier]**](DisplayCompanyWithSalesMetricsSupplier.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
-**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**pageable** | [**PageableObjectSupplier**](PageableObjectSupplier.md) |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**sort** | [**SortObjectSupplier**](SortObjectSupplier.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example
