@@ -57,12 +57,12 @@ Name | Type | Description | Notes
 **rate_provider** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) | This can be an enum for external channel managers or an identifier for a Wink company rate provider | [optional] 
 **previous_url_name_list** | **List[object]** |  | [optional] 
 **active** | **bool** | Property is both approved and activated. | [optional] 
+**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
+**full_address** | **str** | Concatenated address into a single string | [optional] 
 **property_active** | **bool** | Property activated itself and went live. | [optional] 
 **platform_active** | **bool** | Platform approved property. | [optional] 
-**full_address** | **str** | Concatenated address into a single string | [optional] 
 **social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
-**contract_signer_full_name** | **str** | Concatenated name of contract signer into one string. | [optional] 
 
 ## Example
 
