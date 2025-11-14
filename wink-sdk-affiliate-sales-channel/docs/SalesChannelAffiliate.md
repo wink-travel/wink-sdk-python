@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **supplier_name** | **str** | Name of property / supplier that owns this channel | 
 **supplier_available** | **bool** | Flag when supplier not available. E.g. Hotel disables property | [default to True]
 **sub_type** | **str** | What type of segment of channel is this. | 
-**owner_identifier** | **str** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | 
-**owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking customization&#x60; when it&#39;s the booking customization. | 
+**owner_identifier** | **str** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | [optional] 
+**owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking customization&#x60; when it&#39;s the booking customization. | [optional] 
 **enabled** | **bool** | Flag the supplier can use to enable / disable this channel | [optional] [default to True]
 **channel_disabled** | **bool** | System override by supplier to disable channel. E.g. Platform disables supplier. | [optional] 
 **blacklisted** | **bool** | A way to blacklist a specific channel a property doesn&#39;t want to send blocking to. | 
