@@ -27,10 +27,10 @@ Name | Type | Description | Notes
 **room_nights** | **int** | Number of nights the guests will be staying | 
 **price_list** | **List[object]** |  | [optional] 
 **available** | **bool** |  | [optional] 
-**rate_source** | **str** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**rate_source** | **str** |  | [optional] 
 
 ## Example
 

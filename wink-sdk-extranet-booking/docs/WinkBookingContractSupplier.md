@@ -154,9 +154,9 @@ Name | Type | Description | Notes
 **is_cancellable_with_potential_charges** | **bool** | Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable. | [optional] 
 **cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
 **cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
-**self_acquiring** | **bool** |  | [optional] 
 **lodging** | [**BookingContractItemSupplier**](BookingContractItemSupplier.md) | Returns the lodging item only. | [optional] 
 **cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
+**self_acquiring** | **bool** |  | [optional] 
 **fully_refunded** | **bool** |  | [optional] 
 
 ## Example

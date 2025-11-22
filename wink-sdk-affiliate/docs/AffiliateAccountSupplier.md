@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
 **plans** | **List[object]** |  | [optional] 
 **previous_url_name_list** | **List[object]** |  | [optional] 
+**metadata** | **Dict[str, object]** | Place to put stuff into | [optional] 
 
 ## Example
 
