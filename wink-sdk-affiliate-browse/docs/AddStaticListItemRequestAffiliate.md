@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channel_inventory_identifier** | **str** | The inventory ID | 
+**channel_inventory_identifier** | **UUID** | The inventory ID | 
 
 ## Example
 

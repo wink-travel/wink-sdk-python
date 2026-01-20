@@ -1,6 +1,5 @@
 # BooleanResponseBooker
 
-Boolean response
 
 ## Properties
 

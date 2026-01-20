@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **high_score** | **int** | The highest possible score from all questions | 
 **total_score** | **int** | The total score from all questions answered | 
 **aggregate_score** | **float** | Total score divided by high score | 
-**scores_by_category** | [**List[PropertyAggregateGreenIndexScoreByCategorySupplier]**](PropertyAggregateGreenIndexScoreByCategorySupplier.md) |  | 
+**scores_by_category** | [**List[PropertyAggregateGreenIndexScoreByCategorySupplier]**](PropertyAggregateGreenIndexScoreByCategorySupplier.md) | Aggregate scores by Green Index category | 
 
 ## Example
 

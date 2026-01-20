@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **vendor** | **str** | Name of integration vendor | 
 **vendor_identifier** | **str** | Which acquirer account we return fund from. | 
 **vendor_name** | **str** | Name of regional acquirer account. | 
-**ledger_identifier** | **str** | Unique system ID. | 
-**beneficiary_identifier** | **str** | Beneficiary ID. | 
+**ledger_identifier** | **UUID** | Unique system ID. | 
+**beneficiary_identifier** | **UUID** | Beneficiary ID. | 
 **external_payee_identifier** | **str** | This would be the Wise recipient ID. | 
 **type** | **str** | Type of withdrawal. | 
 **entry** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 

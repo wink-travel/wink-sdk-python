@@ -49,7 +49,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.RecognitionApi(api_client)
     property_identifier = 'hotel-1' # str | Associate new request record with this property identifier
     upsert_recognition_supplier = wink_sdk_extranet_property.UpsertRecognitionSupplier() # UpsertRecognitionSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Recognition
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Associate new request record with this property identifier | 
  **upsert_recognition_supplier** | [**UpsertRecognitionSupplier**](UpsertRecognitionSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -132,7 +132,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.RecognitionApi(api_client)
     property_identifier = 'hotel-1' # str | Delete recognition record for property with this property identifier
     recognition_identifier = 'recognition-1' # str | Delete recognition with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Delete recognition record for property with this property identifier | 
  **recognition_identifier** | **str**| Delete recognition with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -217,7 +217,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.RecognitionApi(api_client)
     property_identifier = 'hotel-1' # str | Show recognition belonging to this property identifier
     recognition_identifier = 'recognition-1' # str | Show recognition associated with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show recognition belonging to this property identifier | 
  **recognition_identifier** | **str**| Show recognition associated with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -301,7 +301,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.RecognitionApi(api_client)
     property_identifier = 'hotel-1' # str | Show list of recognitions for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -321,7 +321,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show list of recognitions for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.RecognitionApi(api_client)
     property_identifier = 'hotel-1' # str | Show list of recognitions for this property identifier
     category = 'AWARD' # str | Filter list of recognitions by category
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show list of recognitions for this property identifier | 
  **category** | **str**| Filter list of recognitions by category | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -472,7 +472,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update recognition record associated with this property identifier
     recognition_identifier = 'recognition-1' # str | Update recognition with this identifier
     upsert_recognition_supplier = wink_sdk_extranet_property.UpsertRecognitionSupplier() # UpsertRecognitionSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Recognition
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update recognition record associated with this property identifier | 
  **recognition_identifier** | **str**| Update recognition with this identifier | 
  **upsert_recognition_supplier** | [**UpsertRecognitionSupplier**](UpsertRecognitionSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -21,16 +21,19 @@
  ## APIs
  Not every integrator needs every API. For that reason, we have separated APIs into context.
 
-### Test API
-
- - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.
-
 ### Common APIs
 
+- [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
+- [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
+- [Managing Entity](/managing-entity): Endpoints that quickly show you which entities you have access to.
 - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account.
+- [Payment](/payment): All APIs related to TripPay account management, booking, mapping and integration features.
+- [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work.
+- [Reference](/reference): All APIs related to retrieving platform-supported taxonomies.
 - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.
 
-### Consume APIs
+### Consumer APIs
+
 Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.
 
  - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.
@@ -39,57 +42,52 @@ Consume endpoints are for developers who want to find existing travel inventory 
  - [Booking](/booking): All APIs related to creating bookings on the platform.
  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.
 
- ### Produce APIs
- Produce endpoints are for developers who want to create and manage travel inventory.
+### Supplier APIs
 
- #### Property
- - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
- - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.
- - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
- - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
- - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
- - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
- - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
+Produce endpoints are for developers who want to create and manage travel inventory.
 
- #### Affiliate
- - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
- - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
- - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
- - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
- - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
+#### Property
 
- #### Rate provider
- - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
+- [Property Registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
+- [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.
+- [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
+- [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
+- [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
+- [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
+- [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
 
- ### Taxonomy APIs
- Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.
+#### Affiliate
 
- - [Reference](/reference): All APIs related to retrieving platform-supported taxonomies.
+- [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
+- [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
+- [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
+- [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
+- [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
 
- ### Insight APIs
- Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.
+## SDKs
 
- - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
+We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).
 
- ### Payment APIs
- Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant payment widget for all other entities.
-
- - [TripPay](/payment): All APIs related to TripPay account management, booking, mapping and integration features.
-
- ## SDKs
- We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).
+### Inventory
 
  - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)
+ - Python SDK [https://github.com/wink-travel/wink-sdk-python](https://github.com/wink-travel/wink-sdk-python)
 
- ## Usage
- These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.
+### Payment
 
- ## Versioning
- We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.
+- Java SDK [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java)
+- Python SDK [https://github.com/wink-travel/trip-pay-sdk-python](https://github.com/wink-travel/trip-pay-sdk-python)
 
- ## Release history
- - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md
+## Usage
 
+These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.
+
+## Versioning
+
+We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.
+
+Current version: `2.0`
+Prior versions: None
 
 
 # Affiliate API
@@ -104,9 +102,9 @@ Browse the endpoints in the left navigation bar to get started.
 
 This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 30.30.1
-- Package version: 0.0.58
-- Generator version: 7.17.0
+- API version: 30.31.0
+- Package version: 0.0.59
+- Generator version: 7.18.0
 - Build package: org.openapitools.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -123,9 +121,9 @@ pip install wink_sdk_affiliate
 
 Or you can install it directly from the repository using:
 ```sh
-pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.58#egg=wink_sdk_affiliate&subdirectory=wink-sdk-affiliate
+pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.59#egg=wink_sdk_affiliate&subdirectory=wink-sdk-affiliate
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.58#egg=wink_sdk_affiliate&subdirectory=wink_sdk_affiliate`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.59#egg=wink_sdk_affiliate&subdirectory=wink_sdk_affiliate`)
 
 Then import the package:
 ```python
@@ -178,13 +176,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    company_identifier = 'hotel-1' # str | AffiliateAccount identifier for which to accept invite to
-    wink_version = 'wink_version_example' # str |  (optional)
+    managing_entity_identifier = 'hotel-1' # str | ManagingEntity identifier for which to accept invite to
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Accept Invite
-        api_response = api_instance.accept_manager_invite(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.accept_manager_invite(managing_entity_identifier, wink_version=wink_version, accept=accept)
         print("The response of AccountManagerApi->accept_manager_invite:\n")
         pprint(api_response)
     except ApiException as e:
@@ -198,105 +196,57 @@ All URIs are relative to *https://api.wink.travel*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AccountManagerApi* | [**accept_manager_invite**](docs/AccountManagerApi.md#accept_manager_invite) | **GET** /api/manager/invite/{companyIdentifier}/accept | Accept Invite
+*AccountManagerApi* | [**accept_manager_invite**](docs/AccountManagerApi.md#accept_manager_invite) | **GET** /api/manager/invite/{managingEntityIdentifier}/accept | Accept Invite
 *AccountManagerApi* | [**invite_manager**](docs/AccountManagerApi.md#invite_manager) | **PATCH** /api/manager/invite | Invite Manager
-*AccountManagerApi* | [**reject_invite**](docs/AccountManagerApi.md#reject_invite) | **DELETE** /api/manager/invite/{companyIdentifier}/reject | Reject Invite
+*AccountManagerApi* | [**reject_invite**](docs/AccountManagerApi.md#reject_invite) | **DELETE** /api/manager/invite/{managingEntityIdentifier}/reject | Reject Invite
 *AccountManagerApi* | [**remove_company_user**](docs/AccountManagerApi.md#remove_company_user) | **DELETE** /api/manager/{email} | Remove Manager
 *AccountManagerApi* | [**remove_manager_agency**](docs/AccountManagerApi.md#remove_manager_agency) | **DELETE** /api/manager/agency | Remove Managing Agency
+*AccountManagerApi* | [**show_manager_invite_count**](docs/AccountManagerApi.md#show_manager_invite_count) | **GET** /api/manager/invite/count | Show Invite Count
 *AccountManagerApi* | [**show_manager_invite_list**](docs/AccountManagerApi.md#show_manager_invite_list) | **GET** /api/manager/invite/list | Show Invites
 *AccountManagerApi* | [**update_manager_agency**](docs/AccountManagerApi.md#update_manager_agency) | **PATCH** /api/manager/agency | Set Managing Agency
-*AffiliateApi* | [**create_affiliate**](docs/AffiliateApi.md#create_affiliate) | **POST** /api/affiliate | Create Affiliate
-*AffiliateApi* | [**remove_company**](docs/AffiliateApi.md#remove_company) | **DELETE** /api/affiliate/{companyIdentifier} | Delete Affiliate
-*AffiliateApi* | [**search_affiliates**](docs/AffiliateApi.md#search_affiliates) | **POST** /api/affiliate/grid | Affiliate Search
-*AffiliateApi* | [**show_affiliate**](docs/AffiliateApi.md#show_affiliate) | **GET** /api/affiliate/{companyIdentifier} | Show Affiliate
-*AffiliateApi* | [**show_companies**](docs/AffiliateApi.md#show_companies) | **GET** /api/affiliate/list | Show Affiliates
-*AffiliateApi* | [**update_company**](docs/AffiliateApi.md#update_company) | **PATCH** /api/affiliate/{companyIdentifier} | Update Affiliate
-*AffiliateApi* | [**update_company1**](docs/AffiliateApi.md#update_company1) | **PATCH** /api/affiliate/{companyIdentifier}/status | Toggle Affiliate Status
-*AffiliateApi* | [**update_company_address**](docs/AffiliateApi.md#update_company_address) | **PATCH** /api/affiliate/{companyIdentifier}/address | Update Affiliate Address
-*AffiliateApi* | [**update_company_logo**](docs/AffiliateApi.md#update_company_logo) | **PATCH** /api/affiliate/{companyIdentifier}/logo | Update Affiliate Logo
-*AffiliateApi* | [**update_company_online_presence**](docs/AffiliateApi.md#update_company_online_presence) | **PATCH** /api/affiliate/{companyIdentifier}/online-presence | Update Affiliate Online Presence
-*AffiliateApi* | [**update_profile**](docs/AffiliateApi.md#update_profile) | **PATCH** /api/affiliate/{companyIdentifier}/profile | Update Profile
+*AffiliateApi* | [**show_affiliate**](docs/AffiliateApi.md#show_affiliate) | **GET** /api/affiliate/{affiliateAccountIdentifier} | Show Affiliate
+*AffiliateApi* | [**update_company_online_presence**](docs/AffiliateApi.md#update_company_online_presence) | **PATCH** /api/affiliate/{affiliateAccountIdentifier}/online-presence | Update Online Presence
 *LeadsApi* | [**create_lead**](docs/LeadsApi.md#create_lead) | **POST** /api/affiliate/{companyIdentifier}/lead | Create Lead Request
-*NotificationApi* | [**remove_notification**](docs/NotificationApi.md#remove_notification) | **DELETE** /api/affiliate/{companyIdentifier}/message/{messageIdentifier} | Delete Notification
-*NotificationApi* | [**show_notification**](docs/NotificationApi.md#show_notification) | **GET** /api/affiliate/{companyIdentifier}/message/{messageIdentifier} | Show Notification
-*NotificationApi* | [**show_notifications**](docs/NotificationApi.md#show_notifications) | **GET** /api/affiliate/{companyIdentifier}/message/list | Show Notifications
-*NotificationApi* | [**show_unread_message_count**](docs/NotificationApi.md#show_unread_message_count) | **GET** /api/affiliate/{companyIdentifier}/message/count | Show Unread Count
 *TravelAgentApi* | [**update_agent**](docs/TravelAgentApi.md#update_agent) | **PATCH** /api/affiliate/{companyIdentifier}/agent | Update Agent
 
 
 ## Documentation For Models
 
- - [AddressAffiliate](docs/AddressAffiliate.md)
- - [AddressAgent](docs/AddressAgent.md)
- - [AddressSupplier](docs/AddressSupplier.md)
  - [AffiliateAccountAffiliate](docs/AffiliateAccountAffiliate.md)
  - [AffiliateAccountAgent](docs/AffiliateAccountAgent.md)
- - [AffiliateAccountSupplier](docs/AffiliateAccountSupplier.md)
- - [AffiliateAccountUserAffiliate](docs/AffiliateAccountUserAffiliate.md)
- - [AffiliateAccountUserAgent](docs/AffiliateAccountUserAgent.md)
- - [AffiliateAccountUserSupplier](docs/AffiliateAccountUserSupplier.md)
- - [AggregateDescriptorSupplier](docs/AggregateDescriptorSupplier.md)
- - [CompositeFilterDescriptorSupplier](docs/CompositeFilterDescriptorSupplier.md)
  - [CountResponseAffiliate](docs/CountResponseAffiliate.md)
  - [CountryLightweightAffiliate](docs/CountryLightweightAffiliate.md)
- - [CountryLightweightAgent](docs/CountryLightweightAgent.md)
- - [CountryLightweightSupplier](docs/CountryLightweightSupplier.md)
- - [CreateAffiliate400Response](docs/CreateAffiliate400Response.md)
- - [CreateAffiliateAccountRequestAffiliate](docs/CreateAffiliateAccountRequestAffiliate.md)
+ - [CreateLead400Response](docs/CreateLead400Response.md)
  - [CustomMonetaryAmount](docs/CustomMonetaryAmount.md)
- - [FilterDescriptorSupplier](docs/FilterDescriptorSupplier.md)
  - [GenericErrorMessage](docs/GenericErrorMessage.md)
  - [GeoJsonPointAffiliate](docs/GeoJsonPointAffiliate.md)
- - [GeoJsonPointAgent](docs/GeoJsonPointAgent.md)
- - [GeoJsonPointSupplier](docs/GeoJsonPointSupplier.md)
  - [GeoNameLightweightAffiliate](docs/GeoNameLightweightAffiliate.md)
  - [GeoNameLightweightAgent](docs/GeoNameLightweightAgent.md)
- - [GeoNameLightweightSupplier](docs/GeoNameLightweightSupplier.md)
  - [GooglePlaceDetailRequestAffiliate](docs/GooglePlaceDetailRequestAffiliate.md)
- - [GroupDescriptorSupplier](docs/GroupDescriptorSupplier.md)
  - [InviteManagerRequestAffiliate](docs/InviteManagerRequestAffiliate.md)
  - [KeyValuePairAffiliate](docs/KeyValuePairAffiliate.md)
  - [ManagedByEntityAffiliate](docs/ManagedByEntityAffiliate.md)
  - [ManagedByEntityAgent](docs/ManagedByEntityAgent.md)
  - [ManagedByEntityRulesAffiliate](docs/ManagedByEntityRulesAffiliate.md)
- - [ManagedByEntityRulesAgent](docs/ManagedByEntityRulesAgent.md)
- - [ManagedByEntityRulesSupplier](docs/ManagedByEntityRulesSupplier.md)
- - [ManagedByEntitySupplier](docs/ManagedByEntitySupplier.md)
- - [ManagerInviteAcceptedSupplier](docs/ManagerInviteAcceptedSupplier.md)
  - [ManagerInviteAffiliate](docs/ManagerInviteAffiliate.md)
+ - [ManagingEntityAffiliate](docs/ManagingEntityAffiliate.md)
+ - [ManagingEntityManagerAffiliate](docs/ManagingEntityManagerAffiliate.md)
+ - [ManagingEntityManagerAgent](docs/ManagingEntityManagerAgent.md)
+ - [ManagingEntityProvisionAffiliate](docs/ManagingEntityProvisionAffiliate.md)
+ - [ManagingEntitySupplier](docs/ManagingEntitySupplier.md)
  - [MediaAuthorAttributionAffiliate](docs/MediaAuthorAttributionAffiliate.md)
- - [MediaAuthorAttributionAgent](docs/MediaAuthorAttributionAgent.md)
- - [MediaAuthorAttributionSupplier](docs/MediaAuthorAttributionSupplier.md)
- - [NotificationAffiliate](docs/NotificationAffiliate.md)
- - [PageAffiliateAccountSupplier](docs/PageAffiliateAccountSupplier.md)
- - [PageableObjectSupplier](docs/PageableObjectSupplier.md)
+ - [OnlinePresenceAgent](docs/OnlinePresenceAgent.md)
  - [SimpleAddressAffiliate](docs/SimpleAddressAffiliate.md)
  - [SimpleDescriptionAffiliate](docs/SimpleDescriptionAffiliate.md)
- - [SimpleDescriptionAgent](docs/SimpleDescriptionAgent.md)
- - [SimpleDescriptionSupplier](docs/SimpleDescriptionSupplier.md)
  - [SimpleMultimediaAffiliate](docs/SimpleMultimediaAffiliate.md)
  - [SimpleMultimediaAgent](docs/SimpleMultimediaAgent.md)
- - [SimpleMultimediaSupplier](docs/SimpleMultimediaSupplier.md)
- - [SortDescriptorSupplier](docs/SortDescriptorSupplier.md)
- - [SortObjectSupplier](docs/SortObjectSupplier.md)
- - [StateSupplier](docs/StateSupplier.md)
  - [SubCountryLightweightAffiliate](docs/SubCountryLightweightAffiliate.md)
- - [SubCountryLightweightAgent](docs/SubCountryLightweightAgent.md)
- - [SubCountryLightweightSupplier](docs/SubCountryLightweightSupplier.md)
  - [SubSubCountryLightweightAffiliate](docs/SubSubCountryLightweightAffiliate.md)
- - [SubSubCountryLightweightAgent](docs/SubSubCountryLightweightAgent.md)
- - [SubSubCountryLightweightSupplier](docs/SubSubCountryLightweightSupplier.md)
  - [SupplierLeadAffiliate](docs/SupplierLeadAffiliate.md)
  - [TravelAgentAgent](docs/TravelAgentAgent.md)
- - [TravelAgentSupplier](docs/TravelAgentSupplier.md)
- - [UpsertAddressRequestAffiliate](docs/UpsertAddressRequestAffiliate.md)
- - [UpsertAffiliateAccountProfileRequestAffiliate](docs/UpsertAffiliateAccountProfileRequestAffiliate.md)
- - [UpsertCompanyLogoRequestAffiliate](docs/UpsertCompanyLogoRequestAffiliate.md)
+ - [UpdateManagedByAgencyRequestAffiliate](docs/UpdateManagedByAgencyRequestAffiliate.md)
+ - [UpdateTravelAgentRequestAgent](docs/UpdateTravelAgentRequestAgent.md)
  - [UpsertCompanyOnlinePresenceRequestAffiliate](docs/UpsertCompanyOnlinePresenceRequestAffiliate.md)
- - [UpsertCompanyRequestAffiliate](docs/UpsertCompanyRequestAffiliate.md)
- - [UpsertCompanyStatusRequestAffiliate](docs/UpsertCompanyStatusRequestAffiliate.md)
- - [UpsertManagedByAgencyRequestAffiliate](docs/UpsertManagedByAgencyRequestAffiliate.md)
- - [UpsertTravelAgentRequestAgent](docs/UpsertTravelAgentRequestAgent.md)
 
 
 <a id="documentation-for-authorization"></a>

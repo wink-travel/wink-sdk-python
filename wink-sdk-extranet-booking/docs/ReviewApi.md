@@ -45,7 +45,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.ReviewApi(api_client)
     property_identifier = 'hotel-1' # str | Show review given to hotel with this identifier
     review_identifier = 'review-1' # str | Show review for this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show review given to hotel with this identifier | 
  **review_identifier** | **str**| Show review for this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -129,7 +129,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.ReviewApi(api_client)
     property_identifier = 'hotel-1' # str | Show review count for hotel with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -149,7 +149,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show review count for hotel with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -214,7 +214,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.ReviewApi(api_client)
     property_identifier = 'hotel-1' # str | Show reviews for hotel with this identifier
     state_supplier = wink_sdk_extranet_booking.StateSupplier() # StateSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Reviews
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show reviews for hotel with this identifier | 
  **state_supplier** | [**StateSupplier**](StateSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -1,6 +1,5 @@
 # PerkLightweightSupplier
 
-The perks associated with this master rate
 
 ## Properties
 
@@ -9,7 +8,7 @@ Name | Type | Description | Notes
 **identifier** | **str** | Enum identifier identifier for this perk. Makes the persistent version backwards compatible. | 
 **guaranteed** | **bool** | Whether perk is guaranteed or not. | [optional] 
 **level** | **int** | The platform value of this perk. | [optional] 
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | Localized description for this perk | 
+**descriptions** | [**List[SimpleDescription]**](SimpleDescription.md) | Localized description for this perk | 
 **sort** | **int** | This is how perks get sorted when in a list | [optional] 
 
 ## Example

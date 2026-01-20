@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**identifier** | **UUID** | Unique record identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **featured_ind** | **bool** | Indicates whether this inventory is featured. Use this flag as a way to signify that this inventory is special. | 
 **lifestyle_type** | **str** | Indicate the type of lifestyle this blocking should be associated with. | [optional] 
 **location** | [**GeoJsonPointAgent**](GeoJsonPointAgent.md) | Geo-location point where blocking takes place. Defaults to location of property. | 
-**descriptions** | [**List[SimpleDescriptionAgent]**](SimpleDescriptionAgent.md) |  | 
-**multimedias** | [**List[SimpleMultimediaAgent]**](SimpleMultimediaAgent.md) |  | 
+**descriptions** | [**List[SimpleDescriptionAgent]**](SimpleDescriptionAgent.md) | Localized descriptions describing inventory. | 
+**multimedias** | [**List[SimpleMultimediaAgent]**](SimpleMultimediaAgent.md) | List of images / videos of blocking. | 
 **contact** | [**ContactAgent**](ContactAgent.md) | Associate a contact person for this blocking (if applicable). | 
 **address** | [**SimpleAddressAgent**](SimpleAddressAgent.md) | Defaults to property address. | 
 **commissionable** | **bool** | Indicate whether sales channels receive commission for selling this blocking. | [default to True]
@@ -21,16 +21,16 @@ Name | Type | Description | Notes
 **min_age_appropriate_code** | **str** | Supported OTA specification &#x60;AQC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **bookable** | **bool** | Indicates if this blocking can be added to a booking or if it is read-only marketing material only. | [default to True]
 **active** | **bool** | Modify blocking availability with this flag. | [default to True]
-**disability_features** | **List[str]** |  | [optional] 
-**security_features** | **List[str]** |  | [optional] 
-**socials** | [**List[SocialAgent]**](SocialAgent.md) |  | [optional] 
+**disability_features** | **List[str]** | Supported OTA specification &#x60;PHY&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
+**security_features** | **List[str]** | Supported OTA specification &#x60;SEC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
+**socials** | [**List[SocialAgent]**](SocialAgent.md) | Social network accounts for blocking (if applicable). | [optional] 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
-**recognition_list** | [**List[TravelInventoryRecognitionAgent]**](TravelInventoryRecognitionAgent.md) |  | [optional] 
+**recognition_list** | [**List[TravelInventoryRecognitionAgent]**](TravelInventoryRecognitionAgent.md) | Inventory-level recognition. | [optional] 
 **max_occupancy** | **int** | Maximum number of guest allowed in a room type. | [default to 2]
 **min_occupancy** | **int** | Minimum number of guests allowed in a room type. | [default to 1]
 **quantity** | **int** | Defines the number of rooms of this type | 
 **non_smoking** | **bool** | Non-smoking indicator | 
-**bedroom_configuration_list** | [**List[BedroomConfigurationAgent]**](BedroomConfigurationAgent.md) |  | 
+**bedroom_configuration_list** | [**List[BedroomConfigurationAgent]**](BedroomConfigurationAgent.md) | A room type can have more than one bed configuration. | 
 **size** | **float** | Number of square meters that defines the size of this room type. | 
 **max_adult_occupancy** | **int** | Maximum number of adults allowed in a room type. | [default to 2]
 **max_child_occupancy** | **int** | Maximum number of children allowed in a room type. | [default to 0]
@@ -48,7 +48,7 @@ Name | Type | Description | Notes
 **room_gender** | **str** | Used to request or specify a gender assignment for a room. Note: Typically used by Hosteliers. | [optional] [default to 'Unknown']
 **shared_room_ind** | **bool** | If TRUE, the room requires or has sharing available. Note: Typically used by Hosteliers. | [default to False]
 **max_cribs** | **int** | Maximum number of cribs allowed in a room type. | [default to 0]
-**amenities** | **List[str]** |  | [optional] 
+**amenities** | **List[str]** | Collection of room amenity items available to the guest. Supported OTA specification &#x60;RMA&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **included_adult_occupancy** | **int** | The number of pax the room price was meant for | [default to 2]
 **included_child_occupancy** | **int** | The number of children the room price was meant for | [default to 0]
 

@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**user_identifier** | **str** | Creator of entry | 
-**owner_identifier** | **str** | AffiliateAccount identifier | 
+**user_identifier** | **UUID** | Creator of entry | 
+**owner_identifier** | **UUID** | AffiliateAccount identifier | 
 **name** | **str** | Descriptive name of this url for seller use only | 
-**customization_identifier** | **str** | Customization identifier | 
-**descriptions** | **List[object]** |  | 
-**multimedias** | **List[object]** |  | [optional] 
-**keywords** | **List[object]** |  | [optional] 
+**customization_identifier** | **UUID** | Customization identifier | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
+**multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) |  | [optional] 
+**keywords** | **List[str]** |  | [optional] 
 **unique_id** | **str** | Unique link id | 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 

@@ -6,7 +6,7 @@ Multimedia that contains less information than Multimedia object
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**multimedia_identifier** | **str** | Document identifier | 
+**multimedia_identifier** | **UUID** | Document identifier | 
 **identifier** | **str** | Use this identifier to communicate with Cloudinary. | 
 **type** | **str** | Whether Cloudinary media is a VIDEO or IMAGE. | 
 **source** | **str** | Currently ONLY using Cloudinary to store all image / video assets. | [default to 'CLOUDINARY']

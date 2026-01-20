@@ -1,6 +1,5 @@
 # ReportingAncillarySupplierDetails
 
-Displays ancillary accounting details
 
 ## Properties
 

@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**user_identifier** | **str** | Creator of entry | 
-**owner_identifier** | **str** | The user&#39;s owner company this entry associates with | 
+**user_identifier** | **UUID** | Creator of entry | 
+**owner_identifier** | **UUID** | The user&#39;s owner company this entry associates with | 
 **item_display** | **str** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
-**customization_identifier** | **str** | Customization identifier | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **layout_display** | **str** | Which way to itemDisplay the list when WinkLinks first loads | [optional] [default to 'GRID_COLUMNS']
 **profile_picture_geometry** | **str** | Controls how to itemDisplay profile picture | [optional] [default to 'CIRCLE']
 **online_presence_position** | **str** | Where to show the online presence icons | [optional] [default to 'TOP']

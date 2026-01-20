@@ -7,7 +7,7 @@ Room Configuration
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adults** | **int** | Number of adults | [default to 1]
-**children** | [**List[ChildAgent]**](ChildAgent.md) |  | [optional] 
+**children** | [**List[ChildAgent]**](ChildAgent.md) | Children configurations | [optional] 
 
 ## Example
 

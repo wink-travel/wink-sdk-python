@@ -44,7 +44,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.GeoLocationApi(api_client)
     property_identifier = 'hotel-1' # str | Update geo-location for this property identifier
     update_location_request_supplier = wink_sdk_extranet_property.UpdateLocationRequestSupplier() # UpdateLocationRequestSupplier | Update geo-location request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Set Geo-Location
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update geo-location for this property identifier | 
  **update_location_request_supplier** | [**UpdateLocationRequestSupplier**](UpdateLocationRequestSupplier.md)| Update geo-location request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

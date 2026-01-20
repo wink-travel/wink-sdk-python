@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **max_los** | **int** | Indicates the maximum length of stay. | [optional] 
 **min_age** | **int** | The minimum age to qualify for this rate plan. | [optional] 
 **max_age** | **int** | The maximum age to qualify for this rate plan. | [optional] 
-**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) |  | [optional] 
+**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) | This can be a one-time fee such as a cleaning fee | [optional] 
 **available_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **arrival_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **departure_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 

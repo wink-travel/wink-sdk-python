@@ -44,7 +44,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.SalesChannelApi(api_client)
     state_affiliate = wink_sdk_affiliate_sales_channel.StateAffiliate() # StateAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Sales Channel Grid
@@ -63,7 +63,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **state_affiliate** | [**StateAffiliate**](StateAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -125,7 +125,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.SalesChannelApi(api_client)
     supplier_identifier = 'supplier_identifier_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -145,7 +145,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_identifier** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

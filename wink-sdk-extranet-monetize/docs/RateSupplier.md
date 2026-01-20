@@ -7,10 +7,10 @@ Holds all the information for one rate date
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** | Document UUID | [optional] 
-**hotel_identifier** | **str** | Owner of daily rate. | 
+**hotel_identifier** | **UUID** | Owner of daily rate. | 
 **rate_source** | **str** | Indicate where this rate originated from. Leave as TRAVELIKO unless you are a channel manager and responsible for the property&#39;s rates externally of this platform. | [default to 'TRAVELIKO']
-**rate_plan_identifier** | **str** | Rate plan associated with this daily rate. | 
-**guest_room_identifier** | **str** | Guest room associated with this daily rate. | 
+**rate_plan_identifier** | **UUID** | Rate plan associated with this daily rate. | 
+**guest_room_identifier** | **UUID** | Guest room associated with this daily rate. | 
 **rate** | **float** | Guest room associated with this daily rate. | 
 **currency_code** | **str** | The currencyCode property operates in. | 
 **master** | **bool** | This flag indicates whether this rate is available for this date. | [default to True]

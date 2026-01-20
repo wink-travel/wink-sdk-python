@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Internal name of promotion ancillary. | 
 **enabled** | **bool** | Whether this promotion ancillary is enabled or not. | [default to True]
-**item_identifiers** | **List[object]** |  | 
+**item_identifiers** | **List[UUID]** |  | 
 **modifier_override** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **type** | **str** | Required if manual override modifier is not null | [optional] 
 **pricing_type** | **str** | Determines whether this discount should be applied per night, per stay or per person - per night; Required if amount override is not null | [optional] 

@@ -1,6 +1,5 @@
 # ReportingDailyRateAgent
 
-Displays rate accounting details
 
 ## Properties
 

@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **name_in_local_language** | **str** | Name of lead in local language | [optional] 
 **google_maps_url** | **str** | Google Maps URL of the place | 
 **phone** | **str** | Telephone of lead | [optional] 
-**address** | [**AddressSupplier**](AddressSupplier.md) | Address in English | [optional] 
+**address** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) | Address in English | [optional] 
 **address_local** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) | Address in local language if available | [optional] 
 **formatted_address** | **str** | Formatted address in English | [optional] 
 **formatted_address_local** | **str** | Formatted address in local language if available | [optional] 
@@ -30,8 +30,8 @@ Name | Type | Description | Notes
 **utc_offset_minutes** | **int** | UTC offset minutes | 
 **website** | **str** | Website | [optional] 
 **message_from_user** | **str** | A personalized message from the inviter | [optional] 
-**city_options** | **List[object]** |  | [optional] 
-**descriptions** | **List[object]** |  | [optional] 
+**city_options** | [**List[GeoNameLightweightSupplier]**](GeoNameLightweightSupplier.md) |  | [optional] 
+**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | [optional] 
 
 ## Example
 

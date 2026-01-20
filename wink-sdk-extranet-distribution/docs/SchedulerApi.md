@@ -48,7 +48,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Create a calendar item for travel inventoryowned by this property identifier
     inventory_identifier = 'travel-blocking-1' # str | Create a calendar item for travel inventorywith this identifier
     create_schedule_item_request_supplier = wink_sdk_extranet_distribution.CreateScheduleItemRequestSupplier() # CreateScheduleItemRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Scheduler Item
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Create a calendar item for travel inventoryowned by this property identifier | 
  **inventory_identifier** | **str**| Create a calendar item for travel inventorywith this identifier | 
  **create_schedule_item_request_supplier** | [**CreateScheduleItemRequestSupplier**](CreateScheduleItemRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Remove a calendar item for travel inventoryowned by this property identifier
     inventory_identifier = 'travel-blocking-1' # str | Remove a calendar item for travel inventorywith this identifier
     identifier = 'schedule-item-1' # str | Remove a calendar item with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Remove a calendar item for travel inventoryowned by this property identifier | 
  **inventory_identifier** | **str**| Remove a calendar item for travel inventorywith this identifier | 
  **identifier** | **str**| Remove a calendar item with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -221,7 +221,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     inventory_identifier = 'travel-blocking-1' # str | Show calendar items for travel inventorywith this identifier
     start = '2017-12-22T03:07:58.742+0000' # datetime | Specify start date range
     end = '2017-12-23T03:07:58.742+0000' # datetime | Specify end date range
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
  **inventory_identifier** | **str**| Show calendar items for travel inventorywith this identifier | 
  **start** | **datetime**| Specify start date range | 
  **end** | **datetime**| Specify end date range | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -311,7 +311,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     inventory_identifier = 'travel-blocking-1' # str | Update a calendar item for travel inventorywith this identifier
     identifier = 'schedule-item-1' # str | Update a calendar item with this identifier
     update_schedule_item_request_supplier = wink_sdk_extranet_distribution.UpdateScheduleItemRequestSupplier() # UpdateScheduleItemRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Scheduler Item
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
  **inventory_identifier** | **str**| Update a calendar item for travel inventorywith this identifier | 
  **identifier** | **str**| Update a calendar item with this identifier | 
  **update_schedule_item_request_supplier** | [**UpdateScheduleItemRequestSupplier**](UpdateScheduleItemRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

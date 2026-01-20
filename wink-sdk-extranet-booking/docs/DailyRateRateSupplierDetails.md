@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | Unique record identifier. | 
-**hotel_identifier** | **str** | Owner of daily rate. | 
+**hotel_identifier** | **UUID** | Owner of daily rate. | 
 **rate_source** | **str** | Indicate where this rate originated from. Leave as TRAVELIKO unless you are a channel manager and responsible for the property&#39;s rates externally of this platform. | [default to 'TRAVELIKO']
-**rate_plan_identifier** | **str** | Rate plan associated with this daily rate. | 
-**guest_room_identifier** | **str** | Guest room associated with this daily rate. | 
+**rate_plan_identifier** | **UUID** | Rate plan associated with this daily rate. | 
+**guest_room_identifier** | **UUID** | Guest room associated with this daily rate. | 
 **rate** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | 
 **master** | **bool** | This flag indicates whether this rate is available for this date. | [default to True]
 **closed_on_arrival** | **bool** | This flag indicates whether a guest can arrive at the property on this date. | [default to False]

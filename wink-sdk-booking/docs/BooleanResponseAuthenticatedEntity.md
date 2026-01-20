@@ -1,6 +1,5 @@
 # BooleanResponseAuthenticatedEntity
 
-Boolean response
 
 ## Properties
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**online_presence** | **List[object]** |  | [optional] 
+**online_presence** | [**List[OnlinePresenceAgent]**](OnlinePresenceAgent.md) |  | [optional] 
 
 ## Example
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | ID of seller inventory item to create a syndication entry from | 
+**identifier** | **UUID** | ID of seller inventory item to create a syndication entry from | 
 
 ## Example
 

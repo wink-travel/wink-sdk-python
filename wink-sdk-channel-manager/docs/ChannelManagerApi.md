@@ -47,7 +47,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_channel_manager.ChannelManagerApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -66,7 +66,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -130,7 +130,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_channel_manager.ChannelManagerApi(api_client)
     page = 0 # int | Page through all properties owned by your account (optional) (default to 0)
     size = 25 # int | Limit results of records per page (optional) (default to 25)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Page through all properties owned by your account | [optional] [default to 0]
  **size** | **int**| Limit results of records per page | [optional] [default to 25]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -214,7 +214,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_channel_manager.ChannelManagerApi(api_client)
     property_identifier = 'property-1' # str | Retrieve record for this propertyIdentifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -234,7 +234,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Retrieve record for this propertyIdentifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -298,7 +298,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_channel_manager.ChannelManagerApi(api_client)
     property_identifier = 'property-1' # str | Retrieve record owned by propertyIdentifier
     booking_identifier = 'booking-1' # str | Retrieve record for this bookingIdentifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Retrieve record owned by propertyIdentifier | 
  **booking_identifier** | **str**| Retrieve record for this bookingIdentifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -384,7 +384,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     property_identifier = 'property-1' # str | Retrieve record owned by this propertyIdentifier
     start_date = '2018-01-01T03:07:58.742+0000' # datetime | Limit results on date range starting with
     end_date = '2018-01-02T03:07:58.742+0000' # datetime | Limit results on date range ending with (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Retrieve record owned by this propertyIdentifier | 
  **start_date** | **datetime**| Limit results on date range starting with | 
  **end_date** | **datetime**| Limit results on date range ending with | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -472,7 +472,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     master_rate_identifier = 'master-rate-1' # str | Retrieve record owned by this masterRateIdentifier
     start_date = '2018-01-01' # date | Limit results on date range starting with
     end_date = '2018-01-02' # date | Limit results on date range ending with
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -495,7 +495,7 @@ Name | Type | Description  | Notes
  **master_rate_identifier** | **str**| Retrieve record owned by this masterRateIdentifier | 
  **start_date** | **date**| Limit results on date range starting with | 
  **end_date** | **date**| Limit results on date range ending with | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -561,7 +561,7 @@ with wink_sdk_channel_manager.ApiClient(configuration) as api_client:
     property_identifier = 'property-1' # str | Update rates owned by this propertyIdentifier
     master_rate_identifier = 'master-rate-1' # str | Update rates owned by this masterRateIdentifier
     property_rate_update_request = wink_sdk_channel_manager.PropertyRateUpdateRequest() # PropertyRateUpdateRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Daily Rates
@@ -582,7 +582,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update rates owned by this propertyIdentifier | 
  **master_rate_identifier** | **str**| Update rates owned by this masterRateIdentifier | 
  **property_rate_update_request** | [**PropertyRateUpdateRequest**](PropertyRateUpdateRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

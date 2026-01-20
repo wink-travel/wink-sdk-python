@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**identifier** | **UUID** | Unique record identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **name** | **str** | Internal name of promotion. | 
 **type** | **str** | Set whether you want the price to go up or down when the rules of this promotion have been satisfied. | 
 **modifier** | **object** |  | 
@@ -18,19 +18,19 @@ Name | Type | Description | Notes
 **country_rate_qualifiers** | **List[object]** | Restrict promotion to specific countries. See [Geo-IP country geoname data](#operation/showCountries) | [optional] 
 **promotion_rate_qualifiers** | **List[object]** | Restrict promotion by requiring users to enter a promo code. | [optional] 
 **ip_range_rate_qualifiers** | **List[object]** | Restrict promotion to specific IP ranges. | [optional] 
-**room_range_rate_qualifier** | **object** |  | [optional] 
-**prepay_rate_qualifier** | **object** |  | [optional] 
-**refundable_rate_qualifier** | **object** |  | [optional] 
+**room_range_rate_qualifier** | **object** | Restrict promotion by restricting to how many rooms the user wants. | [optional] 
+**prepay_rate_qualifier** | **object** | Restrict promotion to either prepaid / non-prepaid rates. | [optional] 
+**refundable_rate_qualifier** | **object** | Restrict promotion to either refundable / non-refundable rates. | [optional] 
 **timezone_rate_qualifiers** | **List[object]** | Restrict promotion to specific time zones. See [Geo-IP timezone geoname data](#operation/showTimezones) | [optional] 
-**last_minute_rate_qualifier** | **object** |  | [optional] 
-**length_of_stay_rate_qualifier** | **object** |  | [optional] 
-**advance_booking_rate_qualifier** | **object** |  | [optional] 
+**last_minute_rate_qualifier** | **object** | Restrict promotion to users who want to book a room close to the date. | [optional] 
+**length_of_stay_rate_qualifier** | **object** | Restrict promotion to users who want to stay a certain number of days. | [optional] 
+**advance_booking_rate_qualifier** | **object** | Restrict promotion to users who want to book in advance. | [optional] 
 **stay_date_rate_qualifiers** | **List[object]** | Restrict promotion to specific stay dates the user wants to arrive. | [optional] 
 **sell_date_rate_qualifiers** | **List[object]** | Restrict promotion to specific dates the booking is made. | [optional] 
-**available_days_of_week_rate_qualifier** | **object** |  | [optional] 
-**arrival_days_of_week_rate_qualifier** | **object** |  | [optional] 
-**departure_days_of_week_rate_qualifier** | **object** |  | [optional] 
-**required_days_of_week_rate_qualifier** | **object** |  | [optional] 
+**available_days_of_week_rate_qualifier** | **object** | Restrict promotion to specific days of the week the promotion is available. | [optional] 
+**arrival_days_of_week_rate_qualifier** | **object** | Restrict promotion to specific days of the week the guest is arriving. | [optional] 
+**departure_days_of_week_rate_qualifier** | **object** | Restrict promotion to specific days of the week the guest is departing. | [optional] 
+**required_days_of_week_rate_qualifier** | **object** | Restrict promotion to specific days of the week the guest has to stay. | [optional] 
 **master_rate_identifiers** | **List[str]** | Restrict on specific master rates. | [optional] 
 **add_on_identifiers** | **List[str]** | Restrict on specific add-ons. | [optional] 
 **rate_plan_identifiers** | **List[str]** | Restrict on specific rate plans. | [optional] 

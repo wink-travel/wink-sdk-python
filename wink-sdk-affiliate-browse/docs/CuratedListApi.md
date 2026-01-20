@@ -54,7 +54,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
     add_static_list_item_request_affiliate = wink_sdk_affiliate_browse.AddStaticListItemRequestAffiliate() # AddStaticListItemRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Add Inventory to List
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
  **add_static_list_item_request_affiliate** | [**AddStaticListItemRequestAffiliate**](AddStaticListItemRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -138,7 +138,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
     add_static_list_supplier_request_affiliate = wink_sdk_affiliate_browse.AddStaticListSupplierRequestAffiliate() # AddStaticListSupplierRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Add Supplier to List
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
  **add_static_list_supplier_request_affiliate** | [**AddStaticListSupplierRequestAffiliate**](AddStaticListSupplierRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -223,7 +223,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
     copy_move_static_list_item_request_affiliate = wink_sdk_affiliate_browse.CopyMoveStaticListItemRequestAffiliate() # CopyMoveStaticListItemRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Copy Item to List
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
  **copy_move_static_list_item_request_affiliate** | [**CopyMoveStaticListItemRequestAffiliate**](CopyMoveStaticListItemRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -307,7 +307,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     create_static_list_and_add_item_request_affiliate = wink_sdk_affiliate_browse.CreateStaticListAndAddItemRequestAffiliate() # CreateStaticListAndAddItemRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Curated List
@@ -326,7 +326,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_static_list_and_add_item_request_affiliate** | [**CreateStaticListAndAddItemRequestAffiliate**](CreateStaticListAndAddItemRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -389,7 +389,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     create_static_list_and_add_supplier_request_affiliate = wink_sdk_affiliate_browse.CreateStaticListAndAddSupplierRequestAffiliate() # CreateStaticListAndAddSupplierRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Curated List
@@ -408,7 +408,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_static_list_and_add_supplier_request_affiliate** | [**CreateStaticListAndAddSupplierRequestAffiliate**](CreateStaticListAndAddSupplierRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -473,7 +473,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
     copy_move_static_list_item_request_affiliate = wink_sdk_affiliate_browse.CopyMoveStaticListItemRequestAffiliate() # CopyMoveStaticListItemRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Move List Item
@@ -494,7 +494,7 @@ Name | Type | Description  | Notes
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
  **copy_move_static_list_item_request_affiliate** | [**CopyMoveStaticListItemRequestAffiliate**](CopyMoveStaticListItemRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -556,7 +556,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -576,7 +576,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -640,7 +640,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
     item_identifier = 'item-1' # str | Item identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -661,7 +661,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
  **item_identifier** | **str**| Item identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -724,7 +724,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     with_items = False # bool | Indicate whether to include all the list items in the result (optional) (default to False)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -744,7 +744,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **with_items** | **bool**| Indicate whether to include all the list items in the result | [optional] [default to False]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -809,7 +809,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
     sort_static_list_items_request_affiliate = wink_sdk_affiliate_browse.SortStaticListItemsRequestAffiliate() # SortStaticListItemsRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Re-Order List Items
@@ -829,7 +829,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
  **sort_static_list_items_request_affiliate** | [**SortStaticListItemsRequestAffiliate**](SortStaticListItemsRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -893,7 +893,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_browse.CuratedListApi(api_client)
     list_identifier = 'list-1' # str | List identifier.
     upsert_static_list_request_affiliate = wink_sdk_affiliate_browse.UpsertStaticListRequestAffiliate() # UpsertStaticListRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Curated List
@@ -913,7 +913,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_identifier** | **str**| List identifier. | 
  **upsert_static_list_request_affiliate** | [**UpsertStaticListRequestAffiliate**](UpsertStaticListRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

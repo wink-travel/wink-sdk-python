@@ -6,13 +6,13 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**browse_affiliates**](AffiliateApi.md#browse_affiliates) | **POST** /api/property/{propertyIdentifier}/sales/affiliate/grid | Show Affiliates
 [**invite_affiliate**](AffiliateApi.md#invite_affiliate) | **POST** /api/property/{propertyIdentifier}/sales/affiliate/invite | Send invite
-[**show_affiliate**](AffiliateApi.md#show_affiliate) | **GET** /api/property/{propertyIdentifier}/sales/affiliate/{companyIdentifier} | Show Affiliate
+[**show_affiliate**](AffiliateApi.md#show_affiliate) | **GET** /api/property/{propertyIdentifier}/sales/affiliate/{affiliateAccountIdentifier} | Show Affiliate
 [**show_unique_city_list**](AffiliateApi.md#show_unique_city_list) | **GET** /api/property/{propertyIdentifier}/sales/affiliate/city/list | Show Unique Affiliate Cities
 [**show_unique_country_list**](AffiliateApi.md#show_unique_country_list) | **GET** /api/property/{propertyIdentifier}/sales/affiliate/country/list | Show Unique Affiliate Countries
 
 
 # **browse_affiliates**
-> PageDisplayCompanyWithSalesMetricsSupplier browse_affiliates(property_identifier, state_supplier, wink_version=wink_version)
+> PageDisplayCompanyWithSalesMetricsAuthenticatedEntity browse_affiliates(property_identifier, state_authenticated_entity, wink_version=wink_version)
 
 Show Affiliates
 
@@ -24,8 +24,8 @@ Retrieve page of affiliates.
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.page_display_company_with_sales_metrics_supplier import PageDisplayCompanyWithSalesMetricsSupplier
-from wink_sdk_extranet_distribution.models.state_supplier import StateSupplier
+from wink_sdk_extranet_distribution.models.page_display_company_with_sales_metrics_authenticated_entity import PageDisplayCompanyWithSalesMetricsAuthenticatedEntity
+from wink_sdk_extranet_distribution.models.state_authenticated_entity import StateAuthenticatedEntity
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -47,12 +47,12 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.AffiliateApi(api_client)
     property_identifier = 'hotel-1' # str | Display affiliates to this specified property
-    state_supplier = wink_sdk_extranet_distribution.StateSupplier() # StateSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    state_authenticated_entity = wink_sdk_extranet_distribution.StateAuthenticatedEntity() # StateAuthenticatedEntity | 
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Affiliates
-        api_response = api_instance.browse_affiliates(property_identifier, state_supplier, wink_version=wink_version)
+        api_response = api_instance.browse_affiliates(property_identifier, state_authenticated_entity, wink_version=wink_version)
         print("The response of AffiliateApi->browse_affiliates:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,12 +67,12 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Display affiliates to this specified property | 
- **state_supplier** | [**StateSupplier**](StateSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **state_authenticated_entity** | [**StateAuthenticatedEntity**](StateAuthenticatedEntity.md)|  | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
-[**PageDisplayCompanyWithSalesMetricsSupplier**](PageDisplayCompanyWithSalesMetricsSupplier.md)
+[**PageDisplayCompanyWithSalesMetricsAuthenticatedEntity**](PageDisplayCompanyWithSalesMetricsAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invite_affiliate**
-> BooleanResponseSupplier invite_affiliate(property_identifier, invite_affiliate_request_supplier, wink_version=wink_version)
+> BooleanResponseAuthenticatedEntity invite_affiliate(property_identifier, invite_affiliate_request_authenticated_entity, wink_version=wink_version)
 
 Send invite
 
@@ -108,8 +108,8 @@ Send an email invite to a user
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.boolean_response_supplier import BooleanResponseSupplier
-from wink_sdk_extranet_distribution.models.invite_affiliate_request_supplier import InviteAffiliateRequestSupplier
+from wink_sdk_extranet_distribution.models.boolean_response_authenticated_entity import BooleanResponseAuthenticatedEntity
+from wink_sdk_extranet_distribution.models.invite_affiliate_request_authenticated_entity import InviteAffiliateRequestAuthenticatedEntity
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -131,12 +131,12 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.AffiliateApi(api_client)
     property_identifier = 'hotel-1' # str | Display affiliate to this specified property
-    invite_affiliate_request_supplier = wink_sdk_extranet_distribution.InviteAffiliateRequestSupplier() # InviteAffiliateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    invite_affiliate_request_authenticated_entity = wink_sdk_extranet_distribution.InviteAffiliateRequestAuthenticatedEntity() # InviteAffiliateRequestAuthenticatedEntity | 
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Send invite
-        api_response = api_instance.invite_affiliate(property_identifier, invite_affiliate_request_supplier, wink_version=wink_version)
+        api_response = api_instance.invite_affiliate(property_identifier, invite_affiliate_request_authenticated_entity, wink_version=wink_version)
         print("The response of AffiliateApi->invite_affiliate:\n")
         pprint(api_response)
     except Exception as e:
@@ -151,12 +151,12 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Display affiliate to this specified property | 
- **invite_affiliate_request_supplier** | [**InviteAffiliateRequestSupplier**](InviteAffiliateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **invite_affiliate_request_authenticated_entity** | [**InviteAffiliateRequestAuthenticatedEntity**](InviteAffiliateRequestAuthenticatedEntity.md)|  | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
-[**BooleanResponseSupplier**](BooleanResponseSupplier.md)
+[**BooleanResponseAuthenticatedEntity**](BooleanResponseAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_affiliate**
-> CompanyDetailsBookingSalesMetricsSupplier show_affiliate(property_identifier, company_identifier, wink_version=wink_version, accept=accept)
+> CompanyDetailsBookingSalesMetricsAuthenticatedEntity show_affiliate(property_identifier, affiliate_account_identifier, wink_version=wink_version, accept=accept)
 
 Show Affiliate
 
@@ -192,7 +192,7 @@ Retrieve affiliate information specified by identifier
 
 ```python
 import wink_sdk_extranet_distribution
-from wink_sdk_extranet_distribution.models.company_details_booking_sales_metrics_supplier import CompanyDetailsBookingSalesMetricsSupplier
+from wink_sdk_extranet_distribution.models.company_details_booking_sales_metrics_authenticated_entity import CompanyDetailsBookingSalesMetricsAuthenticatedEntity
 from wink_sdk_extranet_distribution.rest import ApiException
 from pprint import pprint
 
@@ -214,13 +214,13 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.AffiliateApi(api_client)
     property_identifier = 'hotel-1' # str | Display affiliate to this specified property
-    company_identifier = 'hotel-1' # str | Display affiliate by specified company
-    wink_version = 'wink_version_example' # str |  (optional)
+    affiliate_account_identifier = 'hotel-1' # str | Display affiliate by specified company
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Show Affiliate
-        api_response = api_instance.show_affiliate(property_identifier, company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.show_affiliate(property_identifier, affiliate_account_identifier, wink_version=wink_version, accept=accept)
         print("The response of AffiliateApi->show_affiliate:\n")
         pprint(api_response)
     except Exception as e:
@@ -235,13 +235,13 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Display affiliate to this specified property | 
- **company_identifier** | **str**| Display affiliate by specified company | 
- **wink_version** | **str**|  | [optional] 
+ **affiliate_account_identifier** | **str**| Display affiliate by specified company | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**CompanyDetailsBookingSalesMetricsSupplier**](CompanyDetailsBookingSalesMetricsSupplier.md)
+[**CompanyDetailsBookingSalesMetricsAuthenticatedEntity**](CompanyDetailsBookingSalesMetricsAuthenticatedEntity.md)
 
 ### Authorization
 
@@ -299,7 +299,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.AffiliateApi(api_client)
     property_identifier = 'hotel-1' # str | Display unique cities of affiliate to this specified property
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -319,7 +319,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Display unique cities of affiliate to this specified property | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -382,7 +382,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.AffiliateApi(api_client)
     property_identifier = 'hotel-1' # str | Display unique countries of affiliate to this specified property
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -402,7 +402,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Display unique countries of affiliate to this specified property | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

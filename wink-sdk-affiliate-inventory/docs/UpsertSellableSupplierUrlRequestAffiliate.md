@@ -7,10 +7,10 @@ Upserts a SellableSupplierUrl entity
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Descriptive name of this url for seller use only | 
-**customization_identifier** | **str** | Customization identifier | 
-**descriptions** | **List[object]** |  | 
-**multimedias** | **List[object]** |  | [optional] 
-**keywords** | **List[object]** |  | 
+**customization_identifier** | **UUID** | Customization identifier | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
+**multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) |  | [optional] 
+**keywords** | **List[str]** |  | 
 **twitter_account** | **str** | Twitter account is used with OpenGraph data | [optional] 
 **facebook_app_id** | **str** | Facebook APP ID is used with OpenGraph data | [optional] 
 **theme** | **str** | Url theme controls the look and feel of the ad banner. | [optional] 

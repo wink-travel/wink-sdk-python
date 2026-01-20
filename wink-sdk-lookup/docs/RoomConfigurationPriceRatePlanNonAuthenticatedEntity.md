@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Rate plan identifier | 
+**identifier** | **UUID** | Rate plan identifier | 
 **name** | **str** | Provides the name of the rate plan. | 
 **breakfast** | **bool** | When true, indicates breakfast is included. | [default to False]
 **brunch** | **bool** | When true, indicates brunch is included. | [default to False]

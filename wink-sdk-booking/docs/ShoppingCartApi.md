@@ -52,7 +52,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     upsert_shopping_cart_item_request_authenticated_entity = wink_sdk_booking.UpsertShoppingCartItemRequestAuthenticatedEntity() # UpsertShoppingCartItemRequestAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Shopping Cart
@@ -71,7 +71,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_shopping_cart_item_request_authenticated_entity** | [**UpsertShoppingCartItemRequestAuthenticatedEntity**](UpsertShoppingCartItemRequestAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -134,7 +134,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     upsert_shopping_cart_item_request_authenticated_entity = [wink_sdk_booking.UpsertShoppingCartItemRequestAuthenticatedEntity()] # List[UpsertShoppingCartItemRequestAuthenticatedEntity] | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Shopping Carts
@@ -153,7 +153,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_shopping_cart_item_request_authenticated_entity** | [**List[UpsertShoppingCartItemRequestAuthenticatedEntity]**](UpsertShoppingCartItemRequestAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -215,7 +215,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     shopping_cart_identifier = 'cart-1' # str | Cart to remove
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -235,7 +235,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shopping_cart_identifier** | **str**| Cart to remove | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -299,7 +299,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     shopping_cart_identifier = 'cart-1' # str | Cart to update
     shopping_cart_item_identifier = 'cart-item-1' # str | Cart item to remove
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shopping_cart_identifier** | **str**| Cart to update | 
  **shopping_cart_item_identifier** | **str**| Cart item to remove | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     shopping_cart_identifier = 'cart-1' # str | Cart to update
     shopping_cart_item_identifier = 'cart-item-1' # str | Cart item to update
     shopping_cart_item_ancillary_identifier = 'cart-item-ancillary-1' # str | Cart item ancillary to remove
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
  **shopping_cart_identifier** | **str**| Cart to update | 
  **shopping_cart_item_identifier** | **str**| Cart item to update | 
  **shopping_cart_item_ancillary_identifier** | **str**| Cart item ancillary to remove | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -469,7 +469,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -488,7 +488,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -551,7 +551,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     shopping_cart_identifier = 'cart-1' # str | Cart to empty
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -571,7 +571,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shopping_cart_identifier** | **str**| Cart to empty | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -634,7 +634,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
     shopping_cart_identifier = 'cart-1' # str | Cart to retrieve
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -654,7 +654,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shopping_cart_identifier** | **str**| Cart to retrieve | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -716,7 +716,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ShoppingCartApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -735,7 +735,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -801,7 +801,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     shopping_cart_identifier = 'cart-1' # str | Cart to update
     shopping_cart_item_identifier = 'cart-item-1' # str | Cart item to update
     upsert_shopping_cart_item_request_authenticated_entity = wink_sdk_booking.UpsertShoppingCartItemRequestAuthenticatedEntity() # UpsertShoppingCartItemRequestAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Shopping Cart Item
@@ -822,7 +822,7 @@ Name | Type | Description  | Notes
  **shopping_cart_identifier** | **str**| Cart to update | 
  **shopping_cart_item_identifier** | **str**| Cart item to update | 
  **upsert_shopping_cart_item_request_authenticated_entity** | [**UpsertShoppingCartItemRequestAuthenticatedEntity**](UpsertShoppingCartItemRequestAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

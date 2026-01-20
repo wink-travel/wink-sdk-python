@@ -44,7 +44,7 @@ with wink_sdk_extranet_property_register.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property_register.LeadsApi(api_client)
     google_place_detail_request_supplier = wink_sdk_extranet_property_register.GooglePlaceDetailRequestSupplier() # GooglePlaceDetailRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Lead
@@ -63,7 +63,7 @@ with wink_sdk_extranet_property_register.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **google_place_detail_request_supplier** | [**GooglePlaceDetailRequestSupplier**](GooglePlaceDetailRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -127,7 +127,7 @@ with wink_sdk_extranet_property_register.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property_register.LeadsApi(api_client)
     company_identifier = 'owner-1' # str | Create lead by this owner identifier.
     google_place_detail_request_affiliate = wink_sdk_extranet_property_register.GooglePlaceDetailRequestAffiliate() # GooglePlaceDetailRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Lead Request
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Create lead by this owner identifier. | 
  **google_place_detail_request_affiliate** | [**GooglePlaceDetailRequestAffiliate**](GooglePlaceDetailRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

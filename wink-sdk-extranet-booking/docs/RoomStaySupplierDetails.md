@@ -14,21 +14,21 @@ Name | Type | Description | Notes
 **start_date** | **date** | Stay start date | 
 **end_date** | **date** | Stay end date | 
 **price** | [**StayRateSupplierDetails**](StayRateSupplierDetails.md) | Price details | 
-**room_rate_identifier** | **str** | Master rate identifier | 
+**room_rate_identifier** | **UUID** | Master rate identifier | 
 **room_rate_internal_name** | **str** | Master rate internal name | 
 **rate_plan** | [**RoomConfigurationPriceRatePlanSupplierDetails**](RoomConfigurationPriceRatePlanSupplierDetails.md) | Rate plan used for this stay | 
 **perk_types** | [**List[PerkLightweightSupplierDetails]**](PerkLightweightSupplierDetails.md) | List of perks that came with the master rate | [optional] 
 **extra_charges** | [**ExtraChargesSupplierDetails**](ExtraChargesSupplierDetails.md) | Rate plan-level extra charges | 
 **active_cancellation_policy** | [**CancellationPolicyLightweightSupplierDetails**](CancellationPolicyLightweightSupplierDetails.md) | Based on the itinerary, the cancellation policy could be taken directly from the rate plan or it could be a policy exception also listed on the rate plan | 
-**cancellable_by_hotel** | **bool** |  | [optional] 
-**cancellable_with_potential_charge** | **bool** |  | [optional] 
-**cancellable** | **bool** |  | [optional] 
 **room_nights** | **int** | Total number of nights the guest stays at the hotel. -1 indicates there is an error. | [optional] 
-**guests** | **int** |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **rate_source** | **str** |  | [optional] 
+**cancellable** | **bool** |  | [optional] 
+**guests** | **int** |  | [optional] 
+**cancellable_by_hotel** | **bool** |  | [optional] 
+**cancellable_with_potential_charge** | **bool** |  | [optional] 
 
 ## Example
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Rate plan identifier | 
+**identifier** | **UUID** | Rate plan identifier | 
 **hotel_identifier** | **str** | Hotel ID | 
 **name** | **str** | Provides the name of the rate plan. | 
 **prepaid** | **bool** | When true, indicates if the rate is a prepaid rate. | [default to False]
@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **max_los** | **int** | Indicates the maximum length of stay. | [optional] 
 **min_age** | **int** | The minimum age to qualify for this rate plan. | [optional] 
 **max_age** | **int** | The maximum age to qualify for this rate plan. | [optional] 
-**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) |  | [optional] 
+**rate_plan_level_fees** | [**List[RatePlanLevelFeeSupplier]**](RatePlanLevelFeeSupplier.md) | This can be a one-time fee such as a cleaning fee | [optional] 
 **available_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **arrival_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 
 **departure_days_of_week** | [**DowPatternGroupSupplier**](DowPatternGroupSupplier.md) |  | [optional] 

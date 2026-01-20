@@ -43,7 +43,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ReviewApi(api_client)
     booking_identifier = 'booking_identifier_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -63,7 +63,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **booking_identifier** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -128,7 +128,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ReviewApi(api_client)
     booking_identifier = 'booking_identifier_example' # str | 
     submit_review_request_authenticated_entity = wink_sdk_booking.SubmitReviewRequestAuthenticatedEntity() # SubmitReviewRequestAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Submit Review
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **booking_identifier** | **str**|  | 
  **submit_review_request_authenticated_entity** | [**SubmitReviewRequestAuthenticatedEntity**](SubmitReviewRequestAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

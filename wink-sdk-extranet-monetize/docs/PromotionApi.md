@@ -48,7 +48,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Create new promotion and associate with this property identifier.
     upsert_special_rate_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateRequestSupplier() # UpsertSpecialRateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Promotion
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create new promotion and associate with this property identifier. | 
  **upsert_special_rate_request_supplier** | [**UpsertSpecialRateRequestSupplier**](UpsertSpecialRateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -131,7 +131,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Remove a promotion owned by this property identifier.
     rate_modifier_identifier = 'promotion-1' # str | Remove a promotion with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove a promotion owned by this property identifier. | 
  **rate_modifier_identifier** | **str**| Remove a promotion with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -216,7 +216,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Show single promotion owned by this property identifier.
     rate_modifier_identifier = 'promotion-1' # str | Show single promotion with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single promotion owned by this property identifier. | 
  **rate_modifier_identifier** | **str**| Show single promotion with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -300,7 +300,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.PromotionApi(api_client)
     property_identifier = 'hotel-1' # str | Show all promotions owned by this property identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -320,7 +320,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all promotions owned by this property identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -386,7 +386,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update existing promotion owned by this property identifier.
     rate_modifier_identifier = 'promotion-1' # str | Update existing promotion with this identifier.
     upsert_special_rate_request_supplier = wink_sdk_extranet_monetize.UpsertSpecialRateRequestSupplier() # UpsertSpecialRateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Promotion
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update existing promotion owned by this property identifier. | 
  **rate_modifier_identifier** | **str**| Update existing promotion with this identifier. | 
  **upsert_special_rate_request_supplier** | [**UpsertSpecialRateRequestSupplier**](UpsertSpecialRateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique identifier | 
+**identifier** | **UUID** | Unique identifier | 
 **name** | **str** | Name of layout | 
-**bedroom_list** | [**List[BedroomAuthenticatedEntity]**](BedroomAuthenticatedEntity.md) |  | 
+**bedroom_list** | [**List[BedroomAuthenticatedEntity]**](BedroomAuthenticatedEntity.md) | A room type can have more than one bedroom configuration. | 
 
 ## Example
 

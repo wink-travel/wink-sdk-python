@@ -5,7 +5,6 @@ All URIs are relative to *https://api.wink.travel*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**notify_property**](InventoryApi.md#notify_property) | **POST** /api/inventory/unavailable | No Inventory
-[**show_consumable_url**](InventoryApi.md#show_consumable_url) | **GET** /api/shareable-link/{code} | Show Shareable Link
 [**show_inventory_grid_item**](InventoryApi.md#show_inventory_grid_item) | **POST** /api/inventory/grid/item | Show Inventory Grid Item
 [**show_property_aggregate**](InventoryApi.md#show_property_aggregate) | **POST** /api/inventory/property | Show Property Inventory
 [**show_property_attraction**](InventoryApi.md#show_property_attraction) | **POST** /api/experience/attraction | Show Attraction Inventory
@@ -57,7 +56,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     inventory_unavailable_notification_non_authenticated_entity = wink_sdk_inventory.InventoryUnavailableNotificationNonAuthenticatedEntity() # InventoryUnavailableNotificationNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # No Inventory
@@ -76,7 +75,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inventory_unavailable_notification_non_authenticated_entity** | [**InventoryUnavailableNotificationNonAuthenticatedEntity**](InventoryUnavailableNotificationNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -100,111 +99,6 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **400** | Bad Request |  -  |
 **201** | Created |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **show_consumable_url**
-> AbstractOpenGraphRedirectUrlNonAuthenticatedEntity show_consumable_url(code, user_agent=user_agent, host=host, referer=referer, cid=cid, p=p, rc=rc, l=l, c=c, sd=sd, ed=ed, n=n, gl=gl, wink_version=wink_version)
-
-Show Shareable Link
-
-Retrieve a shareable link by its unique code
-
-### Example
-
-* OAuth Authentication (oauth2ClientCredentials):
-
-```python
-import wink_sdk_inventory
-from wink_sdk_inventory.models.abstract_open_graph_redirect_url_non_authenticated_entity import AbstractOpenGraphRedirectUrlNonAuthenticatedEntity
-from wink_sdk_inventory.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to https://api.wink.travel
-# See configuration.py for a list of all supported configuration parameters.
-configuration = wink_sdk_inventory.Configuration(
-    host = "https://api.wink.travel"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
-
-# Enter a context with an instance of the API client
-with wink_sdk_inventory.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = wink_sdk_inventory.InventoryApi(api_client)
-    code = 'code_example' # str | Unique link code
-    user_agent = 'Unknown' # str | User-Agent header. (optional) (default to 'Unknown')
-    host = 'Unknown' # str | Host header. (optional) (default to 'Unknown')
-    referer = 'Unknown' # str | Referrer header. (optional) (default to 'Unknown')
-    cid = 'cid_example' # str | Optional campaignId (optional)
-    p = 'p_example' # str |  (optional)
-    rc = 'rc_example' # str |  (optional)
-    l = 'en' # str |  (optional) (default to 'en')
-    c = 'USD' # str |  (optional) (default to 'USD')
-    sd = '2013-10-20' # date |  (optional)
-    ed = '2013-10-20' # date |  (optional)
-    n = 56 # int |  (optional)
-    gl = 'gl_example' # str | Optional GA4 cross link ID (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
-
-    try:
-        # Show Shareable Link
-        api_response = api_instance.show_consumable_url(code, user_agent=user_agent, host=host, referer=referer, cid=cid, p=p, rc=rc, l=l, c=c, sd=sd, ed=ed, n=n, gl=gl, wink_version=wink_version)
-        print("The response of InventoryApi->show_consumable_url:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling InventoryApi->show_consumable_url: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **code** | **str**| Unique link code | 
- **user_agent** | **str**| User-Agent header. | [optional] [default to &#39;Unknown&#39;]
- **host** | **str**| Host header. | [optional] [default to &#39;Unknown&#39;]
- **referer** | **str**| Referrer header. | [optional] [default to &#39;Unknown&#39;]
- **cid** | **str**| Optional campaignId | [optional] 
- **p** | **str**|  | [optional] 
- **rc** | **str**|  | [optional] 
- **l** | **str**|  | [optional] [default to &#39;en&#39;]
- **c** | **str**|  | [optional] [default to &#39;USD&#39;]
- **sd** | **date**|  | [optional] 
- **ed** | **date**|  | [optional] 
- **n** | **int**|  | [optional] 
- **gl** | **str**| Optional GA4 cross link ID | [optional] 
- **wink_version** | **str**|  | [optional] 
-
-### Return type
-
-[**AbstractOpenGraphRedirectUrlNonAuthenticatedEntity**](AbstractOpenGraphRedirectUrlNonAuthenticatedEntity.md)
-
-### Authorization
-
-[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**500** | Internal Server Error |  -  |
-**403** | Forbidden |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
-**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -244,7 +138,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_inventory_grid_item_request_non_authenticated_entity = wink_sdk_inventory.AggregateInventoryGridItemRequestNonAuthenticatedEntity() # AggregateInventoryGridItemRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -264,7 +158,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_inventory_grid_item_request_non_authenticated_entity** | [**AggregateInventoryGridItemRequestNonAuthenticatedEntity**](AggregateInventoryGridItemRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -328,7 +222,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_property_request_non_authenticated_entity = wink_sdk_inventory.AggregatePropertyRequestNonAuthenticatedEntity() # AggregatePropertyRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -348,7 +242,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_property_request_non_authenticated_entity** | [**AggregatePropertyRequestNonAuthenticatedEntity**](AggregatePropertyRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -412,7 +306,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_attraction_request_non_authenticated_entity = wink_sdk_inventory.AggregateAttractionRequestNonAuthenticatedEntity() # AggregateAttractionRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -432,7 +326,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_attraction_request_non_authenticated_entity** | [**AggregateAttractionRequestNonAuthenticatedEntity**](AggregateAttractionRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -499,7 +393,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
     images = 20 # int | Number of images to return for inventory (optional) (default to 20)
     videos = 1 # int | Number of videos to return for inventory (optional) (default to 1)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Property
@@ -521,7 +415,7 @@ Name | Type | Description  | Notes
  **customization_identifier** | **str**| Customization identifier | [optional] 
  **images** | **int**| Number of images to return for inventory | [optional] [default to 20]
  **videos** | **int**| Number of videos to return for inventory | [optional] [default to 1]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -587,7 +481,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
     images = 20 # int | Number of images to return for inventory (optional) (default to 20)
     videos = 1 # int | Number of videos to return for inventory (optional) (default to 1)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Property List
@@ -609,7 +503,7 @@ Name | Type | Description  | Notes
  **customization_identifier** | **str**| Customization identifier | [optional] 
  **images** | **int**| Number of images to return for inventory | [optional] [default to 20]
  **videos** | **int**| Number of videos to return for inventory | [optional] [default to 1]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -672,7 +566,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_meeting_room_request_non_authenticated_entity = wink_sdk_inventory.AggregateMeetingRoomRequestNonAuthenticatedEntity() # AggregateMeetingRoomRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -692,7 +586,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_meeting_room_request_non_authenticated_entity** | [**AggregateMeetingRoomRequestNonAuthenticatedEntity**](AggregateMeetingRoomRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -756,7 +650,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_place_request_non_authenticated_entity = wink_sdk_inventory.AggregatePlaceRequestNonAuthenticatedEntity() # AggregatePlaceRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -776,7 +670,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_place_request_non_authenticated_entity** | [**AggregatePlaceRequestNonAuthenticatedEntity**](AggregatePlaceRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -841,7 +735,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     period_for_property_request_non_authenticated_entity = wink_sdk_inventory.PeriodForPropertyRequestNonAuthenticatedEntity() # PeriodForPropertyRequestNonAuthenticatedEntity | 
     customization_identifier = 'customization_identifier_example' # str | Customization identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Property Rate Period
@@ -861,7 +755,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **period_for_property_request_non_authenticated_entity** | [**PeriodForPropertyRequestNonAuthenticatedEntity**](PeriodForPropertyRequestNonAuthenticatedEntity.md)|  | 
  **customization_identifier** | **str**| Customization identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -924,7 +818,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_activity_request_non_authenticated_entity = wink_sdk_inventory.AggregateActivityRequestNonAuthenticatedEntity() # AggregateActivityRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -944,7 +838,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_activity_request_non_authenticated_entity** | [**AggregateActivityRequestNonAuthenticatedEntity**](AggregateActivityRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1008,7 +902,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_restaurant_request_non_authenticated_entity = wink_sdk_inventory.AggregateRestaurantRequestNonAuthenticatedEntity() # AggregateRestaurantRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1028,7 +922,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_restaurant_request_non_authenticated_entity** | [**AggregateRestaurantRequestNonAuthenticatedEntity**](AggregateRestaurantRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1092,7 +986,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_room_type_request_non_authenticated_entity = wink_sdk_inventory.AggregateRoomTypeRequestNonAuthenticatedEntity() # AggregateRoomTypeRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1112,7 +1006,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_room_type_request_non_authenticated_entity** | [**AggregateRoomTypeRequestNonAuthenticatedEntity**](AggregateRoomTypeRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1176,7 +1070,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_spa_request_non_authenticated_entity = wink_sdk_inventory.AggregateSpaRequestNonAuthenticatedEntity() # AggregateSpaRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1196,7 +1090,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_spa_request_non_authenticated_entity** | [**AggregateSpaRequestNonAuthenticatedEntity**](AggregateSpaRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1260,7 +1154,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_seller_inventory_list_request_non_authenticated_entity = wink_sdk_inventory.AggregateSellerInventoryListRequestNonAuthenticatedEntity() # AggregateSellerInventoryListRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1280,7 +1174,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_seller_inventory_list_request_non_authenticated_entity** | [**AggregateSellerInventoryListRequestNonAuthenticatedEntity**](AggregateSellerInventoryListRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1344,7 +1238,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_inventory.InventoryApi(api_client)
     aggregate_seller_inventory_list_request_non_authenticated_entity = wink_sdk_inventory.AggregateSellerInventoryListRequestNonAuthenticatedEntity() # AggregateSellerInventoryListRequestNonAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1364,7 +1258,7 @@ with wink_sdk_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggregate_seller_inventory_list_request_non_authenticated_entity** | [**AggregateSellerInventoryListRequestNonAuthenticatedEntity**](AggregateSellerInventoryListRequestNonAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

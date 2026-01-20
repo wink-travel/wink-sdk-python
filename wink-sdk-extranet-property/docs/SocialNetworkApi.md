@@ -43,7 +43,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.SocialNetworkApi(api_client)
     property_identifier = 'hotel-1' # str | Show Social Networks associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -63,7 +63,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show Social Networks associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -128,7 +128,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.SocialNetworkApi(api_client)
     property_identifier = 'hotel-1' # str | Set social networks this property identifier
     social_networks_request_supplier = wink_sdk_extranet_property.SocialNetworksRequestSupplier() # SocialNetworksRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Social Networks
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Set social networks this property identifier | 
  **social_networks_request_supplier** | [**SocialNetworksRequestSupplier**](SocialNetworksRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

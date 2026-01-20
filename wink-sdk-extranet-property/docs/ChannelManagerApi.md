@@ -44,7 +44,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.ChannelManagerApi(api_client)
     property_identifier = 'hotel-1' # str | Set channel manager for this property identifier
     update_channel_manager_request_supplier = wink_sdk_extranet_property.UpdateChannelManagerRequestSupplier() # UpdateChannelManagerRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Set Channel Manager
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Set channel manager for this property identifier | 
  **update_channel_manager_request_supplier** | [**UpdateChannelManagerRequestSupplier**](UpdateChannelManagerRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

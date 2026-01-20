@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**identifier** | **UUID** | Unique record identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **name** | **str** | Internal name of promotion ancillary. | 
 **enabled** | **bool** | Whether this promotion ancillary is enabled or not. | [default to True]
-**items** | **List[object]** |  | 
+**items** | [**List[SpecialRateLightweightSupplier]**](SpecialRateLightweightSupplier.md) |  | 
 **modifier_override** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | [optional] 
 **type** | **str** | Required if manual override modifier is not null | [optional] 
 **pricing_type** | **str** | Determines whether this discount should be applied per night, per stay or per person - per night; Required if amount override is not null | [optional] 
 **is_valid** | **bool** |  | [optional] 
-**description** | [**List[LocalizedDescriptionSupplier]**](LocalizedDescriptionSupplier.md) |  | [optional] 
 **has_fixed_discount_modifier** | **bool** |  | [optional] 
 **has_percent_discount_modifier** | **bool** |  | [optional] 
+**description** | [**List[LocalizedDescriptionSupplier]**](LocalizedDescriptionSupplier.md) |  | [optional] 
 
 ## Example
 

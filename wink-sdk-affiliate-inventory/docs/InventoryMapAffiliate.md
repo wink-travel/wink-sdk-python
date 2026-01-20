@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**owner_identifier** | **str** | Map owner identifier | 
-**customization_identifier** | **str** | Customization identifier | 
+**owner_identifier** | **UUID** | Map owner identifier | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **name** | **str** | Name of map | 
-**type_identifier** | **str** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
+**type_identifier** | **UUID** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
 **type** | **str** | Type of inventory | 
 **center** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Map center point | 
 **draggable** | **bool** | User can move around / pan the map | [default to True]
@@ -23,9 +23,9 @@ Name | Type | Description | Notes
 **map_height** | **int** | Map height in pixels | 
 **display_type** | **str** | Indicate which initial values to display first on the front-facing card | [default to 'NATIVE']
 **circles** | [**List[ConfigurableGeoJsonCircleAffiliate]**](ConfigurableGeoJsonCircleAffiliate.md) |  | [optional] 
-**rectangles** | **List[object]** |  | [optional] 
-**markers** | **List[object]** |  | [optional] 
-**polygons** | **List[object]** |  | [optional] 
+**rectangles** | [**List[ConfigurableGeoJsonRectangleAffiliate]**](ConfigurableGeoJsonRectangleAffiliate.md) |  | [optional] 
+**markers** | [**List[ConfigurableGeoJsonPointAffiliate]**](ConfigurableGeoJsonPointAffiliate.md) |  | [optional] 
+**polygons** | [**List[ConfigurableGeoJsonPolygonAffiliate]**](ConfigurableGeoJsonPolygonAffiliate.md) |  | [optional] 
 
 ## Example
 

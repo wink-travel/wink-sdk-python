@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**question_identifier** | **str** | Question identifier | 
+**question_identifier** | **UUID** | Question identifier | 
 **category** | **str** | Question category | 
 **sort** | **int** | Sort key | 
 **value** | **int** | Value | 

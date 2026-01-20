@@ -49,7 +49,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.CancellationPolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Create cancellation policy and associate it with by this property identifier.
     upsert_cancellation_policy_request_supplier = wink_sdk_extranet_monetize.UpsertCancellationPolicyRequestSupplier() # UpsertCancellationPolicyRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Cancellation Policy
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create cancellation policy and associate it with by this property identifier. | 
  **upsert_cancellation_policy_request_supplier** | [**UpsertCancellationPolicyRequestSupplier**](UpsertCancellationPolicyRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -132,7 +132,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.CancellationPolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Verify if cancellation policy is removable and owned by this property identifier.
     cancellation_policy_identifier = 'cancellation-policy-1' # str | Verify if cancellation policy is removable identified by this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Verify if cancellation policy is removable and owned by this property identifier. | 
  **cancellation_policy_identifier** | **str**| Verify if cancellation policy is removable identified by this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -217,7 +217,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.CancellationPolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Delete cancellation policy owned by this property identifier.
     cancellation_policy_identifier = 'cancellation-policy-1' # str | Delete cancellation policy with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Delete cancellation policy owned by this property identifier. | 
  **cancellation_policy_identifier** | **str**| Delete cancellation policy with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.CancellationPolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Show single cancellation policy owned by this property identifier.
     cancellation_policy_identifier = 'cancellation-policy-1' # str | Show single cancellation policy with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single cancellation policy owned by this property identifier. | 
  **cancellation_policy_identifier** | **str**| Show single cancellation policy with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -386,7 +386,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.CancellationPolicyApi(api_client)
     property_identifier = 'hotel-1' # str | List all cancellation policies for this property identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -406,7 +406,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| List all cancellation policies for this property identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -472,7 +472,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update an existing cancellation policy owned by this property identifier.
     cancellation_policy_identifier = 'cancellation-policy-1' # str | Update an existing cancellation policy with this identifier.
     upsert_cancellation_policy_request_supplier = wink_sdk_extranet_monetize.UpsertCancellationPolicyRequestSupplier() # UpsertCancellationPolicyRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Cancellation Policy
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update an existing cancellation policy owned by this property identifier. | 
  **cancellation_policy_identifier** | **str**| Update an existing cancellation policy with this identifier. | 
  **upsert_cancellation_policy_request_supplier** | [**UpsertCancellationPolicyRequestSupplier**](UpsertCancellationPolicyRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -46,7 +46,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.PolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Create property policy for this property identifier
     property_policy_supplier = wink_sdk_extranet_property.PropertyPolicySupplier() # PropertyPolicySupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create property policy
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create property policy for this property identifier | 
  **property_policy_supplier** | [**PropertyPolicySupplier**](PropertyPolicySupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -128,7 +128,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.PolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Retrieve property policy for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -148,7 +148,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Retrieve property policy for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -213,7 +213,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.PolicyApi(api_client)
     property_identifier = 'hotel-1' # str | Update property policy record for this property identifier
     property_policy_supplier = wink_sdk_extranet_property.PropertyPolicySupplier() # PropertyPolicySupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update property policy
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update property policy record for this property identifier | 
  **property_policy_supplier** | [**PropertyPolicySupplier**](PropertyPolicySupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -18,7 +18,6 @@ docs/DynamicSellerListRequestAffiliate.md
 docs/GeneralManagerAffiliate.md
 docs/GenericErrorMessage.md
 docs/GeoJsonPointAffiliate.md
-docs/InventoryAddressAffiliate.md
 docs/InventoryAggregateLightweightAffiliate.md
 docs/InventorySupplierAggregateLightweightAffiliate.md
 docs/KeyValuePairAffiliate.md
@@ -79,7 +78,6 @@ wink_sdk_affiliate_browse/models/dynamic_seller_list_request_affiliate.py
 wink_sdk_affiliate_browse/models/general_manager_affiliate.py
 wink_sdk_affiliate_browse/models/generic_error_message.py
 wink_sdk_affiliate_browse/models/geo_json_point_affiliate.py
-wink_sdk_affiliate_browse/models/inventory_address_affiliate.py
 wink_sdk_affiliate_browse/models/inventory_aggregate_lightweight_affiliate.py
 wink_sdk_affiliate_browse/models/inventory_supplier_aggregate_lightweight_affiliate.py
 wink_sdk_affiliate_browse/models/key_value_pair_affiliate.py

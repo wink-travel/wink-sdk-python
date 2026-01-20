@@ -3,6 +3,8 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
+docs/AddOnLightweightNonAuthenticatedEntity.md
+docs/AddOnLocalizedInventoryNonAuthenticatedEntity.md
 docs/AgencyScoreRequestNonAuthenticatedEntity.md
 docs/BedNonAuthenticatedEntity.md
 docs/BedroomConfigurationNonAuthenticatedEntity.md
@@ -16,6 +18,7 @@ docs/CitySearchRequestNonAuthenticatedEntity.md
 docs/ContactNonAuthenticatedEntity.md
 docs/CountryScoreRequestNonAuthenticatedEntity.md
 docs/CustomMonetaryAmount.md
+docs/DowPatternGroupNonAuthenticatedEntity.md
 docs/ExtraChargeNonAuthenticatedEntity.md
 docs/ExtraChargesNonAuthenticatedEntity.md
 docs/GeneralManagerNonAuthenticatedEntity.md
@@ -36,6 +39,7 @@ docs/MapRequestNonAuthenticatedEntity.md
 docs/MediaAuthorAttributionNonAuthenticatedEntity.md
 docs/PagePropertyWithBestPriceNonAuthenticatedEntity.md
 docs/PageableObjectNonAuthenticatedEntity.md
+docs/PerkLightweightNonAuthenticatedEntity.md
 docs/PointNonAuthenticatedEntity.md
 docs/PropertyAggregateLightweightNonAuthenticatedEntity.md
 docs/PropertyPolicyNonAuthenticatedEntity.md
@@ -72,6 +76,8 @@ wink_sdk_lookup/api_response.py
 wink_sdk_lookup/configuration.py
 wink_sdk_lookup/exceptions.py
 wink_sdk_lookup/models/__init__.py
+wink_sdk_lookup/models/add_on_lightweight_non_authenticated_entity.py
+wink_sdk_lookup/models/add_on_localized_inventory_non_authenticated_entity.py
 wink_sdk_lookup/models/agency_score_request_non_authenticated_entity.py
 wink_sdk_lookup/models/bed_non_authenticated_entity.py
 wink_sdk_lookup/models/bedroom_configuration_non_authenticated_entity.py
@@ -85,6 +91,7 @@ wink_sdk_lookup/models/city_search_request_non_authenticated_entity.py
 wink_sdk_lookup/models/contact_non_authenticated_entity.py
 wink_sdk_lookup/models/country_score_request_non_authenticated_entity.py
 wink_sdk_lookup/models/custom_monetary_amount.py
+wink_sdk_lookup/models/dow_pattern_group_non_authenticated_entity.py
 wink_sdk_lookup/models/extra_charge_non_authenticated_entity.py
 wink_sdk_lookup/models/extra_charges_non_authenticated_entity.py
 wink_sdk_lookup/models/general_manager_non_authenticated_entity.py
@@ -104,6 +111,7 @@ wink_sdk_lookup/models/map_request_non_authenticated_entity.py
 wink_sdk_lookup/models/media_author_attribution_non_authenticated_entity.py
 wink_sdk_lookup/models/page_property_with_best_price_non_authenticated_entity.py
 wink_sdk_lookup/models/pageable_object_non_authenticated_entity.py
+wink_sdk_lookup/models/perk_lightweight_non_authenticated_entity.py
 wink_sdk_lookup/models/point_non_authenticated_entity.py
 wink_sdk_lookup/models/property_aggregate_lightweight_non_authenticated_entity.py
 wink_sdk_lookup/models/property_policy_non_authenticated_entity.py

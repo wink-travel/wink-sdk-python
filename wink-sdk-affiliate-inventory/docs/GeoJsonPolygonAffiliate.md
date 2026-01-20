@@ -1,6 +1,5 @@
 # GeoJsonPolygonAffiliate
 
-A GeoJSON polygon
 
 ## Properties
 

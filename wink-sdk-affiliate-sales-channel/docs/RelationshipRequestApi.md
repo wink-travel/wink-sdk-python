@@ -47,7 +47,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
     upsert_sales_channel_request_request = wink_sdk_affiliate_sales_channel.UpsertSalesChannelRequestRequest() # UpsertSalesChannelRequestRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Supplier Request
@@ -66,7 +66,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_sales_channel_request_request** | [**UpsertSalesChannelRequestRequest**](UpsertSalesChannelRequestRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -128,7 +128,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
     sales_channel_request_identifier = 'sales-channel-1' # str | Re-apply relationship request with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -148,7 +148,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sales_channel_request_identifier** | **str**| Re-apply relationship request with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -211,7 +211,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
     sales_channel_request_identifier = 'sales-channel-1' # str | Remove property request with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -231,7 +231,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sales_channel_request_identifier** | **str**| Remove property request with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -294,7 +294,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
     supplier_identifier = 'supplier-1' # str | Show property request for this supplier identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -314,7 +314,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_identifier** | **str**| Show property request for this supplier identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -376,7 +376,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_sales_channel.RelationshipRequestApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -395,7 +395,7 @@ with wink_sdk_affiliate_sales_channel.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

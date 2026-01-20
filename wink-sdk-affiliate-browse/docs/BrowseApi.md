@@ -54,7 +54,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -73,7 +73,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -135,7 +135,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -154,7 +154,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -216,7 +216,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -235,7 +235,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -297,7 +297,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -316,7 +316,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -378,7 +378,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -397,7 +397,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -459,7 +459,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -478,7 +478,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -542,7 +542,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
     dynamic_seller_list_request_affiliate = wink_sdk_affiliate_browse.DynamicSellerListRequestAffiliate() # DynamicSellerListRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Inventory Search
@@ -561,7 +561,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dynamic_seller_list_request_affiliate** | [**DynamicSellerListRequestAffiliate**](DynamicSellerListRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -626,7 +626,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -649,7 +649,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -715,7 +715,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Limit the size of results. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -738,7 +738,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Limit the size of results. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -803,7 +803,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     supplier_identifier = 'supplier-1' # str | Browse inventory supplier on behalf of this supplier identifier.
     sales_channel_identifier = 'sales-channel-1' # str | Browse inventory supplier on behalf of this sales channel identifier.
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -825,7 +825,7 @@ Name | Type | Description  | Notes
  **supplier_identifier** | **str**| Browse inventory supplier on behalf of this supplier identifier. | 
  **sales_channel_identifier** | **str**| Browse inventory supplier on behalf of this sales channel identifier. | 
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -890,7 +890,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -912,7 +912,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -977,7 +977,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     page = 0 # int | Skip to page. (optional) (default to 0)
     size = 20 # int | Skip to page. (optional) (default to 20)
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -999,7 +999,7 @@ Name | Type | Description  | Notes
  **page** | **int**| Skip to page. | [optional] [default to 0]
  **size** | **int**| Skip to page. | [optional] [default to 20]
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1061,7 +1061,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1080,7 +1080,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1144,7 +1144,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
     dynamic_seller_list_request_affiliate = wink_sdk_affiliate_browse.DynamicSellerListRequestAffiliate() # DynamicSellerListRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Supplier Search
@@ -1163,7 +1163,7 @@ with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dynamic_seller_list_request_affiliate** | [**DynamicSellerListRequestAffiliate**](DynamicSellerListRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | **List[object]** |  | [optional] 
+**data** | **List[str]** |  | [optional] 
 
 ## Example
 

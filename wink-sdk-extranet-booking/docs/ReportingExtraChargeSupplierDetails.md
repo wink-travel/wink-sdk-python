@@ -1,6 +1,5 @@
 # ReportingExtraChargeSupplierDetails
 
-Displays extra charge accounting details.
 
 ## Properties
 

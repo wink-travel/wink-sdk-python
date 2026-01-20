@@ -6,7 +6,7 @@ A way to persist a GeoJSON rectangle
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rectangle** | [**GeoJsonRectangleAffiliate**](GeoJsonRectangleAffiliate.md) |  | 
+**rectangle** | [**GeoJsonRectangleAffiliate**](GeoJsonRectangleAffiliate.md) | A GeoJSON rectangle | 
 
 ## Example
 

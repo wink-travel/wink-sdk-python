@@ -45,7 +45,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_engine_client.ConfigurationApi(api_client)
     client_id = 'client_id_example' # str | The clientId
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -65,7 +65,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **client_id** | **str**| The clientId | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -128,7 +128,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_engine_client.ConfigurationApi(api_client)
     client_id = 'client_id_example' # str | The clientId
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -148,7 +148,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **client_id** | **str**| The clientId | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -211,7 +211,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_engine_client.ConfigurationApi(api_client)
     identifier = 'identifier_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -231,7 +231,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **identifier** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -294,7 +294,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_engine_client.ConfigurationApi(api_client)
     url_name = 'url_name_example' # str | The urlName
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -314,7 +314,7 @@ with wink_sdk_engine_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **url_name** | **str**| The urlName | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

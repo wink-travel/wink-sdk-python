@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **shopping_cart_identifier** | **str** | Shopping cart to send to TripPay | 
-**engine_configuration_identifier** | **str** | Wink affiliate customization | [optional] 
+**customization_identifier** | **str** | Wink affiliate customization | [optional] 
 **redirect_url** | **str** | Wink affiliate customization | [default to 'https://ota.wink.travel/thank-you']
 
 ## Example

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[UpsertCancellationPolicyExceptionSupplier]**](UpsertCancellationPolicyExceptionSupplier.md) |  | 
+**list** | [**List[UpsertCancellationPolicyExceptionSupplier]**](UpsertCancellationPolicyExceptionSupplier.md) | List of cancellation policy exceptions | 
 
 ## Example
 

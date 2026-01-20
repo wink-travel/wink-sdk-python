@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of curated list | 
-**channel_inventory_identifiers** | **List[object]** |  | [optional] 
+**channel_inventory_identifiers** | **List[UUID]** |  | [optional] 
 
 ## Example
 

@@ -1,22 +1,21 @@
 # AddOnLightweightNonAuthenticatedEntity
 
-The original add-on record created by the property.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**identifier** | **UUID** | Unique record identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **featured_ind** | **bool** | Indicates whether this inventory is featured. Use this flag as a way to signify that this inventory is special. | 
 **lifestyle_type** | **str** | Indicate the type of lifestyle this blocking should be associated with. | [optional] 
-**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) |  | 
-**descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Localized descriptions describing blocking. | 
+**location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) | Geo-location point where blocking takes place. Defaults to location of property. | 
+**descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Localized descriptions describing inventory. | 
 **multimedias** | [**List[SimpleMultimediaNonAuthenticatedEntity]**](SimpleMultimediaNonAuthenticatedEntity.md) | List of images / videos of blocking. | 
-**contact** | [**ContactNonAuthenticatedEntity**](ContactNonAuthenticatedEntity.md) |  | 
-**address** | [**SimpleAddressNonAuthenticatedEntity**](SimpleAddressNonAuthenticatedEntity.md) |  | 
+**contact** | [**ContactNonAuthenticatedEntity**](ContactNonAuthenticatedEntity.md) | Associate a contact person for this blocking (if applicable). | 
+**address** | [**SimpleAddressNonAuthenticatedEntity**](SimpleAddressNonAuthenticatedEntity.md) | Defaults to property address. | 
 **commissionable** | **bool** | Indicate whether sales channels receive commission for selling this blocking. | [default to True]
-**name** | **str** | Internal name of blocking. | 
+**name** | **str** | Internal name of inventory. | 
 **proximity_code** | **str** | Supported OTA specification &#x60;PRX&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | 
 **sort** | **int** | Use this property to sort an blocking in a list of activities. | [optional] 
 **min_age_appropriate_code** | **str** | Supported OTA specification &#x60;AQC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
@@ -32,7 +31,7 @@ Name | Type | Description | Notes
 **reservation_required_ind** | **bool** | Indicates whether a reservation is required to participate in this blocking. | [optional] 
 **opens** | **str** | Opening time of blocking (if applicable). Leave empty if blocking is always available. | [optional] 
 **closes** | **str** | Closing time of blocking (if applicable). Leave empty if blocking is always available. | [optional] 
-**days_of_week** | [**DowPatternGroupNonAuthenticatedEntity**](DowPatternGroupNonAuthenticatedEntity.md) |  | [optional] 
+**days_of_week** | [**DowPatternGroupNonAuthenticatedEntity**](DowPatternGroupNonAuthenticatedEntity.md) | Indicate which days this blocking is open. | [optional] 
 **number_of_units** | **int** | Total number of add-ons available to purchase. | [default to 0]
 **mandatory** | **bool** | Make this add-on mandatory for all guests by enabling this flag. | [default to False]
 **rate_plan_identifier** | **str** | Optional restriction on rate plan. | [optional] 

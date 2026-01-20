@@ -43,7 +43,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.LifestyleApi(api_client)
     property_identifier = 'hotel-1' # str | Show Lifestyles for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -63,7 +63,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show Lifestyles for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -128,7 +128,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.LifestyleApi(api_client)
     property_identifier = 'hotel-1' # str | Update lifestyles for this property identifier
     update_lifestyles_request_supplier = wink_sdk_extranet_property.UpdateLifestylesRequestSupplier() # UpdateLifestylesRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Lifestyles
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Update lifestyles for this property identifier | 
  **update_lifestyles_request_supplier** | [**UpdateLifestylesRequestSupplier**](UpdateLifestylesRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

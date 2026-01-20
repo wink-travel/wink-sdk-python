@@ -1,6 +1,5 @@
 # BooleanResponseSupplier
 
-Boolean response
 
 ## Properties
 

@@ -53,7 +53,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     booking_identifier = 'booking-1' # str | Cancel booking by identifier
     cancellation_detail_booker = wink_sdk_booking.CancellationDetailBooker() # CancellationDetailBooker | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Cancel Booking
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **booking_identifier** | **str**| Cancel booking by identifier | 
  **cancellation_detail_booker** | [**CancellationDetailBooker**](CancellationDetailBooker.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -137,7 +137,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     group_identifier = 'trace-1' # str | Cancel booking by group identifier
     cancellation_detail_booker = wink_sdk_booking.CancellationDetailBooker() # CancellationDetailBooker | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Cancel Group Booking
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_identifier** | **str**| Cancel booking by group identifier | 
  **cancellation_detail_booker** | [**CancellationDetailBooker**](CancellationDetailBooker.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -220,7 +220,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     booking_identifier = 'booking-1' # str | Retrieve booking by identifier
     body = None # object | Empty request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Resend Booking Confirmation
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **booking_identifier** | **str**| Retrieve booking by identifier | 
  **body** | **object**| Empty request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -302,7 +302,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     booking_identifier = 'booking-1' # str | Retrieve booking by identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -322,7 +322,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **booking_identifier** | **str**| Retrieve booking by identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     transaction_identifier = 'booking-1' # str | Retrieve booking by transaction identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -405,7 +405,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transaction_identifier** | **str**| Retrieve booking by transaction identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -469,7 +469,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     state_booker = wink_sdk_booking.StateBooker() # StateBooker | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Search Bookings
@@ -488,7 +488,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **state_booker** | [**StateBooker**](StateBooker.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -551,7 +551,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     page = 0 # int | Page to start retrieving records for (optional) (default to 0)
     size = 10 # int | Number of records to retrieve (optional) (default to 10)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -572,7 +572,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Page to start retrieving records for | [optional] [default to 0]
  **size** | **int**| Number of records to retrieve | [optional] [default to 10]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -635,7 +635,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     state = NEEDS_REVIEW # str | Retrieve bookings by review state (optional) (default to NEEDS_REVIEW)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -655,7 +655,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **state** | **str**| Retrieve bookings by review state | [optional] [default to NEEDS_REVIEW]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -718,7 +718,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     state = FUTURE # str | Retrieve bookings by state (optional) (default to FUTURE)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -738,7 +738,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **state** | **str**| Retrieve bookings by state | [optional] [default to FUTURE]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -801,7 +801,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_booking.ConsumerBookingApi(api_client)
     group_identifier = 'booking-1' # str | Retrieve booking by identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -821,7 +821,7 @@ with wink_sdk_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_identifier** | **str**| Retrieve booking by identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

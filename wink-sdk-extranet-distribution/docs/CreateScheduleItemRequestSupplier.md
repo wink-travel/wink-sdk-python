@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **recurrence_rule** | **str** | If rule is present, indicates that scheduled event is a recurring event. For more details go to the [iCalendar website](https://icalendar.org/) | [optional] 
 **recurrence_id** | **str** | The parent ID of the recurring event. | [optional] 
 **recurrence_exception** | **List[datetime]** | Exceptions to the recurrence rule. | [optional] 
-**booking_identifier** | **str** | Booking identifier this scheduled event was created as part of. | 
+**booking_identifier** | **UUID** | Booking identifier this scheduled event was created as part of. | 
 **type** | **str** | The type of travel inventory. | 
 **attendees** | **int** | Number of guests attending this event. | [default to 1]
 

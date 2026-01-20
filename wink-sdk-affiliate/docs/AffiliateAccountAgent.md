@@ -9,26 +9,26 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**user_identifier** | **str** | User or Registered client owner identifier that created this record | 
-**owner** | [**AffiliateAccountUserAgent**](AffiliateAccountUserAgent.md) | Owner | 
+**user_identifier** | **UUID** | User owner ID. | 
+**managing_entity_identifier** | **UUID** | Parent ID. Because it&#39;s all 1-1, it should be the same ID. | 
+**owner_identifier** | **str** | The App owner that created this record. | 
+**managers** | [**List[ManagingEntityManagerAgent]**](ManagingEntityManagerAgent.md) |  | 
+**managed_by** | [**ManagedByEntityAgent**](ManagedByEntityAgent.md) | If another company entity is managing this property, on behalf of the property, it can be specified here and the managing entity would be applicable a management fee on every booking. | [optional] 
+**owner_type** | **str** | Type of entity this is. | 
+**type** | **str** | Type of sales channel | 
 **name** | **str** | Name of company | 
 **url_name** | **str** | Url slug of company name | 
 **unique_id** | **str** | Event shorter name | 
-**legal_name** | **str** | Legal name of entity if other than name | [optional] 
-**enabled** | **bool** | Whether this company is enabled by platform. | 
-**approved** | **bool** | Whether this company has been approved by KYC. | [default to False]
-**company_type** | **str** | Type of company | 
-**type** | **str** | Type of sales channel | 
 **description** | **str** | Account description. | [optional] 
-**address** | [**AddressAgent**](AddressAgent.md) |  | 
-**managers** | [**List[AffiliateAccountUserAgent]**](AffiliateAccountUserAgent.md) |  | [optional] 
+**currency_code** | **str** | Account&#39;s main currency. | 
+**city** | [**GeoNameLightweightAgent**](GeoNameLightweightAgent.md) |  | 
+**place_id** | **str** | Optional Google placeId for properties with a Google Business account. | [optional] 
+**profile_picture** | [**SimpleMultimediaAgent**](SimpleMultimediaAgent.md) | Customize account with a custom profile picture. | [optional] 
+**status** | **str** | Status of entity. | 
 **logo** | [**SimpleMultimediaAgent**](SimpleMultimediaAgent.md) | Customize account with a custom logo / profile picture. | [optional] 
-**travel_agent** | [**TravelAgentAgent**](TravelAgentAgent.md) | Customize account with a custom logo / profile picture. | [optional] 
-**managed_by** | [**ManagedByEntityAgent**](ManagedByEntityAgent.md) | If another company entity is managing this property, on behalf of the property, it can be specified here and the managing entity would be applicable a management fee on every booking. | [optional] 
-**online_presence** | **List[object]** |  | [optional] 
+**travel_agent** | [**TravelAgentAgent**](TravelAgentAgent.md) | Optional travel agent details if the affiliate account is a travel agent. | [optional] 
+**online_presence** | [**List[OnlinePresenceAgent]**](OnlinePresenceAgent.md) |  | [optional] 
 **annual_travel_spend_in_dollars** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | How much user or company spends on travel per year. | [optional] 
-**plans** | **List[object]** |  | [optional] 
-**previous_url_name_list** | **List[object]** |  | [optional] 
 
 ## Example
 

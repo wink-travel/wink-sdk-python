@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | ID of supplier url to create a syndication entry from | 
+**identifier** | **UUID** | ID of supplier url to create a syndication entry from | 
 
 ## Example
 

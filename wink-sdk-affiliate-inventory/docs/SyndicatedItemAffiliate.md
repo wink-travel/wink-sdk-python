@@ -9,15 +9,15 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**user_identifier** | **str** | Creator of entry | 
-**owner_identifier** | **str** | The user&#39;s owner company this entry associates with | 
+**user_identifier** | **UUID** | Creator of entry | 
+**owner_identifier** | **UUID** | The user&#39;s owner company this entry associates with | 
 **title** | **str** | The site name of this entry | 
 **content_url** | **str** | The url of this entry | 
 **sort** | **int** | How the author wants this entry to get sorted | 
 **status** | **str** | This can change if it&#39;s linked to travel inventory that is no longer available. | 
 **type** | **str** | The syndication entry type | 
 **metadata** | **Dict[str, object]** | Extended metadata | [optional] 
-**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized descriptions describing inventory. | 
 **tags** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Optional user categories | [optional] 
 **multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) | The main multimedias for this entry. | [optional] 
 **display** | **str** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
@@ -26,8 +26,8 @@ Name | Type | Description | Notes
 **publish_status** | **str** | Publish status of post. | [optional] [default to 'PUBLISHED']
 **lock_code** | **str** | Optional code the author can require be entered by the user in order to see the post. | [optional] 
 **unique_id** | **str** | Optional unique code that can be used to access this record. | [optional] 
-**user_tags** | **List[object]** |  | [optional] 
-**hash_tags** | **List[object]** |  | [optional] 
+**user_tags** | **List[str]** |  | [optional] 
+**hash_tags** | **List[str]** |  | [optional] 
 
 ## Example
 

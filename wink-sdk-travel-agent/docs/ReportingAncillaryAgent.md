@@ -1,6 +1,5 @@
 # ReportingAncillaryAgent
 
-Displays ancillary accounting details
 
 ## Properties
 

@@ -44,7 +44,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.AnalyticsApi(api_client)
     property_identifier = 'hotel-1' # str | Show active booking count for hotel with this identifier
     booking_overview_request_supplier = wink_sdk_extranet_booking.BookingOverviewRequestSupplier() # BookingOverviewRequestSupplier | Overview request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Property Booking Analytics
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show active booking count for hotel with this identifier | 
  **booking_overview_request_supplier** | [**BookingOverviewRequestSupplier**](BookingOverviewRequestSupplier.md)| Overview request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

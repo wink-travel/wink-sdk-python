@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
+**identifier** | **UUID** | Unique record identifier | 
 **enabled** | **bool** | Flag the supplier can use to enable / disable this blocking | [default to True]
 
 ## Example

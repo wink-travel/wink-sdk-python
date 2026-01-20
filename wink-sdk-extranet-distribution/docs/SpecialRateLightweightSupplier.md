@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**identifier** | **UUID** | Unique record identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **name** | **str** | Internal name of promotion. | 
 **type** | **str** | Set whether you want the price to go up or down when the rules of this promotion have been satisfied. | 
 **modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | 

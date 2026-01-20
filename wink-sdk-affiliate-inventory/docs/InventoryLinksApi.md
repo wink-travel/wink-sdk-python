@@ -48,7 +48,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
     upsert_sellable_inventory_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableInventoryUrlRequestAffiliate() # UpsertSellableInventoryUrlRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Link
@@ -67,7 +67,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_sellable_inventory_url_request_affiliate** | [**UpsertSellableInventoryUrlRequestAffiliate**](UpsertSellableInventoryUrlRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -129,7 +129,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
     seller_url_identifier = 'seller-url-1' # str | Remove url with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -149,7 +149,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_url_identifier** | **str**| Remove url with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -212,7 +212,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
     channel_inventory_identifier = 'channel-blocking-1' # str | Channel inventory identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -232,7 +232,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channel_inventory_identifier** | **str**| Channel inventory identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -295,7 +295,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
     seller_url_identifier = 'owner-1' # str | Show link with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -315,7 +315,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_url_identifier** | **str**| Show link with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -377,7 +377,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -396,7 +396,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -461,7 +461,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_inventory.InventoryLinksApi(api_client)
     seller_url_identifier = 'seller-url-1' # str | Update url with this identifier.
     upsert_sellable_inventory_url_request_affiliate = wink_sdk_affiliate_inventory.UpsertSellableInventoryUrlRequestAffiliate() # UpsertSellableInventoryUrlRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update link
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_url_identifier** | **str**| Update url with this identifier. | 
  **upsert_sellable_inventory_url_request_affiliate** | [**UpsertSellableInventoryUrlRequestAffiliate**](UpsertSellableInventoryUrlRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

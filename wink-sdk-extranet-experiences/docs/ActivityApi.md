@@ -50,7 +50,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.ActivityApi(api_client)
     property_identifier = 'hotel-1' # str | Persist activity owned by this property identifier
     upsert_activity_request = wink_sdk_extranet_experiences.UpsertActivityRequest() # UpsertActivityRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Activity
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Persist activity owned by this property identifier | 
  **upsert_activity_request** | [**UpsertActivityRequest**](UpsertActivityRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.ActivityApi(api_client)
     property_identifier = 'hotel-1' # str | Delete activity owned by this property identifier
     activity_identifier = 'activity-1' # str | Delete activity identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Delete activity owned by this property identifier | 
  **activity_identifier** | **str**| Delete activity identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -217,7 +217,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.ActivityApi(api_client)
     property_identifier = 'hotel-1' # str | Show activities associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -237,7 +237,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show activities associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -301,7 +301,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.ActivityApi(api_client)
     property_identifier = 'hotel-1' # str | Show activity owned by this property identifier
     activity_identifier = 'activity-1' # str | Show activity for identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show activity owned by this property identifier | 
  **activity_identifier** | **str**| Show activity for identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.ActivityApi(api_client)
     property_identifier = 'hotel-1' # str | Show activity key/value pairs associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -405,7 +405,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show activity key/value pairs associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -471,7 +471,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update existing activity record owned by this property identifier
     activity_identifier = 'activity-1' # str | Update activity record with this identifier
     upsert_activity_request = wink_sdk_extranet_experiences.UpsertActivityRequest() # UpsertActivityRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Activity
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update existing activity record owned by this property identifier | 
  **activity_identifier** | **str**| Update activity record with this identifier | 
  **upsert_activity_request** | [**UpsertActivityRequest**](UpsertActivityRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

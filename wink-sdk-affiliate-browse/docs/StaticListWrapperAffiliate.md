@@ -7,7 +7,7 @@ Contains both the curated list and all its items.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **list** | [**StaticListAffiliate**](StaticListAffiliate.md) | Curated list object | 
-**items** | [**List[StaticListItemAffiliate]**](StaticListItemAffiliate.md) |  | [optional] 
+**items** | [**List[StaticListItemAffiliate]**](StaticListItemAffiliate.md) | Travel inventory items contained in list | [optional] 
 
 ## Example
 

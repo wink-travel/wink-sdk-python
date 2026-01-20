@@ -45,7 +45,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.UserSettingsApi(api_client)
     change_password_request = wink_sdk_user_settings.ChangePasswordRequest() # ChangePasswordRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Change Password
@@ -64,7 +64,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **change_password_request** | [**ChangePasswordRequest**](ChangePasswordRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -125,7 +125,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.UserSettingsApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -144,7 +144,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -208,7 +208,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_user_settings.UserSettingsApi(api_client)
     upsert_user_profile_request = wink_sdk_user_settings.UpsertUserProfileRequest() # UpsertUserProfileRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update User Profile
@@ -227,7 +227,7 @@ with wink_sdk_user_settings.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_user_profile_request** | [**UpsertUserProfileRequest**](UpsertUserProfileRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

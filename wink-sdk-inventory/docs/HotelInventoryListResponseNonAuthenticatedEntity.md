@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | **List[object]** |  | [optional] 
+**list** | [**List[PropertyInventoryResponseNonAuthenticatedEntity]**](PropertyInventoryResponseNonAuthenticatedEntity.md) |  | [optional] 
 
 ## Example
 

@@ -9,11 +9,11 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**owner_identifier** | **str** | AffiliateAccount identifier | 
+**owner_identifier** | **UUID** | AffiliateAccount identifier | 
 **name** | **str** | Descriptive name of this list for seller use only | 
-**customization_identifier** | **str** | Customization identifier | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Contains custom title and description of grid | 
-**keywords** | **List[object]** |  | 
+**keywords** | **List[str]** |  | 
 **status** | **str** | Status | [default to 'ACTIVE']
 **lookup** | [**LookupLightweightAffiliate**](LookupLightweightAffiliate.md) | The destination to display ranked inventory from. | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]

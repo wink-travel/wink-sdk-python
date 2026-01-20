@@ -6,12 +6,12 @@ This is one localized bookable item that can stand alongside a restaurant / meet
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique transactional identifier | 
+**identifier** | **UUID** | Unique transactional identifier | 
 **name** | **str** | Internal name of transactional blocking. | 
-**descriptions** | [**List[SimpleDescriptionSupplierDetails]**](SimpleDescriptionSupplierDetails.md) |  | 
+**descriptions** | [**List[SimpleDescriptionSupplierDetails]**](SimpleDescriptionSupplierDetails.md) | Localized descriptions describing inventory. | 
 **pricing_type** | **str** | How this blocking item should be priced. | 
 **price** | [**LocalizedPriceSupplierDetails**](LocalizedPriceSupplierDetails.md) | Localized price | 
-**multimedias** | [**List[SimpleMultimediaSupplierDetails]**](SimpleMultimediaSupplierDetails.md) |  | [optional] 
+**multimedias** | [**List[SimpleMultimediaSupplierDetails]**](SimpleMultimediaSupplierDetails.md) | List of images / videos of item. | [optional] 
 **min_pax** | **int** | Whether there is a limit to minimum group size. | [optional] 
 **max_pax** | **int** | Whether there is a limit to maximum group size. | [optional] 
 **offer_details** | [**List[LocalizedDescriptionSupplierDetails]**](LocalizedDescriptionSupplierDetails.md) | Localized offer details if rate plan discount applies. | [optional] 

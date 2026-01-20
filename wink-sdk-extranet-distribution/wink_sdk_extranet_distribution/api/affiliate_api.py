@@ -3,9 +3,9 @@
 """
     Wink API
 
-     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Test API   - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.  ### Common APIs  - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consume APIs Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.   ### Produce APIs  Produce endpoints are for developers who want to create and manage travel inventory.   #### Property  - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.  - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.  - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.  - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.  - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.  - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.  - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.   #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.  - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.  - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.  - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.  - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.   #### Rate provider  - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.   ### Taxonomy APIs  Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.   - [Reference](/reference): All APIs related to retrieving platform-supported taxonomies.   ### Insight APIs  Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.   - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.   ### Payment APIs  Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant payment widget for all other entities.   - [TripPay](/payment): All APIs related to TripPay account management, booking, mapping and integration features.   ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)   ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.   ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.   ## Release history  - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md    # Extranet Distribution API The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink. This API lets you:  1. Verifier: Test your availability and promotions and create test bookings to simulate the entire booking workflow. 2. Sales Channels: Manage your sales channels. 3. Explore Network: Find new affiliates to work with. 4. Inventory: Manage inventory at the sales channel-level. 5. Calendars: Manage availability calendars for all your inventory.  Browse the endpoints in the left navigation bar to get started.  
+     # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Common APIs  - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics. - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties. - [Managing Entity](/managing-entity): Endpoints that quickly show you which entities you have access to. - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [Payment](/payment): All APIs related to TripPay account management, booking, mapping and integration features. - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work. - [Reference](/reference): All APIs related to retrieving platform-supported taxonomies. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consumer APIs  Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.  ### Supplier APIs  Produce endpoints are for developers who want to create and manage travel inventory.  #### Property  - [Property Registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink. - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties. - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types. - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities. - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink. - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink. - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.  #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts. - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell. - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it. - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones. - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.  ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).  ### Inventory   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)  - Python SDK [https://github.com/wink-travel/wink-sdk-python](https://github.com/wink-travel/wink-sdk-python)  ### Payment  - Java SDK [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java) - Python SDK [https://github.com/wink-travel/trip-pay-sdk-python](https://github.com/wink-travel/trip-pay-sdk-python)  ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.  ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.  Current version: `2.0` Prior versions: None   # Extranet Distribution API The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink. This API lets you:  1. Verifier: Test your availability and promotions and create test bookings to simulate the entire booking workflow. 2. Sales Channels: Manage your sales channels. 3. Explore Network: Find new affiliates to work with. 4. Inventory: Manage inventory at the sales channel-level. 5. Calendars: Manage availability calendars for all your inventory.  Browse the endpoints in the left navigation bar to get started.  
 
-    The version of the OpenAPI document: 30.30.1
+    The version of the OpenAPI document: 30.31.0
     Contact: bjorn@wink.travel
     Generated by OpenAPI Generator (https://openapi-generator.tech)
 
@@ -20,12 +20,12 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
-from wink_sdk_extranet_distribution.models.boolean_response_supplier import BooleanResponseSupplier
-from wink_sdk_extranet_distribution.models.company_details_booking_sales_metrics_supplier import CompanyDetailsBookingSalesMetricsSupplier
-from wink_sdk_extranet_distribution.models.invite_affiliate_request_supplier import InviteAffiliateRequestSupplier
+from wink_sdk_extranet_distribution.models.boolean_response_authenticated_entity import BooleanResponseAuthenticatedEntity
+from wink_sdk_extranet_distribution.models.company_details_booking_sales_metrics_authenticated_entity import CompanyDetailsBookingSalesMetricsAuthenticatedEntity
+from wink_sdk_extranet_distribution.models.invite_affiliate_request_authenticated_entity import InviteAffiliateRequestAuthenticatedEntity
 from wink_sdk_extranet_distribution.models.key_value_pair_supplier import KeyValuePairSupplier
-from wink_sdk_extranet_distribution.models.page_display_company_with_sales_metrics_supplier import PageDisplayCompanyWithSalesMetricsSupplier
-from wink_sdk_extranet_distribution.models.state_supplier import StateSupplier
+from wink_sdk_extranet_distribution.models.page_display_company_with_sales_metrics_authenticated_entity import PageDisplayCompanyWithSalesMetricsAuthenticatedEntity
+from wink_sdk_extranet_distribution.models.state_authenticated_entity import StateAuthenticatedEntity
 
 from wink_sdk_extranet_distribution.api_client import ApiClient, RequestSerialized
 from wink_sdk_extranet_distribution.api_response import ApiResponse
@@ -49,7 +49,7 @@ class AffiliateApi:
     def browse_affiliates(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliates to this specified property")],
-        state_supplier: StateSupplier,
+        state_authenticated_entity: StateAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -63,15 +63,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> PageDisplayCompanyWithSalesMetricsSupplier:
+    ) -> PageDisplayCompanyWithSalesMetricsAuthenticatedEntity:
         """Show Affiliates
 
         Retrieve page of affiliates.
 
         :param property_identifier: Display affiliates to this specified property (required)
         :type property_identifier: str
-        :param state_supplier: (required)
-        :type state_supplier: StateSupplier
+        :param state_authenticated_entity: (required)
+        :type state_authenticated_entity: StateAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -98,7 +98,7 @@ class AffiliateApi:
 
         _param = self._browse_affiliates_serialize(
             property_identifier=property_identifier,
-            state_supplier=state_supplier,
+            state_authenticated_entity=state_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -111,7 +111,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "PageDisplayCompanyWithSalesMetricsSupplier",
+            '200': "PageDisplayCompanyWithSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -128,7 +128,7 @@ class AffiliateApi:
     def browse_affiliates_with_http_info(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliates to this specified property")],
-        state_supplier: StateSupplier,
+        state_authenticated_entity: StateAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -142,15 +142,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[PageDisplayCompanyWithSalesMetricsSupplier]:
+    ) -> ApiResponse[PageDisplayCompanyWithSalesMetricsAuthenticatedEntity]:
         """Show Affiliates
 
         Retrieve page of affiliates.
 
         :param property_identifier: Display affiliates to this specified property (required)
         :type property_identifier: str
-        :param state_supplier: (required)
-        :type state_supplier: StateSupplier
+        :param state_authenticated_entity: (required)
+        :type state_authenticated_entity: StateAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -177,7 +177,7 @@ class AffiliateApi:
 
         _param = self._browse_affiliates_serialize(
             property_identifier=property_identifier,
-            state_supplier=state_supplier,
+            state_authenticated_entity=state_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -190,7 +190,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "PageDisplayCompanyWithSalesMetricsSupplier",
+            '200': "PageDisplayCompanyWithSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -207,7 +207,7 @@ class AffiliateApi:
     def browse_affiliates_without_preload_content(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliates to this specified property")],
-        state_supplier: StateSupplier,
+        state_authenticated_entity: StateAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -228,8 +228,8 @@ class AffiliateApi:
 
         :param property_identifier: Display affiliates to this specified property (required)
         :type property_identifier: str
-        :param state_supplier: (required)
-        :type state_supplier: StateSupplier
+        :param state_authenticated_entity: (required)
+        :type state_authenticated_entity: StateAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -256,7 +256,7 @@ class AffiliateApi:
 
         _param = self._browse_affiliates_serialize(
             property_identifier=property_identifier,
-            state_supplier=state_supplier,
+            state_authenticated_entity=state_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -269,7 +269,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "PageDisplayCompanyWithSalesMetricsSupplier",
+            '200': "PageDisplayCompanyWithSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -281,7 +281,7 @@ class AffiliateApi:
     def _browse_affiliates_serialize(
         self,
         property_identifier,
-        state_supplier,
+        state_authenticated_entity,
         wink_version,
         _request_auth,
         _content_type,
@@ -312,8 +312,8 @@ class AffiliateApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if state_supplier is not None:
-            _body_params = state_supplier
+        if state_authenticated_entity is not None:
+            _body_params = state_authenticated_entity
 
 
         # set the HTTP header `Accept`
@@ -370,7 +370,7 @@ class AffiliateApi:
     def invite_affiliate(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        invite_affiliate_request_supplier: InviteAffiliateRequestSupplier,
+        invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -384,15 +384,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> BooleanResponseSupplier:
+    ) -> BooleanResponseAuthenticatedEntity:
         """Send invite
 
         Send an email invite to a user
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param invite_affiliate_request_supplier: (required)
-        :type invite_affiliate_request_supplier: InviteAffiliateRequestSupplier
+        :param invite_affiliate_request_authenticated_entity: (required)
+        :type invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -419,7 +419,7 @@ class AffiliateApi:
 
         _param = self._invite_affiliate_serialize(
             property_identifier=property_identifier,
-            invite_affiliate_request_supplier=invite_affiliate_request_supplier,
+            invite_affiliate_request_authenticated_entity=invite_affiliate_request_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -432,7 +432,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "BooleanResponseSupplier",
+            '200': "BooleanResponseAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -449,7 +449,7 @@ class AffiliateApi:
     def invite_affiliate_with_http_info(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        invite_affiliate_request_supplier: InviteAffiliateRequestSupplier,
+        invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -463,15 +463,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[BooleanResponseSupplier]:
+    ) -> ApiResponse[BooleanResponseAuthenticatedEntity]:
         """Send invite
 
         Send an email invite to a user
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param invite_affiliate_request_supplier: (required)
-        :type invite_affiliate_request_supplier: InviteAffiliateRequestSupplier
+        :param invite_affiliate_request_authenticated_entity: (required)
+        :type invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -498,7 +498,7 @@ class AffiliateApi:
 
         _param = self._invite_affiliate_serialize(
             property_identifier=property_identifier,
-            invite_affiliate_request_supplier=invite_affiliate_request_supplier,
+            invite_affiliate_request_authenticated_entity=invite_affiliate_request_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -511,7 +511,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "BooleanResponseSupplier",
+            '200': "BooleanResponseAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -528,7 +528,7 @@ class AffiliateApi:
     def invite_affiliate_without_preload_content(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        invite_affiliate_request_supplier: InviteAffiliateRequestSupplier,
+        invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity,
         wink_version: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -549,8 +549,8 @@ class AffiliateApi:
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param invite_affiliate_request_supplier: (required)
-        :type invite_affiliate_request_supplier: InviteAffiliateRequestSupplier
+        :param invite_affiliate_request_authenticated_entity: (required)
+        :type invite_affiliate_request_authenticated_entity: InviteAffiliateRequestAuthenticatedEntity
         :param wink_version:
         :type wink_version: str
         :param _request_timeout: timeout setting for this request. If one
@@ -577,7 +577,7 @@ class AffiliateApi:
 
         _param = self._invite_affiliate_serialize(
             property_identifier=property_identifier,
-            invite_affiliate_request_supplier=invite_affiliate_request_supplier,
+            invite_affiliate_request_authenticated_entity=invite_affiliate_request_authenticated_entity,
             wink_version=wink_version,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -590,7 +590,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "BooleanResponseSupplier",
+            '200': "BooleanResponseAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -602,7 +602,7 @@ class AffiliateApi:
     def _invite_affiliate_serialize(
         self,
         property_identifier,
-        invite_affiliate_request_supplier,
+        invite_affiliate_request_authenticated_entity,
         wink_version,
         _request_auth,
         _content_type,
@@ -633,8 +633,8 @@ class AffiliateApi:
             _header_params['Wink-Version'] = wink_version
         # process the form parameters
         # process the body parameter
-        if invite_affiliate_request_supplier is not None:
-            _body_params = invite_affiliate_request_supplier
+        if invite_affiliate_request_authenticated_entity is not None:
+            _body_params = invite_affiliate_request_authenticated_entity
 
 
         # set the HTTP header `Accept`
@@ -691,7 +691,7 @@ class AffiliateApi:
     def show_affiliate(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        company_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
+        affiliate_account_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
         wink_version: Optional[StrictStr] = None,
         accept: Optional[StrictStr] = None,
         _request_timeout: Union[
@@ -706,15 +706,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> CompanyDetailsBookingSalesMetricsSupplier:
+    ) -> CompanyDetailsBookingSalesMetricsAuthenticatedEntity:
         """Show Affiliate
 
         Retrieve affiliate information specified by identifier
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param company_identifier: Display affiliate by specified company (required)
-        :type company_identifier: str
+        :param affiliate_account_identifier: Display affiliate by specified company (required)
+        :type affiliate_account_identifier: str
         :param wink_version:
         :type wink_version: str
         :param accept:
@@ -743,7 +743,7 @@ class AffiliateApi:
 
         _param = self._show_affiliate_serialize(
             property_identifier=property_identifier,
-            company_identifier=company_identifier,
+            affiliate_account_identifier=affiliate_account_identifier,
             wink_version=wink_version,
             accept=accept,
             _request_auth=_request_auth,
@@ -757,7 +757,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "CompanyDetailsBookingSalesMetricsSupplier",
+            '200': "CompanyDetailsBookingSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -774,7 +774,7 @@ class AffiliateApi:
     def show_affiliate_with_http_info(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        company_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
+        affiliate_account_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
         wink_version: Optional[StrictStr] = None,
         accept: Optional[StrictStr] = None,
         _request_timeout: Union[
@@ -789,15 +789,15 @@ class AffiliateApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[CompanyDetailsBookingSalesMetricsSupplier]:
+    ) -> ApiResponse[CompanyDetailsBookingSalesMetricsAuthenticatedEntity]:
         """Show Affiliate
 
         Retrieve affiliate information specified by identifier
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param company_identifier: Display affiliate by specified company (required)
-        :type company_identifier: str
+        :param affiliate_account_identifier: Display affiliate by specified company (required)
+        :type affiliate_account_identifier: str
         :param wink_version:
         :type wink_version: str
         :param accept:
@@ -826,7 +826,7 @@ class AffiliateApi:
 
         _param = self._show_affiliate_serialize(
             property_identifier=property_identifier,
-            company_identifier=company_identifier,
+            affiliate_account_identifier=affiliate_account_identifier,
             wink_version=wink_version,
             accept=accept,
             _request_auth=_request_auth,
@@ -840,7 +840,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "CompanyDetailsBookingSalesMetricsSupplier",
+            '200': "CompanyDetailsBookingSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -857,7 +857,7 @@ class AffiliateApi:
     def show_affiliate_without_preload_content(
         self,
         property_identifier: Annotated[StrictStr, Field(description="Display affiliate to this specified property")],
-        company_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
+        affiliate_account_identifier: Annotated[StrictStr, Field(description="Display affiliate by specified company")],
         wink_version: Optional[StrictStr] = None,
         accept: Optional[StrictStr] = None,
         _request_timeout: Union[
@@ -879,8 +879,8 @@ class AffiliateApi:
 
         :param property_identifier: Display affiliate to this specified property (required)
         :type property_identifier: str
-        :param company_identifier: Display affiliate by specified company (required)
-        :type company_identifier: str
+        :param affiliate_account_identifier: Display affiliate by specified company (required)
+        :type affiliate_account_identifier: str
         :param wink_version:
         :type wink_version: str
         :param accept:
@@ -909,7 +909,7 @@ class AffiliateApi:
 
         _param = self._show_affiliate_serialize(
             property_identifier=property_identifier,
-            company_identifier=company_identifier,
+            affiliate_account_identifier=affiliate_account_identifier,
             wink_version=wink_version,
             accept=accept,
             _request_auth=_request_auth,
@@ -923,7 +923,7 @@ class AffiliateApi:
             '403': "GenericErrorMessage",
             '401': "GenericErrorMessage",
             '400': "ShowInventory400Response",
-            '200': "CompanyDetailsBookingSalesMetricsSupplier",
+            '200': "CompanyDetailsBookingSalesMetricsAuthenticatedEntity",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -935,7 +935,7 @@ class AffiliateApi:
     def _show_affiliate_serialize(
         self,
         property_identifier,
-        company_identifier,
+        affiliate_account_identifier,
         wink_version,
         accept,
         _request_auth,
@@ -961,8 +961,8 @@ class AffiliateApi:
         # process the path parameters
         if property_identifier is not None:
             _path_params['propertyIdentifier'] = property_identifier
-        if company_identifier is not None:
-            _path_params['companyIdentifier'] = company_identifier
+        if affiliate_account_identifier is not None:
+            _path_params['affiliateAccountIdentifier'] = affiliate_account_identifier
         # process the query parameters
         # process the header parameters
         if wink_version is not None:
@@ -994,7 +994,7 @@ class AffiliateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/api/property/{propertyIdentifier}/sales/affiliate/{companyIdentifier}',
+            resource_path='/api/property/{propertyIdentifier}/sales/affiliate/{affiliateAccountIdentifier}',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,

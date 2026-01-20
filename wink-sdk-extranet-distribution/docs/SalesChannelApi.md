@@ -52,7 +52,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Create sales channel and associate it with this property identifier
     sales_channel_create_request_supplier = wink_sdk_extranet_distribution.SalesChannelCreateRequestSupplier() # SalesChannelCreateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Sales Channel
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create sales channel and associate it with this property identifier | 
  **sales_channel_create_request_supplier** | [**SalesChannelCreateRequestSupplier**](SalesChannelCreateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -135,7 +135,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Remove sales channel owned by this property identifier
     sales_channel_identifier = 'sales-channel-1' # str | Remove sales channel with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove sales channel owned by this property identifier | 
  **sales_channel_identifier** | **str**| Remove sales channel with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -219,7 +219,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Show all sales channels for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -239,7 +239,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all sales channels for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -303,7 +303,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Show sales channel owned by this property identifier
     sales_channel_identifier = 'sales channel-1' # str | Show sales channel with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show sales channel owned by this property identifier | 
  **sales_channel_identifier** | **str**| Show sales channel with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -388,7 +388,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Show all sales channel pairs for this property identifier
     rate_modifier_bundle_identifier = 'rate-modifier-bundle-1' # str | Show all sales channels pairs in the context of rate modifier bundle availability
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all sales channel pairs for this property identifier | 
  **rate_modifier_bundle_identifier** | **str**| Show all sales channels pairs in the context of rate modifier bundle availability | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -473,7 +473,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelApi(api_client)
     property_identifier = 'hotel-1' # str | Show all sales channel pairs for this property identifier
     rate_modifier_identifier = 'rate-modifier-1' # str | Show all sales channels pairs in the context of rate modifier availability
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -494,7 +494,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all sales channel pairs for this property identifier | 
  **rate_modifier_identifier** | **str**| Show all sales channels pairs in the context of rate modifier availability | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -560,7 +560,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update sales channel owned by this property identifier
     rate_modifier_identifier = 'rate-modifier-1' # str | The rate modifier we are enabling / disabling on the sales channel
     inventory_update_request_supplier = [wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier()] # List[InventoryUpdateRequestSupplier] | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Sale Channels Rate Modifiers
@@ -581,7 +581,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update sales channel owned by this property identifier | 
  **rate_modifier_identifier** | **str**| The rate modifier we are enabling / disabling on the sales channel | 
  **inventory_update_request_supplier** | [**List[InventoryUpdateRequestSupplier]**](InventoryUpdateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -646,7 +646,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update sales channel owned by this property identifier
     rate_modifier_bundle_identifier = 'rate-modifier-bundle-1' # str | The rate modifier bundle we are enabling / disabling on the sales channel
     inventory_update_request_supplier = [wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier()] # List[InventoryUpdateRequestSupplier] | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Sale Channels Rate Modifier Bundles
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update sales channel owned by this property identifier | 
  **rate_modifier_bundle_identifier** | **str**| The rate modifier bundle we are enabling / disabling on the sales channel | 
  **inventory_update_request_supplier** | [**List[InventoryUpdateRequestSupplier]**](InventoryUpdateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -732,7 +732,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update sales channel owned by this property identifier
     sales_channel_identifier = 'sales channel-1' # str | Update sales channel settings for sales channel with this identifier
     sales_channel_update_request_supplier = wink_sdk_extranet_distribution.SalesChannelUpdateRequestSupplier() # SalesChannelUpdateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Sales Channel
@@ -753,7 +753,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update sales channel owned by this property identifier | 
  **sales_channel_identifier** | **str**| Update sales channel settings for sales channel with this identifier | 
  **sales_channel_update_request_supplier** | [**SalesChannelUpdateRequestSupplier**](SalesChannelUpdateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

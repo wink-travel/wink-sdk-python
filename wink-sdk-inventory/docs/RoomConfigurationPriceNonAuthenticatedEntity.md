@@ -17,20 +17,20 @@ Name | Type | Description | Notes
 **room_rate_identifier** | **str** | Specified master rate identifier | 
 **room_rate_internal_name** | **str** | Specified master rate internal name | 
 **rate_plan** | [**RoomConfigurationPriceRatePlanNonAuthenticatedEntity**](RoomConfigurationPriceRatePlanNonAuthenticatedEntity.md) | Specified rate plan | 
-**perk_types** | **List[object]** |  | [optional] 
+**perk_types** | [**List[PerkLightweightNonAuthenticatedEntity]**](PerkLightweightNonAuthenticatedEntity.md) |  | [optional] 
 **price** | [**StayRateNonAuthenticatedEntity**](StayRateNonAuthenticatedEntity.md) | Calculated price | 
 **extra_charges** | [**ExtraChargesNonAuthenticatedEntity**](ExtraChargesNonAuthenticatedEntity.md) | Per rate plan level extra charges with localized prices | [optional] 
 **configuration** | [**RoomConfigurationNonAuthenticatedEntity**](RoomConfigurationNonAuthenticatedEntity.md) | The selected room configuration that created this record | 
-**add_on_offers** | **List[object]** |  | [optional] 
+**add_on_offers** | [**List[AddOnLocalizedInventoryNonAuthenticatedEntity]**](AddOnLocalizedInventoryNonAuthenticatedEntity.md) |  | [optional] 
 **perk_value** | **int** | The combined value of these perkTypes | [optional] 
 **active_cancellation_policy** | [**CancellationPolicyLightweightNonAuthenticatedEntity**](CancellationPolicyLightweightNonAuthenticatedEntity.md) | The active / selected cancellation policy for this room configuration | 
 **room_nights** | **int** | Number of nights the guests will be staying | 
-**price_list** | **List[object]** |  | [optional] 
-**available** | **bool** |  | [optional] 
+**price_list** | [**List[LocalizedTransactionalTravelInventoryNonAuthenticatedEntity]**](LocalizedTransactionalTravelInventoryNonAuthenticatedEntity.md) |  | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **rate_source** | **str** |  | [optional] 
+**available** | **bool** |  | [optional] 
 
 ## Example
 

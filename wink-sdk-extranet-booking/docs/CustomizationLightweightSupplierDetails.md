@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique customization configuration identifier | 
+**identifier** | **UUID** | Unique customization configuration identifier | 
 **name** | **str** | Engine configuration name | 
-**user_identifier** | **str** | Authenticated user identifier | 
-**owner_identifier** | **str** | Engine configuration record creator identifier | 
+**user_identifier** | **UUID** | Authenticated user identifier | 
+**owner_identifier** | **UUID** | Engine configuration record creator identifier | 
 **owner_name** | **str** | Name of company owner. | 
 **sub_type** | **str** | Sales channel sub-type. | 
 **default_currency** | **str** | Control which currency your users see prices in initially. | [optional] [default to 'USD']

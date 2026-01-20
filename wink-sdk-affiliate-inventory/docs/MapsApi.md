@@ -50,7 +50,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     upsert_inventory_map_request_affiliate = wink_sdk_affiliate_inventory.UpsertInventoryMapRequestAffiliate() # UpsertInventoryMapRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Inventory Map
@@ -69,7 +69,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_inventory_map_request_affiliate** | [**UpsertInventoryMapRequestAffiliate**](UpsertInventoryMapRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -132,7 +132,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     upsert_supplier_inventory_map_request_affiliate = wink_sdk_affiliate_inventory.UpsertSupplierInventoryMapRequestAffiliate() # UpsertSupplierInventoryMapRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Supplier Map
@@ -151,7 +151,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_supplier_inventory_map_request_affiliate** | [**UpsertSupplierInventoryMapRequestAffiliate**](UpsertSupplierInventoryMapRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -213,7 +213,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     map_identifier = 'map-1' # str | Remove map record with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -233,7 +233,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **map_identifier** | **str**| Remove map record with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -296,7 +296,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     map_identifier = 'map-1' # str | Show map record with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -316,7 +316,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **map_identifier** | **str**| Show map record with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -379,7 +379,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     channel_inventory_identifier = 'channel-inventory-1' # str | Show map marker for specific inventory.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -399,7 +399,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channel_inventory_identifier** | **str**| Show map marker for specific inventory. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -464,7 +464,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     list_identifier = 'list-1' # str | Show map markers for list.
     list_type = 'LIST' # str | Indicate whether this list is a curated or dynamic list.
     display_currency = 'USD' # str | Indicate which currency to display prices in. (optional) (default to 'USD')
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
  **list_identifier** | **str**| Show map markers for list. | 
  **list_type** | **str**| Indicate whether this list is a curated or dynamic list. | 
  **display_currency** | **str**| Indicate which currency to display prices in. | [optional] [default to &#39;USD&#39;]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -548,7 +548,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -567,7 +567,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -632,7 +632,7 @@ with wink_sdk_affiliate_inventory.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_inventory.MapsApi(api_client)
     map_identifier = 'map-1' # str | update map record with this identifier.
     upsert_inventory_map_request_affiliate = wink_sdk_affiliate_inventory.UpsertInventoryMapRequestAffiliate() # UpsertInventoryMapRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Map
@@ -652,7 +652,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **map_identifier** | **str**| update map record with this identifier. | 
  **upsert_inventory_map_request_affiliate** | [**UpsertInventoryMapRequestAffiliate**](UpsertInventoryMapRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -44,7 +44,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -63,7 +63,7 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -127,7 +127,7 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
     state_authenticated_entity = wink_sdk_analytics.StateAuthenticatedEntity() # StateAuthenticatedEntity | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Booking Metrics
@@ -146,7 +146,7 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **state_authenticated_entity** | [**StateAuthenticatedEntity**](StateAuthenticatedEntity.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -207,7 +207,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -226,7 +226,7 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -288,7 +288,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_analytics.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_analytics.AnalyticsApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -307,7 +307,7 @@ with wink_sdk_analytics.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

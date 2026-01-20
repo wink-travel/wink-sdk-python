@@ -4,17 +4,18 @@ All URIs are relative to *https://api.wink.travel*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**accept_manager_invite**](AccountManagerApi.md#accept_manager_invite) | **GET** /api/manager/invite/{companyIdentifier}/accept | Accept Invite
+[**accept_manager_invite**](AccountManagerApi.md#accept_manager_invite) | **GET** /api/manager/invite/{managingEntityIdentifier}/accept | Accept Invite
 [**invite_manager**](AccountManagerApi.md#invite_manager) | **PATCH** /api/manager/invite | Invite Manager
-[**reject_invite**](AccountManagerApi.md#reject_invite) | **DELETE** /api/manager/invite/{companyIdentifier}/reject | Reject Invite
+[**reject_invite**](AccountManagerApi.md#reject_invite) | **DELETE** /api/manager/invite/{managingEntityIdentifier}/reject | Reject Invite
 [**remove_company_user**](AccountManagerApi.md#remove_company_user) | **DELETE** /api/manager/{email} | Remove Manager
 [**remove_manager_agency**](AccountManagerApi.md#remove_manager_agency) | **DELETE** /api/manager/agency | Remove Managing Agency
+[**show_manager_invite_count**](AccountManagerApi.md#show_manager_invite_count) | **GET** /api/manager/invite/count | Show Invite Count
 [**show_manager_invite_list**](AccountManagerApi.md#show_manager_invite_list) | **GET** /api/manager/invite/list | Show Invites
 [**update_manager_agency**](AccountManagerApi.md#update_manager_agency) | **PATCH** /api/manager/agency | Set Managing Agency
 
 
 # **accept_manager_invite**
-> ManagerInviteAcceptedSupplier accept_manager_invite(company_identifier, wink_version=wink_version, accept=accept)
+> ManagingEntitySupplier accept_manager_invite(managing_entity_identifier, wink_version=wink_version, accept=accept)
 
 Accept Invite
 
@@ -26,7 +27,7 @@ Accepts the invite to manager a property or account.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.manager_invite_accepted_supplier import ManagerInviteAcceptedSupplier
+from wink_sdk_affiliate.models.managing_entity_supplier import ManagingEntitySupplier
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -47,13 +48,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    company_identifier = 'hotel-1' # str | AffiliateAccount identifier for which to accept invite to
-    wink_version = 'wink_version_example' # str |  (optional)
+    managing_entity_identifier = 'hotel-1' # str | ManagingEntity identifier for which to accept invite to
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Accept Invite
-        api_response = api_instance.accept_manager_invite(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.accept_manager_invite(managing_entity_identifier, wink_version=wink_version, accept=accept)
         print("The response of AccountManagerApi->accept_manager_invite:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,13 +68,13 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| AffiliateAccount identifier for which to accept invite to | 
- **wink_version** | **str**|  | [optional] 
+ **managing_entity_identifier** | **str**| ManagingEntity identifier for which to accept invite to | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**ManagerInviteAcceptedSupplier**](ManagerInviteAcceptedSupplier.md)
+[**ManagingEntitySupplier**](ManagingEntitySupplier.md)
 
 ### Authorization
 
@@ -97,11 +98,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invite_manager**
-> AffiliateAccountAffiliate invite_manager(invite_manager_request_affiliate, wink_version=wink_version)
+> ManagingEntityAffiliate invite_manager(invite_manager_request_affiliate, wink_version=wink_version)
 
 Invite Manager
 
-Invite user to be a manager for this company.
+Invite user to be a manager for this managing entity.
 
 ### Example
 
@@ -109,8 +110,8 @@ Invite user to be a manager for this company.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
 from wink_sdk_affiliate.models.invite_manager_request_affiliate import InviteManagerRequestAffiliate
+from wink_sdk_affiliate.models.managing_entity_affiliate import ManagingEntityAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -132,7 +133,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
     invite_manager_request_affiliate = wink_sdk_affiliate.InviteManagerRequestAffiliate() # InviteManagerRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Invite Manager
@@ -151,11 +152,11 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invite_manager_request_affiliate** | [**InviteManagerRequestAffiliate**](InviteManagerRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
-[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
+[**ManagingEntityAffiliate**](ManagingEntityAffiliate.md)
 
 ### Authorization
 
@@ -179,7 +180,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **reject_invite**
-> AffiliateAccountSupplier reject_invite(company_identifier, wink_version=wink_version, accept=accept)
+> ManagingEntitySupplier reject_invite(managing_entity_identifier, wink_version=wink_version, accept=accept)
 
 Reject Invite
 
@@ -191,7 +192,7 @@ Remove manager by specified identifier
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.affiliate_account_supplier import AffiliateAccountSupplier
+from wink_sdk_affiliate.models.managing_entity_supplier import ManagingEntitySupplier
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -212,13 +213,13 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    company_identifier = 'hotel-1' # str | Remove manager from this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    managing_entity_identifier = 'hotel-1' # str | Remove manager from this property identifier
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
         # Reject Invite
-        api_response = api_instance.reject_invite(company_identifier, wink_version=wink_version, accept=accept)
+        api_response = api_instance.reject_invite(managing_entity_identifier, wink_version=wink_version, accept=accept)
         print("The response of AccountManagerApi->reject_invite:\n")
         pprint(api_response)
     except Exception as e:
@@ -232,13 +233,13 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **company_identifier** | **str**| Remove manager from this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **managing_entity_identifier** | **str**| Remove manager from this property identifier | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**AffiliateAccountSupplier**](AffiliateAccountSupplier.md)
+[**ManagingEntitySupplier**](ManagingEntitySupplier.md)
 
 ### Authorization
 
@@ -262,11 +263,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_company_user**
-> AffiliateAccountAffiliate remove_company_user(email, wink_version=wink_version, accept=accept)
+> ManagingEntityAffiliate remove_company_user(email, wink_version=wink_version, accept=accept)
 
 Remove Manager
 
-Disassociate user from this company.
+Disassociate user from this managing entity.
 
 ### Example
 
@@ -274,7 +275,7 @@ Disassociate user from this company.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
+from wink_sdk_affiliate.models.managing_entity_affiliate import ManagingEntityAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -296,7 +297,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
     email = 'email_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -316,12 +317,12 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **email** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
+[**ManagingEntityAffiliate**](ManagingEntityAffiliate.md)
 
 ### Authorization
 
@@ -345,7 +346,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **remove_manager_agency**
-> AffiliateAccountAffiliate remove_manager_agency(wink_version=wink_version, accept=accept)
+> ManagingEntityAffiliate remove_manager_agency(wink_version=wink_version, accept=accept)
 
 Remove Managing Agency
 
@@ -357,7 +358,7 @@ Unset managing agency.
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
+from wink_sdk_affiliate.models.managing_entity_affiliate import ManagingEntityAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -378,7 +379,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -397,12 +398,93 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
 
-[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
+[**ManagingEntityAffiliate**](ManagingEntityAffiliate.md)
+
+### Authorization
+
+[oauth2ClientCredentials](../README.md#oauth2ClientCredentials)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**500** | Internal Server Error |  -  |
+**403** | Forbidden |  -  |
+**401** | Unauthorized |  -  |
+**400** | Bad Request |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **show_manager_invite_count**
+> CountResponseAffiliate show_manager_invite_count(wink_version=wink_version, accept=accept)
+
+Show Invite Count
+
+Retrieve number of current invites for user
+
+### Example
+
+* OAuth Authentication (oauth2ClientCredentials):
+
+```python
+import wink_sdk_affiliate
+from wink_sdk_affiliate.models.count_response_affiliate import CountResponseAffiliate
+from wink_sdk_affiliate.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.wink.travel
+# See configuration.py for a list of all supported configuration parameters.
+configuration = wink_sdk_affiliate.Configuration(
+    host = "https://api.wink.travel"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
+# Enter a context with an instance of the API client
+with wink_sdk_affiliate.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
+    accept = 'accept_example' # str |  (optional)
+
+    try:
+        # Show Invite Count
+        api_response = api_instance.show_manager_invite_count(wink_version=wink_version, accept=accept)
+        print("The response of AccountManagerApi->show_manager_invite_count:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling AccountManagerApi->show_manager_invite_count: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
+ **accept** | **str**|  | [optional] 
+
+### Return type
+
+[**CountResponseAffiliate**](CountResponseAffiliate.md)
 
 ### Authorization
 
@@ -459,7 +541,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -478,7 +560,7 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -507,7 +589,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_manager_agency**
-> AffiliateAccountAffiliate update_manager_agency(upsert_managed_by_agency_request_affiliate, wink_version=wink_version)
+> ManagingEntityAffiliate update_manager_agency(update_managed_by_agency_request_affiliate, wink_version=wink_version)
 
 Set Managing Agency
 
@@ -519,8 +601,8 @@ Indicates that the entity is managed by an another entity on the platform. This 
 
 ```python
 import wink_sdk_affiliate
-from wink_sdk_affiliate.models.affiliate_account_affiliate import AffiliateAccountAffiliate
-from wink_sdk_affiliate.models.upsert_managed_by_agency_request_affiliate import UpsertManagedByAgencyRequestAffiliate
+from wink_sdk_affiliate.models.managing_entity_affiliate import ManagingEntityAffiliate
+from wink_sdk_affiliate.models.update_managed_by_agency_request_affiliate import UpdateManagedByAgencyRequestAffiliate
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -541,12 +623,12 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.AccountManagerApi(api_client)
-    upsert_managed_by_agency_request_affiliate = wink_sdk_affiliate.UpsertManagedByAgencyRequestAffiliate() # UpsertManagedByAgencyRequestAffiliate | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    update_managed_by_agency_request_affiliate = wink_sdk_affiliate.UpdateManagedByAgencyRequestAffiliate() # UpdateManagedByAgencyRequestAffiliate | 
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Set Managing Agency
-        api_response = api_instance.update_manager_agency(upsert_managed_by_agency_request_affiliate, wink_version=wink_version)
+        api_response = api_instance.update_manager_agency(update_managed_by_agency_request_affiliate, wink_version=wink_version)
         print("The response of AccountManagerApi->update_manager_agency:\n")
         pprint(api_response)
     except Exception as e:
@@ -560,12 +642,12 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upsert_managed_by_agency_request_affiliate** | [**UpsertManagedByAgencyRequestAffiliate**](UpsertManagedByAgencyRequestAffiliate.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **update_managed_by_agency_request_affiliate** | [**UpdateManagedByAgencyRequestAffiliate**](UpdateManagedByAgencyRequestAffiliate.md)|  | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
-[**AffiliateAccountAffiliate**](AffiliateAccountAffiliate.md)
+[**ManagingEntityAffiliate**](ManagingEntityAffiliate.md)
 
 ### Authorization
 

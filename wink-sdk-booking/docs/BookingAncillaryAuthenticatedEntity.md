@@ -1,28 +1,27 @@
 # BookingAncillaryAuthenticatedEntity
 
-Extra reservations of spas, meeting rooms etc that should accompany the room type booking.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Ancillary identifier | 
-**hotel_identifier** | **str** | Hotel identifier | 
-**type_identifier** | **str** | Travel blocking identifier | 
-**transactional_travel_inventory_identifier** | **str** | Travel blocking identifier | 
-**name** | **str** | Name of blocking | 
+**identifier** | **UUID** | Ancillary identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier | 
+**type_identifier** | **UUID** | Travel inventory identifier | 
+**transactional_travel_inventory_identifier** | **UUID** | Travel inventory identifier | 
+**name** | **str** | Name of inventory | 
 **pricing_type** | **str** | Pricing type | 
 **type** | **str** | Inventory type | 
-**price** | [**LocalizedPriceAuthenticatedEntity**](LocalizedPriceAuthenticatedEntity.md) |  | 
+**price** | [**LocalizedPriceAuthenticatedEntity**](LocalizedPriceAuthenticatedEntity.md) | Pricing information for this ancillary. | 
 **start_date** | **datetime** | Date start time when reservation was made for. | 
 **end_date** | **datetime** | Date end time when reservation was made for. | 
 **attendees** | **int** | Number of guests that are part of this reservation. | [default to 1]
 **image_identifier** | **str** | Cloudinary image identifier | 
-**image_url** | **str** | Absolute URL to image of blocking | 
-**localized_name** | **str** | Name of travel blocking in traveler language (if available). Defaults to English. | 
-**localized_description** | **str** | Description of travel blocking in traveler language (if available). Defaults to English. | 
-**contact** | [**ContactAuthenticatedEntity**](ContactAuthenticatedEntity.md) |  | 
-**address** | [**SimpleAddressAuthenticatedEntity**](SimpleAddressAuthenticatedEntity.md) |  | 
+**image_url** | **str** | Absolute URL to image of inventory | 
+**localized_name** | **str** | Name of travel inventory in traveler language (if available). Defaults to English. | 
+**localized_description** | **str** | Description of travel inventory in traveler language (if available). Defaults to English. | 
+**contact** | [**ContactAuthenticatedEntity**](ContactAuthenticatedEntity.md) | Travel blocking contact (if applicable) | 
+**address** | [**SimpleAddressAuthenticatedEntity**](SimpleAddressAuthenticatedEntity.md) | Travel blocking address (if applicable) | 
 **commissionable** | **bool** |  | 
 **mandatory** | **bool** |  | 
 **commission** | **float** |  | 

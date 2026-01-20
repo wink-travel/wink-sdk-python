@@ -1,6 +1,5 @@
 # GeoJsonRectangleAffiliate
 
-A GeoJSON rectangle
 
 ## Properties
 

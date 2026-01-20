@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **review_by** | **str** | User details of creator of booking. | [optional] 
 **reviewed_on** | **datetime** | Date of review. | [optional] 
 **average_score** | **float** | Total points divided by number of questions. | [optional] 
-**answers** | [**List[UserReviewAnswerNonAuthenticatedEntity]**](UserReviewAnswerNonAuthenticatedEntity.md) |  | [optional] 
+**answers** | [**List[UserReviewAnswerNonAuthenticatedEntity]**](UserReviewAnswerNonAuthenticatedEntity.md) | List of reviewBy review answers. | [optional] 
 **response_from_hotel** | **str** | Property can response to traveler review. Response goes on public review profile and can be seen by others. | [optional] 
 **image_identifier** | **str** | Reviewer can upload her best picture from the property. Cloudinary image identifier. | [optional] 
 **review** | **str** | Free text record created by traveler | [optional] 

@@ -1,6 +1,5 @@
 # DowPatternGroupNonAuthenticatedEntity
 
-Indicate which days this blocking is open.
 
 ## Properties
 

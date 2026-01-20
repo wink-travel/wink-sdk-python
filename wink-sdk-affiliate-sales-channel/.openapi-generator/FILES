@@ -3,7 +3,6 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
-docs/AffiliateApi.md
 docs/AggregateDescriptorAffiliate.md
 docs/AvailableSupplierApi.md
 docs/BrowseSuppliers400Response.md
@@ -16,7 +15,9 @@ docs/GenericErrorMessage.md
 docs/GeoJsonPointAffiliate.md
 docs/GroupDescriptorAffiliate.md
 docs/KeyValuePairAffiliate.md
+docs/KeyValuePairAuthenticatedEntity.md
 docs/LocalizedDescriptionAffiliate.md
+docs/ManagingEntityApi.md
 docs/MediaAuthorAttributionAffiliate.md
 docs/PagePropertyAggregateLightweightAffiliate.md
 docs/PageSalesChannelAffiliate.md
@@ -46,11 +47,13 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_key_value_pair_authenticated_entity.py
+test/test_managing_entity_api.py
 tox.ini
 wink_sdk_affiliate_sales_channel/__init__.py
 wink_sdk_affiliate_sales_channel/api/__init__.py
-wink_sdk_affiliate_sales_channel/api/affiliate_api.py
 wink_sdk_affiliate_sales_channel/api/available_supplier_api.py
+wink_sdk_affiliate_sales_channel/api/managing_entity_api.py
 wink_sdk_affiliate_sales_channel/api/relationship_request_api.py
 wink_sdk_affiliate_sales_channel/api/sales_channel_api.py
 wink_sdk_affiliate_sales_channel/api_client.py
@@ -69,6 +72,7 @@ wink_sdk_affiliate_sales_channel/models/generic_error_message.py
 wink_sdk_affiliate_sales_channel/models/geo_json_point_affiliate.py
 wink_sdk_affiliate_sales_channel/models/group_descriptor_affiliate.py
 wink_sdk_affiliate_sales_channel/models/key_value_pair_affiliate.py
+wink_sdk_affiliate_sales_channel/models/key_value_pair_authenticated_entity.py
 wink_sdk_affiliate_sales_channel/models/localized_description_affiliate.py
 wink_sdk_affiliate_sales_channel/models/media_author_attribution_affiliate.py
 wink_sdk_affiliate_sales_channel/models/page_property_aggregate_lightweight_affiliate.py

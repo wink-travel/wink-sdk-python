@@ -7,9 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **api_version** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
-**creator** | **str** |  | [optional] 
-**enabled** | **bool** |  | [optional] 
-**approved** | **bool** |  | [optional] 
+**status** | **str** |  | [optional] 
 
 ## Example
 

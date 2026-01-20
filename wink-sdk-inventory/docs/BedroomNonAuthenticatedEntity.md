@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | Type of bedroom | 
-**bed_list** | [**List[BedNonAuthenticatedEntity]**](BedNonAuthenticatedEntity.md) |  | 
+**bed_list** | [**List[BedNonAuthenticatedEntity]**](BedNonAuthenticatedEntity.md) | A bedroom can have more than one bed type. | 
 
 ## Example
 

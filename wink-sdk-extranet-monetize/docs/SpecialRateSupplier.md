@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **name** | **str** | Internal name of promotion. | 
 **type** | **str** | Set whether you want the price to go up or down when the rules of this promotion have been satisfied. | 
 **modifier** | [**VariableChargeSupplier**](VariableChargeSupplier.md) |  | 

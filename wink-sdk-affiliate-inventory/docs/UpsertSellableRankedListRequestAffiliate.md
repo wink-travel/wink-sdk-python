@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**seller_inventory_ranked_list_name** | **str** | Descriptive name of this list for seller use only | 
-**engine_configuration_identifier** | **str** | Customization identifier | 
+**name** | **str** | Descriptive name of this list for seller use only | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Contains custom title and description of grid | 
-**keywords** | **List[object]** |  | 
+**keywords** | **List[str]** |  | 
 **lookup** | [**LookupLightweightAffiliate**](LookupLightweightAffiliate.md) | The destination to display ranked inventory from. | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]
 **animate_delay** | **int** | Controls animation delay in milliseconds. -1 is disabled | [optional] [default to -1]

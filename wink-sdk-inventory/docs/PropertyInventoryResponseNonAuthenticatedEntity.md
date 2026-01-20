@@ -5,8 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_identifier** | **str** | Unique property identifier to retrieve inventory for. | [optional] 
+**hotel_identifier** | **UUID** | Unique property identifier to retrieve inventory for. | [optional] 
 **url_name** | **str** | Unique url-friendly record identifier of property. | [optional] 
+**unique_id** | **str** | Unique short ID. | [optional] 
 **hotel** | [**PropertyAggregateLightweightNonAuthenticatedEntity**](PropertyAggregateLightweightNonAuthenticatedEntity.md) | Property details | [optional] 
 **green_index_scores** | [**PropertyAggregateGreenIndexAnswersNonAuthenticatedEntity**](PropertyAggregateGreenIndexAnswersNonAuthenticatedEntity.md) | Detailed Green Index scores on hoe the property scores by category | [optional] 
 **room_types** | [**List[RoomTypeWithPriceConfigurationsNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationsNonAuthenticatedEntity.md) | List of room types with price configurations based on the itinerary that was passed on the user session. | [optional] 
@@ -23,9 +24,9 @@ Name | Type | Description | Notes
 **announcements** | [**List[AnnouncementLightweightNonAuthenticatedEntity]**](AnnouncementLightweightNonAuthenticatedEntity.md) | List of property announcements | [optional] 
 **reviews** | [**List[UserReviewNonAuthenticatedEntity]**](UserReviewNonAuthenticatedEntity.md) | List of property reviews | [optional] 
 **sales_channel** | [**SalesChannelInfoNonAuthenticatedEntity**](SalesChannelInfoNonAuthenticatedEntity.md) | Sales channel that owns this booking | [optional] 
+**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and shows the room type with the lowest price. | [optional] 
 **cheapest_room_types** | [**List[RoomTypeWithPriceConfigurationNonAuthenticatedEntity]**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and displays the lowest price for each room type that is available. | [optional] 
 **available** | **bool** |  | [optional] 
-**lowest_price** | [**RoomTypeWithPriceConfigurationNonAuthenticatedEntity**](RoomTypeWithPriceConfigurationNonAuthenticatedEntity.md) | Uses the content from roomTypes and shows the room type with the lowest price. | [optional] 
 
 ## Example
 

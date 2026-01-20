@@ -52,7 +52,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.GuestRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Create room type owned by this property identifier
     upsert_room_type_request_supplier = wink_sdk_extranet_facilities.UpsertRoomTypeRequestSupplier() # UpsertRoomTypeRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Guest Room
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create room type owned by this property identifier | 
  **upsert_room_type_request_supplier** | [**UpsertRoomTypeRequestSupplier**](UpsertRoomTypeRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -137,7 +137,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Duplicate room type owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Duplicate room type with this identifier
     duplicate_guest_room_request_supplier = wink_sdk_extranet_facilities.DuplicateGuestRoomRequestSupplier() # DuplicateGuestRoomRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Duplicate Guest Room
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Duplicate room type owned by this property identifier | 
  **room_type_identifier** | **str**| Duplicate room type with this identifier | 
  **duplicate_guest_room_request_supplier** | [**DuplicateGuestRoomRequestSupplier**](DuplicateGuestRoomRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -223,7 +223,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Improve room type owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Improve room type with this identifier
     improve_room_type_request_supplier = wink_sdk_extranet_facilities.ImproveRoomTypeRequestSupplier() # ImproveRoomTypeRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Improve Guest Room
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Improve room type owned by this property identifier | 
  **room_type_identifier** | **str**| Improve room type with this identifier | 
  **improve_room_type_request_supplier** | [**ImproveRoomTypeRequestSupplier**](ImproveRoomTypeRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -307,7 +307,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.GuestRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Remove room type owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Remove room type with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove room type owned by this property identifier | 
  **room_type_identifier** | **str**| Remove room type with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -393,7 +393,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Remove room type media owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Remove room type media with this identifier
     multimedia_identifier = 'media-1' # str | Remove media with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Remove room type media owned by this property identifier | 
  **room_type_identifier** | **str**| Remove room type media with this identifier | 
  **multimedia_identifier** | **str**| Remove media with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -479,7 +479,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.GuestRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Show room type owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Show room type identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -500,7 +500,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show room type owned by this property identifier | 
  **room_type_identifier** | **str**| Show room type identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -563,7 +563,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_facilities.GuestRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Show list of room types owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -583,7 +583,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show list of room types owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -649,7 +649,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update room type owned by this property identifier
     room_type_identifier = 'guest-room-1' # str | Update room type with this identifier
     upsert_room_type_request_supplier = wink_sdk_extranet_facilities.UpsertRoomTypeRequestSupplier() # UpsertRoomTypeRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Guest Room
@@ -670,7 +670,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update room type owned by this property identifier | 
  **room_type_identifier** | **str**| Update room type with this identifier | 
  **upsert_room_type_request_supplier** | [**UpsertRoomTypeRequestSupplier**](UpsertRoomTypeRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

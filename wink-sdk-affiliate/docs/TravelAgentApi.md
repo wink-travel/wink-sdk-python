@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **update_agent**
-> AffiliateAccountAgent update_agent(company_identifier, upsert_travel_agent_request_agent, wink_version=wink_version)
+> AffiliateAccountAgent update_agent(company_identifier, update_travel_agent_request_agent, wink_version=wink_version)
 
 Update Agent
 
@@ -21,7 +21,7 @@ Update an existing agent
 ```python
 import wink_sdk_affiliate
 from wink_sdk_affiliate.models.affiliate_account_agent import AffiliateAccountAgent
-from wink_sdk_affiliate.models.upsert_travel_agent_request_agent import UpsertTravelAgentRequestAgent
+from wink_sdk_affiliate.models.update_travel_agent_request_agent import UpdateTravelAgentRequestAgent
 from wink_sdk_affiliate.rest import ApiException
 from pprint import pprint
 
@@ -43,12 +43,12 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate.TravelAgentApi(api_client)
     company_identifier = 'company_identifier_example' # str | Update agent by company id
-    upsert_travel_agent_request_agent = wink_sdk_affiliate.UpsertTravelAgentRequestAgent() # UpsertTravelAgentRequestAgent | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    update_travel_agent_request_agent = wink_sdk_affiliate.UpdateTravelAgentRequestAgent() # UpdateTravelAgentRequestAgent | 
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Agent
-        api_response = api_instance.update_agent(company_identifier, upsert_travel_agent_request_agent, wink_version=wink_version)
+        api_response = api_instance.update_agent(company_identifier, update_travel_agent_request_agent, wink_version=wink_version)
         print("The response of TravelAgentApi->update_agent:\n")
         pprint(api_response)
     except Exception as e:
@@ -63,8 +63,8 @@ with wink_sdk_affiliate.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Update agent by company id | 
- **upsert_travel_agent_request_agent** | [**UpsertTravelAgentRequestAgent**](UpsertTravelAgentRequestAgent.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **update_travel_agent_request_agent** | [**UpdateTravelAgentRequestAgent**](UpdateTravelAgentRequestAgent.md)|  | 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

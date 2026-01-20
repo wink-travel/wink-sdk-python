@@ -6,7 +6,7 @@ A way to persist a GeoJSON map point
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) |  | 
+**point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | A GeoJSON point | 
 
 ## Example
 

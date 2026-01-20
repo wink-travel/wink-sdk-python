@@ -45,7 +45,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Respond to review given hotel with this identifier
     review_identifier = 'review-1' # str | Respond to review with this identifier
     review_response_supplier = wink_sdk_extranet_booking.ReviewResponseSupplier() # ReviewResponseSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Respond to Review
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Respond to review given hotel with this identifier | 
  **review_identifier** | **str**| Respond to review with this identifier | 
  **review_response_supplier** | [**ReviewResponseSupplier**](ReviewResponseSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

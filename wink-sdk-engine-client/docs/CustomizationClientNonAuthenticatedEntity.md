@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique customization configuration identifier | [optional] 
+**identifier** | **UUID** | Unique customization configuration identifier | [optional] 
 **name** | **str** | Engine configuration name | 
 **append_to_page_title** | **str** | Whether to append text to the existing booking customization page title. | [optional] 
-**owner_identifier** | **str** | Engine configuration record creator identifier | [optional] 
+**owner_identifier** | **UUID** | Engine configuration record creator identifier | [optional] 
 **owner_name** | **str** | Name of company owner. | [optional] 
 **sub_type** | **str** | Sales channel sub-type. | [optional] 
 **primary** | **bool** | Indicates whether this configuration is primary. A primary configuration cannot be removed. | [optional] [default to False]

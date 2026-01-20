@@ -11,14 +11,14 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **sales_channel** | [**SalesChannelLightweightAffiliate**](SalesChannelLightweightAffiliate.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
-**inventory_identifier** | **str** | Inventory type identifier | 
+**inventory_identifier** | **UUID** | Inventory type identifier | 
 **inventory_name** | **str** | Name of inventory as hotel is seeing it | 
 **inventory_name_in_english** | **str** | Name of inventory as traveler is seeing it | 
 **enabled** | **bool** | Whether this inventory is enabled or not | [default to True]
 **image** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | Main image of inventory | 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
 **location** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Location | 
-**address** | [**InventoryAddressAffiliate**](InventoryAddressAffiliate.md) | Defaults to property address. | 
+**address** | [**SimpleAddressAffiliate**](SimpleAddressAffiliate.md) | Defaults to property address. | 
 **quantity** | **int** | quantity | [default to 0]
 **commissionable** | **bool** | Whether this is commissionable or not | [default to False]
 **bookable** | **bool** | Whether inventory can be booked | [default to True]

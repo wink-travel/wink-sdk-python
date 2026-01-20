@@ -47,7 +47,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationCategoryApi(api_client)
     upsert_syndication_category_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicationCategoryAffiliate() # UpsertSyndicationCategoryAffiliate | Request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create WinkLinks Category
@@ -66,7 +66,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_syndication_category_affiliate** | [**UpsertSyndicationCategoryAffiliate**](UpsertSyndicationCategoryAffiliate.md)| Request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -128,7 +128,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationCategoryApi(api_client)
     syndication_category_identifier = 'syndication-category-1' # str | Syndication category identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -148,7 +148,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndication_category_identifier** | **str**| Syndication category identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -211,7 +211,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationCategoryApi(api_client)
     syndication_category_identifier = 'syndication-category-1' # str | Syndication category identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -231,7 +231,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndication_category_identifier** | **str**| Syndication category identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -293,7 +293,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicationCategoryApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -312,7 +312,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -377,7 +377,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_winklinks.SyndicationCategoryApi(api_client)
     syndication_category_identifier = 'syndication-category-1' # str | Syndication category identifier.
     upsert_syndication_category_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicationCategoryAffiliate() # UpsertSyndicationCategoryAffiliate | Request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update WinkLinks Category
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndication_category_identifier** | **str**| Syndication category identifier. | 
  **upsert_syndication_category_affiliate** | [**UpsertSyndicationCategoryAffiliate**](UpsertSyndicationCategoryAffiliate.md)| Request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

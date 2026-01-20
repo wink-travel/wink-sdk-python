@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier of this segment / account | 
-**supplier_identifier** | **str** | Channel is owned by this supplier identifier. | 
+**identifier** | **UUID** | Unique record identifier of this segment / account | 
+**supplier_identifier** | **UUID** | Channel is owned by this supplier identifier. | 
 **supplier_name** | **str** | Name of property / supplier that owns this channel | 
 **supplier_available** | **bool** | Flag when supplier not available. E.g. Hotel disables property | [default to True]
 **sub_type** | **str** | What type of segment of channel is this. | 
-**owner_identifier** | **str** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | [optional] 
+**owner_identifier** | **UUID** | A specific identifier for the company / corporation / travel agency that is retrieving the rates | [optional] 
 **owner_name** | **str** | Name of the owner / affiliate. &#x60;Hotel booking customization&#x60; when it&#39;s the booking customization. | [optional] 
 **enabled** | **bool** | Flag the supplier can use to enable / disable this channel | [optional] [default to True]
 **channel_disabled** | **bool** | System override by supplier to disable channel. E.g. Platform disables supplier. | [optional] 

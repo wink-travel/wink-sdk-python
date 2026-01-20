@@ -48,7 +48,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     upsert_syndicated_item_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicatedItemAffiliate() # UpsertSyndicatedItemAffiliate | Request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create WinkLinks Entry
@@ -67,7 +67,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **upsert_syndicated_item_affiliate** | [**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)| Request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -129,7 +129,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -149,7 +149,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -212,7 +212,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -232,7 +232,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -295,7 +295,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     status = PUBLISHED # str | Return based on this status. (optional) (default to PUBLISHED)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -315,7 +315,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **status** | **str**| Return based on this status. | [optional] [default to PUBLISHED]
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -379,7 +379,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     sorted_affiliate = [wink_sdk_affiliate_winklinks.SortedAffiliate()] # List[SortedAffiliate] | List if ids and their new sort slot
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Sort WinkLink Entries
@@ -398,7 +398,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sorted_affiliate** | [**List[SortedAffiliate]**](SortedAffiliate.md)| List if ids and their new sort slot | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -462,7 +462,7 @@ with wink_sdk_affiliate_winklinks.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_affiliate_winklinks.SyndicatedItemApi(api_client)
     syndicated_item_identifier = 'syndication-entry-1' # str | Syndication entry identifier.
     upsert_syndicated_item_affiliate = wink_sdk_affiliate_winklinks.UpsertSyndicatedItemAffiliate() # UpsertSyndicatedItemAffiliate | Request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update WinkLinks Entry
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **syndicated_item_identifier** | **str**| Syndication entry identifier. | 
  **upsert_syndicated_item_affiliate** | [**UpsertSyndicatedItemAffiliate**](UpsertSyndicatedItemAffiliate.md)| Request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

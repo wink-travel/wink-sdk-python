@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Channel Inventory identifier | 
+**identifier** | **UUID** | Channel Inventory identifier | 
 **sales_channel** | [**SalesChannelLightweightAffiliate**](SalesChannelLightweightAffiliate.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
-**inventory_identifier** | **str** | Inventory type identifier | 
+**inventory_identifier** | **UUID** | Inventory type identifier | 
 **inventory_name_in_english** | **str** | Name of inventory as traveler is seeing it | 
 **enabled** | **bool** | Whether this inventory is enabled or not | [default to True]
 **image** | [**SimpleMultimediaAffiliate**](SimpleMultimediaAffiliate.md) | Main image of inventory | 

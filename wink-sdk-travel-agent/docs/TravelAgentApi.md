@@ -49,7 +49,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     company_identifier = 'company-1' # str | Cancel booking owned by company identifier
     booking_identifier = 'booking-1' # str | Cancel booking by identifier
     cancellation_detail_agent = wink_sdk_travel_agent.CancellationDetailAgent() # CancellationDetailAgent | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Cancel Booking
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
  **company_identifier** | **str**| Cancel booking owned by company identifier | 
  **booking_identifier** | **str**| Cancel booking by identifier | 
  **cancellation_detail_agent** | [**CancellationDetailAgent**](CancellationDetailAgent.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_travel_agent.TravelAgentApi(api_client)
     create_agent_booking_request_agent = wink_sdk_travel_agent.CreateAgentBookingRequestAgent() # CreateAgentBookingRequestAgent | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Agent Booking
@@ -152,7 +152,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_agent_booking_request_agent** | [**CreateAgentBookingRequestAgent**](CreateAgentBookingRequestAgent.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -216,7 +216,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     company_identifier = 'company-1' # str | Resend booking owned by company identifier
     booking_identifier = 'booking-1' # str | Resend booking by identifier
     body = None # object | Empty request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Resend Booking Confirmation
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
  **company_identifier** | **str**| Resend booking owned by company identifier | 
  **booking_identifier** | **str**| Resend booking by identifier | 
  **body** | **object**| Empty request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -300,7 +300,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_travel_agent.TravelAgentApi(api_client)
     company_identifier = 'company-1' # str | Show booking for company identifier
     booking_identifier = 'booking-1' # str | Show booking with booking identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Show booking for company identifier | 
  **booking_identifier** | **str**| Show booking with booking identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -386,7 +386,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_travel_agent.TravelAgentApi(api_client)
     company_identifier = 'company-1' # str | Show bookings for company identifier
     state_agent = wink_sdk_travel_agent.StateAgent() # StateAgent | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Bookings
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Show bookings for company identifier | 
  **state_agent** | [**StateAgent**](StateAgent.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

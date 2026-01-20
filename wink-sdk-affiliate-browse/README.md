@@ -21,16 +21,19 @@
  ## APIs
  Not every integrator needs every API. For that reason, we have separated APIs into context.
 
-### Test API
-
- - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work Wink.
-
 ### Common APIs
 
+- [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
+- [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
+- [Managing Entity](/managing-entity): Endpoints that quickly show you which entities you have access to.
 - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account.
+- [Payment](/payment): All APIs related to TripPay account management, booking, mapping and integration features.
+- [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work.
+- [Reference](/reference): All APIs related to retrieving platform-supported taxonomies.
 - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.
 
-### Consume APIs
+### Consumer APIs
+
 Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.
 
  - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.
@@ -39,57 +42,52 @@ Consume endpoints are for developers who want to find existing travel inventory 
  - [Booking](/booking): All APIs related to creating bookings on the platform.
  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.
 
- ### Produce APIs
- Produce endpoints are for developers who want to create and manage travel inventory.
+### Supplier APIs
 
- #### Property
- - [Property registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
- - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.
- - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
- - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
- - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
- - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
- - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
+Produce endpoints are for developers who want to create and manage travel inventory.
 
- #### Affiliate
- - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
- - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
- - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
- - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
- - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
+#### Property
 
- #### Rate provider
- - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.
+- [Property Registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink.
+- [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties.
+- [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types.
+- [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities.
+- [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink.
+- [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink.
+- [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.
 
- ### Taxonomy APIs
- Taxonomy endpoints are for developers who want to consume and produce travel inventory and need taxonomies of standard and non-standard codes for inventory types, classes, statuses etc.
+#### Affiliate
 
- - [Reference](/reference): All APIs related to retrieving platform-supported taxonomies.
+- [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts.
+- [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell.
+- [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it.
+- [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones.
+- [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.
 
- ### Insight APIs
- Insight endpoints do exactly what the name implies - They offer platform-level insight into the activities of producers and consumers.
+## SDKs
 
- - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics.
+We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).
 
- ### Payment APIs
- Payment endpoints are for developers who want to purchase travel inventory. This can be done via the API as a registered Travel Agent or using our API in conjunction with our PCI compliant payment widget for all other entities.
-
- - [TripPay](/payment): All APIs related to TripPay account management, booking, mapping and integration features.
-
- ## SDKs
- We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).
+### Inventory
 
  - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)
+ - Python SDK [https://github.com/wink-travel/wink-sdk-python](https://github.com/wink-travel/wink-sdk-python)
 
- ## Usage
- These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.
+### Payment
 
- ## Versioning
- We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.
+- Java SDK [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java)
+- Python SDK [https://github.com/wink-travel/trip-pay-sdk-python](https://github.com/wink-travel/trip-pay-sdk-python)
 
- ## Release history
- - Follow updates on Github: https://github.com/wink-travel/wink-sdk-java/blob/master/CHANGELOG.md
+## Usage
 
+These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.
+
+## Versioning
+
+We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.
+
+Current version: `2.0`
+Prior versions: None
 
 
 # Browse API
@@ -105,9 +103,9 @@ Browse the endpoints in the left navigation bar to get started.
 
 This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 30.30.1
-- Package version: 0.0.58
-- Generator version: 7.17.0
+- API version: 30.31.0
+- Package version: 0.0.59
+- Generator version: 7.18.0
 - Build package: org.openapitools.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -124,9 +122,9 @@ pip install wink_sdk_affiliate_browse
 
 Or you can install it directly from the repository using:
 ```sh
-pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.58#egg=wink_sdk_affiliate_browse&subdirectory=wink-sdk-affiliate-browse
+pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.59#egg=wink_sdk_affiliate_browse&subdirectory=wink-sdk-affiliate-browse
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.58#egg=wink_sdk_affiliate_browse&subdirectory=wink_sdk_affiliate_browse`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/wink-travel/wink-sdk-python.git@v0.0.59#egg=wink_sdk_affiliate_browse&subdirectory=wink_sdk_affiliate_browse`)
 
 Then import the package:
 ```python
@@ -179,7 +177,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_affiliate_browse.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_affiliate_browse.BrowseApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -243,7 +241,6 @@ Class | Method | HTTP request | Description
  - [GeneralManagerAffiliate](docs/GeneralManagerAffiliate.md)
  - [GenericErrorMessage](docs/GenericErrorMessage.md)
  - [GeoJsonPointAffiliate](docs/GeoJsonPointAffiliate.md)
- - [InventoryAddressAffiliate](docs/InventoryAddressAffiliate.md)
  - [InventoryAggregateLightweightAffiliate](docs/InventoryAggregateLightweightAffiliate.md)
  - [InventorySupplierAggregateLightweightAffiliate](docs/InventorySupplierAggregateLightweightAffiliate.md)
  - [KeyValuePairAffiliate](docs/KeyValuePairAffiliate.md)

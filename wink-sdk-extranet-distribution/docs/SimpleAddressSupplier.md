@@ -6,13 +6,13 @@ Address information
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address1** | **str** | Address line 1 | 
+**address1** | **str** | Address line 1 | [optional] 
 **address2** | **str** | Address line 2 | [optional] 
 **state** | **str** | State | [optional] 
-**postal_code** | **str** | Postal / zip code | 
+**postal_code** | **str** | Postal / zip code | [optional] 
 **county** | **str** | County | [optional] 
-**city** | **str** | City name | 
-**country_code** | **str** | Country | 
+**city** | **str** | City name | [optional] 
+**country_code** | **str** | Country | [optional] 
 **country** | **str** | Country | [optional] [readonly] 
 **full_address** | **str** | Address 1, Address 2, City, State, Postal / Zip code, Country | [optional] [readonly] 
 

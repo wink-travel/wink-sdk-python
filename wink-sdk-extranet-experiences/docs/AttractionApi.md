@@ -50,7 +50,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.AttractionApi(api_client)
     property_identifier = 'hotel-1' # str | Persist attraction owned by this property identifier
     upsert_attraction_request = wink_sdk_extranet_experiences.UpsertAttractionRequest() # UpsertAttractionRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Attraction
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Persist attraction owned by this property identifier | 
  **upsert_attraction_request** | [**UpsertAttractionRequest**](UpsertAttractionRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.AttractionApi(api_client)
     property_identifier = 'hotel-1' # str | Delete attraction owned by this property identifier
     attraction_identifier = 'attraction-1' # str | Delete attraction identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Delete attraction owned by this property identifier | 
  **attraction_identifier** | **str**| Delete attraction identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -218,7 +218,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.AttractionApi(api_client)
     property_identifier = 'hotel-1' # str | Show attraction owned by this property identifier
     attraction_identifier = 'attraction-1' # str | Show attraction for identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show attraction owned by this property identifier | 
  **attraction_identifier** | **str**| Show attraction for identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.AttractionApi(api_client)
     property_identifier = 'hotel-1' # str | Show attraction key/value pairs associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -322,7 +322,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show attraction key/value pairs associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.AttractionApi(api_client)
     property_identifier = 'hotel-1' # str | Show attractions associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -405,7 +405,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show attractions associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -471,7 +471,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update existing attraction record owned by this property identifier
     attraction_identifier = 'attraction-1' # str | Update attraction record with this identifier
     upsert_attraction_request = wink_sdk_extranet_experiences.UpsertAttractionRequest() # UpsertAttractionRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Attraction
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update existing attraction record owned by this property identifier | 
  **attraction_identifier** | **str**| Update attraction record with this identifier | 
  **upsert_attraction_request** | [**UpsertAttractionRequest**](UpsertAttractionRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

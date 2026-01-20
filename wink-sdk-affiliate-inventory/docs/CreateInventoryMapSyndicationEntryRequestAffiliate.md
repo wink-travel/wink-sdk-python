@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | ID of map to create a syndication entry from | 
+**identifier** | **UUID** | ID of map to create a syndication entry from | 
 
 ## Example
 

@@ -1,6 +1,5 @@
 # ReportingDailyRateSupplierDetails
 
-Displays rate accounting details
 
 ## Properties
 

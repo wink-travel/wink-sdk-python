@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionAuthenticatedEntity]**](CancellationPolicyExceptionAuthenticatedEntity.md) |  | 
+**list** | [**List[CancellationPolicyExceptionAuthenticatedEntity]**](CancellationPolicyExceptionAuthenticatedEntity.md) | List of cancellation policy exceptions | 
 
 ## Example
 

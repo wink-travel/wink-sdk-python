@@ -57,7 +57,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve activities for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -77,7 +77,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve activities for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -140,7 +140,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve add-ons for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -160,7 +160,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve add-ons for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -223,7 +223,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve attractions for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -243,7 +243,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve attractions for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -306,7 +306,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve meeting rooms for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -326,7 +326,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve meeting rooms for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -389,7 +389,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve places for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -409,7 +409,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve places for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -472,7 +472,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve restaurants for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -492,7 +492,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve restaurants for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -555,7 +555,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve spas for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -575,7 +575,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve spas for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -639,7 +639,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve specified inventory for
     inventory_identifier = 'inventory_identifier_example' # str | The inventory ID to retrieve
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -660,7 +660,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve specified inventory for | 
  **inventory_identifier** | **str**| The inventory ID to retrieve | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -723,7 +723,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventories for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -743,7 +743,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve inventories for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -805,7 +805,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory names for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -825,7 +825,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve inventory names for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -887,7 +887,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory types for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -907,7 +907,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve inventory types for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -970,7 +970,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve master rates for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -990,7 +990,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve master rates for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1055,7 +1055,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve inventory grid for
     state_supplier = wink_sdk_extranet_distribution.StateSupplier() # StateSupplier | Filter grid by state request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Search Inventory
@@ -1075,7 +1075,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve inventory grid for | 
  **state_supplier** | [**StateSupplier**](StateSupplier.md)| Filter grid by state request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -1138,7 +1138,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to retrieve sales channels for
     inventory_type_identifier = 'inventory_type_identifier_example' # str | The inventory type ID to retrieve sales channel for
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1159,7 +1159,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to retrieve sales channels for | 
  **inventory_type_identifier** | **str**| The inventory type ID to retrieve sales channel for | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1225,7 +1225,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     property_identifier = 'property_identifier_example' # str | The property ID to update inventory for
     inventory_identifier = 'inventory_identifier_example' # str | The inventory ID to update
     inventory_update_request_supplier = wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier() # InventoryUpdateRequestSupplier | Update inventory request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Inventory
@@ -1246,7 +1246,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| The property ID to update inventory for | 
  **inventory_identifier** | **str**| The inventory ID to update | 
  **inventory_update_request_supplier** | [**InventoryUpdateRequestSupplier**](InventoryUpdateRequestSupplier.md)| Update inventory request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -1310,7 +1310,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.InventoryApi(api_client)
     property_identifier = 'property_identifier_example' # str | The property ID to update inventory for
     inventory_update_request_supplier = [wink_sdk_extranet_distribution.InventoryUpdateRequestSupplier()] # List[InventoryUpdateRequestSupplier] | Update inventories request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Inventory List
@@ -1330,7 +1330,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| The property ID to update inventory for | 
  **inventory_update_request_supplier** | [**List[InventoryUpdateRequestSupplier]**](InventoryUpdateRequestSupplier.md)| Update inventories request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

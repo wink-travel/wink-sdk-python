@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique cancellation policy identifier | 
-**hotel_identifier** | **str** | Property this cancellation is associated with | 
+**identifier** | **UUID** | Unique cancellation policy identifier | 
+**hotel_identifier** | **UUID** | Property this cancellation is associated with | 
 **refundable** | **bool** | Whether this cancellation policy is refundable or not | [default to False]
 **advance_cancellation_free_of_charge** | **str** | When the cancellation policy is refundable, this flag can be set and indicates there is more rules involved than just a no-questions-asked refundable. | [optional] 
 **refundable_cancellation_charge** | **str** | If advanceCancellationFreeOfCharge rules is not honored, this property explains what the guest will be charged. | [optional] 

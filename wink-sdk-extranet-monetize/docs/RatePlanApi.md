@@ -48,7 +48,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.RatePlanApi(api_client)
     property_identifier = 'hotel-1' # str | Create a new rate plan and associate it with this property identifier.
     upsert_rate_plan_request_supplier = wink_sdk_extranet_monetize.UpsertRatePlanRequestSupplier() # UpsertRatePlanRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Rate Plan
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create a new rate plan and associate it with this property identifier. | 
  **upsert_rate_plan_request_supplier** | [**UpsertRatePlanRequestSupplier**](UpsertRatePlanRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -131,7 +131,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.RatePlanApi(api_client)
     property_identifier = 'hotel-1' # str | Remove rate plan owned by this property identifier.
     rate_plan_identifier = 'rate-plan-1' # str | Remove rate plan with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove rate plan owned by this property identifier. | 
  **rate_plan_identifier** | **str**| Remove rate plan with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -216,7 +216,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.RatePlanApi(api_client)
     property_identifier = 'hotel-1' # str | Show single rate plan owned by this property identifier.
     rate_plan_identifier = 'rate-plan-1' # str | Show rate plan with this property identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single rate plan owned by this property identifier. | 
  **rate_plan_identifier** | **str**| Show rate plan with this property identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -300,7 +300,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.RatePlanApi(api_client)
     property_identifier = 'hotel-1' # str | Show list of rate plans owned by this property identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -320,7 +320,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show list of rate plans owned by this property identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -386,7 +386,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update an existing rate plan owned by this property identifier.
     rate_plan_identifier = 'rate-plan-1' # str | Update an existing rate plan identified with this identifier.
     upsert_rate_plan_request_supplier = wink_sdk_extranet_monetize.UpsertRatePlanRequestSupplier() # UpsertRatePlanRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Rate Plan
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update an existing rate plan owned by this property identifier. | 
  **rate_plan_identifier** | **str**| Update an existing rate plan identified with this identifier. | 
  **upsert_rate_plan_request_supplier** | [**UpsertRatePlanRequestSupplier**](UpsertRatePlanRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -1,6 +1,5 @@
 # ReportingDailyRateBooker
 
-Displays rate accounting details
 
 ## Properties
 

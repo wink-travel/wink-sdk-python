@@ -53,7 +53,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Add multimedia record to add-on record owned by this property identifier
     add_on_identifier = 'add-on-1' # str | Add multimedia record to add-on with this identifier
     simple_multimedia = wink_sdk_extranet_monetize.SimpleMultimedia() # SimpleMultimedia | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Add Multimedia
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Add multimedia record to add-on record owned by this property identifier | 
  **add_on_identifier** | **str**| Add multimedia record to add-on with this identifier | 
  **simple_multimedia** | [**SimpleMultimedia**](SimpleMultimedia.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -138,7 +138,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.AddOnApi(api_client)
     property_identifier = 'hotel-1' # str | Create a new add-on record owned by this property identifier
     upsert_add_on_request = wink_sdk_extranet_monetize.UpsertAddOnRequest() # UpsertAddOnRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Add-On
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create a new add-on record owned by this property identifier | 
  **upsert_add_on_request** | [**UpsertAddOnRequest**](UpsertAddOnRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -221,7 +221,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.AddOnApi(api_client)
     property_identifier = 'hotel-1' # str | Remove add-on record owned by this property identifier
     add_on_identifier = 'add-on-1' # str | Remove add-on record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove add-on record owned by this property identifier | 
  **add_on_identifier** | **str**| Remove add-on record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -307,7 +307,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Remove a media record from an existing add-on owned by this property identifier.
     add_on_identifier = 'add-on-1' # str | Remove a media record from an existing add-on identified by this identifier.
     multimedia_identifier = 'media-1' # str | Remove a media record with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Remove a media record from an existing add-on owned by this property identifier. | 
  **add_on_identifier** | **str**| Remove a media record from an existing add-on identified by this identifier. | 
  **multimedia_identifier** | **str**| Remove a media record with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -393,7 +393,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.AddOnApi(api_client)
     property_identifier = 'hotel-1' # str | Show single add-on owned by this property identifier
     add_on_identifier = 'add-on-1' # str | Show add-on record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -414,7 +414,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single add-on owned by this property identifier | 
  **add_on_identifier** | **str**| Show add-on record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -477,7 +477,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.AddOnApi(api_client)
     property_identifier = 'hotel-1' # str | Show add-ons owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -497,7 +497,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show add-ons owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -563,7 +563,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update an existing add-on record owned by this property identifier
     add_on_identifier = 'add-on-1' # str | Update an existing add-on record identified by this identifier
     upsert_add_on_request = wink_sdk_extranet_monetize.UpsertAddOnRequest() # UpsertAddOnRequest | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Add-On
@@ -584,7 +584,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update an existing add-on record owned by this property identifier | 
  **add_on_identifier** | **str**| Update an existing add-on record identified by this identifier | 
  **upsert_add_on_request** | [**UpsertAddOnRequest**](UpsertAddOnRequest.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -650,7 +650,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     add_on_identifier = 'add-on-1' # str | Update existing multimedia record on add-on with this identifier
     multimedia_identifier = 'media-1' # str | Update existing multimedia record with this identifier
     simple_multimedia = wink_sdk_extranet_monetize.SimpleMultimedia() # SimpleMultimedia | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Multimedia
@@ -672,7 +672,7 @@ Name | Type | Description  | Notes
  **add_on_identifier** | **str**| Update existing multimedia record on add-on with this identifier | 
  **multimedia_identifier** | **str**| Update existing multimedia record with this identifier | 
  **simple_multimedia** | [**SimpleMultimedia**](SimpleMultimedia.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

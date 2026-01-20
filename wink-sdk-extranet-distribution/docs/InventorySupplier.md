@@ -11,17 +11,22 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **sales_channel** | [**SalesChannelLightweightSupplier**](SalesChannelLightweightSupplier.md) | Parent sales channel | 
 **inventory_type** | **str** | Inventory type | 
-**inventory_identifier** | **str** | Inventory type identifier | 
+**inventory_identifier** | **UUID** | Inventory type identifier | 
 **inventory_name** | **str** | Name of inventory as hotel is seeing it | 
 **inventory_name_in_english** | **str** | Name of inventory as traveler is seeing it | 
 **enabled** | **bool** | Whether this inventory is enabled or not | [default to True]
 **image** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md) | Main image of inventory | 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
 **location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Location | 
-**address** | [**InventoryAddressSupplier**](InventoryAddressSupplier.md) | Defaults to property address. | 
+**address** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) | Defaults to property address. | 
 **quantity** | **int** | quantity | [default to 0]
 **commissionable** | **bool** | Whether this is commissionable or not | [default to False]
 **bookable** | **bool** | Whether inventory can be booked | [default to True]
+**continent** | **str** | Which continent the inventory is located on | 
+**country_code** | **str** | Which country the inventory is located on | 
+**country_geo_name_id** | **str** | Which country the inventory is located on | 
+**city_geo_name_id** | **str** | Which city the inventory is located on | 
+**city_url_name** | **str** | Which city the inventory is located on | 
 **lowest_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary | [optional] 
 **lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Best price of the room type or facility ancillary in platform currency | [optional] 
 

@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **name** | **str** | Engine configuration name | 
 **append_to_page_title** | **str** | Whether to append text to the existing booking customization page title. | [optional] 
-**user_identifier** | **str** | Authenticated user identifier | 
-**owner_identifier** | **str** | Engine configuration record creator identifier | 
+**user_identifier** | **UUID** | Authenticated user identifier | 
+**owner_identifier** | **UUID** | Engine configuration record creator identifier | 
 **owner_name** | **str** | Name of company owner. | 
 **sub_type** | **str** | Sales channel sub-type. | 
 **primary** | **bool** | Indicates whether this configuration is primary. A primary configuration cannot be removed. | [default to False]

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**booking_identifier** | **str** | Booking ID | 
-**property_identifier** | **str** | ChannelManagerProperty ID | 
-**room_rate_identifier** | **str** | Master Rate ID | 
+**booking_identifier** | **UUID** | Booking ID | 
+**property_identifier** | **UUID** | Property ID | 
+**room_rate_identifier** | **UUID** | Master Rate ID | 
 **name** | **str** | Master Rate name | 
 **guest_room_name** | **str** | Guest room name | 
 **rate_plan_name** | **str** | Rate plan name | 
@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 **payment_wallet_type** | **str** | Optional payment wallet type | [optional] 
 **payment_method_status** | **str** | Status of payment | 
 **sales_channel_name** | **str** | Sales channel name | 
-**sales_channel_identifier** | **str** | Sales channel ID | 
+**sales_channel_identifier** | **UUID** | Sales channel ID | 
 
 ## Example
 

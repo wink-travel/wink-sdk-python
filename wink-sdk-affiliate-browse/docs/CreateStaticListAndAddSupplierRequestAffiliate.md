@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of curated list | 
-**supplier_identifier** | **str** | Supplier this list should add. | 
+**supplier_identifier** | **UUID** | Supplier this list should add. | 
 **channel_inventory_type** | **str** | Supplier this list should add. | 
 
 ## Example

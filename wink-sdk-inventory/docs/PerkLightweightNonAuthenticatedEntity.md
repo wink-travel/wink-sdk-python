@@ -1,6 +1,5 @@
 # PerkLightweightNonAuthenticatedEntity
 
-Perks that accompany the master rate
 
 ## Properties
 

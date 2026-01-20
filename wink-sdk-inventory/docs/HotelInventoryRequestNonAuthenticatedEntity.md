@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_identifier** | **str** | Unique property identifier to retrieve inventory for. Either the hotelIdentifier or urlName property is required. | [optional] 
+**hotel_identifier** | **UUID** | Unique property identifier to retrieve inventory for. Either the hotelIdentifier or urlName property is required. | [optional] 
 **url_name** | **str** | Unique url-friendly record identifier of property. Either the hotelIdentifier or urlName property is required. | [optional] 
 **show_hotel** | **bool** | Flag to indicate whether to return basic property data. If you are loading up property for the first time, this data would be good to include. But there is no need to load that a second time if you are only going for availability data. This field populates &#x60;hotel&#x60; data in response. | [optional] [default to True]
 **show_room_types** | **bool** | Flag to indicate whether to return property room type data. This field populates &#x60;roomType&#x60;, &#x60;cheapesRoomTypes&#x60; and &#x60;available&#x60; data in response. | [optional] [default to True]

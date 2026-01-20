@@ -43,7 +43,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.CalendarSyncApi(api_client)
     property_identifier = 'hotel-1' # str | Retrieve booking list in CalDAV for this specified property
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Load CalDAV Calendar
@@ -62,7 +62,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Retrieve booking list in CalDAV for this specified property | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -75,17 +75,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: */*, application/json, application/xml, text/xml, text/plain, text/html
+ - **Accept**: application/json, application/xml, text/xml, text/plain, */*, text/html
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**503** | Service Unavailable |  -  |
 **400** | Bad Request |  -  |
 **405** | Method Not Allowed |  -  |
 **415** | Unsupported Media Type |  -  |
 **500** | Internal Server Error |  -  |
+**503** | Service Unavailable |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
 **200** | OK |  -  |
@@ -127,7 +127,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.CalendarSyncApi(api_client)
     property_identifier = 'hotel-1' # str | Regenrate CalDAV auth for this specified property
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create CalDAV Connection
@@ -146,7 +146,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Regenrate CalDAV auth for this specified property | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -208,7 +208,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.CalendarSyncApi(api_client)
     property_identifier = 'hotel-1' # str | Generate CalDAV auth for this specified property
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -228,7 +228,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Generate CalDAV auth for this specified property | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

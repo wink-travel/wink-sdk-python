@@ -47,7 +47,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
     term = 'Denpasar' # str | Geo-name term to be searched
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -67,7 +67,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **term** | **str**| Geo-name term to be searched | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -130,7 +130,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
     search_term = 'Los Ang' # str | Search for city by search term
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -150,7 +150,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **search_term** | **str**| Search for city by search term | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -212,7 +212,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -231,7 +231,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -293,7 +293,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -312,7 +312,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -375,7 +375,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
     geo_name_id = '875430' # str | Geo-name identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -395,7 +395,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **geo_name_id** | **str**| Geo-name identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -456,7 +456,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.GeoDataApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -475,7 +475,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

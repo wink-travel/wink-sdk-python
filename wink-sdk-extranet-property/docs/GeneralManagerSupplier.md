@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of GM currently managing the property. | 
 **image** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md) | Cloudinary image identifier of GM currently managing the property. | [optional] 
-**descriptions** | [**List[LocalizedDescriptionSupplier]**](LocalizedDescriptionSupplier.md) |  | [optional] 
+**descriptions** | [**List[LocalizedDescriptionSupplier]**](LocalizedDescriptionSupplier.md) | Localized welcome message from GM. | [optional] 
 
 ## Example
 

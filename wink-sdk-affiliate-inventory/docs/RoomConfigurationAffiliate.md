@@ -7,7 +7,7 @@ Room Configuration
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **adults** | **int** | Number of adults | [default to 1]
-**children** | [**List[ChildAffiliate]**](ChildAffiliate.md) |  | [optional] 
+**children** | [**List[ChildAffiliate]**](ChildAffiliate.md) | Children configurations | [optional] 
 
 ## Example
 

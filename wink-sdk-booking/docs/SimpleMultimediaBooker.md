@@ -6,7 +6,7 @@ Multimedia that contains less information than Multimedia object
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**multimedia_identifier** | **str** | Document identifier | 
+**multimedia_identifier** | **UUID** | Document identifier | 
 **identifier** | **str** | Use this identifier to communicate with Cloudinary. | 
 **type** | **str** | Whether Cloudinary media is a VIDEO or IMAGE. | 
 **source** | **str** | Currently ONLY using Cloudinary to store all image / video assets. | [default to 'CLOUDINARY']
@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 **height** | **int** | Media height in pixels. | 
 **published** | **bool** | Instead of deleting the media, choose to un-publish it instead for later re-use. Could be you keep seasonal images of the property. | [optional] [default to False]
 **category** | **str** | Supported OTA specification &#x60;PIC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
-**descriptions** | [**List[SimpleDescriptionBooker]**](SimpleDescriptionBooker.md) | Localized media captions to give user some context about where this media was taken. | [optional] 
+**descriptions** | [**List[SimpleDescriptionAuthenticatedEntity]**](SimpleDescriptionAuthenticatedEntity.md) | Localized media captions to give user some context about where this media was taken. | [optional] 
 **lifestyle_type** | **str** | Associate this media with a specific lifestyle type. A user searching and filtering inventory based on lifestyles can be shown relevant media first. | [optional] 
-**attribution** | [**List[MediaAuthorAttributionBooker]**](MediaAuthorAttributionBooker.md) | Whether image has attribution properties | [optional] 
+**attribution** | [**List[MediaAuthorAttributionAuthenticatedEntity]**](MediaAuthorAttributionAuthenticatedEntity.md) | Whether image has attribution properties | [optional] 
 **is_landscape** | **bool** | True if media width is greater or equal to height | [optional] 
 
 ## Example

@@ -6,7 +6,7 @@ Recognition for the ancillary blocking.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Recognition identifier. | 
+**identifier** | **UUID** | Recognition identifier. | 
 **category** | **str** | Recognition category. | 
 **type** | **str** | Type of rating system the recognition operated on. This allows us to display the score properly. | 
 **provider** | **str** | The name of the entity that administers this recognition. | 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique system ID. | 
+**identifier** | **UUID** | Unique system ID. | 
 **fee** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Fee amount | 
 **type** | **str** | Type of fee | 
 **candidate** | **str** | Who pays for this fee | 

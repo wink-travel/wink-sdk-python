@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Ancillary identifier | 
-**hotel_identifier** | **str** | Hotel identifier | 
-**type_identifier** | **str** | Travel inventory identifier | 
-**transactional_travel_inventory_identifier** | **str** | Travel inventory identifier | 
+**identifier** | **UUID** | Ancillary identifier | 
+**hotel_identifier** | **UUID** | Hotel identifier | 
+**type_identifier** | **UUID** | Travel inventory identifier | 
+**transactional_travel_inventory_identifier** | **UUID** | Travel inventory identifier | 
 **name** | **str** | Name of inventory | 
 **pricing_type** | **str** | Pricing type | 
 **type** | **str** | Inventory type | 

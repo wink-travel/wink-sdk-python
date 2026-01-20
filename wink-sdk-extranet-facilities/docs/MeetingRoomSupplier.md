@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
-**hotel_identifier** | **str** | Hotel identifier. | 
+**hotel_identifier** | **UUID** | Hotel identifier. | 
 **featured_ind** | **bool** | Indicates whether this inventory is featured. Use this flag as a way to signify that this inventory is special. | 
 **lifestyle_type** | **str** | Indicate the type of lifestyle this blocking should be associated with. | [optional] 
 **location** | [**GeoJsonPointSupplier**](GeoJsonPointSupplier.md) | Geo-location point where blocking takes place. Defaults to location of property. | 
-**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) |  | 
-**multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) |  | 
+**descriptions** | [**List[SimpleDescriptionSupplier]**](SimpleDescriptionSupplier.md) | Localized descriptions describing inventory. | 
+**multimedias** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md) | List of images / videos of blocking. | 
 **contact** | [**ContactSupplier**](ContactSupplier.md) | Associate a contact person for this blocking (if applicable). | 
-**address** | [**AddressSupplier**](AddressSupplier.md) | Defaults to property address. | 
+**address** | [**SimpleAddressSupplier**](SimpleAddressSupplier.md) | Defaults to property address. | 
 **commissionable** | **bool** | Indicate whether sales channels receive commission for selling this blocking. | [default to True]
 **name** | **str** | Internal name of blocking. | 
 **proximity_code** | **str** | Supported OTA specification &#x60;PRX&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | 
@@ -24,12 +24,12 @@ Name | Type | Description | Notes
 **min_age_appropriate_code** | **str** | Supported OTA specification &#x60;AQC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
 **bookable** | **bool** | Indicates if this blocking can be added to a booking or if it is read-only marketing material only. | [default to True]
 **active** | **bool** | Modify blocking availability with this flag. | [default to True]
-**disability_features** | **List[str]** |  | [optional] 
-**security_features** | **List[str]** |  | [optional] 
-**socials** | [**List[SocialSupplier]**](SocialSupplier.md) |  | [optional] 
+**disability_features** | **List[str]** | Supported OTA specification &#x60;PHY&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
+**security_features** | **List[str]** | Supported OTA specification &#x60;SEC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory) | [optional] 
+**socials** | [**List[SocialSupplier]**](SocialSupplier.md) | Social network accounts for blocking (if applicable). | [optional] 
 **price_point** | **str** | Level of expensiveness. | [default to 'THREE']
-**recognition_list** | [**List[TravelInventoryRecognitionSupplier]**](TravelInventoryRecognitionSupplier.md) |  | [optional] 
-**transactional_inventory_list** | [**List[TransactionalTravelInventorySupplier]**](TransactionalTravelInventorySupplier.md) |  | [optional] 
+**recognition_list** | [**List[TravelInventoryRecognitionSupplier]**](TravelInventoryRecognitionSupplier.md) | Inventory-level recognition. | [optional] 
+**transactional_inventory_list** | [**List[TransactionalTravelInventorySupplier]**](TransactionalTravelInventorySupplier.md) | Purchasable items for this blocking. | [optional] 
 **applicable_start** | **date** | Start month and day or date for which the attraction (e.g. the start of a season) is available. This date property signifies that the blocking is recurring and / or seasonal. If the date is in the past, only day and month will be used to infer seasonality. If the date is a future date, it will be interpreted as a starting date. | [optional] 
 **applicable_end** | **date** | End month and day or date for which the attraction (e.g. the start of a season) is available. This date property signifies that the blocking is recurring and / or seasonal. If the date is in the past, only day and month will be used to infer seasonality. If the date is a future date, it will be interpreted as a ending date. | [optional] 
 **reservation_required_ind** | **bool** | Indicates whether a reservation is required to participate in this blocking. | [optional] 
@@ -46,7 +46,7 @@ Name | Type | Description | Notes
 **height** | **float** | Height (in meters) of this meeting room. | 
 **width** | **float** | Width (in meters) of this meeting room. | 
 **length** | **float** | Length (in meters) of this meeting room. | 
-**amenities** | **List[str]** |  | [optional] 
+**amenities** | **List[str]** | Supported OTA specification &#x60;MRC&#x60; code. See [OTA geoname data](#operation/showAvailableCodesForCategory). | [optional] 
 
 ## Example
 

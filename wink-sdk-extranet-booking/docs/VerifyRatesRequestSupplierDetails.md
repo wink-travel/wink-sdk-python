@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **channel** | [**ChannelNameSupplierDetails**](ChannelNameSupplierDetails.md) | Channel owner of inventory | 
 **stay_start_date** | **date** | Arrival date | 
 **stay_end_date** | **date** | Departure date | 
-**room_configurations** | **List[object]** |  | 
+**room_configurations** | [**List[RoomConfigurationSupplierDetails]**](RoomConfigurationSupplierDetails.md) |  | 
 **currency** | **str** | Display currency | 
 **booking_date** | **date** | The booking start date | [optional] 
 **sell_start_date** | **date** | The sell start date | [optional] 

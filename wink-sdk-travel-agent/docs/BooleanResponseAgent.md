@@ -1,6 +1,5 @@
 # BooleanResponseAgent
 
-Boolean response
 
 ## Properties
 

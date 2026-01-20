@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_identifier** | **str** | Property identifier associated with social networks | 
-**list** | [**List[SocialSupplier]**](SocialSupplier.md) |  | [optional] 
+**hotel_identifier** | **UUID** | Property identifier associated with social networks | 
+**list** | [**List[SocialSupplier]**](SocialSupplier.md) | List of social networks. | [optional] 
 
 ## Example
 

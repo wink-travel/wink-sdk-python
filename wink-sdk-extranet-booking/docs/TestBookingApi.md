@@ -44,7 +44,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.TestBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Create test booking for property ID
     booking_test_request_supplier_details = wink_sdk_extranet_booking.BookingTestRequestSupplierDetails() # BookingTestRequestSupplierDetails | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Test Rate / Availability
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create test booking for property ID | 
  **booking_test_request_supplier_details** | [**BookingTestRequestSupplierDetails**](BookingTestRequestSupplierDetails.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

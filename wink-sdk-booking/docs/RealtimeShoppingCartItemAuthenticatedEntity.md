@@ -6,14 +6,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifier** | **str** | identifier for item in cart | 
-**hotel_identifier** | **str** | Unique hotel record identifier. | 
+**hotel_identifier** | **UUID** | Unique hotel record identifier. | 
 **start_date** | **date** | Date when guest arrives on the premises. | 
 **end_date** | **date** | Date when guest departs the premises. | 
 **room_configuration** | [**RoomConfigurationAuthenticatedEntity**](RoomConfigurationAuthenticatedEntity.md) | Room configuration is how the guest wants the room to support her accompanying guests. | 
-**promotional_codes** | **List[object]** |  | [optional] 
-**room_rate_identifier** | **str** | The unique master rate that made the guest room / rate plan available for sale. | 
+**promotional_codes** | **List[str]** |  | [optional] 
+**room_rate_identifier** | **UUID** | The unique master rate that made the guest room / rate plan available for sale. | 
 **bedroom_configuration_identifier** | **str** | Guest can optionally request a specific bedroom layout if the room type is set up with multiple layout choices. | [optional] 
-**ancillaries** | **List[object]** |  | [optional] 
+**ancillaries** | [**List[BookingAncillaryAuthenticatedEntity]**](BookingAncillaryAuthenticatedEntity.md) |  | [optional] 
 **special_requests** | **str** | A guest can send a special request to the hotel in free-text here. | [optional] 
 **user** | [**BookingUserRequestAuthenticatedEntity**](BookingUserRequestAuthenticatedEntity.md) | User object contains details of the person that made the booking. | 
 **hotel** | [**PropertyAggregateLightweightAuthenticatedEntity**](PropertyAggregateLightweightAuthenticatedEntity.md) | The hotel where the stay occurs. | 

@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique lookup identifier | [optional] 
+**identifier** | **UUID** | Unique lookup identifier | [optional] 
 **type** | **str** | Type of lookup | [optional] 
-**type_identifier** | **str** | Unique lookup type identifier | [optional] 
+**type_identifier** | **UUID** | Unique lookup type identifier | [optional] 
 **name** | **str** | Name of lookup | [optional] 
 **url_name** | **str** | Url-friendly slug that uniquely identifies this lookup | [optional] 
-**owner_identifier** | **str** | Lookup that is supplier inventory includes the supplier identifier | [optional] 
+**owner_identifier** | **UUID** | Lookup that is supplier inventory includes the supplier identifier | [optional] 
 **owner_name** | **str** | Lookup that is supplier inventory includes the supplier name | [optional] 
 **city_name** | **str** | Closest city where lookup entry is located | [optional] 
 **country_name** | **str** | Country where lookup entry is located | [optional] 

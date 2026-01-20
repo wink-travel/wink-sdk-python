@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **blacklisted** | **bool** | Flag the supplier can use to ignore a sales channel | [default to True]
 **percent_discount** | **float** | Percent discount on this channel and all its children [unless configured at the child level]. | 
 **commission** | **float** | Amount of sales commission earned through this channel and all its children [unless configured at the child level]. | 
-**rate_modifier_identifiers** | **List[object]** |  | [optional] 
-**rate_modifier_bundle_identifiers** | **List[object]** |  | [optional] 
+**rate_modifier_identifiers** | **List[UUID]** |  | [optional] 
+**rate_modifier_bundle_identifiers** | **List[UUID]** |  | [optional] 
 
 ## Example
 

@@ -6,8 +6,8 @@ A curated list is a bucket that holds any type of travel inventory.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique record identifier | 
-**owner_identifier** | **str** | List creator | 
+**identifier** | **UUID** | Unique record identifier | 
+**owner_identifier** | **UUID** | List creator | 
 **name** | **str** | Name of curated list | 
 **type** | **str** | Every affiliate starts out with a &#x60;Favorite&#x60; list. All other lists will be of type &#x60;NORMAL&#x60; | 
 

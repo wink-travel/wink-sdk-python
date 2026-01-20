@@ -6,7 +6,7 @@ A way to persist a GeoJSON polygon
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**polygon** | [**GeoJsonPolygonAffiliate**](GeoJsonPolygonAffiliate.md) |  | 
+**polygon** | [**GeoJsonPolygonAffiliate**](GeoJsonPolygonAffiliate.md) | A GeoJSON polygon | 
 
 ## Example
 

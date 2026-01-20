@@ -46,7 +46,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelRequestApi(api_client)
     property_identifier = 'hotel-1' # str | Create sales channel request and associate it with this property identifier
     upsert_sales_channel_request_request_supplier = wink_sdk_extranet_distribution.UpsertSalesChannelRequestRequestSupplier() # UpsertSalesChannelRequestRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Sales Channel Request
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create sales channel request and associate it with this property identifier | 
  **upsert_sales_channel_request_request_supplier** | [**UpsertSalesChannelRequestRequestSupplier**](UpsertSalesChannelRequestRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -129,7 +129,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_distribution.SalesChannelRequestApi(api_client)
     property_identifier = 'hotel-1' # str | Remove sales channel request owned by this property identifier
     sales_channel_request_identifier = 'sales-channel-request-1' # str | Remove sales channel request with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove sales channel request owned by this property identifier | 
  **sales_channel_request_identifier** | **str**| Remove sales channel request with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -213,7 +213,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_distribution.SalesChannelRequestApi(api_client)
     property_identifier = 'hotel-1' # str | Show all sales channel requests for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -233,7 +233,7 @@ with wink_sdk_extranet_distribution.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all sales channel requests for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

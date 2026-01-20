@@ -48,7 +48,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update existing master rate owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Update existing master rate with this identifier.
     set_master_rate_perk_request_supplier = wink_sdk_extranet_monetize.SetMasterRatePerkRequestSupplier() # SetMasterRatePerkRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Set Master Rate Perks
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update existing master rate owned by this property identifier. | 
  **master_rate_identifier** | **str**| Update existing master rate with this identifier. | 
  **set_master_rate_perk_request_supplier** | [**SetMasterRatePerkRequestSupplier**](SetMasterRatePerkRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -132,7 +132,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.MasterRateApi(api_client)
     property_identifier = 'hotel-1' # str | Show single master rate owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Show single master rate with this identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single master rate owned by this property identifier. | 
  **master_rate_identifier** | **str**| Show single master rate with this identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -216,7 +216,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_monetize.MasterRateApi(api_client)
     property_identifier = 'hotel-1' # str | Show all master rates owned by this property identifier.
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -236,7 +236,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show all master rates owned by this property identifier. | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update existing master rate owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Update existing master rate with this identifier.
     toggle_master_rate_request_supplier = wink_sdk_extranet_monetize.ToggleMasterRateRequestSupplier() # ToggleMasterRateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Toggle Master Rate
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update existing master rate owned by this property identifier. | 
  **master_rate_identifier** | **str**| Update existing master rate with this identifier. | 
  **toggle_master_rate_request_supplier** | [**ToggleMasterRateRequestSupplier**](ToggleMasterRateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_identifier** | **str** | Owner identifier of booking. | 
-**booking_identifier** | **str** | Booking unique identifier. | 
+**hotel_identifier** | **UUID** | Owner identifier of booking. | 
+**booking_identifier** | **UUID** | Booking unique identifier. | 
 **cancellable** | **bool** | Whether booking can be cancelled or not. | 
 
 ## Example

@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** |  | 
-**name** | **str** |  | 
-**city** | **str** |  | 
-**country_code** | **str** |  | 
-**currency_code** | **str** |  | 
-**time_zone** | **str** |  | 
+**identifier** | **UUID** | Property ID | 
+**name** | **str** | Property name | 
+**city** | **str** | City property is located in or near | 
+**country_code** | **str** | Country code property is located in | 
+**currency_code** | **str** | Currency code property uses | 
+**time_zone** | **str** | Timezone property is located in | 
 
 ## Example
 

@@ -6,9 +6,9 @@ Object to save InventoryMap
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customization_identifier** | **str** | Customization identifier | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **name** | **str** | Name of map | 
-**supplier_identifier** | **str** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
+**supplier_identifier** | **UUID** | Inventory type identifier. Either a single channel inventory identifier, a list identifier or a dynamic search identifier. | 
 **type** | **str** | Type of inventory | 
 **draggable** | **bool** | User can move around / pan the map | [default to True]
 **zoomable** | **bool** | User can zoom in/out of the map | [default to True]
@@ -18,9 +18,9 @@ Name | Type | Description | Notes
 **map_height** | **int** | Map height in pixels | 
 **display_type** | **str** | Indicate which initial values to display first on the front-facing card | [default to 'NATIVE']
 **circles** | [**List[ConfigurableGeoJsonCircleAffiliate]**](ConfigurableGeoJsonCircleAffiliate.md) |  | [optional] 
-**rectangles** | **List[object]** |  | [optional] 
-**markers** | **List[object]** |  | [optional] 
-**polygons** | **List[object]** |  | [optional] 
+**rectangles** | [**List[ConfigurableGeoJsonRectangleAffiliate]**](ConfigurableGeoJsonRectangleAffiliate.md) |  | [optional] 
+**markers** | [**List[ConfigurableGeoJsonPointAffiliate]**](ConfigurableGeoJsonPointAffiliate.md) |  | [optional] 
+**polygons** | [**List[ConfigurableGeoJsonPolygonAffiliate]**](ConfigurableGeoJsonPolygonAffiliate.md) |  | [optional] 
 
 ## Example
 

@@ -1,6 +1,5 @@
 # BooleanResponse
 
-Boolean response
 
 ## Properties
 

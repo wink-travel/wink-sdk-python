@@ -51,7 +51,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     agency_score_request_non_authenticated_entity = wink_sdk_lookup.AgencyScoreRequestNonAuthenticatedEntity() # AgencyScoreRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **agency_score_request_non_authenticated_entity** | [**AgencyScoreRequestNonAuthenticatedEntity**](AgencyScoreRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -137,7 +137,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     city_score_request_non_authenticated_entity = wink_sdk_lookup.CityScoreRequestNonAuthenticatedEntity() # CityScoreRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **city_score_request_non_authenticated_entity** | [**CityScoreRequestNonAuthenticatedEntity**](CityScoreRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -223,7 +223,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     map_request_non_authenticated_entity = wink_sdk_lookup.MapRequestNonAuthenticatedEntity() # MapRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **map_request_non_authenticated_entity** | [**MapRequestNonAuthenticatedEntity**](MapRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -309,7 +309,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     city_search_request_non_authenticated_entity = wink_sdk_lookup.CitySearchRequestNonAuthenticatedEntity() # CitySearchRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **city_search_request_non_authenticated_entity** | [**CitySearchRequestNonAuthenticatedEntity**](CitySearchRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -395,7 +395,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     country_score_request_non_authenticated_entity = wink_sdk_lookup.CountryScoreRequestNonAuthenticatedEntity() # CountryScoreRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -416,7 +416,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **country_score_request_non_authenticated_entity** | [**CountryScoreRequestNonAuthenticatedEntity**](CountryScoreRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -481,7 +481,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     global_score_request_non_authenticated_entity = wink_sdk_lookup.GlobalScoreRequestNonAuthenticatedEntity() # GlobalScoreRequestNonAuthenticatedEntity | 
     engine_configuration_identifier = 'engine_configuration_identifier_example' # str | Engine configuration identifier (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -502,7 +502,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **global_score_request_non_authenticated_entity** | [**GlobalScoreRequestNonAuthenticatedEntity**](GlobalScoreRequestNonAuthenticatedEntity.md)|  | 
  **engine_configuration_identifier** | **str**| Engine configuration identifier | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -565,7 +565,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     term = 'Los A' # str | Search for lookups by this term
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -585,7 +585,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **term** | **str**| Search for lookups by this term | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -649,7 +649,7 @@ with wink_sdk_lookup.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_lookup.LookupApi(api_client)
     url_name = 'los-angeles' # str | Show lookup by unique url name
     type = 'CITY' # str | Filter on type
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -670,7 +670,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **url_name** | **str**| Show lookup by unique url name | 
  **type** | **str**| Filter on type | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

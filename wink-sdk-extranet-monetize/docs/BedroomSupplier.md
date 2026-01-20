@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** | Type of bedroom | 
-**bed_list** | [**List[BedSupplier]**](BedSupplier.md) |  | 
+**bed_list** | [**List[BedSupplier]**](BedSupplier.md) | A bedroom can have more than one bed type. | 
 
 ## Example
 

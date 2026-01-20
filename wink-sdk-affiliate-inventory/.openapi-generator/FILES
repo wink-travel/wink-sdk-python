@@ -6,6 +6,9 @@ README.md
 docs/CampaignInventoryAffiliate.md
 docs/ChildAffiliate.md
 docs/ConfigurableGeoJsonCircleAffiliate.md
+docs/ConfigurableGeoJsonPointAffiliate.md
+docs/ConfigurableGeoJsonPolygonAffiliate.md
+docs/ConfigurableGeoJsonRectangleAffiliate.md
 docs/CountryLightweightAffiliate.md
 docs/CreateInventoryMapSyndicationEntryRequestAffiliate.md
 docs/CreateSellableItemSyndicatedItemRequestAffiliate.md
@@ -19,7 +22,10 @@ docs/CustomizationApi.md
 docs/CustomizationThemeColorsAffiliate.md
 docs/EmbeddableInventoriesApi.md
 docs/GenericErrorMessage.md
+docs/GeoJsonLineStringAffiliate.md
 docs/GeoJsonPointAffiliate.md
+docs/GeoJsonPolygonAffiliate.md
+docs/GeoJsonRectangleAffiliate.md
 docs/GeoNameLightweightAffiliate.md
 docs/GridsApi.md
 docs/InventoryLinksApi.md
@@ -30,6 +36,7 @@ docs/KeyValuePairAffiliate.md
 docs/LookupLightweightAffiliate.md
 docs/MapsApi.md
 docs/MediaAuthorAttributionAffiliate.md
+docs/PointAffiliate.md
 docs/RankedGridsApi.md
 docs/RoomConfigurationAffiliate.md
 docs/SellableInventoryUrlAffiliate.md
@@ -81,6 +88,9 @@ wink_sdk_affiliate_inventory/models/__init__.py
 wink_sdk_affiliate_inventory/models/campaign_inventory_affiliate.py
 wink_sdk_affiliate_inventory/models/child_affiliate.py
 wink_sdk_affiliate_inventory/models/configurable_geo_json_circle_affiliate.py
+wink_sdk_affiliate_inventory/models/configurable_geo_json_point_affiliate.py
+wink_sdk_affiliate_inventory/models/configurable_geo_json_polygon_affiliate.py
+wink_sdk_affiliate_inventory/models/configurable_geo_json_rectangle_affiliate.py
 wink_sdk_affiliate_inventory/models/country_lightweight_affiliate.py
 wink_sdk_affiliate_inventory/models/create_inventory_map_syndication_entry_request_affiliate.py
 wink_sdk_affiliate_inventory/models/create_sellable_item_syndicated_item_request_affiliate.py
@@ -92,13 +102,17 @@ wink_sdk_affiliate_inventory/models/custom_monetary_amount.py
 wink_sdk_affiliate_inventory/models/customization_affiliate.py
 wink_sdk_affiliate_inventory/models/customization_theme_colors_affiliate.py
 wink_sdk_affiliate_inventory/models/generic_error_message.py
+wink_sdk_affiliate_inventory/models/geo_json_line_string_affiliate.py
 wink_sdk_affiliate_inventory/models/geo_json_point_affiliate.py
+wink_sdk_affiliate_inventory/models/geo_json_polygon_affiliate.py
+wink_sdk_affiliate_inventory/models/geo_json_rectangle_affiliate.py
 wink_sdk_affiliate_inventory/models/geo_name_lightweight_affiliate.py
 wink_sdk_affiliate_inventory/models/inventory_map_affiliate.py
 wink_sdk_affiliate_inventory/models/inventory_map_marker_affiliate.py
 wink_sdk_affiliate_inventory/models/key_value_pair_affiliate.py
 wink_sdk_affiliate_inventory/models/lookup_lightweight_affiliate.py
 wink_sdk_affiliate_inventory/models/media_author_attribution_affiliate.py
+wink_sdk_affiliate_inventory/models/point_affiliate.py
 wink_sdk_affiliate_inventory/models/room_configuration_affiliate.py
 wink_sdk_affiliate_inventory/models/sellable_inventory_url_affiliate.py
 wink_sdk_affiliate_inventory/models/sellable_item_affiliate.py

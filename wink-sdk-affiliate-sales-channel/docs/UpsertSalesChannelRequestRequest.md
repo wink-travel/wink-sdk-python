@@ -7,7 +7,7 @@ A request for relationship between two parties.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **request_type** | **str** | type of relationship request | 
-**supplier_identifier** | **str** | Specific identifier for the company / corporation / travel agency that is retrieving the rates | 
+**supplier_identifier** | **UUID** | Specific identifier for the company / corporation / travel agency that is retrieving the rates | 
 **introductory_message** | **str** | Owner / affiliate writes an intro to request a connection. | 
 
 ## Example

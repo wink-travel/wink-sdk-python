@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Record identifier | 
+**identifier** | **UUID** | Record identifier | 
 **user_session** | [**UserSessionNonAuthenticatedEntity**](UserSessionNonAuthenticatedEntity.md) | User session containing itinerary and other data by the user | 
-**customization_identifier** | **str** | The configuration identifier that was used during this call. | [optional] 
+**customization_identifier** | **UUID** | The configuration identifier that was used during this call. | [optional] 
 **locale** | **str** |  | [optional] 
 **page** | **int** | Which to page to paginate to | 
 **size** | **int** | How many results to return per page | 

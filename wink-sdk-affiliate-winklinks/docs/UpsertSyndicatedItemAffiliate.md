@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **sort** | **int** | How the author wants this entry to get sorted | 
 **type** | **str** | The syndication entry type | 
 **metadata** | **Dict[str, object]** | Extended metadata | [optional] 
-**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) |  | 
+**descriptions** | [**List[SimpleDescriptionAffiliate]**](SimpleDescriptionAffiliate.md) | Localized descriptions describing inventory. | 
 **tags** | [**List[KeyValuePairAffiliate]**](KeyValuePairAffiliate.md) | Optional user categories | [optional] 
 **multimedias** | [**List[SimpleMultimediaAffiliate]**](SimpleMultimediaAffiliate.md) | The main media for this entry. | [optional] 
 **display** | **str** | Whether to treat all links as flat web links or try to embed more advanced data. | [optional] 
@@ -19,8 +19,8 @@ Name | Type | Description | Notes
 **publish_status** | **str** | Publish status of post. | [optional] [default to 'PUBLISHED']
 **lock_code** | **str** | Optional code the author can require be entered by the user in order to see the post. | [optional] 
 **unique_id** | **str** | Optional unique code that can be used to access this record. | [optional] 
-**user_tags** | **List[object]** |  | [optional] 
-**hash_tags** | **List[object]** |  | [optional] 
+**user_tags** | **List[str]** |  | [optional] 
+**hash_tags** | **List[str]** |  | [optional] 
 
 ## Example
 

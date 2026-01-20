@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of GM currently managing the property. | 
 **image** | [**SimpleMultimediaAuthenticatedEntity**](SimpleMultimediaAuthenticatedEntity.md) | Cloudinary image identifier of GM currently managing the property. | [optional] 
-**descriptions** | [**List[LocalizedDescriptionAuthenticatedEntity]**](LocalizedDescriptionAuthenticatedEntity.md) |  | [optional] 
+**descriptions** | [**List[LocalizedDescriptionAuthenticatedEntity]**](LocalizedDescriptionAuthenticatedEntity.md) | Localized welcome message from GM. | [optional] 
 
 ## Example
 

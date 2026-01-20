@@ -48,7 +48,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update daily rates by date range owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Update daily rates by date range owned by this master rate.
     upsert_bulk_rate_request_supplier = wink_sdk_extranet_monetize.UpsertBulkRateRequestSupplier() # UpsertBulkRateRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Daily Rates by Range
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update daily rates by date range owned by this property identifier. | 
  **master_rate_identifier** | **str**| Update daily rates by date range owned by this master rate. | 
  **upsert_bulk_rate_request_supplier** | [**UpsertBulkRateRequestSupplier**](UpsertBulkRateRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_monetize.DailyRateApi(api_client)
     property_identifier = 'hotel-1' # str | Show daily rate list owned by this property identifier.
     date_range_supplier = wink_sdk_extranet_monetize.DateRangeSupplier() # DateRangeSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Daily Rates by Hotel
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show daily rate list owned by this property identifier. | 
  **date_range_supplier** | [**DateRangeSupplier**](DateRangeSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -218,7 +218,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Show daily rate list owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Show daily rate list owned by this master rate.
     date_range_supplier = wink_sdk_extranet_monetize.DateRangeSupplier() # DateRangeSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Daily Rates by Master Rate
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Show daily rate list owned by this property identifier. | 
  **master_rate_identifier** | **str**| Show daily rate list owned by this master rate. | 
  **date_range_supplier** | [**DateRangeSupplier**](DateRangeSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -304,7 +304,7 @@ with wink_sdk_extranet_monetize.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Show daily rate page owned by this property identifier.
     master_rate_identifier = 'master-rate-1' # str | Show daily rate page owned by this master rate.
     state_supplier = wink_sdk_extranet_monetize.StateSupplier() # StateSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Daily Rate Page
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Show daily rate page owned by this property identifier. | 
  **master_rate_identifier** | **str**| Show daily rate page owned by this master rate. | 
  **state_supplier** | [**StateSupplier**](StateSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -55,7 +55,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
     page = 56 # int | 
     size = 56 # int | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**|  | 
  **size** | **int**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -139,7 +139,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
     category = 'LOC' # str | Requested OTA code
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -159,7 +159,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **category** | **str**| Requested OTA code | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -221,7 +221,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -240,7 +240,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -321,7 +321,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -459,7 +459,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
     source_currency = 'source_currency_example' # str | 
     target_currency = 'target_currency_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Exchange Rate
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **source_currency** | **str**|  | 
  **target_currency** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -540,7 +540,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -559,7 +559,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -622,7 +622,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
     currency = 'currency_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Show Exchange Rates
@@ -641,7 +641,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **currency** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -703,7 +703,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
     name = 'name_example' # str | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -723,7 +723,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -860,7 +860,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -879,7 +879,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -941,7 +941,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -960,7 +960,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -1022,7 +1022,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 with wink_sdk_reference.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_reference.ReferenceApi(api_client)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -1041,7 +1041,7 @@ with wink_sdk_reference.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

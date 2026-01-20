@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **channel_inventory_identifier** | **str** | Identifier of the list, channel inventory or search | 
 **point** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Location of inventory | 
-**supplier_identifier** | **str** | Hotel identifier | 
+**supplier_identifier** | **UUID** | Hotel identifier | 
 **supplier_name** | **str** | Hotel name | 
-**inventory_identifier** | **str** | Actual inventory identifier | 
+**inventory_identifier** | **UUID** | Actual inventory identifier | 
 **inventory_type** | **str** | Type of inventory | 
 **inventory_name** | **str** | Name of inventory | 
 **lowest_display_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Lowest price of inventory in desired currency | 

@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sort** | **int** | Sort property indicates how this grid item fits in with the rest of the items in the list. | 
 **type** | **str** | The type of inventory this item represents. | 
-**identifier** | **str** | Unique inventory identifier | 
-**supplier_identifier** | **str** | Supplier identifier referencing inventory owner | 
+**identifier** | **UUID** | Unique inventory identifier | 
+**supplier_identifier** | **UUID** | Supplier identifier referencing inventory owner | 
 **activity** | [**ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](ActivityLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ACTIVITY&#x60; | [optional] 
 **attraction** | [**AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](AttractionLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;ATTRACTION&#x60; | [optional] 
 **place** | [**PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity**](PlaceLocalizedInventoryWithHotelBestPriceNonAuthenticatedEntity.md) | Populated only when the type of grid item is &#x60;PLACE&#x60; | [optional] 

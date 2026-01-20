@@ -51,7 +51,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.MeetingRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Create a new meeting room record and associate it with this property identifier
     upsert_meeting_room_request_supplier = wink_sdk_extranet_facilities.UpsertMeetingRoomRequestSupplier() # UpsertMeetingRoomRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Meeting Room
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create a new meeting room record and associate it with this property identifier | 
  **upsert_meeting_room_request_supplier** | [**UpsertMeetingRoomRequestSupplier**](UpsertMeetingRoomRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -134,7 +134,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.MeetingRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Remove meeting room associated with this property identifier
     meeting_room_identifier = 'meeting-room-1' # str | Remove meeting room with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove meeting room associated with this property identifier | 
  **meeting_room_identifier** | **str**| Remove meeting room with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -220,7 +220,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Remove media for meeting room associated with this property identifier
     meeting_room_identifier = 'meeting-room-1' # str | Remove media for meeting room with this identifier
     multimedia_identifier = 'media-1' # str | Remove media with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Remove media for meeting room associated with this property identifier | 
  **meeting_room_identifier** | **str**| Remove media for meeting room with this identifier | 
  **multimedia_identifier** | **str**| Remove media with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -306,7 +306,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.MeetingRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Show a single meeting room owned by this property identifier
     meeting_room_identifier = 'meeting-room-1' # str | Show meeting room for identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show a single meeting room owned by this property identifier | 
  **meeting_room_identifier** | **str**| Show meeting room for identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -390,7 +390,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_facilities.MeetingRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Show meeting room key/value pairs associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -410,7 +410,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show meeting room key/value pairs associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -473,7 +473,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_facilities.MeetingRoomApi(api_client)
     property_identifier = 'hotel-1' # str | Show meeting rooms associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -493,7 +493,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show meeting rooms associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -559,7 +559,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update a meeting room owned by this property identifier
     meeting_room_identifier = 'meeting-room-1' # str | Update meeting room with this identifier
     upsert_meeting_room_request_supplier = wink_sdk_extranet_facilities.UpsertMeetingRoomRequestSupplier() # UpsertMeetingRoomRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Meeting Room
@@ -580,7 +580,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update a meeting room owned by this property identifier | 
  **meeting_room_identifier** | **str**| Update meeting room with this identifier | 
  **upsert_meeting_room_request_supplier** | [**UpsertMeetingRoomRequestSupplier**](UpsertMeetingRoomRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

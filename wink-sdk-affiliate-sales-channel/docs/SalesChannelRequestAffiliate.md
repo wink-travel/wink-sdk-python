@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **version** | **int** | Version property that shows how many times this document has been persisted. Document will not persist if the version property is less than current version property in the system. Result in an optimistic locking exception. | [optional] 
 **status** | **str** | status of relationship request | 
 **request_type** | **str** | type of relationship request | 
-**supplier_identifier** | **str** | Request goes to this supplier identifier. | 
+**supplier_identifier** | **UUID** | Request goes to this supplier identifier. | 
 **supplier_name** | **str** | Request goes to this supplier name. | 
 **sub_type** | **str** | What type of segment of channel is this. | 
-**owner_identifier** | **str** | Specific identifier for the company / corporation / travel agency that is retrieving the rates | 
+**owner_identifier** | **UUID** | Specific identifier for the company / corporation / travel agency that is retrieving the rates | 
 **owner_name** | **str** | Name of the owner / affiliate. | 
 **introductory_message** | **str** | Owner / affiliate writes an intro to request a connection. | 
 

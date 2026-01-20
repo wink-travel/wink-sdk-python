@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique identifier | 
-**owner_identifier** | **str** | AffiliateAccount identifier | 
+**identifier** | **UUID** | Unique identifier | 
+**owner_identifier** | **UUID** | AffiliateAccount identifier | 
 **name** | **str** | Descriptive name of this list for seller use only | 
-**customization_identifier** | **str** | Customization identifier | 
+**customization_identifier** | **UUID** | Customization identifier | 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Contains custom title and description of grid | 
-**keywords** | **List[object]** |  | 
+**keywords** | **List[str]** |  | 
 **status** | **str** | Status | [default to 'ACTIVE']
 **lookup** | [**LookupLightweightNonAuthenticatedEntity**](LookupLightweightNonAuthenticatedEntity.md) | The destination to display ranked inventory from. | 
 **animate** | **bool** | Create an animated gif instead of a list of images | [optional] [default to False]

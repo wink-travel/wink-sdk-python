@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[BookingBooker]**](BookingBooker.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectBooker**](SortObjectBooker.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**pageable** | [**PageableObjectBooker**](PageableObjectBooker.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

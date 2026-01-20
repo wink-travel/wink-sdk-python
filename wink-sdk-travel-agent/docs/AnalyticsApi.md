@@ -45,7 +45,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_travel_agent.AnalyticsApi(api_client)
     company_identifier = 'company-1' # str | Show active booking count for company with this identifier
     booking_overview_request_supplier = wink_sdk_travel_agent.BookingOverviewRequestSupplier() # BookingOverviewRequestSupplier | Overview request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Affiliate Booking Analytics
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Show active booking count for company with this identifier | 
  **booking_overview_request_supplier** | [**BookingOverviewRequestSupplier**](BookingOverviewRequestSupplier.md)| Overview request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -127,7 +127,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_travel_agent.AnalyticsApi(api_client)
     company_identifier = 'company-1' # str | Show booking owned by this company
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -147,7 +147,7 @@ with wink_sdk_travel_agent.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **company_identifier** | **str**| Show booking owned by this company | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type

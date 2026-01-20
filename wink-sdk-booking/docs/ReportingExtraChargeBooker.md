@@ -1,6 +1,5 @@
 # ReportingExtraChargeBooker
 
-Displays extra charge accounting details.
 
 ## Properties
 

@@ -36,15 +36,15 @@ Name | Type | Description | Notes
 **available** | **bool** | Available | [optional] 
 **source_to_user_currency_quote** | [**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md) | Hotel to user currency exchange rate. | [optional] 
 **source_to_internal_currency_quote** | [**QuoteLightweightNonAuthenticatedEntity**](QuoteLightweightNonAuthenticatedEntity.md) | Hotel to wink currency exchange rate. | [optional] 
-**offer_details** | [**List[LocalizedDescriptionNonAuthenticatedEntity]**](LocalizedDescriptionNonAuthenticatedEntity.md) |  | [optional] 
-**promotional_codes** | **List[str]** |  | [optional] 
+**offer_details** | [**List[LocalizedDescriptionNonAuthenticatedEntity]**](LocalizedDescriptionNonAuthenticatedEntity.md) | Localized text of the discount | [optional] 
+**promotional_codes** | **List[str]** | Promotional codes | [optional] 
 **user_specified_currency_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | User-defined currency final price. | [optional] 
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Source currency final price. | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Internal currency final price. | [optional] 
 **user_specified_currency_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**total_discount_percent** | **float** |  | [optional] 
 **internal_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**total_discount_percent** | **float** |  | [optional] 
 
 ## Example
 

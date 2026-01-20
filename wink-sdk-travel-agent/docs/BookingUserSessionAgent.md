@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **itinerary** | [**BookingItineraryAgent**](BookingItineraryAgent.md) | Dates and travel info. | 
 **language** | **str** | User&#39;s language preference | [optional] 
 **currency** | **str** | User&#39;s currency preference | [optional] 
-**promotional_codes** | **List[object]** |  | [optional] 
+**promotional_codes** | **List[str]** |  | [optional] 
 **selected_room_configuration_index** | **int** | User can pass the current room configuration index to retrieve rates specifically for that room configuration. | [optional] 
 **lifestyle** | **str** | The preferred user lifestyle. | [optional] 
 

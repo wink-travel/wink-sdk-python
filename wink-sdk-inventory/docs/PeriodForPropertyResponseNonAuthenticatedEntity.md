@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **hotel_identifier** | **str** | The property to query for. | 
 **name** | **str** | The property name. | 
 **adults** | **int** | The actual amount of adults as determined by the hotel&#39;s policy | 
-**list** | **List[object]** |  | 
+**list** | [**List[RoomTypeBestPriceForDateRangeNonAuthenticatedEntity]**](RoomTypeBestPriceForDateRangeNonAuthenticatedEntity.md) |  | 
 
 ## Example
 

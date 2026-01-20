@@ -50,7 +50,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.PlaceApi(api_client)
     property_identifier = 'hotel-1' # str | Create a new place record owned by this property identifier
     upsert_place_request_supplier = wink_sdk_extranet_experiences.UpsertPlaceRequestSupplier() # UpsertPlaceRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Place
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create a new place record owned by this property identifier | 
  **upsert_place_request_supplier** | [**UpsertPlaceRequestSupplier**](UpsertPlaceRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.PlaceApi(api_client)
     property_identifier = 'hotel-1' # str | Remove place record owned by this property identifier
     place_identifier = 'place-1' # str | Remove place record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove place record owned by this property identifier | 
  **place_identifier** | **str**| Remove place record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -218,7 +218,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_experiences.PlaceApi(api_client)
     property_identifier = 'hotel-1' # str | Show single place owned by this property identifier
     place_identifier = 'place-1' # str | Show place record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single place owned by this property identifier | 
  **place_identifier** | **str**| Show place record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.PlaceApi(api_client)
     property_identifier = 'hotel-1' # str | Show place pairs owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -322,7 +322,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show place pairs owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -385,7 +385,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_experiences.PlaceApi(api_client)
     property_identifier = 'hotel-1' # str | Show places owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -405,7 +405,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show places owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -471,7 +471,7 @@ with wink_sdk_extranet_experiences.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update an existing place record owned by this property identifier
     place_identifier = 'place-1' # str | Update an existing place record identified by this identifier
     upsert_place_request_supplier = wink_sdk_extranet_experiences.UpsertPlaceRequestSupplier() # UpsertPlaceRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Place
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update an existing place record owned by this property identifier | 
  **place_identifier** | **str**| Update an existing place record identified by this identifier | 
  **upsert_place_request_supplier** | [**UpsertPlaceRequestSupplier**](UpsertPlaceRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -50,7 +50,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.MediaApi(api_client)
     property_identifier = 'hotel-1' # str | Save a single media associated with this property identifier
     simple_multimedia_supplier = wink_sdk_extranet_property.SimpleMultimediaSupplier() # SimpleMultimediaSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Multimedia
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Save a single media associated with this property identifier | 
  **simple_multimedia_supplier** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -133,7 +133,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.MediaApi(api_client)
     property_identifier = 'hotel-1' # str | Remove selected media for this property identifier
     multimedia_identifiers = ['media-1,media-2,media-3'] # List[str] | Remove media identified by these identifiers
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove selected media for this property identifier | 
  **multimedia_identifiers** | [**List[str]**](str.md)| Remove media identified by these identifiers | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -218,7 +218,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.MediaApi(api_client)
     property_identifier = 'hotel-1' # str | Remove a single media associated with this property identifier
     multimedia_identifier = 'media-1' # str | Remove record for this media identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove a single media associated with this property identifier | 
  **multimedia_identifier** | **str**| Remove record for this media identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -302,7 +302,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_property.MediaApi(api_client)
     property_identifier = 'hotel-1' # str | Show media associated with this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -322,7 +322,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show media associated with this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -387,7 +387,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_property.MediaApi(api_client)
     property_identifier = 'hotel-1' # str | Save media to the property with this property identifier
     simple_multimedia_supplier = [wink_sdk_extranet_property.SimpleMultimediaSupplier()] # List[SimpleMultimediaSupplier] | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Multimedia List
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Save media to the property with this property identifier | 
  **simple_multimedia_supplier** | [**List[SimpleMultimediaSupplier]**](SimpleMultimediaSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -472,7 +472,7 @@ with wink_sdk_extranet_property.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update a single media associated with this property identifier
     multimedia_identifier = 'media-1' # str | Update record for this media identifier
     simple_multimedia_supplier = wink_sdk_extranet_property.SimpleMultimediaSupplier() # SimpleMultimediaSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Multimedia
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update a single media associated with this property identifier | 
  **multimedia_identifier** | **str**| Update record for this media identifier | 
  **simple_multimedia_supplier** | [**SimpleMultimediaSupplier**](SimpleMultimediaSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

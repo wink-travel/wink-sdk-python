@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**owner_identifier** | **str** | Owner identifier, in this context, is the unique company record identifier. | 
-**supplier_identifier** | **str** | Supplier identifier is the entity that owns the ivnentory. | 
+**owner_identifier** | **UUID** | Owner identifier, in this context, is the unique company record identifier. | 
+**supplier_identifier** | **UUID** | Supplier identifier is the entity that owns the ivnentory. | 
 
 ## Example
 

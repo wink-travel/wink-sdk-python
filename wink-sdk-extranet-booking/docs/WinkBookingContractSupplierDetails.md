@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**booking_contract_identifier** | **str** | Document UUID | [optional] 
+**booking_contract_identifier** | **UUID** | Document UUID | [optional] 
 **created_date** | **datetime** | Datetime this record was first created | [optional] 
 **last_update** | **datetime** | Datetime this record was last updated | [optional] 
 **federated_organization_identifier** | **str** | The auth realm owner ID | 
@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **ip_address** | **str** | Caller&#39;s IP address | 
 **trace_id** | **str** | Way to track which booking contracts were made together | 
 **source_url** | **str** | Where did the booking occur | 
-**identifier** | **str** | Unique identifier used to track the contract. Create a UUID for this purpose. | 
-**supplier_identifier** | **str** | Supplier identifier | 
+**identifier** | **UUID** | Unique identifier used to track the contract. Create a UUID for this purpose. | 
+**supplier_identifier** | **UUID** | Supplier identifier | 
 **supplier_name** | **str** | Supplier name | 
 **display_price_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) | The quote used to create totalDisplayPrice. | 
 **supplier_price_quote** | [**QuoteLightweightSupplierDetails**](QuoteLightweightSupplierDetails.md) | The quote used to create totalSupplierPrice. | 
@@ -151,13 +151,13 @@ Name | Type | Description | Notes
 **total_funds_grouped_by_beneficiary** | [**List[BeneficiarySupplierDetails]**](BeneficiarySupplierDetails.md) | Returns all the beneficiaries in this contract with their total amounts | [optional] 
 **total_tokens_earned** | **int** | Total amount of tokens minted on this contract. | [optional] 
 **cancellable_with_no_charges** | **bool** | Whether the cancellation comes at no cost to the traveler. | [optional] 
+**fully_refunded** | **bool** |  | [optional] 
+**self_acquiring** | **bool** |  | [optional] 
+**lodging** | [**BookingContractItemSupplierDetails**](BookingContractItemSupplierDetails.md) | Returns the lodging item only. | [optional] 
+**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
 **is_cancellable_with_potential_charges** | **bool** | Whether a cancellation comes with partial charges. I.e. Only some of the items in contract are not fully refundable. | [optional] 
 **cancellable_by_supplier** | **bool** | Whether the booking can still be cancelled completely by the supplier. | [optional] 
 **cancellable_by_traveler** | **bool** | Whether the booking can still be cancelled completely by the traveller. | [optional] 
-**lodging** | [**BookingContractItemSupplierDetails**](BookingContractItemSupplierDetails.md) | Returns the lodging item only. | [optional] 
-**cancellable_by_agent** | **bool** | Whether the booking can still be cancelled completely by an agent. | [optional] 
-**self_acquiring** | **bool** |  | [optional] 
-**fully_refunded** | **bool** |  | [optional] 
 
 ## Example
 

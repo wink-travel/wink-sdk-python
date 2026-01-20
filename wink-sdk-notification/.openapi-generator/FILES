@@ -3,11 +3,6 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
-docs/CountResponseAffiliate.md
-docs/GenericErrorMessage.md
-docs/NotificationAffiliate.md
-docs/NotificationApi.md
-docs/ShowNotification400Response.md
 git_push.sh
 pyproject.toml
 requirements.txt
@@ -18,15 +13,10 @@ test/__init__.py
 tox.ini
 wink_sdk_notification/__init__.py
 wink_sdk_notification/api/__init__.py
-wink_sdk_notification/api/notification_api.py
 wink_sdk_notification/api_client.py
 wink_sdk_notification/api_response.py
 wink_sdk_notification/configuration.py
 wink_sdk_notification/exceptions.py
 wink_sdk_notification/models/__init__.py
-wink_sdk_notification/models/count_response_affiliate.py
-wink_sdk_notification/models/generic_error_message.py
-wink_sdk_notification/models/notification_affiliate.py
-wink_sdk_notification/models/show_notification400_response.py
 wink_sdk_notification/py.typed
 wink_sdk_notification/rest.py

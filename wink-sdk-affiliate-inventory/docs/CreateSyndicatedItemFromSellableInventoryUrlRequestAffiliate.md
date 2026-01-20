@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | ID of seller url to create a syndication entry from | 
+**identifier** | **UUID** | ID of seller url to create a syndication entry from | 
 
 ## Example
 

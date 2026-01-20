@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**list** | [**List[CancellationPolicyExceptionAgent]**](CancellationPolicyExceptionAgent.md) |  | 
+**list** | [**List[CancellationPolicyExceptionAgent]**](CancellationPolicyExceptionAgent.md) | List of cancellation policy exceptions | 
 
 ## Example
 

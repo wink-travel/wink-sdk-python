@@ -51,7 +51,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.RestaurantApi(api_client)
     property_identifier = 'hotel-1' # str | Create a new restaurant record owned by this property identifier
     upsert_restaurant_request_supplier = wink_sdk_extranet_facilities.UpsertRestaurantRequestSupplier() # UpsertRestaurantRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Create Restaurant
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Create a new restaurant record owned by this property identifier | 
  **upsert_restaurant_request_supplier** | [**UpsertRestaurantRequestSupplier**](UpsertRestaurantRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -135,7 +135,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Remove a media record from an existing restaurant owned by this property identifier.
     restaurant_identifier = 'restaurant-1' # str | Remove a media record from an existing restaurant identified by this identifier.
     multimedia_identifier = 'media-1' # str | Remove a media record with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Remove a media record from an existing restaurant owned by this property identifier. | 
  **restaurant_identifier** | **str**| Remove a media record from an existing restaurant identified by this identifier. | 
  **multimedia_identifier** | **str**| Remove a media record with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -221,7 +221,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.RestaurantApi(api_client)
     property_identifier = 'hotel-1' # str | Remove restaurant record owned by this property identifier
     restaurant_identifier = 'restaurant-1' # str | Remove restaurant record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Remove restaurant record owned by this property identifier | 
  **restaurant_identifier** | **str**| Remove restaurant record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -306,7 +306,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_facilities.RestaurantApi(api_client)
     property_identifier = 'hotel-1' # str | Show single restaurant owned by this property identifier
     restaurant_identifier = 'restaurant-1' # str | Show restaurant record identified by this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show single restaurant owned by this property identifier | 
  **restaurant_identifier** | **str**| Show restaurant record identified by this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -390,7 +390,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_facilities.RestaurantApi(api_client)
     property_identifier = 'hotel-1' # str | Show restaurant pairs owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -410,7 +410,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show restaurant pairs owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -473,7 +473,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_facilities.RestaurantApi(api_client)
     property_identifier = 'hotel-1' # str | Show restaurants owned by this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -493,7 +493,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show restaurants owned by this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -559,7 +559,7 @@ with wink_sdk_extranet_facilities.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Update an existing restaurant record owned by this property identifier
     restaurant_identifier = 'restaurant-1' # str | Update an existing restaurant record identified by this identifier
     upsert_restaurant_request_supplier = wink_sdk_extranet_facilities.UpsertRestaurantRequestSupplier() # UpsertRestaurantRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Update Restaurant
@@ -580,7 +580,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Update an existing restaurant record owned by this property identifier | 
  **restaurant_identifier** | **str**| Update an existing restaurant record identified by this identifier | 
  **upsert_restaurant_request_supplier** | [**UpsertRestaurantRequestSupplier**](UpsertRestaurantRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 

@@ -1,6 +1,5 @@
 # ReportingAncillaryBooker
 
-Displays ancillary accounting details
 
 ## Properties
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hotel_identifier** | **str** | Unique hotel record identifier. | [optional] 
+**hotel_identifier** | **UUID** | Unique hotel record identifier. | [optional] 
 **name** | **str** | Hotel trade name | [optional] 
 **local_name** | **str** | Hotel local name if different from the trade name or if it is the local language. | [optional] 
 **chain** | **str** | Name of hotel chain if applicable. | [optional] 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **location** | [**GeoJsonPointNonAuthenticatedEntity**](GeoJsonPointNonAuthenticatedEntity.md) | Geo-location | [optional] 
 **descriptions** | [**List[SimpleDescriptionNonAuthenticatedEntity]**](SimpleDescriptionNonAuthenticatedEntity.md) | Short and long welcome text | [optional] 
 **aggregate_greendex_rating** | **float** | Aggregate Green Index score if the property has answered our questionnaire available in the Extranet. | [optional] [default to 0.0]
-**lifestyle_types** | **List[object]** |  | [optional] 
+**lifestyle_types** | **List[str]** |  | [optional] 
 **total_reviews** | **int** | Count of total reviews left by users at this property. | [optional] [default to 0]
 **reservations** | [**ContactNonAuthenticatedEntity**](ContactNonAuthenticatedEntity.md) | Contact details for reservations desk | [optional] 
 **socials** | [**List[SocialNonAuthenticatedEntity]**](SocialNonAuthenticatedEntity.md) | Property&#39;s social network accounts | [optional] 
@@ -53,7 +53,6 @@ Name | Type | Description | Notes
 **number_of_rooms** | **int** | Number of rooms / keys for this property. | [optional] [default to 0]
 **address** | [**SimpleAddressNonAuthenticatedEntity**](SimpleAddressNonAuthenticatedEntity.md) | Property address. | [optional] 
 **active** | **bool** | Whether property is active | [optional] 
-**url_parameters** | **str** | Convenience data point that creates url friendly query parameters of property. | [optional] 
 
 ## Example
 

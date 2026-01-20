@@ -6,17 +6,17 @@ This is one bookable item that can stand alongside a restaurant / meeting room e
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier** | **str** | Unique transactional identifier | 
+**identifier** | **UUID** | Unique transactional identifier | 
 **name** | **str** | Internal name of transactional blocking. | 
-**descriptions** | [**List[SimpleDescription]**](SimpleDescription.md) |  | 
+**descriptions** | [**List[SimpleDescription]**](SimpleDescription.md) | Localized descriptions describing inventory. | 
 **pricing_type** | **str** | How this blocking item should be priced. | 
 **base_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Base price of booking this blocking. | 
 **discounted_price** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | If you are selling this blocking at a discount, indicate the discounted selling price. Leave empty if there is no discount. | 
-**multimedias** | [**List[SimpleMultimedia]**](SimpleMultimedia.md) |  | [optional] 
+**multimedias** | [**List[SimpleMultimedia]**](SimpleMultimedia.md) | List of images / videos of item. | [optional] 
 **min_pax** | **int** | Whether there is a limit to minimum group size. | [optional] 
 **max_pax** | **int** | Whether there is a limit to maximum group size. | [optional] 
-**percent_premium** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
 **percent_discount** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
+**percent_premium** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
 
 ## Example
 

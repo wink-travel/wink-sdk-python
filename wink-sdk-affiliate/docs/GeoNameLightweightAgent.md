@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 **name** | **str** | Name of city | [optional] 
 **url_name** | **str** | Url name | [optional] 
 **ascii_name** | **str** | Ascii name of city | [optional] 
-**location** | [**GeoJsonPointAgent**](GeoJsonPointAgent.md) | Coordinate points of the city | [optional] 
+**location** | [**GeoJsonPointAffiliate**](GeoJsonPointAffiliate.md) | Coordinate points of the city | [optional] 
 **feature_code** | **str** |  | [optional] 
 **country_code** | **str** |  | [optional] 
 **timezone** | **str** | Timezone | [optional] 
-**country** | [**CountryLightweightAgent**](CountryLightweightAgent.md) | Country | [optional] 
-**sub_country** | [**SubCountryLightweightAgent**](SubCountryLightweightAgent.md) | Country sub division | [optional] 
-**sub_sub_country** | [**SubSubCountryLightweightAgent**](SubSubCountryLightweightAgent.md) | Country sub sub division | [optional] 
+**country** | [**CountryLightweightAffiliate**](CountryLightweightAffiliate.md) | Country | [optional] 
+**sub_country** | [**SubCountryLightweightAffiliate**](SubCountryLightweightAffiliate.md) | Country sub division | [optional] 
+**sub_sub_country** | [**SubSubCountryLightweightAffiliate**](SubSubCountryLightweightAffiliate.md) | Country sub sub division | [optional] 
 
 ## Example
 

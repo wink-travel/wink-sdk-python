@@ -55,7 +55,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Cancel booking for hotel with this identifier
     booking_identifier = 'booking-1' # str | Cancel booking with this identifier
     cancellation_detail_supplier = wink_sdk_extranet_booking.CancellationDetailSupplier() # CancellationDetailSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Cancel Booking
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Cancel booking for hotel with this identifier | 
  **booking_identifier** | **str**| Cancel booking with this identifier | 
  **cancellation_detail_supplier** | [**CancellationDetailSupplier**](CancellationDetailSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -138,7 +138,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Generate report for property identifier
     booking_identifier = 'booking-1' # str | Generate report for this booking identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Generate report for property identifier | 
  **booking_identifier** | **str**| Generate report for this booking identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -171,14 +171,14 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: */*, application/json, application/xml, text/xml, text/html, text/plain
+ - **Accept**: application/json, application/xml, text/xml, text/html, text/plain, */*
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
+**503** | Service Unavailable |  -  |
 **403** | Forbidden |  -  |
 **401** | Unauthorized |  -  |
 **400** | Bad Request |  -  |
@@ -222,7 +222,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Check if booking can be cancelled for hotel with this identifier
     booking_identifier = 'booking-1' # str | Check if booking can be cancelled with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Check if booking can be cancelled for hotel with this identifier | 
  **booking_identifier** | **str**| Check if booking can be cancelled with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -309,7 +309,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Cancel booking for hotel with this identifier
     booking_identifier = 'booking-1' # str | Cancel booking with this identifier
     property_booking_refund_request_supplier = wink_sdk_extranet_booking.PropertyBookingRefundRequestSupplier() # PropertyBookingRefundRequestSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Request refund
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Cancel booking for hotel with this identifier | 
  **booking_identifier** | **str**| Cancel booking with this identifier | 
  **property_booking_refund_request_supplier** | [**PropertyBookingRefundRequestSupplier**](PropertyBookingRefundRequestSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -394,7 +394,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     property_identifier = 'hotel-1' # str | Booking owner
     booking_identifier = 'booking-1' # str | Booking identifier
     body = None # object | Empty request body
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Resend Booking Confirmation
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
  **property_identifier** | **str**| Booking owner | 
  **booking_identifier** | **str**| Booking identifier | 
  **body** | **object**| Empty request body | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -477,7 +477,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Show active affiliates for hotel with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -497,7 +497,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show active affiliates for hotel with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -560,7 +560,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Show booked master rates for this property identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -580,7 +580,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show booked master rates for this property identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -643,7 +643,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Show booking owned by this hotel
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -663,7 +663,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show booking owned by this hotel | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -727,7 +727,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Show booking owned by this hotel
     booking_identifier = 'booking-1' # str | Show booking with this identifier
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -748,7 +748,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show booking owned by this hotel | 
  **booking_identifier** | **str**| Show booking with this identifier | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
@@ -813,7 +813,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     api_instance = wink_sdk_extranet_booking.PropertyBookingApi(api_client)
     property_identifier = 'hotel-1' # str | Show bookings for hotel with this identifier
     state_supplier = wink_sdk_extranet_booking.StateSupplier() # StateSupplier | 
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
 
     try:
         # Search Bookings
@@ -833,7 +833,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **property_identifier** | **str**| Show bookings for hotel with this identifier | 
  **state_supplier** | [**StateSupplier**](StateSupplier.md)|  | 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
 
 ### Return type
 
@@ -899,7 +899,7 @@ with wink_sdk_extranet_booking.ApiClient(configuration) as api_client:
     page_number = 0 # int | Paginate booking list (optional) (default to 0)
     max_results = 30 # int | Limit number of records to return (optional) (default to 30)
     search = 'Smith' # str | Filter on email, first or last name to further narrow down the result set (optional)
-    wink_version = 'wink_version_example' # str |  (optional)
+    wink_version = 2.0.0 # str |  (optional) (default to 2.0.0)
     accept = 'accept_example' # str |  (optional)
 
     try:
@@ -923,7 +923,7 @@ Name | Type | Description  | Notes
  **page_number** | **int**| Paginate booking list | [optional] [default to 0]
  **max_results** | **int**| Limit number of records to return | [optional] [default to 30]
  **search** | **str**| Filter on email, first or last name to further narrow down the result set | [optional] 
- **wink_version** | **str**|  | [optional] 
+ **wink_version** | **str**|  | [optional] [default to 2.0.0]
  **accept** | **str**|  | [optional] 
 
 ### Return type
