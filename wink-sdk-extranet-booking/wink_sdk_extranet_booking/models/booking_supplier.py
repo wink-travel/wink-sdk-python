@@ -5,7 +5,7 @@
 
      # Introduction  Welcome to the Wink API - A programmer-friendly way to manage, sell and book travel inventory on the Wink platform. The API gives you all the tools you need to ready your properties and inventory for sale across 1000s of our native sales channels.  Integrators, affiliates, travel agents and content creators have the ability search for your travel inventory and promote / sell it in a wide variety of ways.   # Integrations  We have already integrated with the most well-known channel managers so you don't have to. To see our current integrations, please go to https://extranet.wink.travel and scroll to Connectivity section. Once your properties are set up, you can finish the setup by mapping your property to Wink using your channel manager partner portal. If your properties don't have a channel manager, you can easily manage rates and availability with this API.   # Intended Audience  Programmers are [most likely] a requirement to start integrating with Wink. Companies and organizations that would most benefit from integrating with us are new and existing travel companies that have relationships with suppliers and that need an advanced system from which to manage their travel inventory and get that same inventory out to as many eyeballs as possible at the lowest price possible.  - Hotel chains  - Hotel brands  - Travel tech companies  - Destination sites  - Integrators  - Aggregators  - Destination management companies  - Travel agencies  - OTAs   ## APIs  Not every integrator needs every API. For that reason, we have separated APIs into context.  ### Common APIs  - [Analytics](/analytics): All APIs related to tracking metrics across a wide variety of data source segments including, more entertaining, leaderboard metrics. - [Channel manager](/channel-manager): The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties. - [Managing Entity](/managing-entity): Endpoints that quickly show you which entities you have access to. - [Notifications](/notifications): The Notifications API is a way for us to stay in touch with your user, property or affiliate account. - [Payment](/payment): All APIs related to TripPay account management, booking, mapping and integration features. - [Ping](/ping): The Ping API is a quick test endpoint to verify that your credentials work. - [Reference](/reference): All APIs related to retrieving platform-supported taxonomies. - [User Settings](/user-settings): The User Settings API exposes endpoints to allow 3rd party integrators to communicate with Wink.  ### Consumer APIs  Consume endpoints are for developers who want to find existing travel inventory and either book it or use it to advertise through one of their Wink affiliate accounts.   - [Configuration](/customization-client): A single endpoint to retrieve whitelabel + customization information for the booking customization.  - [Lookup](/lookup): All APIs related to locating inventory by region, locale and property flags.  - [Inventory](/inventory): All APIs related to retrieve known travel inventory as it was found using the Lookup API..  - [Booking](/booking): All APIs related to creating bookings on the platform.  - [Travel Agent](/travel-agent): The Travel Agent API exposes endpoints to manage agent-facilitated bookings.  ### Supplier APIs  Produce endpoints are for developers who want to create and manage travel inventory.  #### Property  - [Property Registration](/extranet/property/register): As a producer, this is, oftentimes, where you start your journey. These endpoints let you create properties on Wink. - [Property](/extranet/property): This collection of property endpoints are mostly management endpoints that let you display, change status and similar for your existing properties. - [Facilities](/extranet/facilities): This collection of endpoints let you manage facilities; such as room types. - [Experiences](/extranet/experiences): This collection of endpoints let you manage experiences, such as activities. - [Monetize](/extranet/monetize): The Monetize API exposes endpoints for managing cancellation polies, rate plans, promotions and more on Wink. - [Distribution](/extranet/distribution): The Distribution API exposes endpoints for sales channels, connecting with affiliates, managing rates and inventory calendars and more on Wink. - [Property Booking](/extranet/booking): The Property Booking API exposes endpoints for managing bookings and reviews at the property-level.  #### Affiliate  - [Affiliate](/affiliate): This collection of affiliate endpoints are mostly management endpoints that let you display, change status and similar for your existing accounts. - [Browse](/affiliate/browse): The Browse API exposes endpoints for affiliates to find suppliers and inventory to sell. - [Inventory](/affiliate/inventory): The Inventory API exposes endpoints for affiliates to manage the inventory they want to sell and how they want to sell it. - [Sales Channel](/affiliate/sales-channel): The Sales Channel API exposes endpoints for affiliates to manage existing sales channels as well as find new ones. - [WinkLinks](/affiliate/winklinks): The WinkLinks API exposes endpoints for affiliates to manage their WinkLinks page.  ## SDKs  We are actively working on supporting the most used languages out there. If you don't see your language here, reach out to us with a request to officially add your language. In the meantime, if you want to roll your own SDK, you can do so by downloading the OpenAPI spec and using one of the many available OpenAPI generators available: [https://openapi-generator.tech/docs/generators](https://openapi-generator.tech/docs/generators).  ### Inventory   - Java SDK [https://github.com/wink-travel/wink-sdk-java](https://github.com/wink-travel/wink-sdk-java)  - Python SDK [https://github.com/wink-travel/wink-sdk-python](https://github.com/wink-travel/wink-sdk-python)  ### Payment  - Java SDK [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java) - Python SDK [https://github.com/wink-travel/trip-pay-sdk-python](https://github.com/wink-travel/trip-pay-sdk-python)  ## Usage  These features are made available to you via a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer). This API is language agnostic.  ## Versioning  We chose to version our endpoints in a way that we hope affects your integration minimally. You request the version of our API you wish to work with via the `Wink-Version` header. When it's time for you to upgrade, you only have to change the version number to get access to our updated endpoints.  Current version: `2.0` Prior versions: None  # Extranet Booking API The Booking API exposes endpoints to manage bookings. This API lets you:  1. Booking: Manage bookings including cancellations. 2. Review: Manage user reviews. 3. Sync w. Calendar: Manage calendar sync with your favorite calendar software  Browse the endpoints in the left navigation bar to get started.  
 
-    The version of the OpenAPI document: 30.31.1
+    The version of the OpenAPI document: 30.31.2
     Contact: bjorn@wink.travel
     Generated by OpenAPI Generator (https://openapi-generator.tech)
 
@@ -73,7 +73,18 @@ class BookingSupplier(BaseModel):
     booking_contract: Optional[WinkBookingContractSupplierDetails] = Field(default=None, description="Booking contract created by TripPay", alias="bookingContract")
     static_map_image_url: Optional[StrictStr] = Field(default=None, description="Url of map image that can be sent via email", alias="staticMapImageUrl")
     static_map_url: Optional[StrictStr] = Field(default=None, description="Url of map image location on Google Maps", alias="staticMapUrl")
-    cancellable_by_agent: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the agent.", alias="cancellableByAgent")
+    cancellable_by_supplier: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the supplier.", alias="cancellableBySupplier")
+    cancellable_by_traveler: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the traveller.", alias="cancellableByTraveler")
+    rate_source: Optional[StrictStr] = Field(default=None, description="Rate origin. This is usually the property channel manager.", alias="rateSource")
+    has_add_ons: Optional[StrictBool] = Field(default=None, description="Convenience data point to check if any add-on offers are in this booking.", alias="hasAddOns")
+    meeting_rooms: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Meeting room reservation records.", alias="meetingRooms")
+    restaurants: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Restaurant reservation records.")
+    spas: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Spa reservation records.")
+    activities: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Activity reservation records.")
+    attractions: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Attraction reservation records.")
+    places: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Place reservation records.")
+    room_type_ancillaries: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Room type ancillary records.", alias="roomTypeAncillaries")
+    add_ons: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Add-on records.", alias="addOns")
     has_breakfast: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to breakfast quickly.", alias="hasBreakfast")
     has_brunch: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to brunch quickly.", alias="hasBrunch")
     has_lunch: Optional[StrictBool] = Field(default=None, description="Convenience data point to get to lunch quickly.", alias="hasLunch")
@@ -91,20 +102,9 @@ class BookingSupplier(BaseModel):
     reporting_daily_rate_list: Optional[List[ReportingDailyRateSupplierDetails]] = Field(default=None, alias="reportingDailyRateList")
     reporting_ancillary_list: Optional[List[ReportingAncillarySupplierDetails]] = Field(default=None, alias="reportingAncillaryList")
     reporting_extra_charge_list: Optional[List[ReportingExtraChargeSupplierDetails]] = Field(default=None, alias="reportingExtraChargeList")
-    cancellable_by_supplier: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the supplier.", alias="cancellableBySupplier")
-    cancellable_by_traveler: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the traveller.", alias="cancellableByTraveler")
+    cancellable_by_agent: Optional[StrictBool] = Field(default=None, description="Whether the booking can still be cancelled completely by the agent.", alias="cancellableByAgent")
     status: Optional[StrictStr] = Field(default=None, description="Convenience data point to show which status the booking currently has.")
-    rate_source: Optional[StrictStr] = Field(default=None, description="Rate origin. This is usually the property channel manager.", alias="rateSource")
-    has_add_ons: Optional[StrictBool] = Field(default=None, description="Convenience data point to check if any add-on offers are in this booking.", alias="hasAddOns")
-    meeting_rooms: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Meeting room reservation records.", alias="meetingRooms")
-    restaurants: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Restaurant reservation records.")
-    spas: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Spa reservation records.")
-    activities: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Activity reservation records.")
-    attractions: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Attraction reservation records.")
-    places: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Place reservation records.")
-    room_type_ancillaries: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Room type ancillary records.", alias="roomTypeAncillaries")
-    add_ons: Optional[List[BookingAncillarySupplierDetails]] = Field(default=None, description="Add-on records.", alias="addOns")
-    __properties: ClassVar[List[str]] = ["id", "createdDate", "lastUpdate", "version", "creation", "groupIdentifier", "customization", "bookingCode", "user", "userSession", "serverUrl", "socials", "review", "emailHeaderLogoUrl", "logoIdentifier", "hotel", "roomStay", "specialRequests", "comment", "earlyCheckInCharge", "lateCheckOutCharge", "earlyCheckInChargePercent", "lateCheckOutChargePercent", "hotelImageUrl", "roomImageUrl", "commissionList", "ancillaryList", "bookingContract", "staticMapImageUrl", "staticMapUrl", "cancellableByAgent", "hasBreakfast", "hasBrunch", "hasLunch", "hasDinner", "hasAllInclusive", "hasAllInclusivePlusAlcohol", "hasRoomTypeAncillaries", "hasFood", "hasRestaurants", "hasMeetingRooms", "hasSpas", "hasActivities", "hasAttractions", "hasPlaces", "reportingDailyRateList", "reportingAncillaryList", "reportingExtraChargeList", "cancellableBySupplier", "cancellableByTraveler", "status", "rateSource", "hasAddOns", "meetingRooms", "restaurants", "spas", "activities", "attractions", "places", "roomTypeAncillaries", "addOns"]
+    __properties: ClassVar[List[str]] = ["id", "createdDate", "lastUpdate", "version", "creation", "groupIdentifier", "customization", "bookingCode", "user", "userSession", "serverUrl", "socials", "review", "emailHeaderLogoUrl", "logoIdentifier", "hotel", "roomStay", "specialRequests", "comment", "earlyCheckInCharge", "lateCheckOutCharge", "earlyCheckInChargePercent", "lateCheckOutChargePercent", "hotelImageUrl", "roomImageUrl", "commissionList", "ancillaryList", "bookingContract", "staticMapImageUrl", "staticMapUrl", "cancellableBySupplier", "cancellableByTraveler", "rateSource", "hasAddOns", "meetingRooms", "restaurants", "spas", "activities", "attractions", "places", "roomTypeAncillaries", "addOns", "hasBreakfast", "hasBrunch", "hasLunch", "hasDinner", "hasAllInclusive", "hasAllInclusivePlusAlcohol", "hasRoomTypeAncillaries", "hasFood", "hasRestaurants", "hasMeetingRooms", "hasSpas", "hasActivities", "hasAttractions", "hasPlaces", "reportingDailyRateList", "reportingAncillaryList", "reportingExtraChargeList", "cancellableByAgent", "status"]
 
     @field_validator('creation')
     def creation_validate_enum(cls, value):
@@ -210,27 +210,6 @@ class BookingSupplier(BaseModel):
         # override the default output from pydantic by calling `to_dict()` of booking_contract
         if self.booking_contract:
             _dict['bookingContract'] = self.booking_contract.to_dict()
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_daily_rate_list (list)
-        _items = []
-        if self.reporting_daily_rate_list:
-            for _item_reporting_daily_rate_list in self.reporting_daily_rate_list:
-                if _item_reporting_daily_rate_list:
-                    _items.append(_item_reporting_daily_rate_list.to_dict())
-            _dict['reportingDailyRateList'] = _items
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_ancillary_list (list)
-        _items = []
-        if self.reporting_ancillary_list:
-            for _item_reporting_ancillary_list in self.reporting_ancillary_list:
-                if _item_reporting_ancillary_list:
-                    _items.append(_item_reporting_ancillary_list.to_dict())
-            _dict['reportingAncillaryList'] = _items
-        # override the default output from pydantic by calling `to_dict()` of each item in reporting_extra_charge_list (list)
-        _items = []
-        if self.reporting_extra_charge_list:
-            for _item_reporting_extra_charge_list in self.reporting_extra_charge_list:
-                if _item_reporting_extra_charge_list:
-                    _items.append(_item_reporting_extra_charge_list.to_dict())
-            _dict['reportingExtraChargeList'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in meeting_rooms (list)
         _items = []
         if self.meeting_rooms:
@@ -287,6 +266,27 @@ class BookingSupplier(BaseModel):
                 if _item_add_ons:
                     _items.append(_item_add_ons.to_dict())
             _dict['addOns'] = _items
+        # override the default output from pydantic by calling `to_dict()` of each item in reporting_daily_rate_list (list)
+        _items = []
+        if self.reporting_daily_rate_list:
+            for _item_reporting_daily_rate_list in self.reporting_daily_rate_list:
+                if _item_reporting_daily_rate_list:
+                    _items.append(_item_reporting_daily_rate_list.to_dict())
+            _dict['reportingDailyRateList'] = _items
+        # override the default output from pydantic by calling `to_dict()` of each item in reporting_ancillary_list (list)
+        _items = []
+        if self.reporting_ancillary_list:
+            for _item_reporting_ancillary_list in self.reporting_ancillary_list:
+                if _item_reporting_ancillary_list:
+                    _items.append(_item_reporting_ancillary_list.to_dict())
+            _dict['reportingAncillaryList'] = _items
+        # override the default output from pydantic by calling `to_dict()` of each item in reporting_extra_charge_list (list)
+        _items = []
+        if self.reporting_extra_charge_list:
+            for _item_reporting_extra_charge_list in self.reporting_extra_charge_list:
+                if _item_reporting_extra_charge_list:
+                    _items.append(_item_reporting_extra_charge_list.to_dict())
+            _dict['reportingExtraChargeList'] = _items
         return _dict
 
     @classmethod
@@ -329,7 +329,18 @@ class BookingSupplier(BaseModel):
             "bookingContract": WinkBookingContractSupplierDetails.from_dict(obj["bookingContract"]) if obj.get("bookingContract") is not None else None,
             "staticMapImageUrl": obj.get("staticMapImageUrl"),
             "staticMapUrl": obj.get("staticMapUrl"),
-            "cancellableByAgent": obj.get("cancellableByAgent"),
+            "cancellableBySupplier": obj.get("cancellableBySupplier"),
+            "cancellableByTraveler": obj.get("cancellableByTraveler"),
+            "rateSource": obj.get("rateSource"),
+            "hasAddOns": obj.get("hasAddOns"),
+            "meetingRooms": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["meetingRooms"]] if obj.get("meetingRooms") is not None else None,
+            "restaurants": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["restaurants"]] if obj.get("restaurants") is not None else None,
+            "spas": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["spas"]] if obj.get("spas") is not None else None,
+            "activities": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["activities"]] if obj.get("activities") is not None else None,
+            "attractions": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["attractions"]] if obj.get("attractions") is not None else None,
+            "places": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["places"]] if obj.get("places") is not None else None,
+            "roomTypeAncillaries": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["roomTypeAncillaries"]] if obj.get("roomTypeAncillaries") is not None else None,
+            "addOns": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["addOns"]] if obj.get("addOns") is not None else None,
             "hasBreakfast": obj.get("hasBreakfast"),
             "hasBrunch": obj.get("hasBrunch"),
             "hasLunch": obj.get("hasLunch"),
@@ -347,19 +358,8 @@ class BookingSupplier(BaseModel):
             "reportingDailyRateList": [ReportingDailyRateSupplierDetails.from_dict(_item) for _item in obj["reportingDailyRateList"]] if obj.get("reportingDailyRateList") is not None else None,
             "reportingAncillaryList": [ReportingAncillarySupplierDetails.from_dict(_item) for _item in obj["reportingAncillaryList"]] if obj.get("reportingAncillaryList") is not None else None,
             "reportingExtraChargeList": [ReportingExtraChargeSupplierDetails.from_dict(_item) for _item in obj["reportingExtraChargeList"]] if obj.get("reportingExtraChargeList") is not None else None,
-            "cancellableBySupplier": obj.get("cancellableBySupplier"),
-            "cancellableByTraveler": obj.get("cancellableByTraveler"),
-            "status": obj.get("status"),
-            "rateSource": obj.get("rateSource"),
-            "hasAddOns": obj.get("hasAddOns"),
-            "meetingRooms": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["meetingRooms"]] if obj.get("meetingRooms") is not None else None,
-            "restaurants": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["restaurants"]] if obj.get("restaurants") is not None else None,
-            "spas": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["spas"]] if obj.get("spas") is not None else None,
-            "activities": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["activities"]] if obj.get("activities") is not None else None,
-            "attractions": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["attractions"]] if obj.get("attractions") is not None else None,
-            "places": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["places"]] if obj.get("places") is not None else None,
-            "roomTypeAncillaries": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["roomTypeAncillaries"]] if obj.get("roomTypeAncillaries") is not None else None,
-            "addOns": [BookingAncillarySupplierDetails.from_dict(_item) for _item in obj["addOns"]] if obj.get("addOns") is not None else None
+            "cancellableByAgent": obj.get("cancellableByAgent"),
+            "status": obj.get("status")
         })
         return _obj
 

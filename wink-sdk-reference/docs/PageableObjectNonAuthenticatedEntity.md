@@ -6,11 +6,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **offset** | **int** |  | [optional] 
+**unpaged** | **bool** |  | [optional] 
 **paged** | **bool** |  | [optional] 
 **page_number** | **int** |  | [optional] 
-**unpaged** | **bool** |  | [optional] 
-**page_size** | **int** |  | [optional] 
 **sort** | [**SortObjectNonAuthenticatedEntity**](SortObjectNonAuthenticatedEntity.md) |  | [optional] 
+**page_size** | **int** |  | [optional] 
 
 ## Example
 
