@@ -33,10 +33,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_booking_leaderboard_entry_authenticated_entity.py
-test/test_leaderboard_owner_request_authenticated_entity.py
-test/test_leaderboard_request_authenticated_entity.py
-test/test_page_booking_leaderboard_entry_authenticated_entity.py
 tox.ini
 wink_sdk_analytics/__init__.py
 wink_sdk_analytics/api/__init__.py

@@ -27,7 +27,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_create_lead400_response.py
 tox.ini
 wink_sdk_extranet_property_register/__init__.py
 wink_sdk_extranet_property_register/api/__init__.py

@@ -49,15 +49,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_create_lead400_response.py
-test/test_managing_entity_affiliate.py
-test/test_managing_entity_manager_affiliate.py
-test/test_managing_entity_manager_agent.py
-test/test_managing_entity_provision_affiliate.py
-test/test_managing_entity_supplier.py
-test/test_online_presence_agent.py
-test/test_update_managed_by_agency_request_affiliate.py
-test/test_update_travel_agent_request_agent.py
 tox.ini
 wink_sdk_affiliate/__init__.py
 wink_sdk_affiliate/api/__init__.py

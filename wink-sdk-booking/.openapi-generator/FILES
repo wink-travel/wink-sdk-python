@@ -123,8 +123,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_pet_info_lightweight_booker.py
-test/test_review_question_lightweight_authenticated_entity.py
 tox.ini
 wink_sdk_booking/__init__.py
 wink_sdk_booking/api/__init__.py

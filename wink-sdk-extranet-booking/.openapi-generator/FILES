@@ -131,9 +131,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_add_on_lightweight_supplier_details.py
-test/test_add_on_localized_inventory_supplier_details.py
-test/test_pet_info_lightweight_supplier_details.py
 tox.ini
 wink_sdk_extranet_booking/__init__.py
 wink_sdk_extranet_booking/api/__init__.py

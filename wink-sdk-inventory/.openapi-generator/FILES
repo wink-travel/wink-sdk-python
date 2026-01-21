@@ -119,9 +119,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_room_type_best_price_for_date_range_info_non_authenticated_entity.py
-test/test_room_type_best_price_for_date_range_non_authenticated_entity.py
-test/test_room_type_best_price_for_date_range_price_non_authenticated_entity.py
 tox.ini
 wink_sdk_inventory/__init__.py
 wink_sdk_inventory/api/__init__.py

@@ -84,15 +84,6 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_boolean_response_authenticated_entity.py
-test/test_browse_affiliate_account_authenticated_entity.py
-test/test_company_details_booking_sales_metrics_authenticated_entity.py
-test/test_display_company_with_sales_metrics_authenticated_entity.py
-test/test_grouped_booking_sales_metrics_authenticated_entity.py
-test/test_invite_affiliate_request_authenticated_entity.py
-test/test_key_value_pair_authenticated_entity.py
-test/test_page_display_company_with_sales_metrics_authenticated_entity.py
-test/test_state_authenticated_entity.py
 tox.ini
 wink_sdk_extranet_distribution/__init__.py
 wink_sdk_extranet_distribution/api/__init__.py

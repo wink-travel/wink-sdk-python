@@ -43,9 +43,9 @@ Name | Type | Description | Notes
 **source_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Source currency final price. | [optional] 
 **internal_total** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) | Internal currency final price. | [optional] 
 **user_specified_currency_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
-**total_discount_percent** | **float** |  | [optional] 
 **internal_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
 **source_average_price_per_night** | [**CustomMonetaryAmount**](CustomMonetaryAmount.md) |  | [optional] 
+**total_discount_percent** | **float** |  | [optional] 
 
 ## Example
 

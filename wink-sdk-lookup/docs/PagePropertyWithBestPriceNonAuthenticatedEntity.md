@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **size** | **int** |  | [optional] 
 **content** | [**List[PropertyWithBestPriceNonAuthenticatedEntity]**](PropertyWithBestPriceNonAuthenticatedEntity.md) |  | [optional] 
 **number** | **int** |  | [optional] 
+**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
 **sort** | [**SortObjectNonAuthenticatedEntity**](SortObjectNonAuthenticatedEntity.md) |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example
