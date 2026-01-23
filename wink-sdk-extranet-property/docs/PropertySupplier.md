@@ -61,10 +61,10 @@ Name | Type | Description | Notes
 **rate_provider** | [**KeyValuePairSupplier**](KeyValuePairSupplier.md) | This can be an enum for external channel managers or an identifier for a Wink company rate provider | [optional] 
 **metadata** | **Dict[str, object]** | Place to put stuff into | [optional] 
 **active** | **bool** | Property is both approved and activated. | [optional] 
-**property_active** | **bool** | Property activated itself and went live. | [optional] 
-**platform_active** | **bool** | Platform approved property. | [optional] 
 **social_networks** | **bool** | Whether property has any social networks associated with her profile. | [optional] 
 **lifestyles** | **bool** | Whether property has any lifestyles associated with her profile. | [optional] 
+**property_active** | **bool** | Property activated itself and went live. | [optional] 
+**platform_active** | **bool** | Platform approved property. | [optional] 
 
 ## Example
 
