@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_elements** | **int** |  | [optional] 
 **total_pages** | **int** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
 **size** | **int** |  | [optional] 
 **content** | [**List[PropertyWithBestPriceNonAuthenticatedEntity]**](PropertyWithBestPriceNonAuthenticatedEntity.md) |  | [optional] 
 **number** | **int** |  | [optional] 
-**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
-**sort** | [**SortObjectNonAuthenticatedEntity**](SortObjectNonAuthenticatedEntity.md) |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
 **first** | **bool** |  | [optional] 
 **last** | **bool** |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**pageable** | [**PageableObjectNonAuthenticatedEntity**](PageableObjectNonAuthenticatedEntity.md) |  | [optional] 
+**sort** | [**SortObjectNonAuthenticatedEntity**](SortObjectNonAuthenticatedEntity.md) |  | [optional] 
 **empty** | **bool** |  | [optional] 
 
 ## Example

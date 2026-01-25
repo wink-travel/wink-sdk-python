@@ -10,7 +10,8 @@ Name | Type | Description | Notes
 **period_in_days** | **int** | The period to query within. | [optional] [default to 5]
 **adults** | **int** | The period to query within. | [optional] [default to 2]
 **language** | **str** | The language to display room type name. | [default to 'en']
-**currency** | **str** | The currency to display prices in. | [default to 'USD']
+**currency** | **str** | The currency to display prices in. | [optional] [default to 'USD']
+**rate_plan_name_matches_reg_ex** | **str** | A regular expression to apply to the rate plan name | [optional] 
 
 ## Example
 

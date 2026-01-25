@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **multimedias** | [**List[SimpleMultimedia]**](SimpleMultimedia.md) | List of images / videos of item. | [optional] 
 **min_pax** | **int** | Whether there is a limit to minimum group size. | [optional] 
 **max_pax** | **int** | Whether there is a limit to maximum group size. | [optional] 
-**percent_discount** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
 **percent_premium** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
+**percent_discount** | **float** | Calculates the percent difference between basePrice and discountedPrice. | [optional] 
 
 ## Example
 
