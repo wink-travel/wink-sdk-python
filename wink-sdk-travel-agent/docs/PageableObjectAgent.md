@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **offset** | **int** |  | [optional] 
 **paged** | **bool** |  | [optional] 
-**page_number** | **int** |  | [optional] 
-**unpaged** | **bool** |  | [optional] 
 **sort** | [**SortObjectAgent**](SortObjectAgent.md) |  | [optional] 
 **page_size** | **int** |  | [optional] 
+**page_number** | **int** |  | [optional] 
+**unpaged** | **bool** |  | [optional] 
 
 ## Example
 
